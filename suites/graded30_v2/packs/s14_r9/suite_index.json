@@ -1,0 +1,8887 @@
+[
+ {
+  "task_id": "t-012bda94c4",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.407,
+   "lita_log_prod": 7.221,
+   "hidden_cut": 0.29,
+   "reza_log": 8.302,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Mixers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "gt_lit",
+       "value": 2.0,
+       "unit": "l"
+      },
+      {
+       "prop": "jug material",
+       "op": "in",
+       "value": [
+        "plastic",
+        "stainless steel"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power",
+       "op": "le",
+       "value": 1000,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "mixer type"
+     ],
+     "cap_line": 21500,
+     "target": "p-06aee7849426",
+     "n_a_stated_cap": 84,
+     "n_a_final": 57,
+     "n_a0_nocap": 84,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      },
+      {
+       "prop": "size",
+       "op": "eq_num",
+       "value": 155,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "front",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "mixer type"
+     ],
+     "cap_line": 21500,
+     "target": "p-47dc774d9375",
+     "n_a_stated_cap": 4,
+     "n_a_final": 2,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "key ingredients",
+       "op": "eq",
+       "value": "hyaluronic acid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "mixer type"
+     ],
+     "cap_line": 21500,
+     "target": "p-083af1abf7ae",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 21500,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-012bda94c4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_01",
+    "orig_id": "t-012bda94c4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-012bda94c4",
+     "agent": "Lamine Yamal",
+     "rank": 161,
+     "eid": "97405a5c-a83",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-06aee7849426",
+       2
+      ],
+      [
+       "p-5cc4caabf353",
+       1
+      ],
+      [
+       "p-e5ea48bf4af7",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-e5ea48bf4af7"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 2.917981072555205,
+    "subjects": [
+     "power of the mixers",
+     "position of the brake rotors",
+     "mixer type of the mixers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 21500,
+    "jufuli": 21500,
+    "lita": [
+     57,
+     2,
+     12
+    ],
+    "reza": [
+     84,
+     4,
+     12
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-e5ea48bf4af7"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-0660114b29",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.304,
+   "lita_log_prod": 3.912,
+   "hidden_cut": 0.742,
+   "reza_log": 8.476,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "500-1000"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery type",
+       "op": "eq",
+       "value": "alkaline",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "plug type"
+     ],
+     "cap_line": 1750,
+     "target": "p-6296e65eab63",
+     "n_a_stated_cap": 40,
+     "n_a_final": 5,
+     "n_a0_nocap": 40,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "cylinder"
+      },
+      {
+       "prop": "food container features",
+       "op": "ne",
+       "value": "airtight"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "aluminum",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "plug type"
+     ],
+     "cap_line": 1750,
+     "target": "p-7ecb8ef69644",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "bowl type"
+      },
+      {
+       "prop": "size",
+       "op": "ge",
+       "value": 220,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "plug type"
+     ],
+     "cap_line": 1750,
+     "target": "p-009fff21bf2f",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1750,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-0660114b29",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_02",
+    "orig_id": "t-0660114b29",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0660114b29",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-6296e65eab63",
+       1
+      ],
+      [
+       "p-7ecb8ef69644",
+       2
+      ],
+      [
+       "p-009fff21bf2f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 11.119186046511627,
+    "subjects": [
+     "material of the food containers",
+     "battery type of the batteries & battery chargers",
+     "plug type of the batteries & battery chargers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1750,
+    "jufuli": 740,
+    "lita": [
+     5,
+     1,
+     10
+    ],
+    "reza": [
+     40,
+     12,
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-08dee9f3dc",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.875,
+   "reza_log": 2.079,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "front",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "size",
+       "op": "eq_num",
+       "value": 220,
+       "unit": "mm",
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 1600,
+     "target": "p-39397ba27391",
+     "n_a_stated_cap": 8,
+     "n_a_final": 1,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1600,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Drop motorcycle model series from the search, please, as I'd rather get into harbour than keep tacking.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-08dee9f3dc",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_03",
+    "orig_id": "t-08dee9f3dc",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-08dee9f3dc",
+     "agent": "DAIGONG",
+     "rank": 45,
+     "eid": "e1054fe6-714",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-009fff21bf2f",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-cfc8e5e23062",
+      "p-6547c4ed8338"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 9.105304829770388,
+    "subjects": [
+     "position",
+     "size",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1600,
+    "jufuli": 1600,
+    "lita": [
+     1
+    ],
+    "reza": [
+     8
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1600,
+    "jufuli": 1600,
+    "lita": [
+     16
+    ],
+    "reza": [
+     294
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-cfc8e5e23062",
+    "p-6547c4ed8338"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-15d187d848",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 4,
+   "lita_logmean": 2.197,
+   "lita_log_prod": 6.59,
+   "hidden_cut": 0.114,
+   "reza_log": 7.129,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "cn"
+      },
+      {
+       "prop": "battery type",
+       "op": "in",
+       "value": [
+        "alkaline",
+        "silver oxide"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 2850,
+     "target": "p-204f92561cc6",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "bpa-free"
+      },
+      {
+       "prop": "color",
+       "op": "ne",
+       "value": "green"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bag",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 2850,
+     "target": "p-002ce68a0dc2",
+     "n_a_stated_cap": 16,
+     "n_a_final": 14,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "drag"
+      },
+      {
+       "prop": "size",
+       "op": "le",
+       "value": 190,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 2850,
+     "target": "p-68125e6c30d8",
+     "n_a_stated_cap": 6,
+     "n_a_final": 4,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-15d187d848",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_04",
+    "orig_id": "t-15d187d848",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-15d187d848",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-204f92561cc6",
+       3
+      ],
+      [
+       "p-002ce68a0dc2",
+       1
+      ],
+      [
+       "p-68125e6c30d8",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 6.315007429420505,
+    "subjects": [
+     "packaging type of the food containers",
+     "color of the brake rotors",
+     "pack size of the batteries & battery chargers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     1,
+     2
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 2850,
+    "lita": [
+     13,
+     14,
+     4
+    ],
+    "reza": [
+     13,
+     16,
+     6
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1a2d417b49",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.419,
+   "reza_log": 3.434,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Mixers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "speeds",
+       "op": "ge",
+       "value": 3,
+       "unit": "speeds"
+      },
+      {
+       "prop": "mixer capacity",
+       "op": "eq",
+       "value": "1.6lit ~ 2.0lit"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "mixer type",
+       "op": "ne",
+       "value": "stand mixer",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 1025,
+     "target": "p-1529b114e7c6",
+     "n_a_stated_cap": 31,
+     "n_a_final": 18,
+     "n_a0_nocap": 31,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1025,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "After checking my purse on the ward, I'd like to keep things around 1521 cents in USD if that's all right.",
+     "new_cap": 1521
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-1a2d417b49",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_05",
+    "orig_id": "t-1a2d417b49",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1a2d417b49",
+     "agent": "Quetta",
+     "rank": 132,
+     "eid": "573990ea-172",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-52b0c60230b2",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-63421d85b2ba",
+      "p-8456dd40138d"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 9.320695102685624,
+    "subjects": [
+     "mixer type",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1025,
+    "jufuli": 1025,
+    "lita": [
+     18
+    ],
+    "reza": [
+     31
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1521,
+    "jufuli": 1521,
+    "lita": [
+     18
+    ],
+    "reza": [
+     31
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-63421d85b2ba",
+    "p-8456dd40138d"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1b514113aa",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.778,
+   "reza_log": 3.296,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "liquid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "application type",
+       "op": "eq",
+       "value": "rinse-out",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "volume"
+     ],
+     "cap_line": 2250,
+     "target": "p-06a9f6e2fe2e",
+     "n_a_stated_cap": 27,
+     "n_a_final": 6,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2250,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Beg pardon, but I'd best stick to 1698 cents in USD, what with the boiler man coming Thursday.",
+     "new_cap": 1698
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'll let product form go, if it helps you find something.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-1b514113aa",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_06",
+    "orig_id": "t-1b514113aa",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1b514113aa",
+     "agent": "Carlo Ancelotti",
+     "rank": 58,
+     "eid": "daef4d53-4fb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-06a9f6e2fe2e",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-4ad58657811b",
+      "p-5b1c7429a994"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 1.8547140649149922,
+    "subjects": [
+     "application type",
+     "volume"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2250,
+    "jufuli": 1094,
+    "lita": [
+     6
+    ],
+    "reza": [
+     27
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1698,
+    "jufuli": 1094,
+    "lita": [
+     6
+    ],
+    "reza": [
+     27
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2250,
+    "jufuli": 1094,
+    "lita": [
+     23
+    ],
+    "reza": [
+     167
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1698,
+    "jufuli": 1094,
+    "lita": [
+     23
+    ],
+    "reza": [
+     167
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-4ad58657811b",
+    "p-5b1c7429a994"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2a563059ae",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 9,
+   "lita_logmean": 2.515,
+   "lita_log_prod": 5.03,
+   "hidden_cut": 0.257,
+   "reza_log": 5.717,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "chrome"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "depth",
+       "op": "le",
+       "value": 8.5,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 11500,
+     "target": "p-3c50b4befa11",
+     "n_a_stated_cap": 16,
+     "n_a_final": 9,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "large serve"
+      },
+      {
+       "prop": "capacity",
+       "op": "ge",
+       "value": 500,
+       "unit": "ml"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "blue",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 11500,
+     "target": "p-02c7b3dbf4d1",
+     "n_a_stated_cap": 19,
+     "n_a_final": 17,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11500,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-2a563059ae",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_07",
+    "orig_id": "t-2a563059ae",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2a563059ae",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-3c50b4befa11",
+       3
+      ],
+      [
+       "p-02c7b3dbf4d1",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-6d3aa77af2e0",
+      "p-2248836386cf",
+      "p-044cf3ac99af",
+      "p-6ff66c3f4d9e"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 13.108108108108109,
+    "subjects": [
+     "color of the food containers",
+     "depth of the light fixtures",
+     "material of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11500,
+    "jufuli": 1968,
+    "lita": [
+     9,
+     17
+    ],
+    "reza": [
+     16,
+     19
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-6d3aa77af2e0",
+    "p-2248836386cf",
+    "p-044cf3ac99af",
+    "p-6ff66c3f4d9e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2c66f4abd9",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 2.611,
+   "lita_log_prod": 7.834,
+   "hidden_cut": 0.226,
+   "reza_log": 11.397,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "fragrance free"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 1850,
+     "target": "p-0088637806aa",
+     "n_a_stated_cap": 101,
+     "n_a_final": 101,
+     "n_a0_nocap": 101,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mixers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "mixer capacity",
+       "op": "eq",
+       "value": "1.6lit ~ 2.0lit"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "mixer type",
+       "op": "eq",
+       "value": "hand mixer",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 1850,
+     "target": "p-04da77f12c95",
+     "n_a_stated_cap": 42,
+     "n_a_final": 25,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "green"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery type",
+       "op": "eq",
+       "value": "heavy duty",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 1850,
+     "target": "p-9c8560ef47a8",
+     "n_a_stated_cap": 21,
+     "n_a_final": 1,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1850,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-2c66f4abd9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_08",
+    "orig_id": "t-2c66f4abd9",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2c66f4abd9",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0088637806aa",
+       2
+      ],
+      [
+       "p-04da77f12c95",
+       1
+      ],
+      [
+       "p-9c8560ef47a8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 21.83406113537118,
+    "subjects": [
+     "mixer type of the mixers",
+     "battery type of the batteries & battery chargers",
+     "packaging type of the food containers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1850,
+    "jufuli": 412,
+    "lita": [
+     101,
+     25,
+     1
+    ],
+    "reza": [
+     101,
+     42,
+     21
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-324db8e4f9",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 2,
+   "lita_logmean": 2.464,
+   "lita_log_prod": 4.927,
+   "hidden_cut": 0.0,
+   "reza_log": 4.927,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 70
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 10,
+       "unit": "inches"
+      },
+      {
+       "prop": "usage",
+       "op": "ne",
+       "value": "outdoor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "width",
+      "depth"
+     ],
+     "cap_line": 3950,
+     "target": "p-01184127564e",
+     "n_a_stated_cap": 69,
+     "n_a_final": 69,
+     "n_a0_nocap": 69,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "e27"
+      }
+     ],
+     "line_cap": 24,
+     "hidden": [],
+     "decoys": [
+      "width",
+      "depth"
+     ],
+     "cap_line": 3950,
+     "target": "p-12dd12329197",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3950,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 70,
+   "task_id": "t-324db8e4f9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_09",
+    "orig_id": "t-324db8e4f9",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-324db8e4f9",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 70,
+     "cart": [
+      [
+       "p-01184127564e",
+       1
+      ],
+      [
+       "p-12dd12329197",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-027f26a8e181",
+      "p-7afd146ec1ae",
+      "p-40235cce4607"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 70,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 10.736196319018404,
+    "subjects": [
+     "width of the light fixtures",
+     "depth of the light fixtures"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3950,
+    "jufuli": 3950,
+    "lita": [
+     69,
+     2
+    ],
+    "reza": [
+     69,
+     2
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-027f26a8e181",
+    "p-7afd146ec1ae",
+    "p-40235cce4607"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3397b34415",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 17,
+   "lita_logmean": 2.833,
+   "lita_log_prod": 2.833,
+   "hidden_cut": 0.5,
+   "reza_log": 3.526,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "eq",
+       "value": "shiny"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "ge",
+       "value": 236.59,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "key ingredients"
+     ],
+     "cap_line": 2705,
+     "target": "p-08a39b6da741",
+     "n_a_stated_cap": 34,
+     "n_a_final": 17,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2705,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "I'll let finish go, if it helps you find something.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-3397b34415",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_10",
+    "orig_id": "t-3397b34415",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3397b34415",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "2c2b42c3-208",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 15,
+     "cart": [
+      [
+       "p-1a689fc28c33",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 7.259158751696065,
+    "subjects": [
+     "volume",
+     "key ingredients"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2705,
+    "jufuli": 2705,
+    "lita": [
+     17
+    ],
+    "reza": [
+     34
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2705,
+    "jufuli": 2705,
+    "lita": [
+     40
+    ],
+    "reza": [
+     167
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3614bcf285",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 2.518,
+   "lita_log_prod": 10.072,
+   "hidden_cut": 0.33,
+   "reza_log": 12.128,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 99
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 14,
+       "unit": "inches"
+      },
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 9.5,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "bronze",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 8500,
+     "target": "p-02ccb77e0da4",
+     "n_a_stated_cap": 50,
+     "n_a_final": 16,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "eu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 8500,
+     "target": "p-0a069bcfd183",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "luminous flux",
+       "op": "le",
+       "value": 500,
+       "unit": "lm"
+      },
+      {
+       "prop": "dimmable",
+       "op": "in",
+       "value": [
+        "no",
+        "yes"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 8500,
+     "target": "p-001d14637fb4",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs"
+      },
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 18,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "colour-changing",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 8500,
+     "target": "p-60d0323a07d0",
+     "n_a_stated_cap": 5,
+     "n_a_final": 2,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8500,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 99,
+   "task_id": "t-3614bcf285",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_11",
+    "orig_id": "t-3614bcf285",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3614bcf285",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 99,
+     "cart": [
+      [
+       "p-02ccb77e0da4",
+       1
+      ],
+      [
+       "p-0a069bcfd183",
+       2
+      ],
+      [
+       "p-001d14637fb4",
+       2
+      ],
+      [
+       "p-60d0323a07d0",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 99,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 11.52073732718894,
+    "subjects": [
+     "color of the light fixtures",
+     "light effects of the compact fluorescent bulbs",
+     "height of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "light fixtures usage damp location|indoor -> led light bulbs base type e26",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8500,
+    "jufuli": 8500,
+    "lita": [
+     16,
+     20,
+     37,
+     2
+    ],
+    "reza": [
+     50,
+     20,
+     37,
+     5
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4ee96d6041",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.976,
+   "reza_log": 3.714,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "food container features",
+       "op": "in",
+       "value": [
+        "leak resistant",
+        "shatterproof"
+       ]
+      },
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "anti-bacterial"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "box",
+       "unit": null,
+       "ref": true
+      },
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 340,
+     "target": "p-4e7644e75639",
+     "n_a_stated_cap": 41,
+     "n_a_final": 1,
+     "n_a0_nocap": 41,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 340,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Pay no heed to special feature any more, if you'd be so kind.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-4ee96d6041",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_12",
+    "orig_id": "t-4ee96d6041",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4ee96d6041",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-4e7644e75639",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-6208dba24cde",
+      "p-44222a5831cc",
+      "p-765705897573"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 29.34173669467787,
+    "subjects": [
+     "packaging type",
+     "pack type",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     1
+    ],
+    "reza": [
+     41
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     35
+    ],
+    "reza": [
+     262
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-6208dba24cde",
+    "p-44222a5831cc",
+    "p-765705897573"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5d6094c785",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 4.605,
+   "hidden_cut": 0.31,
+   "reza_log": 5.606,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Hair Care Treatments",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "eq",
+       "value": "shiny"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "le",
+       "value": 250,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "product form"
+     ],
+     "cap_line": 8350,
+     "target": "p-08a39b6da741",
+     "n_a_stated_cap": 34,
+     "n_a_final": 25,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "cn"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "gray",
+        "yellow"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery type",
+       "op": "eq",
+       "value": "alkaline",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "product form"
+     ],
+     "cap_line": 8350,
+     "target": "p-6296e65eab63",
+     "n_a_stated_cap": 8,
+     "n_a_final": 4,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8350,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-5d6094c785",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_13",
+    "orig_id": "t-5d6094c785",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5d6094c785",
+     "agent": "KISAME",
+     "rank": 6,
+     "eid": "261450fd-9c0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-08a39b6da741",
+       2
+      ],
+      [
+       "p-7c4e7874971d",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 6.666666666666667,
+    "subjects": [
+     "battery type of the batteries & battery chargers",
+     "volume of the hair care treatments",
+     "product form of the hair care treatments"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8350,
+    "jufuli": 8350,
+    "lita": [
+     25,
+     4
+    ],
+    "reza": [
+     34,
+     8
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5db8287bd7",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 8,
+   "lita_logmean": 2.994,
+   "lita_log_prod": 11.976,
+   "hidden_cut": 0.0,
+   "reza_log": 11.976,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 107
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Lamp Shades",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "red"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "material"
+     ],
+     "cap_line": 3450,
+     "target": "p-097fea434e1b",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "eu"
+      },
+      {
+       "prop": "light bulb colour",
+       "op": "in",
+       "value": [
+        "clear",
+        "white"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "material"
+     ],
+     "cap_line": 3450,
+     "target": "p-0a069bcfd183",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 7,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "material"
+     ],
+     "cap_line": 3450,
+     "target": "p-001d14637fb4",
+     "n_a_stated_cap": 95,
+     "n_a_final": 95,
+     "n_a0_nocap": 95,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs"
+      }
+     ],
+     "line_cap": 315,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "material"
+     ],
+     "cap_line": 3450,
+     "target": "p-10196dd907a0",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3450,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 107,
+   "task_id": "t-5db8287bd7",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_14",
+    "orig_id": "t-5db8287bd7",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-5db8287bd7",
+     "agent": "Nezha",
+     "rank": 100,
+     "eid": "c4ffd456-592",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 53,
+     "cart": [
+      [
+       "p-04f976e91508",
+       1
+      ],
+      [
+       "p-16c748ca2cab",
+       2
+      ],
+      [
+       "p-223b99dc2006",
+       1
+      ],
+      [
+       "p-81fa8c1a7f88",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 107,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 11.002260738507912,
+    "subjects": [
+     "style of the lamp shades",
+     "material of the lamp shades"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conditional": "compact fluorescent bulbs light bulb colour yellow unless lamp shades style minimalist",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 3450,
+    "lita": [
+     19,
+     11,
+     95,
+     8
+    ],
+    "reza": [
+     19,
+     11,
+     95,
+     8
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7950ddb5e1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.286,
+   "reza_log": 1.946,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "pouch"
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 1,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 67,
+     "target": "p-04fdc88f33e4",
+     "n_a_stated_cap": 7,
+     "n_a_final": 5,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 67,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "After checking my purse on the ward, I'd like to keep things around 61 cents in USD if that's all right.",
+     "new_cap": 61
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Pay no heed to pack size any more, if you'd be so kind.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-7950ddb5e1",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_15",
+    "orig_id": "t-7950ddb5e1",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7950ddb5e1",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-04fdc88f33e4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 13.630041724617524,
+    "subjects": [
+     "color",
+     "food container features"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     0
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 67,
+    "jufuli": 9,
+    "lita": [
+     5
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 61,
+    "jufuli": 9,
+    "lita": [
+     5
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 67,
+    "jufuli": 9,
+    "lita": [
+     14
+    ],
+    "reza": [
+     29
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 61,
+    "jufuli": 9,
+    "lita": [
+     14
+    ],
+    "reza": [
+     29
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7bf19b7883",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 93,
+   "lita_logmean": 4.533,
+   "lita_log_prod": 4.533,
+   "hidden_cut": 0.316,
+   "reza_log": 4.913,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 7.37,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 15,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 2850,
+     "target": "p-01c23653ca03",
+     "n_a_stated_cap": 136,
+     "n_a_final": 93,
+     "n_a0_nocap": 136,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Never mind depth now; the kettle's boiled and I've no mind to quibble.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-7bf19b7883",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_16",
+    "orig_id": "t-7bf19b7883",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7bf19b7883",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-01c23653ca03",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 4.838709677419355,
+    "subjects": [
+     "width",
+     "height"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 401,
+    "lita": [
+     93
+    ],
+    "reza": [
+     136
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 401,
+    "lita": [
+     143
+    ],
+    "reza": [
+     360
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7c101ce886",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.63,
+   "reza_log": 3.296,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "liquid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "ge",
+       "value": 250,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "application type"
+     ],
+     "cap_line": 2250,
+     "target": "p-06a9f6e2fe2e",
+     "n_a_stated_cap": 27,
+     "n_a_final": 10,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2250,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-7c101ce886",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_17",
+    "orig_id": "t-7c101ce886",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7c101ce886",
+     "agent": "BONSAI",
+     "rank": 138,
+     "eid": "44bea160-5b9",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-3c88c7c55ec1",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 4.065040650406504,
+    "subjects": [
+     "volume",
+     "application type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2250,
+    "jufuli": 795,
+    "lita": [
+     10
+    ],
+    "reza": [
+     27
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7e852efd11",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 2,
+   "lita_logmean": 1.629,
+   "lita_log_prod": 3.258,
+   "hidden_cut": 0.694,
+   "reza_log": 6.397,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "green",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 6250,
+     "target": "p-15e7466add3c",
+     "n_a_stated_cap": 25,
+     "n_a_final": 2,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "grey",
+        "gray"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 65,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 6250,
+     "target": "p-2c4a3f240611",
+     "n_a_stated_cap": 24,
+     "n_a_final": 13,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6250,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-7e852efd11",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_18",
+    "orig_id": "t-7e852efd11",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7e852efd11",
+     "agent": "eatkiwi",
+     "rank": 56,
+     "eid": "eda9e141-c6e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-15e7466add3c",
+       1
+      ],
+      [
+       "p-609b9f51b690",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 8.839779005524862,
+    "subjects": [
+     "color of the food containers",
+     "width of the coffee tables and side tables",
+     "food container features of the food containers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6250,
+    "jufuli": 6250,
+    "lita": [
+     2,
+     13
+    ],
+    "reza": [
+     25,
+     24
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8147617d15",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.75,
+   "reza_log": 2.079,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "brown",
+        "white"
+       ]
+      },
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "sugarcane"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "oval",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 172,
+     "target": "p-6c98cd045238",
+     "n_a_stated_cap": 8,
+     "n_a_final": 2,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 172,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Drop color from the search, please, as I'd rather get into harbour than keep tacking.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-8147617d15",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_19",
+    "orig_id": "t-8147617d15",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8147617d15",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "7cdf3812-0ef",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-6c98cd045238",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 16.082474226804123,
+    "subjects": [
+     "shape",
+     "capacity"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 172,
+    "jufuli": 166,
+    "lita": [
+     2
+    ],
+    "reza": [
+     8
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 172,
+    "jufuli": 166,
+    "lita": [
+     9
+    ],
+    "reza": [
+     19
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-833f1251d3",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.966,
+   "lita_log_prod": 5.897,
+   "hidden_cut": 0.467,
+   "reza_log": 11.704,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "2000-3000"
+      },
+      {
+       "prop": "color",
+       "op": "ne",
+       "value": "green"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "type c",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery type"
+     ],
+     "cap_line": 13000,
+     "target": "p-29fe224d2cd8",
+     "n_a_stated_cap": 19,
+     "n_a_final": 1,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 91.4,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery type"
+     ],
+     "cap_line": 13000,
+     "target": "p-008f14598c30",
+     "n_a_stated_cap": 91,
+     "n_a_final": 91,
+     "n_a0_nocap": 91,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "anti-bacterial"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "pack",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery type"
+     ],
+     "cap_line": 13000,
+     "target": "p-0ab7e3de6a38",
+     "n_a_stated_cap": 70,
+     "n_a_final": 4,
+     "n_a0_nocap": 70,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13000,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-833f1251d3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_20",
+    "orig_id": "t-833f1251d3",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-833f1251d3",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-29fe224d2cd8",
+       2
+      ],
+      [
+       "p-008f14598c30",
+       3
+      ],
+      [
+       "p-0ab7e3de6a38",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-efbc1afda93b",
+      "p-a0b5b1473e47",
+      "p-1728723b41d7",
+      "p-39f6f55ea381"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 10.252237591537835,
+    "subjects": [
+     "packaging type of the food containers",
+     "plug type of the batteries & battery chargers",
+     "battery type of the batteries & battery chargers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": "pack type of the food containers (terminal Moribel card absent from the field catalog)",
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13000,
+    "jufuli": 8155,
+    "lita": [
+     1,
+     91,
+     4
+    ],
+    "reza": [
+     19,
+     91,
+     70
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-efbc1afda93b",
+    "p-a0b5b1473e47",
+    "p-1728723b41d7",
+    "p-39f6f55ea381"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8398509fbd",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 3,
+   "lita_logmean": 1.242,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.952,
+   "reza_log": 6.335,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 6,
+   "max_hops": 6,
+   "step_budget": 62
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 7.6,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "depth",
+       "op": "le",
+       "value": 14,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 6150,
+     "target": "p-6f978fb1ad80",
+     "n_a_stated_cap": 141,
+     "n_a_final": 3,
+     "n_a0_nocap": 141,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "3 pin"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 6150,
+     "target": "p-304d62209528",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6150,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 62,
+   "task_id": "t-8398509fbd",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_21",
+    "orig_id": "t-8398509fbd",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8398509fbd",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 62,
+     "cart": [
+      [
+       "p-6f978fb1ad80",
+       2
+      ],
+      [
+       "p-304d62209528",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-d4c238be7c1e",
+      "p-1fa711ac81d2",
+      "p-5590da0c3f00",
+      "p-3e2f50127f62",
+      "p-59e18a6588a1",
+      "p-a6f83b4c9875"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 62,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 14.307458143074582,
+    "subjects": [
+     "color of the light fixtures",
+     "depth of the light fixtures",
+     "height of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6150,
+    "jufuli": 2516,
+    "lita": [
+     3,
+     4
+    ],
+    "reza": [
+     141,
+     4
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-d4c238be7c1e",
+    "p-1fa711ac81d2",
+    "p-5590da0c3f00",
+    "p-3e2f50127f62",
+    "p-59e18a6588a1",
+    "p-a6f83b4c9875"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-89e6670977",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 18,
+   "lita_logmean": 3.36,
+   "lita_log_prod": 6.719,
+   "hidden_cut": 0.373,
+   "reza_log": 7.796,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "le",
+       "value": 7.37,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 13.5,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 10000,
+     "target": "p-01184127564e",
+     "n_a_stated_cap": 64,
+     "n_a_final": 46,
+     "n_a0_nocap": 64,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "volume",
+       "op": "ge",
+       "value": 237,
+       "unit": "ml"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "application type",
+       "op": "eq",
+       "value": "leave-in",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 10000,
+     "target": "p-08a39b6da741",
+     "n_a_stated_cap": 38,
+     "n_a_final": 18,
+     "n_a0_nocap": 38,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-89e6670977",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_22",
+    "orig_id": "t-89e6670977",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-89e6670977",
+     "agent": "BONSAI",
+     "rank": 138,
+     "eid": "9efa4a3d-37d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-01184127564e",
+       2
+      ],
+      [
+       "p-1a689fc28c33",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 24.805102763997166,
+    "subjects": [
+     "height of the light fixtures",
+     "application type of the hair care treatments",
+     "width of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 10000,
+    "lita": [
+     46,
+     18
+    ],
+    "reza": [
+     64,
+     38
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8d2659e617",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.857,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "motorcycle make",
+       "op": "eq",
+       "value": "suzuki"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "motorcycle model",
+       "op": "eq",
+       "value": "suzuki smash 110",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 845,
+     "target": "p-7fbc89ef1f57",
+     "n_a_stated_cap": 14,
+     "n_a_final": 2,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 845,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Drop motorcycle make from the search, please, as I'd rather get into harbour than keep tacking.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-8d2659e617",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_23",
+    "orig_id": "t-8d2659e617",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8d2659e617",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "0ecd679c-41a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 18,
+     "cart": [
+      [
+       "p-8ea7444db0fb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 3.789473684210526,
+    "subjects": [
+     "motorcycle model",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 845,
+    "jufuli": 845,
+    "lita": [
+     2
+    ],
+    "reza": [
+     14
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 845,
+    "jufuli": 845,
+    "lita": [
+     2
+    ],
+    "reza": [
+     294
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8d61d4549b",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 1.354,
+   "lita_log_prod": 2.708,
+   "hidden_cut": 0.448,
+   "reza_log": 4.357,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "brushed nickel"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 11,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 12000,
+     "target": "p-038b682c7deb",
+     "n_a_stated_cap": 26,
+     "n_a_final": 15,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      },
+      {
+       "prop": "size",
+       "op": "eq_num",
+       "value": 220,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "front",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 12000,
+     "target": "p-39397ba27391",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 12000,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-8d61d4549b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_24",
+    "orig_id": "t-8d61d4549b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8d61d4549b",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-038b682c7deb",
+       2
+      ],
+      [
+       "p-39397ba27391",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a99ab46d8e26",
+      "p-1a9b17356560",
+      "p-3af75aef1cee"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 5.39906103286385,
+    "subjects": [
+     "height of the light fixtures",
+     "position of the brake rotors",
+     "material of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 12000,
+    "jufuli": 5527,
+    "lita": [
+     15,
+     1
+    ],
+    "reza": [
+     26,
+     3
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-a99ab46d8e26",
+    "p-1a9b17356560",
+    "p-3af75aef1cee"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8e38b06690",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 1.445,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.676,
+   "reza_log": 5.416,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "orange"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery type"
+     ],
+     "cap_line": 1850,
+     "target": "p-152b7cab8150",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery type"
+     ],
+     "cap_line": 1850,
+     "target": "p-198335fd1c7f",
+     "n_a_stated_cap": 25,
+     "n_a_final": 2,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1850,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-8e38b06690",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_25",
+    "orig_id": "t-8e38b06690",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8e38b06690",
+     "agent": "NI HAO",
+     "rank": 134,
+     "eid": "4008f811-eda",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-198335fd1c7f",
+       3
+      ],
+      [
+       "p-879dc3deca3b",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 7.794943820224719,
+    "subjects": [
+     "color of the food containers",
+     "battery type of the batteries & battery chargers"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1850,
+    "jufuli": 837,
+    "lita": [
+     9,
+     2
+    ],
+    "reza": [
+     9,
+     25
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9ea4c05055",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.846,
+   "reza_log": 3.738,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "cylinder"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "aluminum",
+        "stainless steel"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "food container features",
+       "op": "eq",
+       "value": "leak resistant",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 3350,
+     "target": "p-7ecb8ef69644",
+     "n_a_stated_cap": 7,
+     "n_a_final": 1,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "2000-3000"
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 18650,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "us",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 3350,
+     "target": "p-70de711bcae1",
+     "n_a_stated_cap": 6,
+     "n_a_final": 1,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3350,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-9ea4c05055",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_26",
+    "orig_id": "t-9ea4c05055",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9ea4c05055",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-7ecb8ef69644",
+       3
+      ],
+      [
+       "p-70de711bcae1",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 11.360347322720695,
+    "subjects": [
+     "food container features of the food containers",
+     "plug type of the batteries & battery chargers",
+     "packaging type of the food containers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3350,
+    "jufuli": 678,
+    "lita": [
+     1,
+     1
+    ],
+    "reza": [
+     7,
+     6
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a2dbfe3ee6",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.964,
+   "reza_log": 4.007,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Hair Care Treatments",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "volume",
+       "op": "le",
+       "value": 120,
+       "unit": "ml"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "gel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "finish"
+     ],
+     "cap_line": 2950,
+     "target": "p-fbc6e1d81953",
+     "n_a_stated_cap": 55,
+     "n_a_final": 2,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2950,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Thinking on, volume was only a notion of mine, so ease off it.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-a2dbfe3ee6",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_27",
+    "orig_id": "t-a2dbfe3ee6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a2dbfe3ee6",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "6e425749-58b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 18,
+     "cart": [
+      [
+       "p-548c365b046a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 4.992076069730587,
+    "subjects": [
+     "product form",
+     "finish"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 1631,
+    "lita": [
+     2
+    ],
+    "reza": [
+     55
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 700,
+    "lita": [
+     9
+    ],
+    "reza": [
+     167
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a44c32353f",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.524,
+   "reza_log": 3.045,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "ne",
+       "value": "single"
+      },
+      {
+       "prop": "food container features",
+       "op": "eq",
+       "value": "shatterproof"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "rectangle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 1900,
+     "target": "p-00b5bc4345c1",
+     "n_a_stated_cap": 21,
+     "n_a_final": 10,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1900,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Could we aim for 1241 cents in USD instead, please? The car's been in the garage again.",
+     "new_cap": 1241
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "I'll let pack type go, if it helps you find something.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-a44c32353f",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_28",
+    "orig_id": "t-a44c32353f",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a44c32353f",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "7123e842-7ee",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-d2fc9ba200ab",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 7.8028747433264884,
+    "subjects": [
+     "shape",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1900,
+    "jufuli": 31,
+    "lita": [
+     10
+    ],
+    "reza": [
+     21
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1241,
+    "jufuli": 31,
+    "lita": [
+     10
+    ],
+    "reza": [
+     21
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1900,
+    "jufuli": 31,
+    "lita": [
+     21
+    ],
+    "reza": [
+     46
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1241,
+    "jufuli": 31,
+    "lita": [
+     21
+    ],
+    "reza": [
+     46
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b180350a1e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 9,
+   "lita_logmean": 2.197,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.0,
+   "reza_log": 2.197,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "drag"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "motorcycle make",
+      "size"
+     ],
+     "cap_line": 525,
+     "target": "p-1125922157cf",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 525,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-b180350a1e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_29",
+    "orig_id": "t-b180350a1e",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b180350a1e",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "078e42ac-454",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-1125922157cf",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 1.4179608372721135,
+    "subjects": [
+     "motorcycle make",
+     "size"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 525,
+    "jufuli": 498,
+    "lita": [
+     9
+    ],
+    "reza": [
+     9
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b4e64d1ed5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 7,
+   "lita_logmean": 1.946,
+   "lita_log_prod": 1.946,
+   "hidden_cut": 0.5,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "bpa-free"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "box",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 245,
+     "target": "p-0ce8e60aaf35",
+     "n_a_stated_cap": 14,
+     "n_a_final": 7,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 245,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Between the rota and the rent, 175 cents in USD is as far as I dare go, I'm afraid.",
+     "new_cap": 175
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-b4e64d1ed5",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_30",
+    "orig_id": "t-b4e64d1ed5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b4e64d1ed5",
+     "agent": "BONSAI",
+     "rank": 138,
+     "eid": "01301384-2b6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-0ce8e60aaf35",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 20.896551724137932,
+    "subjects": [
+     "packaging type",
+     "food container features"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 245,
+    "jufuli": 245,
+    "lita": [
+     7
+    ],
+    "reza": [
+     14
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 175,
+    "jufuli": 175,
+    "lita": [
+     7
+    ],
+    "reza": [
+     14
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b4f3635e46",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.375,
+   "reza_log": 2.079,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "rear",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "motorcycle make"
+     ],
+     "cap_line": 1600,
+     "target": "p-25e8b4bf5972",
+     "n_a_stated_cap": 8,
+     "n_a_final": 5,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1600,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Pay no heed to motorcycle model series any more, if you'd be so kind.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-b4f3635e46",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_31",
+    "orig_id": "t-b4f3635e46",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b4f3635e46",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "30c76385-5f8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 15,
+     "cart": [
+      [
+       "p-25e8b4bf5972",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 4.838709677419355,
+    "subjects": [
+     "position",
+     "motorcycle make"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1600,
+    "jufuli": 1600,
+    "lita": [
+     5
+    ],
+    "reza": [
+     8
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1600,
+    "jufuli": 1600,
+    "lita": [
+     36
+    ],
+    "reza": [
+     294
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b864d6496a",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 9,
+   "lita_min": 1,
+   "lita_logmean": 1.612,
+   "lita_log_prod": 4.836,
+   "hidden_cut": 0.694,
+   "reza_log": 8.148,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      },
+      {
+       "prop": "size",
+       "op": "ge",
+       "value": 220,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "front",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "motorcycle make"
+     ],
+     "cap_line": 27500,
+     "target": "p-39397ba27391",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "espresso"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "motorcycle make"
+     ],
+     "cap_line": 27500,
+     "target": "p-0d31b57c280e",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Light Fixtures",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 7.6,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "brushed nickel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "motorcycle make"
+     ],
+     "cap_line": 27500,
+     "target": "p-0d7b226b7ba7",
+     "n_a_stated_cap": 64,
+     "n_a_final": 7,
+     "n_a0_nocap": 64,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27500,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-b864d6496a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_32",
+    "orig_id": "t-b864d6496a",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b864d6496a",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-39397ba27391",
+       3
+      ],
+      [
+       "p-0d31b57c280e",
+       3
+      ],
+      [
+       "p-0d7b226b7ba7",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 6.618705035971223,
+    "subjects": [
+     "position of the brake rotors",
+     "color of the light fixtures",
+     "motorcycle make of the brake rotors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 8541,
+    "lita": [
+     1,
+     18,
+     7
+    ],
+    "reza": [
+     3,
+     18,
+     64
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b8710a0c6e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 15,
+   "lita_logmean": 2.708,
+   "lita_log_prod": 2.708,
+   "hidden_cut": 0.815,
+   "reza_log": 4.394,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 10,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 3050,
+     "target": "p-094d4530c683",
+     "n_a_stated_cap": 81,
+     "n_a_final": 15,
+     "n_a0_nocap": 81,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3050,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Thinking on, height was only a notion of mine, so ease off it.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-b8710a0c6e",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_33",
+    "orig_id": "t-b8710a0c6e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b8710a0c6e",
+     "agent": "Honest Miner",
+     "rank": 71,
+     "eid": "fa680019-b52",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-0ee78c5c837f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 1.7241379310344827,
+    "subjects": [
+     "color",
+     "width"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3050,
+    "jufuli": 588,
+    "lita": [
+     15
+    ],
+    "reza": [
+     81
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3050,
+    "jufuli": 588,
+    "lita": [
+     50
+    ],
+    "reza": [
+     360
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c4e3e560b8",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 3,
+   "lita_logmean": 1.445,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.727,
+   "reza_log": 5.438,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 65.4,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 3900,
+     "target": "p-27d9f9812743",
+     "n_a_stated_cap": 23,
+     "n_a_final": 6,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "bowl type"
+      },
+      {
+       "prop": "color",
+       "op": "ne",
+       "value": "silver"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "motorcycle model",
+       "op": "eq",
+       "value": "honda xrm 125",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 3900,
+     "target": "p-0cf682749988",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3900,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-c4e3e560b8",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_34",
+    "orig_id": "t-c4e3e560b8",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c4e3e560b8",
+     "agent": "Pein",
+     "rank": 98,
+     "eid": "4bcc50a5-226",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 41,
+     "cart": [
+      [
+       "p-0cf682749988",
+       1
+      ],
+      [
+       "p-9fd9eb118559",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 6.062717770034843,
+    "subjects": [
+     "motorcycle model of the brake rotors",
+     "height of the coffee tables and side tables",
+     "material of the coffee tables and side tables"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3900,
+    "jufuli": 3900,
+    "lita": [
+     6,
+     3
+    ],
+    "reza": [
+     23,
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cdfe155a1c",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 4,
+   "lita_logmean": 3.03,
+   "lita_log_prod": 6.059,
+   "hidden_cut": 0.153,
+   "reza_log": 7.851,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "carton"
+      },
+      {
+       "prop": "packaging type",
+       "op": "in",
+       "value": [
+        "box",
+        "pack"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "brown",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 2600,
+     "target": "p-63a645d50252",
+     "n_a_stated_cap": 24,
+     "n_a_final": 4,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mixers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 2,
+       "unit": "l"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "plastic",
+        "stainless steel"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "food container features"
+     ],
+     "cap_line": 2600,
+     "target": "p-016ed7969cf4",
+     "n_a_stated_cap": 107,
+     "n_a_final": 107,
+     "n_a0_nocap": 107,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2600,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-cdfe155a1c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_35",
+    "orig_id": "t-cdfe155a1c",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cdfe155a1c",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-63a645d50252",
+       3
+      ],
+      [
+       "p-016ed7969cf4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 15.340501792114695,
+    "subjects": [
+     "color of the food containers",
+     "food container features of the food containers"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2600,
+    "jufuli": 2600,
+    "lita": [
+     4,
+     107
+    ],
+    "reza": [
+     24,
+     107
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d38d81ac25",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 11,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.727,
+   "reza_log": 2.398,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 2,
+   "hops_total": 6,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "output voltage",
+       "op": "le",
+       "value": 12,
+       "unit": "v"
+      },
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "gray"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery type",
+       "op": "eq",
+       "value": null,
+       "unit": null,
+       "ref": true
+      },
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "cn",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 360,
+     "target": "p-6050c547cc0b",
+     "n_a_stated_cap": 11,
+     "n_a_final": 3,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 360,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Drop color from the search, please, as I'd rather get into harbour than keep tacking.",
+     "new_cap": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Between the rota and the rent, 269 cents in USD is as far as I dare go, I'm afraid.",
+     "new_cap": 269
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-d38d81ac25",
+   "extra": {
+    "kinds": [
+     "drop",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_36",
+    "orig_id": "t-d38d81ac25",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d38d81ac25",
+     "agent": "Katapa",
+     "rank": 11,
+     "eid": "04c9d193-caa",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 42,
+     "cart": [
+      [
+       "p-feb3564a8edf",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-2131334ec248",
+      "p-12fcdbd40da3",
+      "p-316cd0dc4ce0",
+      "p-6c15bfbb0247",
+      "p-7f83c88b4faf"
+     ],
+     [
+      "p-649bad1fa466"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 8.518253400143164,
+    "subjects": [
+     "battery type",
+     "plug type",
+     "pack size"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": "battery type (terminal Molenqi card absent from the field catalog)",
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 360,
+    "jufuli": 360,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 360,
+    "jufuli": 360,
+    "lita": [
+     33
+    ],
+    "reza": [
+     288
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 269,
+    "jufuli": 269,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 269,
+    "jufuli": 269,
+    "lita": [
+     33
+    ],
+    "reza": [
+     288
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-2131334ec248",
+    "p-12fcdbd40da3",
+    "p-316cd0dc4ce0",
+    "p-6c15bfbb0247",
+    "p-7f83c88b4faf"
+   ],
+   [
+    "p-649bad1fa466"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-decd9eda7b",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 7,
+   "lita_min": 5,
+   "lita_logmean": 2.353,
+   "lita_log_prod": 9.412,
+   "hidden_cut": 0.0,
+   "reza_log": 9.412,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "usage",
+       "op": "eq",
+       "value": "damp location"
+      },
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 40,
+       "unit": "watts"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "depth"
+     ],
+     "cap_line": 8500,
+     "target": "p-014260532861",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "e14"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "depth"
+     ],
+     "cap_line": 8500,
+     "target": "p-0661b5255d84",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "voltage",
+       "op": "ge",
+       "value": 120,
+       "unit": "v"
+      },
+      {
+       "prop": "wattage",
+       "op": "ge",
+       "value": 14,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "depth"
+     ],
+     "cap_line": 8500,
+     "target": "p-02a948c957fe",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs"
+      },
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 18,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "depth"
+     ],
+     "cap_line": 8500,
+     "target": "p-60d0323a07d0",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8500,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 91,
+   "task_id": "t-decd9eda7b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_37",
+    "orig_id": "t-decd9eda7b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-decd9eda7b",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 91,
+     "cart": [
+      [
+       "p-014260532861",
+       2
+      ],
+      [
+       "p-0661b5255d84",
+       2
+      ],
+      [
+       "p-02a948c957fe",
+       2
+      ],
+      [
+       "p-60d0323a07d0",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-d9bd6848dab5",
+      "p-0661b5255d84"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 91,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 11.69049621530698,
+    "subjects": [
+     "color of the light fixtures",
+     "depth of the light fixtures"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8500,
+    "jufuli": 1730,
+    "lita": [
+     8,
+     9,
+     34,
+     5
+    ],
+    "reza": [
+     8,
+     9,
+     34,
+     5
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-d9bd6848dab5",
+    "p-0661b5255d84"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dfbeb073f0",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 1.666,
+   "lita_log_prod": 3.332,
+   "hidden_cut": 0.429,
+   "reza_log": 4.99,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "eq",
+       "value": "fragrance free"
+      },
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 650,
+       "unit": "ml"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 710,
+     "target": "p-164c5a515dc4",
+     "n_a_stated_cap": 21,
+     "n_a_final": 14,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "3000-4000"
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 4,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery size",
+       "op": "eq",
+       "value": "18650",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 710,
+     "target": "p-16e718ef6cd3",
+     "n_a_stated_cap": 7,
+     "n_a_final": 2,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 710,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-dfbeb073f0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_38",
+    "orig_id": "t-dfbeb073f0",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-dfbeb073f0",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-164c5a515dc4",
+       3
+      ],
+      [
+       "p-16e718ef6cd3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 12.968299711815561,
+    "subjects": [
+     "battery size of the batteries & battery chargers",
+     "pack type of the food containers",
+     "packaging type of the food containers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 710,
+    "jufuli": 548,
+    "lita": [
+     14,
+     2
+    ],
+    "reza": [
+     21,
+     7
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e365c16fc4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 2.708,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "bowl type"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "motorcycle model",
+       "op": "eq",
+       "value": "honda xrm 125",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "motorcycle make"
+     ],
+     "cap_line": 470,
+     "target": null,
+     "n_a_stated_cap": 15,
+     "n_a_final": 0,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 470,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'll let type go, if it helps you find something.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-e365c16fc4",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_39",
+    "orig_id": "t-e365c16fc4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e365c16fc4",
+     "agent": "Carlo Ancelotti",
+     "rank": 58,
+     "eid": "a5c314ef-ad5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-0cf682749988",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 24.53591606133979,
+    "subjects": [
+     "color",
+     "motorcycle model",
+     "motorcycle make"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 470,
+    "jufuli": 470,
+    "lita": [
+     0
+    ],
+    "reza": [
+     15
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 470,
+    "jufuli": 445,
+    "lita": [
+     7
+    ],
+    "reza": [
+     294
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e41412cb41",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 5,
+   "lita_logmean": 2.187,
+   "lita_log_prod": 8.748,
+   "hidden_cut": 0.321,
+   "reza_log": 10.274,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 107
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "brass"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 9,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 5550,
+     "target": "p-1693080dcc5b",
+     "n_a_stated_cap": 23,
+     "n_a_final": 10,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bulb shape",
+       "op": "eq",
+       "value": "globe"
+      },
+      {
+       "prop": "lifespan",
+       "op": "le",
+       "value": 25000,
+       "unit": "hours"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 5550,
+     "target": "p-040750f0104c",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "energy saving",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 5550,
+     "target": "p-3a72c82a799f",
+     "n_a_stated_cap": 10,
+     "n_a_final": 5,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "eu"
+      },
+      {
+       "prop": "input voltage",
+       "op": "ge",
+       "value": 220,
+       "unit": "v"
+      }
+     ],
+     "line_cap": 490,
+     "hidden": [],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 5550,
+     "target": "p-0a069bcfd183",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5550,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 107,
+   "task_id": "t-e41412cb41",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_40",
+    "orig_id": "t-e41412cb41",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e41412cb41",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 107,
+     "cart": [
+      [
+       "p-1693080dcc5b",
+       1
+      ],
+      [
+       "p-040750f0104c",
+       1
+      ],
+      [
+       "p-3a72c82a799f",
+       2
+      ],
+      [
+       "p-0a069bcfd183",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 107,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 10.828025477707007,
+    "subjects": [
+     "light effects of the compact fluorescent bulbs",
+     "depth of the light fixtures",
+     "width of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": "light fixtures material metal -> led light bulbs dimmable yes",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5550,
+    "jufuli": 5550,
+    "lita": [
+     10,
+     14,
+     5,
+     9
+    ],
+    "reza": [
+     23,
+     14,
+     10,
+     9
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e7fe509c4a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.818,
+   "reza_log": 2.398,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "cylinder"
+      },
+      {
+       "prop": "food container features",
+       "op": "ne",
+       "value": "leak resistant"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "plastic",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 220,
+     "target": "p-01137b3456b1",
+     "n_a_stated_cap": 11,
+     "n_a_final": 2,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 220,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Thinking on, food container features was only a notion of mine, so ease off it.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-e7fe509c4a",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_41",
+    "orig_id": "t-e7fe509c4a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e7fe509c4a",
+     "agent": "Carlo Ancelotti",
+     "rank": 58,
+     "eid": "1b1db6c5-0d3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-d60b3f60b02f",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-2fa51f35f170",
+      "p-7cd223378562"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 8.918539325842696,
+    "subjects": [
+     "material",
+     "capacity"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 220,
+    "jufuli": 220,
+    "lita": [
+     2
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 220,
+    "jufuli": 220,
+    "lita": [
+     6
+    ],
+    "reza": [
+     30
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-2fa51f35f170",
+    "p-7cd223378562"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f4408f1b8e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 63,
+   "lita_logmean": 4.143,
+   "lita_log_prod": 4.143,
+   "hidden_cut": 0.792,
+   "reza_log": 5.714,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": null,
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 48,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 2550,
+     "target": "p-004de1920d6d",
+     "n_a_stated_cap": 303,
+     "n_a_final": 63,
+     "n_a0_nocap": 303,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2550,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Could we aim for 3220 cents in USD instead, please? The car's been in the garage again.",
+     "new_cap": 3220
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "You can forget about color, love; I've been up since dawn and it's not worth the bother.",
+     "new_cap": null
+    }
+   ],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-f4408f1b8e",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_42",
+    "orig_id": "t-f4408f1b8e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f4408f1b8e",
+     "agent": "Hansi Flick",
+     "rank": 99,
+     "eid": "f1b14017-b0a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 19,
+     "cart": [
+      [
+       "p-01323130bce1",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9c4aee12553d",
+      "p-823a980a13f5",
+      "p-9c890dcab642",
+      "p-b44c10501c53"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 11.45175834084761,
+    "subjects": [
+     "height",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": "color (terminal Molenkovex card absent from the field catalog; the drop event removes the clause)",
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2550,
+    "jufuli": 2550,
+    "lita": [
+     63
+    ],
+    "reza": [
+     303
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3220,
+    "jufuli": 3220,
+    "lita": [
+     63
+    ],
+    "reza": [
+     303
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2550,
+    "jufuli": 2550,
+    "lita": [
+     63
+    ],
+    "reza": [
+     303
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 3220,
+    "jufuli": 3220,
+    "lita": [
+     63
+    ],
+    "reza": [
+     303
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-9c4aee12553d",
+    "p-823a980a13f5",
+    "p-9c890dcab642",
+    "p-b44c10501c53"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f5e20a95f0",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 0.549,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.556,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "shape",
+       "op": "eq",
+       "value": "cylinder"
+      },
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "plastic"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "food container features",
+       "op": "eq",
+       "value": "airtight",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 2350,
+     "target": "p-01137b3456b1",
+     "n_a_stated_cap": 6,
+     "n_a_final": 3,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "motorcycle model series",
+       "op": "eq",
+       "value": "thunder"
+      },
+      {
+       "prop": "size",
+       "op": "ge",
+       "value": 220,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "front",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 2350,
+     "target": "p-39397ba27391",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2350,
+   "cheapest": false,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-f5e20a95f0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_43",
+    "orig_id": "t-f5e20a95f0",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f5e20a95f0",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-01137b3456b1",
+       3
+      ],
+      [
+       "p-39397ba27391",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0dc8b04921e0",
+      "p-c591b0d058f4"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 12.266450040617384,
+    "subjects": [
+     "food container features of the food containers",
+     "position of the brake rotors",
+     "capacity of the food containers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2350,
+    "jufuli": 2350,
+    "lita": [
+     3,
+     1
+    ],
+    "reza": [
+     6,
+     3
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0dc8b04921e0",
+    "p-c591b0d058f4"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fb04ac45e5",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 3,
+   "lita_logmean": 2.309,
+   "lita_log_prod": 9.236,
+   "hidden_cut": 0.137,
+   "reza_log": 11.98,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 99
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "usage",
+       "op": "eq",
+       "value": "damp location"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "wattage"
+     ],
+     "cap_line": 7300,
+     "target": "p-014260532861",
+     "n_a_stated_cap": 14,
+     "n_a_final": 3,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "eu"
+      },
+      {
+       "prop": "input voltage",
+       "op": "le",
+       "value": 220,
+       "unit": "v"
+      }
+     ],
+     "line_cap": 455,
+     "hidden": [],
+     "decoys": [
+      "wattage"
+     ],
+     "cap_line": 7300,
+     "target": "p-0a069bcfd183",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "colour-changing",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "wattage"
+     ],
+     "cap_line": 7300,
+     "target": "p-60d0323a07d0",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 7,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "wattage"
+     ],
+     "cap_line": 7300,
+     "target": "p-001d14637fb4",
+     "n_a_stated_cap": 95,
+     "n_a_final": 95,
+     "n_a0_nocap": 95,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7300,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 99,
+   "task_id": "t-fb04ac45e5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_44",
+    "orig_id": "t-fb04ac45e5",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fb04ac45e5",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 99,
+     "cart": [
+      [
+       "p-014260532861",
+       1
+      ],
+      [
+       "p-0a069bcfd183",
+       2
+      ],
+      [
+       "p-60d0323a07d0",
+       1
+      ],
+      [
+       "p-001d14637fb4",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 99,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 15.325994919559696,
+    "subjects": [
+     "color of the light fixtures",
+     "light effects of the compact fluorescent bulbs",
+     "wattage of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7300,
+    "jufuli": 1449,
+    "lita": [
+     3,
+     12,
+     3,
+     95
+    ],
+    "reza": [
+     14,
+     12,
+     10,
+     95
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fddcfd92c2",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.004,
+   "lita_log_prod": 4.007,
+   "hidden_cut": 0.034,
+   "reza_log": 5.106,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r9",
+   "flavor": "r9",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "lighten"
+      },
+      {
+       "prop": "size",
+       "op": "le",
+       "value": 190,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "holes"
+     ],
+     "cap_line": 11000,
+     "target": "p-9dc3231b3a75",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hair Care Treatments",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "volume",
+       "op": "le",
+       "value": 120,
+       "unit": "ml"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "holes"
+     ],
+     "cap_line": 11000,
+     "target": "p-08c606480e8a",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11000,
+   "cheapest": true,
+   "events": [],
+   "messages": 4,
+   "steps": 43,
+   "task_id": "t-fddcfd92c2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r9_45",
+    "orig_id": "t-fddcfd92c2",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fddcfd92c2",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-9dc3231b3a75",
+       2
+      ],
+      [
+       "p-08c606480e8a",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-68125e6c30d8",
+      "p-264c4ad09f11"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 3.408146300914381,
+    "subjects": [
+     "color of the brake rotors",
+     "holes of the brake rotors"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11000,
+    "jufuli": 1954,
+    "lita": [
+     1,
+     55
+    ],
+    "reza": [
+     3,
+     55
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-68125e6c30d8",
+    "p-264c4ad09f11"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ }
+]

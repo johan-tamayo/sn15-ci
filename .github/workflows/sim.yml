@@ -1,0 +1,150 @@
+name: sim
+# SN15 Design S store-only read on GitHub-hosted runners: plan (shard the task ids per nonce) -> run (one job per
+# (nonce, shard), world_sim.py with the Claude BYOK reader) -> merge (<label>_n<nonce>.jsonl + summary).
+# Dispatched by `sn15 gh-run <agent_s.py> ...` (tools/gh_run.py on the Mac), which commits agents/<sha8>.py first.
+run-name: "${{ inputs.label }} [${{ inputs.agent_sha8 }}] ${{ inputs.pack }} n=${{ inputs.nonces }} x${{ inputs.shards }} ${{ inputs.run_token }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent_sha8:
+        description: "agents/<sha8>.py in this repo (committed by sn15 gh-run before dispatch)"
+        required: true
+        type: string
+      pack:
+        description: "pack name under suites/graded30_v2/packs (s14_r9 | s14_r8 | s14_qual) or a repo-relative dir"
+        default: s14_r9
+        type: string
+      tasks:
+        description: "comma-separated task ids, or all"
+        default: all
+        type: string
+      nonces:
+        description: "episode nonces, comma-separated (world_sim --nonce)"
+        default: "0,1"
+        type: string
+      shards:
+        description: "shards per nonce (jobs = nonces x shards)"
+        default: "10"
+        type: string
+      failure_rate:
+        description: "world_sim --inference-failure-rate"
+        default: "0.07"
+        type: string
+      label:
+        description: "output label: <label>_n<nonce>.jsonl (default gh_<sha8>_<pack>)"
+        default: ""
+        type: string
+      workers:
+        description: "world_sim --workers per shard job (capped at the shard's task count)"
+        default: "4"
+        type: string
+      live_labelers:
+        description: "SN15_WORLD_LIVE_LABELERS: 0 = every shopper call on the Claude BYOK reader (no prepaid credit); 1 = the pack's own completion models over OpenRouter (bills prepaid credits)"
+        default: "0"
+        type: string
+      run_token:
+        description: "opaque token the trigger uses to find this run (optional)"
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      label: ${{ steps.plan.outputs.label }}
+      n_tasks: ${{ steps.plan.outputs.n_tasks }}
+      n_jobs: ${{ steps.plan.outputs.n_jobs }}
+      pack_dir: ${{ steps.plan.outputs.pack_dir }}
+      tasks_csv: ${{ steps.plan.outputs.tasks_csv }}
+      nonces_csv: ${{ steps.plan.outputs.nonces_csv }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        shell: bash
+        env:
+          IN_PACK: ${{ inputs.pack }}
+          IN_TASKS: ${{ inputs.tasks }}
+          IN_NONCES: ${{ inputs.nonces }}
+          IN_SHARDS: ${{ inputs.shards }}
+          IN_LABEL: ${{ inputs.label }}
+          IN_SHA8: ${{ inputs.agent_sha8 }}
+        run: |
+          python3 ci/plan.py --pack "$IN_PACK" --tasks "$IN_TASKS" --nonces "$IN_NONCES" --shards "$IN_SHARDS" \
+            --label "$IN_LABEL" --agent-sha8 "$IN_SHA8" | tee -a "$GITHUB_OUTPUT"
+
+  run:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    name: "n${{ matrix.nonce }} shard ${{ matrix.shard }} (${{ matrix.n }} tasks)"
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJson(needs.plan.outputs.matrix) }}
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      SN15_WORLD_LIVE_LABELERS: ${{ inputs.live_labelers }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: pip install
+        run: python -m pip install --quiet --disable-pip-version-check -r requirements.txt
+      - name: prepare runtime + reader cache
+        run: bash ci/prepare.sh
+      - name: world_sim shard
+        env:
+          SHARD_TASKS: ${{ matrix.tasks }}
+          WORKERS: ${{ inputs.workers }}
+          FAILURE_RATE: ${{ inputs.failure_rate }}
+          AGENT_SHA8: ${{ inputs.agent_sha8 }}
+          PACK_DIR: ${{ needs.plan.outputs.pack_dir }}
+        run: bash ci/run_shard.sh "agents/${AGENT_SHA8}.py" "$PACK_DIR" "${{ matrix.nonce }}" "${{ matrix.shard }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shard-${{ matrix.nonce }}-${{ matrix.shard }}
+          path: out/
+          retention-days: 2
+          if-no-files-found: warn
+
+  merge:
+    needs: [plan, run]
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: ci
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: shards
+          merge-multiple: true
+      - name: merge shards
+        env:
+          LABEL: ${{ needs.plan.outputs.label }}
+          NONCES: ${{ needs.plan.outputs.nonces_csv }}
+          EXPECTED: ${{ needs.plan.outputs.tasks_csv }}
+          META: ${{ toJson(inputs) }}
+        run: |
+          ls -la shards || true
+          python3 ci/merge.py --shards-dir shards --out merged --label "$LABEL" --nonces "$NONCES" --expected-tasks "$EXPECTED" --meta "$META"
+          cat merged/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: merged-${{ needs.plan.outputs.label }}
+          path: merged/
+          retention-days: 7
+          if-no-files-found: error

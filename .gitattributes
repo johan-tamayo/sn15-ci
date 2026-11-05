@@ -1,0 +1,5 @@
+# Signed packs: every part is checksummed by the runtime (manifest.parts), so bytes must never be rewritten.
+* -text
+*.tar.gz binary
+*.gz binary
+*.jsonl -text

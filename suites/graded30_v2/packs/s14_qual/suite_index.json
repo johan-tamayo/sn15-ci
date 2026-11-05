@@ -1,0 +1,3813 @@
+[
+ {
+  "task_id": "t-0040fbe66b",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "ours_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.941,
+   "reza_log": 2.833,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Routers",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "network",
+       "op": "eq",
+       "value": "wireless n"
+      },
+      {
+       "prop": "maximum download speed",
+       "op": "eq",
+       "value": ""
+      }
+     ],
+     "decoys": [
+      "power consumption",
+      "ports"
+     ],
+     "cap_line": 1500,
+     "target": "p-7aa5c0f82559",
+     "n_a_stated_cap": 17,
+     "n_a_final": 1,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-0040fbe66b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_01",
+    "orig_id": "t-0040fbe66b",
+    "truth_source": "ours_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0040fbe66b",
+     "agent": "FI12e5_ours",
+     "rank": 5,
+     "eid": "3bbc9edb-7b4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "ours_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-7aa5c0f82559",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "network",
+     "maximum download speed",
+     "power consumption",
+     "ports"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1500,
+    "jufuli": 1500,
+    "lita": [
+     1
+    ],
+    "reza": [
+     17
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-108fbf1075",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.625,
+   "reza_log": 2.079,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Cola",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single"
+      }
+     ],
+     "decoys": [
+      "flavor",
+      "capacity",
+      "dietary needs"
+     ],
+     "cap_line": 450,
+     "target": "p-2a560c6c65f8",
+     "n_a_stated_cap": 8,
+     "n_a_final": 3,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 450,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-108fbf1075",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_02",
+    "orig_id": "t-108fbf1075",
+    "truth_source": "kisame_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-108fbf1075",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "38a037aa-117",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 17,
+     "cart": [
+      [
+       "p-2a560c6c65f8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pack type",
+     "flavor",
+     "capacity",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 450,
+    "jufuli": 116,
+    "lita": [
+     3
+    ],
+    "reza": [
+     8
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-19e695ad40",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Multipacks & Sharing Bags",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "dietary needs",
+      "pack size",
+      "flavor",
+      "capacity"
+     ],
+     "cap_line": 260,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 260,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-19e695ad40",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_03",
+    "orig_id": "t-19e695ad40",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-19e695ad40",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "39f8c227-ad1",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 27,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": true,
+    "dnu_default": false,
+    "subjects": [
+     "dietary needs",
+     "pack size",
+     "flavor",
+     "capacity"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 260,
+    "jufuli": 260,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-20fcb00ff0",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "ours_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 7,
+   "lita_logmean": 1.946,
+   "lita_log_prod": 1.946,
+   "hidden_cut": 0.632,
+   "reza_log": 2.944,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Dining Room Sets",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "table base",
+       "op": "eq",
+       "value": "trestle"
+      }
+     ],
+     "decoys": [
+      "material",
+      "style",
+      "seats"
+     ],
+     "cap_line": 7550,
+     "target": "p-19657185dc01",
+     "n_a_stated_cap": 19,
+     "n_a_final": 7,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7550,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-20fcb00ff0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "ours_needs_not_found",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_04",
+    "orig_id": "t-20fcb00ff0",
+    "truth_source": "ours_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-20fcb00ff0",
+     "agent": "FI12e5_ours",
+     "rank": 5,
+     "eid": "1774faa6-bdf",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "ours_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-2d40fdf6b527",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "table base",
+     "material",
+     "style",
+     "seats"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7550,
+    "jufuli": 7550,
+    "lita": [
+     7
+    ],
+    "reza": [
+     19
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-275498f5da",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 20,
+   "lita_logmean": 2.996,
+   "lita_log_prod": 2.996,
+   "hidden_cut": 0.0,
+   "reza_log": 2.996,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Prescription glasses",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "frame shape",
+      "color",
+      "prescription",
+      "gender"
+     ],
+     "cap_line": 199,
+     "target": "p-05eb81b002b8",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 199,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-275498f5da",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_05",
+    "orig_id": "t-275498f5da",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-275498f5da",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "12400a93-025",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-2c237d16fb79",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "frame shape",
+     "color",
+     "prescription",
+     "gender"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 199,
+    "jufuli": 199,
+    "lita": [
+     20
+    ],
+    "reza": [
+     20
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2f74bb051d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Men's Sneakers",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "closure",
+      "color",
+      "size"
+     ],
+     "cap_line": 837,
+     "target": "p-1e19c28c3132",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 837,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-2f74bb051d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_06",
+    "orig_id": "t-2f74bb051d",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-2f74bb051d",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "07831751-545",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-a7cb907965b6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "closure",
+     "color",
+     "size"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 837,
+    "jufuli": 837,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3254025544",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.389,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Cola",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "can"
+      }
+     ],
+     "decoys": [
+      "dietary needs",
+      "capacity",
+      "flavor"
+     ],
+     "cap_line": 126,
+     "target": "p-06d9cce41aa6",
+     "n_a_stated_cap": 18,
+     "n_a_final": 11,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 126,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-3254025544",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_07",
+    "orig_id": "t-3254025544",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3254025544",
+     "agent": "C.RONALDO",
+     "rank": 3,
+     "eid": "6a36e7b1-c3d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 10,
+     "cart": [
+      [
+       "p-69b1d52e8e6e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "packaging type",
+     "dietary needs",
+     "capacity",
+     "flavor"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 126,
+    "jufuli": 126,
+    "lita": [
+     11
+    ],
+    "reza": [
+     18
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-32cbbe307e",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Sweatshirts and Hoodies",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "fit",
+      "size",
+      "color",
+      "neckline"
+     ],
+     "cap_line": 6277,
+     "target": "p-1a985b52c064",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6277,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-32cbbe307e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest",
+     "hard18",
+     "ours_not_best",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_08",
+    "orig_id": "t-32cbbe307e",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-32cbbe307e",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "1c25af26-f78",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 21,
+     "cart": [
+      [
+       "p-f1dd99609db5",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "fit",
+     "size",
+     "color",
+     "neckline"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6277,
+    "jufuli": 3500,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-3553587b35",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Maternity Bottoms",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "pants length",
+      "fit",
+      "bottoms type"
+     ],
+     "cap_line": 965,
+     "target": "p-16ed5d3ae2a8",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 965,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-3553587b35",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_09",
+    "orig_id": "t-3553587b35",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-3553587b35",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "61d0da5d-b13",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 17,
+     "cart": [
+      [
+       "p-fd4dfa741d43",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "pants length",
+     "fit",
+     "bottoms type"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 965,
+    "jufuli": 965,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-38edeb49f9",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.0,
+   "reza_log": 1.386,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Dining Room Sets",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "style",
+      "color",
+      "shape",
+      "set"
+     ],
+     "cap_line": 4383,
+     "target": "p-239119046405",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4383,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-38edeb49f9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest",
+     "hard18",
+     "ours_not_best",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_10",
+    "orig_id": "t-38edeb49f9",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-38edeb49f9",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "38daab0e-271",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 15,
+     "cart": [
+      [
+       "p-239119046405",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "style",
+     "color",
+     "shape",
+     "set"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4383,
+    "jufuli": 170,
+    "lita": [
+     4
+    ],
+    "reza": [
+     4
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-43bc201724",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Lollipops & Hard Candy",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "flavor",
+      "dietary needs",
+      "weight",
+      "color family"
+     ],
+     "cap_line": 167,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 167,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-43bc201724",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_11",
+    "orig_id": "t-43bc201724",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-43bc201724",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "47160d18-9c1",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 27,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": true,
+    "dnu_default": false,
+    "subjects": [
+     "flavor",
+     "dietary needs",
+     "weight",
+     "color family"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 167,
+    "jufuli": 167,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4818b794cc",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 13,
+   "lita_logmean": 2.565,
+   "lita_log_prod": 2.565,
+   "hidden_cut": 0.0,
+   "reza_log": 2.565,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Dresses & Jumpsuits",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "sleeve length",
+      "pattern",
+      "material",
+      "fit"
+     ],
+     "cap_line": 1050,
+     "target": "p-08b5746ba98f",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1050,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-4818b794cc",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_12",
+    "orig_id": "t-4818b794cc",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4818b794cc",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "d82eb901-9e0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 23,
+     "cart": [
+      [
+       "p-68a11f3476fc",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "sleeve length",
+     "pattern",
+     "material",
+     "fit"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1050,
+    "jufuli": 1050,
+    "lita": [
+     13
+    ],
+    "reza": [
+     13
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4c419a2ae3",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.8,
+   "reza_log": 2.708,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Shirts",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "basic"
+      }
+     ],
+     "decoys": [
+      "material",
+      "pattern",
+      "size class"
+     ],
+     "cap_line": 396,
+     "target": "p-02ca6eb95dfb",
+     "n_a_stated_cap": 15,
+     "n_a_final": 3,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 396,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-4c419a2ae3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "ours_needs_not_found",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_13",
+    "orig_id": "t-4c419a2ae3",
+    "truth_source": "kisame_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4c419a2ae3",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "52203fd1-1d0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 16,
+     "cart": [
+      [
+       "p-9d7e80858d7c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "style",
+     "material",
+     "pattern",
+     "size class"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 396,
+    "jufuli": 396,
+    "lita": [
+     3
+    ],
+    "reza": [
+     15
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-52bddabbe7",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 25,
+   "lita_logmean": 3.219,
+   "lita_log_prod": 3.219,
+   "hidden_cut": 0.0,
+   "reza_log": 3.219,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Smart TV",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "resolution",
+      "display type",
+      "smart tv os",
+      "power consumption"
+     ],
+     "cap_line": 4820,
+     "target": "p-1819bbe31449",
+     "n_a_stated_cap": 25,
+     "n_a_final": 25,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4820,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-52bddabbe7",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_14",
+    "orig_id": "t-52bddabbe7",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-52bddabbe7",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "0b3b7910-dd6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 12,
+     "cart": [
+      [
+       "p-2cb7a7b88004",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "resolution",
+     "display type",
+     "smart tv os",
+     "power consumption"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4820,
+    "jufuli": 4820,
+    "lita": [
+     25
+    ],
+    "reza": [
+     25
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-56b3551396",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.0,
+   "reza_log": 1.609,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Men's Sneakers",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "size",
+      "material",
+      "closure",
+      "pattern"
+     ],
+     "cap_line": 2500,
+     "target": "p-2d888c422867",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-56b3551396",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_15",
+    "orig_id": "t-56b3551396",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-56b3551396",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "370cf42d-df0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-a7cb907965b6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "size",
+     "material",
+     "closure",
+     "pattern"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     5
+    ],
+    "reza": [
+     5
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-58da11237f",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.0,
+   "reza_log": 2.398,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Routers",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "max upload speed",
+      "wifi standard",
+      "maximum upload speed",
+      "maximum download speed"
+     ],
+     "cap_line": 1500,
+     "target": "p-01f48938217c",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-58da11237f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_16",
+    "orig_id": "t-58da11237f",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-58da11237f",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "2970a03b-f42",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 27,
+     "cart": [
+      [
+       "p-b3255c567af0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "max upload speed",
+     "wifi standard",
+     "maximum upload speed",
+     "maximum download speed"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1500,
+    "jufuli": 1500,
+    "lita": [
+     11
+    ],
+    "reza": [
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-6d9462687c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.0,
+   "reza_log": 1.792,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Dining Room Sets",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "style",
+      "shape",
+      "material",
+      "frame shape"
+     ],
+     "cap_line": 2200,
+     "target": "p-66c7273dde6a",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2200,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-6d9462687c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_17",
+    "orig_id": "t-6d9462687c",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-6d9462687c",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "ca7613d1-f99",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-66c7273dde6a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "style",
+     "shape",
+     "material",
+     "frame shape"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2200,
+    "jufuli": 2200,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6fd2a792df",
+  "tier": "medium",
+  "n_lines": 1,
+  "truth_source": "ours_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 9,
+   "lita_logmean": 2.197,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.591,
+   "reza_log": 3.091,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Cola",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single"
+      }
+     ],
+     "decoys": [
+      "packaging type",
+      "capacity",
+      "flavor"
+     ],
+     "cap_line": 310,
+     "target": "p-06d9cce41aa6",
+     "n_a_stated_cap": 22,
+     "n_a_final": 9,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 310,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-6fd2a792df",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "ours_needs_not_found",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_18",
+    "orig_id": "t-6fd2a792df",
+    "truth_source": "ours_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6fd2a792df",
+     "agent": "FI12e5_ours",
+     "rank": 5,
+     "eid": "665a5e93-9eb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "ours_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 15,
+     "cart": [
+      [
+       "p-06d9cce41aa6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pack type",
+     "packaging type",
+     "capacity",
+     "flavor"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 310,
+    "jufuli": 310,
+    "lita": [
+     9
+    ],
+    "reza": [
+     22
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9bcd8e8a37",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 37,
+   "lita_logmean": 3.611,
+   "lita_log_prod": 3.611,
+   "hidden_cut": 0.0,
+   "reza_log": 3.611,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Shirts",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "style",
+      "pattern",
+      "fit",
+      "color"
+     ],
+     "cap_line": 284,
+     "target": "p-04dd7fab9541",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 284,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-9bcd8e8a37",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_19",
+    "orig_id": "t-9bcd8e8a37",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-9bcd8e8a37",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "3694fd52-346",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-11a5d65469c9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "style",
+     "pattern",
+     "fit",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 284,
+    "jufuli": 284,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9dd842ad5e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.0,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Fall/Winter Footwears",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "boot shaft height",
+      "size",
+      "occasion",
+      "toe shape"
+     ],
+     "cap_line": 679,
+     "target": "p-4d40ff3bcf83",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 679,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-9dd842ad5e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_20",
+    "orig_id": "t-9dd842ad5e",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-9dd842ad5e",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "c4c010e3-785",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-8903a31b8dd9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "boot shaft height",
+     "size",
+     "occasion",
+     "toe shape"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 679,
+    "jufuli": 679,
+    "lita": [
+     14
+    ],
+    "reza": [
+     14
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a38af7fbd2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.0,
+   "reza_log": 1.386,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Women's Sweaters and Cardigans",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color",
+      "size",
+      "fit"
+     ],
+     "cap_line": 10975,
+     "target": "p-150ab7d1f288",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10975,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-a38af7fbd2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_21",
+    "orig_id": "t-a38af7fbd2",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-a38af7fbd2",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "5cf39508-f60",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 15,
+     "cart": [
+      [
+       "p-8eab40391457",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "color",
+     "size",
+     "fit"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10975,
+    "jufuli": 10975,
+    "lita": [
+     4
+    ],
+    "reza": [
+     4
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a9bf915ffc",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "ours_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.0,
+   "reza_log": 1.792,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Sweatshirts and Hoodies",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "fit",
+      "color",
+      "material",
+      "fabric"
+     ],
+     "cap_line": 4800,
+     "target": "p-01513d15dd33",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4800,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-a9bf915ffc",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest",
+     "hard18",
+     "ours_not_best",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_22",
+    "orig_id": "t-a9bf915ffc",
+    "truth_source": "ours_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-a9bf915ffc",
+     "agent": "FI12e5_ours",
+     "rank": 5,
+     "eid": "3db64401-f2a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "ours_pass",
+     "hidden_source": "none",
+     "steps": 17,
+     "cart": [
+      [
+       "p-6a8a72d6e843",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "fit",
+     "color",
+     "material",
+     "fabric"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4800,
+    "jufuli": 3199,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b47de9595e",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.0,
+   "reza_log": 1.386,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Women's Sweaters and Cardigans",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "size",
+      "neckline",
+      "material"
+     ],
+     "cap_line": 4290,
+     "target": "p-04c06951334b",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4290,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-b47de9595e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest",
+     "hard18",
+     "ours_not_best",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_23",
+    "orig_id": "t-b47de9595e",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b47de9595e",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "91803c10-469",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-10dea96f8a77",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pattern",
+     "size",
+     "neckline",
+     "material"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4290,
+    "jufuli": 2290,
+    "lita": [
+     4
+    ],
+    "reza": [
+     4
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-b834e3e526",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 9,
+   "lita_logmean": 2.197,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.0,
+   "reza_log": 2.197,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Sweatshirts and Hoodies",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "fit",
+      "material",
+      "size",
+      "front"
+     ],
+     "cap_line": 8029,
+     "target": "p-20cc23c913aa",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8029,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-b834e3e526",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_24",
+    "orig_id": "t-b834e3e526",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b834e3e526",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "094e31c6-e44",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 15,
+     "cart": [
+      [
+       "p-3cd39e875c73",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "fit",
+     "material",
+     "size",
+     "front"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8029,
+    "jufuli": 8029,
+    "lita": [
+     9
+    ],
+    "reza": [
+     9
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cfa0144fb0",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Mary Janes",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "size",
+      "heel height",
+      "pattern",
+      "toe shape"
+     ],
+     "cap_line": 1300,
+     "target": "p-0ac9addd7253",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1300,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-cfa0144fb0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_25",
+    "orig_id": "t-cfa0144fb0",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-cfa0144fb0",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "e502f5c0-9b6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 21,
+     "cart": [
+      [
+       "p-0ac9addd7253",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "size",
+     "heel height",
+     "pattern",
+     "toe shape"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1300,
+    "jufuli": 1300,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dea5de2a48",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 20,
+   "lita_logmean": 2.996,
+   "lita_log_prod": 2.996,
+   "hidden_cut": 0.0,
+   "reza_log": 2.996,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Jam & Marmalade",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "flavor",
+      "dietary needs",
+      "packaging type",
+      "volume"
+     ],
+     "cap_line": 665,
+     "target": "p-19e2a107e709",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 665,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-dea5de2a48",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_26",
+    "orig_id": "t-dea5de2a48",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-dea5de2a48",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "18b3f663-d1a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-ae500f565d07",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "flavor",
+     "dietary needs",
+     "packaging type",
+     "volume"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 665,
+    "jufuli": 665,
+    "lita": [
+     20
+    ],
+    "reza": [
+     20
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e0ee1dc390",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 16,
+   "lita_logmean": 2.773,
+   "lita_log_prod": 2.773,
+   "hidden_cut": 0.0,
+   "reza_log": 2.773,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Shirts",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "fit",
+      "size",
+      "material",
+      "color"
+     ],
+     "cap_line": 306,
+     "target": "p-069614f2455e",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 306,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-e0ee1dc390",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_27",
+    "orig_id": "t-e0ee1dc390",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e0ee1dc390",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "90a5de03-862",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 12,
+     "cart": [
+      [
+       "p-389d3d969e7f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "fit",
+     "size",
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 306,
+    "jufuli": 306,
+    "lita": [
+     16
+    ],
+    "reza": [
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e622afe641",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.95,
+   "reza_log": 2.996,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Women's Sweaters and Cardigans",
+     "qty": 1,
+     "stated": [],
+     "hidden": [
+      {
+       "prop": "neckline",
+       "op": "eq",
+       "value": "boat neck"
+      }
+     ],
+     "decoys": [
+      "color",
+      "fit",
+      "size"
+     ],
+     "cap_line": 3250,
+     "target": "p-5a1a59c0c2d9",
+     "n_a_stated_cap": 20,
+     "n_a_final": 1,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3250,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-e622afe641",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_28",
+    "orig_id": "t-e622afe641",
+    "truth_source": "kisame_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e622afe641",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "0a1b88e2-6ec",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-5a1a59c0c2d9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "neckline",
+     "color",
+     "fit",
+     "size"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3250,
+    "jufuli": 3250,
+    "lita": [
+     1
+    ],
+    "reza": [
+     20
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fa3dff6e42",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "kisame_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.0,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Fall/Winter Footwears",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "boot type",
+      "material",
+      "size",
+      "gender"
+     ],
+     "cap_line": 550,
+     "target": "p-00c07f1489a0",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 550,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-fa3dff6e42",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "qual_29",
+    "orig_id": "t-fa3dff6e42",
+    "truth_source": "kisame_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-fa3dff6e42",
+     "agent": "KISAME",
+     "rank": 1,
+     "eid": "5a585367-f9b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "kisame_pass",
+     "hidden_source": "none",
+     "steps": 30,
+     "cart": [
+      [
+       "p-0bebc2462d68",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "boot type",
+     "material",
+     "size",
+     "gender"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 550,
+    "jufuli": 550,
+    "lita": [
+     18
+    ],
+    "reza": [
+     18
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fc0b16b797",
+  "tier": "hard",
+  "n_lines": 1,
+  "truth_source": "reconstructed",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 38
+  },
+  "spec": {
+   "suite": "s14_qual",
+   "flavor": "qual",
+   "lines": [
+    {
+     "category": "Prescription glasses",
+     "qty": 1,
+     "stated": [],
+     "hidden": [],
+     "decoys": [
+      "frame shape",
+      "prescription",
+      "frame type",
+      "recommended gender"
+     ],
+     "cap_line": 2150,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2150,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 38,
+   "task_id": "t-fc0b16b797",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "decline",
+     "hard18",
+     "ours_req_not_met",
+     "ours_fail",
+     "kisame_fail"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "qual_30",
+    "orig_id": "t-fc0b16b797",
+    "truth_source": "reconstructed",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-fc0b16b797",
+     "agent": "FI12e5_ours",
+     "rank": 5,
+     "eid": "796aaeb9-54c",
+     "passed": false,
+     "outcome": "request_not_met",
+     "truth_source": "reconstructed",
+     "hidden_source": "none",
+     "steps": 20,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 38,
+    "max_steps": 38,
+    "decline": true,
+    "dnu_default": false,
+    "subjects": [
+     "frame shape",
+     "prescription",
+     "frame type",
+     "recommended gender"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 2150,
+    "jufuli": 2150,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ }
+]

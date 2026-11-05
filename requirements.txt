@@ -1,0 +1,5 @@
+# Pinned from ~/sn15-ops/venvs/sn15venv (Python 3.11) - only what simrace/world_sim.py needs.
+# oro_env_runtime itself is vendored under vendor/rt401 (world_sim puts ~/sn15-ops/venvs/rt401 first on sys.path;
+# ci/prepare.sh copies the vendored tree there), so it is NOT installed from PyPI.
+cryptography==50.0.2
+starlark-pyo3==2026.1.3

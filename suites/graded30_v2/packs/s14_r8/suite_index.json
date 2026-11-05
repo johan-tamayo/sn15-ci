@@ -1,0 +1,8346 @@
+[
+ {
+  "task_id": "t-005a57dea6",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.795,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.842,
+   "reza_log": 9.875,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 106
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "slipcovered"
+      },
+      {
+       "prop": "sofa type",
+       "op": "in",
+       "value": [
+        "modular/sectional",
+        "sofa set"
+       ]
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "style"
+     ],
+     "cap_line": 34500,
+     "target": "p-3d3587dab870",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure type",
+       "op": "eq",
+       "value": "slip-on"
+      },
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "spandex"
+      }
+     ],
+     "decoys": [
+      "style"
+     ],
+     "cap_line": 34500,
+     "target": "p-72a60d99dcd3",
+     "n_a_stated_cap": 6,
+     "n_a_final": 4,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "vintage"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "geometric"
+      }
+     ],
+     "decoys": [
+      "style"
+     ],
+     "cap_line": 34500,
+     "target": "p-bbd90bd32184",
+     "n_a_stated_cap": 54,
+     "n_a_final": 1,
+     "n_a0_nocap": 54,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "chenille"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "beige",
+        "gray"
+       ]
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "herringbone"
+      }
+     ],
+     "decoys": [
+      "style"
+     ],
+     "cap_line": 34500,
+     "target": "p-eb362a39b6b9",
+     "n_a_stated_cap": 10,
+     "n_a_final": 1,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 34500,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 106,
+   "task_id": "t-005a57dea6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_01",
+    "orig_id": "t-005a57dea6",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-005a57dea6",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 106,
+     "cart": [
+      [
+       "p-3d3587dab870",
+       2
+      ],
+      [
+       "p-72a60d99dcd3",
+       1
+      ],
+      [
+       "p-bbd90bd32184",
+       1
+      ],
+      [
+       "p-eb362a39b6b9",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-5e1f9698555d",
+      "p-cd2edb2f6c0e",
+      "p-dec9b481f12d"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 106,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "pattern of the sofa covers & slips",
+     "material of the slipcovers and furniture covers",
+     "pattern of the furniture covers",
+     "style of the sofas"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 34500,
+    "jufuli": 4633,
+    "lita": [
+     6,
+     4,
+     1,
+     1
+    ],
+    "reza": [
+     6,
+     6,
+     54,
+     10
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-5e1f9698555d",
+    "p-cd2edb2f6c0e",
+    "p-dec9b481f12d"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-0439709383",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.727,
+   "reza_log": 2.398,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Desks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "mdf"
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 1800,
+     "target": "p-2f0ef305b88f",
+     "n_a_stated_cap": 11,
+     "n_a_final": 3,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1800,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just so you know before I commit \u2014 the listing for what you recommended seems to have been repriced since we started.",
+     "new_cap": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Little thing \u2014 the listing for that pick of yours now carries a fresh price \u2014 worth a look before we go on.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-0439709383",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_02",
+    "orig_id": "t-0439709383",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0439709383",
+     "agent": "Gaara",
+     "rank": 121,
+     "eid": "0a587192-9ea",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-c1dcd98d4189",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1800,
+    "jufuli": 1626,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1800,
+    "jufuli": 1321,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1800,
+    "jufuli": 1321,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1800,
+    "jufuli": 1321,
+    "lita": [
+     3
+    ],
+    "reza": [
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-05975ba2df",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.9,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "24v"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "aluminium"
+      }
+     ],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 490,
+     "target": "p-662e2db0d808",
+     "n_a_stated_cap": 10,
+     "n_a_final": 1,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 490,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Somebody upstairs is hammering through scales while I check \u2014 and your suggestion now shows a new price tag.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-05975ba2df",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_03",
+    "orig_id": "t-05975ba2df",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-05975ba2df",
+     "agent": "minotaur-v21",
+     "rank": 200,
+     "eid": "4d03b281-e21",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-662e2db0d808",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "light type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 490,
+    "lita": [
+     1
+    ],
+    "reza": [
+     10
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 490,
+    "lita": [
+     1
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1a373bf020",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 31,
+   "lita_logmean": 3.434,
+   "lita_log_prod": 3.434,
+   "hidden_cut": 0.205,
+   "reza_log": 3.664,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "logo"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "cotton"
+      }
+     ],
+     "decoys": [
+      "sleeves"
+     ],
+     "cap_line": 560,
+     "target": "p-024979e50533",
+     "n_a_stated_cap": 39,
+     "n_a_final": 31,
+     "n_a0_nocap": 39,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 560,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-1a373bf020",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_04",
+    "orig_id": "t-1a373bf020",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1a373bf020",
+     "agent": "Goldstone",
+     "rank": 59,
+     "eid": "06ba26ba-432",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-024979e50533",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-e00a26429c12",
+      "p-6af6b5a71e9e",
+      "p-e14e875e2bb0"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "sleeves"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 560,
+    "jufuli": 408,
+    "lita": [
+     31
+    ],
+    "reza": [
+     39
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-e00a26429c12",
+    "p-6af6b5a71e9e",
+    "p-e14e875e2bb0"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1b2608f707",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.312,
+   "lita_log_prod": 4.625,
+   "hidden_cut": 0.617,
+   "reza_log": 6.628,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "eq",
+       "value": "fm2+"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "processor speed",
+       "op": "ge",
+       "value": 3.7
+      }
+     ],
+     "decoys": [
+      "cpu chipset model"
+     ],
+     "cap_line": 2400,
+     "target": "p-051133257812",
+     "n_a_stated_cap": 42,
+     "n_a_final": 17,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "eq",
+       "value": "5 pieces"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "copper"
+      }
+     ],
+     "decoys": [
+      "cpu chipset model"
+     ],
+     "cap_line": 2400,
+     "target": "p-54f5d77894cc",
+     "n_a_stated_cap": 18,
+     "n_a_final": 6,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2400,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-1b2608f707",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_05",
+    "orig_id": "t-1b2608f707",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1b2608f707",
+     "agent": "BONSAI",
+     "rank": 68,
+     "eid": "6494a3a0-60a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-051133257812",
+       3
+      ],
+      [
+       "p-8b8fd179fe3b",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "processor speed of the cpu",
+     "material of the lighting installation & accessories",
+     "cpu chipset model of the cpu"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2400,
+    "jufuli": 2400,
+    "lita": [
+     17,
+     6
+    ],
+    "reza": [
+     42,
+     18
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-2d77497f0b",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 3,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 7.167,
+   "hidden_cut": 0.881,
+   "reza_log": 12.627,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 117
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character"
+      },
+      {
+       "prop": "material",
+       "op": "ne",
+       "value": "pvc"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 11700,
+     "target": "p-353aebaf2f5f",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "checkered"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "green"
+      }
+     ],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 11700,
+     "target": "p-12631c74e6ee",
+     "n_a_stated_cap": 9,
+     "n_a_final": 3,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure type",
+       "op": "eq",
+       "value": "slip-on"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 11700,
+     "target": "p-109c34555275",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 1
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "geometric"
+      },
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "international"
+      }
+     ],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 11700,
+     "target": "p-23f575897ccc",
+     "n_a_stated_cap": 235,
+     "n_a_final": 3,
+     "n_a0_nocap": 235,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11700,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 117,
+   "task_id": "t-2d77497f0b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_06",
+    "orig_id": "t-2d77497f0b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2d77497f0b",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 117,
+     "cart": [
+      [
+       "p-353aebaf2f5f",
+       1
+      ],
+      [
+       "p-12631c74e6ee",
+       2
+      ],
+      [
+       "p-109c34555275",
+       1
+      ],
+      [
+       "p-23f575897ccc",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 117,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "color of the furniture covers",
+     "pattern of the sofa covers & slips",
+     "style of the sofa covers & slips",
+     "sofa type of the sofas"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11700,
+    "jufuli": 11700,
+    "lita": [
+     8,
+     3,
+     18,
+     3
+    ],
+    "reza": [
+     8,
+     9,
+     18,
+     235
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-31ebbae1b0",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 7,
+   "lita_logmean": 2.721,
+   "lita_log_prod": 5.442,
+   "hidden_cut": 0.13,
+   "reza_log": 6.061,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Boxed & Tin Chocolates",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low fat"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 950,
+     "target": "p-05c784d782ce",
+     "n_a_stated_cap": 33,
+     "n_a_final": 33,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "chilled"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bottle"
+      }
+     ],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 950,
+     "target": "p-1302f78a3b1b",
+     "n_a_stated_cap": 13,
+     "n_a_final": 7,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 950,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-31ebbae1b0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_07",
+    "orig_id": "t-31ebbae1b0",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-31ebbae1b0",
+     "agent": "Jade Emperor",
+     "rank": 40,
+     "eid": "0598c443-a95",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-bb4eaf1241f3",
+       1
+      ],
+      [
+       "p-cfbb10145fe8",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-e7ff2e6fe520",
+      "p-d3a273b51175",
+      "p-90ff918e83b7",
+      "p-138c54d911fa"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "packaging type of the specialty meat",
+     "chocolate type of the boxed & tin chocolates"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 950,
+    "jufuli": 950,
+    "lita": [
+     33,
+     7
+    ],
+    "reza": [
+     33,
+     13
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-e7ff2e6fe520",
+    "p-d3a273b51175",
+    "p-90ff918e83b7",
+    "p-138c54d911fa"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-386eaf1949",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 27,
+   "lita_logmean": 3.296,
+   "lita_log_prod": 3.296,
+   "hidden_cut": 0.0,
+   "reza_log": 3.296,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "logo"
+      },
+      {
+       "prop": "sleeves",
+       "op": "ne",
+       "value": "short sleeve"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "recommended age"
+     ],
+     "cap_line": 487,
+     "target": "p-05313f6287c5",
+     "n_a_stated_cap": 27,
+     "n_a_final": 27,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 487,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-386eaf1949",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_08",
+    "orig_id": "t-386eaf1949",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-386eaf1949",
+     "agent": "Chuck",
+     "rank": 65,
+     "eid": "91898018-ffc",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 23,
+     "cart": [
+      [
+       "p-b31b6c645b11",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-ce71a71e9926",
+      "p-8f4a900cac15"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "recommended age"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 487,
+    "jufuli": 487,
+    "lita": [
+     27
+    ],
+    "reza": [
+     27
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-ce71a71e9926",
+    "p-8f4a900cac15"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4898a8a640",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Tops, Tees & Polos",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "v-neck"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "sleeves"
+     ],
+     "cap_line": 331,
+     "target": "p-02692d6092fa",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 331,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Ease up on collar type \u2014 I was being stricter than my own household really requires.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-4898a8a640",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_09",
+    "orig_id": "t-4898a8a640",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4898a8a640",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "392e334f-c98",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-2761db1078f6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pattern",
+     "sleeves"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 331,
+    "jufuli": 331,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 331,
+    "jufuli": 331,
+    "lita": [
+     497
+    ],
+    "reza": [
+     497
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-48abdfe98d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.714,
+   "reza_log": 1.946,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Table Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "24v"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "usb"
+      }
+     ],
+     "decoys": [
+      "light effects"
+     ],
+     "cap_line": 430,
+     "target": "p-3fb33b58e9d8",
+     "n_a_stated_cap": 7,
+     "n_a_final": 2,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 430,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The pickup line is crawling so I rechecked \u2014 and the thing you suggested now says it's gone from the shelves.",
+     "new_cap": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Quick flag from the kitchen counter \u2014 what they're asking for that suggestion looks different now than when you first brought it up.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-48abdfe98d",
+   "extra": {
+    "kinds": [
+     "stockout",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_10",
+    "orig_id": "t-48abdfe98d",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-48abdfe98d",
+     "agent": "Carlo Ancelotti",
+     "rank": 48,
+     "eid": "044fc46a-297",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-3fb33b58e9d8",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8a1204caa075",
+      "p-e7eef1203b32",
+      "p-f5f9012e67e3"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "plug type",
+     "light effects"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 430,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 430,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 430,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 430,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8a1204caa075",
+    "p-e7eef1203b32",
+    "p-f5f9012e67e3"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-4d540a8c0e",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 3,
+   "lita_logmean": 1.85,
+   "lita_log_prod": 7.401,
+   "hidden_cut": 0.0,
+   "reza_log": 7.401,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 117
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 19000,
+     "target": "p-269a0db27f7b",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "tan"
+      },
+      {
+       "prop": "ventilation",
+       "op": "ne",
+       "value": "open front mesh vent"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 19000,
+     "target": "p-4d1bddc3b0c4",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "spandex"
+      },
+      {
+       "prop": "closure type",
+       "op": "eq",
+       "value": "elastic"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 19000,
+     "target": "p-03a8c45687fb",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "antique"
+      },
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 1
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 19000,
+     "target": "p-351aefbbf5c5",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 19000,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 117,
+   "task_id": "t-4d540a8c0e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_11",
+    "orig_id": "t-4d540a8c0e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4d540a8c0e",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 117,
+     "cart": [
+      [
+       "p-269a0db27f7b",
+       1
+      ],
+      [
+       "p-4d1bddc3b0c4",
+       1
+      ],
+      [
+       "p-03a8c45687fb",
+       1
+      ],
+      [
+       "p-351aefbbf5c5",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9800a8fa447d",
+      "p-cd32b1d34c2d",
+      "p-1201e334a07e",
+      "p-4736b632c845"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 117,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "material of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 19000,
+    "jufuli": 6274,
+    "lita": [
+     13,
+     7,
+     6,
+     3
+    ],
+    "reza": [
+     13,
+     7,
+     6,
+     3
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-9800a8fa447d",
+    "p-cd32b1d34c2d",
+    "p-1201e334a07e",
+    "p-4736b632c845"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4e31574c02",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.708,
+   "lita_log_prod": 10.832,
+   "hidden_cut": 0.0,
+   "reza_log": 10.832,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 117
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plaid"
+      },
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "pvc"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 17000,
+     "target": "p-269a0db27f7b",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure type",
+       "op": "eq",
+       "value": "slip-on"
+      },
+      {
+       "prop": "care instructions",
+       "op": "ne",
+       "value": "warm water wash"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 17000,
+     "target": "p-109c34555275",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "floral"
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 1
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 17000,
+     "target": "p-0e955c2d8819",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "green"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 17000,
+     "target": "p-083a96631209",
+     "n_a_stated_cap": 31,
+     "n_a_final": 31,
+     "n_a0_nocap": 31,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 17000,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 117,
+   "task_id": "t-4e31574c02",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_12",
+    "orig_id": "t-4e31574c02",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4e31574c02",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 117,
+     "cart": [
+      [
+       "p-269a0db27f7b",
+       1
+      ],
+      [
+       "p-109c34555275",
+       1
+      ],
+      [
+       "p-0e955c2d8819",
+       2
+      ],
+      [
+       "p-083a96631209",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-65962a2979bc",
+      "p-6f62418f8680",
+      "p-867046747b25"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 117,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "style of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 17000,
+    "jufuli": 1634,
+    "lita": [
+     6,
+     17,
+     16,
+     31
+    ],
+    "reza": [
+     6,
+     17,
+     16,
+     31
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-65962a2979bc",
+    "p-6f62418f8680",
+    "p-867046747b25"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-510275616d",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.717,
+   "lita_log_prod": 6.867,
+   "hidden_cut": 0.732,
+   "reza_log": 12.612,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 117
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character"
+      },
+      {
+       "prop": "sofa type",
+       "op": "ne",
+       "value": "chaise"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "upholstery",
+       "op": "eq",
+       "value": "polyester"
+      }
+     ],
+     "decoys": [
+      "furniture features"
+     ],
+     "cap_line": 18500,
+     "target": "p-353aebaf2f5f",
+     "n_a_stated_cap": 8,
+     "n_a_final": 3,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "chenille"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "furniture features"
+     ],
+     "cap_line": 18500,
+     "target": "p-0b528a29cbb4",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "floral"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "vintage"
+      }
+     ],
+     "decoys": [
+      "furniture features"
+     ],
+     "cap_line": 18500,
+     "target": "p-3e932b41de3c",
+     "n_a_stated_cap": 67,
+     "n_a_final": 8,
+     "n_a0_nocap": 67,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "spandex"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "care instructions",
+       "op": "eq",
+       "value": "warm water wash"
+      }
+     ],
+     "decoys": [
+      "furniture features"
+     ],
+     "cap_line": 18500,
+     "target": "p-0485061d342b",
+     "n_a_stated_cap": 28,
+     "n_a_final": 2,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18500,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 117,
+   "task_id": "t-510275616d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_13",
+    "orig_id": "t-510275616d",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-510275616d",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 117,
+     "cart": [
+      [
+       "p-353aebaf2f5f",
+       1
+      ],
+      [
+       "p-0b528a29cbb4",
+       2
+      ],
+      [
+       "p-3e932b41de3c",
+       1
+      ],
+      [
+       "p-0485061d342b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 117,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "care instructions of the slipcovers and furniture covers",
+     "upholstery of the sofas",
+     "style of the sofa covers & slips",
+     "furniture features of the sofas"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18500,
+    "jufuli": 18500,
+    "lita": [
+     3,
+     20,
+     8,
+     2
+    ],
+    "reza": [
+     8,
+     20,
+     67,
+     28
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-55eaf69b87",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 105,
+   "lita_logmean": 4.654,
+   "lita_log_prod": 4.654,
+   "hidden_cut": 0.0,
+   "reza_log": 4.654,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "op": "eq",
+       "value": "twist lock"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "leg sections",
+      "material"
+     ],
+     "cap_line": 9000,
+     "target": "p-003e1d23cf23",
+     "n_a_stated_cap": 105,
+     "n_a_final": 105,
+     "n_a0_nocap": 105,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9000,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-55eaf69b87",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_14",
+    "orig_id": "t-55eaf69b87",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-55eaf69b87",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "535f957b-7f4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 24,
+     "cart": [
+      [
+       "p-60e81bdec76c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "leg sections",
+     "material"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 844,
+    "lita": [
+     105
+    ],
+    "reza": [
+     105
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a5ffa12fb",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.714,
+   "reza_log": 1.946,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "op": "eq",
+       "value": "twist lock"
+      },
+      {
+       "prop": "folded length",
+       "op": "le",
+       "value": 31
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "leg sections",
+       "op": "ge",
+       "value": 3
+      },
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 0.85
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 9000,
+     "target": "p-a0389774c142",
+     "n_a_stated_cap": 7,
+     "n_a_final": 2,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9000,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "I hate to be the bearer of bad news from the minivan \u2014 but your recommendation can't be ordered anymore.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-5a5ffa12fb",
+   "extra": {
+    "kinds": [
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_15",
+    "orig_id": "t-5a5ffa12fb",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a5ffa12fb",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-a0389774c142",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "leg sections",
+     "weight",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 5052,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 5052,
+    "lita": [
+     2
+    ],
+    "reza": [
+     7
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5bc6657b94",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 24,
+   "lita_logmean": 3.178,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.0,
+   "reza_log": 3.178,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "glass"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light bulb colour",
+      "light bulb type"
+     ],
+     "cap_line": 480,
+     "target": "p-0541cad6fc5b",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 480,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-5bc6657b94",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_16",
+    "orig_id": "t-5bc6657b94",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-5bc6657b94",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "223176e4-72a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-6ee7e534a479",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "light bulb colour",
+     "light bulb type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 480,
+    "jufuli": 480,
+    "lita": [
+     24
+    ],
+    "reza": [
+     24
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6d3b456193",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 13,
+   "lita_logmean": 2.565,
+   "lita_log_prod": 2.565,
+   "hidden_cut": 0.0,
+   "reza_log": 2.565,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Table Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "eq",
+       "value": "book lights"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "light bulb colour"
+     ],
+     "cap_line": 164,
+     "target": "p-30b4eedc0c36",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 164,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm letting go of light type \u2014 the lunch boxes are not going to pack themselves while I debate.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The pickup line is crawling so I rechecked \u2014 and the thing you suggested now says it's gone from the shelves.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-6d3b456193",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_17",
+    "orig_id": "t-6d3b456193",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-6d3b456193",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "75896567-5a8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 19,
+     "cart": [
+      [
+       "p-259228b02502",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "light effects",
+     "light bulb colour"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 164,
+    "jufuli": 26,
+    "lita": [
+     13
+    ],
+    "reza": [
+     13
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 164,
+    "jufuli": 17,
+    "lita": [
+     560
+    ],
+    "reza": [
+     560
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 164,
+    "jufuli": 26,
+    "lita": [
+     13
+    ],
+    "reza": [
+     13
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 164,
+    "jufuli": 17,
+    "lita": [
+     560
+    ],
+    "reza": [
+     560
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6d7c8b6281",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 3.091,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "logo"
+      },
+      {
+       "prop": "season",
+       "op": "in",
+       "value": [
+        "summer",
+        "winter"
+       ]
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "recommended age",
+       "op": "eq",
+       "value": "teens (11-16yrs)"
+      }
+     ],
+     "decoys": [
+      "sleeves"
+     ],
+     "cap_line": 487,
+     "target": null,
+     "n_a_stated_cap": 22,
+     "n_a_final": 0,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 487,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-6d7c8b6281",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "0line",
+     "hidden",
+     "cheapest",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_18",
+    "orig_id": "t-6d7c8b6281",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6d7c8b6281",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "decline-pass",
+     "passed": true,
+     "outcome": "PASSED (DECLINE)",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": true,
+    "dnu_default": false,
+    "subjects": [
+     "recommended age",
+     "sleeves"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 487,
+    "jufuli": 487,
+    "lita": [
+     0
+    ],
+    "reza": [
+     22
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-712a413a77",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 1.708,
+   "lita_log_prod": 5.124,
+   "hidden_cut": 0.46,
+   "reza_log": 8.228,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "product type",
+       "op": "eq",
+       "value": "fresh"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "eq",
+       "value": "pork"
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 3400,
+     "target": "p-04b52d54f81d",
+     "n_a_stated_cap": 26,
+     "n_a_final": 14,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "in",
+       "value": [
+        "85 v",
+        "85v",
+        "ac 85v",
+        "85v-265v",
+        "ac 85v-265v"
+       ]
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "colour-changing"
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 3400,
+     "target": "p-d49641983e1b",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Table Lamps",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "eq",
+       "value": "pendants"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 3400,
+     "target": "p-09e3b5664e17",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3400,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-712a413a77",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_19",
+    "orig_id": "t-712a413a77",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-712a413a77",
+     "agent": "Good CLOVER",
+     "rank": 34,
+     "eid": "24654767-cea",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-7d7cce2eef87",
+       2
+      ],
+      [
+       "p-d49641983e1b",
+       1
+      ],
+      [
+       "p-e2e2254659b5",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-1029a4914451",
+      "p-e9c0151ae16e",
+      "p-64cd31a4393f"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "meat type of the specialty meat",
+     "light effects of the lighting installation & accessories",
+     "dietary needs of the specialty meat"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3400,
+    "jufuli": 3400,
+    "lita": [
+     14,
+     1,
+     12
+    ],
+    "reza": [
+     26,
+     12,
+     12
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-1029a4914451",
+    "p-e9c0151ae16e",
+    "p-64cd31a4393f"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-718accf96a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.0,
+   "reza_log": 0.693,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "embroidery"
+      },
+      {
+       "prop": "sleeves",
+       "op": "ne",
+       "value": "long sleeve"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "style"
+     ],
+     "cap_line": 2000,
+     "target": "p-62e48195760b",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2000,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-718accf96a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_20",
+    "orig_id": "t-718accf96a",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-718accf96a",
+     "agent": "Gaara",
+     "rank": 121,
+     "eid": "a1d9f99b-6f0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 29,
+     "cart": [
+      [
+       "p-62e48195760b",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-4c7aae96cd12",
+      "p-7bffbefda184",
+      "p-a5b0bb288ae3",
+      "p-71733c15c345"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "style"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2000,
+    "jufuli": 2000,
+    "lita": [
+     2
+    ],
+    "reza": [
+     2
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-4c7aae96cd12",
+    "p-7bffbefda184",
+    "p-a5b0bb288ae3",
+    "p-71733c15c345"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-73df5c9507",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 1.261,
+   "lita_log_prod": 3.784,
+   "hidden_cut": 0.242,
+   "reza_log": 5.981,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "refill pouch"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low fat"
+      }
+     ],
+     "decoys": [
+      "meat type"
+     ],
+     "cap_line": 3450,
+     "target": "p-da4f51827641",
+     "n_a_stated_cap": 9,
+     "n_a_final": 1,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3"
+      },
+      {
+       "prop": "processor speed",
+       "op": "le",
+       "value": 3.4
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "meat type"
+     ],
+     "cap_line": 3450,
+     "target": "p-04b431bb51ae",
+     "n_a_stated_cap": 22,
+     "n_a_final": 22,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tops, Tees & Polos",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "scoop neck"
+      },
+      {
+       "prop": "occasion",
+       "op": "ne",
+       "value": "casual"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "meat type"
+     ],
+     "cap_line": 3450,
+     "target": "p-51338b477085",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3450,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-73df5c9507",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_21",
+    "orig_id": "t-73df5c9507",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-73df5c9507",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-da4f51827641",
+       2
+      ],
+      [
+       "p-04b431bb51ae",
+       2
+      ],
+      [
+       "p-51338b477085",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-88a3ec7debea",
+      "p-f411b8cca09d",
+      "p-09205a857053"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "dietary needs of the specialty meat",
+     "meat type of the specialty meat"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 1056,
+    "lita": [
+     1,
+     22,
+     2
+    ],
+    "reza": [
+     9,
+     22,
+     2
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-88a3ec7debea",
+    "p-f411b8cca09d",
+    "p-09205a857053"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-752abae093",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 4,
+   "lita_logmean": 2.282,
+   "lita_log_prod": 4.564,
+   "hidden_cut": 0.152,
+   "reza_log": 5.375,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "recommended age",
+       "op": "eq",
+       "value": "teens (11-16yrs)"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "pattern"
+     ],
+     "cap_line": 1450,
+     "target": "p-05b7c8078cbd",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "cupboard"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "ne",
+       "value": "pork"
+      }
+     ],
+     "decoys": [
+      "pattern"
+     ],
+     "cap_line": 1450,
+     "target": "p-3622e1265bf0",
+     "n_a_stated_cap": 9,
+     "n_a_final": 4,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1450,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-752abae093",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_22",
+    "orig_id": "t-752abae093",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-752abae093",
+     "agent": "Robert Lewandowski",
+     "rank": 54,
+     "eid": "89926a52-137",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-20bd2b8fc7cc",
+       1
+      ],
+      [
+       "p-3622e1265bf0",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8a88317060d3",
+      "p-e47d347f1fef",
+      "p-237680992487",
+      "p-0e9e07bb295b"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "meat type of the specialty meat",
+     "pattern of the hoodies"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1450,
+    "jufuli": 1450,
+    "lita": [
+     24,
+     4
+    ],
+    "reza": [
+     24,
+     9
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8a88317060d3",
+    "p-e47d347f1fef",
+    "p-237680992487",
+    "p-0e9e07bb295b"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-758469ed98",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 7,
+   "lita_logmean": 1.946,
+   "lita_log_prod": 1.946,
+   "hidden_cut": 0.222,
+   "reza_log": 2.197,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "refill pouch"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 500
+      }
+     ],
+     "decoys": [
+      "meat type"
+     ],
+     "cap_line": 800,
+     "target": "p-027872520cab",
+     "n_a_stated_cap": 9,
+     "n_a_final": 7,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 800,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "My lunch-hour scroll turned up a sour note \u2014 your recommendation has no stock left anywhere I can see.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I hate to be the bearer of bad news from the minivan \u2014 but your recommendation can't be ordered anymore.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-758469ed98",
+   "extra": {
+    "kinds": [
+     "stockout",
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_23",
+    "orig_id": "t-758469ed98",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-758469ed98",
+     "agent": "Carlo Ancelotti",
+     "rank": 48,
+     "eid": "0eab5df8-042",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-ff55d6ddbd35",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-326465a7d09d",
+      "p-0f97fc07f0b5",
+      "p-383ca1b8cb58"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "weight",
+     "meat type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 574,
+    "lita": [
+     7
+    ],
+    "reza": [
+     9
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 574,
+    "lita": [
+     7
+    ],
+    "reza": [
+     9
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 574,
+    "lita": [
+     7
+    ],
+    "reza": [
+     9
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 574,
+    "lita": [
+     7
+    ],
+    "reza": [
+     9
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-326465a7d09d",
+    "p-0f97fc07f0b5",
+    "p-383ca1b8cb58"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-879ffe3dfa",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.0,
+   "reza_log": 2.398,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Desks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 1800,
+     "target": "p-10fa9a5fdc29",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1800,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-879ffe3dfa",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_24",
+    "orig_id": "t-879ffe3dfa",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-879ffe3dfa",
+     "agent": "minotaur-v21",
+     "rank": 200,
+     "eid": "b2b1f26e-209",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 28,
+     "cart": [
+      [
+       "p-c1dcd98d4189",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1800,
+    "jufuli": 1197,
+    "lita": [
+     11
+    ],
+    "reza": [
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8d4f9f8f1c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Table Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "eq",
+       "value": "picture & display lights"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "input voltage"
+     ],
+     "cap_line": 240,
+     "target": "p-0abb48f0389d",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 240,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Take light type off my list \u2014 it was more of a nice melody than a real need.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just peeked while the dog was out \u2014 and that suggestion is showing as unavailable.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-8d4f9f8f1c",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_25",
+    "orig_id": "t-8d4f9f8f1c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-8d4f9f8f1c",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "3993095b-d76",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 25,
+     "cart": [
+      [
+       "p-259228b02502",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "light effects",
+     "input voltage"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 26,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 26,
+    "lita": [
+     560
+    ],
+    "reza": [
+     560
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 26,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 26,
+    "lita": [
+     560
+    ],
+    "reza": [
+     560
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9064c9a37c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 2.89,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 1,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "eq",
+       "value": "5 pieces"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "glass"
+      }
+     ],
+     "decoys": [
+      "light bulb type"
+     ],
+     "cap_line": 176,
+     "target": null,
+     "n_a_stated_cap": 18,
+     "n_a_final": 0,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 176,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The pickup line is crawling so I rechecked \u2014 and the thing you suggested now says it's gone from the shelves.",
+     "new_cap": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "The school bus isn't here yet so I peeked again \u2014 and the cost shown for your suggestion has changed key.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-9064c9a37c",
+   "extra": {
+    "kinds": [
+     "stockout",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "0line",
+     "hidden",
+     "event",
+     "cheapest",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_26",
+    "orig_id": "t-9064c9a37c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9064c9a37c",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "decline-pass",
+     "passed": true,
+     "outcome": "PASSED (DECLINE)",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": true,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "light bulb type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 176,
+    "jufuli": 176,
+    "lita": [
+     0
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": true,
+    "suhe": 176,
+    "jufuli": 176,
+    "lita": [
+     0
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": true,
+    "suhe": 176,
+    "jufuli": 176,
+    "lita": [
+     0
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": true,
+    "suhe": 176,
+    "jufuli": 176,
+    "lita": [
+     0
+    ],
+    "reza": [
+     18
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-94bdfd870c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 20,
+   "lita_logmean": 3.631,
+   "lita_log_prod": 10.892,
+   "hidden_cut": 0.0,
+   "reza_log": 10.892,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 90
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "custom"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 25500,
+     "target": "p-00b7b8a29ebe",
+     "n_a_stated_cap": 56,
+     "n_a_final": 56,
+     "n_a0_nocap": 56,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plaid"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 25500,
+     "target": "p-00cd87ffa534",
+     "n_a_stated_cap": 48,
+     "n_a_final": 48,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "chenille"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 25500,
+     "target": "p-0b528a29cbb4",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 25500,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 90,
+   "task_id": "t-94bdfd870c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_27",
+    "orig_id": "t-94bdfd870c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-94bdfd870c",
+     "agent": "REAL",
+     "rank": 127,
+     "eid": "769386b5-e09",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 42,
+     "cart": [
+      [
+       "p-09933ed1e41a",
+       1
+      ],
+      [
+       "p-0b528a29cbb4",
+       2
+      ],
+      [
+       "p-f1db3b7af142",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9f74084aa276",
+      "p-d20960c0112f",
+      "p-ebdc94d91326"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 90,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "style of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 25500,
+    "jufuli": 25500,
+    "lita": [
+     56,
+     48,
+     20
+    ],
+    "reza": [
+     56,
+     48,
+     20
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-9f74084aa276",
+    "p-d20960c0112f",
+    "p-ebdc94d91326"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-97abbcafc6",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 1,
+   "lita_logmean": 0.999,
+   "lita_log_prod": 2.996,
+   "hidden_cut": 0.768,
+   "reza_log": 8.572,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3"
+      },
+      {
+       "prop": "processor speed",
+       "op": "le",
+       "value": 3.4
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "socket",
+       "op": "eq",
+       "value": "lga 1155"
+      }
+     ],
+     "decoys": [
+      "ddr variant"
+     ],
+     "cap_line": 3900,
+     "target": "p-dac98ee0c540",
+     "n_a_stated_cap": 22,
+     "n_a_final": 2,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ceiling Lights",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "24v"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "ddr variant"
+     ],
+     "cap_line": 3900,
+     "target": "p-570b5cfeab16",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "glass"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "light bulb colour",
+       "op": "eq",
+       "value": "clear"
+      }
+     ],
+     "decoys": [
+      "ddr variant"
+     ],
+     "cap_line": 3900,
+     "target": "p-21d9b1284b83",
+     "n_a_stated_cap": 24,
+     "n_a_final": 1,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3900,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-97abbcafc6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_28",
+    "orig_id": "t-97abbcafc6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-97abbcafc6",
+     "agent": "ledger",
+     "rank": 122,
+     "eid": "9a83d5c6-1f4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-21d9b1284b83",
+       1
+      ],
+      [
+       "p-662e2db0d808",
+       3
+      ],
+      [
+       "p-e639216e4bb0",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "socket of the cpu",
+     "light bulb colour of the lighting installation & accessories",
+     "ddr variant of the cpu"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3900,
+    "jufuli": 3900,
+    "lita": [
+     2,
+     10,
+     1
+    ],
+    "reza": [
+     22,
+     10,
+     24
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-9f710d640e",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 2.559,
+   "lita_log_prod": 10.235,
+   "hidden_cut": 0.0,
+   "reza_log": 10.235,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 106
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 24500,
+     "target": "p-269a0db27f7b",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "tan"
+      },
+      {
+       "prop": "pattern",
+       "op": "ne",
+       "value": "ripstop grid"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 24500,
+     "target": "p-55055d9241c3",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "floral"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 24500,
+     "target": "p-021057d14a5a",
+     "n_a_stated_cap": 67,
+     "n_a_final": 67,
+     "n_a0_nocap": 67,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "jacquard",
+        "spandex"
+       ]
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 24500,
+     "target": "p-03a8c45687fb",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 24500,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 106,
+   "task_id": "t-9f710d640e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_29",
+    "orig_id": "t-9f710d640e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-9f710d640e",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 106,
+     "cart": [
+      [
+       "p-269a0db27f7b",
+       1
+      ],
+      [
+       "p-55055d9241c3",
+       1
+      ],
+      [
+       "p-021057d14a5a",
+       2
+      ],
+      [
+       "p-03a8c45687fb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 106,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "material of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 24500,
+    "jufuli": 10739,
+    "lita": [
+     13,
+     2,
+     67,
+     16
+    ],
+    "reza": [
+     13,
+     2,
+     67,
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-aad4eba30e",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.582,
+   "lita_log_prod": 6.328,
+   "hidden_cut": 0.352,
+   "reza_log": 10.908,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 106
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "removeable covers"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 45000,
+     "target": "p-0dc72199d353",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "antique"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "chenille"
+      },
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "leaf"
+      }
+     ],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 45000,
+     "target": "p-3fe0463afb65",
+     "n_a_stated_cap": 13,
+     "n_a_final": 1,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "tan"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 45000,
+     "target": "p-4d1bddc3b0c4",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "spandex"
+      },
+      {
+       "prop": "closure type",
+       "op": "in",
+       "value": [
+        "elastic",
+        "slip-on"
+       ]
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "gold"
+      }
+     ],
+     "decoys": [
+      "sofa type"
+     ],
+     "cap_line": 45000,
+     "target": "p-9f982b424173",
+     "n_a_stated_cap": 15,
+     "n_a_final": 2,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 45000,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 106,
+   "task_id": "t-aad4eba30e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_30",
+    "orig_id": "t-aad4eba30e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-aad4eba30e",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 106,
+     "cart": [
+      [
+       "p-0dc72199d353",
+       1
+      ],
+      [
+       "p-3fe0463afb65",
+       1
+      ],
+      [
+       "p-4d1bddc3b0c4",
+       2
+      ],
+      [
+       "p-9f982b424173",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a4a9391df9c1",
+      "p-ce74a4d27607",
+      "p-07c700dbf91c"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 106,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "material of the sofa covers & slips",
+     "color of the slipcovers and furniture covers",
+     "pattern of the sofa covers & slips",
+     "sofa type of the sofas"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 45000,
+    "jufuli": 45000,
+    "lita": [
+     35,
+     1,
+     8,
+     2
+    ],
+    "reza": [
+     35,
+     13,
+     8,
+     15
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-a4a9391df9c1",
+    "p-ce74a4d27607",
+    "p-07c700dbf91c"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-aaeff2a651",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 42,
+   "lita_logmean": 3.738,
+   "lita_log_prod": 3.738,
+   "hidden_cut": 0.0,
+   "reza_log": 3.738,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "eq",
+       "value": "fm2+"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "cpu chipset model",
+      "number of cpu cores"
+     ],
+     "cap_line": 520,
+     "target": "p-051133257812",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 520,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-aaeff2a651",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_31",
+    "orig_id": "t-aaeff2a651",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-aaeff2a651",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "eafd109a-ba1",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 6,
+     "cart": [
+      [
+       "p-051133257812",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "cpu chipset model",
+     "number of cpu cores"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 520,
+    "jufuli": 520,
+    "lita": [
+     42
+    ],
+    "reza": [
+     42
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b0f1eb43bf",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 23,
+   "lita_logmean": 3.135,
+   "lita_log_prod": 3.135,
+   "hidden_cut": 0.558,
+   "reza_log": 3.951,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Boxed & Tin Chocolates",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "chilled"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single"
+      }
+     ],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 465,
+     "target": "p-0a3e4a53f8c3",
+     "n_a_stated_cap": 52,
+     "n_a_final": 23,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 465,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-b0f1eb43bf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_32",
+    "orig_id": "t-b0f1eb43bf",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b0f1eb43bf",
+     "agent": "REAL",
+     "rank": 127,
+     "eid": "c473a68d-a34",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-88ed7997dedc",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-b7f796ff1a30",
+      "p-aae86d1b321c",
+      "p-184166dc9939"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pack type",
+     "chocolate type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 465,
+    "jufuli": 187,
+    "lita": [
+     23
+    ],
+    "reza": [
+     52
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-b7f796ff1a30",
+    "p-aae86d1b321c",
+    "p-184166dc9939"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b2072dc8eb",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 79,
+   "lita_logmean": 4.369,
+   "lita_log_prod": 4.369,
+   "hidden_cut": 0.202,
+   "reza_log": 4.595,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plain"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "cotton"
+      }
+     ],
+     "decoys": [
+      "recommended age"
+     ],
+     "cap_line": 560,
+     "target": "p-0172f9f5e93b",
+     "n_a_stated_cap": 99,
+     "n_a_final": 79,
+     "n_a0_nocap": 99,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 560,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I hate to be the bearer of bad news from the minivan \u2014 but your recommendation can't be ordered anymore.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Funny how it goes \u2014 I'm folding socks and the page now says the last of those are gone.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-b2072dc8eb",
+   "extra": {
+    "kinds": [
+     "stockout",
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_33",
+    "orig_id": "t-b2072dc8eb",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b2072dc8eb",
+     "agent": "Thanks Father",
+     "rank": 22,
+     "eid": "18da5ddb-aa6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 36,
+     "cart": [
+      [
+       "p-bab1a61c2995",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-453dfb3aa997",
+      "p-d28c9d3682aa",
+      "p-30f92c1b5cb1",
+      "p-e7103687c2b8"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "material",
+     "recommended age"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 560,
+    "jufuli": 560,
+    "lita": [
+     79
+    ],
+    "reza": [
+     99
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 560,
+    "jufuli": 560,
+    "lita": [
+     79
+    ],
+    "reza": [
+     99
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 560,
+    "jufuli": 560,
+    "lita": [
+     79
+    ],
+    "reza": [
+     99
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 560,
+    "jufuli": 560,
+    "lita": [
+     79
+    ],
+    "reza": [
+     99
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-453dfb3aa997",
+    "p-d28c9d3682aa",
+    "p-30f92c1b5cb1",
+    "p-e7103687c2b8"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-b3fa8a654d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 6,
+   "lita_logmean": 2.193,
+   "lita_log_prod": 6.579,
+   "hidden_cut": 0.663,
+   "reza_log": 9.381,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Boxed & Tin Chocolates",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "chilled"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "multipack"
+      }
+     ],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 4550,
+     "target": "p-01ef33a76ac8",
+     "n_a_stated_cap": 52,
+     "n_a_final": 10,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Table Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "eq",
+       "value": "pendants"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 4550,
+     "target": "p-09e3b5664e17",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hoodies",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "occasion",
+       "op": "eq",
+       "value": "formal"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plain"
+      }
+     ],
+     "decoys": [
+      "chocolate type"
+     ],
+     "cap_line": 4550,
+     "target": "p-0ab258223b00",
+     "n_a_stated_cap": 19,
+     "n_a_final": 6,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4550,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-b3fa8a654d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_34",
+    "orig_id": "t-b3fa8a654d",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b3fa8a654d",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-01ef33a76ac8",
+       3
+      ],
+      [
+       "p-09e3b5664e17",
+       1
+      ],
+      [
+       "p-0ab258223b00",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-42334914a499",
+      "p-ad1c0e8411a1",
+      "p-48199e72906d"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "pattern of the hoodies",
+     "pack type of the boxed & tin chocolates",
+     "chocolate type of the boxed & tin chocolates"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4550,
+    "jufuli": 1462,
+    "lita": [
+     10,
+     12,
+     6
+    ],
+    "reza": [
+     52,
+     12,
+     19
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-42334914a499",
+    "p-ad1c0e8411a1",
+    "p-48199e72906d"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bae43cddeb",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 59,
+   "lita_logmean": 4.078,
+   "lita_log_prod": 4.078,
+   "hidden_cut": 0.0,
+   "reza_log": 4.078,
+   "cheapest": 0,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "ddr variant",
+      "socket"
+     ],
+     "cap_line": 570,
+     "target": "p-00cf7db9d85e",
+     "n_a_stated_cap": 59,
+     "n_a_final": 59,
+     "n_a0_nocap": 59,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 570,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's drop cpu chipset model \u2014 after bedtime duty I haven't got the patience to fuss over it.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Bit of a record scratch on my end \u2014 that suggestion is showing as emptied out.",
+     "new_cap": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Little thing \u2014 the listing for that pick of yours now carries a fresh price \u2014 worth a look before we go on.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-bae43cddeb",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stockout",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_35",
+    "orig_id": "t-bae43cddeb",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-bae43cddeb",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "ca8e0434-692",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 19,
+     "cart": [
+      [
+       "p-d90fc627dd6f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "ddr variant",
+     "socket"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     59
+    ],
+    "reza": [
+     59
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     59
+    ],
+    "reza": [
+     59
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     59
+    ],
+    "reza": [
+     59
+    ]
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     59
+    ],
+    "reza": [
+     59
+    ]
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 570,
+    "jufuli": 570,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bba26f4cde",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 22,
+   "lita_logmean": 3.135,
+   "lita_log_prod": 6.269,
+   "hidden_cut": 0.132,
+   "reza_log": 6.545,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "glass"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light bulb colour"
+     ],
+     "cap_line": 2900,
+     "target": "p-0541cad6fc5b",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hoodies",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "logo"
+      },
+      {
+       "prop": "sleeves",
+       "op": "ne",
+       "value": "short sleeve"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "recommended age",
+       "op": "eq",
+       "value": "kids (6-10yrs)"
+      }
+     ],
+     "decoys": [
+      "light bulb colour"
+     ],
+     "cap_line": 2900,
+     "target": "p-05313f6287c5",
+     "n_a_stated_cap": 29,
+     "n_a_final": 22,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2900,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-bba26f4cde",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_36",
+    "orig_id": "t-bba26f4cde",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bba26f4cde",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-0541cad6fc5b",
+       2
+      ],
+      [
+       "p-05313f6287c5",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "recommended age of the hoodies",
+     "light bulb colour of the lighting installation & accessories"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 1914,
+    "lita": [
+     24,
+     22
+    ],
+    "reza": [
+     24,
+     29
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c534babf31",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 8,
+   "lita_logmean": 2.955,
+   "lita_log_prod": 8.864,
+   "hidden_cut": 0.0,
+   "reza_log": 8.864,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 79
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 35000,
+     "target": "p-269a0db27f7b",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "tan"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 35000,
+     "target": "p-4d1bddc3b0c4",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "cotton"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "material"
+     ],
+     "cap_line": 35000,
+     "target": "p-07ab5be44a0b",
+     "n_a_stated_cap": 68,
+     "n_a_final": 68,
+     "n_a0_nocap": 68,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 35000,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 79,
+   "task_id": "t-c534babf31",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_37",
+    "orig_id": "t-c534babf31",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-c534babf31",
+     "agent": "dudu",
+     "rank": 51,
+     "eid": "fe6a426f-34d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 55,
+     "cart": [
+      [
+       "p-bdd90df8fd3d",
+       1
+      ],
+      [
+       "p-d87fa4bab7c9",
+       1
+      ],
+      [
+       "p-ec696d3f5ca1",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-83001eb2a1cc",
+      "p-f597736ae7f7",
+      "p-2ccc80a5b1a9",
+      "p-31e0a678360e"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 79,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "material of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 35000,
+    "jufuli": 10710,
+    "lita": [
+     13,
+     8,
+     68
+    ],
+    "reza": [
+     13,
+     8,
+     68
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-83001eb2a1cc",
+    "p-f597736ae7f7",
+    "p-2ccc80a5b1a9",
+    "p-31e0a678360e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ },
+ {
+  "task_id": "t-c9396f60df",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.923,
+   "reza_log": 3.258,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Tops, Tees & Polos",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "stripe"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "recommended age",
+       "op": "eq",
+       "value": "teens (11-16yrs)"
+      }
+     ],
+     "decoys": [
+      "collar type"
+     ],
+     "cap_line": 315,
+     "target": "p-82e02c8bbbbc",
+     "n_a_stated_cap": 26,
+     "n_a_final": 2,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 315,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-c9396f60df",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_38",
+    "orig_id": "t-c9396f60df",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c9396f60df",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "2a57b553-213",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 14,
+     "cart": [
+      [
+       "p-82e02c8bbbbc",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "recommended age",
+     "collar type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 315,
+    "jufuli": 315,
+    "lita": [
+     2
+    ],
+    "reza": [
+     26
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ca76d51d65",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.155,
+   "lita_log_prod": 3.466,
+   "hidden_cut": 0.764,
+   "reza_log": 8.371,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "24v"
+      },
+      {
+       "prop": "material",
+       "op": "ne",
+       "value": "pvc"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 2000,
+     "target": "p-570b5cfeab16",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hoodies",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "recommended age",
+       "op": "eq",
+       "value": "teens (11-16yrs)"
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "logo",
+        "print"
+       ]
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "sleeveless"
+      }
+     ],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 2000,
+     "target": "p-331ab5f7ad46",
+     "n_a_stated_cap": 20,
+     "n_a_final": 4,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Boxed & Tin Chocolates",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low sugar"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "chocolate type",
+       "op": "eq",
+       "value": "milk"
+      }
+     ],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 2000,
+     "target": "p-d919d76f3997",
+     "n_a_stated_cap": 27,
+     "n_a_final": 1,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2000,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-ca76d51d65",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_39",
+    "orig_id": "t-ca76d51d65",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ca76d51d65",
+     "agent": "Thanks Father",
+     "rank": 22,
+     "eid": "029126a7-db2",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-331ab5f7ad46",
+       1
+      ],
+      [
+       "p-662e2db0d808",
+       2
+      ],
+      [
+       "p-d919d76f3997",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "chocolate type of the boxed & tin chocolates",
+     "sleeves of the hoodies",
+     "light type of the ceiling lights"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2000,
+    "jufuli": 2000,
+    "lita": [
+     8,
+     4,
+     1
+    ],
+    "reza": [
+     8,
+     20,
+     27
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ccf65b5cd0",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 22,
+   "lita_logmean": 3.091,
+   "lita_log_prod": 3.091,
+   "hidden_cut": 0.5,
+   "reza_log": 3.784,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Flower, Fruit & Herbal Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "gluten free"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single"
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 660,
+     "target": "p-182e44df6876",
+     "n_a_stated_cap": 44,
+     "n_a_final": 22,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 660,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-ccf65b5cd0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_40",
+    "orig_id": "t-ccf65b5cd0",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ccf65b5cd0",
+     "agent": "shame",
+     "rank": 148,
+     "eid": "c62d5432-f5a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-2e1ff310e515",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8c012802e8b3"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "pack type",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 660,
+    "jufuli": 660,
+    "lita": [
+     22
+    ],
+    "reza": [
+     44
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8c012802e8b3"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d2a2add3c1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Table Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "12v"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light type",
+      "light effects"
+     ],
+     "cap_line": 430,
+     "target": "p-0596b51523c2",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 430,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-d2a2add3c1",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_41",
+    "orig_id": "t-d2a2add3c1",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-d2a2add3c1",
+     "agent": "REAL",
+     "rank": 127,
+     "eid": "6ead853a-f6e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 31,
+     "cart": [
+      [
+       "p-37c0c7017d9c",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9de92d8a9a78",
+      "p-875ab32eb3a5",
+      "p-662e2db0d808"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "light type",
+     "light effects"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 110,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-9de92d8a9a78",
+    "p-875ab32eb3a5",
+    "p-662e2db0d808"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d3460a5215",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 56,
+   "lita_logmean": 4.025,
+   "lita_log_prod": 4.025,
+   "hidden_cut": 0.588,
+   "reza_log": 4.913,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Air Conditioners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "air conditioner rated capacity",
+       "op": "le",
+       "value": 9200
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "horsepower",
+       "op": "eq",
+       "value": "1.5 hp"
+      }
+     ],
+     "decoys": [
+      "type"
+     ],
+     "cap_line": 28500,
+     "target": "p-00b6e8658ab8",
+     "n_a_stated_cap": 136,
+     "n_a_final": 56,
+     "n_a0_nocap": 136,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 28500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The pickup line is crawling so I rechecked \u2014 and the thing you suggested now says it's gone from the shelves.",
+     "new_cap": null
+    },
+    {
+     "type": "stockout",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just peeked while the dog was out \u2014 and that suggestion is showing as unavailable.",
+     "new_cap": null
+    }
+   ],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-d3460a5215",
+   "extra": {
+    "kinds": [
+     "stockout",
+     "stockout"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_42",
+    "orig_id": "t-d3460a5215",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d3460a5215",
+     "agent": "minotaur-v21",
+     "rank": 200,
+     "eid": "0a8eee81-38e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-06a72fe4ed37",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "horsepower",
+     "type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 28500,
+    "jufuli": 28500,
+    "lita": [
+     56
+    ],
+    "reza": [
+     136
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 28500,
+    "jufuli": 28500,
+    "lita": [
+     56
+    ],
+    "reza": [
+     136
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 28500,
+    "jufuli": 28500,
+    "lita": [
+     56
+    ],
+    "reza": [
+     136
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 28500,
+    "jufuli": 28500,
+    "lita": [
+     56
+    ],
+    "reza": [
+     136
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d85fc0ded1",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 2.097,
+   "lita_log_prod": 6.292,
+   "hidden_cut": 0.688,
+   "reza_log": 8.817,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Lighting Installation & Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "eq",
+       "value": "50 pieces"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "silicone"
+      }
+     ],
+     "decoys": [
+      "light bulb colour"
+     ],
+     "cap_line": 745,
+     "target": "p-6e9184d56559",
+     "n_a_stated_cap": 2,
+     "n_a_final": 1,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tops, Tees & Polos",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "occasion",
+       "op": "eq",
+       "value": "casual"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "sleeveless"
+      }
+     ],
+     "decoys": [
+      "light bulb colour"
+     ],
+     "cap_line": 745,
+     "target": "p-05caba24081a",
+     "n_a_stated_cap": 125,
+     "n_a_final": 20,
+     "n_a0_nocap": 125,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Boxed & Tin Chocolates",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low sugar"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "light bulb colour"
+     ],
+     "cap_line": 745,
+     "target": "p-0a3e4a53f8c3",
+     "n_a_stated_cap": 27,
+     "n_a_final": 27,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 745,
+   "cheapest": false,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-d85fc0ded1",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_43",
+    "orig_id": "t-d85fc0ded1",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d85fc0ded1",
+     "agent": "Good CLOVER",
+     "rank": 34,
+     "eid": "92e0645e-28f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-419f77a15001",
+       1
+      ],
+      [
+       "p-6e9184d56559",
+       1
+      ],
+      [
+       "p-8cb075a0f2bf",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-10cab899dd0b",
+      "p-12c5314166b2",
+      "p-3c0352ff0e6a"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sleeves of the tops, tees & polos",
+     "material of the lighting installation & accessories",
+     "light bulb colour of the lighting installation & accessories"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 745,
+    "jufuli": 745,
+    "lita": [
+     1,
+     20,
+     27
+    ],
+    "reza": [
+     2,
+     125,
+     27
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-10cab899dd0b",
+    "p-12c5314166b2",
+    "p-3c0352ff0e6a"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dac932c233",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.889,
+   "reza_log": 2.197,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "refill pouch"
+      }
+     ],
+     "hidden": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low fat"
+      }
+     ],
+     "decoys": [
+      "meat type"
+     ],
+     "cap_line": 800,
+     "target": "p-da4f51827641",
+     "n_a_stated_cap": 9,
+     "n_a_final": 1,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 800,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 37,
+   "task_id": "t-dac932c233",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r8_44",
+    "orig_id": "t-dac932c233",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-dac932c233",
+     "agent": "minotaur-v21",
+     "rank": 200,
+     "eid": "5dc75b43-c68",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-da4f51827641",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 37,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": false,
+    "subjects": [
+     "dietary needs",
+     "meat type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 288,
+    "lita": [
+     1
+    ],
+    "reza": [
+     9
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ebc8afc1f6",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 2.15,
+   "lita_log_prod": 8.601,
+   "hidden_cut": 0.0,
+   "reza_log": 8.601,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 2,
+   "hops_total": 4,
+   "max_hops": 3,
+   "step_budget": 106
+  },
+  "spec": {
+   "suite": "s14_r8",
+   "flavor": "r8",
+   "lines": [
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "ready to assemble"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 28500,
+     "target": "p-00b7b8a29ebe",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "tan"
+      },
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "polyester"
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 28500,
+     "target": "p-4d1bddc3b0c4",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure type",
+       "op": "eq",
+       "value": "slip-on"
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "solid",
+        "textured"
+       ]
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 28500,
+     "target": "p-3820be247370",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "antique"
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 1
+      }
+     ],
+     "hidden": [],
+     "decoys": [
+      "sofa type",
+      "style"
+     ],
+     "cap_line": 28500,
+     "target": "p-351aefbbf5c5",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 28500,
+   "cheapest": true,
+   "events": [],
+   "messages": 5,
+   "steps": 106,
+   "task_id": "t-ebc8afc1f6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": true,
+    "author_id": "r8_45",
+    "orig_id": "t-ebc8afc1f6",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-ebc8afc1f6",
+     "agent": "Lord-Voldemort",
+     "rank": 6,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 106,
+     "cart": [
+      [
+       "p-00b7b8a29ebe",
+       1
+      ],
+      [
+       "p-4d1bddc3b0c4",
+       1
+      ],
+      [
+       "p-3820be247370",
+       1
+      ],
+      [
+       "p-351aefbbf5c5",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-84012a999738"
+     ],
+     [
+      "p-d2c3ecfb1e3f",
+      "p-7eefca658db3",
+      "p-7a30f8e3e38e"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 106,
+    "max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "subjects": [
+     "sofa type of the sofas",
+     "style of the sofas"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 28500,
+    "jufuli": 5585,
+    "lita": [
+     37,
+     7,
+     7,
+     3
+    ],
+    "reza": [
+     37,
+     7,
+     7,
+     3
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-84012a999738"
+   ],
+   [
+    "p-d2c3ecfb1e3f",
+    "p-7eefca658db3",
+    "p-7a30f8e3e38e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": true
+ }
+]

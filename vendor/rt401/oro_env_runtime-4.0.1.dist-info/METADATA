@@ -1,0 +1,15 @@
+Metadata-Version: 2.5
+Name: oro-env-runtime
+Version: 4.0.1
+Summary: Runtime for signed ORO world packs.
+Project-URL: Homepage, https://oroagents.com
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: cryptography>=42
+Requires-Dist: starlark-pyo3==2026.1.3
+Description-Content-Type: text/markdown
+
+# oro-env-runtime
+
+Runtime for signed ORO world packs: verifies a pack, runs its sandboxed code, records the ledger and grades it.
