@@ -584,7 +584,7 @@ class ClaudeWorldModelClient:
             return json.loads(resp.read().decode("utf-8"))
 
     def _live_labelers(self) -> bool:
-        return os.environ.get("SN15_WORLD_LIVE_LABELERS", "1") != "0"
+        return os.environ.get("SN15_WORLD_LIVE_LABELERS", "0") != "0"  # owner 11-06: default OFF - the pack's own completion models bill prepaid credits; set 1 only on purpose
 
     def complete(self, model: str, prompt: str, params: dict, timeout: float = 30.0) -> str:
         """Executes `model_call` from `main.star`: the pack's own model over OpenRouter (live labelers), else Claude BYOK."""
@@ -3888,7 +3888,7 @@ def _unwrap_world_obs(obs: Any) -> tuple[Any, list[str]]:
         list_keys = [
             k
             for k, v in obs.items()
-            if isinstance(v, list) and v and all(isinstance(x, str) and (" " in x or len(x) > 8) for x in v)
+            if isinstance(v, list) and v and all(isinstance(x, str) and (" " in x or len(x) > 8) and not x.startswith("ref_ref: ") for x in v)
         ]
         if len(list_keys) == 1:
             lk = list_keys[0]
@@ -3898,6 +3898,68 @@ def _unwrap_world_obs(obs: Any) -> tuple[Any, list[str]]:
                     refusals.append(str(x))
             return obs[other_k], refusals
     return obs, refusals
+
+
+_CARD_KEYS = ("ref_ref", "sold_by_name", "title", "brand", "price", "shop_comments", "on_hand", "category", "item_blurb", "facts")
+_CARD_SPLIT_RE = re.compile(r" \| (?=(?:%s): )" % "|".join(_CARD_KEYS))
+_CARD_FACT_SPLIT_RE = re.compile(r"; (?=[^=;]{1,60}=)")
+
+
+def _card_string_to_row(card: Any) -> dict[str, Any] | None:
+    """Race-15 listing cards are pipe-delimited strings (`ref_ref: <id> | sold_by_name: .. | title: .. | price: <int> | on_hand: True | category: .. |
+    [facts: k=v; ..] | item_blurb: ..`) inside `matches_set` / `{value: card}`. Returns the generic row dict the normalizer reads
+    (`id`, `title`, `brand`, `price`, `in_stock`, `category`, `shop_name`, `description`, `facts`), or None when `card` is not a card."""
+    if not isinstance(card, str) or not card.startswith("ref_ref: "):
+        return None
+    kv: dict[str, str] = {}
+    for part in _CARD_SPLIT_RE.split(card):
+        k, _, v = part.partition(": ")
+        kv[k.strip()] = v
+    pid = kv.get("ref_ref", "").strip()
+    if not pid:
+        return None
+
+    def _val(key: str) -> str | None:
+        v = kv.get(key)
+        return None if v is None or v.strip() in ("", "None") else v.strip()
+
+    row: dict[str, Any] = {"id": pid}
+    for src, dst in (("title", "title"), ("brand", "brand"), ("category", "category"), ("sold_by_name", "shop_name"), ("item_blurb", "description")):
+        if _val(src) is not None:
+            row[dst] = _val(src)
+    price = _val("price")
+    if price is not None and price.lstrip("-").isdigit():
+        row["price"] = int(price)
+    if "on_hand" in kv:
+        row["in_stock"] = kv["on_hand"].strip() == "True"
+    facts: dict[str, str] = {}
+    for chunk in _CARD_FACT_SPLIT_RE.split(kv.get("facts") or ""):
+        k, eq, v = chunk.partition("=")
+        if eq and k.strip():
+            facts[k.strip().lower()] = v.strip()
+    if facts:
+        row["facts"] = facts
+    return row
+
+
+def _cardify_world_obs(obs: Any) -> Any:
+    """Turn Race-15 card strings in an unwrapped observation into generic row dicts (a list of cards under any key, or a lone `{value: card}`);
+    any other observation (every earlier race's dict rows, cart lines, replies) is returned unchanged."""
+    if not isinstance(obs, dict):
+        return obs
+    if len(obs) == 1:
+        only = next(iter(obs.values()))
+        row = _card_string_to_row(only)
+        if row is not None:
+            return row
+    out: dict[str, Any] | None = None
+    for k, v in obs.items():
+        if isinstance(v, list) and v and all(isinstance(x, str) and x.startswith("ref_ref: ") for x in v):
+            rows = [_card_string_to_row(x) for x in v]
+            if all(r is not None for r in rows):
+                out = out if out is not None else dict(obs)
+                out[k] = rows
+    return out if out is not None else obs
 
 
 _GENERIC_PID_RE = re.compile(r"^p-[0-9a-f]{8,20}$")
@@ -4223,6 +4285,7 @@ def parse_world_episode_feedback(fb: dict[str, Any]) -> dict[str, Any]:
             args = c.get("args") or {}
             raw_obs = c.get("observation")
             inner_obs, trans_msgs = _unwrap_world_obs(raw_obs)
+            inner_obs = _cardify_world_obs(inner_obs)
             role = _classify_world_tool_role(tn, args, inner_obs)
 
             for tm in trans_msgs:

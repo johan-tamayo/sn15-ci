@@ -1,0 +1,9793 @@
+[
+ {
+  "task_id": "t-02b59296a4",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 2.013,
+   "lita_log_prod": 6.04,
+   "hidden_cut": 0.681,
+   "reza_log": 12.605,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "red",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "compatibility"
+     ],
+     "cap_line": 5950,
+     "target": "p-1c5f94e121b4",
+     "n_a_stated_cap": 133,
+     "n_a_final": 2,
+     "n_a0_nocap": 133,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "case function",
+       "op": "eq",
+       "value": "magnetic"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "acrylic",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "compatibility"
+     ],
+     "cap_line": 5950,
+     "target": "p-5e03a5584f35",
+     "n_a_stated_cap": 32,
+     "n_a_final": 3,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Samsung Galaxy Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "compatibility"
+     ],
+     "cap_line": 5950,
+     "target": "p-007f322cad37",
+     "n_a_stated_cap": 70,
+     "n_a_final": 70,
+     "n_a0_nocap": 70,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5950,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-02b59296a4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_01",
+    "orig_id": "t-02b59296a4",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-02b59296a4",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 102,
+     "cart": [
+      [
+       "p-1c5f94e121b4",
+       1
+      ],
+      [
+       "p-5e03a5584f35",
+       2
+      ],
+      [
+       "p-007f322cad37",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-aec605fa286c"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material of the phone cases",
+     "color of the phone and tablet screen protectors",
+     "compatibility of the phone and tablet screen protectors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      0,
+      "ROT3110"
+     ],
+     [
+      1,
+      "ROT3110"
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5950,
+    "jufuli": 717,
+    "lita": [
+     2,
+     3,
+     70
+    ],
+    "reza": [
+     133,
+     32,
+     70
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-aec605fa286c"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-11af348d09",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 13,
+   "lita_logmean": 3.204,
+   "lita_log_prod": 9.611,
+   "hidden_cut": 0.305,
+   "reza_log": 10.672,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "polyester"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 18,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 795000,
+     "target": "p-00266cb1028b",
+     "n_a_stated_cap": 67,
+     "n_a_final": 41,
+     "n_a0_nocap": 67,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 8,
+       "unit": "gb"
+      },
+      {
+       "prop": "number of camera",
+       "op": "eq",
+       "value": "triple",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 795000,
+     "target": "p-1836a2e8f2c1",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Business Laptops",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "intel arc"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "intel core ultra 7",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width"
+     ],
+     "cap_line": 795000,
+     "target": "p-0343a6544594",
+     "n_a_stated_cap": 23,
+     "n_a_final": 13,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 795000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-11af348d09",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_02",
+    "orig_id": "t-11af348d09",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-11af348d09",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 50,
+     "cart": [
+      [
+       "p-00266cb1028b",
+       3
+      ],
+      [
+       "p-1836a2e8f2c1",
+       1
+      ],
+      [
+       "p-0343a6544594",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-1e2fde1cb8c9",
+      "p-53a81568494c"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor of the business laptops",
+     "height of the ottomans",
+     "width of the ottomans"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 795000,
+    "jufuli": 255129,
+    "lita": [
+     41,
+     28,
+     13
+    ],
+    "reza": [
+     67,
+     28,
+     23
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-1e2fde1cb8c9",
+    "p-53a81568494c"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-19783bd369",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.47,
+   "lita_log_prod": 12.35,
+   "hidden_cut": 0.319,
+   "reza_log": 14.255,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 144
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "eq",
+       "value": "single"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 4.5,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "network connections",
+       "op": "eq",
+       "value": "4g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19500,
+     "target": "p-127d4ef233a9",
+     "n_a_stated_cap": 27,
+     "n_a_final": 7,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "finish",
+       "op": "in",
+       "value": [
+        "glossy",
+        "matte"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19500,
+     "target": "p-451c6935dd7e",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "realme"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19500,
+     "target": "p-21575713f277",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "compatibility",
+       "op": "eq",
+       "value": "google",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19500,
+     "target": "p-11451e9798df",
+     "n_a_stated_cap": 54,
+     "n_a_final": 31,
+     "n_a0_nocap": 54,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Samsung Galaxy Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "multicolor"
+      },
+      {
+       "prop": "type",
+       "op": "ne",
+       "value": "soft back case"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19500,
+     "target": "p-035dd4d2ce7e",
+     "n_a_stated_cap": 38,
+     "n_a_final": 38,
+     "n_a0_nocap": 38,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 19500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 144,
+   "task_id": "t-19783bd369",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_03",
+    "orig_id": "t-19783bd369",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-19783bd369",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 144,
+     "cart": [
+      [
+       "p-127d4ef233a9",
+       1
+      ],
+      [
+       "p-451c6935dd7e",
+       2
+      ],
+      [
+       "p-21575713f277",
+       1
+      ],
+      [
+       "p-11451e9798df",
+       1
+      ],
+      [
+       "p-035dd4d2ce7e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 144,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the smartphones",
+     "compatibility of the phone and tablet screen protectors",
+     "network connections of the smartphones",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 19500,
+    "jufuli": 1849,
+    "lita": [
+     7,
+     2,
+     14,
+     31,
+     38
+    ],
+    "reza": [
+     27,
+     2,
+     14,
+     54,
+     38
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-21adb20e93",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 2.551,
+   "lita_log_prod": 10.204,
+   "hidden_cut": 0.434,
+   "reza_log": 13.842,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 129
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "screen type",
+       "op": "eq",
+       "value": "ips lcd"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery capacity",
+       "op": "ge",
+       "value": 5000,
+       "unit": "mah",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 17500,
+     "target": "p-0342c4db6599",
+     "n_a_stated_cap": 66,
+     "n_a_final": 50,
+     "n_a0_nocap": 66,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "oppo"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "soft shell",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 17500,
+     "target": "p-19144dd09a6e",
+     "n_a_stated_cap": 27,
+     "n_a_final": 10,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "compatibility",
+       "op": "in",
+       "value": [
+        "garmin",
+        "iphone"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 17500,
+     "target": "p-00fade75215d",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "solid",
+        "texture"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "compatibility",
+       "op": "eq",
+       "value": "samsung",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 17500,
+     "target": "p-35f23eadd571",
+     "n_a_stated_cap": 32,
+     "n_a_final": 3,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 17500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 129,
+   "task_id": "t-21adb20e93",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_04",
+    "orig_id": "t-21adb20e93",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-21adb20e93",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 129,
+     "cart": [
+      [
+       "p-0342c4db6599",
+       1
+      ],
+      [
+       "p-19144dd09a6e",
+       1
+      ],
+      [
+       "p-00fade75215d",
+       1
+      ],
+      [
+       "p-35f23eadd571",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 129,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of the phone cases",
+     "compatibility of the phone and tablet screen protectors",
+     "battery capacity of the smartphones",
+     "operating system of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conditional": "the phone cases' material must be leather, except when the smartphones' network connections is 3g or 5g",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 17500,
+    "jufuli": 17500,
+    "lita": [
+     50,
+     10,
+     18,
+     3
+    ],
+    "reza": [
+     66,
+     27,
+     18,
+     32
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-28de7fb38e",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 2.674,
+   "lita_log_prod": 5.347,
+   "hidden_cut": 0.07,
+   "reza_log": 6.957,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 12,
+       "unit": "gb"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 6.53,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 38500,
+     "target": "p-07bb26a11f26",
+     "n_a_stated_cap": 105,
+     "n_a_final": 105,
+     "n_a0_nocap": 105,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ottomans",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "sand"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "assembly",
+       "op": "eq",
+       "value": "easy assembly",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 38500,
+     "target": "p-3bb52ae3a8ad",
+     "n_a_stated_cap": 10,
+     "n_a_final": 2,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 38500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-28de7fb38e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_05",
+    "orig_id": "t-28de7fb38e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-28de7fb38e",
+     "agent": "Claude",
+     "rank": 80,
+     "eid": "ab4fa192-c8b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 36,
+     "cart": [
+      [
+       "p-0df210d44c63",
+       2
+      ],
+      [
+       "p-5041230b8c7b",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "assembly of the ottomans",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 38500,
+    "jufuli": 38500,
+    "lita": [
+     105,
+     2
+    ],
+    "reza": [
+     105,
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-302244da9c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 5,
+   "lita_logmean": 2.319,
+   "lita_log_prod": 6.957,
+   "hidden_cut": 0.0,
+   "reza_log": 6.957,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 113
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "compatibility",
+       "op": "in",
+       "value": [
+        "pixel",
+        "samsung"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "material"
+     ],
+     "cap_line": 15000,
+     "target": "p-06d60490ff2f",
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "compatible model",
+       "op": "eq",
+       "value": "google pixel 8a"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "multicolor",
+        "pink"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "material"
+     ],
+     "cap_line": 15000,
+     "target": "p-4a8f2b9e3304",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "realme"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "material"
+     ],
+     "cap_line": 15000,
+     "target": "p-21575713f277",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 15000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 113,
+   "task_id": "t-302244da9c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_06",
+    "orig_id": "t-302244da9c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-302244da9c",
+     "agent": "pig-double-red",
+     "rank": 26,
+     "eid": "1c95b9e7-4bb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 50,
+     "cart": [
+      [
+       "p-06d60490ff2f",
+       1
+      ],
+      [
+       "p-5264f2152961",
+       1
+      ],
+      [
+       "p-e000677cfba9",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 113,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the phone screen protectors",
+     "material of the phone screen protectors"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      "ROT3140"
+     ],
+     [
+      2,
+      "ROT3140"
+     ]
+    ],
+    "conditional": "should the phone screen protectors' material be nano glass or tempered glass, the phone cases' material must be metal",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 15000,
+    "jufuli": 15000,
+    "lita": [
+     15,
+     5,
+     14
+    ],
+    "reza": [
+     15,
+     5,
+     14
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-30be89004b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 2,
+   "lita_logmean": 2.466,
+   "lita_log_prod": 7.399,
+   "hidden_cut": 0.582,
+   "reza_log": 11.257,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 113
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": "p-00c20bfc0f45",
+     "n_a_stated_cap": 43,
+     "n_a_final": 43,
+     "n_a0_nocap": 43,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "glass",
+        "hydrogel"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": "p-1418503b3e32",
+     "n_a_stated_cap": 90,
+     "n_a_final": 19,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "hand side",
+       "op": "eq",
+       "value": "right"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "green",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": "p-3c10b031fd1e",
+     "n_a_stated_cap": 20,
+     "n_a_final": 2,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 113,
+   "task_id": "t-30be89004b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_07",
+    "orig_id": "t-30be89004b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-30be89004b",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 113,
+     "cart": [
+      [
+       "p-00c20bfc0f45",
+       1
+      ],
+      [
+       "p-1418503b3e32",
+       1
+      ],
+      [
+       "p-3c10b031fd1e",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a7dae174befe",
+      "p-38a57839f9c0"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 113,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the phone and tablet screen protectors",
+     "color of the google pixel cases",
+     "material of the phone screen protectors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      "ROT3120"
+     ],
+     [
+      2,
+      "ROT3120"
+     ]
+    ],
+    "conditional": "the phone and tablet screen protectors' compatibility must be google, except when the phone screen protectors' color is clear or purple",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13000,
+    "jufuli": 4886,
+    "lita": [
+     43,
+     19,
+     2
+    ],
+    "reza": [
+     43,
+     90,
+     20
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-a7dae174befe",
+    "p-38a57839f9c0"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-31117d3b7b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 35,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 3.555,
+   "hidden_cut": 0.0,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "leather"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "width",
+      "depth"
+     ],
+     "cap_line": 3350,
+     "target": "p-050e41b5f586",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3350,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Can't get that one now, it just says gone.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-31117d3b7b",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_08",
+    "orig_id": "t-31117d3b7b",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-31117d3b7b",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "5d8f983a-628",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-0b3b304ec94d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "depth"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3350,
+    "jufuli": 3350,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3350,
+    "jufuli": 3350,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-349b4e53ab",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 32,
+   "lita_logmean": 3.466,
+   "lita_log_prod": 3.466,
+   "hidden_cut": 0.111,
+   "reza_log": 3.584,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory",
+       "op": "le",
+       "value": 16,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 110000,
+     "target": "p-010b57c08831",
+     "n_a_stated_cap": 36,
+     "n_a_final": 32,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 110000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Eh up, somebody's cleared the last of that pick while I'd the kettle on.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-349b4e53ab",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_09",
+    "orig_id": "t-349b4e53ab",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-349b4e53ab",
+     "agent": "pig-double-red",
+     "rank": 26,
+     "eid": "542f5759-782",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-a18b61c4c4b7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory",
+     "display"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     32
+    ],
+    "reza": [
+     36
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     32
+    ],
+    "reza": [
+     36
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-385aa4ac9b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.636,
+   "reza_log": 3.091,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Vinegar & Cooking Wine",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cooking style",
+       "op": "eq",
+       "value": "western"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "plastic bottles",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack type"
+     ],
+     "cap_line": 340,
+     "target": "p-4a700e4ff476",
+     "n_a_stated_cap": 22,
+     "n_a_final": 8,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 340,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Bad news, that pick's all gone, the page just says so.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-385aa4ac9b",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_10",
+    "orig_id": "t-385aa4ac9b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-385aa4ac9b",
+     "agent": "Wolf_C",
+     "rank": 13,
+     "eid": "56baf9fc-f4b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-dbb2e3e19842",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "pack type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 18,
+    "lita": [
+     8
+    ],
+    "reza": [
+     22
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 18,
+    "lita": [
+     8
+    ],
+    "reza": [
+     22
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-44c186fe12",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.752,
+   "lita_log_prod": 5.257,
+   "hidden_cut": 0.0,
+   "reza_log": 5.257,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "memory",
+       "op": "eq",
+       "value": "24gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "processor"
+     ],
+     "cap_line": 245000,
+     "target": "p-0194bef1355c",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "rectangle"
+      },
+      {
+       "prop": "power output",
+       "op": "ge",
+       "value": 240,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "processor"
+     ],
+     "cap_line": 245000,
+     "target": "p-1c8fe3ce4511",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "eq",
+       "value": "crystal clear"
+      },
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "tempered glass",
+       "ref": true
+      }
+     ],
+     "line_cap": 6800,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "processor"
+     ],
+     "cap_line": 245000,
+     "target": "p-111d5b6e7c53",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 245000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-44c186fe12",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_11",
+    "orig_id": "t-44c186fe12",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-44c186fe12",
+     "agent": "Amberjack",
+     "rank": 163,
+     "eid": "587a854c-a89",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 40,
+     "cart": [
+      [
+       "p-111d5b6e7c53",
+       2
+      ],
+      [
+       "p-6d39e3e0735b",
+       1
+      ],
+      [
+       "p-bf5286627ea5",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a318ff41dcb1",
+      "p-7359d17018a2"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the macbooks",
+     "processor of the macbooks"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 245000,
+    "jufuli": 245000,
+    "lita": [
+     16,
+     12,
+     1
+    ],
+    "reza": [
+     16,
+     12,
+     1
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-a318ff41dcb1",
+    "p-7359d17018a2"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-45186ee71c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 0.963,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.765,
+   "reza_log": 7.107,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "eq",
+       "value": "3g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "symbian",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 10500,
+     "target": "p-3d00a567c0fe",
+     "n_a_stated_cap": 37,
+     "n_a_final": 2,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible model",
+       "op": "eq",
+       "value": "google pixel 8a"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "pink",
+        "silver"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "abstract",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 10500,
+     "target": "p-9be51fc32269",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "oppo"
+      },
+      {
+       "prop": "design",
+       "op": "in",
+       "value": [
+        "plain",
+        "transparent"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "half-wrapped case",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 10500,
+     "target": "p-3e4f458e96a8",
+     "n_a_stated_cap": 11,
+     "n_a_final": 9,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-45186ee71c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_12",
+    "orig_id": "t-45186ee71c",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-45186ee71c",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 92,
+     "cart": [
+      [
+       "p-3d00a567c0fe",
+       1
+      ],
+      [
+       "p-9be51fc32269",
+       1
+      ],
+      [
+       "p-3e4f458e96a8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pattern of the google pixel cases",
+     "type of the phone cases",
+     "operating system of the smartphones",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10500,
+    "jufuli": 10500,
+    "lita": [
+     2,
+     1,
+     9
+    ],
+    "reza": [
+     37,
+     3,
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4778ee2a6c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 56,
+   "lita_logmean": 4.025,
+   "lita_log_prod": 4.025,
+   "hidden_cut": 0.533,
+   "reza_log": 4.787,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 22,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 33,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "height"
+     ],
+     "cap_line": 2600,
+     "target": "p-00879d427d69",
+     "n_a_stated_cap": 120,
+     "n_a_final": 56,
+     "n_a0_nocap": 120,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2600,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "New limit's just 3038 cents (USD), lad, just after the minibus repair bill.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-4778ee2a6c",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_13",
+    "orig_id": "t-4778ee2a6c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4778ee2a6c",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "d0db0cf4-768",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-a91b3a253436",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "height"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2600,
+    "jufuli": 2600,
+    "lita": [
+     56
+    ],
+    "reza": [
+     120
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3038,
+    "jufuli": 3038,
+    "lita": [
+     56
+    ],
+    "reza": [
+     120
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4a108d790b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 2.281,
+   "lita_log_prod": 6.842,
+   "hidden_cut": 0.4,
+   "reza_log": 9.732,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "gpu cores",
+       "op": "eq",
+       "value": "8-core gpu"
+      },
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 13,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 120000,
+     "target": "p-00a5d0551abc",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "acer"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "speaker",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 120000,
+     "target": "p-9bd1614077c9",
+     "n_a_stated_cap": 36,
+     "n_a_final": 2,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "nano glass",
+        "tempered glass"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 120000,
+     "target": "p-060c4b630f51",
+     "n_a_stated_cap": 36,
+     "n_a_final": 36,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 120000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-4a108d790b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_14",
+    "orig_id": "t-4a108d790b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4a108d790b",
+     "agent": "love",
+     "rank": 60,
+     "eid": "594d246f-8d5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 51,
+     "cart": [
+      [
+       "p-3063269a8820",
+       2
+      ],
+      [
+       "p-c1933607bdfe",
+       1
+      ],
+      [
+       "p-d9a888eedd8b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "component type of the laptop replacement parts",
+     "processor of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 120000,
+    "jufuli": 120000,
+    "lita": [
+     13,
+     2,
+     36
+    ],
+    "reza": [
+     13,
+     36,
+     36
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4c08e326d6",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 12,
+   "lita_logmean": 3.233,
+   "lita_log_prod": 9.7,
+   "hidden_cut": 0.252,
+   "reza_log": 10.695,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 2,
+   "hops_total": 4,
+   "max_hops": 2,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "1tb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 220000,
+     "target": "p-11eb163f0966",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      },
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "240v",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 220000,
+     "target": "p-019df0d4fee2",
+     "n_a_stated_cap": 59,
+     "n_a_final": 40,
+     "n_a0_nocap": 59,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "samsung"
+      },
+      {
+       "prop": "condition",
+       "op": "ne",
+       "value": "new"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "camera",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 220000,
+     "target": "p-1381b957fad7",
+     "n_a_stated_cap": 22,
+     "n_a_final": 12,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 220000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-4c08e326d6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_15",
+    "orig_id": "t-4c08e326d6",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4c08e326d6",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 92,
+     "cart": [
+      [
+       "p-11eb163f0966",
+       1
+      ],
+      [
+       "p-019df0d4fee2",
+       1
+      ],
+      [
+       "p-1381b957fad7",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-188ad3a60e63",
+      "p-b20ff08073b4"
+     ],
+     [
+      "p-018072501369",
+      "p-69f103bb8034"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power output of the laptop chargers and adapters",
+     "component type of the laptop replacement parts",
+     "display size of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 220000,
+    "jufuli": 220000,
+    "lita": [
+     34,
+     40,
+     12
+    ],
+    "reza": [
+     34,
+     59,
+     22
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-188ad3a60e63",
+    "p-b20ff08073b4"
+   ],
+   [
+    "p-018072501369",
+    "p-69f103bb8034"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4df1d81f4f",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 270,
+   "lita_logmean": 5.598,
+   "lita_log_prod": 5.598,
+   "hidden_cut": 0.0,
+   "reza_log": 5.598,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 12,
+       "unit": "gb"
+      },
+      {
+       "prop": "network connections",
+       "op": "ne",
+       "value": "2g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 14000,
+     "target": "p-00da39510247",
+     "n_a_stated_cap": 270,
+     "n_a_final": 270,
+     "n_a0_nocap": 270,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Just seen it greyed out, so that one's off the table.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-4df1d81f4f",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_16",
+    "orig_id": "t-4df1d81f4f",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4df1d81f4f",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "1e7ddf1f-183",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 31,
+     "cart": [
+      [
+       "p-f78762eed0d8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "operating system"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 14000,
+    "lita": [
+     270
+    ],
+    "reza": [
+     270
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 14000,
+    "lita": [
+     270
+    ],
+    "reza": [
+     270
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5341d02a4c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 6,
+   "lita_logmean": 2.751,
+   "lita_log_prod": 8.252,
+   "hidden_cut": 0.239,
+   "reza_log": 10.267,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "256 gb"
+      },
+      {
+       "prop": "processor",
+       "op": "in",
+       "value": [
+        "intel core i7",
+        "ryzen"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "le",
+       "value": 14,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 pro",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "memory"
+     ],
+     "cap_line": 110000,
+     "target": "p-19ac2c4192c5",
+     "n_a_stated_cap": 27,
+     "n_a_final": 6,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "rectangle"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "240v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "memory"
+     ],
+     "cap_line": 110000,
+     "target": "p-1e0ac739a107",
+     "n_a_stated_cap": 15,
+     "n_a_final": 9,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "finish",
+       "op": "ne",
+       "value": "matte"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "memory"
+     ],
+     "cap_line": 110000,
+     "target": "p-01a271f7b8a7",
+     "n_a_stated_cap": 71,
+     "n_a_final": 71,
+     "n_a0_nocap": 71,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 110000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-5341d02a4c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_17",
+    "orig_id": "t-5341d02a4c",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5341d02a4c",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 92,
+     "cart": [
+      [
+       "p-19ac2c4192c5",
+       1
+      ],
+      [
+       "p-1e0ac739a107",
+       2
+      ],
+      [
+       "p-01a271f7b8a7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "operating system of the business laptops",
+     "input voltage of the laptop chargers and adapters",
+     "memory of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     6,
+     9,
+     71
+    ],
+    "reza": [
+     27,
+     15,
+     71
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-57dfb597e0",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 68,
+   "lita_logmean": 4.22,
+   "lita_log_prod": 4.22,
+   "hidden_cut": 0.236,
+   "reza_log": 4.489,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "256 gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "le",
+       "value": 14,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 79000,
+     "target": "p-00a23850a5cd",
+     "n_a_stated_cap": 89,
+     "n_a_final": 68,
+     "n_a0_nocap": 89,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 79000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Scrap storage, I was too strict, same as with the lads' warm-up.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-57dfb597e0",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_18",
+    "orig_id": "t-57dfb597e0",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-57dfb597e0",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "3759b3d9-57f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 17,
+     "cart": [
+      [
+       "p-12707576ce3c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display",
+     "processor"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 79000,
+    "jufuli": 79000,
+    "lita": [
+     68
+    ],
+    "reza": [
+     89
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 79000,
+    "jufuli": 79000,
+    "lita": [
+     243
+    ],
+    "reza": [
+     761
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a321174b1",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.21,
+   "lita_log_prod": 8.84,
+   "hidden_cut": 0.618,
+   "reza_log": 13.71,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 129
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cpu cores",
+       "op": "eq",
+       "value": "10-core cpu"
+      },
+      {
+       "prop": "gpu cores",
+       "op": "in",
+       "value": [
+        "10-core gpu",
+        "16-core gpu"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 225000,
+     "target": "p-11eb163f0966",
+     "n_a_stated_cap": 29,
+     "n_a_final": 29,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      }
+     ],
+     "line_cap": 4100,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65,
+       "unit": "w",
+       "ref": false
+      },
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "120 v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 225000,
+     "target": "p-6fcd6a9c0873",
+     "n_a_stated_cap": 73,
+     "n_a_final": 2,
+     "n_a0_nocap": 73,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "hinge"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "hp",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 225000,
+     "target": "p-24e71d9d6247",
+     "n_a_stated_cap": 25,
+     "n_a_final": 7,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "nano glass"
+      },
+      {
+       "prop": "color",
+       "op": "ne",
+       "value": "clear"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 225000,
+     "target": "p-1faf89e449b7",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 225000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 129,
+   "task_id": "t-5a321174b1",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_19",
+    "orig_id": "t-5a321174b1",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a321174b1",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 129,
+     "cart": [
+      [
+       "p-11eb163f0966",
+       1
+      ],
+      [
+       "p-6fcd6a9c0873",
+       2
+      ],
+      [
+       "p-24e71d9d6247",
+       2
+      ],
+      [
+       "p-1faf89e449b7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 129,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "compatible models of the laptop replacement parts",
+     "power output of the laptop chargers and adapters",
+     "input voltage of the laptop chargers and adapters",
+     "display size of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 225000,
+    "jufuli": 143573,
+    "lita": [
+     29,
+     2,
+     7,
+     17
+    ],
+    "reza": [
+     29,
+     73,
+     25,
+     17
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5b30d05d04",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 2.17,
+   "lita_log_prod": 6.51,
+   "hidden_cut": 0.25,
+   "reza_log": 7.427,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 home"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "silver",
+        "white"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "ne",
+       "value": "256 gb",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 43000,
+     "target": "p-71cc7d0b2de3",
+     "n_a_stated_cap": 6,
+     "n_a_final": 4,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "samsung"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "new",
+        "oem"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "keyboard",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 43000,
+     "target": "p-0401a59e5347",
+     "n_a_stated_cap": 20,
+     "n_a_final": 12,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "finish",
+       "op": "in",
+       "value": [
+        "crystal clear",
+        "matte"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 43000,
+     "target": "p-04a808f10868",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 43000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-5b30d05d04",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_20",
+    "orig_id": "t-5b30d05d04",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5b30d05d04",
+     "agent": "WAIT",
+     "rank": 115,
+     "eid": "4f27ae72-ab1",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 51,
+     "cart": [
+      [
+       "p-741df90accc6",
+       1
+      ],
+      [
+       "p-9dffc2eca171",
+       2
+      ],
+      [
+       "p-c6cadbb341fb",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-7d70ea2e1f8d",
+      "p-8bbe1754ed2b"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "component type of the laptop replacement parts",
+     "storage of the business laptops",
+     "display of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 43000,
+    "jufuli": 20456,
+    "lita": [
+     4,
+     12,
+     14
+    ],
+    "reza": [
+     6,
+     20,
+     14
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-7d70ea2e1f8d",
+    "p-8bbe1754ed2b"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5d4487669e",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.623,
+   "lita_log_prod": 4.868,
+   "hidden_cut": 0.881,
+   "reza_log": 9.847,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 2,
+   "hops_total": 4,
+   "max_hops": 2,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "le",
+       "value": 128,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "dumbphone os",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 37000,
+     "target": "p-5fb6fadaa562",
+     "n_a_stated_cap": 135,
+     "n_a_final": 5,
+     "n_a0_nocap": 135,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "brown"
+      },
+      {
+       "prop": "compatible model",
+       "op": "eq",
+       "value": "google pixel 10a",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "leather",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 37000,
+     "target": "p-263940534591",
+     "n_a_stated_cap": 5,
+     "n_a_final": 2,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "case function",
+       "op": "eq",
+       "value": "built-in stand"
+      },
+      {
+       "prop": "brand compatibility",
+       "op": "in",
+       "value": [
+        "oppo",
+        "samsung"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "flip cover",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 37000,
+     "target": "p-13fa3b8e550b",
+     "n_a_stated_cap": 28,
+     "n_a_final": 13,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 37000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-5d4487669e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_21",
+    "orig_id": "t-5d4487669e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5d4487669e",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 102,
+     "cart": [
+      [
+       "p-5fb6fadaa562",
+       2
+      ],
+      [
+       "p-263940534591",
+       2
+      ],
+      [
+       "p-13fa3b8e550b",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9fcb11f2ef26",
+      "p-263940534591"
+     ],
+     [
+      "p-f2d5500754ba",
+      "p-a9179edee870"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of the phone cases",
+     "operating system of the smartphones",
+     "material of the google pixel cases",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "should the smartphones' screen type be ips lcd, the google pixel cases' case type must be back cover",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 37000,
+    "jufuli": 37000,
+    "lita": [
+     5,
+     2,
+     13
+    ],
+    "reza": [
+     135,
+     5,
+     28
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-9fcb11f2ef26",
+    "p-263940534591"
+   ],
+   [
+    "p-f2d5500754ba",
+    "p-a9179edee870"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5ddfb5727b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 13,
+   "lita_logmean": 2.983,
+   "lita_log_prod": 8.948,
+   "hidden_cut": 0.347,
+   "reza_log": 10.255,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "eq",
+       "value": "3g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 15500,
+     "target": "p-22246015bdfd",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "case function",
+       "op": "eq",
+       "value": "built-in stand"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "samsung",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "flip cover",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 15500,
+     "target": "p-13fa3b8e550b",
+     "n_a_stated_cap": 48,
+     "n_a_final": 13,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "geometric"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "blue"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 15500,
+     "target": "p-02183a39c4bf",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 15500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-5ddfb5727b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_22",
+    "orig_id": "t-5ddfb5727b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5ddfb5727b",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 92,
+     "cart": [
+      [
+       "p-22246015bdfd",
+       2
+      ],
+      [
+       "p-13fa3b8e550b",
+       2
+      ],
+      [
+       "p-02183a39c4bf",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "brand compatibility of the phone cases",
+     "type of the phone cases",
+     "operating system of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 15500,
+    "jufuli": 15500,
+    "lita": [
+     37,
+     13,
+     16
+    ],
+    "reza": [
+     37,
+     48,
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-672b184c42",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "cognac"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "depth",
+      "framematerial"
+     ],
+     "cap_line": 5250,
+     "target": "p-050e41b5f586",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5250,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Just seen it greyed out, so that one's off the table.",
+     "factor": 1.0
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Take color off the clipboard and just search without it.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-672b184c42",
+   "extra": {
+    "kinds": [
+     "stock",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_23",
+    "orig_id": "t-672b184c42",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-672b184c42",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 50,
+     "cart": [
+      [
+       "p-050e41b5f586",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "depth",
+     "framematerial"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 498,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 498,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 473,
+    "lita": [
+     309
+    ],
+    "reza": [
+     309
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 473,
+    "lita": [
+     309
+    ],
+    "reza": [
+     309
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-67309e70a1",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.23,
+   "lita_log_prod": 8.921,
+   "hidden_cut": 0.0,
+   "reza_log": 8.921,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 118
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "gpu cores",
+       "op": "eq",
+       "value": "8-core gpu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "processor"
+     ],
+     "cap_line": 265000,
+     "target": "p-00a5d0551abc",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "rectangle"
+      },
+      {
+       "prop": "power output",
+       "op": "eq_num",
+       "value": 200,
+       "unit": "w",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "processor"
+     ],
+     "cap_line": 265000,
+     "target": "p-2ac338f7c6cd",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "2 screen protectors",
+        "2 protectors",
+        "6 screen protectors",
+        "6 protectors"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "processor"
+     ],
+     "cap_line": 265000,
+     "target": "p-01a271f7b8a7",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "samsung"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "processor"
+     ],
+     "cap_line": 265000,
+     "target": "p-0401a59e5347",
+     "n_a_stated_cap": 36,
+     "n_a_final": 36,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 265000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 118,
+   "task_id": "t-67309e70a1",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_24",
+    "orig_id": "t-67309e70a1",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-67309e70a1",
+     "agent": "pig-double-red",
+     "rank": 26,
+     "eid": "e220f275-18f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 47,
+     "cart": [
+      [
+       "p-2ac338f7c6cd",
+       1
+      ],
+      [
+       "p-441538736073",
+       1
+      ],
+      [
+       "p-8ad1e61af606",
+       1
+      ],
+      [
+       "p-90b81a4972a7",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-61f8f91324af",
+      "p-a2f0045ebbaa"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 118,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the macbooks",
+     "processor of the macbooks"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 265000,
+    "jufuli": 265000,
+    "lita": [
+     13,
+     1,
+     16,
+     36
+    ],
+    "reza": [
+     13,
+     1,
+     16,
+     36
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-61f8f91324af",
+    "p-a2f0045ebbaa"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-67c27297cf",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 6,
+   "lita_logmean": 2.689,
+   "lita_log_prod": 8.068,
+   "hidden_cut": 0.451,
+   "reza_log": 11.833,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Vinegar & Cooking Wine",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "cupboard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 7450,
+     "target": "p-0023de90ba53",
+     "n_a_stated_cap": 76,
+     "n_a_final": 76,
+     "n_a0_nocap": 76,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "eq",
+       "value": "3g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "number of camera",
+       "op": "eq",
+       "value": "five",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 7450,
+     "target": "p-3252af329393",
+     "n_a_stated_cap": 37,
+     "n_a_final": 7,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Face Scrubs & Exfoliators",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "ingredient",
+       "op": "eq",
+       "value": "salicylic acid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "cream",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 7450,
+     "target": "p-12c665687ff3",
+     "n_a_stated_cap": 49,
+     "n_a_final": 6,
+     "n_a0_nocap": 49,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7450,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-67c27297cf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_25",
+    "orig_id": "t-67c27297cf",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-67c27297cf",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 50,
+     "cart": [
+      [
+       "p-0023de90ba53",
+       3
+      ],
+      [
+       "p-3252af329393",
+       1
+      ],
+      [
+       "p-12c665687ff3",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-b1ffcedd14f6",
+      "p-9fc714a38d1a"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "product form of the face scrubs & exfoliators",
+     "number of camera of the smartphones",
+     "dietary needs of the vinegar & cooking wine"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7450,
+    "jufuli": 3807,
+    "lita": [
+     76,
+     7,
+     6
+    ],
+    "reza": [
+     76,
+     37,
+     49
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-b1ffcedd14f6",
+    "p-9fc714a38d1a"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6bdda735d7",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 37,
+   "lita_logmean": 3.611,
+   "lita_log_prod": 3.611,
+   "hidden_cut": 0.0,
+   "reza_log": 3.611,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Face Scrubs & Exfoliators",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "skin concern",
+       "op": "eq",
+       "value": "melasma"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "skin benefit",
+      "product form"
+     ],
+     "cap_line": 435,
+     "target": "p-05ebab715e26",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 435,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just did my sums at half-time, just 355 cents (USD) tops.",
+     "factor": 1.0
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just tried it on my phone at the pitch gate and there's none left.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-6bdda735d7",
+   "extra": {
+    "kinds": [
+     "budget",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_26",
+    "orig_id": "t-6bdda735d7",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-6bdda735d7",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "d4942399-4e6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 32,
+     "cart": [
+      [
+       "p-4a3e8b967136",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "skin benefit",
+     "product form"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 435,
+    "jufuli": 71,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 355,
+    "jufuli": 71,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 435,
+    "jufuli": 71,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 355,
+    "jufuli": 71,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-70d9a8a8f8",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 2,
+   "lita_logmean": 2.01,
+   "lita_log_prod": 6.031,
+   "hidden_cut": 0.348,
+   "reza_log": 9.655,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 92
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "intel iris xe"
+      },
+      {
+       "prop": "storage",
+       "op": "in",
+       "value": [
+        "2 tb",
+        "512 gb"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "intel core i5",
+       "unit": null,
+       "ref": true
+      },
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 11 pro",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery"
+     ],
+     "cap_line": 135000,
+     "target": "p-76f84c402992",
+     "n_a_stated_cap": 25,
+     "n_a_final": 2,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery"
+     ],
+     "cap_line": 135000,
+     "target": "p-036dd62a717d",
+     "n_a_stated_cap": 52,
+     "n_a_final": 52,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "trackpad"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery"
+     ],
+     "cap_line": 135000,
+     "target": "p-2c58b4b860f6",
+     "n_a_stated_cap": 12,
+     "n_a_final": 4,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 135000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 92,
+   "task_id": "t-70d9a8a8f8",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_27",
+    "orig_id": "t-70d9a8a8f8",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-70d9a8a8f8",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 92,
+     "cart": [
+      [
+       "p-76f84c402992",
+       1
+      ],
+      [
+       "p-036dd62a717d",
+       1
+      ],
+      [
+       "p-2c58b4b860f6",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-53acd804a722",
+      "p-3476518d9d01",
+      "p-b8134cb69c40",
+      "p-4b368a6df231"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 92,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor of the business laptops",
+     "operating system of the business laptops",
+     "color of the laptop replacement parts",
+     "battery of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 135000,
+    "jufuli": 135000,
+    "lita": [
+     2,
+     52,
+     4
+    ],
+    "reza": [
+     25,
+     52,
+     12
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-53acd804a722",
+    "p-3476518d9d01",
+    "p-b8134cb69c40",
+    "p-4b368a6df231"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-73bb176b39",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 9,
+   "lita_logmean": 2.515,
+   "lita_log_prod": 5.03,
+   "hidden_cut": 0.161,
+   "reza_log": 5.288,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Face Scrubs & Exfoliators",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "ingredient",
+       "op": "eq",
+       "value": "glutathione"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "skin type"
+     ],
+     "cap_line": 455000,
+     "target": "p-036016467f52",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "2 tb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "ge",
+       "value": 15.6,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "skin type"
+     ],
+     "cap_line": 455000,
+     "target": "p-003f1bddf414",
+     "n_a_stated_cap": 22,
+     "n_a_final": 17,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 455000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-73bb176b39",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_28",
+    "orig_id": "t-73bb176b39",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-73bb176b39",
+     "agent": "hdev-shopper",
+     "rank": 159,
+     "eid": "bcbefc43-637",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 42,
+     "cart": [
+      [
+       "p-003f1bddf414",
+       2
+      ],
+      [
+       "p-0c8163e29964",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "skin type of the face scrubs & exfoliators"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 455000,
+    "jufuli": 26708,
+    "lita": [
+     9,
+     17
+    ],
+    "reza": [
+     9,
+     22
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7afc92b303",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.936,
+   "lita_log_prod": 7.742,
+   "hidden_cut": 0.596,
+   "reza_log": 12.675,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 129
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "nvidia"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "1 tb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-0573d274a3f7",
+     "n_a_stated_cap": 37,
+     "n_a_final": 16,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "rectangle"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "240v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-1e0ac739a107",
+     "n_a_stated_cap": 15,
+     "n_a_final": 9,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "acer"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "heatsink",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-b9b885e4eb5a",
+     "n_a_stated_cap": 36,
+     "n_a_final": 1,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      },
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "2 screen protectors",
+        "2 protectors",
+        "6 screen protectors",
+        "6 protectors"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-01a271f7b8a7",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 255000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 129,
+   "task_id": "t-7afc92b303",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_29",
+    "orig_id": "t-7afc92b303",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7afc92b303",
+     "agent": "WAIT",
+     "rank": 115,
+     "eid": "0b201870-874",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 62,
+     "cart": [
+      [
+       "p-27e1a259930e",
+       1
+      ],
+      [
+       "p-5023929858f0",
+       1
+      ],
+      [
+       "p-b9b885e4eb5a",
+       1
+      ],
+      [
+       "p-e7278a52db73",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 129,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "component type of the laptop replacement parts",
+     "input voltage of the laptop chargers and adapters",
+     "storage of the business laptops",
+     "display of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conditional": "the laptop and tablet screen protectors' color must be black, except when the business laptops' operating system is windows 11 pro",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 255000,
+    "jufuli": 255000,
+    "lita": [
+     16,
+     9,
+     1,
+     16
+    ],
+    "reza": [
+     37,
+     15,
+     36,
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7b66380adc",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 1.04,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.679,
+   "reza_log": 5.075,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Face Scrubs & Exfoliators",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "size",
+       "op": "eq",
+       "value": "50 ml",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "liquid",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "skin benefit"
+     ],
+     "cap_line": 13000,
+     "target": "p-8f1ad9f61551",
+     "n_a_stated_cap": 20,
+     "n_a_final": 1,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Smartphones",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "screen type",
+       "op": "eq",
+       "value": "tft"
+      },
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 16,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "skin benefit"
+     ],
+     "cap_line": 13000,
+     "target": "p-14beab2fe08a",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-7b66380adc",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_30",
+    "orig_id": "t-7b66380adc",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7b66380adc",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 50,
+     "cart": [
+      [
+       "p-8f1ad9f61551",
+       2
+      ],
+      [
+       "p-14beab2fe08a",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-74ad2b8733a6",
+      "p-ce1efcdb8dfe"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "product form of the face scrubs & exfoliators",
+     "skin benefit of the face scrubs & exfoliators"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13000,
+    "jufuli": 3498,
+    "lita": [
+     1,
+     8
+    ],
+    "reza": [
+     20,
+     8
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-74ad2b8733a6",
+    "p-ce1efcdb8dfe"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7bc4ad4ab9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.0,
+   "reza_log": 2.89,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Vinegar & Cooking Wine",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "types of vinegar",
+       "op": "eq",
+       "value": "spiced vinegar",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "dietary needs",
+      "pack type"
+     ],
+     "cap_line": 260,
+     "target": "p-086e04c9abc7",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 260,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Just bin types of vinegar, I'm on pitch duty in ten.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-7bc4ad4ab9",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_31",
+    "orig_id": "t-7bc4ad4ab9",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7bc4ad4ab9",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 50,
+     "cart": [
+      [
+       "p-086e04c9abc7",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-928a44690ce4"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "dietary needs",
+     "pack type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 260,
+    "jufuli": 15,
+    "lita": [
+     18
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 260,
+    "jufuli": 15,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-928a44690ce4"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8cd5b8a744",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.102,
+   "lita_log_prod": 8.407,
+   "hidden_cut": 0.712,
+   "reza_log": 15.595,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 118
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "gpu cores",
+       "op": "eq",
+       "value": "10-core gpu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 175000,
+     "target": "p-0e1aa145e18e",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65,
+       "unit": "w",
+       "ref": false
+      },
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "120 v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 175000,
+     "target": "p-6fcd6a9c0873",
+     "n_a_stated_cap": 147,
+     "n_a_final": 4,
+     "n_a0_nocap": 147,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "acer"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "heatsink",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 175000,
+     "target": "p-b9b885e4eb5a",
+     "n_a_stated_cap": 36,
+     "n_a_final": 1,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "3 screen protectors",
+        "3 protectors"
+       ]
+      },
+      {
+       "prop": "color",
+       "op": "ne",
+       "value": "clear"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 175000,
+     "target": "p-08b346fa7874",
+     "n_a_stated_cap": 32,
+     "n_a_final": 32,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 175000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 118,
+   "task_id": "t-8cd5b8a744",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_32",
+    "orig_id": "t-8cd5b8a744",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8cd5b8a744",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 118,
+     "cart": [
+      [
+       "p-0e1aa145e18e",
+       1
+      ],
+      [
+       "p-6fcd6a9c0873",
+       1
+      ],
+      [
+       "p-b9b885e4eb5a",
+       1
+      ],
+      [
+       "p-08b346fa7874",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 118,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power output of the laptop chargers and adapters",
+     "component type of the laptop replacement parts",
+     "input voltage of the laptop chargers and adapters",
+     "processor of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 175000,
+    "jufuli": 175000,
+    "lita": [
+     35,
+     4,
+     1,
+     32
+    ],
+    "reza": [
+     35,
+     147,
+     36,
+     32
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9118af8011",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 8,
+   "lita_min": 3,
+   "lita_logmean": 3.115,
+   "lita_log_prod": 15.574,
+   "hidden_cut": 0.241,
+   "reza_log": 16.679,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 144
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "le",
+       "value": 256,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 6.7,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 42500,
+     "target": "p-00da39510247",
+     "n_a_stated_cap": 218,
+     "n_a_final": 147,
+     "n_a0_nocap": 218,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 42500,
+     "target": "p-00c20bfc0f45",
+     "n_a_stated_cap": 43,
+     "n_a_final": 43,
+     "n_a0_nocap": 43,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "pink",
+        "silver"
+       ]
+      },
+      {
+       "prop": "compatible model",
+       "op": "eq",
+       "value": "google pixel 8a",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "striped",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 42500,
+     "target": "p-97c5bef64456",
+     "n_a_stated_cap": 5,
+     "n_a_final": 3,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "installation",
+       "op": "eq",
+       "value": "bubble-free"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "clear"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 42500,
+     "target": "p-003350959162",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "oppo"
+      },
+      {
+       "prop": "design",
+       "op": "in",
+       "value": [
+        "plain",
+        "transparent"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "soft shell",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 42500,
+     "target": "p-3e4f458e96a8",
+     "n_a_stated_cap": 11,
+     "n_a_final": 9,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 42500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 144,
+   "task_id": "t-9118af8011",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_33",
+    "orig_id": "t-9118af8011",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9118af8011",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 144,
+     "cart": [
+      [
+       "p-00da39510247",
+       1
+      ],
+      [
+       "p-00c20bfc0f45",
+       2
+      ],
+      [
+       "p-97c5bef64456",
+       2
+      ],
+      [
+       "p-003350959162",
+       2
+      ],
+      [
+       "p-3e4f458e96a8",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a92d291356ed",
+      "p-baa1beb601cb"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 144,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the smartphones",
+     "pattern of the google pixel cases",
+     "type of the phone cases",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     2,
+     4
+    ],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 42500,
+    "jufuli": 42500,
+    "lita": [
+     147,
+     43,
+     3,
+     34,
+     9
+    ],
+    "reza": [
+     218,
+     43,
+     5,
+     34,
+     11
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-a92d291356ed",
+    "p-baa1beb601cb"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9ce42a24e8",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 53,
+   "lita_logmean": 3.97,
+   "lita_log_prod": 3.97,
+   "hidden_cut": 0.0,
+   "reza_log": 3.97,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "intel core ultra 7"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "memory",
+      "display"
+     ],
+     "cap_line": 240000,
+     "target": "p-0343a6544594",
+     "n_a_stated_cap": 53,
+     "n_a_final": 53,
+     "n_a0_nocap": 53,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 240000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Got a bonus from the five-a-side league, so I've just 184542 cents (USD) to play with now.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-9ce42a24e8",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_34",
+    "orig_id": "t-9ce42a24e8",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-9ce42a24e8",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "0f6b65d9-462",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-0343a6544594",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory",
+     "display"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 240000,
+    "jufuli": 240000,
+    "lita": [
+     53
+    ],
+    "reza": [
+     53
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 184542,
+    "jufuli": 184542,
+    "lita": [
+     53
+    ],
+    "reza": [
+     53
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9edfbd2838",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.482,
+   "lita_log_prod": 9.929,
+   "hidden_cut": 0.116,
+   "reza_log": 12.191,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 129
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "acrylic"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "brand compatibility",
+       "op": "eq",
+       "value": "vivo",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case function"
+     ],
+     "cap_line": 19000,
+     "target": "p-32f930b5a6a2",
+     "n_a_stated_cap": 12,
+     "n_a_final": 2,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "hand side",
+       "op": "eq",
+       "value": "both sides"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "purple",
+        "silver"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "plastic",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "case function"
+     ],
+     "cap_line": 19000,
+     "target": "p-2cb326cbbc71",
+     "n_a_stated_cap": 8,
+     "n_a_final": 5,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case function"
+     ],
+     "cap_line": 19000,
+     "target": "p-00c8fbdc3bfd",
+     "n_a_stated_cap": 54,
+     "n_a_final": 54,
+     "n_a0_nocap": 54,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Samsung Galaxy Phone Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "multicolor"
+      },
+      {
+       "prop": "type",
+       "op": "ne",
+       "value": "soft back case"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case function"
+     ],
+     "cap_line": 19000,
+     "target": "p-035dd4d2ce7e",
+     "n_a_stated_cap": 38,
+     "n_a_final": 38,
+     "n_a0_nocap": 38,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 19000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 129,
+   "task_id": "t-9edfbd2838",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_35",
+    "orig_id": "t-9edfbd2838",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9edfbd2838",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 129,
+     "cart": [
+      [
+       "p-32f930b5a6a2",
+       1
+      ],
+      [
+       "p-2cb326cbbc71",
+       1
+      ],
+      [
+       "p-00c8fbdc3bfd",
+       2
+      ],
+      [
+       "p-035dd4d2ce7e",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8fbd258a5bcc",
+      "p-dc9d08ac2fd0",
+      "p-3445f6132f52",
+      "p-3154103dcedc"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 129,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "brand compatibility of the phone cases",
+     "material of the google pixel cases",
+     "case function of the phone cases"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      "ROT5630"
+     ],
+     [
+      2,
+      "ROT5630"
+     ],
+     [
+      0,
+      "ROT5630"
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 19000,
+    "jufuli": 4547,
+    "lita": [
+     2,
+     5,
+     54,
+     38
+    ],
+    "reza": [
+     12,
+     8,
+     54,
+     38
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8fbd258a5bcc",
+    "p-dc9d08ac2fd0",
+    "p-3445f6132f52",
+    "p-3154103dcedc"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b16f7ebd5d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 40,
+   "lita_logmean": 3.689,
+   "lita_log_prod": 3.689,
+   "hidden_cut": 0.167,
+   "reza_log": 3.871,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "uhd"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "le",
+       "value": 14,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 52500,
+     "target": "p-0117227c0314",
+     "n_a_stated_cap": 48,
+     "n_a_final": 40,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 52500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Eh up, somebody's cleared the last of that pick while I'd the kettle on.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-b16f7ebd5d",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_36",
+    "orig_id": "t-b16f7ebd5d",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b16f7ebd5d",
+     "agent": "Muichiro",
+     "rank": 170,
+     "eid": "d24472e6-854",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-05d6a08d1580",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display",
+     "processor"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 52500,
+    "jufuli": 52500,
+    "lita": [
+     40
+    ],
+    "reza": [
+     48
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 52500,
+    "jufuli": 52500,
+    "lita": [
+     40
+    ],
+    "reza": [
+     48
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b1b6268ce9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 3.611,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Face Scrubs & Exfoliators",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "skin concern",
+       "op": "eq",
+       "value": "melasma"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "skin benefit",
+       "op": "eq",
+       "value": "firming/lifting",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "product form",
+       "op": "eq",
+       "value": "gel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "skin type"
+     ],
+     "cap_line": 435,
+     "target": null,
+     "n_a_stated_cap": 37,
+     "n_a_final": 0,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 435,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-b1b6268ce9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_37",
+    "orig_id": "t-b1b6268ce9",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b1b6268ce9",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 50,
+     "cart": []
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "skin benefit",
+     "product form",
+     "skin type"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 435,
+    "jufuli": 435,
+    "lita": [
+     0
+    ],
+    "reza": [
+     37
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c217fa5565",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.909,
+   "reza_log": 2.398,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "cognac"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "frame material",
+       "op": "eq",
+       "value": "iron",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "assembly"
+     ],
+     "cap_line": 5250,
+     "target": "p-cc35bdd1e05b",
+     "n_a_stated_cap": 11,
+     "n_a_final": 1,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5250,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "New limit's just 3877 cents (USD), lad, just after the minibus repair bill.",
+     "factor": 1.0
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Scrap color, I was too strict, same as with the lads' warm-up.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-c217fa5565",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_38",
+    "orig_id": "t-c217fa5565",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c217fa5565",
+     "agent": "pig-double-red",
+     "rank": 26,
+     "eid": "e77745e3-021",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-fd12854726e4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "frame material",
+     "assembly"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 5250,
+    "lita": [
+     1
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3877,
+    "jufuli": 3877,
+    "lita": [
+     1
+    ],
+    "reza": [
+     11
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5250,
+    "jufuli": 5250,
+    "lita": [
+     3
+    ],
+    "reza": [
+     309
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 3877,
+    "jufuli": 3877,
+    "lita": [
+     3
+    ],
+    "reza": [
+     309
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c9333ad691",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 19,
+   "lita_logmean": 3.27,
+   "lita_log_prod": 9.811,
+   "hidden_cut": 0.155,
+   "reza_log": 10.399,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "memory",
+       "op": "eq",
+       "value": "16gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 170000,
+     "target": "p-00a5d0551abc",
+     "n_a_stated_cap": 48,
+     "n_a_final": 48,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "compatible models",
+       "op": "eq",
+       "value": "acer"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "keyboard",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 170000,
+     "target": "p-121cae5f9a2d",
+     "n_a_stated_cap": 36,
+     "n_a_final": 20,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "6 screen protectors",
+        "6 protectors"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 170000,
+     "target": "p-01a271f7b8a7",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 170000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-c9333ad691",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_39",
+    "orig_id": "t-c9333ad691",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c9333ad691",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 102,
+     "cart": [
+      [
+       "p-00a5d0551abc",
+       1
+      ],
+      [
+       "p-121cae5f9a2d",
+       1
+      ],
+      [
+       "p-01a271f7b8a7",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "component type of the laptop replacement parts",
+     "display size of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "the laptop and tablet screen protectors' color must be clear, except when the macbooks' processor is 10-core cpu",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 170000,
+    "jufuli": 51802,
+    "lita": [
+     48,
+     20,
+     19
+    ],
+    "reza": [
+     48,
+     36,
+     19
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d84094c77a",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 2.547,
+   "lita_log_prod": 7.64,
+   "hidden_cut": 0.0,
+   "reza_log": 7.64,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 113
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 pro"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "memory"
+     ],
+     "cap_line": 250000,
+     "target": "p-00239a057872",
+     "n_a_stated_cap": 52,
+     "n_a_final": 52,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "nano-thin film",
+        "nanometre-thin optical film",
+        "nano thin film"
+       ]
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "clear"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "memory"
+     ],
+     "cap_line": 250000,
+     "target": "p-01a271f7b8a7",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "motherboard"
+      }
+     ],
+     "line_cap": 17000,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "memory"
+     ],
+     "cap_line": 250000,
+     "target": "p-8829faad41c7",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 250000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 113,
+   "task_id": "t-d84094c77a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_40",
+    "orig_id": "t-d84094c77a",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-d84094c77a",
+     "agent": "centaurs",
+     "rank": 169,
+     "eid": "3a0a3a0e-2e8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 34,
+     "cart": [
+      [
+       "p-03ad3d7480b1",
+       1
+      ],
+      [
+       "p-80a37472e92c",
+       1
+      ],
+      [
+       "p-8829faad41c7",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 113,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "memory of the business laptops"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": "should the business laptops' storage be 2 tb, the laptop replacement parts' compatible models must be lenovo",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 250000,
+    "jufuli": 250000,
+    "lita": [
+     52,
+     20,
+     2
+    ],
+    "reza": [
+     52,
+     20,
+     2
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e11e2f4dac",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.187,
+   "lita_log_prod": 8.748,
+   "hidden_cut": 0.213,
+   "reza_log": 12.62,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 118
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "MacBooks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "gpu cores",
+       "op": "eq",
+       "value": "10-core gpu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 210000,
+     "target": "p-0e1aa145e18e",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "eq",
+       "value": "trackpad"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 210000,
+     "target": "p-2c58b4b860f6",
+     "n_a_stated_cap": 12,
+     "n_a_final": 4,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "nano glass"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 210000,
+     "target": "p-060c4b630f51",
+     "n_a_stated_cap": 45,
+     "n_a_final": 45,
+     "n_a0_nocap": 45,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      },
+      {
+       "prop": "input voltage",
+       "op": "in",
+       "value": [
+        "100 v",
+        "240v"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "eq_num",
+       "value": 140,
+       "unit": "w",
+       "ref": true
+      },
+      {
+       "prop": "output voltage",
+       "op": "ge",
+       "value": 20.5,
+       "unit": "v",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 210000,
+     "target": "p-b25e00b0530e",
+     "n_a_stated_cap": 16,
+     "n_a_final": 1,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 210000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 118,
+   "task_id": "t-e11e2f4dac",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_41",
+    "orig_id": "t-e11e2f4dac",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e11e2f4dac",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 118,
+     "cart": [
+      [
+       "p-0e1aa145e18e",
+       1
+      ],
+      [
+       "p-2c58b4b860f6",
+       2
+      ],
+      [
+       "p-060c4b630f51",
+       1
+      ],
+      [
+       "p-b25e00b0530e",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8c1afb7941bf",
+      "p-abbd01f1ca1f"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 118,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the laptop replacement parts",
+     "power output of the laptop chargers and adapters",
+     "output voltage of the laptop chargers and adapters",
+     "processor of the macbooks"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 210000,
+    "jufuli": 88068,
+    "lita": [
+     35,
+     4,
+     45,
+     1
+    ],
+    "reza": [
+     35,
+     12,
+     45,
+     16
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8c1afb7941bf",
+    "p-abbd01f1ca1f"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e8d4c506d7",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 35,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 3.555,
+   "hidden_cut": 0.0,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "memory",
+      "display"
+     ],
+     "cap_line": 110000,
+     "target": "p-010b57c08831",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 110000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "New limit's just 126873 cents (USD), lad, just after the minibus repair bill.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-e8d4c506d7",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_42",
+    "orig_id": "t-e8d4c506d7",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e8d4c506d7",
+     "agent": "hdev-shopper",
+     "rank": 159,
+     "eid": "e6cfc247-94e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 28,
+     "cart": [
+      [
+       "p-d88fbfabe466",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory",
+     "display"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 126873,
+    "jufuli": 126873,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-eca183071d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.836,
+   "lita_log_prod": 5.509,
+   "hidden_cut": 0.566,
+   "reza_log": 9.644,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "eq",
+       "value": "single"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "new",
+        "used"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19000,
+     "target": "p-008b90cac227",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "case function",
+       "op": "eq",
+       "value": "built-in stand"
+      },
+      {
+       "prop": "brand compatibility",
+       "op": "in",
+       "value": [
+        "oppo",
+        "samsung"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "flip cover",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19000,
+     "target": "p-13fa3b8e550b",
+     "n_a_stated_cap": 28,
+     "n_a_final": 13,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Google Pixel Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "geometric"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "case type",
+       "op": "eq",
+       "value": "holder",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 19000,
+     "target": "p-9d163de4de96",
+     "n_a_stated_cap": 29,
+     "n_a_final": 1,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 19000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-eca183071d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_43",
+    "orig_id": "t-eca183071d",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-eca183071d",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 102,
+     "cart": [
+      [
+       "p-008b90cac227",
+       1
+      ],
+      [
+       "p-13fa3b8e550b",
+       1
+      ],
+      [
+       "p-9d163de4de96",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of the phone cases",
+     "case type of the google pixel cases",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "should the smartphones' screen type be ips lcd or oled, the google pixel cases' color must be beige",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 19000,
+    "jufuli": 19000,
+    "lita": [
+     19,
+     13,
+     1
+    ],
+    "reza": [
+     19,
+     28,
+     29
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f8d7631e3c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 6,
+   "lita_logmean": 2.682,
+   "lita_log_prod": 8.046,
+   "hidden_cut": 0.59,
+   "reza_log": 11.86,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 102
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory",
+       "op": "eq_num",
+       "value": 32,
+       "unit": "gb",
+       "ref": true
+      },
+      {
+       "prop": "storage",
+       "op": "eq",
+       "value": "1 tb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-2b60c1354fd7",
+     "n_a_stated_cap": 34,
+     "n_a_final": 6,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-036dd62a717d",
+     "n_a_stated_cap": 52,
+     "n_a_final": 52,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display"
+     ],
+     "cap_line": 255000,
+     "target": "p-01e605285426",
+     "n_a_stated_cap": 80,
+     "n_a_final": 10,
+     "n_a0_nocap": 80,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 255000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 102,
+   "task_id": "t-f8d7631e3c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_44",
+    "orig_id": "t-f8d7631e3c",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f8d7631e3c",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 102,
+     "cart": [
+      [
+       "p-2b60c1354fd7",
+       2
+      ],
+      [
+       "p-036dd62a717d",
+       2
+      ],
+      [
+       "p-01e605285426",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-bf699dbdf90b",
+      "p-8698849cf5c5"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 102,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the laptop replacement parts",
+     "memory of the business laptops",
+     "storage of the business laptops",
+     "display of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "should the business laptops' operating system be windows 11 home, the laptop replacement parts' compatible models must be hp",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 255000,
+    "jufuli": 255000,
+    "lita": [
+     6,
+     52,
+     10
+    ],
+    "reza": [
+     34,
+     52,
+     80
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-bf699dbdf90b",
+    "p-8698849cf5c5"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fdc76f3907",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.929,
+   "reza_log": 4.727,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 50
+  },
+  "spec": {
+   "suite": "s14_r15",
+   "flavor": "r15",
+   "lines": [
+    {
+     "category": "Ottomans",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 18,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "assembly",
+       "op": "in",
+       "value": [
+        "minimal assembly",
+        "minimal assembly required"
+       ],
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "depth"
+     ],
+     "cap_line": 2600,
+     "target": "p-22edfe2c7a7f",
+     "n_a_stated_cap": 113,
+     "n_a_final": 8,
+     "n_a0_nocap": 113,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2600,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Stalled on that pick, nowt left to buy.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 50,
+   "task_id": "t-fdc76f3907",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r15_45",
+    "orig_id": "t-fdc76f3907",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fdc76f3907",
+     "agent": "SHINE",
+     "rank": 146,
+     "eid": "8ab50ed0-891",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 46,
+     "cart": [
+      [
+       "p-49ce42345e33",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 50,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "assembly",
+     "depth"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [],
+    "fits_infeasible": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2600,
+    "jufuli": 876,
+    "lita": [
+     8
+    ],
+    "reza": [
+     113
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2600,
+    "jufuli": 876,
+    "lita": [
+     8
+    ],
+    "reza": [
+     113
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ }
+]

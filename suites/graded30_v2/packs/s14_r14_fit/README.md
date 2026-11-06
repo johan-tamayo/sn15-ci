@@ -1,0 +1,19 @@
+# Race-14 Forged Field Suite (`s14_r14`, 45 Open Tasks, `w-forge-s14-r14`)
+
+## 1. Overview & World Mechanics
+- **Pack Path**: `~/sn15-ops/suites/graded30_v2/packs/s14_r14` (`pack_id: p-forge-s14-r14`, `world_id: w-forge-s14-r14`), built by `tools/forge/r14_forge/build_s14_r14.py` from `runs/r14_forge/` (lane `r14forge1`).
+- **Corpus Provenance**: all `9,945` released Race-14 open episodes (`221` agents x `45` open tasks; `1,958` passing order episodes across `26` tasks, `19` 0-pass tasks with exact stated + hidden clauses).
+- **100% Verbatim `request_text`**: every task carries the verbatim shopper request recovered from the released transcripts (`runs/r14_forge/r14_verbatim_requests.json`; one field agent echoes it in five `buyerAsk` chunks).
+- **Truth**: `lita` = in-stock catalog items matching stated + hidden clauses UNION every passing field cart on that line; `reza` = stated-only fits UNION lita; `jufuli` calibrated on passing / `not_the_best_option` carts (cheapest tasks); one answer slot per event bitmask.
+- **Catalog**: all `7,341` cards seen in the episodes (`4,265` full pages with `product_properties`, `985` pointer cards with `item_good_to_know`).
+- **Task mix**: 1L `20` / 2L `8` / 3L `15` / 4L `2`; hidden slots on `40/45` tasks (67 slots), reply-by-reference on `5/45`, pointer chains on `12/45`, mid-episode notices on `4/45`.
+- **8 Race-14 Tools (`tools.json`)**: `LocateListings(HowType words|browse, Words, GroupName, BeginAtAt)` -> `{listings[12], next_page_token, num_hits_number}`; `OpenPage(ItemId)` -> full card (`{}` if unknown); `SetToCart(ActType append|delete, Listing, Number)` (cap 4 per listing, `CAPPED` / `UNKNOWN`); `BagList()`; `BuyItem()`; `PassOrder()` (decline); `AskBuyer(ReplyNote)` (3 replies, 4th -> `budget_exceeded`); `StatusReport()`. Shapes are asserted by the oracle (19 checks).
+- **Store Notices**: price / stock events ride on the NEXT tool observation as `{"hese": <obs>, "hufa": [<sentence>]}`; an event not yet fired at the first `BuyItem` refuses it (`{"observation": {"worked": true}, "refusal": [...]}`) and the episode continues.
+- **Persona**: 12 reveal frames, 10 nopref, 10 DNU (`dnu_default` on 17 multi-line tasks), 10 bundle-refusal strings drawn on non-slot questions at the task's field share (`bezifa.bundle_pct` = 0.0 on all 45 tasks: none is drawn).
+- **Process rules**: reference chains (`answer.refs`) opened via `OpenPage` + hidden needs (`answer.needs`) revealed via `AskBuyer`; `process_rules = []`.
+- **Known limits (FAIL rows on the fidelity card)**: cross-line `fits` constraints and conditional rules of the 4L tasks are recorded in `suite_index.json` (`spec.extra.fits` / `conditional`) but NOT graded; three pointer chains end on a card no field agent opened (`t-833f1251d3` pack type, `t-d38d81ac25` battery type, `t-f4408f1b8e` color): the slot stays a graded need without a value filter.
+- **Calibrations (not derivations)**: single-listing field-outcome corrections to the acceptable set, each with its per-listing evidence in a `# CALIBRATION` comment in the spec file: t-02e490ab8a (reza_add p-00c285530305) and t-239a47fed0 (reject p-31dc43c37e98). Full list with evidence on the fidelity card (`runs/r14forge1/R14_FIDELITY_CARD.md`).
+
+## Search-engine fit (`runs/forge2/HANDOVER.md`, 2026-11-06)
+- `text_search_ids` reproduces the live store's search as fitted on every live page-1 search of the race (`runs/forge2/fit_search.py`): AND over the FIRST 2 tokens (len >= 2; `(),./:;|` split, `-` kept), GroupName ignored for words searches, BM25 k1 1.1 / b 0 (score tiers in id order), top 1000.
+- `world/index/jasu.json`: k1 1.1, b 0.0. `brand` (index-only field; the tools show `maker` / `merchant`) carries live-evidence search words for 2055 pointer cards (listings no field agent opened: their facts are unknown; the words every live page proves they contain, with the term frequency the live ranking tier implies).
