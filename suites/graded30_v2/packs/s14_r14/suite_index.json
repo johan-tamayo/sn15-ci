@@ -1,0 +1,8785 @@
+[
+ {
+  "task_id": "t-023fe53fa2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 34,
+   "lita_logmean": 3.526,
+   "lita_log_prod": 3.526,
+   "hidden_cut": 0.37,
+   "reza_log": 3.989,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "sexy",
+       "keys": [
+        "fa_general_styles",
+        "style"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plain",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 380,
+     "target": "p-044dbe2c208c",
+     "n_a_stated_cap": 54,
+     "n_a_final": 34,
+     "n_a0_nocap": 54,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 380,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-023fe53fa2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_01",
+    "orig_id": "t-023fe53fa2",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-023fe53fa2",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "43ac9623-7dd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 14,
+     "cart": [
+      [
+       "p-e57030fa19ec",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pattern",
+     "size class"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 380,
+    "jufuli": 380,
+    "lita": [
+     34
+    ],
+    "reza": [
+     54
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-02e490ab8a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.654,
+   "reza_log": 3.951,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "in",
+       "value": [
+        "low fat"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "single",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 1850,
+     "target": "p-07b14594a913",
+     "n_a_stated_cap": 52,
+     "n_a_final": 18,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1850,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-02e490ab8a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_02",
+    "orig_id": "t-02e490ab8a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-02e490ab8a",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "b6bf0092-9f5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-685bf136ab0a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack type",
+     "fruit type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1850,
+    "jufuli": 1850,
+    "lita": [
+     18
+    ],
+    "reza": [
+     52
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-092422f15e",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 2,
+   "lita_logmean": 0.896,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.833,
+   "reza_log": 5.412,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 pro",
+       "keys": [
+        "operating system",
+        "os"
+       ]
+      },
+      {
+       "prop": "memory",
+       "op": "ge",
+       "value": 16,
+       "unit": "gb",
+       "keys": [
+        "memory",
+        "ram"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "ryzen",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 125000,
+     "target": "p-1bfc0dbdea62",
+     "n_a_stated_cap": 16,
+     "n_a_final": 2,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "straight",
+       "keys": [
+        "pants fit type",
+        "pants fit",
+        "fit",
+        "fit of pants"
+       ]
+      },
+      {
+       "prop": "collar type",
+       "op": "in",
+       "value": [
+        "square neck",
+        "v-neck"
+       ],
+       "keys": [
+        "collar type",
+        "collar",
+        "neckline"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "polyester",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 125000,
+     "target": "p-08a00c0dd3ce",
+     "n_a_stated_cap": 14,
+     "n_a_final": 3,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 125000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-092422f15e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_03",
+    "orig_id": "t-092422f15e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-092422f15e",
+     "agent": "lllll",
+     "rank": 24,
+     "eid": "dcf8766f-895",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-3315493ca5e5",
+       1
+      ],
+      [
+       "p-defeaffa85c5",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material of the jumpsuits & rompers",
+     "processor of the desktop computers",
+     "storage of the desktop computers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 125000,
+    "jufuli": 125000,
+    "lita": [
+     2,
+     3
+    ],
+    "reza": [
+     16,
+     14
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-0b136044ef",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 3,
+   "lita_logmean": 2.106,
+   "lita_log_prod": 6.319,
+   "hidden_cut": 0.392,
+   "reza_log": 9.44,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 215000,
+     "target": "p-038c8a5a9d10",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fruit Juice",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "grape"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "le",
+       "value": 320,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 215000,
+     "target": "p-200af4027a56",
+     "n_a_stated_cap": 17,
+     "n_a_final": 5,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Desktop Computers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 pro"
+      },
+      {
+       "prop": "memory type",
+       "op": "in",
+       "value": [
+        "ddr3",
+        "ddr4"
+       ],
+       "keys": [
+        "memory type",
+        "memory"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "in",
+       "value": [
+        "core i7",
+        "quad i7"
+       ],
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 215000,
+     "target": "p-23d334026718",
+     "n_a_stated_cap": 20,
+     "n_a_final": 3,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 215000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-0b136044ef",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_04",
+    "orig_id": "t-0b136044ef",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0b136044ef",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-038c8a5a9d10",
+       3
+      ],
+      [
+       "p-200af4027a56",
+       1
+      ],
+      [
+       "p-23d334026718",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "volume of the fruit juice",
+     "processor of the desktop computers",
+     "material of the bookshelves and wall shelves"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 215000,
+    "jufuli": 73913,
+    "lita": [
+     37,
+     5,
+     3
+    ],
+    "reza": [
+     37,
+     17,
+     20
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-196bd25636",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 28,
+   "lita_logmean": 3.332,
+   "lita_log_prod": 3.332,
+   "hidden_cut": 0.954,
+   "reza_log": 6.413,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 6,
+   "max_hops": 6,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "form factor",
+       "op": "eq",
+       "value": null
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 11 pro",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "processor",
+       "op": "in",
+       "value": [
+        "i5",
+        "core i5"
+       ],
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 150000,
+     "target": "p-024a910f27f5",
+     "n_a_stated_cap": 610,
+     "n_a_final": 28,
+     "n_a0_nocap": 610,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 150000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-196bd25636",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_05",
+    "orig_id": "t-196bd25636",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-196bd25636",
+     "agent": "PP",
+     "rank": 27,
+     "eid": "8114bae3-7ed",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-81b786d8082a",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-1e0fd6180cfc",
+      "p-ac63bcaf14b5",
+      "p-bdb910332d31",
+      "p-da1285f6290b",
+      "p-a98087df400e",
+      "p-f0ada5fce100"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "operating system",
+     "processor",
+     "storage"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 150000,
+    "jufuli": 22500,
+    "lita": [
+     28
+    ],
+    "reza": [
+     610
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-1e0fd6180cfc",
+    "p-ac63bcaf14b5",
+    "p-bdb910332d31",
+    "p-da1285f6290b",
+    "p-a98087df400e",
+    "p-f0ada5fce100"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-234a08d889",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.2,
+   "reza_log": 1.609,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "checked & geometric",
+       "keys": [
+        "fa_pattern",
+        "pattern"
+       ]
+      },
+      {
+       "prop": "sleeves",
+       "op": "in",
+       "value": [
+        "short sleeve",
+        "sleeveless"
+       ],
+       "keys": [
+        "sleeves",
+        "sleeve length"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "regular",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "collar type"
+     ],
+     "cap_line": 680,
+     "target": "p-278474f0c6e7",
+     "n_a_stated_cap": 5,
+     "n_a_final": 4,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 680,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-234a08d889",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_06",
+    "orig_id": "t-234a08d889",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-234a08d889",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "7e831089-ccb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 12,
+     "cart": [
+      [
+       "p-278474f0c6e7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pants fit type",
+     "collar type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 680,
+    "jufuli": 680,
+    "lita": [
+     4
+    ],
+    "reza": [
+     5
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-239a47fed0",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 3.105,
+   "lita_log_prod": 12.421,
+   "hidden_cut": 0.0,
+   "reza_log": 12.421,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 115
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Computer Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brightness",
+       "op": "ge",
+       "value": 300,
+       "unit": "nits"
+      },
+      {
+       "prop": "aspect ratio",
+       "op": "ne",
+       "value": "16:9"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "resolution"
+     ],
+     "cap_line": 65000,
+     "target": "p-01783f4bcd8d",
+     "n_a_stated_cap": 82,
+     "n_a_final": 82,
+     "n_a0_nocap": 82,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "AV Receivers & Amplifiers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "2000-3000"
+      },
+      {
+       "prop": "hifi connectivity",
+       "op": "ne",
+       "value": "usb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "resolution"
+     ],
+     "cap_line": 65000,
+     "target": "p-1052bde2501b",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "6k",
+       "keys": [
+        "output resolution",
+        "max resolution",
+        "resolution"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "resolution"
+     ],
+     "cap_line": 65000,
+     "target": "p-07b0344d87a6",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "3-pin xlr",
+       "keys": [
+        "hifi connectivity",
+        "connectivity"
+       ]
+      },
+      {
+       "prop": "woofer size",
+       "op": "within",
+       "value": [
+        14.0,
+        4.01
+       ],
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "resolution"
+     ],
+     "cap_line": 65000,
+     "target": "p-0e163ffc71f3",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 65000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 115,
+   "task_id": "t-239a47fed0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_07",
+    "orig_id": "t-239a47fed0",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-239a47fed0",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 115,
+     "cart": [
+      [
+       "p-01783f4bcd8d",
+       1
+      ],
+      [
+       "p-1052bde2501b",
+       1
+      ],
+      [
+       "p-07b0344d87a6",
+       1
+      ],
+      [
+       "p-0e163ffc71f3",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-87e5f48339ea",
+      "p-be9235b7b6e6",
+      "p-31dc43c37e98"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 115,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the computer monitors",
+     "resolution of the computer monitors"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 65000,
+    "jufuli": 6594,
+    "lita": [
+     82,
+     6,
+     42,
+     12
+    ],
+    "reza": [
+     82,
+     6,
+     42,
+     12
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-87e5f48339ea",
+    "p-be9235b7b6e6",
+    "p-31dc43c37e98"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2585349224",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.667,
+   "reza_log": 1.792,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pants length",
+       "op": "eq",
+       "value": "above knee",
+       "keys": [
+        "pants length",
+        "length"
+       ]
+      },
+      {
+       "prop": "material",
+       "op": "ne",
+       "value": "cotton",
+       "keys": [
+        "material",
+        "clothing material"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "sleeveless",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "collar"
+     ],
+     "cap_line": 600,
+     "target": "p-634bced08853",
+     "n_a_stated_cap": 6,
+     "n_a_final": 2,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 600,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-2585349224",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_08",
+    "orig_id": "t-2585349224",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2585349224",
+     "agent": "SUM",
+     "rank": 93,
+     "eid": "ad318bf0-1ef",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-634bced08853",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "sleeves",
+     "collar"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 600,
+    "jufuli": 302,
+    "lita": [
+     2
+    ],
+    "reza": [
+     6
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-32968c41e4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 40,
+   "lita_logmean": 3.689,
+   "lita_log_prod": 3.689,
+   "hidden_cut": 0.31,
+   "reza_log": 4.06,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 75.49,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 33.1,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 2850,
+     "target": "p-09a43a9afec3",
+     "n_a_stated_cap": 58,
+     "n_a_final": 40,
+     "n_a0_nocap": 58,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-32968c41e4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_09",
+    "orig_id": "t-32968c41e4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-32968c41e4",
+     "agent": "lllll",
+     "rank": 24,
+     "eid": "0e44ccad-90c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 11,
+     "cart": [
+      [
+       "p-0ae1ca2b65c3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "depth",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 2850,
+    "lita": [
+     40
+    ],
+    "reza": [
+     58
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-343d5e459a",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 13,
+   "lita_logmean": 3.031,
+   "lita_log_prod": 6.061,
+   "hidden_cut": 0.08,
+   "reza_log": 6.33,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "mandarin collar"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "challis",
+        "cotton"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "sleeveless",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 2850000,
+     "target": "p-0ed0d411a514",
+     "n_a_stated_cap": 17,
+     "n_a_final": 13,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Desktop Computers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "xeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 2850000,
+     "target": "p-1c1ea29cea6b",
+     "n_a_stated_cap": 33,
+     "n_a_final": 33,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-343d5e459a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_10",
+    "orig_id": "t-343d5e459a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-343d5e459a",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "ddf0a154-506",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-1c1ea29cea6b",
+       2
+      ],
+      [
+       "p-379d2f3d9bea",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "sleeves of the jumpsuits & rompers",
+     "size class of the jumpsuits & rompers"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850000,
+    "jufuli": 57905,
+    "lita": [
+     13,
+     33
+    ],
+    "reza": [
+     17,
+     33
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-467ed85158",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.0,
+   "reza_log": 1.099,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "basic",
+       "keys": [
+        "fa_general_styles",
+        "style"
+       ]
+      },
+      {
+       "prop": "pants fit type",
+       "op": "ne",
+       "value": "regular",
+       "keys": [
+        "pants_fit_type",
+        "fit",
+        "fit type"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "collar type",
+      "fa pattern"
+     ],
+     "cap_line": 455,
+     "target": "p-9bd76c413ae0",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 455,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Pop your head up from the chart, pal, because the price tag for that one isn't the same any more.",
+     "factor": 0.58
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Tide's turned on the pricing for that choice, so best look again before we sail on.",
+     "factor": 0.78
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-467ed85158",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_11",
+    "orig_id": "t-467ed85158",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-467ed85158",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "a530d3b5-cc6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 39,
+     "cart": [
+      [
+       "p-9bd76c413ae0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "collar type",
+     "fa pattern"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 455,
+    "jufuli": 443,
+    "lita": [
+     3
+    ],
+    "reza": [
+     3
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4fc767b572",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.086,
+   "lita_log_prod": 3.258,
+   "hidden_cut": 0.738,
+   "reza_log": 8.209,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brightness",
+       "op": "le",
+       "value": 400,
+       "unit": "nits"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "blue"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "3840 x 2160",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 41500,
+     "target": "p-2cbe012ca773",
+     "n_a_stated_cap": 35,
+     "n_a_final": 1,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "h616"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "android 10",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 41500,
+     "target": "p-27e21ee6293c",
+     "n_a_stated_cap": 21,
+     "n_a_final": 13,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sensitivity",
+       "op": "ge",
+       "value": 93,
+       "unit": "db"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "3 pin",
+        "us"
+       ]
+      }
+     ],
+     "line_cap": 2250,
+     "hidden": [
+      {
+       "prop": "woofer size",
+       "op": "within",
+       "value": [
+        12.0,
+        3.77
+       ],
+       "unit": "inches",
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 41500,
+     "target": "p-6e0fe26fdc6d",
+     "n_a_stated_cap": 5,
+     "n_a_final": 2,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 41500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 111,
+   "task_id": "t-4fc767b572",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_12",
+    "orig_id": "t-4fc767b572",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4fc767b572",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 111,
+     "cart": [
+      [
+       "p-2cbe012ca773",
+       1
+      ],
+      [
+       "p-27e21ee6293c",
+       2
+      ],
+      [
+       "p-6e0fe26fdc6d",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-92ee8754fcbd",
+      "p-e4a5a056c555",
+      "p-7ecdcf6ef104"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 111,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "woofer size of the home soundbars, speakers & subwoofers",
+     "resolution of the portable monitors",
+     "operating system of the streaming media players",
+     "connectivity of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "home soundbars, speakers & subwoofers connectivity must be 2.5mm, except when portable monitors resolution is wqxga",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 41500,
+    "jufuli": 29829,
+    "lita": [
+     1,
+     13,
+     2
+    ],
+    "reza": [
+     35,
+     21,
+     5
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-92ee8754fcbd",
+    "p-e4a5a056c555",
+    "p-7ecdcf6ef104"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-53472bd086",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.896,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.806,
+   "reza_log": 4.595,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "xeon"
+      },
+      {
+       "prop": "form factor",
+       "op": "in",
+       "value": null
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory type",
+       "op": "eq",
+       "value": "ddr4",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 3200000,
+     "target": "p-1c1ea29cea6b",
+     "n_a_stated_cap": 33,
+     "n_a_final": 6,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "3/4 sleeve",
+       "keys": [
+        "sleeves",
+        "sleeve length",
+        "sleeve"
+       ]
+      },
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "loose & relaxed",
+       "keys": [
+        "pants fit type",
+        "pants fit",
+        "fit",
+        "fit of pants"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "plus size",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 3200000,
+     "target": "p-a04e83208f33",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3200000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-53472bd086",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_13",
+    "orig_id": "t-53472bd086",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-53472bd086",
+     "agent": "hiro",
+     "rank": 2,
+     "eid": "3c0504cf-306",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 40,
+     "cart": [
+      [
+       "p-a04e83208f33",
+       3
+      ],
+      [
+       "p-b04f34d006d1",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-92548b97bca4"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size class of the jumpsuits & rompers",
+     "memory type of the desktop computers",
+     "storage of the desktop computers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3200000,
+    "jufuli": 253372,
+    "lita": [
+     6,
+     1
+    ],
+    "reza": [
+     33,
+     3
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-92548b97bca4"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5853b8e656",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 5,
+   "lita_logmean": 2.526,
+   "lita_log_prod": 7.578,
+   "hidden_cut": 0.4,
+   "reza_log": 8.922,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "petite",
+       "ref": true
+      },
+      {
+       "prop": "collar type",
+       "op": "in",
+       "value": [
+        "round-neck",
+        "v-neck"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "casual",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "clothing material"
+     ],
+     "cap_line": 3000,
+     "target": "p-17c2b236e5f1",
+     "n_a_stated_cap": 9,
+     "n_a_final": 5,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "eq",
+       "value": "cupboard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 567,
+       "unit": "g",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "clothing material"
+     ],
+     "cap_line": 3000,
+     "target": "p-0114782617fa",
+     "n_a_stated_cap": 49,
+     "n_a_final": 23,
+     "n_a0_nocap": 49,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fruit Juice",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "grape"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "clothing material"
+     ],
+     "cap_line": 3000,
+     "target": "p-00eb0b14baab",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-5853b8e656",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_14",
+    "orig_id": "t-5853b8e656",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5853b8e656",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-17c2b236e5f1",
+       3
+      ],
+      [
+       "p-0114782617fa",
+       1
+      ],
+      [
+       "p-00eb0b14baab",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-20f4bbccd535",
+      "p-8e57bfc65ad6",
+      "p-28754bcb2c28"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight of the canned fruit",
+     "style of the jumpsuits & rompers",
+     "clothing material of the jumpsuits & rompers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3000,
+    "jufuli": 3000,
+    "lita": [
+     5,
+     23,
+     17
+    ],
+    "reza": [
+     9,
+     49,
+     17
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-20f4bbccd535",
+    "p-8e57bfc65ad6",
+    "p-28754bcb2c28"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-629ade0fba",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 37,
+   "lita_logmean": 3.611,
+   "lita_log_prod": 3.611,
+   "hidden_cut": 0.0,
+   "reza_log": 3.611,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 2850,
+     "target": "p-038c8a5a9d10",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-629ade0fba",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_15",
+    "orig_id": "t-629ade0fba",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-629ade0fba",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "46b5a4bf-5f4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-0a7e00b6bb73",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 2850,
+    "lita": [
+     37
+    ],
+    "reza": [
+     37
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-692d005297",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 5,
+   "lita_logmean": 1.701,
+   "lita_log_prod": 3.401,
+   "hidden_cut": 0.761,
+   "reza_log": 6.174,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "eq",
+       "value": "strawberry",
+       "keys": [
+        "fruit_type",
+        "fruit type"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "lemon",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 75000,
+     "target": "p-0250026eb2b1",
+     "n_a_stated_cap": 30,
+     "n_a_final": 5,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Portable Monitors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver"
+      },
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 15.6,
+       "unit": "inches",
+       "keys": [
+        "display_size",
+        "display_area",
+        "screen_size"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "full hd",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 75000,
+     "target": "p-07e1309c1bfb",
+     "n_a_stated_cap": 16,
+     "n_a_final": 6,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 75000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-692d005297",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_16",
+    "orig_id": "t-692d005297",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-692d005297",
+     "agent": "Euphrates",
+     "rank": 94,
+     "eid": "ea350c6b-6f4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-4e02c8064653",
+       3
+      ],
+      [
+       "p-e4f3835b6c09",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "flavor of the fruit juice",
+     "resolution of the portable monitors",
+     "packaging type of the fruit juice"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 75000,
+    "jufuli": 75000,
+    "lita": [
+     5,
+     6
+    ],
+    "reza": [
+     30,
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6a3385181b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 12,
+   "lita_logmean": 2.536,
+   "lita_log_prod": 7.609,
+   "hidden_cut": 0.465,
+   "reza_log": 9.253,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "basic"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 6000,
+     "target": "p-04d13778ef28",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 142.24,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 76,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 6000,
+     "target": "p-09a43a9afec3",
+     "n_a_stated_cap": 29,
+     "n_a_final": 12,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fruit Juice",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "eq",
+       "value": "strawberry"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "strawberry",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 6000,
+     "target": "p-12ee5d6b9f41",
+     "n_a_stated_cap": 30,
+     "n_a_final": 14,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-6a3385181b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_17",
+    "orig_id": "t-6a3385181b",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6a3385181b",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-04d13778ef28",
+       1
+      ],
+      [
+       "p-09a43a9afec3",
+       1
+      ],
+      [
+       "p-12ee5d6b9f41",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "flavor of the fruit juice",
+     "width of the bookshelves and wall shelves",
+     "size class of the jumpsuits & rompers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6000,
+    "jufuli": 1368,
+    "lita": [
+     12,
+     12,
+     14
+    ],
+    "reza": [
+     12,
+     29,
+     30
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7809938a48",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.7,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sleeves",
+       "op": "eq",
+       "value": "3/4 sleeve",
+       "keys": [
+        "sleeves",
+        "sleeve length",
+        "sleeve"
+       ]
+      },
+      {
+       "prop": "collar type",
+       "op": "in",
+       "value": [
+        "high-neck",
+        "off shoulder"
+       ],
+       "keys": [
+        "collar type",
+        "collar",
+        "neckline"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "regular",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "clothing material"
+     ],
+     "cap_line": 523,
+     "target": "p-600ac9ef35e4",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 523,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-7809938a48",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_18",
+    "orig_id": "t-7809938a48",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7809938a48",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "52d2cc90-734",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-bae196a81852",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size class",
+     "clothing material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 523,
+    "jufuli": 523,
+    "lita": [
+     3
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-792d1e6867",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 3,
+   "lita_logmean": 2.505,
+   "lita_log_prod": 5.011,
+   "hidden_cut": 0.07,
+   "reza_log": 5.858,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low sodium"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 3300,
+     "target": "p-07b14594a913",
+     "n_a_stated_cap": 50,
+     "n_a_final": 50,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "shirt collar"
+      },
+      {
+       "prop": "pants fit type",
+       "op": "in",
+       "value": [
+        "loose & relaxed",
+        "wide leg"
+       ],
+       "keys": [
+        "pants_fit_type",
+        "fit",
+        "pants fit"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pants length",
+       "op": "eq",
+       "value": "ankle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 3300,
+     "target": "p-3bd79e957c27",
+     "n_a_stated_cap": 7,
+     "n_a_final": 3,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3300,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-792d1e6867",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_19",
+    "orig_id": "t-792d1e6867",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-792d1e6867",
+     "agent": "Assay",
+     "rank": 26,
+     "eid": "19139442-a11",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-1ae28fba5f3a",
+       2
+      ],
+      [
+       "p-3bd79e957c27",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pants length of the jumpsuits & rompers",
+     "fruit type of the fruit juice"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3300,
+    "jufuli": 3300,
+    "lita": [
+     50,
+     3
+    ],
+    "reza": [
+     50,
+     7
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7e4af35d35",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 14,
+   "lita_logmean": 3.276,
+   "lita_log_prod": 6.551,
+   "hidden_cut": 0.439,
+   "reza_log": 8.071,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "eq",
+       "value": "nvidia"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory type",
+       "op": "eq",
+       "value": "ddr5",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "ryzen",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 900000,
+     "target": "p-100c68ab8b39",
+     "n_a_stated_cap": 64,
+     "n_a_final": 14,
+     "n_a0_nocap": 64,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fruit Juice",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low sodium"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 900000,
+     "target": "p-07b14594a913",
+     "n_a_stated_cap": 50,
+     "n_a_final": 50,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 900000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-7e4af35d35",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_20",
+    "orig_id": "t-7e4af35d35",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7e4af35d35",
+     "agent": "k-strong",
+     "rank": 45,
+     "eid": "e1e5b472-1ca",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-15856babc990",
+       3
+      ],
+      [
+       "p-e83ea05a1719",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory type of the desktop computers",
+     "processor of the desktop computers",
+     "storage of the desktop computers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 900000,
+    "jufuli": 900000,
+    "lita": [
+     14,
+     50
+    ],
+    "reza": [
+     64,
+     50
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-805dd5c12a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.846,
+   "reza_log": 3.951,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "healthier choice",
+       "keys": [
+        "dietary_needs",
+        "dietary needs"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "eq",
+       "value": "coconut",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 385,
+     "target": "p-02547f1485a3",
+     "n_a_stated_cap": 52,
+     "n_a_final": 8,
+     "n_a0_nocap": 52,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 385,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-805dd5c12a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_21",
+    "orig_id": "t-805dd5c12a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-805dd5c12a",
+     "agent": "SUM",
+     "rank": 93,
+     "eid": "3e1f16d8-14d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-f886eb2efb1e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 385,
+    "jufuli": 223,
+    "lita": [
+     8
+    ],
+    "reza": [
+     52
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-80e1010eb7",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 5,
+   "lita_logmean": 2.164,
+   "lita_log_prod": 6.492,
+   "hidden_cut": 0.441,
+   "reza_log": 8.054,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "peach"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "le",
+       "value": 320,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 8100,
+     "target": "p-0304fa5cbb62",
+     "n_a_stated_cap": 17,
+     "n_a_final": 6,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "mdf",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 8100,
+     "target": "p-038c8a5a9d10",
+     "n_a_stated_cap": 37,
+     "n_a_final": 22,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "workwear"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "cotton",
+        "nylon"
+       ],
+       "keys": [
+        "material",
+        "clothing material"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 8100,
+     "target": "p-45663f76612e",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8100,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-80e1010eb7",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_22",
+    "orig_id": "t-80e1010eb7",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-80e1010eb7",
+     "agent": "SmartWoman",
+     "rank": 23,
+     "eid": "daaa7c1a-d43",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-c9cc0515b40a",
+       1
+      ],
+      [
+       "p-f2567c9ce947",
+       2
+      ],
+      [
+       "p-f275fe181c0e",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-bb1b8d42dc53",
+      "p-da749b147747",
+      "p-f2b07fcc02e3"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "volume of the fruit juice",
+     "material of the bookshelves and wall shelves",
+     "fruit type of the fruit juice"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8100,
+    "jufuli": 2068,
+    "lita": [
+     6,
+     22,
+     5
+    ],
+    "reza": [
+     17,
+     37,
+     5
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-bb1b8d42dc53",
+    "p-da749b147747",
+    "p-f2b07fcc02e3"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-888588e543",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 4,
+   "lita_logmean": 2.239,
+   "lita_log_prod": 4.477,
+   "hidden_cut": 0.748,
+   "reza_log": 7.841,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "mandarin collar",
+       "keys": [
+        "collar type",
+        "collar",
+        "neckline"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "loose & relaxed",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 4300,
+     "target": "p-5be4c804cac9",
+     "n_a_stated_cap": 41,
+     "n_a_final": 4,
+     "n_a0_nocap": 41,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 77,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 123,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 4300,
+     "target": "p-09a43a9afec3",
+     "n_a_stated_cap": 62,
+     "n_a_final": 22,
+     "n_a0_nocap": 62,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4300,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-888588e543",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_23",
+    "orig_id": "t-888588e543",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-888588e543",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-5be4c804cac9",
+       1
+      ],
+      [
+       "p-09a43a9afec3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pants fit type of the jumpsuits & rompers",
+     "height of the bookshelves and wall shelves",
+     "size class of the jumpsuits & rompers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4300,
+    "jufuli": 883,
+    "lita": [
+     4,
+     22
+    ],
+    "reza": [
+     41,
+     62
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8bf3f595d5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 101,
+   "lita_logmean": 4.615,
+   "lita_log_prod": 4.615,
+   "hidden_cut": 0.369,
+   "reza_log": 5.075,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brightness",
+       "op": "le",
+       "value": 400,
+       "unit": "nits"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 15.6,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "panel type"
+     ],
+     "cap_line": 27000,
+     "target": "p-00612b0c7be8",
+     "n_a_stated_cap": 160,
+     "n_a_final": 101,
+     "n_a0_nocap": 160,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-8bf3f595d5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_24",
+    "orig_id": "t-8bf3f595d5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8bf3f595d5",
+     "agent": "James",
+     "rank": 202,
+     "eid": "79d16a62-a12",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-0bc9c07b4d07",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size",
+     "panel type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27000,
+    "jufuli": 6099,
+    "lita": [
+     101
+    ],
+    "reza": [
+     160
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9358d87572",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.44,
+   "reza_log": 3.219,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows 10 pro",
+       "keys": [
+        "operating_system",
+        "operating system"
+       ]
+      },
+      {
+       "prop": "form factor",
+       "op": "in",
+       "value": null
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "in",
+       "value": [
+        "i5",
+        "core i5"
+       ],
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage"
+     ],
+     "cap_line": 54500,
+     "target": "p-0606a986a31a",
+     "n_a_stated_cap": 25,
+     "n_a_final": 14,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 54500,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Ooh, the price for that pick has moved, love, and I'm only halfway through me tea.",
+     "factor": 0.78
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-9358d87572",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_25",
+    "orig_id": "t-9358d87572",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9358d87572",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "98d45af1-7d5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-19802516abc4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor",
+     "storage"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 54500,
+    "jufuli": 10218,
+    "lita": [
+     14
+    ],
+    "reza": [
+     25
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9406d62b4e",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.397,
+   "lita_log_prod": 4.19,
+   "hidden_cut": 0.5,
+   "reza_log": 7.042,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "panel type",
+       "op": "eq",
+       "value": "oled"
+      },
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 14,
+       "unit": "inches",
+       "keys": [
+        "display_size",
+        "display_area",
+        "screen_size"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "1920 x 1080",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 145000,
+     "target": "p-4e06d8690b79",
+     "n_a_stated_cap": 13,
+     "n_a_final": 2,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sensitivity",
+       "op": "ge",
+       "value": 93,
+       "unit": "db"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "3 pin",
+        "us"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "woofer size",
+       "op": "le",
+       "value": 5.25,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 145000,
+     "target": "p-714062412671",
+     "n_a_stated_cap": 8,
+     "n_a_final": 3,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pants length",
+       "op": "eq",
+       "value": "above knee",
+       "keys": [
+        "pants_length",
+        "pants length",
+        "length"
+       ]
+      },
+      {
+       "prop": "material",
+       "op": "ne",
+       "value": "knits",
+       "keys": [
+        "material",
+        "clothing_material"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 145000,
+     "target": "p-06e9ea3b96d8",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 145000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-9406d62b4e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_26",
+    "orig_id": "t-9406d62b4e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9406d62b4e",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-4e06d8690b79",
+       2
+      ],
+      [
+       "p-714062412671",
+       1
+      ],
+      [
+       "p-06e9ea3b96d8",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "woofer size of the home soundbars, speakers & subwoofers",
+     "resolution of the portable monitors",
+     "connectivity of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 145000,
+    "lita": [
+     2,
+     3,
+     11
+    ],
+    "reza": [
+     13,
+     8,
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9489d792bf",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.2,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "xeon"
+      },
+      {
+       "prop": "form factor",
+       "op": "in",
+       "value": [
+        "mini pc",
+        "workstation"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory type",
+       "op": "eq",
+       "value": "ddr5",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "graphics"
+     ],
+     "cap_line": 1250000,
+     "target": "p-1f588608601f",
+     "n_a_stated_cap": 10,
+     "n_a_final": 8,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1250000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-9489d792bf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_27",
+    "orig_id": "t-9489d792bf",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9489d792bf",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "16bc8d90-44a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-2091c3902f11",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-50300b4efcb0"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory type",
+     "graphics"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1250000,
+    "jufuli": 1250000,
+    "lita": [
+     8
+    ],
+    "reza": [
+     10
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-50300b4efcb0"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9b07de9462",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 41,
+   "lita_logmean": 3.714,
+   "lita_log_prod": 3.714,
+   "hidden_cut": 0.339,
+   "reza_log": 4.127,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 77,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 123,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 3150,
+     "target": "p-038c8a5a9d10",
+     "n_a_stated_cap": 62,
+     "n_a_final": 41,
+     "n_a0_nocap": 62,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3150,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-9b07de9462",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_28",
+    "orig_id": "t-9b07de9462",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9b07de9462",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "f87919e4-e60",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-a2f5c347e4c5",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "height",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 256,
+    "lita": [
+     41
+    ],
+    "reza": [
+     62
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a1fc99ec65",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 3.177,
+   "lita_log_prod": 9.53,
+   "hidden_cut": 0.054,
+   "reza_log": 10.378,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Computer Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brightness",
+       "op": "le",
+       "value": 350,
+       "unit": "nits"
+      },
+      {
+       "prop": "aspect ratio",
+       "op": "ne",
+       "value": "21:9"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 45500,
+     "target": "p-0022b3b28ffc",
+     "n_a_stated_cap": 153,
+     "n_a_final": 153,
+     "n_a0_nocap": 153,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "sensitivity",
+       "op": "ge",
+       "value": 93,
+       "unit": "db"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "universal",
+        "us"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power",
+       "op": "ge",
+       "value": 200,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 45500,
+     "target": "p-0f5652c81b69",
+     "n_a_stated_cap": 21,
+     "n_a_final": 15,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "h616"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "eu",
+        "us"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "6k",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 45500,
+     "target": "p-36805b242c83",
+     "n_a_stated_cap": 10,
+     "n_a_final": 6,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 45500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 91,
+   "task_id": "t-a1fc99ec65",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_29",
+    "orig_id": "t-a1fc99ec65",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a1fc99ec65",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 91,
+     "cart": [
+      [
+       "p-0022b3b28ffc",
+       1
+      ],
+      [
+       "p-0f5652c81b69",
+       2
+      ],
+      [
+       "p-36805b242c83",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 91,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power of the home soundbars, speakers & subwoofers",
+     "resolution of the streaming media players",
+     "display size of the computer monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 45500,
+    "jufuli": 9902,
+    "lita": [
+     153,
+     15,
+     6
+    ],
+    "reza": [
+     153,
+     21,
+     10
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a964cb1065",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 0.768,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.636,
+   "reza_log": 5.576,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "panel type",
+       "op": "eq",
+       "value": "oled"
+      },
+      {
+       "prop": "resolution",
+       "op": "in",
+       "value": [
+        "4k",
+        "full hd"
+       ],
+       "keys": [
+        "resolution_standard",
+        "resolution",
+        "display_resolution"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "1920 x 1080",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 73500,
+     "target": "p-7f6e28406bf5",
+     "n_a_stated_cap": 8,
+     "n_a_final": 2,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "6k",
+       "keys": [
+        "resolution",
+        "output resolution",
+        "max resolution",
+        "video resolution"
+       ]
+      }
+     ],
+     "line_cap": 1300,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "android 14",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 73500,
+     "target": "p-4fd44f15def2",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "3-pin xlr",
+       "keys": [
+        "hifi_connectivity",
+        "connectivity"
+       ]
+      },
+      {
+       "prop": "power",
+       "op": "ge",
+       "value": 300,
+       "unit": "w",
+       "keys": [
+        "power",
+        "wattage",
+        "max power",
+        "rated power",
+        "rms power",
+        "power output",
+        "output power",
+        "peak power",
+        "nominal power",
+        "power handling"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "2 pin",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 73500,
+     "target": "p-1cfe7b6b1873",
+     "n_a_stated_cap": 11,
+     "n_a_final": 5,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 73500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 101,
+   "task_id": "t-a964cb1065",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_30",
+    "orig_id": "t-a964cb1065",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a964cb1065",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": [
+      [
+       "p-7f6e28406bf5",
+       1
+      ],
+      [
+       "p-4fd44f15def2",
+       2
+      ],
+      [
+       "p-1cfe7b6b1873",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 101,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type of the home soundbars, speakers & subwoofers",
+     "operating system of the streaming media players",
+     "resolution of the portable monitors",
+     "connectivity of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     1
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 73500,
+    "jufuli": 40209,
+    "lita": [
+     2,
+     1,
+     5
+    ],
+    "reza": [
+     8,
+     3,
+     11
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b15ea300f0",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 2.058,
+   "lita_log_prod": 6.174,
+   "hidden_cut": 0.487,
+   "reza_log": 9.41,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "3-pin xlr",
+       "keys": [
+        "connectivity",
+        "hifi_connectivity"
+       ]
+      },
+      {
+       "prop": "woofer size",
+       "op": "ge",
+       "value": 12,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "us",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "includes"
+     ],
+     "cap_line": 11500,
+     "target": "p-79e21e5805ed",
+     "n_a_stated_cap": 11,
+     "n_a_final": 2,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fruit Juice",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "eq",
+       "value": "strawberry",
+       "keys": [
+        "fruit_type",
+        "fruit type"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "includes"
+     ],
+     "cap_line": 11500,
+     "target": "p-0250026eb2b1",
+     "n_a_stated_cap": 30,
+     "n_a_final": 30,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "contemporary"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "walnut",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "includes"
+     ],
+     "cap_line": 11500,
+     "target": "p-0de43a580889",
+     "n_a_stated_cap": 37,
+     "n_a_final": 8,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-b15ea300f0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_31",
+    "orig_id": "t-b15ea300f0",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b15ea300f0",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-79e21e5805ed",
+       3
+      ],
+      [
+       "p-0250026eb2b1",
+       2
+      ],
+      [
+       "p-0de43a580889",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the bookshelves and wall shelves",
+     "plug type of the home soundbars, speakers & subwoofers",
+     "includes of the home soundbars, speakers & subwoofers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11500,
+    "jufuli": 11500,
+    "lita": [
+     2,
+     30,
+     8
+    ],
+    "reza": [
+     11,
+     30,
+     37
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c38cd9ea3e",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 11,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 3,
+   "lita_logmean": 1.782,
+   "lita_log_prod": 5.347,
+   "hidden_cut": 0.375,
+   "reza_log": 6.916,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 0.9,
+       "unit": "kg"
+      },
+      {
+       "prop": "resolution",
+       "op": "in",
+       "value": [
+        "4k",
+        "wuxga"
+       ],
+       "keys": [
+        "resolution",
+        "resolution standard",
+        "display resolution"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 15.3,
+       "unit": "inches",
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 74500,
+     "target": "p-2e3d7295f16e",
+     "n_a_stated_cap": 12,
+     "n_a_final": 10,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "impedance",
+       "op": "le",
+       "value": 8,
+       "unit": "ohms"
+      },
+      {
+       "prop": "channels",
+       "op": "in",
+       "value": [
+        "2.1",
+        "3.0"
+       ],
+       "keys": [
+        "number of channels",
+        "channels"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power",
+       "op": "le",
+       "value": 300,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 74500,
+     "target": "p-371e668c6091",
+     "n_a_stated_cap": 6,
+     "n_a_final": 3,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "h616"
+      },
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 2,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "android 10",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 74500,
+     "target": "p-36805b242c83",
+     "n_a_stated_cap": 14,
+     "n_a_final": 7,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 74500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 91,
+   "task_id": "t-c38cd9ea3e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_32",
+    "orig_id": "t-c38cd9ea3e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c38cd9ea3e",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 91,
+     "cart": [
+      [
+       "p-2e3d7295f16e",
+       2
+      ],
+      [
+       "p-371e668c6091",
+       2
+      ],
+      [
+       "p-36805b242c83",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-ca6845f9fb61",
+      "p-503311999add",
+      "p-e1f577e90474",
+      "p-57e59e8e00d1",
+      "p-9d28aabe5822"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 91,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the portable monitors",
+     "operating system of the streaming media players",
+     "power of the home soundbars, speakers & subwoofers",
+     "connectivity of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 74500,
+    "jufuli": 63613,
+    "lita": [
+     10,
+     3,
+     7
+    ],
+    "reza": [
+     12,
+     6,
+     14
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-ca6845f9fb61",
+    "p-503311999add",
+    "p-e1f577e90474",
+    "p-57e59e8e00d1",
+    "p-9d28aabe5822"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c84a1cb47e",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 2.201,
+   "lita_log_prod": 6.604,
+   "hidden_cut": 0.374,
+   "reza_log": 9.243,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Computer Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "refresh rate",
+       "op": "le",
+       "value": 75,
+       "unit": "hz"
+      },
+      {
+       "prop": "aspect ratio",
+       "op": "ne",
+       "value": "16:10",
+       "keys": [
+        "aspect ratio",
+        "native aspect ratio"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 91500,
+     "target": "p-01783f4bcd8d",
+     "n_a_stated_cap": 82,
+     "n_a_final": 82,
+     "n_a0_nocap": 82,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "android 14",
+       "keys": [
+        "operating system",
+        "os"
+       ]
+      },
+      {
+       "prop": "plug type",
+       "op": "ne",
+       "value": "uk"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "media player type",
+       "op": "eq",
+       "value": "stick",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 91500,
+     "target": "p-090e3b8fe005",
+     "n_a_stated_cap": 63,
+     "n_a_final": 9,
+     "n_a0_nocap": 63,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "AV Receivers & Amplifiers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "5000 and up"
+      },
+      {
+       "prop": "hifi connectivity",
+       "op": "ne",
+       "value": "3-pin xlr"
+      }
+     ],
+     "line_cap": 3000,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 91500,
+     "target": "p-f1da4c7e29ca",
+     "n_a_stated_cap": 2,
+     "n_a_final": 1,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 91500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 111,
+   "task_id": "t-c84a1cb47e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_33",
+    "orig_id": "t-c84a1cb47e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c84a1cb47e",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 111,
+     "cart": [
+      [
+       "p-01783f4bcd8d",
+       1
+      ],
+      [
+       "p-090e3b8fe005",
+       1
+      ],
+      [
+       "p-f1da4c7e29ca",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-5cec9cb56ec2"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 111,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "media player type of the streaming media players",
+     "display size of the computer monitors"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conditional": "if the computer monitor's resolution is 3840 x 2160 then the streaming media player's processor must be allwinner h313",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 91500,
+    "jufuli": 7001,
+    "lita": [
+     82,
+     9,
+     1
+    ],
+    "reza": [
+     82,
+     63,
+     2
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-5cec9cb56ec2"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cc57f5178e",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 2,
+   "lita_logmean": 0.963,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.826,
+   "reza_log": 6.356,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "wqxga",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 47000,
+     "target": "p-39568931b786",
+     "n_a_stated_cap": 36,
+     "n_a_final": 3,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Antennas and Coax Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "n-type male"
+      },
+      {
+       "prop": "antenna type",
+       "op": "ne",
+       "value": "omnidirectional"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 47000,
+     "target": "p-5ee17330104c",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "3-pin xlr",
+       "keys": [
+        "connectivity",
+        "hifi connectivity"
+       ]
+      },
+      {
+       "prop": "sensitivity",
+       "op": "ge",
+       "value": 93,
+       "unit": "db"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "universal",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 47000,
+     "target": "p-5ab9b23ad264",
+     "n_a_stated_cap": 8,
+     "n_a_final": 3,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 47000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 91,
+   "task_id": "t-cc57f5178e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_34",
+    "orig_id": "t-cc57f5178e",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cc57f5178e",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 91,
+     "cart": [
+      [
+       "p-39568931b786",
+       1
+      ],
+      [
+       "p-5ee17330104c",
+       1
+      ],
+      [
+       "p-5ab9b23ad264",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 91,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "resolution of the portable monitors",
+     "plug type of the home soundbars, speakers & subwoofers",
+     "display size of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 47000,
+    "jufuli": 30584,
+    "lita": [
+     3,
+     2,
+     3
+    ],
+    "reza": [
+     36,
+     2,
+     8
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d282f6b129",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.986,
+   "reza_log": 5.38,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "regular",
+       "keys": [
+        "size_class",
+        "size class"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "square neck",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "skinny",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "clothing material"
+     ],
+     "cap_line": 485,
+     "target": "p-2de061277e51",
+     "n_a_stated_cap": 217,
+     "n_a_final": 3,
+     "n_a0_nocap": 217,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 485,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Hang on, there's no more of that one on the shelf, so we'd best find a new heading.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Tide's turned on the pricing for that choice, so best look again before we sail on.",
+     "factor": 0.78
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": false,
+     "message": "Pop your head up from the chart, pal, because the price tag for that one isn't the same any more.",
+     "factor": 0.58
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-d282f6b129",
+   "extra": {
+    "kinds": [
+     "stock",
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_35",
+    "orig_id": "t-d282f6b129",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d282f6b129",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-2de061277e51",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "collar type",
+     "pants fit type",
+     "clothing material"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 123,
+    "lita": [
+     3
+    ],
+    "reza": [
+     217
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d3d93bd4f3",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 1.683,
+   "lita_log_prod": 5.05,
+   "hidden_cut": 0.5,
+   "reza_log": 7.735,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Streaming Media Players",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "h616",
+       "keys": [
+        "processor",
+        "cpu"
+       ]
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "eu",
+        "us"
+       ],
+       "keys": [
+        "plug_type",
+        "plug type"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "android 14",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "media player type"
+     ],
+     "cap_line": 23500,
+     "target": "p-27a2734506af",
+     "n_a_stated_cap": 11,
+     "n_a_final": 3,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "3-pin xlr",
+       "keys": [
+        "connectivity",
+        "hifi_connectivity"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "universal",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "media player type"
+     ],
+     "cap_line": 23500,
+     "target": "p-5ab9b23ad264",
+     "n_a_stated_cap": 16,
+     "n_a_final": 4,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "AV Receivers & Amplifiers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "5000 and up",
+       "keys": [
+        "power_consumption",
+        "power consumption"
+       ]
+      },
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 1500,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "media player type"
+     ],
+     "cap_line": 23500,
+     "target": "p-050a02e99588",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 23500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 101,
+   "task_id": "t-d3d93bd4f3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_36",
+    "orig_id": "t-d3d93bd4f3",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d3d93bd4f3",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": [
+      [
+       "p-27a2734506af",
+       1
+      ],
+      [
+       "p-5ab9b23ad264",
+       2
+      ],
+      [
+       "p-050a02e99588",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8bf8e02e6e0a",
+      "p-89286359ba44",
+      "p-d09f4b255bb0",
+      "p-4bb40acc78a4",
+      "p-e65c0cae9a59"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 101,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type of the home soundbars, speakers & subwoofers",
+     "operating system of the streaming media players",
+     "media player type of the streaming media players"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": "every line must work with TV ROR1920 (listings carry 'Goes with ROR1920')",
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 23500,
+    "jufuli": 8979,
+    "lita": [
+     3,
+     4,
+     13
+    ],
+    "reza": [
+     11,
+     16,
+     13
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8bf8e02e6e0a",
+    "p-89286359ba44",
+    "p-d09f4b255bb0",
+    "p-4bb40acc78a4",
+    "p-e65c0cae9a59"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dd172a9f15",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 32,
+   "lita_logmean": 3.466,
+   "lita_log_prod": 3.466,
+   "hidden_cut": 0.0,
+   "reza_log": 3.466,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Bookshelves and Wall Shelves",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 35.56,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "width",
+      "material"
+     ],
+     "cap_line": 2850,
+     "target": "p-0519bd2d8348",
+     "n_a_stated_cap": 32,
+     "n_a_final": 32,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2850,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Eee, the stockroom's empty for that pick, and I'd only just got me hopes up over a cuppa.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-dd172a9f15",
+   "extra": {
+    "kinds": [
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_37",
+    "orig_id": "t-dd172a9f15",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-dd172a9f15",
+     "agent": "Cobalt",
+     "rank": 154,
+     "eid": "15eb33d2-bd4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 39,
+     "cart": [
+      [
+       "p-6d5ab323fb13",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "material"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2850,
+    "jufuli": 746,
+    "lita": [
+     32
+    ],
+    "reza": [
+     32
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-de8efb9349",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.913,
+   "reza_log": 5.328,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": null
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "eq",
+       "value": "coconut",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "weight"
+     ],
+     "cap_line": 295,
+     "target": "p-02547f1485a3",
+     "n_a_stated_cap": 206,
+     "n_a_final": 18,
+     "n_a0_nocap": 206,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 295,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-de8efb9349",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_38",
+    "orig_id": "t-de8efb9349",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-de8efb9349",
+     "agent": "SUM",
+     "rank": 93,
+     "eid": "dfeb823e-ba8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-963c1608efbb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "weight"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 295,
+    "jufuli": 248,
+    "lita": [
+     18
+    ],
+    "reza": [
+     206
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ded1d99c35",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 9,
+   "lita_logmean": 2.197,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.471,
+   "reza_log": 2.833,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "grape"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "volume",
+       "op": "ge",
+       "value": 320,
+       "unit": "ml",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 305,
+     "target": "p-4b735553488c",
+     "n_a_stated_cap": 17,
+     "n_a_final": 9,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 305,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-ded1d99c35",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_39",
+    "orig_id": "t-ded1d99c35",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ded1d99c35",
+     "agent": "Douro",
+     "rank": 63,
+     "eid": "8c36e6ef-254",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-4b735553488c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "volume",
+     "fruit type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 305,
+    "jufuli": 80,
+    "lita": [
+     9
+    ],
+    "reza": [
+     17
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e853945e64",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.9,
+   "reza_log": 3.912,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Fruit Juice",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "eq",
+       "value": "low sodium"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "large serve",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 1350,
+     "target": "p-1ae28fba5f3a",
+     "n_a_stated_cap": 50,
+     "n_a_final": 5,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1350,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-e853945e64",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_40",
+    "orig_id": "t-e853945e64",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e853945e64",
+     "agent": "Shikra",
+     "rank": 122,
+     "eid": "9759c05c-33f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-4c3eecbdc1e0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack type",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1350,
+    "jufuli": 143,
+    "lita": [
+     5
+    ],
+    "reza": [
+     50
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f17cb7270f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 1.804,
+   "lita_log_prod": 5.412,
+   "hidden_cut": 0.621,
+   "reza_log": 7.86,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "panel type",
+       "op": "eq",
+       "value": "oled"
+      },
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 0.998,
+       "unit": "kg"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 68000,
+     "target": "p-1935b36830bf",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "impedance",
+       "op": "le",
+       "value": 8,
+       "unit": "ohm"
+      },
+      {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "hdmi",
+        "usb"
+       ],
+       "keys": [
+        "connectivity",
+        "hifi_connectivity"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "2 pin",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "woofer size",
+       "op": "le",
+       "value": 8,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 68000,
+     "target": "p-37417c73a391",
+     "n_a_stated_cap": 18,
+     "n_a_final": 4,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "1080p"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "media player type",
+       "op": "eq",
+       "value": "box",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 68000,
+     "target": "p-1ff01078aed6",
+     "n_a_stated_cap": 36,
+     "n_a_final": 14,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 68000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 91,
+   "task_id": "t-f17cb7270f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_41",
+    "orig_id": "t-f17cb7270f",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f17cb7270f",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 91,
+     "cart": [
+      [
+       "p-1935b36830bf",
+       1
+      ],
+      [
+       "p-37417c73a391",
+       2
+      ],
+      [
+       "p-1ff01078aed6",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 91,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type of the home soundbars, speakers & subwoofers",
+     "media player type of the streaming media players",
+     "woofer size of the home soundbars, speakers & subwoofers",
+     "connectivity of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 68000,
+    "jufuli": 68000,
+    "lita": [
+     4,
+     4,
+     14
+    ],
+    "reza": [
+     4,
+     18,
+     36
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f5f286dbaf",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.882,
+   "reza_log": 6.474,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Desktop Computers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "eq",
+       "value": "xeon"
+      },
+      {
+       "prop": "operating system",
+       "op": "in",
+       "value": [
+        "windows 10/11 pro",
+        "windows 11 pro"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory type",
+       "op": "eq",
+       "value": "ddr4",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "graphics"
+     ],
+     "cap_line": 1500000,
+     "target": "p-681a3f148974",
+     "n_a_stated_cap": 24,
+     "n_a_final": 3,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "plain",
+        "stripe"
+       ],
+       "keys": [
+        "fa pattern",
+        "pattern"
+       ]
+      },
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "round-neck"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pants length",
+       "op": "eq",
+       "value": "ankle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "graphics"
+     ],
+     "cap_line": 1500000,
+     "target": "p-52f5c789d55f",
+     "n_a_stated_cap": 27,
+     "n_a_final": 3,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1500000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-f5f286dbaf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_42",
+    "orig_id": "t-f5f286dbaf",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f5f286dbaf",
+     "agent": "Assay",
+     "rank": 26,
+     "eid": "80afdadb-39a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 40,
+     "cart": [
+      [
+       "p-681a3f148974",
+       1
+      ],
+      [
+       "p-91d530b69de0",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-5b7895d71f4c"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory type of the desktop computers",
+     "pants length of the jumpsuits & rompers",
+     "graphics of the desktop computers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1500000,
+    "jufuli": 1500000,
+    "lita": [
+     3,
+     3
+    ],
+    "reza": [
+     24,
+     27
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-5b7895d71f4c"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fdce449a46",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "stated_clauses",
+  "hidden_source": "none",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 3,
+   "lita_logmean": 2.383,
+   "lita_log_prod": 11.916,
+   "hidden_cut": 0.0,
+   "reza_log": 11.916,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 129
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Computer Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "brightness",
+       "op": "le",
+       "value": 300,
+       "unit": "nits"
+      },
+      {
+       "prop": "contrast ratio",
+       "op": "eq",
+       "value": "1000:1"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "panel type"
+     ],
+     "cap_line": 73000,
+     "target": "p-01783f4bcd8d",
+     "n_a_stated_cap": 36,
+     "n_a_final": 36,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "AV Receivers & Amplifiers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "5000 and up"
+      },
+      {
+       "prop": "power output",
+       "op": "ge",
+       "value": 900,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "panel type"
+     ],
+     "cap_line": 73000,
+     "target": "p-050a02e99588",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Antennas and Coax Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "eq",
+       "value": "n-type male",
+       "keys": [
+        "connector type",
+        "connector"
+       ]
+      },
+      {
+       "prop": "impedance",
+       "op": "ge",
+       "value": 50,
+       "unit": "ohm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "panel type"
+     ],
+     "cap_line": 73000,
+     "target": "p-5ee17330104c",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Streaming Media Players",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "1080p"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "uk",
+        "us"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "panel type"
+     ],
+     "cap_line": 73000,
+     "target": "p-063b8ea20db6",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "hifi connectivity",
+       "op": "eq",
+       "value": "3-pin xlr"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size",
+      "panel type"
+     ],
+     "cap_line": 73000,
+     "target": "p-0e163ffc71f3",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 73000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 129,
+   "task_id": "t-fdce449a46",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_43",
+    "orig_id": "t-fdce449a46",
+    "truth_source": "stated_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-fdce449a46",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "none",
+     "steps": 129,
+     "cart": [
+      [
+       "p-01783f4bcd8d",
+       1
+      ],
+      [
+       "p-050a02e99588",
+       2
+      ],
+      [
+       "p-5ee17330104c",
+       1
+      ],
+      [
+       "p-063b8ea20db6",
+       2
+      ],
+      [
+       "p-0e163ffc71f3",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-b4b834161213",
+      "p-8768080ebb59",
+      "p-27596ed7ab28",
+      "p-d7bea0d31582",
+      "p-8523220bf1c8"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 129,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the computer monitors",
+     "panel type of the computer monitors"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 73000,
+    "jufuli": 73000,
+    "lita": [
+     36,
+     11,
+     3,
+     9,
+     14
+    ],
+    "reza": [
+     36,
+     11,
+     3,
+     9,
+     14
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-b4b834161213",
+    "p-8768080ebb59",
+    "p-27596ed7ab28",
+    "p-d7bea0d31582",
+    "p-8523220bf1c8"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fed10439b4",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 1.221,
+   "lita_log_prod": 3.664,
+   "hidden_cut": 0.575,
+   "reza_log": 7.653,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Portable Monitors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "silver"
+      },
+      {
+       "prop": "aspect ratio",
+       "op": "in",
+       "value": [
+        "16:10",
+        "16:9"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "2560 x 1600",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 56000,
+     "target": "p-0d32d61604d3",
+     "n_a_stated_cap": 18,
+     "n_a_final": 3,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Home Soundbars, Speakers & Subwoofers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "eq",
+       "value": "rca",
+       "keys": [
+        "connectivity",
+        "hifi connectivity"
+       ]
+      }
+     ],
+     "line_cap": 290,
+     "hidden": [
+      {
+       "prop": "power",
+       "op": "ge",
+       "value": 120,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 56000,
+     "target": "p-99cfe99d891b",
+     "n_a_stated_cap": 9,
+     "n_a_final": 1,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "AV Receivers & Amplifiers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "eq",
+       "value": "2000-3000"
+      },
+      {
+       "prop": "power output",
+       "op": "ge",
+       "value": 200,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 56000,
+     "target": "p-1052bde2501b",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 56000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 101,
+   "task_id": "t-fed10439b4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_44",
+    "orig_id": "t-fed10439b4",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fed10439b4",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": [
+      [
+       "p-0d32d61604d3",
+       1
+      ],
+      [
+       "p-99cfe99d891b",
+       2
+      ],
+      [
+       "p-1052bde2501b",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 101,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "resolution of the portable monitors",
+     "power of the home soundbars, speakers & subwoofers",
+     "display size of the portable monitors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": []
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 56000,
+    "jufuli": 29563,
+    "lita": [
+     3,
+     1,
+     13
+    ],
+    "reza": [
+     18,
+     9,
+     13
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ff6133fb1d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "stated_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.125,
+   "reza_log": 2.773,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r14",
+   "flavor": "r14",
+   "lines": [
+    {
+     "category": "Jumpsuits & Rompers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "basic",
+       "keys": [
+        "style",
+        "fa_general_styles",
+        "fashion_style"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pants fit type",
+       "op": "eq",
+       "value": "straight",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "collar type",
+       "op": "eq",
+       "value": "off shoulder",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 455,
+     "target": "p-04d13778ef28",
+     "n_a_stated_cap": 16,
+     "n_a_final": 14,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 455,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-ff6133fb1d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r14_45",
+    "orig_id": "t-ff6133fb1d",
+    "truth_source": "stated_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ff6133fb1d",
+     "agent": "Katapa",
+     "rank": 1,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "stated_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-04d13778ef28",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 43,
+    "max_steps": 140,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pants fit type",
+     "collar type",
+     "size class"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "fits": [],
+    "conditional": null,
+    "unresolved_pointer": null,
+    "hidden_unfiltered_lines": [
+     0
+    ]
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 455,
+    "jufuli": 455,
+    "lita": [
+     14
+    ],
+    "reza": [
+     16
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ }
+]
