@@ -644,11 +644,53 @@ def selftest() -> int:
     return 1 if fails else 0
 
 
+def probe_byok_error() -> int:
+    """Forced-error probe on the OpenRouter BYOK pin: requests Anthropic rejects before generating (400), so neither the BYOK key
+    nor a shared-capacity fallback can bill tokens. Each must come back as an ERROR; a credit-billed reply trips the tripwire.
+    Prints status, error text and OpenRouter's error metadata (provider, is_byok) only."""
+    probes = [
+        ("assistant prefill ends in whitespace", {"messages": [{"role": "user", "content": "Say ok."},
+                                                               {"role": "assistant", "content": "ok "}]}),
+        ("forced tool that is not declared", {"messages": [{"role": "user", "content": "Say ok."}],
+                                              "tools": [{"type": "function", "function": {"name": "a", "parameters": {"type": "object"}}}],
+                                              "tool_choice": {"type": "function", "function": {"name": "b"}}}),
+    ]
+    os.environ[ROUTE_ENV] = "openrouter"
+    bad = 0
+    for name, extra in probes:
+        body = {"model": "anthropic/claude-haiku-5.5", "max_tokens": 16, "temperature": 0, **extra}
+        t0 = time.time()
+        try:
+            data = post_json(body, timeout=60, tool="llm_route:probe-byok-error")
+            u = data.get("usage") or {}
+            verdict = "CREDIT-BILLED" if (float(u.get("cost") or 0) > 0 or u.get("is_byok") is False) else "ANSWERED (BYOK, no error)"
+            bad += 1 if verdict == "CREDIT-BILLED" else 0
+            print("%-38s HTTP 200 %s: provider %s, is_byok %s, cost %s, generation %s" % (
+                name, verdict, data.get("provider"), u.get("is_byok"), u.get("cost"), data.get("id")))
+        except urllib.error.HTTPError as e:
+            raw = e.read().decode("utf-8", errors="replace")
+            try:
+                err = (json.loads(raw) or {}).get("error") or {}
+            except ValueError:
+                err = {"message": raw[:200]}
+            meta = err.get("metadata") or {}
+            print("%-38s HTTP %d ERROR in %.1f s: %s | metadata provider %s, is_byok %s, raw %s" % (
+                name, e.code, time.time() - t0, str(err.get("message"))[:160], meta.get("provider_name"), meta.get("is_byok"),
+                str(meta.get("raw"))[:160]))
+        except CreditSpent as e:
+            bad += 1
+            print("%-38s CREDIT-BILLED, tripwire set: %s" % (name, e))
+    print("probe-byok-error: %d credit-billed repl%s" % (bad, "y" if bad == 1 else "ies"))
+    return 1 if bad else 0
+
+
 if __name__ == "__main__":
-    # llm_route.py route | translate <body.json> | selftest     (no model call; no key printed)
+    # llm_route.py route | translate <body.json> | selftest | probe-byok-error     (no key printed)
     _a = sys.argv[1:]
     if _a and _a[0] == "selftest":
         raise SystemExit(selftest())
+    if _a and _a[0] == "probe-byok-error":
+        raise SystemExit(probe_byok_error())
     if not _a or _a[0] == "route":
         print(describe())
         print("anthropic key configured: %s | openrouter key configured: %s | %s=%s | %s=%s" % (
