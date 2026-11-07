@@ -1,0 +1,10127 @@
+[
+ {
+  "task_id": "t-068aea9104",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 8,
+   "lita_logmean": 2.191,
+   "lita_log_prod": 4.382,
+   "hidden_cut": 0.695,
+   "reza_log": 6.719,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "animal print",
+       "support": 0.97
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "nin",
+       "value": [
+        "polyester"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 23000,
+     "target": "p-0599816b5905",
+     "n_a_stated_cap": 23,
+     "n_a_final": 10,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "warranty type",
+       "keys": [
+        "warranty type"
+       ],
+       "op": "has",
+       "value": "local supplier warranty",
+       "support": 0.636
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "us",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 23000,
+     "target": "p-28bc2974dd4e",
+     "n_a_stated_cap": 36,
+     "n_a_final": 8,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 23000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-068aea9104",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_01",
+    "orig_id": "t-068aea9104",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-068aea9104",
+     "agent": "CHIDORI",
+     "rank": 198,
+     "eid": "451ca2bd-46a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-28bc2974dd4e",
+       3
+      ],
+      [
+       "p-5423174d9827",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-8f664676d9dc"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 24.041297935103245,
+    "subjects": [
+     "material of the bed sheets",
+     "plug type of the video camera",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 23000,
+    "jufuli": 23000,
+    "lita": [
+     10,
+     8
+    ],
+    "reza": [
+     23,
+     36
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-8f664676d9dc"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-12580eb901",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 137,
+   "lita_logmean": 5.325,
+   "lita_log_prod": 15.976,
+   "hidden_cut": 0.0,
+   "reza_log": 15.976,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.931
+      },
+      {
+       "prop": "coloroptions",
+       "keys": [
+        "availablecolors",
+        "color",
+        "coloroptions"
+       ],
+       "op": "has",
+       "value": "white",
+       "support": 0.485
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "herringbone",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "closure"
+     ],
+     "cap_line": 43500,
+     "target": "p-00f53e90e497",
+     "n_a_stated_cap": 203,
+     "n_a_final": 203,
+     "n_a0_nocap": 203,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options",
+        "coloroptions"
+       ],
+       "op": "has",
+       "value": "white",
+       "support": 0.97
+      },
+      {
+       "prop": "fabric",
+       "keys": [
+        "fabric",
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.935
+      },
+      {
+       "prop": "suitable for",
+       "keys": [
+        "suitable for",
+        "suitable for furniture type",
+        "suitablefor"
+       ],
+       "op": "has",
+       "value": "recliner",
+       "support": 0.645
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "care instructions",
+       "op": "eq",
+       "value": "warm water wash",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "closure"
+     ],
+     "cap_line": 43500,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 137,
+     "n_a_final": 137,
+     "n_a0_nocap": 137,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sofa type",
+       "keys": [
+        "sofa type"
+       ],
+       "op": "has",
+       "value": "recliner",
+       "support": 0.991
+      },
+      {
+       "prop": "color",
+       "keys": [
+        "color"
+       ],
+       "op": "has",
+       "value": "white",
+       "support": 0.931
+      },
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.693
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "modern",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "closure"
+     ],
+     "cap_line": 43500,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 43500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-12580eb901",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_02",
+    "orig_id": "t-12580eb901",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-12580eb901",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 88,
+     "cart": [
+      [
+       "p-00f53e90e497",
+       1
+      ],
+      [
+       "p-0002769f8f8e",
+       2
+      ],
+      [
+       "p-001d5e4762b8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 88,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 58.11836115326252,
+    "subjects": [
+     "care instructions of the slipcovers and furniture covers",
+     "pattern of the furniture covers",
+     "style of the sofas",
+     "closure of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "shelf_with_facts",
+     "1": "shelf_with_facts",
+     "2": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 43500,
+    "jufuli": 43500,
+    "lita": [
+     203,
+     137,
+     312
+    ],
+    "reza": [
+     203,
+     137,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-13b39d0383",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.731,
+   "lita_log_prod": 5.193,
+   "hidden_cut": 0.706,
+   "reza_log": 9.795,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "fabric feature",
+        "material"
+       ],
+       "op": "has",
+       "value": "polyester",
+       "support": 0.939
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "animal print",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 27000,
+     "target": "p-19ff39e8898a",
+     "n_a_stated_cap": 69,
+     "n_a_final": 9,
+     "n_a0_nocap": 69,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "security camera style",
+       "keys": [
+        "camera style",
+        "security camera style",
+        "style"
+       ],
+       "op": "has",
+       "value": "dome",
+       "support": 0.957
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 27000,
+     "target": "p-016913f92e18",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options"
+       ],
+       "op": "has",
+       "value": "silver",
+       "support": 0.957
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "card type",
+       "op": "eq",
+       "value": "compactflash",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 27000,
+     "target": "p-cee510dcc884",
+     "n_a_stated_cap": 13,
+     "n_a_final": 1,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-13b39d0383",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_03",
+    "orig_id": "t-13b39d0383",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-13b39d0383",
+     "agent": "Crash",
+     "rank": 186,
+     "eid": "d506e4a4-c16",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-72a83c01be09",
+       1
+      ],
+      [
+       "p-cee510dcc884",
+       2
+      ],
+      [
+       "p-e6b35c19ed5b",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0512071cd394"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 23.112480739599384,
+    "subjects": [
+     "card type of the memory cards",
+     "pattern of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27000,
+    "jufuli": 12487,
+    "lita": [
+     9,
+     20,
+     1
+    ],
+    "reza": [
+     69,
+     20,
+     13
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0512071cd394"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1471b8c0b2",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 4.419,
+   "lita_log_prod": 17.677,
+   "hidden_cut": 0.018,
+   "reza_log": 19.979,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 100
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.952
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "striped",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 32000,
+     "target": "p-8c8664746c17",
+     "n_a_stated_cap": 20,
+     "n_a_final": 2,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "fabric",
+       "keys": [
+        "fabric",
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.961
+      },
+      {
+       "prop": "closure type",
+       "keys": [
+        "closure",
+        "closure type",
+        "closuretype"
+       ],
+       "op": "has",
+       "value": "slip-on",
+       "support": 0.87
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 32000,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 137,
+     "n_a_final": 137,
+     "n_a0_nocap": 137,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "nautical",
+       "support": 0.983
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.623
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 32000,
+     "target": "p-0004b24b5fe6",
+     "n_a_stated_cap": 556,
+     "n_a_final": 556,
+     "n_a0_nocap": 556,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.983
+      },
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.485
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "custom",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "sofa type",
+       "op": "eq",
+       "value": "sofa set",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 32000,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 32000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 100,
+   "task_id": "t-1471b8c0b2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_04",
+    "orig_id": "t-1471b8c0b2",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1471b8c0b2",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 100,
+     "cart": [
+      [
+       "p-8c8664746c17",
+       2
+      ],
+      [
+       "p-0002769f8f8e",
+       2
+      ],
+      [
+       "p-0004b24b5fe6",
+       1
+      ],
+      [
+       "p-001d5e4762b8",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 100,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 44.37596302003082,
+    "subjects": [
+     "furniture features of the sofas",
+     "pattern of the furniture covers",
+     "sofa type of the sofas",
+     "careinstructions of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "1": "shelf_with_facts",
+     "2": "shelf_with_facts",
+     "3": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 32000,
+    "jufuli": 32000,
+    "lita": [
+     2,
+     137,
+     556,
+     312
+    ],
+    "reza": [
+     20,
+     137,
+     556,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-18a38d31ce",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 54,
+   "lita_logmean": 4.882,
+   "lita_log_prod": 14.645,
+   "hidden_cut": 0.0,
+   "reza_log": 14.645,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 7100,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 136,
+     "n_a_final": 136,
+     "n_a0_nocap": 136,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "floral",
+       "support": 0.974
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 7100,
+     "target": "p-02fc9eecde3f",
+     "n_a_stated_cap": 54,
+     "n_a_final": 54,
+     "n_a0_nocap": 54,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 7100,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7100,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-18a38d31ce",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_05",
+    "orig_id": "t-18a38d31ce",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-18a38d31ce",
+     "agent": "PO",
+     "rank": 114,
+     "eid": "09c04e1f-4e9",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 62,
+     "cart": [
+      [
+       "p-1b8e3d6b43b9",
+       1
+      ],
+      [
+       "p-466d2c2f58bd",
+       1
+      ],
+      [
+       "p-b8cf0fd1658d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 88,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 36.63663663663664,
+    "subjects": [
+     "material of the slipcovers and furniture covers",
+     "color of the slipcovers and furniture covers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7100,
+    "jufuli": 7100,
+    "lita": [
+     136,
+     54,
+     312
+    ],
+    "reza": [
+     136,
+     54,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-190e3ed035",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.87,
+   "reza_log": 3.135,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 2,
+   "hops_total": 3,
+   "max_hops": 2,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "animal print",
+       "support": 0.455
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "canadian cotton"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 360,
+     "target": "p-0599816b5905",
+     "n_a_stated_cap": 23,
+     "n_a_final": 3,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 360,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-190e3ed035",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_06",
+    "orig_id": "t-190e3ed035",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-190e3ed035",
+     "agent": "Amberjack",
+     "rank": 83,
+     "eid": "1304ba08-142",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-46776ede2d87",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-359c1f3c54b6"
+     ],
+     [
+      "p-85db1ff528f6",
+      "p-7db09efec3ce"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 74.40828402366864,
+    "subjects": [
+     "material",
+     "fabric feature"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 360,
+    "jufuli": 360,
+    "lita": [
+     3
+    ],
+    "reza": [
+     23
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-359c1f3c54b6"
+   ],
+   [
+    "p-85db1ff528f6",
+    "p-7db09efec3ce"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2363ddf59f",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 5,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 4.605,
+   "hidden_cut": 0.632,
+   "reza_log": 6.867,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "character",
+       "support": 0.853
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "age group",
+       "op": "eq",
+       "value": "children",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "sheet type",
+       "op": "eq",
+       "value": "fitted sheet",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 2050,
+     "target": "p-0a6738e085cb",
+     "n_a_stated_cap": 48,
+     "n_a_final": 5,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "security camera style",
+       "keys": [
+        "camera style",
+        "security camera style",
+        "style"
+       ],
+       "op": "has",
+       "value": "dome",
+       "support": 0.797
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 2050,
+     "target": "p-016913f92e18",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2050,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-2363ddf59f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_07",
+    "orig_id": "t-2363ddf59f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2363ddf59f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0a6738e085cb",
+       1
+      ],
+      [
+       "p-016913f92e18",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 21.68141592920354,
+    "subjects": [
+     "age group of the bed sheets",
+     "sheet type of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2050,
+    "jufuli": 177,
+    "lita": [
+     5,
+     20
+    ],
+    "reza": [
+     48,
+     20
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-237494d47b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.763,
+   "lita_log_prod": 5.288,
+   "hidden_cut": 0.0,
+   "reza_log": 5.288,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 93
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options",
+        "coloroptions"
+       ],
+       "op": "has",
+       "value": "gold",
+       "support": 0.987
+      },
+      {
+       "prop": "cardtype",
+       "keys": [
+        "card slots",
+        "card type",
+        "cardtype",
+        "formfactor",
+        "reader",
+        "sd card slot",
+        "supported cards"
+       ],
+       "op": "has",
+       "value": "sd",
+       "support": 0.745
+      },
+      {
+       "prop": "device interface",
+       "keys": [
+        "device interface",
+        "device interfaces",
+        "deviceinterface",
+        "interface",
+        "storage type"
+       ],
+       "op": "has",
+       "value": "sd card",
+       "support": 0.697
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 200.0,
+       "unit": "mb/s",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 86000,
+     "target": "p-b19245726042",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.961
+      },
+      {
+       "prop": "load capacity",
+       "keys": [
+        "load capacity"
+       ],
+       "op": "has",
+       "value": "8 kg",
+       "support": 0.792
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "leg material",
+        "material",
+        "tripod material"
+       ],
+       "op": "has",
+       "value": "aluminum",
+       "support": 0.654
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 86000,
+     "target": "p-006d7dd4626e",
+     "n_a_stated_cap": 99,
+     "n_a_final": 99,
+     "n_a0_nocap": 99,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.965
+      },
+      {
+       "prop": "load capacity",
+       "keys": [
+        "load capacity",
+        "maximum load",
+        "maximum load capacity"
+       ],
+       "op": "has",
+       "value": "8 kg",
+       "support": 0.792
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "color",
+        "material",
+        "materials",
+        "tripod material"
+       ],
+       "op": "has",
+       "value": "aluminum",
+       "support": 0.654
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "feet type",
+       "op": "eq",
+       "value": "retractable",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 86000,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 86000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 93,
+   "task_id": "t-237494d47b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_08",
+    "orig_id": "t-237494d47b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-237494d47b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 93,
+     "cart": [
+      [
+       "p-b19245726042",
+       1
+      ],
+      [
+       "p-006d7dd4626e",
+       1
+      ],
+      [
+       "p-0331a3d51cfe",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 93,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 40.33232628398792,
+    "subjects": [
+     "feet type of the tripods and camera supports",
+     "read speed of the memory cards",
+     "capacity of the memory cards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "1": "shelf_with_facts",
+     "2": "stated_only"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 86000,
+    "jufuli": 86000,
+    "lita": [
+     1,
+     99,
+     2
+    ],
+    "reza": [
+     1,
+     99,
+     2
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-23aa374620",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 6,
+   "lita_logmean": 3.334,
+   "lita_log_prod": 10.002,
+   "hidden_cut": 0.059,
+   "reza_log": 11.226,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options"
+       ],
+       "op": "has",
+       "value": "multicolor",
+       "support": 0.983
+      },
+      {
+       "prop": "cardtype",
+       "keys": [
+        "card slots",
+        "card type",
+        "cardtype",
+        "formfactor",
+        "reader",
+        "sd card slot",
+        "supported cards"
+       ],
+       "op": "has",
+       "value": "sd",
+       "support": 0.524
+      },
+      {
+       "prop": "device interface",
+       "keys": [
+        "device interface",
+        "device interfaces",
+        "deviceinterface",
+        "interface",
+        "storage type"
+       ],
+       "op": "has",
+       "value": "sd card",
+       "support": 0.502
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "capacity",
+       "op": "range",
+       "value": [
+        79.07,
+        176.93
+       ],
+       "unit": "gb",
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "deviceinterface"
+     ],
+     "cap_line": 49000,
+     "target": "p-186b981bf01e",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "feet type",
+       "keys": [
+        "feet type",
+        "feettype",
+        "leg foot type",
+        "material",
+        "product material"
+       ],
+       "op": "has",
+       "value": "rubber",
+       "support": 0.861
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "rubber feet",
+       "support": 0.74
+      },
+      {
+       "prop": "load capacity",
+       "keys": [
+        "load capacity",
+        "maximum load",
+        "maximum load capacity"
+       ],
+       "op": "has",
+       "value": "8 kg",
+       "support": 0.429
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "deviceinterface"
+     ],
+     "cap_line": 49000,
+     "target": "p-0034e971ad0e",
+     "n_a_stated_cap": 368,
+     "n_a_final": 368,
+     "n_a0_nocap": 368,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "us",
+       "support": 0.645
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 2.4,
+       "unit": "inch",
+       "ref": false
+      },
+      {
+       "prop": "frame rate",
+       "op": "le",
+       "value": 40.0,
+       "unit": "fps",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "deviceinterface"
+     ],
+     "cap_line": 49000,
+     "target": "p-047fcb32c10c",
+     "n_a_stated_cap": 34,
+     "n_a_final": 10,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 49000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-23aa374620",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_09",
+    "orig_id": "t-23aa374620",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-23aa374620",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 88,
+     "cart": [
+      [
+       "p-186b981bf01e",
+       2
+      ],
+      [
+       "p-0034e971ad0e",
+       1
+      ],
+      [
+       "p-047fcb32c10c",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0214d9e5ba05"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 88,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 26.894502228826152,
+    "subjects": [
+     "capacity of the memory cards",
+     "display size of the video camera",
+     "frame rate of the video camera",
+     "deviceinterface of the memory cards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "stated_only",
+     "1": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 49000,
+    "jufuli": 49000,
+    "lita": [
+     6,
+     368,
+     10
+    ],
+    "reza": [
+     6,
+     368,
+     34
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0214d9e5ba05"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3ee3aa35d6",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.607,
+   "reza_log": 3.332,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "2 pin",
+       "support": 0.883
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "12v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "security camera style"
+     ],
+     "cap_line": 5100,
+     "target": "p-052e0e1268fc",
+     "n_a_stated_cap": 28,
+     "n_a_final": 11,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5100,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Apologies for the interruption \u2014 my scrubs are still damp from a spill \u2014 and I'm fairly sure that pick costs a bit differently now.",
+     "factor": 0.7907
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I hate to be a nuisance \u2014 but the number under that pick just moved and I caught it between charting and my coffee.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-3ee3aa35d6",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_10",
+    "orig_id": "t-3ee3aa35d6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3ee3aa35d6",
+     "agent": "Cooler Man",
+     "rank": 7,
+     "eid": "107235a0-a89",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-8b19ffcd6556",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 21.19402985074627,
+    "subjects": [
+     "input voltage",
+     "security camera style"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 147,
+    "lita": [
+     11
+    ],
+    "reza": [
+     28
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 147,
+    "lita": [
+     11
+    ],
+    "reza": [
+     28
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 147,
+    "lita": [
+     11
+    ],
+    "reza": [
+     28
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 147,
+    "lita": [
+     11
+    ],
+    "reza": [
+     28
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3fb0a80602",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 2,
+   "hops_total": 2,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cardtype",
+       "keys": [
+        "card slots",
+        "card type",
+        "cardtype",
+        "formfactor",
+        "reader",
+        "sd card slot",
+        "supported cards"
+       ],
+       "op": "has",
+       "value": "sd",
+       "support": 0.541
+      },
+      {
+       "prop": "device interface",
+       "keys": [
+        "device interface",
+        "device interfaces",
+        "deviceinterface",
+        "interface",
+        "storage type"
+       ],
+       "op": "has",
+       "value": "sd card",
+       "support": 0.476
+      },
+      {
+       "prop": "size",
+       "keys": [
+        "available capacities",
+        "capacity",
+        "size",
+        "storage",
+        "storage capacities"
+       ],
+       "op": "has",
+       "value": "128gb",
+       "support": 0.442
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "card type",
+       "op": "in",
+       "value": [
+        "sdxc"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 10500,
+     "target": "p-b19245726042",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry to shuffle things \u2014 after checking my paycheck from the clinic I'd like to keep it near 7191 cents US.",
+     "factor": 1.0
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I hate to say it \u2014 but that pick is unavailable now \u2014 I'm sorry.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-3fb0a80602",
+   "extra": {
+    "kinds": [
+     "budget",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_11",
+    "orig_id": "t-3fb0a80602",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3fb0a80602",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-b19245726042",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-07d3f3462e24"
+     ],
+     [
+      "p-02dbd4c5699e"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 28.726708074534162,
+    "subjects": [
+     "card type",
+     "capacity"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "stated_only"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10500,
+    "jufuli": 10500,
+    "lita": [
+     1
+    ],
+    "reza": [
+     1
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 7191,
+    "jufuli": 7191,
+    "lita": [
+     1
+    ],
+    "reza": [
+     1
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 10500,
+    "jufuli": 10500,
+    "lita": [
+     1
+    ],
+    "reza": [
+     1
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 7191,
+    "jufuli": 7191,
+    "lita": [
+     1
+    ],
+    "reza": [
+     1
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-07d3f3462e24"
+   ],
+   [
+    "p-02dbd4c5699e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-44963adb06",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 2.145,
+   "lita_log_prod": 6.436,
+   "hidden_cut": 0.054,
+   "reza_log": 8.739,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 77
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.974
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "textured",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "care"
+     ],
+     "cap_line": 10000,
+     "target": "p-8b825d889202",
+     "n_a_stated_cap": 20,
+     "n_a_final": 2,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "vintage",
+       "support": 0.978
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.697
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "floral",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "care"
+     ],
+     "cap_line": 10000,
+     "target": "p-787b1d719e58",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "pvc",
+       "support": 0.991
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "vintage",
+       "support": 0.974
+      },
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.697
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "care"
+     ],
+     "cap_line": 10000,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 77,
+   "task_id": "t-44963adb06",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_12",
+    "orig_id": "t-44963adb06",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-44963adb06",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 77,
+     "cart": [
+      [
+       "p-8b825d889202",
+       1
+      ],
+      [
+       "p-787b1d719e58",
+       1
+      ],
+      [
+       "p-001d5e4762b8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 77,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 57.248520710059175,
+    "subjects": [
+     "pattern of the furniture covers",
+     "pattern of the sofa covers & slips",
+     "style of the sofas",
+     "care of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "1": "stated_only",
+     "2": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 10000,
+    "lita": [
+     2,
+     1,
+     312
+    ],
+    "reza": [
+     20,
+     1,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-480fb22da9",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 8,
+   "lita_logmean": 3.81,
+   "lita_log_prod": 11.43,
+   "hidden_cut": 0.0,
+   "reza_log": 11.43,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 78
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern",
+        "patternoptions"
+       ],
+       "op": "has",
+       "value": "checkered",
+       "support": 0.792
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 10000,
+     "target": "p-0874baca1afd",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "polyester",
+       "support": 0.948
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 10000,
+     "target": "p-0004b24b5fe6",
+     "n_a_stated_cap": 311,
+     "n_a_final": 311,
+     "n_a0_nocap": 311,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.983
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 10000,
+     "target": "p-01094a11e5f1",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 78,
+   "task_id": "t-480fb22da9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_13",
+    "orig_id": "t-480fb22da9",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-480fb22da9",
+     "agent": "Kyrie",
+     "rank": 84,
+     "eid": "38e7bcec-899",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 57,
+     "cart": [
+      [
+       "p-04e8cf220d44",
+       1
+      ],
+      [
+       "p-0673285f462e",
+       1
+      ],
+      [
+       "p-ea5bd64a0977",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-01094a11e5f1"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 78,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 63.55555555555556,
+    "subjects": [
+     "material of the furniture covers",
+     "color of the furniture covers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 10000,
+    "lita": [
+     8,
+     311,
+     37
+    ],
+    "reza": [
+     8,
+     311,
+     37
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-01094a11e5f1"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4bfd08dfb1",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 4.344,
+   "lita_log_prod": 17.377,
+   "hidden_cut": 0.0,
+   "reza_log": 17.377,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "colorsavailable"
+       ],
+       "op": "has",
+       "value": "tan",
+       "support": 0.866
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "cotton",
+       "support": 0.545
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "closure"
+     ],
+     "cap_line": 60500,
+     "target": "p-00f53e90e497",
+     "n_a_stated_cap": 203,
+     "n_a_final": 203,
+     "n_a0_nocap": 203,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options",
+        "coloroptions"
+       ],
+       "op": "has",
+       "value": "white",
+       "support": 0.887
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "cotton",
+       "support": 0.797
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "closure"
+     ],
+     "cap_line": 60500,
+     "target": "p-a034907bc21f",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "modern",
+       "support": 0.766
+      },
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "leaf",
+       "support": 0.758
+      },
+      {
+       "prop": "warranty policy",
+       "keys": [
+        "warranty policy"
+       ],
+       "op": "has",
+       "value": "set",
+       "support": 0.481
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "closure"
+     ],
+     "cap_line": 60500,
+     "target": "p-0004b24b5fe6",
+     "n_a_stated_cap": 556,
+     "n_a_final": 556,
+     "n_a0_nocap": 556,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "keys": [
+        "features",
+        "furniture features"
+       ],
+       "op": "has",
+       "value": "slipcovered",
+       "support": 0.97
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "modern",
+       "support": 0.766
+      },
+      {
+       "prop": "warranty policy",
+       "keys": [
+        "warranty policy"
+       ],
+       "op": "has",
+       "value": "set",
+       "support": 0.481
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "closure"
+     ],
+     "cap_line": 60500,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 60500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 109,
+   "task_id": "t-4bfd08dfb1",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_14",
+    "orig_id": "t-4bfd08dfb1",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4bfd08dfb1",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 109,
+     "cart": [
+      [
+       "p-00f53e90e497",
+       2
+      ],
+      [
+       "p-a034907bc21f",
+       2
+      ],
+      [
+       "p-0004b24b5fe6",
+       1
+      ],
+      [
+       "p-001d5e4762b8",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-d543fdab1b1e"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 109,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 35.47400611620795,
+    "subjects": [
+     "pattern of the furniture covers",
+     "closure of the furniture covers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "shelf_with_facts",
+     "2": "shelf_with_facts",
+     "3": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 60500,
+    "jufuli": 60500,
+    "lita": [
+     203,
+     1,
+     556,
+     312
+    ],
+    "reza": [
+     203,
+     1,
+     556,
+     312
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-d543fdab1b1e"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4c31e371da",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "resolution",
+       "keys": [
+        "image sensor",
+        "resolution"
+       ],
+       "op": "has",
+       "value": "720p",
+       "support": 0.97
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input voltage",
+      "power consumption"
+     ],
+     "cap_line": 1015,
+     "target": "p-0066599aaee6",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1015,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-4c31e371da",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_15",
+    "orig_id": "t-4c31e371da",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4c31e371da",
+     "agent": "Ferruginous",
+     "rank": 202,
+     "eid": "25bdc3d0-758",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 22,
+     "cart": [
+      [
+       "p-93f0683cf905",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 19.82248520710059,
+    "subjects": [
+     "input voltage",
+     "power consumption"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1015,
+    "jufuli": 802,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-54b7a4a371",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 73,
+   "lita_logmean": 4.29,
+   "lita_log_prod": 4.29,
+   "hidden_cut": 0.718,
+   "reza_log": 5.557,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "security camera style",
+       "op": "eq",
+       "value": "turret",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "plug type"
+     ],
+     "cap_line": 1550,
+     "target": "p-000536ae44e9",
+     "n_a_stated_cap": 259,
+     "n_a_final": 73,
+     "n_a0_nocap": 259,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1550,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry for the back and forth \u2014 I'm willing to bend on color now \u2014 it's just background wash.",
+     "factor": 1.0
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive me \u2014 between rounds I peeked and it seems nobody can order that one anymore.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-54b7a4a371",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_16",
+    "orig_id": "t-54b7a4a371",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-54b7a4a371",
+     "agent": "Kestrel",
+     "rank": 173,
+     "eid": "411d0ec0-def",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-2047f9f14519",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0170d010ace7"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 24.59259259259259,
+    "subjects": [
+     "security camera style",
+     "plug type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1550,
+    "jufuli": 18,
+    "lita": [
+     73
+    ],
+    "reza": [
+     259
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1550,
+    "jufuli": 18,
+    "lita": [
+     73
+    ],
+    "reza": [
+     259
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1550,
+    "jufuli": 18,
+    "lita": [
+     73
+    ],
+    "reza": [
+     259
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1550,
+    "jufuli": 18,
+    "lita": [
+     73
+    ],
+    "reza": [
+     259
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0170d010ace7"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a1196d6d2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 127,
+   "lita_logmean": 4.844,
+   "lita_log_prod": 4.844,
+   "hidden_cut": 0.638,
+   "reza_log": 5.861,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "sheet type",
+       "op": "eq",
+       "value": "fitted sheet",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 430,
+     "target": "p-0179f4e30b95",
+     "n_a_stated_cap": 351,
+     "n_a_final": 127,
+     "n_a0_nocap": 351,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 430,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Would it be all right \u2014 sorry \u2014 if we dropped fabric feature from my wishes?",
+     "factor": 1.0
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry \u2014 your suggestion has a little gray label saying they have none left \u2014 like a blank canvas.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-5a1196d6d2",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_17",
+    "orig_id": "t-5a1196d6d2",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a1196d6d2",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0179f4e30b95",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 25.03681885125184,
+    "subjects": [
+     "sheet type",
+     "fabric feature"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 75,
+    "lita": [
+     127
+    ],
+    "reza": [
+     351
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 75,
+    "lita": [
+     127
+    ],
+    "reza": [
+     351
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 75,
+    "lita": [
+     127
+    ],
+    "reza": [
+     351
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 430,
+    "jufuli": 75,
+    "lita": [
+     127
+    ],
+    "reza": [
+     351
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6444e764d5",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 99,
+   "lita_logmean": 5.094,
+   "lita_log_prod": 20.376,
+   "hidden_cut": 0.0,
+   "reza_log": 20.376,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity",
+      "device interface"
+     ],
+     "cap_line": 79500,
+     "target": "p-00366df89ce0",
+     "n_a_stated_cap": 279,
+     "n_a_final": 279,
+     "n_a0_nocap": 279,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods",
+     "qty": 2,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity",
+      "device interface"
+     ],
+     "cap_line": 79500,
+     "target": "p-006d7dd4626e",
+     "n_a_stated_cap": 99,
+     "n_a_final": 99,
+     "n_a0_nocap": 99,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.926
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity",
+      "device interface"
+     ],
+     "cap_line": 79500,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 156,
+     "n_a_final": 156,
+     "n_a0_nocap": 156,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity",
+      "device interface"
+     ],
+     "cap_line": 79500,
+     "target": "p-00234846c1ff",
+     "n_a_stated_cap": 164,
+     "n_a_final": 164,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 79500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 109,
+   "task_id": "t-6444e764d5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_18",
+    "orig_id": "t-6444e764d5",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-6444e764d5",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 109,
+     "cart": [
+      [
+       "p-00366df89ce0",
+       1
+      ],
+      [
+       "p-006d7dd4626e",
+       2
+      ],
+      [
+       "p-0331a3d51cfe",
+       1
+      ],
+      [
+       "p-00234846c1ff",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 109,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 27.701674277016743,
+    "subjects": [
+     "capacity of the memory cards",
+     "device interface of the memory cards"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 79500,
+    "jufuli": 2037,
+    "lita": [
+     279,
+     99,
+     156,
+     164
+    ],
+    "reza": [
+     279,
+     99,
+     156,
+     164
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6d05903406",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 2.305,
+   "lita_log_prod": 9.22,
+   "hidden_cut": 0.0,
+   "reza_log": 9.22,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "maximum transfer rate",
+       "keys": [
+        "maximum transfer rate"
+       ],
+       "op": "has",
+       "value": "200mb",
+       "support": 0.55
+      },
+      {
+       "prop": "read speed",
+       "keys": [
+        "max read speed",
+        "max transfer rate",
+        "read speed"
+       ],
+       "op": "has",
+       "value": "200 mb",
+       "support": 0.429
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "speed class",
+       "op": "eq",
+       "value": "v90",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "write speed",
+       "op": "le",
+       "value": 150.0,
+       "unit": "mb/s",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 125000,
+     "target": "p-07d3f3462e24",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.913
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "carbon",
+       "support": 0.887
+      },
+      {
+       "prop": "load capacity",
+       "keys": [
+        "load capacity"
+       ],
+       "op": "has",
+       "value": "8 kg",
+       "support": 0.42
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 125000,
+     "target": "p-006d7dd4626e",
+     "n_a_stated_cap": 99,
+     "n_a_final": 99,
+     "n_a0_nocap": 99,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.913
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "carbon",
+       "support": 0.887
+      },
+      {
+       "prop": "load capacity",
+       "keys": [
+        "load capacity",
+        "maximum load",
+        "maximum load capacity"
+       ],
+       "op": "has",
+       "value": "8 kg",
+       "support": 0.42
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 125000,
+     "target": "p-1cf09cf006b9",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "us",
+       "support": 0.511
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "frame rate",
+       "op": "any",
+       "value": null,
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 125000,
+     "target": "p-038c8f744cff",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 125000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 109,
+   "task_id": "t-6d05903406",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_19",
+    "orig_id": "t-6d05903406",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6d05903406",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 109,
+     "cart": [
+      [
+       "p-07d3f3462e24",
+       2
+      ],
+      [
+       "p-006d7dd4626e",
+       2
+      ],
+      [
+       "p-1cf09cf006b9",
+       1
+      ],
+      [
+       "p-038c8f744cff",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-95a0a366b91e"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 109,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 50.0,
+    "subjects": [
+     "frame rate of the video camera",
+     "speed class of the memory cards",
+     "write speed of the memory cards",
+     "capacity of the memory cards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "stated_only",
+     "1": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 125000,
+    "jufuli": 125000,
+    "lita": [
+     1,
+     99,
+     3,
+     34
+    ],
+    "reza": [
+     1,
+     99,
+     3,
+     34
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-95a0a366b91e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7323911eef",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 15,
+   "lita_logmean": 3.059,
+   "lita_log_prod": 9.176,
+   "hidden_cut": 0.832,
+   "reza_log": 11.901,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "animal print",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 28000,
+     "target": "p-0599816b5905",
+     "n_a_stated_cap": 351,
+     "n_a_final": 23,
+     "n_a0_nocap": 351,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "2 pin",
+       "support": 0.922
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 28000,
+     "target": "p-00796b8d5030",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "device interface",
+       "keys": [
+        "card type",
+        "device interface",
+        "form factor",
+        "format",
+        "microsd card slot"
+       ],
+       "op": "has",
+       "value": "microsdhc",
+       "support": 0.961
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 28000,
+     "target": "p-0b24adf470d5",
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 28000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-7323911eef",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_20",
+    "orig_id": "t-7323911eef",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7323911eef",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0599816b5905",
+       1
+      ],
+      [
+       "p-00796b8d5030",
+       3
+      ],
+      [
+       "p-0b24adf470d5",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 22.624434389140273,
+    "subjects": [
+     "pattern of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 28000,
+    "jufuli": 28000,
+    "lita": [
+     23,
+     28,
+     15
+    ],
+    "reza": [
+     351,
+     28,
+     15
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7c2132dac7",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 99,
+   "lita_logmean": 4.813,
+   "lita_log_prod": 14.44,
+   "hidden_cut": 0.0,
+   "reza_log": 14.44,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Tripods",
+     "qty": 2,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "leg sections"
+     ],
+     "cap_line": 94500,
+     "target": "p-006d7dd4626e",
+     "n_a_stated_cap": 99,
+     "n_a_final": 99,
+     "n_a0_nocap": 99,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.918
+      },
+      {
+       "prop": "feet type",
+       "keys": [
+        "feet type",
+        "feettype",
+        "leg foot type",
+        "material",
+        "product material"
+       ],
+       "op": "has",
+       "value": "rubber",
+       "support": 0.489
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "leg sections"
+     ],
+     "cap_line": 94500,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 115,
+     "n_a_final": 115,
+     "n_a0_nocap": 115,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "leg sections"
+     ],
+     "cap_line": 94500,
+     "target": "p-00234846c1ff",
+     "n_a_stated_cap": 164,
+     "n_a_final": 164,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 94500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-7c2132dac7",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_21",
+    "orig_id": "t-7c2132dac7",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7c2132dac7",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 88,
+     "cart": [
+      [
+       "p-006d7dd4626e",
+       2
+      ],
+      [
+       "p-0331a3d51cfe",
+       1
+      ],
+      [
+       "p-00234846c1ff",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 88,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 52.38805970149254,
+    "subjects": [
+     "material of the tripods",
+     "leg sections of the tripods"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 94500,
+    "jufuli": 1600,
+    "lita": [
+     99,
+     115,
+     164
+    ],
+    "reza": [
+     99,
+     115,
+     164
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7da8a1ce4d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 3.103,
+   "lita_log_prod": 9.309,
+   "hidden_cut": 0.0,
+   "reza_log": 9.309,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 78
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.905
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "pattern"
+     ],
+     "cap_line": 18000,
+     "target": "p-4b668b0d4c12",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "pattern"
+     ],
+     "cap_line": 18000,
+     "target": "p-0059fdb3a8f8",
+     "n_a_stated_cap": 552,
+     "n_a_final": 552,
+     "n_a0_nocap": 552,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "suede",
+       "support": 0.991
+      },
+      {
+       "prop": "furniture features",
+       "keys": [
+        "features",
+        "furniture features"
+       ],
+       "op": "has",
+       "value": "slipcovered",
+       "support": 0.823
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "pattern"
+     ],
+     "cap_line": 18000,
+     "target": "p-9d58fe521f6a",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 78,
+   "task_id": "t-7da8a1ce4d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_22",
+    "orig_id": "t-7da8a1ce4d",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7da8a1ce4d",
+     "agent": "mira",
+     "rank": 61,
+     "eid": "bedea1ba-079",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 51,
+     "cart": [
+      [
+       "p-4b668b0d4c12",
+       1
+      ],
+      [
+       "p-66c9703aa7f3",
+       2
+      ],
+      [
+       "p-9d58fe521f6a",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-43dee73e8ee5",
+      "p-61ab98cf297b"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 78,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 37.219730941704036,
+    "subjects": [
+     "color of the furniture covers",
+     "pattern of the furniture covers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     20,
+     552,
+     1
+    ],
+    "reza": [
+     20,
+     552,
+     1
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-43dee73e8ee5",
+    "p-61ab98cf297b"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7ec382df4f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.667,
+   "reza_log": 4.787,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 78
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "closure type",
+       "keys": [
+        "closure",
+        "closure type",
+        "closuretype"
+       ],
+       "op": "has",
+       "value": "slip-on",
+       "support": 0.788
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "burgundy",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 18500,
+     "target": "p-004173201004",
+     "n_a_stated_cap": 15,
+     "n_a_final": 1,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.974
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material",
+        "pattern"
+       ],
+       "op": "has",
+       "value": "velvet",
+       "support": 0.519
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 18500,
+     "target": "p-38e858b0e094",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.974
+      },
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "velvet",
+       "support": 0.519
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "furniture features",
+       "op": "eq",
+       "value": "foldable",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "careinstructions"
+     ],
+     "cap_line": 18500,
+     "target": "p-0475d3748e51",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 78,
+   "task_id": "t-7ec382df4f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_23",
+    "orig_id": "t-7ec382df4f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7ec382df4f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 78,
+     "cart": [
+      [
+       "p-004173201004",
+       2
+      ],
+      [
+       "p-38e858b0e094",
+       1
+      ],
+      [
+       "p-0475d3748e51",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 78,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 46.6467958271237,
+    "subjects": [
+     "color of the slipcovers and furniture covers",
+     "furniture features of the sofas",
+     "style of the sofas",
+     "careinstructions of the slipcovers and furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "2": "stated_only"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18500,
+    "jufuli": 18500,
+    "lita": [
+     1,
+     2,
+     4
+    ],
+    "reza": [
+     15,
+     2,
+     4
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-865b344413",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 2.46,
+   "lita_log_prod": 4.92,
+   "hidden_cut": 0.183,
+   "reza_log": 7.615,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options"
+       ],
+       "op": "has",
+       "value": "silver",
+       "support": 0.957
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "card type",
+       "op": "eq",
+       "value": "compactflash",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "assembly required"
+     ],
+     "cap_line": 45500,
+     "target": "p-cee510dcc884",
+     "n_a_stated_cap": 13,
+     "n_a_final": 1,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.974
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "leg sections",
+       "op": "ge",
+       "value": 3.0,
+       "unit": "pieces",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "assembly required"
+     ],
+     "cap_line": 45500,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 156,
+     "n_a_final": 137,
+     "n_a0_nocap": 156,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 45500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-865b344413",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_24",
+    "orig_id": "t-865b344413",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-865b344413",
+     "agent": "A WHOLE NEW WORLD",
+     "rank": 58,
+     "eid": "4c56b14c-755",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-bd957b9fe2d7",
+       2
+      ],
+      [
+       "p-cee510dcc884",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-03f356946e60"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 25.188536953242835,
+    "subjects": [
+     "card type of the memory cards",
+     "leg sections of the tripods and camera supports",
+     "assembly required of the memory cards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 45500,
+    "jufuli": 45500,
+    "lita": [
+     1,
+     137
+    ],
+    "reza": [
+     13,
+     156
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-03f356946e60"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8bd61534f3",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 164,
+   "lita_logmean": 5.1,
+   "lita_log_prod": 5.1,
+   "hidden_cut": 0.0,
+   "reza_log": 5.1,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "frame rate",
+      "plug type"
+     ],
+     "cap_line": 6650,
+     "target": "p-00234846c1ff",
+     "n_a_stated_cap": 164,
+     "n_a_final": 164,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6650,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry to shuffle things \u2014 after checking my paycheck from the clinic I'd like to keep it near 5904 cents US.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive me \u2014 my shift ends soon so I'm skimming \u2014 but the amount listed for your suggestion has been repainted I think.",
+     "factor": 1.0698
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-8bd61534f3",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_25",
+    "orig_id": "t-8bd61534f3",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-8bd61534f3",
+     "agent": "Gila",
+     "rank": 181,
+     "eid": "6cd62db6-aff",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 27,
+     "cart": [
+      [
+       "p-61ff92669680",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0380f4f3675f"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 25.223880597014926,
+    "subjects": [
+     "frame rate",
+     "plug type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6650,
+    "jufuli": 960,
+    "lita": [
+     164
+    ],
+    "reza": [
+     164
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5904,
+    "jufuli": 960,
+    "lita": [
+     164
+    ],
+    "reza": [
+     164
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 6650,
+    "jufuli": 1027,
+    "lita": [
+     164
+    ],
+    "reza": [
+     164
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5904,
+    "jufuli": 1027,
+    "lita": [
+     164
+    ],
+    "reza": [
+     164
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0380f4f3675f"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8d0a383aa0",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 2.185,
+   "lita_log_prod": 6.554,
+   "hidden_cut": 0.076,
+   "reza_log": 11.303,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 2,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 26500,
+     "target": "p-00fa6764f44f",
+     "n_a_stated_cap": 351,
+     "n_a_final": 351,
+     "n_a0_nocap": 351,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "resolution",
+       "keys": [
+        "image sensor",
+        "resolution"
+       ],
+       "op": "has",
+       "value": "720p",
+       "support": 0.883
+      },
+      {
+       "prop": "color family",
+       "keys": [
+        "color",
+        "color family"
+       ],
+       "op": "has",
+       "value": "white",
+       "support": 0.567
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "5v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 26500,
+     "target": "p-93f0683cf905",
+     "n_a_stated_cap": 11,
+     "n_a_final": 1,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "warranty type",
+       "keys": [
+        "warranty type"
+       ],
+       "op": "has",
+       "value": "international manufacturer warranty",
+       "support": 0.68
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory card type",
+       "op": "eq",
+       "value": "sd",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 26500,
+     "target": "p-b4f933dc7391",
+     "n_a_stated_cap": 21,
+     "n_a_final": 2,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 26500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-8d0a383aa0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_26",
+    "orig_id": "t-8d0a383aa0",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8d0a383aa0",
+     "agent": "King boy",
+     "rank": 213,
+     "eid": "0b77eec9-831",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-01fae47e69c8",
+       2
+      ],
+      [
+       "p-93f0683cf905",
+       3
+      ],
+      [
+       "p-b4f933dc7391",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 32.38805970149254,
+    "subjects": [
+     "input voltage of the cctv security cameras",
+     "memory card type of the video camera",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 26500,
+    "jufuli": 26500,
+    "lita": [
+     351,
+     1,
+     2
+    ],
+    "reza": [
+     351,
+     11,
+     21
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8f9fc2ba56",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 8,
+   "lita_logmean": 4.714,
+   "lita_log_prod": 14.143,
+   "hidden_cut": 0.014,
+   "reza_log": 15.06,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 77
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.939
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 23500,
+     "target": "p-4b668b0d4c12",
+     "n_a_stated_cap": 20,
+     "n_a_final": 8,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.987
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "vintage",
+       "support": 0.983
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.511
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "suede fabric",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "novelty",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 23500,
+     "target": "p-0004b24b5fe6",
+     "n_a_stated_cap": 556,
+     "n_a_final": 556,
+     "n_a0_nocap": 556,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "plaid",
+       "support": 0.987
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "vintage",
+       "support": 0.97
+      },
+      {
+       "prop": "upholstery",
+       "keys": [
+        "material",
+        "upholstery"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.511
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 23500,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 23500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 77,
+   "task_id": "t-8f9fc2ba56",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_27",
+    "orig_id": "t-8f9fc2ba56",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8f9fc2ba56",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 77,
+     "cart": [
+      [
+       "p-4b668b0d4c12",
+       2
+      ],
+      [
+       "p-0004b24b5fe6",
+       2
+      ],
+      [
+       "p-001d5e4762b8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 77,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 51.63690476190476,
+    "subjects": [
+     "material of the sofa covers & slips",
+     "pattern of the furniture covers",
+     "pattern of the sofa covers & slips",
+     "color of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "1": "shelf_with_facts",
+     "2": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 23500,
+    "jufuli": 23500,
+    "lita": [
+     8,
+     556,
+     312
+    ],
+    "reza": [
+     20,
+     556,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-91ad956fa8",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.222,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "usb",
+       "support": 0.978
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "megapixels",
+       "op": "ge",
+       "value": 48.0,
+       "unit": "mp",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "frame rate"
+     ],
+     "cap_line": 7700,
+     "target": "p-01c2dcf94dfe",
+     "n_a_stated_cap": 18,
+     "n_a_final": 14,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7700,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry \u2014 I did my numbers again on a napkin in the cafeteria \u2014 and 6884 cents US feels right.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "This is awkward \u2014 but I think someone swapped the numbers on the thing you found \u2014 like a retouched corner of a canvas.",
+     "factor": 0.69
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-91ad956fa8",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_28",
+    "orig_id": "t-91ad956fa8",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-91ad956fa8",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-01c2dcf94dfe",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 26.88330871491876,
+    "subjects": [
+     "megapixels",
+     "frame rate"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7700,
+    "jufuli": 7700,
+    "lita": [
+     14
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 6884,
+    "jufuli": 6884,
+    "lita": [
+     14
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 7700,
+    "jufuli": 7700,
+    "lita": [
+     14
+    ],
+    "reza": [
+     18
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 6884,
+    "jufuli": 6884,
+    "lita": [
+     14
+    ],
+    "reza": [
+     18
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-938f1af50e",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.629,
+   "lita_log_prod": 3.258,
+   "hidden_cut": 0.289,
+   "reza_log": 5.743,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.961
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 13500,
+     "target": "p-0d8e5adc9961",
+     "n_a_stated_cap": 26,
+     "n_a_final": 26,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "resolution",
+       "keys": [
+        "image sensor",
+        "resolution"
+       ],
+       "op": "has",
+       "value": "720p",
+       "support": 0.939
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "eq",
+       "value": "5v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 13500,
+     "target": "p-93f0683cf905",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-938f1af50e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_29",
+    "orig_id": "t-938f1af50e",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-938f1af50e",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0d8e5adc9961",
+       1
+      ],
+      [
+       "p-93f0683cf905",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 22.932917316692667,
+    "subjects": [
+     "input voltage of the cctv security cameras",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13500,
+    "jufuli": 13500,
+    "lita": [
+     26,
+     1
+    ],
+    "reza": [
+     26,
+     12
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9d5024ca80",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 8,
+   "lita_logmean": 4.766,
+   "lita_log_prod": 19.063,
+   "hidden_cut": 0.012,
+   "reza_log": 19.979,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 100
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "upholsterymaterial",
+       "keys": [
+        "material",
+        "upholsterymaterial"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.922
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "solid",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 31500,
+     "target": "p-4b668b0d4c12",
+     "n_a_stated_cap": 20,
+     "n_a_final": 8,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fabric",
+       "keys": [
+        "fabric",
+        "material"
+       ],
+       "op": "has",
+       "value": "chenille",
+       "support": 0.926
+      },
+      {
+       "prop": "closure type",
+       "keys": [
+        "closure",
+        "closure type",
+        "closuretype"
+       ],
+       "op": "has",
+       "value": "slip-on",
+       "support": 0.853
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 31500,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 137,
+     "n_a_final": 137,
+     "n_a0_nocap": 137,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "antique",
+       "support": 0.948
+      },
+      {
+       "prop": "warranty policy",
+       "keys": [
+        "warranty policy"
+       ],
+       "op": "has",
+       "value": "set",
+       "support": 0.922
+      },
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "microfiber",
+       "support": 0.853
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "polyester"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 31500,
+     "target": "p-0004b24b5fe6",
+     "n_a_stated_cap": 556,
+     "n_a_final": 556,
+     "n_a0_nocap": 556,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "furniture features",
+       "keys": [
+        "features",
+        "furniture features"
+       ],
+       "op": "has",
+       "value": "slipcovered",
+       "support": 0.961
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "antique",
+       "support": 0.944
+      },
+      {
+       "prop": "warranty policy",
+       "keys": [
+        "warranty policy"
+       ],
+       "op": "has",
+       "value": "set",
+       "support": 0.922
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "geometric",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 31500,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 31500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 100,
+   "task_id": "t-9d5024ca80",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_30",
+    "orig_id": "t-9d5024ca80",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9d5024ca80",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 100,
+     "cart": [
+      [
+       "p-4b668b0d4c12",
+       1
+      ],
+      [
+       "p-0002769f8f8e",
+       1
+      ],
+      [
+       "p-0004b24b5fe6",
+       1
+      ],
+      [
+       "p-001d5e4762b8",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-72b30a98505e"
+     ]
+    ],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 100,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 64.07914764079148,
+    "subjects": [
+     "material of the sofa covers & slips",
+     "pattern of the furniture covers",
+     "pattern of the sofas",
+     "color of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "1": "shelf_with_facts",
+     "2": "shelf_with_facts",
+     "3": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 31500,
+    "jufuli": 31500,
+    "lita": [
+     8,
+     137,
+     556,
+     312
+    ],
+    "reza": [
+     20,
+     137,
+     556,
+     312
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-72b30a98505e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b064ec811d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 4,
+   "lita_logmean": 2.105,
+   "lita_log_prod": 6.314,
+   "hidden_cut": 0.5,
+   "reza_log": 9.267,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "animal print",
+       "support": 0.944
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 22500,
+     "target": "p-0599816b5905",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "security camera style",
+       "keys": [
+        "camera style",
+        "security camera style",
+        "style"
+       ],
+       "op": "has",
+       "value": "dome",
+       "support": 0.939
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "resolution",
+       "op": "eq",
+       "value": "720p",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 22500,
+     "target": "p-2c1d889ce911",
+     "n_a_stated_cap": 20,
+     "n_a_final": 4,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "warranty type",
+       "keys": [
+        "warranty type"
+       ],
+       "op": "has",
+       "value": "local supplier warranty",
+       "support": 0.541
+      },
+      {
+       "prop": "video capture resolution",
+       "keys": [
+        "megapixels",
+        "video capture resolution",
+        "video resolution"
+       ],
+       "op": "has",
+       "value": "4k",
+       "support": 0.437
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "usb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 22500,
+     "target": "p-6b9c1564ae2f",
+     "n_a_stated_cap": 23,
+     "n_a_final": 6,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 22500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-b064ec811d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_31",
+    "orig_id": "t-b064ec811d",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b064ec811d",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0599816b5905",
+       2
+      ],
+      [
+       "p-2c1d889ce911",
+       2
+      ],
+      [
+       "p-6b9c1564ae2f",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 22.727272727272727,
+    "subjects": [
+     "plug type of the video camera",
+     "resolution of the cctv security cameras",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 22500,
+    "jufuli": 22500,
+    "lita": [
+     23,
+     4,
+     6
+    ],
+    "reza": [
+     23,
+     20,
+     23
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b3fef9d2ba",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 1.04,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.609,
+   "reza_log": 4.787,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "stripes",
+       "support": 0.515
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "age group",
+       "op": "eq",
+       "value": "children",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 1450,
+     "target": "p-4888d215888e",
+     "n_a_stated_cap": 15,
+     "n_a_final": 1,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color family",
+       "keys": [
+        "color",
+        "color family"
+       ],
+       "op": "has",
+       "value": "cream",
+       "support": 0.913
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 1450,
+     "target": "p-14625731a565",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1450,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-b3fef9d2ba",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_32",
+    "orig_id": "t-b3fef9d2ba",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b3fef9d2ba",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-4888d215888e",
+       2
+      ],
+      [
+       "p-14625731a565",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 17.418351477449455,
+    "subjects": [
+     "age group of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1450,
+    "jufuli": 1450,
+    "lita": [
+     1,
+     8
+    ],
+    "reza": [
+     15,
+     8
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b4c5139927",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 366,
+   "lita_logmean": 5.903,
+   "lita_log_prod": 5.903,
+   "hidden_cut": 0.0,
+   "reza_log": 5.903,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "leg sections"
+     ],
+     "cap_line": 9000,
+     "target": "p-0034e971ad0e",
+     "n_a_stated_cap": 366,
+     "n_a_final": 366,
+     "n_a0_nocap": 366,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Honestly \u2014 my coworker talked me out of caring about leg lock type \u2014 so feel free to set it aside.",
+     "factor": 1.0
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive me \u2014 between rounds I peeked and it seems nobody can order that one anymore.",
+     "factor": 1.0
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-b4c5139927",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_33",
+    "orig_id": "t-b4c5139927",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b4c5139927",
+     "agent": "The King",
+     "rank": 192,
+     "eid": "20997cbd-4f5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 34,
+     "cart": [
+      [
+       "p-00b974c33452",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 22.22222222222222,
+    "subjects": [
+     "material",
+     "leg sections"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 9000,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 9000,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 9000,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 9000,
+    "jufuli": 9000,
+    "lita": [
+     366
+    ],
+    "reza": [
+     366
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b87a97df69",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 4,
+   "lita_logmean": 2.013,
+   "lita_log_prod": 4.025,
+   "hidden_cut": 0.514,
+   "reza_log": 5.775,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "keys": [
+        "connectivity"
+       ],
+       "op": "has",
+       "value": "wired",
+       "support": 0.97
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 35000,
+     "target": "p-0be210c69ad3",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "usb",
+       "support": 0.931
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "megapixels",
+       "op": "range",
+       "value": [
+        -159.38,
+        191.38
+       ],
+       "unit": "mp",
+       "ref": true
+      },
+      {
+       "prop": "video capture resolution",
+       "op": "eq",
+       "value": "1080p",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 35000,
+     "target": "p-148c06fd6264",
+     "n_a_stated_cap": 23,
+     "n_a_final": 4,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 35000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-b87a97df69",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_34",
+    "orig_id": "t-b87a97df69",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b87a97df69",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0be210c69ad3",
+       1
+      ],
+      [
+       "p-148c06fd6264",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-f872eceee4b8"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 54.00907715582451,
+    "subjects": [
+     "megapixels of the video camera",
+     "video capture resolution of the video camera",
+     "input voltage of the cctv security cameras"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 35000,
+    "jufuli": 35000,
+    "lita": [
+     14,
+     4
+    ],
+    "reza": [
+     14,
+     23
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-f872eceee4b8"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bbbe23b49e",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 21,
+   "lita_logmean": 3.632,
+   "lita_log_prod": 7.264,
+   "hidden_cut": 0.514,
+   "reza_log": 8.132,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bedding size 2",
+       "keys": [
+        "bed size",
+        "bedding size",
+        "bedding size 2",
+        "size"
+       ],
+       "op": "has",
+       "value": "twin",
+       "support": 0.974
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 23000,
+     "target": "p-12af83522b92",
+     "n_a_stated_cap": 21,
+     "n_a_final": 21,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory card type",
+       "op": "eq",
+       "value": "sd",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 23000,
+     "target": "p-009262b512dd",
+     "n_a_stated_cap": 162,
+     "n_a_final": 68,
+     "n_a0_nocap": 162,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 23000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-bbbe23b49e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_35",
+    "orig_id": "t-bbbe23b49e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bbbe23b49e",
+     "agent": "Tawny",
+     "rank": 197,
+     "eid": "9ffdd438-d49",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-18054188cde7",
+       1
+      ],
+      [
+       "p-b4f933dc7391",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 20.653789004457654,
+    "subjects": [
+     "memory card type of the video camera",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 23000,
+    "jufuli": 23000,
+    "lita": [
+     21,
+     68
+    ],
+    "reza": [
+     21,
+     162
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bdbd94913b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 43,
+   "lita_logmean": 3.761,
+   "lita_log_prod": 3.761,
+   "hidden_cut": 0.792,
+   "reza_log": 5.333,
+   "cheapest": 0,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "security camera feature",
+       "keys": [
+        "environment",
+        "feature",
+        "features",
+        "indoor/outdoor",
+        "location",
+        "placement",
+        "security camera feature",
+        "security camera features"
+       ],
+       "op": "has",
+       "value": "indoor",
+       "support": 0.805
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "recorder channel capacity",
+       "op": "eq",
+       "value": "4 channel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "plug type"
+     ],
+     "cap_line": 2500,
+     "target": "p-00a87fd8990d",
+     "n_a_stated_cap": 207,
+     "n_a_final": 43,
+     "n_a0_nocap": 207,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Sorry to shuffle things \u2014 after checking my paycheck from the clinic I'd like to keep it near 2002 cents US.",
+     "factor": 1.0
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Between you and me \u2014 I was gripping too tightly on input voltage \u2014 so please loosen that one.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "This is awkward \u2014 but I think someone swapped the numbers on the thing you found \u2014 like a retouched corner of a canvas.",
+     "factor": 1.1197
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-bdbd94913b",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_36",
+    "orig_id": "t-bdbd94913b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bdbd94913b",
+     "agent": "Gila",
+     "rank": 181,
+     "eid": "a75066b5-e76",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-7ba829417b70",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 14.115898959881129,
+    "subjects": [
+     "recorder channel capacity",
+     "plug type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2002,
+    "jufuli": 2002,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 2002,
+    "jufuli": 2002,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 2002,
+    "jufuli": 2002,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 2002,
+    "jufuli": 2002,
+    "lita": [
+     43
+    ],
+    "reza": [
+     207
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-be80caa191",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 9,
+   "lita_min": 14,
+   "lita_logmean": 3.731,
+   "lita_log_prod": 11.192,
+   "hidden_cut": 0.125,
+   "reza_log": 12.727,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.957
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "sheet type",
+       "op": "eq",
+       "value": "set",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 42000,
+     "target": "p-146c64fec25e",
+     "n_a_stated_cap": 26,
+     "n_a_final": 14,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 3,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 42000,
+     "target": "p-000536ae44e9",
+     "n_a_stated_cap": 259,
+     "n_a_final": 259,
+     "n_a0_nocap": 259,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "card type",
+       "keys": [
+        "card type",
+        "cardtype",
+        "device interface",
+        "deviceinterface",
+        "form factor",
+        "format",
+        "interface",
+        "memory card type",
+        "memory form factor",
+        "microsd card slot",
+        "storage type",
+        "type"
+       ],
+       "op": "has",
+       "value": "microsdxc",
+       "support": 0.926
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 128.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 42000,
+     "target": "p-08edd8a4c1ca",
+     "n_a_stated_cap": 50,
+     "n_a_final": 20,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 42000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-be80caa191",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_37",
+    "orig_id": "t-be80caa191",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-be80caa191",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-146c64fec25e",
+       3
+      ],
+      [
+       "p-000536ae44e9",
+       3
+      ],
+      [
+       "p-08edd8a4c1ca",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-18fa7d4ea1f1"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 23.368740515933233,
+    "subjects": [
+     "capacity of the memory cards",
+     "sheet type of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 4137,
+    "lita": [
+     14,
+     259,
+     20
+    ],
+    "reza": [
+     26,
+     259,
+     50
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-18fa7d4ea1f1"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cbfa267c8a",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 0,
+   "lita_logmean": 1.045,
+   "lita_log_prod": 3.135,
+   "hidden_cut": 0.343,
+   "reza_log": 5.62,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "CCTV Security Cameras",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "resolution",
+       "keys": [
+        "image sensor",
+        "resolution"
+       ],
+       "op": "has",
+       "value": "720p",
+       "support": 0.81
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "cream",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 52500,
+     "target": null,
+     "n_a_stated_cap": 12,
+     "n_a_final": 0,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "capacity",
+       "keys": [
+        "capacity",
+        "capacity options",
+        "storage capacity"
+       ],
+       "op": "has",
+       "value": "512 gb",
+       "support": 0.723
+      },
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "color options"
+       ],
+       "op": "has",
+       "value": "silver",
+       "support": 0.433
+      },
+      {
+       "prop": "size",
+       "keys": [
+        "available capacities",
+        "capacity",
+        "size",
+        "storage",
+        "storage capacities"
+       ],
+       "op": "has",
+       "value": "128gb",
+       "support": 0.407
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "card type",
+       "op": "eq",
+       "value": "compactflash",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 52500,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "keys": [
+        "plug type"
+       ],
+       "op": "has",
+       "value": "usb",
+       "support": 0.84
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 52500,
+     "target": "p-01c2dcf94dfe",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 52500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-cbfa267c8a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_38",
+    "orig_id": "t-cbfa267c8a",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cbfa267c8a",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-01c2dcf94dfe",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 25.30674846625767,
+    "subjects": [
+     "card type of the memory cards",
+     "color of the cctv security cameras",
+     "input voltage of the cctv security cameras"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 52500,
+    "jufuli": 52500,
+    "lita": [
+     0,
+     0,
+     23
+    ],
+    "reza": [
+     12,
+     0,
+     23
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d7bc159989",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 26,
+   "lita_logmean": 4.154,
+   "lita_log_prod": 8.308,
+   "hidden_cut": 0.0,
+   "reza_log": 8.308,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.913
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "animal print",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 20000,
+     "target": "p-0d8e5adc9961",
+     "n_a_stated_cap": 26,
+     "n_a_final": 26,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ],
+       "op": "has",
+       "value": "twist lock",
+       "support": 0.957
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 20000,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 156,
+     "n_a_final": 156,
+     "n_a0_nocap": 156,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 20000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-d7bc159989",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_39",
+    "orig_id": "t-d7bc159989",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d7bc159989",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0d8e5adc9961",
+       1
+      ],
+      [
+       "p-0331a3d51cfe",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0331a3d51cfe",
+      "p-04b1fbc48257"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 27.81954887218045,
+    "subjects": [
+     "pattern of the bed sheets",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "stated_only"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 20000,
+    "jufuli": 20000,
+    "lita": [
+     26,
+     156
+    ],
+    "reza": [
+     26,
+     156
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0331a3d51cfe",
+    "p-04b1fbc48257"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d818f5604e",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 7,
+   "lita_logmean": 3.047,
+   "lita_log_prod": 12.189,
+   "hidden_cut": 0.023,
+   "reza_log": 12.951,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 100
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "keys": [
+        "color",
+        "colorsavailable"
+       ],
+       "op": "has",
+       "value": "tan",
+       "support": 0.887
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "closure",
+       "op": "eq",
+       "value": "drawstring",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "ventilation"
+     ],
+     "cap_line": 27500,
+     "target": "p-0bbef61e81f5",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure type",
+       "keys": [
+        "closure",
+        "closure type",
+        "closuretype"
+       ],
+       "op": "has",
+       "value": "slip-on",
+       "support": 0.818
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "polyester",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "ventilation"
+     ],
+     "cap_line": 27500,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 15,
+     "n_a_final": 7,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofa Covers & Slips",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.983
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "colorful",
+       "support": 0.939
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "ventilation"
+     ],
+     "cap_line": 27500,
+     "target": "p-0e3f2120b22a",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.983
+      },
+      {
+       "prop": "style",
+       "keys": [
+        "style"
+       ],
+       "op": "has",
+       "value": "colorful",
+       "support": 0.931
+      },
+      {
+       "prop": "sofa type",
+       "keys": [
+        "sofa type"
+       ],
+       "op": "has",
+       "value": "sofa bed",
+       "support": 0.394
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "character",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "ventilation"
+     ],
+     "cap_line": 27500,
+     "target": "p-001d5e4762b8",
+     "n_a_stated_cap": 312,
+     "n_a_final": 312,
+     "n_a0_nocap": 312,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 100,
+   "task_id": "t-d818f5604e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_40",
+    "orig_id": "t-d818f5604e",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d818f5604e",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 100,
+     "cart": [
+      [
+       "p-0bbef61e81f5",
+       1
+      ],
+      [
+       "p-0002769f8f8e",
+       1
+      ],
+      [
+       "p-0e3f2120b22a",
+       2
+      ],
+      [
+       "p-001d5e4762b8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 3,
+    "process_rules": [],
+    "step_budget": 100,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 43.71165644171779,
+    "subjects": [
+     "closure of the furniture covers",
+     "material of the slipcovers and furniture covers",
+     "style of the sofas",
+     "ventilation of the furniture covers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {
+     "0": "stated_only",
+     "3": "shelf_with_facts"
+    }
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 27500,
+    "lita": [
+     9,
+     7,
+     10,
+     312
+    ],
+    "reza": [
+     9,
+     15,
+     10,
+     312
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e1b52611b6",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 48,
+   "lita_logmean": 4.053,
+   "lita_log_prod": 8.105,
+   "hidden_cut": 0.773,
+   "reza_log": 10.961,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 2,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fabric feature",
+       "op": "eq",
+       "value": "waterproof",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "sheet type"
+     ],
+     "cap_line": 20000,
+     "target": "p-01fae47e69c8",
+     "n_a_stated_cap": 351,
+     "n_a_final": 48,
+     "n_a0_nocap": 351,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Video Camera",
+     "qty": 1,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory card type",
+       "op": "eq",
+       "value": "sd",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "sheet type"
+     ],
+     "cap_line": 20000,
+     "target": "p-009262b512dd",
+     "n_a_stated_cap": 164,
+     "n_a_final": 69,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 20000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-e1b52611b6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_41",
+    "orig_id": "t-e1b52611b6",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e1b52611b6",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-01fae47e69c8",
+       2
+      ],
+      [
+       "p-009262b512dd",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 25.267993874425727,
+    "subjects": [
+     "fabric feature of the bed sheets",
+     "memory card type of the video camera",
+     "sheet type of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 20000,
+    "jufuli": 20000,
+    "lita": [
+     48,
+     69
+    ],
+    "reza": [
+     351,
+     164
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e838bdff87",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.483,
+   "lita_log_prod": 7.448,
+   "hidden_cut": 0.0,
+   "reza_log": 7.448,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 78
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "closure",
+       "keys": [
+        "closure",
+        "closuretype"
+       ],
+       "op": "has",
+       "value": "zipper",
+       "support": 0.706
+      },
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern",
+        "pattern options",
+        "patternoptions"
+       ],
+       "op": "has",
+       "value": "solid",
+       "support": 0.563
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "upholsterymaterial"
+     ],
+     "cap_line": 37500,
+     "target": "p-40b453bfcedc",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Slipcovers and Furniture Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "material"
+       ],
+       "op": "has",
+       "value": "spandex",
+       "support": 0.918
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "upholsterymaterial"
+     ],
+     "cap_line": 37500,
+     "target": "p-06a0b2744176",
+     "n_a_stated_cap": 22,
+     "n_a_final": 22,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sofas",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "keys": [
+        "pattern"
+       ],
+       "op": "has",
+       "value": "geometric",
+       "support": 0.974
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "upholsterymaterial"
+     ],
+     "cap_line": 37500,
+     "target": "p-0fe6015fef9c",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 37500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 78,
+   "task_id": "t-e838bdff87",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_42",
+    "orig_id": "t-e838bdff87",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e838bdff87",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 78,
+     "cart": [
+      [
+       "p-40b453bfcedc",
+       2
+      ],
+      [
+       "p-06a0b2744176",
+       2
+      ],
+      [
+       "p-0fe6015fef9c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 78,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 49.54128440366973,
+    "subjects": [
+     "color of the furniture covers",
+     "upholsterymaterial of the furniture covers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 37500,
+    "jufuli": 9660,
+    "lita": [
+     6,
+     22,
+     13
+    ],
+    "reza": [
+     6,
+     22,
+     13
+    ]
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ece5a5fba1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 37,
+   "lita_logmean": 3.611,
+   "lita_log_prod": 3.611,
+   "hidden_cut": 0.808,
+   "reza_log": 5.263,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 2,
+   "hops_total": 2,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fabric feature",
+       "keys": [
+        "fabric feature",
+        "features"
+       ],
+       "op": "has",
+       "value": "hypoallergenic",
+       "support": 0.952
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "character"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "sheet type"
+     ],
+     "cap_line": 415,
+     "target": "p-04b1fbc48257",
+     "n_a_stated_cap": 193,
+     "n_a_final": 37,
+     "n_a0_nocap": 193,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 415,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Um \u2014 apologies \u2014 I think someone beat us to the final one \u2014 the way a sunset fades before you finish the sketch.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I hate to be a nuisance \u2014 but the number under that pick just moved and I caught it between charting and my coffee.",
+     "factor": 0.7258
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-ece5a5fba1",
+   "extra": {
+    "kinds": [
+     "stock",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_43",
+    "orig_id": "t-ece5a5fba1",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ece5a5fba1",
+     "agent": "Cooler Man",
+     "rank": 7,
+     "eid": "d2b99d79-c8e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-4f5883e23b28",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-0c5a23ac317a"
+     ],
+     [
+      "p-01fae47e69c8"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "view_after_add"
+    ],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 27.68532526475038,
+    "subjects": [
+     "pattern",
+     "sheet type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 415,
+    "jufuli": 415,
+    "lita": [
+     37
+    ],
+    "reza": [
+     193
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 415,
+    "jufuli": 415,
+    "lita": [
+     37
+    ],
+    "reza": [
+     193
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 415,
+    "jufuli": 415,
+    "lita": [
+     37
+    ],
+    "reza": [
+     193
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 415,
+    "jufuli": 415,
+    "lita": [
+     37
+    ],
+    "reza": [
+     193
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-0c5a23ac317a"
+   ],
+   [
+    "p-01fae47e69c8"
+   ]
+  ],
+  "process_rules": [
+   "view_after_add"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f0b9845346",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 168,
+   "lita_logmean": 5.124,
+   "lita_log_prod": 5.124,
+   "hidden_cut": 0.0,
+   "reza_log": 5.124,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Tripods and Camera Supports",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "color",
+        "material",
+        "materials",
+        "tripod material"
+       ],
+       "op": "has",
+       "value": "aluminum",
+       "support": 0.623
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "leg sections",
+      "weight"
+     ],
+     "cap_line": 25500,
+     "target": "p-00b61131a0fb",
+     "n_a_stated_cap": 168,
+     "n_a_final": 168,
+     "n_a0_nocap": 168,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 25500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "If it's not too much trouble \u2014 could we repaint the plan around 19093 cents US? My rent bill just came in.",
+     "factor": 1.0
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "This is awkward \u2014 but I think someone swapped the numbers on the thing you found \u2014 like a retouched corner of a canvas.",
+     "factor": 0.76
+    }
+   ],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-f0b9845346",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_44",
+    "orig_id": "t-f0b9845346",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-f0b9845346",
+     "agent": "King boy",
+     "rank": 213,
+     "eid": "025c4203-2dd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 30,
+     "cart": [
+      [
+       "p-2bf6e7935b89",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-21db5d211046"
+     ]
+    ],
+    "needs": 0,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 21.745788667687595,
+    "subjects": [
+     "leg sections",
+     "weight"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 25500,
+    "jufuli": 25500,
+    "lita": [
+     168
+    ],
+    "reza": [
+     168
+    ]
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 19093,
+    "jufuli": 19093,
+    "lita": [
+     168
+    ],
+    "reza": [
+     168
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 25500,
+    "jufuli": 25500,
+    "lita": [
+     168
+    ],
+    "reza": [
+     168
+    ]
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 19093,
+    "jufuli": 19093,
+    "lita": [
+     168
+    ],
+    "reza": [
+     168
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-21db5d211046"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f868849bfc",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 1.445,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.962,
+   "reza_log": 8.029,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r16",
+   "flavor": "r16",
+   "lines": [
+    {
+     "category": "Bed Sheets",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "material",
+       "keys": [
+        "fabric feature",
+        "material"
+       ],
+       "op": "has",
+       "value": "silk",
+       "support": 0.853
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "age group",
+       "op": "eq",
+       "value": "children",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 13500,
+     "target": "p-1ca401ec2bbb",
+     "n_a_stated_cap": 11,
+     "n_a_final": 2,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 3,
+     "stated": [],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "device interface",
+       "op": "eq",
+       "value": "microsdhc",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 13500,
+     "target": "p-4e89283992f8",
+     "n_a_stated_cap": 279,
+     "n_a_final": 9,
+     "n_a0_nocap": 279,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 35,
+   "task_id": "t-f868849bfc",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r16_45",
+    "orig_id": "t-f868849bfc",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f868849bfc",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-1ca401ec2bbb",
+       3
+      ],
+      [
+       "p-4e89283992f8",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-97cc23842c6e"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [],
+    "step_budget": 35,
+    "max_steps": 150,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 20.307692307692307,
+    "subjects": [
+     "age group of the bed sheets",
+     "device interface of the memory cards",
+     "fabric feature of the bed sheets"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "reconstructed",
+    "fallback_lines": {}
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13500,
+    "jufuli": 13500,
+    "lita": [
+     2,
+     9
+    ],
+    "reza": [
+     11,
+     279
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-97cc23842c6e"
+   ]
+  ],
+  "process_rules": [],
+  "held_out": false,
+  "ids10": false
+ }
+]
