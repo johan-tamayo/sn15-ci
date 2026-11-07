@@ -10199,20 +10199,20 @@
   "n_lines": 2,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 4,
+  "mech_load": 5,
   "features": {
    "n_lines": 2,
    "qty_total": 6,
    "lita_min": 3,
-   "lita_logmean": 1.792,
-   "lita_log_prod": 3.584,
-   "hidden_cut": 0.758,
+   "lita_logmean": 1.648,
+   "lita_log_prod": 3.296,
+   "hidden_cut": 0.806,
    "reza_log": 6.397,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
-   "n_subj": 2,
-   "n_need": 1,
+   "n_subj": 3,
+   "n_need": 2,
    "n_refs": 1,
    "hops_total": 1,
    "max_hops": 1,
@@ -10276,14 +10276,22 @@
       }
      ],
      "line_cap": null,
-     "hidden": [],
+     "hidden": [
+      {
+       "prop": "device interface",
+       "op": "eq",
+       "value": "microsdhc",
+       "unit": null,
+       "ref": false
+      }
+     ],
      "decoys": [
       "fabric feature"
      ],
      "cap_line": 13500,
-     "target": "p-0b24adf470d5",
+     "target": "p-4e89283992f8",
      "n_a_stated_cap": 12,
-     "n_a_final": 12,
+     "n_a_final": 9,
      "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
@@ -10326,7 +10334,7 @@
        3
       ],
       [
-       "p-0b24adf470d5",
+       "p-4e89283992f8",
        3
       ]
      ]
@@ -10336,7 +10344,7 @@
       "p-3ba076ef0b67"
      ]
     ],
-    "needs": 1,
+    "needs": 2,
     "process_rules": [],
     "step_budget": 35,
     "max_steps": 150,
@@ -10345,10 +10353,12 @@
     "bundle_pct": 20.307692307692307,
     "subjects": [
      "age group of the bed sheets",
+     "device interface of the memory cards",
      "fabric feature of the bed sheets"
     ],
     "ligubo": [
      0,
+     1,
      -1
     ],
     "text_source": "verbatim",
@@ -10367,7 +10377,7 @@
     "jufuli": 2682,
     "lita": [
      3,
-     12
+     9
     ],
     "reza": [
      50,

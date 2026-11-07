@@ -7,7 +7,7 @@
 
 - **Truth**: `lita` = catalog items of the line's shelf matching stated + hidden clauses UNION every passing / `not_the_best_option` field cart item on that line; `reza` = stated-only fits UNION lita UNION `needs_not_found` cart items; `jufuli` calibrated on passing / `not_the_best_option` carts (cheapest tasks); one answer slot per event bitmask. Listings no agent opened with `FullSpecs` carry no facts and are never acceptable by clause.
 - **Catalog**: all `5,041` cards seen in the episodes (`2,768` with `FullSpecs` facts, `330` with offer-page pointers).
-- **Task mix**: 1L `12` / 2L `9` / 3L `18` / 4L `6`; hidden slots on `34/45` tasks (64 slots), reply-by-reference on `8/45`, pointer chains on `17/45`, mid-episode notices on `10/45`.
+- **Task mix**: 1L `12` / 2L `9` / 3L `18` / 4L `6`; hidden slots on `34/45` tasks (65 slots), reply-by-reference on `8/45`, pointer chains on `17/45`, mid-episode notices on `10/45`.
 - **7 Race-16 Tools (`tools.json`)**: `ItemsSeek` (phrase search | shelf `match` browse, 6 per page, `vetu<offset>` tokens), `FullSpecs` (facts), `OfferShow` (offer page with `pointers`), `StashToBasket` (set one line), `SummaryMyItems` (basket), `OrderWrapUp` (checkout | cancel), `BuyerMessage` (3 replies).
 - **Store Notices**: events ride on the NEXT tool observation as `{"pozo": <obs>, "teve": [<sentence>]}`; an event not yet fired at the first checkout refuses it (`{"observation": {"worked": true}, "refusal": [...]}`).
 - **Persona**: 12 nurse reveal frames (`simrace/race2/shopper2.py` `_R16_REVEAL_FRAMES`), the learned race-16 no-preference / did-not-understand pools.
@@ -47,36 +47,29 @@
 
 - `fits_infeasible` (fitting basket not in the pack catalog, priced without the pairs): `t-12580eb901`
 
-## Known noise (full transcript replay, `runs/r16forge1/R16_FIDELITY_CARD.md`)
-- Category match 10,071/10,395 = 96.88%; 253 of 324 residuals are twin-proven irreproducible (race 16's process label differs across same-evidence episodes; twin-adjusted 99.32%).
-- 71 residuals are unproven and are read as known noise of this pack, not a gap to close:
-  - `t-8bd61534f3`: field `not the best option` -> pack `process requirement missed` x8
-  - `t-be80caa191`: field `not the best option` -> pack `process requirement missed` x5
-  - `t-3ee3aa35d6`: field `request not met` -> pack `did not finish` x5
+## Known noise (full transcript replay, `runs/r16forge2/R16_FIDELITY_CARD.md`)
+- Category match 9,970/10,395 = 95.91%; 238 of 425 residuals are twin-proven irreproducible (race 16's process label differs across same-evidence episodes; twin-adjusted 98.20%).
+- 187 residuals are unproven and are read as known noise of this pack, not a gap to close:
+  - `t-bdbd94913b`: field `PASS` -> pack `process requirement missed` x69
+  - `t-f868849bfc`: field `process requirement missed` -> pack `request not met` x30
+  - `t-f868849bfc`: field `process requirement missed` -> pack `not the best option` x28
+  - `t-cbfa267c8a`: field `PASS` -> pack `process requirement missed` x27
   - `t-6444e764d5`: field `request not met` -> pack `not the best option` x5
-  - `t-8bd61534f3`: field `PASS` -> pack `process requirement missed` x4
-  - `t-480fb22da9`: field `PASS` -> pack `process requirement missed` x4
-  - `t-480fb22da9`: field `request not met` -> pack `process requirement missed` x4
+  - `t-3ee3aa35d6`: field `request not met` -> pack `did not finish` x5
   - `t-b4c5139927`: field `PASS` -> pack `changes missed` x3
-  - `t-938f1af50e`: field `process requirement missed` -> pack `PASS` x3
-  - `t-938f1af50e`: field `process requirement missed` -> pack `request not met` x3
-  - `t-18a38d31ce`: field `request not met` -> pack `PASS` x3
-  - `t-480fb22da9`: field `request not met` -> pack `PASS` x2
+  - `t-865b344413`: field `process requirement missed` -> pack `request not met` x3
   - `t-3fb0a80602`: field `process requirement missed` -> pack `did not finish` x2
   - `t-cbfa267c8a`: field `process requirement missed` -> pack `PASS` x2
-  - `t-7323911eef`: field `process requirement missed` -> pack `PASS` x2
-  - `t-7c2132dac7`: field `request not met` -> pack `not the best option` x2
+  - `t-ece5a5fba1`: field `request not met` -> pack `changes missed` x1
   - `t-d818f5604e`: field `process requirement missed` -> pack `request not met` x1
   - `t-cbfa267c8a`: field `process requirement missed` -> pack `request not met` x1
   - `t-b3fef9d2ba`: field `process requirement missed` -> pack `request not met` x1
+  - `t-3fb0a80602`: field `process requirement missed` -> pack `changes missed` x1
   - `t-cbfa267c8a`: field `did not finish` -> pack `process requirement missed` x1
-  - `t-865b344413`: field `request not met` -> pack `process requirement missed` x1
   - `t-e1b52611b6`: field `process requirement missed` -> pack `request not met` x1
-  - `t-865b344413`: field `process requirement missed` -> pack `PASS` x1
   - `t-b4c5139927`: field `request not met` -> pack `changes missed` x1
-  - `t-190e3ed035`: field `PASS` -> pack `process requirement missed` x1
+  - `t-f868849bfc`: field `process requirement missed` -> pack `PASS` x1
+  - `t-7323911eef`: field `process requirement missed` -> pack `not the best option` x1
+  - `t-7323911eef`: field `process requirement missed` -> pack `request not met` x1
   - `t-5a1196d6d2`: field `not the best option` -> pack `did not finish` x1
   - `t-b064ec811d`: field `process requirement missed` -> pack `request not met` x1
-  - `t-ece5a5fba1`: field `request not met` -> pack `changes missed` x1
-  - `t-7da8a1ce4d`: field `PASS` -> pack `process requirement missed` x1
-  - `t-54b7a4a371`: field `not the best option` -> pack `process requirement missed` x1

@@ -46,4 +46,4 @@
 | r16_42 | `t-e838bdff87` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (2x Furniture Covers, 2x Slipcovers and Furniture Covers, 1x Sofas) | 1 | 78 | none | `2x p-40b453bfcedc + 2x p-06a0b2744176 + 1x p-0fe6015fef9c` |
 | r16_43 | `t-ece5a5fba1` | `Cooler Man` (`d2b99d79-c8e`, rk 7) | `PASSED` | 1 (1x Bed Sheets) | 1 | 35 | stock@finish, price@first_add | `1x p-0f996851c4fc` |
 | r16_44 | `t-f0b9845346` | `King boy` (`025c4203-2dd`, rk 213) | `PASSED` | 1 (1x Tripods and Camera Supports) | 1 | 35 | budget@finish, price@finish | `1x p-2bf6e7935b89` |
-| r16_45 | `t-f868849bfc` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 2 (3x Bed Sheets, 3x Memory Cards) | 1 | 35 | none | `3x p-11a8c5f6e0fe + 3x p-0b24adf470d5` |
+| r16_45 | `t-f868849bfc` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 2 (3x Bed Sheets, 3x Memory Cards) | 1 | 35 | none | `3x p-11a8c5f6e0fe + 3x p-4e89283992f8` |
