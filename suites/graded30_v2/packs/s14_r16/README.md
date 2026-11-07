@@ -1,5 +1,29 @@
 # Race-16 Forged Field Suite (`s14_r16`, 45 Open Tasks, `w-forge-s14-r16`)
 
+> **INTERIM - not for verdicts** (COACH 05:33, option C). Signature: manifest `4e9a4ecf`, CI commit `ea4ca4e`. Until C535 R16FORGE2 re-forges the spec from the public text, lanes decide on `s14_r15_fit2` / `s14_r14_fit2` (their request text is verbatim, per C532); r16 is read-only context.
+> **Request text vs public text** (`tools/forge/r16_forge/verbatim_check_r16.py` -> `runs/r16rebuild/verbatim_check.txt`; public text = C532's recovery in `runs/r16_forge/r16_verbatim_requests.json`: 7 full task-input JSON echoes, 38 multi-agent spans). The pack's spec agrees with the public text on only 12/45 tasks:
+> - `stated_not_in_text` 17: the pack's stated clauses do not appear in the public text.
+> - `cheapest_differs` 15: the text asks for the cheapest fit or the lowest total cost, but the key does not enforce it.
+> - `compat_clause` 13: the text has "whatever X you choose, Y must be compatible with it", which the key does not model.
+> - `hidden_in_text` 4: the text states a need the pack holds back as hidden.
+> - Step budget differs on 3 tasks: `t-237494d47b` 93->97, `t-44963adb06` 77->78, `t-8f9fc2ba56` 77->78.
+> - 5 spans lack the budget, step or message clause.
+> **`view_after_add`** (15 tasks) is a label-inferred grader rule, not public text. Best single rule 'every carted listing viewed after its last add' agrees with the field labels on 86% of 2,356 evidence-complete orders. No request sentence states it.
+
+> **INTERIM - not for verdicts** (COACH 05:33, 2026-11-07). Manifest `4e9a4ecf`, CI `ea4ca4e`. Every lane decides on `s14_r15_fit2` / `s14_r14_fit2` (verbatim public text, C532) until C535 R16FORGE2 re-forges this pack from race 16's public request text; r16 reads are context only. The request text here is composed from a field-derived spec, and the recovered public text (`runs/r16_forge/r16_verbatim_requests.json`: 7 full task-input echoes, 38 multi-agent spans) disagrees with that spec (`tools/forge/r16_forge/verbatim_check_r16.py` -> `runs/r16rebuild/verbatim_check.txt`):
+>
+> | check | tasks |
+> |---|---|
+> | spec-coherent with the public text | 12/45 |
+> | `stated_not_in_text` (a stated clause of the pack is not in the public text) | 17 |
+> | `cheapest_differs` (public "pick the cheapest" / "lowest total cost wins" vs the key's cheapest flag) | 15 |
+> | `compat_clause` (public "whatever X you choose, the Y must be compatible with it"; not modelled by the key) | 13 |
+> | `hidden_in_text` (a hidden need of the pack is stated in the public text) | 4 |
+> | step budget differs (t-237494d47b 93->97, t-44963adb06 / t-8f9fc2ba56 77->78) | 3 |
+> | public span lacks budget / steps / messages (partial recovery) | 5 |
+>
+> `view_after_add` stays as a LABEL-INFERRED grader rule (best single rule 'every carted listing viewed after its last add' agrees with the field's process label on 86% of 2,356 evidence-complete orders); no public request states it, and no lane is keyed on it.
+
 ## 1. Overview & World Mechanics
 - **Pack Path**: `~/sn15-ops/suites/graded30_v2/packs/s14_r16` (`pack_id: p-forge-s14-r16`, `world_id: w-forge-s14-r16`), built by `tools/forge/r16_forge/build_s14_r16.py` from `runs/r16_forge/` (lane C524 INGEST16).
 - **Corpus Provenance**: all `10,395` released Race-16 open episodes; `1,095` passing order episodes across `17` tasks, `28` tasks with 0 passing orders.
