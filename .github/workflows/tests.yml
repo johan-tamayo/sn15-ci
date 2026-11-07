@@ -1,0 +1,39 @@
+name: tests
+# $0 regression tests for the simulator and the CI scripts (tests/): pack signatures + answer keys, the pack grader re-grading
+# stored ledgers, world_sim replay identity on stored episodes, the branch spend restore (BILLEDLINE1), plan / merge jobs and
+# the run-name contract `sn15 gh-run watch` parses. No model call, no secret, no network (tests/conftest.py routes HTTP(S)
+# to a closed local port). Separate from sim.yml: it never dispatches or touches a read.
+
+on:
+  pull_request:
+    paths:
+      - "simrace/**"
+      - "ci/**"
+      - "tests/**"
+      - "vendor/**"
+      - "suites/**"
+      - "requirements.txt"
+      - ".github/workflows/tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: pip install
+        run: python -m pip install --quiet --disable-pip-version-check -r requirements.txt pytest==9.1.1
+      - name: prepare runtime
+        run: bash ci/prepare.sh
+      - name: pytest
+        run: python -m pytest tests -q -p no:cacheprovider -rxX --durations=8

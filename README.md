@@ -18,6 +18,7 @@ Layout
 | `cache/claude_world_reader_cache.jsonl.gz` | seed of the shopper-reader cache (`~/.sn15-world-sim-cache/`), like `gsim_setup.sh` seeds the hosts |
 | `agents/<sha8>.py` | agent files committed by the trigger (content-addressed, sha256[:8]) |
 | `ci/plan.py`, `ci/run_shard.sh`, `ci/merge.py`, `ci/prepare.sh` | the three workflow jobs |
+| `tests/`, `.github/workflows/tests.yml` | $0 regression tests (no model call, no secret, offline): pack signatures + answer keys, grader re-grade of stored ledgers, world_sim replay identity, branch spend restore, plan / merge, the run-name contract; runs on pull requests touching the simulator / ci / packs and on manual dispatch. Locally: `python -m pytest tests -q` |
 
 Workflow `sim.yml` (`workflow_dispatch`): `plan` splits the task ids round-robin into `shards` per nonce -> `run` matrix
 (max-parallel 20, 120 min per job, secret `OPENROUTER_API_KEY` as env; the Claude BYOK shopper reader and the agent's
