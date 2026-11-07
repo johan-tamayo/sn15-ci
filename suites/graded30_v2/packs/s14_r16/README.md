@@ -33,10 +33,12 @@
 - **Compatibility pairs graded** (13 tasks, 29 pairs): `Whatever X you choose, the Y must be compatible with it` -> `answer.dova[].fitok` (a Y listing that does not fit the chosen X is `request_not_met`). Relation from the catalog cards (`tools/forge/r16_forge/compat_r16.py`): camera `Model: LIV nnnn` <-> accessory `Compatible with: LIV ... / every LIV nnxx model, except ... / also fits`; sofa `Takes part series SIn` <-> cover title `[SIn-....]`; unknown = compatible. Field check (`compat_r16.py check`): 103 of 103 PASS carts and 20 of 20 not_the_best_option carts fit; 129 of 174 request_not_met carts violate.
 - **Conditionals graded** (3 tasks) as `fitok` pairs on the same device line: `Should the video camera's P turn out to be V, I need the Y's Q to be W` / `Y's Q must be W, except when the video camera's P is V1 or V2`; a listing without the fact is unknown = allowed.
 - **References**: `identical to / partner piece to / within N of the one named - or pointed to - on ... listing` -> stated clause with `ref`, value resolved by walking the named listing's page pointers (`tools/forge/r16_forge/refwalk_r16.py`), every hop in `answer.refs`; field-inferred chains with no link in the text or a reveal are dropped.
-- **hidden** = the observed field reveals (unchanged), re-indexed onto the text's lines; a reveal the text now states is dropped.
+- **hidden** = the observed field reveals (unchanged), re-indexed onto the text's lines. A reveal stays hidden even when the text states the same value under another property (`t-f868849bfc`: text `card type is microsdhc`, field shopper reveals `device interface microsdhc` and 128 of 128 field orders without that reveal are graded process_requirement_missed).
+- **Cheapest cap per event state**: `jufuli` = the state's cheapest basket, raised to the field's passing totals, lowered to (cheapest not_the_best_option cart - 1) only when that stays at or above the state's own cheapest basket (an NBO cart below it was graded in another event state; `t-5a1196d6d2` no-drop states 129 -> 130).
 - **Keys** re-derived under the text clauses: `lita` = shelf listings matching stated + hidden UNION passing / not_the_best_option field carts (minus over-line-cap).
 - **Re-view rule**: no re-view sentence in any request (0 of 45 public texts carry one); `view_after_add` stays a LABEL-INFERRED grader rule on 15 tasks (matches the live `process_requirement_missed` labels on 86% of 2,356 evidence-complete field orders).
 - **Race-16 question-credit fit kept** (C524b).
+- **Checks** (`runs/r16forge2/R16_FIDELITY_CARD.md`): scripted oracle 245/245 (0 mismatches), tool shapes 19/19, field passing carts 1,092/1,095 PASS, field order re-grade 1,908/1,952 (97.75%), reply mix / 3-message cap / step budget = text 45/45, notice tasks 10 = field, `sn15 forge check` PASS; full transcript replay under the race-16 credit rule (`tools/forge/full_replay.py` nonce search reads the 1L / ML table) 10,024/10,395 = 96.43%, twin-adjusted 98.72%; per-task spec diff `runs/r16forge2/SPEC_DIFF.md`.
 
 ### Partial request spans (`fidelity: partial`, composed span only)
 - `t-2363ddf59f`: composed span appended: "Lowest total cost wins — sorry — if you can manage that. Sorry — I need 1 x bed sheets with pattern character; 1 x cctv security cameras with security camera style dome — if that's alright. Would you mind keeping the whole total at 2050 cents US or under — sorry."
@@ -48,18 +50,18 @@
 - `fits_infeasible` (fitting basket not in the pack catalog, priced without the pairs): `t-12580eb901`
 
 ## Known noise (full transcript replay, `runs/r16forge2/R16_FIDELITY_CARD.md`)
-- Category match 9,970/10,395 = 95.91%; 238 of 425 residuals are twin-proven irreproducible (race 16's process label differs across same-evidence episodes; twin-adjusted 98.20%).
-- 187 residuals are unproven and are read as known noise of this pack, not a gap to close:
+- Category match 10,024/10,395 = 96.43%; 238 of 371 residuals are twin-proven irreproducible (race 16's process label differs across same-evidence episodes; twin-adjusted 98.72%).
+- 133 residuals are unproven and are read as known noise of this pack, not a gap to close:
   - `t-bdbd94913b`: field `PASS` -> pack `process requirement missed` x69
-  - `t-f868849bfc`: field `process requirement missed` -> pack `request not met` x30
-  - `t-f868849bfc`: field `process requirement missed` -> pack `not the best option` x28
   - `t-cbfa267c8a`: field `PASS` -> pack `process requirement missed` x27
   - `t-6444e764d5`: field `request not met` -> pack `not the best option` x5
   - `t-3ee3aa35d6`: field `request not met` -> pack `did not finish` x5
+  - `t-f868849bfc`: field `process requirement missed` -> pack `request not met` x4
   - `t-b4c5139927`: field `PASS` -> pack `changes missed` x3
   - `t-865b344413`: field `process requirement missed` -> pack `request not met` x3
   - `t-3fb0a80602`: field `process requirement missed` -> pack `did not finish` x2
   - `t-cbfa267c8a`: field `process requirement missed` -> pack `PASS` x2
+  - `t-f868849bfc`: field `process requirement missed` -> pack `needs not found` x1
   - `t-ece5a5fba1`: field `request not met` -> pack `changes missed` x1
   - `t-d818f5604e`: field `process requirement missed` -> pack `request not met` x1
   - `t-cbfa267c8a`: field `process requirement missed` -> pack `request not met` x1
@@ -68,7 +70,6 @@
   - `t-cbfa267c8a`: field `did not finish` -> pack `process requirement missed` x1
   - `t-e1b52611b6`: field `process requirement missed` -> pack `request not met` x1
   - `t-b4c5139927`: field `request not met` -> pack `changes missed` x1
-  - `t-f868849bfc`: field `process requirement missed` -> pack `PASS` x1
   - `t-7323911eef`: field `process requirement missed` -> pack `not the best option` x1
   - `t-7323911eef`: field `process requirement missed` -> pack `request not met` x1
   - `t-5a1196d6d2`: field `not the best option` -> pack `did not finish` x1
