@@ -2362,11 +2362,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 1,
-   "lita_logmean": 0.0,
-   "lita_log_prod": 0.0,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
    "hidden_cut": 0.0,
-   "reza_log": 0.0,
+   "reza_log": 1.386,
    "cheapest": 0,
    "n_states": 4,
    "tele": 0,
@@ -2443,10 +2443,10 @@
       "capacity"
      ],
      "cap_line": 10500,
-     "target": "p-b19245726042",
-     "n_a_stated_cap": 1,
-     "n_a_final": 1,
-     "n_a0_nocap": 1,
+     "target": "p-006348264dc4",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -2509,7 +2509,7 @@
      "steps": 35,
      "cart": [
       [
-       "p-b19245726042",
+       "p-006348264dc4",
        1
       ]
      ]
@@ -2550,10 +2550,10 @@
     "suhe": 10500,
     "jufuli": 10500,
     "lita": [
-     1
+     4
     ],
     "reza": [
-     1
+     4
     ]
    },
    {
@@ -2562,10 +2562,10 @@
     "suhe": 7191,
     "jufuli": 7191,
     "lita": [
-     1
+     4
     ],
     "reza": [
-     1
+     4
     ]
    },
    {
@@ -2574,10 +2574,10 @@
     "suhe": 10500,
     "jufuli": 10500,
     "lita": [
-     1
+     4
     ],
     "reza": [
-     1
+     4
     ]
    },
    {
@@ -2586,10 +2586,10 @@
     "suhe": 7191,
     "jufuli": 7191,
     "lita": [
-     1
+     4
     ],
     "reza": [
-     1
+     4
     ]
    }
   ],
@@ -8642,7 +8642,7 @@
   "n_lines": 2,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 2,
    "qty_total": 3,
@@ -8657,8 +8657,8 @@
    "n_subj": 2,
    "n_need": 1,
    "n_refs": 1,
-   "hops_total": 2,
-   "max_hops": 2,
+   "hops_total": 1,
+   "max_hops": 1,
    "step_budget": 35
   },
   "spec": {
@@ -8775,7 +8775,6 @@
     },
     "refs": [
      [
-      "p-0331a3d51cfe",
       "p-04b1fbc48257"
      ]
     ],
@@ -8820,7 +8819,6 @@
   ],
   "refs": [
    [
-    "p-0331a3d51cfe",
     "p-04b1fbc48257"
    ]
   ],
@@ -9859,7 +9857,7 @@
     },
     "refs": [
      [
-      "p-21db5d211046"
+      "p-2bf6e7935b89"
      ]
     ],
     "needs": 0,
@@ -9933,7 +9931,7 @@
   ],
   "refs": [
    [
-    "p-21db5d211046"
+    "p-2bf6e7935b89"
    ]
   ],
   "process_rules": [],
@@ -10075,7 +10073,7 @@
     },
     "refs": [
      [
-      "p-97cc23842c6e"
+      "p-3ba076ef0b67"
      ]
     ],
     "needs": 2,
@@ -10117,7 +10115,7 @@
   ],
   "refs": [
    [
-    "p-97cc23842c6e"
+    "p-3ba076ef0b67"
    ]
   ],
   "process_rules": [],

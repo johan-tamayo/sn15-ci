@@ -7,7 +7,7 @@
 #   * events: trigger finish (first commit with a cart refused once), first_add (first non-empty stash; echo on the next call),
 #     after_reveal (first slot reveal; echo on the next call); kinds budget (new cap) | drop (relaxed clause) | stock (carted line sells out)
 #   * persona: 12 reveal frames, nopref, DNU (dnu_default per task share)
-#   * askBuyer credit: the live labeler's position / shelf-context rule, one PRNG draw per message (fit: runs/forge4/HANDOVER.md)
+#   * askBuyer credit: the live labeler's position / shelf-context rule, one PRNG draw per message (race-16 fit: runs/r16_forge/credit_model_r16.json, C524b)
 #   * graded: pointer chains opened via OfferShow / FullSpecs, hidden needs via BuyerMessage, one answer slot per fired-event bitmask
 
 TEXT_INDEX = "jasu"
@@ -424,8 +424,12 @@ def is_approval_or_note(text_low):
 
 def non_slot_reply(behaviour, text_low):
     dnu_default = bool(behaviour.get("dnu_default", False))
-    bundle_pct = behaviour.get("bundle_pct", 0)
-    if (bundle_pct > 0) and (det_idx(text_low + " |b", 1000) < bundle_pct * 10):
+    k = len(credit_name_parts(text_low))
+    kb = "k1" if k <= 1 else ("k2-3" if k <= 3 else "k4+")
+    tier = "ML" if ("line1" in behaviour.get("line_words", {})) else "1L"
+    named = "named" if state_get("credit_named", False) else "plain"
+    # race-16 fit (runs/r16_forge/credit_model_r16.json): the push-back share of an uncredited question grows with the names it lists
+    if credit_draw(100 + state_get("messages_used", 0)) < CREDIT_PUSHBACK[tier][kb][named] * 10000:
         pool = behaviour["tugo"]
         return pool[det_idx(text_low, len(pool))]
     pool = behaviour["sase"][0] if dnu_default else behaviour["sase"][1]
@@ -444,6 +448,7 @@ def message(text):
     step = counters()["step"]
     text_low = text.lower()
     dnu_default = bool(behaviour.get("dnu_default", False))
+    state_set("credit_named", False)
 
     # an approval / note cue ("before I order") with no question mark is a plain note; one WITH a question mark is still put to the labeler first: the field
     # answered "Quick check before I order: what material do you need?" with a reveal (full-replay audit 2026-11-06, t-c217fa5565 e77745e3 / da4bfbdd)
@@ -527,9 +532,10 @@ def decide_label(behaviour, step, text):
 # always read, a later one about half the time, the last name of a long list rarely; on a multi-line task a name without the need's
 # shelf word (singular or plural) is read less often and one with another line's shelf word almost never; a decoy named before the need blocks the reading
 # ~40%; a second need after a read need is never credited.  One draw per message from the episode PRNG seed and the message index.
-CREDIT_P_ORD = {"k1": {"first": 1.0, "unplaced": 0.767}, "k2": {"first": 0.957, "last": 0.764, "unplaced": 0.767}, "k3": {"first": 1.0, "last": 0.6, "second": 0.621, "unplaced": 0.767}, "k4-5": {"first": 0.986, "last": 0.233, "middle": 0.478, "second": 0.597, "unplaced": 0.767}, "k6+": {"first": 1.0, "last": 0.062, "middle": 0.481, "second": 0.757, "unplaced": 0.767}}
-CREDIT_F_CTX = {"1L": 1.0, "neither": 0.529, "other": 0.034, "own": 1.0, "own+other k1": 0.768, "own+other list": 0.172}
-CREDIT_DECOY_CONSUME = 0.302
+CREDIT_P_ORD_TIER = {"1L": {"k1": {"first": 0.748, "unplaced": 0.411}, "k2": {"first": 0.456, "last": 0.277, "unplaced": 0.156}, "k3": {"first": 0.456, "last": 0.277, "second": 0.188, "unplaced": 0.156}, "k4-5": {"first": 0.042, "last": 0.125, "middle": 0.022, "second": 0.022, "unplaced": 0.0}, "k6+": {"first": 0.042, "last": 0.125, "middle": 0.022, "second": 0.022, "unplaced": 0.0}}, "ML": {"k1": {"first": 0.833, "unplaced": 0.625}, "k2": {"first": 0.5, "last": 0.348, "unplaced": 0.2}, "k3": {"first": 0.5, "last": 0.348, "second": 0.214, "unplaced": 0.2}, "k4-5": {"first": 0.247, "last": 0.195, "middle": 0.152, "second": 0.152, "unplaced": 0.0}, "k6+": {"first": 0.247, "last": 0.195, "middle": 0.152, "second": 0.152, "unplaced": 0.0}}}
+CREDIT_PUSHBACK = {"1L": {"k1": {"named": 0.996, "plain": 0.029}, "k2-3": {"named": 0.982, "plain": 0.163}, "k4+": {"named": 0.998, "plain": 0.65}}, "ML": {"k1": {"named": 0.588, "plain": 0.167}, "k2-3": {"named": 0.941, "plain": 0.304}, "k4+": {"named": 0.994, "plain": 0.607}}}
+CREDIT_F_CTX = {"1L": 1.0, "neither": 0.764, "other": 0.175, "own": 1.0, "own+other k1": 0.372, "own+other list": 0.062}
+CREDIT_DECOY_CONSUME = 0.043
 CREDIT_INTERROGATIVES = ["what ", "which "]
 CREDIT_WANT_FOR = ["want for ", "like for ", "need for ", "want on ", "want in ", "need in ", "care about ", "looking for ", "want from ", "need from ", "want ", "need "]
 CREDIT_PREFERENCE = ["preference for the ", "preference for ", "preferences for ", "preference on ", "prefer "]
@@ -772,11 +778,15 @@ def credit_decide(behaviour, text, hit_keys):
     acc = 0.0
     reach = 1.0
     kc = credit_kcls(k)
+    tier = "ML" if ("line1" in behaviour.get("line_words", {})) else "1L"
+    for h in hits:
+        if h[2] >= 0:
+            state_set("credit_named", True)
     for h in hits:
         label = h[2]
         vis = CREDIT_F_CTX[h[4]]
         if label >= 0:
-            p = CREDIT_P_ORD[kc][credit_ocls(h[3], k)]
+            p = CREDIT_P_ORD_TIER[tier][kc][credit_ocls(h[3], k)]
             p_credit = vis * p
             p_stop = vis * (1.0 - p)
         else:
