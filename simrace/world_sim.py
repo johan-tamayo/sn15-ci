@@ -121,6 +121,29 @@ _LUCENE_STOP_WORDS = frozenset({
 })
 
 
+def _load_llm_route():
+    """platform/llm_route.py (C538: Anthropic direct when ANTHROPIC_API_KEY is configured, else the OpenRouter BYOK pin with the
+    prepaid-credit tripwire); None where it is absent (an old CI checkout), which keeps the OpenRouter transport below."""
+    import importlib.util
+
+    for d in (Path(__file__).resolve().parent, Path(__file__).resolve().parent.parent / "platform", OPS_ROOT / "platform"):
+        p = d / "llm_route.py"
+        if p.is_file():
+            spec = importlib.util.spec_from_file_location("llm_route", str(p))
+            if spec is not None and spec.loader is not None:
+                mod = sys.modules.get("llm_route") or importlib.util.module_from_spec(spec)
+                if "llm_route" not in sys.modules:
+                    sys.modules["llm_route"] = mod
+                    spec.loader.exec_module(mod)
+                return mod
+    return None
+
+
+_LR = _load_llm_route()
+# owner ruling 11-07 08:40 (never bypass BYOK): from the FIRST credit-billed reply (OpenRouter's BYOK fallback) in this process every
+# later reader / agent call is refused 402 by llm_route; the billed reply is logged to runs/live/credit_calls.jsonl, stderr and Slack
+
+
 def _openrouter_key() -> str:
     k = os.environ.get("OPENROUTER_API_KEY")
     if k:
@@ -985,7 +1008,7 @@ class ClaudeWorldModelClient:
         return parsed
 
     def _claude_call(self, model: str, system: str, user_prompt: str, max_tokens: int = 256, json_schema: dict | None = None) -> str:
-        if self._key is None:
+        if self._key is None and _LR is None:
             self._key = _openrouter_key()
         body: dict[str, Any] = {
             "model": model,
@@ -1001,15 +1024,18 @@ class ClaudeWorldModelClient:
         if json_schema is not None:
             body["response_format"] = {"type": "json_schema", "json_schema": json_schema}
         for attempt in range(3):
-            req = urllib.request.Request(
-                OR_CHAT_URL,
-                data=json.dumps(body).encode("utf-8"),
-                headers={"Authorization": f"Bearer {self._key}", "Content-Type": "application/json"},
-                method="POST",
-            )
             try:
-                with urllib.request.urlopen(req, timeout=60) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
+                if _LR is not None:
+                    data = _LR.post_json(body, timeout=60, tool="world_sim:reader", raise_on_trip=False)
+                else:
+                    req = urllib.request.Request(
+                        OR_CHAT_URL,
+                        data=json.dumps(body).encode("utf-8"),
+                        headers={"Authorization": f"Bearer {self._key}", "Content-Type": "application/json"},
+                        method="POST",
+                    )
+                    with urllib.request.urlopen(req, timeout=60) as resp:
+                        data = json.loads(resp.read().decode("utf-8"))
                 self.calls += 1
                 return str((data["choices"][0]["message"].get("content") or "")).strip()
             except urllib.error.HTTPError as e:
@@ -1027,6 +1053,8 @@ class ClaudeWorldModelClient:
     # validator calls; the Claude emulation below stays as the fallback on any transport error and under
     # SN15_WORLD_LIVE_LABELERS=0 (the pre-11-02 reads).
     def _live_post(self, url: str, body: dict, timeout: float) -> dict:
+        if _LR is not None and url == OR_CHAT_URL:
+            return _LR.post_json(body, timeout=max(15.0, float(timeout)), tool="world_sim:live_labeler")
         if self._key is None:
             self._key = _openrouter_key()
         req = urllib.request.Request(
@@ -1037,7 +1065,17 @@ class ClaudeWorldModelClient:
             return json.loads(resp.read().decode("utf-8"))
 
     def _live_labelers(self) -> bool:
-        return os.environ.get("SN15_WORLD_LIVE_LABELERS", "0") != "0"  # owner 11-06: default OFF - the pack's own completion models bill prepaid credits; set 1 only on purpose
+        # owner 11-06: default OFF - the pack's own completion models bill prepaid credits. C538 (owner 11-07: no prepaid spend at all):
+        # the flag alone no longer turns them on; SN15_ALLOW_CREDIT=1 (an owner-approved credit arm) must be set with it
+        if os.environ.get("SN15_WORLD_LIVE_LABELERS", "0") == "0":
+            return False
+        if os.environ.get("SN15_ALLOW_CREDIT") == "1":
+            return True
+        if not getattr(self, "_live_refusal_said", False):
+            self._live_refusal_said = True
+            print("[world_sim] SN15_WORLD_LIVE_LABELERS=1 refused: the pack's completion models bill OpenRouter prepaid credit; "
+                  "the Claude reader answers instead (SN15_ALLOW_CREDIT=1 for an owner-approved credit arm)", file=sys.stderr, flush=True)
+        return False
 
     def complete(self, model: str, prompt: str, params: dict, timeout: float = 30.0) -> str:
         """Executes `model_call` from `main.star`: the pack's own model over OpenRouter (live labelers), else Claude BYOK."""
@@ -3121,7 +3159,7 @@ class _WorldEpisodeBridge:
                         pass
                 return _WorldProxyResp(200, data_cached)
 
-        if self._key is None:
+        if self._key is None and _LR is None:
             self._key = _openrouter_key()
         req_body["model"] = model
         if model.startswith("anthropic/"):
@@ -3132,15 +3170,18 @@ class _WorldEpisodeBridge:
         req_body.pop("web_search_options", None)
 
         for attempt in range(3):
-            req = urllib.request.Request(
-                OR_CHAT_URL,
-                data=json.dumps(req_body).encode("utf-8"),
-                headers={"Authorization": f"Bearer {self._key}", "Content-Type": "application/json"},
-                method="POST",
-            )
             try:
-                with urllib.request.urlopen(req, timeout=max(30.0, float(timeout))) as resp:
-                    data = json.loads(resp.read().decode("utf-8"))
+                if _LR is not None:
+                    data = _LR.post_json(req_body, timeout=max(30.0, float(timeout)), tool="world_sim:agent", raise_on_trip=False)
+                else:
+                    req = urllib.request.Request(
+                        OR_CHAT_URL,
+                        data=json.dumps(req_body).encode("utf-8"),
+                        headers={"Authorization": f"Bearer {self._key}", "Content-Type": "application/json"},
+                        method="POST",
+                    )
+                    with urllib.request.urlopen(req, timeout=max(30.0, float(timeout))) as resp:
+                        data = json.loads(resp.read().decode("utf-8"))
                 self.inference_calls += 1
                 usage = data.get("usage") or {}
                 pt = int(usage.get("prompt_tokens") or 0)

@@ -13,8 +13,8 @@ CATEGORY_INDEX = "nemogi"
 BRAND_INDEX = "kojefe"
 PAGE_ROWS = 12
 MAX_BEGIN = 95
-TEXT_HITS_CAP = 400
-LINE_CAP = 4
+TEXT_HITS_CAP = 1000  # field counts saturate at 1000
+LINE_CAP = 5  # field (R14 open): 18 + 21 accepted lines of 4 and 5 units, all 16 refusals would give >= 6; the earlier 4 came from reading a delete without Number as a whole-line delete
 ALL_TERMS = True
 TOOLS = ["LocateListings", "OpenPage", "AskBuyer", "SetToCart", "BagList", "BuyItem", "PassOrder", "StatusReport"]
 UNKNOWN = {"trouble_message": "UNKNOWN"}
@@ -30,6 +30,7 @@ def start(envelope):
     state_set("message_budget", msg_cap)
     state_set("events", params.get("events", []))
     state_set("fired", False)
+    state_set("first_add_done", False)
     state_set("pending", [])
     state_set("ov_price", {})
     state_set("gone", [])
@@ -69,6 +70,8 @@ def apply_events():
     pend = state_get("pending", [])
     for i in range(len(events)):
         event = events[i]
+        if event.get("at", "finish") != "finish":
+            continue
         li = event.get("target_line", 0)
         item = None
         if li < len(lines):
@@ -96,8 +99,12 @@ def apply_events():
     return sentences
 
 def can_finish(order):
-    events = state_get("events", [])
+    events = [e for e in state_get("events", []) if e.get("at", "finish") == "finish"]
     if (len(events) == 0) or state_get("fired", False):
+        return {"observation": None, "ok": True}
+    if (type(order) == "dict") and (order.get("kind") == "decline"):
+        # field (R14 open, full-replay audit 2026-11-06: t-467ed85158 x3, t-9358d87572 x1 replayed): a PassOrder that is the first close is never refused by a finish-time
+        # price/stock event (15 of 15 first-close PassOrders on the two finish-event tasks were accepted); the event stays unfired for a later BuyItem
         return {"observation": None, "ok": True}
     sentences = apply_events()
     return {"observation": sentences if sentences else None, "ok": not sentences}
@@ -200,6 +207,8 @@ def tool_locate_listings(args):
             ids = group_ids(group) if (group != None) else []
         else:
             ids = text_search_ids(str(words), group)
+            if (ids == []) and (group != None):
+                ids = text_search_ids(str(words), None)  # field: a GroupName that leaves no hit is dropped (scratch/sf_chain14.py: count equal on +32 of 2983 recorded pages)
     return page_of(ids, args.get("BeginAtAt"))
 
 def tool_open_page(args):
@@ -229,6 +238,25 @@ def cart_qty(pid):
             return ln["quantity"]
     return 0
 
+def apply_first_add_events(pid):
+    if state_get("first_add_done", False):
+        return None
+    state_set("first_add_done", True)
+    events = state_get("events", [])
+    ov = state_get("ov_price", {})
+    step = counters()["step"]
+    for i in range(len(events)):
+        event = events[i]
+        if event.get("at", "finish") != "first_add":
+            continue
+        base = ov.get(pid, row_of(pid).get("price", 0))
+        scaled = base * event["factor"]
+        price_to = int(scaled) if event.get("floor", False) else int(scaled + 0.5)
+        ov[pid] = price_to
+        ledger_append({"situ": i, "item": pid, "kind": event["kind"], "step": step, "price_to": price_to, "silent": True})
+    state_set("ov_price", ov)
+    return None
+
 def tool_set_to_cart(args):
     pid = args.get("Listing", "")
     if row_of(pid) == None:
@@ -240,8 +268,12 @@ def tool_set_to_cart(args):
         if have + add > LINE_CAP:
             return {"trouble_message": "CAPPED"}
         basket_set(pid, have + add)
+        apply_first_add_events(pid)
     else:
-        if (number == None) or (number >= have):
+        # field (R14 open, full-replay BagList audit 2026-11-06): a delete without Number removes ONE unit (a line of 3 deleted three times shows 2, 1, then gone), like append's default of 1
+        if number == None:
+            number = 1
+        if number >= have:
             basket_set(pid, 0)
         else:
             basket_set(pid, have - number)
@@ -444,7 +476,7 @@ def decide_label(behaviour, step, text):
     text_low = text.lower()
     lwords = behaviour.get("line_words", {})
     raw_hits = [key for key in behaviour["viroju"] if (scores[key] >= step["meza"])]
-    named_hits = [behaviour["viroju"][key] for key in raw_hits if has_line_word(text_low, lwords.get(key, []))]
+    named_hits = [behaviour["viroju"][key] for key in raw_hits]  # no shelf-word gate: the labeler instruction names the shelf and decides; the field reveals fire on questions that never say the shelf word (full-replay audit 2026-11-06)
     if named_hits == []:
         return [-2]
     if len(named_hits) > 1:
@@ -506,6 +538,23 @@ def cheapest_total(slot, ov, gone):
         total += best
     return total
 
+def listing_in_any_line(slot, key, item_id):
+    for line in slot["tufa"]:
+        if item_id in line[key]:
+            return True
+    return False
+
+def carted_listings_meet_stated(slot, lines, gone):
+    if len(lines) == 0:
+        return False
+    all_full = True
+    for line in lines:
+        if (not listing_in_any_line(slot, "reza", line["id"])) or (line["id"] in gone):
+            return False
+        if not listing_in_any_line(slot, "lita", line["id"]):
+            all_full = False
+    return not all_full
+
 def accepted(slot, lines, reason, key, ov, gone, dyn):
     if reason == "decline":
         if not dyn:
@@ -558,6 +607,11 @@ def grade(episode, answer):
                         gone.append(data["item"])
     slot = answer["dova"][0]
     dyn = bool(answer.get("dynamic", False))
+    if reason == "order":
+        for line in lines:
+            if line["id"] in answer.get("prm_if_carted", []):
+                # calibration (t-239a47fed0): field orders carting the reference chain's end card grade process requirement missed (58 of 61)
+                return {"category": "process requirement missed", "score": 0}
     if (reason == "order") or slot["tele"]:
         if not process_complete(episode, answer, reason):
             return {"category": "process requirement missed", "score": 0}
@@ -572,7 +626,13 @@ def grade(episode, answer):
         return {"category": None, "score": 1}
     if (verdict == 0) and accepted(slot, lines, reason, "reza", ov, gone, dyn and fired):
         return {"category": "needs not found", "score": 0}
-    if fired:
+    if (verdict == 0) and (reason == "order") and (len(lines) != len(slot["tufa"])) and carted_listings_meet_stated(slot, lines, gone):
+        # wrong number of lines, yet every carted listing meets the stated requirements of some line and at least one misses a revealed need
+        # (field: 46 of 48 carts with a line count different from the request fit this; all-acceptable carts stay `request not met`)
+        return {"category": "needs not found", "score": 0}
+    if fired and lines_claim_answer_lines(lines, slot["tufa"], "lita", []):
+        # the order is the right shape (line count, quantities, acceptable listings) except that it still holds a sold-out listing;
+        # field evidence: a sold-out pick carted next to a second listing on a one-line request is `request not met`
         for line in lines:
             if line["id"] in gone:
                 return {"category": "changes missed", "score": 0}

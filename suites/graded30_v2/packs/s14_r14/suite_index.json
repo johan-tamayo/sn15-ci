@@ -154,8 +154,8 @@
    "lita_min": 18,
    "lita_logmean": 2.89,
    "lita_log_prod": 2.89,
-   "hidden_cut": 0.654,
-   "reza_log": 3.951,
+   "hidden_cut": 0.66,
+   "reza_log": 3.97,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -197,9 +197,9 @@
      ],
      "cap_line": 1850,
      "target": "p-07b14594a913",
-     "n_a_stated_cap": 52,
+     "n_a_stated_cap": 53,
      "n_a_final": 18,
-     "n_a0_nocap": 52,
+     "n_a0_nocap": 53,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -272,7 +272,7 @@
      18
     ],
     "reza": [
-     52
+     53
     ]
    }
   ],
@@ -502,11 +502,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 7,
-   "lita_min": 3,
-   "lita_logmean": 2.106,
-   "lita_log_prod": 6.319,
-   "hidden_cut": 0.392,
-   "reza_log": 9.44,
+   "lita_min": 5,
+   "lita_logmean": 2.277,
+   "lita_log_prod": 6.83,
+   "hidden_cut": 0.217,
+   "reza_log": 8.236,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -594,8 +594,7 @@
         "ddr4"
        ],
        "keys": [
-        "memory type",
-        "memory"
+        "memory type"
        ]
       }
      ],
@@ -616,10 +615,10 @@
       "material"
      ],
      "cap_line": 215000,
-     "target": "p-23d334026718",
-     "n_a_stated_cap": 20,
-     "n_a_final": 3,
-     "n_a0_nocap": 20,
+     "target": "p-1e4eab3bf54a",
+     "n_a_stated_cap": 6,
+     "n_a_final": 5,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -665,7 +664,7 @@
        1
       ],
       [
-       "p-23d334026718",
+       "p-1e4eab3bf54a",
        3
       ]
      ]
@@ -691,7 +690,9 @@
     "fits": [],
     "conditional": null,
     "unresolved_pointer": null,
-    "hidden_unfiltered_lines": []
+    "hidden_unfiltered_lines": [
+     2
+    ]
    }
   },
   "states": [
@@ -699,16 +700,16 @@
     "bits": 0,
     "tele": false,
     "suhe": 215000,
-    "jufuli": 73913,
+    "jufuli": 61643,
     "lita": [
      37,
      5,
-     3
+     5
     ],
     "reza": [
      37,
      17,
-     20
+     6
     ]
    }
   ],
@@ -1051,11 +1052,11 @@
   "features": {
    "n_lines": 4,
    "qty_total": 5,
-   "lita_min": 6,
-   "lita_logmean": 3.105,
-   "lita_log_prod": 12.421,
+   "lita_min": 4,
+   "lita_logmean": 2.589,
+   "lita_log_prod": 10.355,
    "hidden_cut": 0.0,
-   "reza_log": 12.421,
+   "reza_log": 10.355,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -1089,14 +1090,14 @@
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "display size",
-      "resolution"
+      "resolution",
+      "display size"
      ],
      "cap_line": 65000,
      "target": "p-01783f4bcd8d",
-     "n_a_stated_cap": 82,
-     "n_a_final": 82,
-     "n_a0_nocap": 82,
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1119,14 +1120,14 @@
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "display size",
-      "resolution"
+      "resolution",
+      "display size"
      ],
      "cap_line": 65000,
-     "target": "p-1052bde2501b",
-     "n_a_stated_cap": 6,
-     "n_a_final": 6,
-     "n_a0_nocap": 6,
+     "target": "p-14693edfb770",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1149,8 +1150,8 @@
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "display size",
-      "resolution"
+      "resolution",
+      "display size"
      ],
      "cap_line": 65000,
      "target": "p-07b0344d87a6",
@@ -1187,14 +1188,14 @@
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "display size",
-      "resolution"
+      "resolution",
+      "display size"
      ],
      "cap_line": 65000,
      "target": "p-0e163ffc71f3",
-     "n_a_stated_cap": 12,
-     "n_a_final": 12,
-     "n_a0_nocap": 12,
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1237,7 +1238,7 @@
        1
       ],
       [
-       "p-1052bde2501b",
+       "p-14693edfb770",
        1
       ],
       [
@@ -1265,8 +1266,8 @@
     "dnu_default": true,
     "bundle_pct": 0.0,
     "subjects": [
-     "display size of the computer monitors",
-     "resolution of the computer monitors"
+     "resolution of the computer monitors",
+     "display size of the computer monitors"
     ],
     "ligubo": [
      -1,
@@ -1296,18 +1297,18 @@
     "bits": 0,
     "tele": false,
     "suhe": 65000,
-    "jufuli": 6594,
+    "jufuli": 17110,
     "lita": [
-     82,
-     6,
+     17,
+     4,
      42,
-     12
+     11
     ],
     "reza": [
-     82,
-     6,
+     17,
+     4,
      42,
-     12
+     11
     ]
    }
   ],
@@ -4591,10 +4592,10 @@
   "features": {
    "n_lines": 3,
    "qty_total": 5,
-   "lita_min": 2,
-   "lita_logmean": 1.397,
-   "lita_log_prod": 4.19,
-   "hidden_cut": 0.5,
+   "lita_min": 3,
+   "lita_logmean": 1.532,
+   "lita_log_prod": 4.595,
+   "hidden_cut": 0.469,
    "reza_log": 7.042,
    "cheapest": 0,
    "n_states": 1,
@@ -4647,7 +4648,7 @@
      "cap_line": 145000,
      "target": "p-4e06d8690b79",
      "n_a_stated_cap": 13,
-     "n_a_final": 2,
+     "n_a_final": 3,
      "n_a0_nocap": 13,
      "unc": 0,
      "near_miss": {},
@@ -4808,7 +4809,7 @@
     "suhe": 145000,
     "jufuli": 145000,
     "lita": [
-     2,
+     3,
      3,
      11
     ],
@@ -5131,10 +5132,10 @@
    "n_lines": 3,
    "qty_total": 5,
    "lita_min": 6,
-   "lita_logmean": 3.177,
-   "lita_log_prod": 9.53,
-   "hidden_cut": 0.054,
-   "reza_log": 10.378,
+   "lita_logmean": 2.881,
+   "lita_log_prod": 8.643,
+   "hidden_cut": 0.106,
+   "reza_log": 9.49,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -5172,9 +5173,9 @@
      ],
      "cap_line": 45500,
      "target": "p-0022b3b28ffc",
-     "n_a_stated_cap": 153,
-     "n_a_final": 153,
-     "n_a0_nocap": 153,
+     "n_a_stated_cap": 63,
+     "n_a_final": 63,
+     "n_a0_nocap": 63,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5344,14 +5345,14 @@
     "bits": 0,
     "tele": false,
     "suhe": 45500,
-    "jufuli": 9902,
+    "jufuli": 11170,
     "lita": [
-     153,
+     63,
      15,
      6
     ],
     "reza": [
-     153,
+     63,
      21,
      10
     ]
@@ -6147,10 +6148,10 @@
    "n_lines": 3,
    "qty_total": 4,
    "lita_min": 1,
-   "lita_logmean": 2.201,
-   "lita_log_prod": 6.604,
-   "hidden_cut": 0.374,
-   "reza_log": 9.243,
+   "lita_logmean": 1.747,
+   "lita_log_prod": 5.242,
+   "hidden_cut": 0.485,
+   "reza_log": 7.653,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -6192,9 +6193,9 @@
      ],
      "cap_line": 91500,
      "target": "p-01783f4bcd8d",
-     "n_a_stated_cap": 82,
-     "n_a_final": 82,
-     "n_a0_nocap": 82,
+     "n_a_stated_cap": 27,
+     "n_a_final": 27,
+     "n_a0_nocap": 27,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6233,9 +6234,9 @@
      ],
      "cap_line": 91500,
      "target": "p-090e3b8fe005",
-     "n_a_stated_cap": 63,
-     "n_a_final": 9,
-     "n_a0_nocap": 63,
+     "n_a_stated_cap": 39,
+     "n_a_final": 7,
+     "n_a0_nocap": 39,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6357,15 +6358,15 @@
     "bits": 0,
     "tele": false,
     "suhe": 91500,
-    "jufuli": 7001,
+    "jufuli": 8269,
     "lita": [
-     82,
-     9,
+     27,
+     7,
      1
     ],
     "reza": [
-     82,
-     63,
+     27,
+     39,
      2
     ]
    }
@@ -6389,11 +6390,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 3,
-   "lita_min": 2,
-   "lita_logmean": 0.963,
-   "lita_log_prod": 2.89,
-   "hidden_cut": 0.826,
-   "reza_log": 6.356,
+   "lita_min": 0,
+   "lita_logmean": 0.732,
+   "lita_log_prod": 2.197,
+   "hidden_cut": 0.864,
+   "reza_log": 5.663,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -6461,10 +6462,10 @@
       "display size"
      ],
      "cap_line": 47000,
-     "target": "p-5ee17330104c",
-     "n_a_stated_cap": 2,
-     "n_a_final": 2,
-     "n_a0_nocap": 2,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6548,10 +6549,6 @@
        1
       ],
       [
-       "p-5ee17330104c",
-       1
-      ],
-      [
        "p-5ab9b23ad264",
        1
       ]
@@ -6593,17 +6590,17 @@
   "states": [
    {
     "bits": 0,
-    "tele": false,
+    "tele": true,
     "suhe": 47000,
-    "jufuli": 30584,
+    "jufuli": 47000,
     "lita": [
      3,
-     2,
+     0,
      3
     ],
     "reza": [
      36,
-     2,
+     0,
      8
     ]
    }
@@ -7065,7 +7062,7 @@
   "n_lines": 1,
   "truth_source": "field_pass",
   "hidden_source": "none",
-  "mech_load": 2,
+  "mech_load": 3,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
@@ -7119,6 +7116,16 @@
    "cheapest": true,
    "events": [
     {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "",
+     "factor": 0.76
+    },
+    {
      "type": "stock",
      "trigger": {
       "kind": "finish"
@@ -7134,6 +7141,7 @@
    "task_id": "t-dd172a9f15",
    "extra": {
     "kinds": [
+     "price",
      "stock"
     ],
     "tags": [
@@ -7215,11 +7223,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 18,
-   "lita_logmean": 2.89,
-   "lita_log_prod": 2.89,
-   "hidden_cut": 0.913,
-   "reza_log": 5.328,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.917,
+   "reza_log": 2.485,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -7241,7 +7249,7 @@
       {
        "prop": "dietary needs",
        "op": "eq",
-       "value": null
+       "value": "nil"
       }
      ],
      "line_cap": null,
@@ -7255,13 +7263,13 @@
       }
      ],
      "decoys": [
-      "weight"
+      "storage type"
      ],
      "cap_line": 295,
-     "target": "p-02547f1485a3",
-     "n_a_stated_cap": 206,
-     "n_a_final": 18,
-     "n_a0_nocap": 206,
+     "target": "p-963c1608efbb",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -7313,7 +7321,7 @@
     "bundle_pct": 0.0,
     "subjects": [
      "fruit type",
-     "weight"
+     "storage type"
     ],
     "ligubo": [
      0,
@@ -7332,10 +7340,10 @@
     "suhe": 295,
     "jufuli": 248,
     "lita": [
-     18
+     1
     ],
     "reza": [
-     206
+     12
     ]
    }
   ],
@@ -7878,10 +7886,10 @@
   "features": {
    "n_lines": 2,
    "qty_total": 3,
-   "lita_min": 3,
-   "lita_logmean": 1.099,
-   "lita_log_prod": 2.197,
-   "hidden_cut": 0.882,
+   "lita_min": 2,
+   "lita_logmean": 0.896,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.902,
    "reza_log": 6.474,
    "cheapest": 0,
    "n_states": 1,
@@ -7926,12 +7934,12 @@
       }
      ],
      "decoys": [
-      "graphics"
+      "connectivity"
      ],
      "cap_line": 1500000,
      "target": "p-681a3f148974",
      "n_a_stated_cap": 24,
-     "n_a_final": 3,
+     "n_a_final": 2,
      "n_a0_nocap": 24,
      "unc": 0,
      "near_miss": {},
@@ -7970,7 +7978,7 @@
       }
      ],
      "decoys": [
-      "graphics"
+      "connectivity"
      ],
      "cap_line": 1500000,
      "target": "p-52f5c789d55f",
@@ -8037,7 +8045,7 @@
     "subjects": [
      "memory type of the desktop computers",
      "pants length of the jumpsuits & rompers",
-     "graphics of the desktop computers"
+     "connectivity of the desktop computers"
     ],
     "ligubo": [
      0,
@@ -8057,7 +8065,7 @@
     "suhe": 1500000,
     "jufuli": 1500000,
     "lita": [
-     3,
+     2,
      3
     ],
     "reza": [
@@ -8638,11 +8646,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 14,
-   "lita_logmean": 2.639,
-   "lita_log_prod": 2.639,
-   "hidden_cut": 0.125,
-   "reza_log": 2.773,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 2.639,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -8693,10 +8701,10 @@
       "size class"
      ],
      "cap_line": 455,
-     "target": "p-04d13778ef28",
-     "n_a_stated_cap": 16,
-     "n_a_final": 14,
-     "n_a0_nocap": 16,
+     "target": null,
+     "n_a_stated_cap": 14,
+     "n_a_final": 0,
+     "n_a0_nocap": 14,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8730,12 +8738,7 @@
      "truth_source": "stated_clauses",
      "hidden_source": "observed_reveal",
      "steps": 43,
-     "cart": [
-      [
-       "p-04d13778ef28",
-       1
-      ]
-     ]
+     "cart": []
     },
     "refs": [],
     "needs": 2,
@@ -8758,22 +8761,20 @@
     "fits": [],
     "conditional": null,
     "unresolved_pointer": null,
-    "hidden_unfiltered_lines": [
-     0
-    ]
+    "hidden_unfiltered_lines": []
    }
   },
   "states": [
    {
     "bits": 0,
-    "tele": false,
+    "tele": true,
     "suhe": 455,
     "jufuli": 455,
     "lita": [
-     14
+     0
     ],
     "reza": [
-     16
+     14
     ]
    }
   ],
