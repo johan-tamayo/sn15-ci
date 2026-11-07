@@ -46,6 +46,7 @@ import sys
 import threading
 import time
 import types
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -287,12 +288,455 @@ def _analyze_terms(text: str, *, is_query: bool = False) -> list[str]:
     return out
 
 
-class _BM25Index:
-    """In-memory BM25 index over a world pack's catalog for one index slot (`jasu`, `kojefe`, `nemogi`, etc.)."""
+# ---------------------------------------------------------------------------
+# 1b. Opt-in Lucene EnglishAnalyzer replica (`settings.analyzer = "lucene_uax29"` on an index's world/index/<name>.json):
+#     StandardTokenizer (UAX#29 word boundaries: MidLetter / MidNum / MidNumLet / single quote joins, ideographs one per token,
+#     emoji runs), EnglishPossessiveFilter, LowerCaseFilter, Lucene's 33 English stop words (`s` is NOT one), Lucene's PorterStemmer
+#     (digits count as consonants). Fitted on the live race-14 / race-9 / race-15 search pages (runs/forge2/HANDOVER.md section 6,
+#     runs/forge3/HANDOVER.md). The default analyzer above (regex tokenizer, `s` stop word) is unchanged: packs without the setting
+#     search byte-identically. `settings.df_override` ({term: live document frequency}) replaces the catalog's df for those terms;
+#     `settings.n_docs` sets the corpus size N of the idf (the live store's, when the override is on the live scale).
+# ---------------------------------------------------------------------------
+_UAX_MID_LETTER = set("\u003a\u00b7\u0387\u055f\u05f4\u2027\ufe13\ufe55\uff1a")
+_UAX_MID_NUM = set("\u002c\u003b\u037e\u0589\u060c\u060d\u066c\u07f8\u2044\ufe10\ufe14\ufe50\ufe54\uff0c\uff1b")
+_UAX_MID_NUM_LET = set("\u002e\u2018\u2019\u2024\ufe52\uff07\uff0e")
+_UAX_SINGLE_QUOTE = "\u0027"
+_UAX_EMOJI_RANGES = [
+    (0x00A9, 0x00A9), (0x00AE, 0x00AE), (0x203C, 0x203C), (0x2049, 0x2049), (0x2122, 0x2122), (0x2139, 0x2139),
+    (0x2194, 0x2199), (0x21A9, 0x21AA), (0x231A, 0x231B), (0x2328, 0x2328), (0x2388, 0x2388), (0x23CF, 0x23CF),
+    (0x23E9, 0x23F3), (0x23F8, 0x23FA), (0x24C2, 0x24C2), (0x25AA, 0x25AB), (0x25B6, 0x25B6), (0x25C0, 0x25C0),
+    (0x25FB, 0x25FE), (0x2600, 0x2605), (0x2607, 0x2612), (0x2614, 0x2685), (0x2690, 0x2705), (0x2708, 0x2712),
+    (0x2714, 0x2714), (0x2716, 0x2716), (0x271D, 0x271D), (0x2721, 0x2721), (0x2728, 0x2728), (0x2733, 0x2734),
+    (0x2744, 0x2744), (0x2747, 0x2747), (0x274C, 0x274C), (0x274E, 0x274E), (0x2753, 0x2755), (0x2757, 0x2757),
+    (0x2763, 0x2767), (0x2795, 0x2797), (0x27A1, 0x27A1), (0x27B0, 0x27B0), (0x27BF, 0x27BF), (0x2934, 0x2935),
+    (0x2B05, 0x2B07), (0x2B1B, 0x2B1C), (0x2B50, 0x2B50), (0x2B55, 0x2B55), (0x3030, 0x3030), (0x303D, 0x303D),
+    (0x3297, 0x3297), (0x3299, 0x3299), (0x1F000, 0x1F0FF), (0x1F10D, 0x1F10F), (0x1F12F, 0x1F12F), (0x1F16C, 0x1F171),
+    (0x1F17E, 0x1F17F), (0x1F18E, 0x1F18E), (0x1F191, 0x1F19A), (0x1F1AD, 0x1F1E5), (0x1F201, 0x1F20F), (0x1F21A, 0x1F21A),
+    (0x1F22F, 0x1F22F), (0x1F232, 0x1F23A), (0x1F23C, 0x1F23F), (0x1F249, 0x1F3FA), (0x1F400, 0x1F53D), (0x1F546, 0x1F64F),
+    (0x1F680, 0x1F6FF), (0x1F774, 0x1F77F), (0x1F7D5, 0x1F7FF), (0x1F80C, 0x1F80F), (0x1F848, 0x1F84F), (0x1F85A, 0x1F85F),
+    (0x1F888, 0x1F88F), (0x1F8AE, 0x1F8FF), (0x1F90C, 0x1F93A), (0x1F93C, 0x1F945), (0x1F947, 0x1FAFF), (0x1FC00, 0x1FFFD),
+]
+_UAX_LUCENE_STOP = frozenset({
+    "a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or",
+    "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with",
+})
+_UAX_CLASS_CACHE: dict[str, str] = {}
+_UAX_SEARCH_ANALYZERS = ("regex", "lucene_uax29")
 
-    def __init__(self, docs: dict[str, str], k1: float = 0.9, b: float = 0.4) -> None:
+
+def _uax_is_emoji(cp: int) -> bool:
+    for lo, hi in _UAX_EMOJI_RANGES:
+        if lo <= cp <= hi:
+            return True
+    return False
+
+
+def _uax_wb_class(ch: str) -> str:
+    c = _UAX_CLASS_CACHE.get(ch)
+    if c is not None:
+        return c
+    cp = ord(ch)
+    cat = unicodedata.category(ch)
+    if ch == _UAX_SINGLE_QUOTE:
+        c = "SQ"
+    elif ch in _UAX_MID_NUM_LET:
+        c = "MNL"
+    elif ch in _UAX_MID_LETTER:
+        c = "ML"
+    elif ch in _UAX_MID_NUM:
+        c = "MN"
+    elif cp == 0x200D:
+        c = "ZWJ"
+    elif cat in ("Mn", "Mc", "Me", "Cf") or cp in (0xFE0E, 0xFE0F) or 0x1F3FB <= cp <= 0x1F3FF:
+        c = "EXT"
+    elif cat == "Nd":
+        c = "NUM"
+    elif cat == "Pc" or ch == "_":
+        c = "ENL"
+    elif 0x1F1E6 <= cp <= 0x1F1FF:
+        c = "RI"
+    elif _uax_is_emoji(cp):
+        c = "EMOJI"
+    elif cat.startswith("L") or cat == "Nl":
+        if (0x4E00 <= cp <= 0x9FFF) or (0x3400 <= cp <= 0x4DBF) or (0x20000 <= cp <= 0x2FA1F) or (0xF900 <= cp <= 0xFAFF):
+            c = "IDEO"
+        elif 0x3040 <= cp <= 0x309F:
+            c = "HIRA"
+        elif 0x30A0 <= cp <= 0x30FF or 0x31F0 <= cp <= 0x31FF or 0xFF66 <= cp <= 0xFF9F:
+            c = "KATA"
+        else:
+            c = "AL"
+    else:
+        c = "OTHER"
+    _UAX_CLASS_CACHE[ch] = c
+    return c
+
+
+def _uax29_tokens(text: str) -> list[str]:
+    """Lucene StandardTokenizer: maximal UAX#29 words made of letters / digits / ExtendNumLet, with MidLetter between letters,
+    MidNum between digits and MidNumLet / single quote between letters or between digits; ideographs one per token; emoji runs."""
+    out: list[str] = []
+    n = len(text)
+    i = 0
+    cls = [_uax_wb_class(ch) for ch in text]
+    while i < n:
+        c = cls[i]
+        if c in ("AL", "NUM", "ENL", "KATA"):
+            j = i + 1
+            while j < n:
+                cj = cls[j]
+                if cj in ("AL", "NUM", "ENL", "KATA", "EXT"):
+                    j += 1
+                    continue
+                if cj in ("ML", "MN", "MNL", "SQ"):
+                    p = j - 1
+                    while p > i and cls[p] == "EXT":
+                        p -= 1
+                    q = j + 1
+                    while q < n and cls[q] == "EXT":
+                        q += 1
+                    if q >= n:
+                        break
+                    cp_, cq = cls[p], cls[q]
+                    ok = False
+                    if cj in ("ML", "MNL", "SQ") and cp_ == "AL" and cq == "AL":
+                        ok = True
+                    if cj in ("MN", "MNL", "SQ") and cp_ == "NUM" and cq == "NUM":
+                        ok = True
+                    if ok:
+                        j = q
+                        continue
+                break
+            tok = "".join(text[k] for k in range(i, j) if cls[k] != "EXT")
+            out.append(tok)
+            i = j
+            continue
+        if c in ("IDEO", "HIRA"):
+            out.append(text[i])
+            i += 1
+            continue
+        if c == "EMOJI" or c == "RI":
+            j = i + 1
+            if c == "RI" and j < n and cls[j] == "RI":
+                j += 1
+            while j < n and cls[j] in ("EXT",):
+                j += 1
+            while j < n and cls[j] == "ZWJ" and j + 1 < n and cls[j + 1] in ("EMOJI", "RI"):
+                j += 2
+                while j < n and cls[j] == "EXT":
+                    j += 1
+            out.append(text[i:j])
+            i = j
+            continue
+        i += 1
+    return out
+
+
+class _LucenePorterStemmer:
+    """Port of org.apache.lucene.analysis.en.PorterStemmer (digits count as consonants, words of length >= 3 only)."""
+
+    def __init__(self) -> None:
+        self.b: list[str] = []
+        self.k = 0
+        self.k0 = 0
+        self.j = 0
+
+    def cons(self, i: int) -> bool:
+        ch = self.b[i]
+        if ch in "aeiou":
+            return False
+        if ch == "y":
+            return True if i == self.k0 else not self.cons(i - 1)
+        return True
+
+    def m(self) -> int:
+        n = 0
+        i = self.k0
+        while True:
+            if i > self.j:
+                return n
+            if not self.cons(i):
+                break
+            i += 1
+        i += 1
+        while True:
+            while True:
+                if i > self.j:
+                    return n
+                if self.cons(i):
+                    break
+                i += 1
+            i += 1
+            n += 1
+            while True:
+                if i > self.j:
+                    return n
+                if not self.cons(i):
+                    break
+                i += 1
+            i += 1
+
+    def vowelinstem(self) -> bool:
+        for i in range(self.k0, self.j + 1):
+            if not self.cons(i):
+                return True
+        return False
+
+    def doublec(self, j: int) -> bool:
+        if j < self.k0 + 1:
+            return False
+        if self.b[j] != self.b[j - 1]:
+            return False
+        return self.cons(j)
+
+    def cvc(self, i: int) -> bool:
+        if i < self.k0 + 2 or not self.cons(i) or self.cons(i - 1) or not self.cons(i - 2):
+            return False
+        return self.b[i] not in "wxy"
+
+    def ends(self, s: str) -> bool:
+        L = len(s)
+        o = self.k - L + 1
+        if o < self.k0:
+            return False
+        for i in range(L):
+            if self.b[o + i] != s[i]:
+                return False
+        self.j = self.k - L
+        return True
+
+    def setto(self, s: str) -> None:
+        L = len(s)
+        o = self.j + 1
+        need = o + L - len(self.b)
+        if need > 0:
+            self.b.extend([""] * need)
+        for i in range(L):
+            self.b[o + i] = s[i]
+        self.k = self.j + L
+
+    def r(self, s: str) -> None:
+        if self.m() > 0:
+            self.setto(s)
+
+    def step1(self) -> None:
+        if self.b[self.k] == "s":
+            if self.ends("sses"):
+                self.k -= 2
+            elif self.ends("ies"):
+                self.setto("i")
+            elif self.b[self.k - 1] != "s":
+                self.k -= 1
+        if self.ends("eed"):
+            if self.m() > 0:
+                self.k -= 1
+        elif (self.ends("ed") or self.ends("ing")) and self.vowelinstem():
+            self.k = self.j
+            if self.ends("at"):
+                self.setto("ate")
+            elif self.ends("bl"):
+                self.setto("ble")
+            elif self.ends("iz"):
+                self.setto("ize")
+            elif self.doublec(self.k):
+                ch = self.b[self.k]
+                self.k -= 1
+                if ch in "lsz":
+                    self.k += 1
+            elif self.m() == 1 and self.cvc(self.k):
+                self.setto("e")
+
+    def step2(self) -> None:
+        if self.ends("y") and self.vowelinstem():
+            self.b[self.k] = "i"
+
+    def step3(self) -> None:
+        if self.k == self.k0:
+            return
+        c = self.b[self.k - 1]
+        if c == "a":
+            if self.ends("ational"):
+                self.r("ate")
+            elif self.ends("tional"):
+                self.r("tion")
+        elif c == "c":
+            if self.ends("enci"):
+                self.r("ence")
+            elif self.ends("anci"):
+                self.r("ance")
+        elif c == "e":
+            if self.ends("izer"):
+                self.r("ize")
+        elif c == "l":
+            if self.ends("bli"):
+                self.r("ble")
+            elif self.ends("alli"):
+                self.r("al")
+            elif self.ends("entli"):
+                self.r("ent")
+            elif self.ends("eli"):
+                self.r("e")
+            elif self.ends("ousli"):
+                self.r("ous")
+        elif c == "o":
+            if self.ends("ization"):
+                self.r("ize")
+            elif self.ends("ation"):
+                self.r("ate")
+            elif self.ends("ator"):
+                self.r("ate")
+        elif c == "s":
+            if self.ends("alism"):
+                self.r("al")
+            elif self.ends("iveness"):
+                self.r("ive")
+            elif self.ends("fulness"):
+                self.r("ful")
+            elif self.ends("ousness"):
+                self.r("ous")
+        elif c == "t":
+            if self.ends("aliti"):
+                self.r("al")
+            elif self.ends("iviti"):
+                self.r("ive")
+            elif self.ends("biliti"):
+                self.r("ble")
+        elif c == "g":
+            if self.ends("logi"):
+                self.r("log")
+
+    def step4(self) -> None:
+        c = self.b[self.k]
+        if c == "e":
+            if self.ends("icate"):
+                self.r("ic")
+            elif self.ends("ative"):
+                self.r("")
+            elif self.ends("alize"):
+                self.r("al")
+        elif c == "i":
+            if self.ends("iciti"):
+                self.r("ic")
+        elif c == "l":
+            if self.ends("ical"):
+                self.r("ic")
+            elif self.ends("ful"):
+                self.r("")
+        elif c == "s":
+            if self.ends("ness"):
+                self.r("")
+
+    def step5(self) -> None:
+        if self.k == self.k0:
+            return
+        c = self.b[self.k - 1]
+        hit = False
+        if c == "a":
+            hit = self.ends("al")
+        elif c == "c":
+            hit = self.ends("ance") or self.ends("ence")
+        elif c == "e":
+            hit = self.ends("er")
+        elif c == "i":
+            hit = self.ends("ic")
+        elif c == "l":
+            hit = self.ends("able") or self.ends("ible")
+        elif c == "n":
+            hit = self.ends("ant") or self.ends("ement") or self.ends("ment") or self.ends("ent")
+        elif c == "o":
+            hit = (self.ends("ion") and self.j >= 0 and self.b[self.j] in "st") or self.ends("ou")
+        elif c == "s":
+            hit = self.ends("ism")
+        elif c == "t":
+            hit = self.ends("ate") or self.ends("iti")
+        elif c == "u":
+            hit = self.ends("ous")
+        elif c == "v":
+            hit = self.ends("ive")
+        elif c == "z":
+            hit = self.ends("ize")
+        if not hit:
+            return
+        if self.m() > 1:
+            self.k = self.j
+
+    def step6(self) -> None:
+        self.j = self.k
+        if self.b[self.k] == "e":
+            a = self.m()
+            if a > 1 or (a == 1 and not self.cvc(self.k - 1)):
+                self.k -= 1
+        if self.b[self.k] == "l" and self.doublec(self.k) and self.m() > 1:
+            self.k -= 1
+
+    def stem(self, word: str) -> str:
+        self.b = list(word)
+        self.k = len(word) - 1
+        self.k0 = 0
+        self.j = 0
+        if self.k > self.k0 + 1:
+            self.step1()
+            self.step2()
+            self.step3()
+            self.step4()
+            self.step5()
+            self.step6()
+        return "".join(self.b[: self.k + 1])
+
+
+_UAX_PORTER = _LucenePorterStemmer()
+_UAX_STEM_CACHE: dict[str, str] = {}
+
+
+def _uax_porter(w: str) -> str:
+    s = _UAX_STEM_CACHE.get(w)
+    if s is None:
+        s = _UAX_PORTER.stem(w)
+        _UAX_STEM_CACHE[w] = s
+    return s
+
+
+def _uax_possessive(t: str) -> str:
+    if len(t) >= 2 and t[-1] in "sS" and t[-2] in "'\u2019\uff07":
+        return t[:-2]
+    return t
+
+
+def _analyze_terms_uax29(text: str, *, is_query: bool = False) -> list[str]:
+    """Lucene EnglishAnalyzer replica: UAX#29 tokens, possessive strip, lowercase, Lucene stop words (no `s`), Lucene Porter.
+    Queries and documents are analyzed the same way (the star's own punctuation replacement is the only query-side preparation)."""
+    if not text:
+        return []
+    out: list[str] = []
+    for t in _uax29_tokens(text):
+        t = _uax_possessive(t).lower()
+        if not t or t in _UAX_LUCENE_STOP:
+            continue
+        out.append(_uax_porter(t))
+    return out
+
+
+def _search_analyzer(name: str | None):
+    if name in (None, "", "regex"):
+        return _analyze_terms
+    if name == "lucene_uax29":
+        return _analyze_terms_uax29
+    raise ValueError(f"unknown index settings.analyzer {name!r} (one of {_UAX_SEARCH_ANALYZERS})")
+
+
+class _BM25Index:
+    """In-memory BM25 index over a world pack's catalog for one index slot (`jasu`, `kojefe`, `nemogi`, etc.).
+
+    `analyzer`: "regex" (default, the historical simulator analyzer) or "lucene_uax29" (opt-in Lucene EnglishAnalyzer replica);
+    `df_override`: {term: document frequency} that replaces the catalog's df for those terms (live df fitted from the field);
+    `n_docs`: the corpus size N used by the idf (the live store's, when df_override carries live-scale frequencies)."""
+
+    def __init__(self, docs: dict[str, str], k1: float = 0.9, b: float = 0.4, analyzer: str | None = None,
+                 df_override: dict[str, float] | None = None, n_docs: int | None = None) -> None:
         self.k1 = float(k1)
         self.b = float(b)
+        self.analyzer = analyzer or "regex"
+        self._analyze = _search_analyzer(analyzer)
         self.doc_ids = sorted(docs.keys())
         self.doc_tf: dict[str, collections.Counter] = {}
         self.doc_len: dict[str, int] = {}
@@ -302,7 +746,7 @@ class _BM25Index:
         total_len = 0
         non_empty_docs = 0
         for did in self.doc_ids:
-            terms = _analyze_terms(docs[did], is_query=False)
+            terms = self._analyze(docs[did], is_query=False)
             tf = collections.Counter(terms)
             self.doc_tf[did] = tf
             raw_len = len(terms)
@@ -315,11 +759,15 @@ class _BM25Index:
                 self.postings[term].append(did)
         self.N = max(1, non_empty_docs)
         self.avgdl = max(1.0, total_len / self.N)
+        for term, n in (df_override or {}).items():
+            self.df[str(term)] = float(n)
+        if n_docs:
+            self.N = max(1, int(n_docs))  # live corpus size for the idf (with df_override values on the live scale)
 
     def search(self, query: str, k: int = 10, all_terms: bool = False) -> list[tuple[str, float]]:
         if not isinstance(query, str) or len(query) > 1024:
             return []
-        q_terms = collections.Counter(_analyze_terms(query, is_query=True))
+        q_terms = collections.Counter(self._analyze(query, is_query=True))
         if not q_terms or len(q_terms) > 1023:
             return []
         if all_terms:
@@ -400,9 +848,14 @@ class LocalWorldSearchClient:
             ix_id = ix_meta["id"]
             if self._try_upload_lucene(ix_meta):
                 self.lucene_ready_ids.add(ix_id)
-            bm25_cfg = (ix_meta.get("settings") or {}).get("bm25") or {}
+            ix_settings = ix_meta.get("settings") or {}
+            bm25_cfg = ix_settings.get("bm25") or {}
             k1 = float(bm25_cfg.get("k1", 0.9))
             b = float(bm25_cfg.get("b", 0.4))
+            # opt-in per index (runs/forge3): settings.analyzer "lucene_uax29" (default "regex"), settings.df_override {term: live df}
+            ix_analyzer = ix_settings.get("analyzer")
+            ix_df_override = ix_settings.get("df_override") or None
+            ix_n_docs = ix_settings.get("n_docs") or None
             window = ""
             pos = code.find(f'"{ix_name}"')
             if pos != -1:
@@ -428,7 +881,7 @@ class LocalWorldSearchClient:
                             facts_vals,
                         )
                     )
-            self.by_index_id[ix_id] = _BM25Index(docs, k1=k1, b=b)
+            self.by_index_id[ix_id] = _BM25Index(docs, k1=k1, b=b, analyzer=ix_analyzer, df_override=ix_df_override, n_docs=ix_n_docs)
 
     def ensure(self, index: dict) -> None:
         if self._try_upload_lucene(index):
@@ -1725,17 +2178,41 @@ class _WorldEpisodeBridge:
             non_inj_seen = 0
             total_mc_seen = 0
             spend_acc = 0.0
+            list_acc = 0.0
+            cached_acc = 0
             comp_acc = 0
+            # BILLEDLINE1: an agent that meters cached prompt tokens at its own CACHED_PROMPT_PRICE_PER_M gets its pre-branch spend
+            # re-metered the same way (stored calls carry `cached`); an agent without that constant keeps the list-price sum.
+            agent_model = getattr(ep_obj, "model", None) if ep_obj is not None else None
+            agent_mod = None
+            for klass in (type(agent_model).__mro__ if agent_model is not None else ()):
+                cand_mod = sys.modules.get(klass.__module__)
+                if cand_mod is not None and hasattr(cand_mod, "PRICE_PER_M"):
+                    agent_mod = cand_mod
+                    break
+            agent_prices = getattr(agent_mod, "PRICE_PER_M", None) or {}
+            agent_cached_prices = getattr(agent_mod, "CACHED_PROMPT_PRICE_PER_M", None) or {}
             for m in raw_mc:
                 total_mc_seen += 1
                 if not m.get("injected_failure"):
                     pt = int(m.get("pt") or 0)
                     ct = int(m.get("ct") or 0)
+                    ca = min(int(m.get("cached") or 0), pt)
                     if pt == 0 and ct == 0:
-                        pt, ct = 4000, 300
-                    mdl = str(m.get("served") or m.get("model") or "").lower()
+                        pt, ct, ca = 4000, 300, 0
+                    mdl_id = str(m.get("served") or m.get("model") or "")
+                    mdl = mdl_id.lower()
                     u_in, u_out = (2.0, 10.0) if "sonnet" in mdl else ((0.825, 4.125) if ("flash" in mdl or "gemini" in mdl) else (0.10, 0.50))
-                    spend_acc += (pt * u_in + ct * u_out) / 1e6
+                    if mdl_id in agent_prices:
+                        u_in, u_out = agent_prices[mdl_id]
+                    listed = (pt * u_in + ct * u_out) / 1e6
+                    list_acc += listed
+                    if agent_cached_prices:
+                        u_ca = agent_cached_prices.get(mdl_id, u_in)
+                        spend_acc += ((pt - ca) * u_in + ca * u_ca + ct * u_out) / 1e6
+                        cached_acc += ca
+                    else:
+                        spend_acc += listed
                     comp_acc += ct
                     if non_inj_seen == last_used_idx:
                         break
@@ -1745,6 +2222,9 @@ class _WorldEpisodeBridge:
                 try:
                     ep_obj.model.spend_usd = spend_acc
                     ep_obj.model.completion_tokens = comp_acc
+                    if agent_cached_prices and hasattr(ep_obj.model, "list_usd"):
+                        ep_obj.model.list_usd = list_acc
+                        ep_obj.model.cached_tokens = cached_acc
                 except Exception:
                     pass
         if ep_obj is not None:
