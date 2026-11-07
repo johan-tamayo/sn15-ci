@@ -3011,6 +3011,18 @@ class _WorldEpisodeBridge:
         if self.branch_from_step > 0 and self.branch_active and os.environ.get("SN15_BRANCH_DRY_STOP") == "1":
             raise _BranchDryStop(f"BRANCH_DRY_STOP_AT_STEP_{self.session.steps}")
 
+        # REVEALSANDBOX1 (`sn15 s-reveal-sandbox`): SN15_BRANCH_STOP_AFTER_PLAN=1 ends a branched episode at the first loop turn after
+        # a live plan_questions call - the plan's questions have been sent and answered by then; the rest of the run is not played.
+        # A branch that reaches SN15_BRANCH_STOP_LOOP_TURNS (default 3) live loop turns without a plan call stops there too.
+        if self.branch_from_step > 0 and self.branch_active and os.environ.get("SN15_BRANCH_STOP_AFTER_PLAN") == "1":
+            if seat_early == "plan_questions":
+                self._stop_plan_seen = True
+            elif seat_early == "loop":
+                self._stop_loop_turns = getattr(self, "_stop_loop_turns", 0) + 1
+                cap = int(os.environ.get("SN15_BRANCH_STOP_LOOP_TURNS", "3") or 3)
+                if getattr(self, "_stop_plan_seen", False) or self._stop_loop_turns > cap:
+                    raise _BranchDryStop(f"BRANCH_STOP_AFTER_PLAN_AT_STEP_{self.session.steps}")
+
         # Owner decision 2026-10-26 ("5.5, no more 4.5; no model allowlist that forces hits"): the model id the agent
         # asks for is served AS WRITTEN, exactly as the ORO inference proxy does. No substitution, no override, no
         # keyword map. The old haiku-4.5 / sonnet-4.6 substitution hid the live gate failure of rc5 (sonnet-5.5

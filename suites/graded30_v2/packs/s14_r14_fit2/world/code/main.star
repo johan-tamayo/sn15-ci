@@ -857,6 +857,15 @@ def process_complete(episode, answer, reason):
         for label in range(answer.get("needs", 0)):
             if label not in revealed:
                 return False
+        # every ordered listing was opened at some point of the episode, and on a line the request says must work with / fit another item,
+        # so was every page its own page points to (answer.ptr_open; FIDSEQ, runs/fidseq/FIDSEQ.md)
+        pointers = answer.get("ptr_open", {})
+        for line in episode[-1]["order"]["lines"]:
+            if line["id"] not in opened:
+                return False
+            for page in pointers.get(line["id"], []):
+                if page not in opened:
+                    return False
     return True
 
 def grade(episode, answer):
@@ -880,11 +889,6 @@ def grade(episode, answer):
                         gone.append(data["item"])
     slot = answer["dova"][0]
     dyn = bool(answer.get("dynamic", False))
-    if reason == "order":
-        for line in lines:
-            if line["id"] in answer.get("prm_if_carted", []):
-                # calibration (t-239a47fed0): field orders carting the reference chain's end card grade process requirement missed (58 of 61)
-                return {"category": "process requirement missed", "score": 0}
     if (reason == "order") or slot["tele"]:
         if not process_complete(episode, answer, reason):
             return {"category": "process requirement missed", "score": 0}

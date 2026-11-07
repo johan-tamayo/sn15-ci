@@ -596,6 +596,11 @@ def process_complete(episode, answer, reason):
         for label in range(answer.get("needs", 0)):
             if label not in revealed:
                 return False
+        # every ordered listing was looked at (showPage / weighItems) at some point of the episode
+        # (FIDSEQ, runs/fidseq/FIDSEQ.md: 4 of the 5 field PRM residuals, 0 of the 6862 other field orders)
+        for line in episode[-1]["order"]["lines"]:
+            if line["id"] not in opened:
+                return False
     return True
 
 def grade(episode, answer):
