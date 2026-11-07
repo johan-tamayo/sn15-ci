@@ -1,36 +1,13 @@
 # Race-16 Forged Field Suite (`s14_r16`, 45 Open Tasks, `w-forge-s14-r16`)
 
-> **INTERIM - not for verdicts** (COACH 05:33, option C). Signature: manifest `4e9a4ecf`, CI commit `ea4ca4e`. Until C535 R16FORGE2 re-forges the spec from the public text, lanes decide on `s14_r15_fit2` / `s14_r14_fit2` (their request text is verbatim, per C532); r16 is read-only context.
-> **Request text vs public text** (`tools/forge/r16_forge/verbatim_check_r16.py` -> `runs/r16rebuild/verbatim_check.txt`; public text = C532's recovery in `runs/r16_forge/r16_verbatim_requests.json`: 7 full task-input JSON echoes, 38 multi-agent spans). The pack's spec agrees with the public text on only 12/45 tasks:
-> - `stated_not_in_text` 17: the pack's stated clauses do not appear in the public text.
-> - `cheapest_differs` 15: the text asks for the cheapest fit or the lowest total cost, but the key does not enforce it.
-> - `compat_clause` 13: the text has "whatever X you choose, Y must be compatible with it", which the key does not model.
-> - `hidden_in_text` 4: the text states a need the pack holds back as hidden.
-> - Step budget differs on 3 tasks: `t-237494d47b` 93->97, `t-44963adb06` 77->78, `t-8f9fc2ba56` 77->78.
-> - 5 spans lack the budget, step or message clause.
-> **`view_after_add`** (15 tasks) is a label-inferred grader rule, not public text. Best single rule 'every carted listing viewed after its last add' agrees with the field labels on 86% of 2,356 evidence-complete orders. No request sentence states it.
-
-> **INTERIM - not for verdicts** (COACH 05:33, 2026-11-07). Manifest `4e9a4ecf`, CI `ea4ca4e`. Every lane decides on `s14_r15_fit2` / `s14_r14_fit2` (verbatim public text, C532) until C535 R16FORGE2 re-forges this pack from race 16's public request text; r16 reads are context only. The request text here is composed from a field-derived spec, and the recovered public text (`runs/r16_forge/r16_verbatim_requests.json`: 7 full task-input echoes, 38 multi-agent spans) disagrees with that spec (`tools/forge/r16_forge/verbatim_check_r16.py` -> `runs/r16rebuild/verbatim_check.txt`):
->
-> | check | tasks |
-> |---|---|
-> | spec-coherent with the public text | 12/45 |
-> | `stated_not_in_text` (a stated clause of the pack is not in the public text) | 17 |
-> | `cheapest_differs` (public "pick the cheapest" / "lowest total cost wins" vs the key's cheapest flag) | 15 |
-> | `compat_clause` (public "whatever X you choose, the Y must be compatible with it"; not modelled by the key) | 13 |
-> | `hidden_in_text` (a hidden need of the pack is stated in the public text) | 4 |
-> | step budget differs (t-237494d47b 93->97, t-44963adb06 / t-8f9fc2ba56 77->78) | 3 |
-> | public span lacks budget / steps / messages (partial recovery) | 5 |
->
-> `view_after_add` stays as a LABEL-INFERRED grader rule (best single rule 'every carted listing viewed after its last add' agrees with the field's process label on 86% of 2,356 evidence-complete orders); no public request states it, and no lane is keyed on it.
-
 ## 1. Overview & World Mechanics
 - **Pack Path**: `~/sn15-ops/suites/graded30_v2/packs/s14_r16` (`pack_id: p-forge-s14-r16`, `world_id: w-forge-s14-r16`), built by `tools/forge/r16_forge/build_s14_r16.py` from `runs/r16_forge/` (lane C524 INGEST16).
 - **Corpus Provenance**: all `10,395` released Race-16 open episodes; `1,095` passing order episodes across `17` tasks, `28` tasks with 0 passing orders.
-- **`request_text` is RECONSTRUCTED, not verbatim**: race 16 released no request text (`query` is null on every episode) and no field agent echoes it. Each task's text is composed from the derived spec: lines (cart shapes of the passing field orders), stated clauses voted from the field agents' close notes and search phrases (`runs/r16_forge/r16_spec_log.txt`), the budget voted from the same, the step budget = the field's longest episode.
+- **`request_text` = race 16's PUBLIC request text** (C535 R16FORGE2, `runs/r16_forge/r16_verbatim_requests.json`, recovered by C532 from field agents' own echoes): `40` tasks verbatim (7 full task-input echoes + 33 multi-agent shared spans that cover the whole request), `5` `fidelity: partial` (the recovered span holds no item list: the item / budget span is composed from the old derived spec and appended; listed below). The spec is re-forged FROM the text (`tools/forge/r16_forge/specs_v2_r16.py`, per-task diff `runs/r16forge2/SPEC_DIFF.md`).
+
 - **Truth**: `lita` = catalog items of the line's shelf matching stated + hidden clauses UNION every passing / `not_the_best_option` field cart item on that line; `reza` = stated-only fits UNION lita UNION `needs_not_found` cart items; `jufuli` calibrated on passing / `not_the_best_option` carts (cheapest tasks); one answer slot per event bitmask. Listings no agent opened with `FullSpecs` carry no facts and are never acceptable by clause.
 - **Catalog**: all `5,041` cards seen in the episodes (`2,768` with `FullSpecs` facts, `330` with offer-page pointers).
-- **Task mix**: 1L `12` / 2L `10` / 3L `17` / 4L `6`; hidden slots on `34/45` tasks (64 slots), reply-by-reference on `8/45`, pointer chains on `19/45`, mid-episode notices on `10/45`.
+- **Task mix**: 1L `12` / 2L `9` / 3L `18` / 4L `6`; hidden slots on `34/45` tasks (64 slots), reply-by-reference on `8/45`, pointer chains on `17/45`, mid-episode notices on `10/45`.
 - **7 Race-16 Tools (`tools.json`)**: `ItemsSeek` (phrase search | shelf `match` browse, 6 per page, `vetu<offset>` tokens), `FullSpecs` (facts), `OfferShow` (offer page with `pointers`), `StashToBasket` (set one line), `SummaryMyItems` (basket), `OrderWrapUp` (checkout | cancel), `BuyerMessage` (3 replies).
 - **Store Notices**: events ride on the NEXT tool observation as `{"pozo": <obs>, "teve": [<sentence>]}`; an event not yet fired at the first checkout refuses it (`{"observation": {"worked": true}, "refusal": [...]}`).
 - **Persona**: 12 nurse reveal frames (`simrace/race2/shopper2.py` `_R16_REVEAL_FRAMES`), the learned race-16 no-preference / did-not-understand pools.
@@ -51,12 +28,24 @@
 - Push-back ('one at a time') on an uncredited question now depends on the number of names (race 16; FORGE4 drew it from a per-task share `bundle_pct` regardless of names): 1L k1 0.03 (need named 1.00), k2-3 0.16 (need named 0.98), k4+ 0.65 (need named 1.00); ML k1 0.17 (need named 0.59), k2-3 0.30 (need named 0.94), k4+ 0.61 (need named 0.99).
 - One draw per message for the credit and one for the push-back, both from the episode's `credit_seed`, so a replay of the same nonce repeats them.
 
-## Rebuild C524b (2026-11-07): event-cap lists, public request sentences, re-view text
-- `t-3fb0a80602`: listings `p-006348264dc4`, `p-0237b6142e22`, `p-430a4824a4b9` made acceptable on every slot: field-carted, fit every stated value, at or under the lowest notice cap. Inferred from 150 field RNM declines, 0 process-complete field orders (0 passes; 1 non-process-missed order(s), changes missed, kept the sold-out pick).
-- `t-d7bc159989`: request sentence restored from race 16's public text (replaces the composed item list): "Sorry — I need 1 set of bed sheets with a thread count identical to the one named — or pointed to — on the page of the bed sheets in Voqilenlu's listing with a geometric pattern where the age group is not adults — and also 2 tripods and camera supports with a twist lock leg lock type — if that's alright."; reference chain [['p-04b1fbc48257']] (full public query echoed by field agents; the sentence links only Voqilenlu's bed-sheet listing (p-04b1fbc48257, not adults, its page points to the geometric one); the old chain's tripod p-0331a3d51cfe has no link in the public text).
-- `t-f0b9845346`: request sentence restored from race 16's public text (replaces the generic pointer sentence): "Sorry — the load capacity should be within 1.87 kg of the one named — or pointed to — on the page of the tripods and camera supports in Vokoshi's listing with color black and folded length 52.07 cm in either direction."; reference chain [['p-2bf6e7935b89']] (public request quoted by field agents; 222/231 field episodes wrote 'Vokoshi' before any observation showed it; the named listing (Vokoshi, black, folded 20.5 in = 52.07 cm) was opened by 169/169 passing episodes, the old chain p-21db5d211046 by 157/169).
-- `t-f868849bfc`: request sentence restored from race 16's public text (replaces the composed item list): "Sorry — I need 3 microsdhc memory cards — the card type is microsdhc — and 3 bed sheets, where the thread count lands within 95.15 thread count, in either direction, of the one named — or pointed to — on the page of the bed sheets in Torsaqimi's listing with material silk, recommended gender unisex and pack size 4 pieces — if that's alright."; reference chain [['p-3ba076ef0b67']] (public request quoted by field agents; the sentence names Torsaqimi's silk unisex 4-piece listing (p-3ba076ef0b67); the old chain p-97cc23842c6e has no link in the public text (opened by 6/93 non-process-missed field episodes)).
-- The re-view sentence ('Before you check out, please look at each chosen item's offer page once more.') is NOT in race 16's public text (`runs/r16_forge/r16_public_queries.json`, 15/15 rule tasks) and is left out; the `view_after_add` grader rule stays (field labels).
+## Re-forge C535 R16FORGE2 (2026-11-07): spec FROM the public request text
+- **stated** = the text's own clauses: category nouns as written, values, either/or sets, `not / anything but` exclusions, amounts with units (fact amounts in other units of the same measure are converted at key time), per-line price caps (`Keep each X at or under N cents US` -> `line_cap`, 2 lines), cheapest from `pick the cheapest` / `Lowest total cost wins` (28 tasks), budget / steps / messages from the text.
+- **Compatibility pairs graded** (13 tasks, 29 pairs): `Whatever X you choose, the Y must be compatible with it` -> `answer.dova[].fitok` (a Y listing that does not fit the chosen X is `request_not_met`). Relation from the catalog cards (`tools/forge/r16_forge/compat_r16.py`): camera `Model: LIV nnnn` <-> accessory `Compatible with: LIV ... / every LIV nnxx model, except ... / also fits`; sofa `Takes part series SIn` <-> cover title `[SIn-....]`; unknown = compatible. Field check (`compat_r16.py check`): 103 of 103 PASS carts and 20 of 20 not_the_best_option carts fit; 129 of 174 request_not_met carts violate.
+- **Conditionals graded** (3 tasks) as `fitok` pairs on the same device line: `Should the video camera's P turn out to be V, I need the Y's Q to be W` / `Y's Q must be W, except when the video camera's P is V1 or V2`; a listing without the fact is unknown = allowed.
+- **References**: `identical to / partner piece to / within N of the one named - or pointed to - on ... listing` -> stated clause with `ref`, value resolved by walking the named listing's page pointers (`tools/forge/r16_forge/refwalk_r16.py`), every hop in `answer.refs`; field-inferred chains with no link in the text or a reveal are dropped.
+- **hidden** = the observed field reveals (unchanged), re-indexed onto the text's lines; a reveal the text now states is dropped.
+- **Keys** re-derived under the text clauses: `lita` = shelf listings matching stated + hidden UNION passing / not_the_best_option field carts (minus over-line-cap).
+- **Re-view rule**: no re-view sentence in any request (0 of 45 public texts carry one); `view_after_add` stays a LABEL-INFERRED grader rule on 15 tasks (matches the live `process_requirement_missed` labels on 86% of 2,356 evidence-complete field orders).
+- **Race-16 question-credit fit kept** (C524b).
+
+### Partial request spans (`fidelity: partial`, composed span only)
+- `t-2363ddf59f`: composed span appended: "Lowest total cost wins — sorry — if you can manage that. Sorry — I need 1 x bed sheets with pattern character; 1 x cctv security cameras with security camera style dome — if that's alright. Would you mind keeping the whole total at 2050 cents US or under — sorry."
+- `t-237494d47b`: composed span appended: "Sorry — I need 1 x memory cards with color gold and cardtype sd and device interface sd card; 1 x tripods with leg lock type twist lock and load capacity 8 kg and material aluminum; 2 x tripods and camera supports with leg lock type twist lock and load capacity 8 kg and material aluminum — if that's alright. Would you mind keeping the whole total at 86000 cents US or under — sorry."
+- `t-4bfd08dfb1`: composed span appended: "Sorry — I need 2 x furniture covers with color tan and material cotton; 2 x slipcovers and furniture covers with color white and material cotton; 1 x sofa covers & slips with style modern and pattern leaf and warranty policy set; 1 x sofas with furniture features slipcovered and style modern and warranty policy set — if that's alright. Would you mind keeping the whole total at 60500 cents US or under — sorry."
+- `t-6444e764d5`: composed span appended: "Lowest total cost wins — sorry — if you can manage that. Sorry — I need 1 x memory cards; 2 x tripods; 1 x tripods and camera supports with leg lock type twist lock; 1 x video camera — if that's alright. Would you mind keeping the whole total at 79500 cents US or under — sorry."
+- `t-9d5024ca80`: composed span appended: "Sorry — I need 1 x furniture covers with upholsterymaterial chenille; 1 x slipcovers and furniture covers with fabric chenille and closure type slip-on; 1 x sofa covers & slips with style antique and warranty policy set and material microfiber; 2 x sofas with furniture features slipcovered and style antique and warranty policy set — if that's alright. Would you mind keeping the whole total at 31500 cents US or under — sorry."
+
+- `fits_infeasible` (fitting basket not in the pack catalog, priced without the pairs): `t-12580eb901`
 
 ## Known noise (full transcript replay, `runs/r16forge1/R16_FIDELITY_CARD.md`)
 - Category match 10,071/10,395 = 96.88%; 253 of 324 residuals are twin-proven irreproducible (race 16's process label differs across same-evidence episodes; twin-adjusted 99.32%).

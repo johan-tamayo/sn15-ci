@@ -34,12 +34,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "animal print",
-       "support": 0.97
+       "keys": [
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -72,12 +71,11 @@
      "stated": [
       {
        "prop": "warranty type",
-       "keys": [
-        "warranty type"
-       ],
        "op": "has",
        "value": "local supplier warranty",
-       "support": 0.636
+       "keys": [
+        "warranty type"
+       ]
       }
      ],
      "line_cap": null,
@@ -168,7 +166,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -209,11 +211,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 4,
-   "lita_min": 137,
-   "lita_logmean": 5.325,
-   "lita_log_prod": 15.976,
-   "hidden_cut": 0.0,
-   "reza_log": 15.976,
+   "lita_min": 1,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.833,
+   "reza_log": 7.203,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -233,28 +235,17 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.931
-      },
-      {
-       "prop": "coloroptions",
        "keys": [
-        "availablecolors",
-        "color",
-        "coloroptions"
-       ],
-       "op": "has",
-       "value": "white",
-       "support": 0.485
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
-     "line_cap": null,
+     "line_cap": 3500,
      "hidden": [
       {
        "prop": "pattern",
@@ -265,13 +256,13 @@
       }
      ],
      "decoys": [
-      "closure"
+      "color"
      ],
      "cap_line": 43500,
-     "target": "p-00f53e90e497",
-     "n_a_stated_cap": 203,
-     "n_a_final": 203,
-     "n_a0_nocap": 203,
+     "target": "p-93df588ed73c",
+     "n_a_stated_cap": 6,
+     "n_a_final": 2,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -282,35 +273,13 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options",
-        "coloroptions"
-       ],
        "op": "has",
        "value": "white",
-       "support": 0.97
-      },
-      {
-       "prop": "fabric",
        "keys": [
-        "fabric",
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.935
-      },
-      {
-       "prop": "suitable for",
-       "keys": [
-        "suitable for",
-        "suitable for furniture type",
-        "suitablefor"
-       ],
-       "op": "has",
-       "value": "recliner",
-       "support": 0.645
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -324,13 +293,13 @@
       }
      ],
      "decoys": [
-      "closure"
+      "color"
      ],
      "cap_line": 43500,
-     "target": "p-0002769f8f8e",
-     "n_a_stated_cap": 137,
-     "n_a_final": 137,
-     "n_a0_nocap": 137,
+     "target": "p-5de4d12989c3",
+     "n_a_stated_cap": 28,
+     "n_a_final": 1,
+     "n_a0_nocap": 28,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -341,31 +310,11 @@
      "stated": [
       {
        "prop": "sofa type",
-       "keys": [
-        "sofa type"
-       ],
        "op": "has",
        "value": "recliner",
-       "support": 0.991
-      },
-      {
-       "prop": "color",
        "keys": [
-        "color"
-       ],
-       "op": "has",
-       "value": "white",
-       "support": 0.931
-      },
-      {
-       "prop": "upholstery",
-       "keys": [
-        "material",
-        "upholstery"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.693
+        "sofa type"
+       ]
       }
      ],
      "line_cap": null,
@@ -379,13 +328,13 @@
       }
      ],
      "decoys": [
-      "closure"
+      "color"
      ],
      "cap_line": 43500,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-465f638b2307",
+     "n_a_stated_cap": 8,
+     "n_a_final": 4,
+     "n_a0_nocap": 8,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -422,15 +371,15 @@
      "steps": 88,
      "cart": [
       [
-       "p-00f53e90e497",
+       "p-93df588ed73c",
        1
       ],
       [
-       "p-0002769f8f8e",
+       "p-5de4d12989c3",
        2
       ],
       [
-       "p-001d5e4762b8",
+       "p-465f638b2307",
        1
       ]
      ]
@@ -447,7 +396,7 @@
      "care instructions of the slipcovers and furniture covers",
      "pattern of the furniture covers",
      "style of the sofas",
-     "closure of the furniture covers"
+     "color of the furniture covers"
     ],
     "ligubo": [
      0,
@@ -455,12 +404,21 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "0": "shelf_with_facts",
-     "1": "shelf_with_facts",
-     "2": "shelf_with_facts"
-    }
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": true,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -470,14 +428,14 @@
     "suhe": 43500,
     "jufuli": 43500,
     "lita": [
-     203,
-     137,
-     312
+     2,
+     1,
+     4
     ],
     "reza": [
-     203,
-     137,
-     312
+     6,
+     28,
+     8
     ]
    }
   ],
@@ -492,23 +450,23 @@
   "n_lines": 3,
   "truth_source": "field_pass",
   "hidden_source": "observed_reveal",
-  "mech_load": 6,
+  "mech_load": 5,
   "features": {
    "n_lines": 3,
    "qty_total": 4,
    "lita_min": 1,
-   "lita_logmean": 1.731,
-   "lita_log_prod": 5.193,
-   "hidden_cut": 0.706,
-   "reza_log": 9.795,
+   "lita_logmean": 1.461,
+   "lita_log_prod": 4.382,
+   "hidden_cut": 0.638,
+   "reza_log": 9.092,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
    "n_need": 2,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 35
   },
   "spec": {
@@ -521,13 +479,20 @@
      "stated": [
       {
        "prop": "material",
+       "op": "has",
+       "value": "polyester",
        "keys": [
         "fabric feature",
         "material"
-       ],
-       "op": "has",
-       "value": "polyester",
-       "support": 0.939
+       ]
+      },
+      {
+       "prop": "fabric feature",
+       "op": "in",
+       "value": [
+        "hypoallergenic",
+        "waterproof"
+       ]
       }
      ],
      "line_cap": null,
@@ -541,13 +506,13 @@
       }
      ],
      "decoys": [
-      "fabric feature"
+      "sheet type"
      ],
      "cap_line": 27000,
      "target": "p-19ff39e8898a",
-     "n_a_stated_cap": 69,
-     "n_a_final": 9,
-     "n_a0_nocap": 69,
+     "n_a_stated_cap": 37,
+     "n_a_final": 4,
+     "n_a0_nocap": 37,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -558,20 +523,19 @@
      "stated": [
       {
        "prop": "security camera style",
+       "op": "has",
+       "value": "dome",
        "keys": [
         "camera style",
         "security camera style",
         "style"
-       ],
-       "op": "has",
-       "value": "dome",
-       "support": 0.957
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "fabric feature"
+      "sheet type"
      ],
      "cap_line": 27000,
      "target": "p-016913f92e18",
@@ -588,13 +552,13 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options"
-       ],
        "op": "has",
        "value": "silver",
-       "support": 0.957
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -608,13 +572,13 @@
       }
      ],
      "decoys": [
-      "fabric feature"
+      "sheet type"
      ],
      "cap_line": 27000,
      "target": "p-cee510dcc884",
-     "n_a_stated_cap": 13,
+     "n_a_stated_cap": 12,
      "n_a_final": 1,
-     "n_a0_nocap": 13,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -631,7 +595,6 @@
     "tags": [
      "3line",
      "hidden",
-     "chain",
      "cheapest",
      "dnu-default"
     ],
@@ -666,11 +629,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-0512071cd394"
-     ]
-    ],
+    "refs": [],
     "needs": 2,
     "process_rules": [
      "view_after_add"
@@ -683,14 +642,18 @@
     "subjects": [
      "card type of the memory cards",
      "pattern of the bed sheets",
-     "fabric feature of the bed sheets"
+     "sheet type of the bed sheets"
     ],
     "ligubo": [
      0,
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -701,22 +664,18 @@
     "suhe": 27000,
     "jufuli": 12487,
     "lita": [
-     9,
+     4,
      20,
      1
     ],
     "reza": [
-     69,
+     37,
      20,
-     13
+     12
     ]
    }
   ],
-  "refs": [
-   [
-    "p-0512071cd394"
-   ]
-  ],
+  "refs": [],
   "process_rules": [
    "view_after_add"
   ],
@@ -734,11 +693,11 @@
    "n_lines": 4,
    "qty_total": 7,
    "lita_min": 2,
-   "lita_logmean": 4.419,
-   "lita_log_prod": 17.677,
-   "hidden_cut": 0.018,
-   "reza_log": 19.979,
-   "cheapest": 0,
+   "lita_logmean": 2.447,
+   "lita_log_prod": 9.788,
+   "hidden_cut": 0.364,
+   "reza_log": 12.864,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
@@ -757,14 +716,14 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.952
+       "keys": [
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
      "line_cap": null,
@@ -794,25 +753,14 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "fabric",
-       "keys": [
-        "fabric",
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.961
-      },
-      {
        "prop": "closure type",
-       "keys": [
-        "closure",
-        "closure type",
-        "closuretype"
-       ],
        "op": "has",
        "value": "slip-on",
-       "support": 0.87
+       "keys": [
+        "closure type",
+        "closuretype",
+        "closure"
+       ]
       }
      ],
      "line_cap": null,
@@ -822,9 +770,9 @@
      ],
      "cap_line": 32000,
      "target": "p-0002769f8f8e",
-     "n_a_stated_cap": 137,
-     "n_a_final": 137,
-     "n_a0_nocap": 137,
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -835,21 +783,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "nautical",
-       "support": 0.983
-      },
-      {
-       "prop": "material",
        "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.623
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -858,10 +796,10 @@
       "careinstructions"
      ],
      "cap_line": 32000,
-     "target": "p-0004b24b5fe6",
-     "n_a_stated_cap": 556,
-     "n_a_final": 556,
-     "n_a0_nocap": 556,
+     "target": "p-03ce992e632e",
+     "n_a_stated_cap": 33,
+     "n_a_final": 33,
+     "n_a0_nocap": 33,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -872,22 +810,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "plaid",
-       "support": 0.983
-      },
-      {
-       "prop": "upholstery",
        "keys": [
-        "material",
-        "upholstery"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.485
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -911,17 +838,17 @@
       "careinstructions"
      ],
      "cap_line": 32000,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-1819d0a9fa97",
+     "n_a_stated_cap": 39,
+     "n_a_final": 18,
+     "n_a0_nocap": 39,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 32000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 100,
@@ -932,6 +859,7 @@
      "4line",
      "4line",
      "hidden",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -960,11 +888,11 @@
        2
       ],
       [
-       "p-0004b24b5fe6",
+       "p-03ce992e632e",
        1
       ],
       [
-       "p-001d5e4762b8",
+       "p-1819d0a9fa97",
        2
       ]
      ]
@@ -989,12 +917,25 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "1": "shelf_with_facts",
-     "2": "shelf_with_facts",
-     "3": "shelf_with_facts"
-    }
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -1002,18 +943,18 @@
     "bits": 0,
     "tele": false,
     "suhe": 32000,
-    "jufuli": 32000,
+    "jufuli": 6003,
     "lita": [
      2,
-     137,
-     556,
-     312
+     15,
+     33,
+     18
     ],
     "reza": [
      20,
-     137,
-     556,
-     312
+     15,
+     33,
+     39
     ]
    }
   ],
@@ -1032,11 +973,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 3,
-   "lita_min": 54,
-   "lita_logmean": 4.882,
-   "lita_log_prod": 14.645,
+   "lita_min": 1,
+   "lita_logmean": 1.679,
+   "lita_log_prod": 5.037,
    "hidden_cut": 0.0,
-   "reza_log": 14.645,
+   "reza_log": 5.037,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -1054,18 +995,24 @@
     {
      "category": "Slipcovers and Furniture Covers",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "spandex"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "color"
+      "color",
+      "pack size"
      ],
      "cap_line": 7100,
-     "target": "p-0002769f8f8e",
-     "n_a_stated_cap": 136,
-     "n_a_final": 136,
-     "n_a0_nocap": 136,
+     "target": "p-06a0b2744176",
+     "n_a_stated_cap": 22,
+     "n_a_final": 22,
+     "n_a0_nocap": 22,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1076,25 +1023,24 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "floral",
-       "support": 0.974
+       "keys": [
+        "pattern"
+       ]
       }
      ],
-     "line_cap": null,
+     "line_cap": 76,
      "hidden": [],
      "decoys": [
-      "material",
-      "color"
+      "color",
+      "pack size"
      ],
      "cap_line": 7100,
-     "target": "p-02fc9eecde3f",
-     "n_a_stated_cap": 54,
-     "n_a_final": 54,
-     "n_a0_nocap": 54,
+     "target": "p-1b8e3d6b43b9",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1102,18 +1048,24 @@
     {
      "category": "Sofas",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "upholstery",
+       "op": "has",
+       "value": "suede"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "color"
+      "color",
+      "pack size"
      ],
      "cap_line": 7100,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-62a547046de9",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1173,14 +1125,27 @@
     "dnu_default": true,
     "bundle_pct": 36.63663663663664,
     "subjects": [
-     "material of the slipcovers and furniture covers",
-     "color of the slipcovers and furniture covers"
+     "color of the slipcovers and furniture covers",
+     "pack size of the slipcovers and furniture covers"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -1191,14 +1156,14 @@
     "suhe": 7100,
     "jufuli": 7100,
     "lita": [
-     136,
-     54,
-     312
+     22,
+     1,
+     7
     ],
     "reza": [
-     136,
-     54,
-     312
+     22,
+     1,
+     7
     ]
    }
   ],
@@ -1219,10 +1184,10 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 3,
-   "lita_logmean": 1.099,
-   "lita_log_prod": 1.099,
-   "hidden_cut": 0.87,
+   "lita_min": 13,
+   "lita_logmean": 2.565,
+   "lita_log_prod": 2.565,
+   "hidden_cut": 0.435,
    "reza_log": 3.135,
    "cheapest": 0,
    "n_states": 1,
@@ -1244,22 +1209,20 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "animal print",
-       "support": 0.455
+       "ref": true,
+       "keys": [
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [
       {
        "prop": "material",
-       "op": "in",
-       "value": [
-        "canadian cotton"
-       ],
+       "op": "has",
+       "value": "cotton",
        "unit": null,
        "ref": true
       }
@@ -1270,7 +1233,7 @@
      "cap_line": 360,
      "target": "p-0599816b5905",
      "n_a_stated_cap": 23,
-     "n_a_final": 3,
+     "n_a_final": 13,
      "n_a0_nocap": 23,
      "unc": 0,
      "near_miss": {},
@@ -1316,10 +1279,10 @@
     },
     "refs": [
      [
-      "p-359c1f3c54b6"
+      "p-638661f6f892",
+      "p-85db1ff528f6"
      ],
      [
-      "p-85db1ff528f6",
       "p-7db09efec3ce"
      ]
     ],
@@ -1338,7 +1301,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -1349,7 +1316,7 @@
     "suhe": 360,
     "jufuli": 360,
     "lita": [
-     3
+     13
     ],
     "reza": [
      23
@@ -1358,10 +1325,10 @@
   ],
   "refs": [
    [
-    "p-359c1f3c54b6"
+    "p-638661f6f892",
+    "p-85db1ff528f6"
    ],
    [
-    "p-85db1ff528f6",
     "p-7db09efec3ce"
    ]
   ],
@@ -1530,7 +1497,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "partial",
+    "fits": [],
+    "conds": [],
+    "composed_span": "Lowest total cost wins \u2014 sorry \u2014 if you can manage that. Sorry \u2014 I need 1 x bed sheets with pattern character; 1 x cctv security cameras with security camera style dome \u2014 if that's alright. Would you mind keeping the whole total at 2050 cents US or under \u2014 sorry.",
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -1578,7 +1549,7 @@
    "n_refs": 0,
    "hops_total": 0,
    "max_hops": 0,
-   "step_budget": 93
+   "step_budget": 97
   },
   "spec": {
    "suite": "s14_r16",
@@ -1765,7 +1736,7 @@
    "cheapest": false,
    "events": [],
    "messages": 3,
-   "steps": 93,
+   "steps": 97,
    "task_id": "t-237494d47b",
    "extra": {
     "kinds": [],
@@ -1789,7 +1760,7 @@
      "outcome": "0_FIELD_PASSES",
      "truth_source": "derived_clauses",
      "hidden_source": "observed_reveal",
-     "steps": 93,
+     "steps": 97,
      "cart": [
       [
        "p-b19245726042",
@@ -1808,7 +1779,7 @@
     "refs": [],
     "needs": 2,
     "process_rules": [],
-    "step_budget": 93,
+    "step_budget": 97,
     "max_steps": 150,
     "decline": false,
     "dnu_default": true,
@@ -1823,7 +1794,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "partial",
+    "fits": [],
+    "conds": [],
+    "composed_span": "Sorry \u2014 I need 1 x memory cards with color gold and cardtype sd and device interface sd card; 1 x tripods with leg lock type twist lock and load capacity 8 kg and material aluminum; 2 x tripods and camera supports with leg lock type twist lock and load capacity 8 kg and material aluminum \u2014 if that's alright. Would you mind keeping the whole total at 86000 cents US or under \u2014 sorry.",
+    "fits_infeasible": false,
     "fallback_lines": {
      "1": "shelf_with_facts",
      "2": "stated_only"
@@ -1863,12 +1838,12 @@
   "features": {
    "n_lines": 3,
    "qty_total": 4,
-   "lita_min": 6,
-   "lita_logmean": 3.334,
-   "lita_log_prod": 10.002,
-   "hidden_cut": 0.059,
-   "reza_log": 11.226,
-   "cheapest": 0,
+   "lita_min": 3,
+   "lita_logmean": 1.962,
+   "lita_log_prod": 5.886,
+   "hidden_cut": 0.545,
+   "reza_log": 8.227,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
@@ -1888,41 +1863,13 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options"
-       ],
        "op": "has",
        "value": "multicolor",
-       "support": 0.983
-      },
-      {
-       "prop": "cardtype",
        "keys": [
-        "card slots",
-        "card type",
-        "cardtype",
-        "formfactor",
-        "reader",
-        "sd card slot",
-        "supported cards"
-       ],
-       "op": "has",
-       "value": "sd",
-       "support": 0.524
-      },
-      {
-       "prop": "device interface",
-       "keys": [
-        "device interface",
-        "device interfaces",
-        "deviceinterface",
-        "interface",
-        "storage type"
-       ],
-       "op": "has",
-       "value": "sd card",
-       "support": 0.502
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -1931,73 +1878,66 @@
        "prop": "capacity",
        "op": "range",
        "value": [
-        79.07,
-        176.93
+        15.07,
+        112.93
        ],
        "unit": "gb",
        "ref": true
       }
      ],
      "decoys": [
-      "deviceinterface"
+      "cardtype"
      ],
      "cap_line": 49000,
      "target": "p-186b981bf01e",
-     "n_a_stated_cap": 6,
-     "n_a_final": 6,
-     "n_a0_nocap": 6,
+     "n_a_stated_cap": 11,
+     "n_a_final": 3,
+     "n_a0_nocap": 11,
      "unc": 0,
      "near_miss": {},
      "references": []
     },
     {
-     "category": "Tripods and Camera Supports",
+     "category": "Tripods",
      "qty": 1,
      "stated": [
       {
+       "prop": "load capacity",
+       "op": "ge",
+       "value": 8,
+       "unit": "kg",
+       "keys": [
+        "load capacity",
+        "maximum load capacity",
+        "max load capacity"
+       ]
+      },
+      {
        "prop": "feet type",
+       "op": "in",
+       "value": [
+        "rubber",
+        "spiked"
+       ],
        "keys": [
         "feet type",
         "feettype",
         "leg foot type",
         "material",
         "product material"
-       ],
-       "op": "has",
-       "value": "rubber",
-       "support": 0.861
-      },
-      {
-       "prop": "material",
-       "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "rubber feet",
-       "support": 0.74
-      },
-      {
-       "prop": "load capacity",
-       "keys": [
-        "load capacity",
-        "maximum load",
-        "maximum load capacity"
-       ],
-       "op": "has",
-       "value": "8 kg",
-       "support": 0.429
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "deviceinterface"
+      "cardtype"
      ],
      "cap_line": 49000,
-     "target": "p-0034e971ad0e",
-     "n_a_stated_cap": 368,
-     "n_a_final": 368,
-     "n_a0_nocap": 368,
+     "target": "p-0423f770a7ba",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -2008,12 +1948,11 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "us",
-       "support": 0.645
+       "keys": [
+        "plug type"
+       ]
       }
      ],
      "line_cap": null,
@@ -2034,12 +1973,12 @@
       }
      ],
      "decoys": [
-      "deviceinterface"
+      "cardtype"
      ],
      "cap_line": 49000,
      "target": "p-047fcb32c10c",
      "n_a_stated_cap": 34,
-     "n_a_final": 10,
+     "n_a_final": 12,
      "n_a0_nocap": 34,
      "unc": 0,
      "near_miss": {},
@@ -2047,7 +1986,7 @@
     }
    ],
    "cap": 49000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 88,
@@ -2058,6 +1997,7 @@
      "3line",
      "hidden",
      "chain",
+     "cheapest",
      "dnu-default",
      "ref-reply"
     ],
@@ -2083,7 +2023,7 @@
        2
       ],
       [
-       "p-0034e971ad0e",
+       "p-0423f770a7ba",
        1
       ],
       [
@@ -2094,7 +2034,7 @@
     },
     "refs": [
      [
-      "p-0214d9e5ba05"
+      "p-92f7efcb7cf7"
      ]
     ],
     "needs": 3,
@@ -2108,7 +2048,7 @@
      "capacity of the memory cards",
      "display size of the video camera",
      "frame rate of the video camera",
-     "deviceinterface of the memory cards"
+     "cardtype of the memory cards"
     ],
     "ligubo": [
      0,
@@ -2116,11 +2056,37 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "0": "stated_only",
-     "1": "shelf_with_facts"
-    }
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 2,
+      "if": {
+       "prop": "warranty type",
+       "op": "has",
+       "value": "local supplier warranty"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "aluminum"
+      },
+      "except": false
+     }
+    ],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -2128,22 +2094,22 @@
     "bits": 0,
     "tele": false,
     "suhe": 49000,
-    "jufuli": 49000,
+    "jufuli": 21454,
     "lita": [
-     6,
-     368,
-     10
+     3,
+     10,
+     12
     ],
     "reza": [
-     6,
-     368,
+     11,
+     10,
      34
     ]
    }
   ],
   "refs": [
    [
-    "p-0214d9e5ba05"
+    "p-92f7efcb7cf7"
    ]
   ],
   "process_rules": [],
@@ -2185,12 +2151,11 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "2 pin",
-       "support": 0.883
+       "keys": [
+        "plug type"
+       ]
       }
      ],
      "line_cap": null,
@@ -2293,7 +2258,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -2358,23 +2327,23 @@
   "n_lines": 1,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 6,
+  "mech_load": 8,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 4,
-   "lita_logmean": 1.386,
-   "lita_log_prod": 1.386,
-   "hidden_cut": 0.0,
-   "reza_log": 1.386,
-   "cheapest": 0,
+   "lita_min": 24,
+   "lita_logmean": 3.178,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.607,
+   "reza_log": 4.111,
+   "cheapest": 1,
    "n_states": 4,
    "tele": 0,
    "n_subj": 2,
    "n_need": 1,
    "n_refs": 2,
-   "hops_total": 2,
-   "max_hops": 1,
+   "hops_total": 4,
+   "max_hops": 2,
    "step_budget": 35
   },
   "spec": {
@@ -2386,55 +2355,23 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "cardtype",
-       "keys": [
-        "card slots",
-        "card type",
-        "cardtype",
-        "formfactor",
-        "reader",
-        "sd card slot",
-        "supported cards"
-       ],
+       "prop": "color",
        "op": "has",
-       "value": "sd",
-       "support": 0.541
-      },
-      {
-       "prop": "device interface",
+       "value": "black",
        "keys": [
-        "device interface",
-        "device interfaces",
-        "deviceinterface",
-        "interface",
-        "storage type"
+        "color",
+        "color family",
+        "colour"
        ],
-       "op": "has",
-       "value": "sd card",
-       "support": 0.476
-      },
-      {
-       "prop": "size",
-       "keys": [
-        "available capacities",
-        "capacity",
-        "size",
-        "storage",
-        "storage capacities"
-       ],
-       "op": "has",
-       "value": "128gb",
-       "support": 0.442
+       "ref": true
       }
      ],
      "line_cap": null,
      "hidden": [
       {
        "prop": "card type",
-       "op": "in",
-       "value": [
-        "sdxc"
-       ],
+       "op": "has",
+       "value": "sd",
        "unit": null,
        "ref": true
       }
@@ -2443,17 +2380,17 @@
       "capacity"
      ],
      "cap_line": 10500,
-     "target": "p-006348264dc4",
-     "n_a_stated_cap": 4,
-     "n_a_final": 4,
-     "n_a0_nocap": 4,
+     "target": "p-017c036ccf88",
+     "n_a_stated_cap": 61,
+     "n_a_final": 24,
+     "n_a0_nocap": 61,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 10500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [
     {
      "type": "budget",
@@ -2489,6 +2426,7 @@
      "hidden",
      "chain",
      "event",
+     "cheapest",
      "ref-reply"
     ],
     "held_out": false,
@@ -2509,17 +2447,19 @@
      "steps": 35,
      "cart": [
       [
-       "p-006348264dc4",
+       "p-017c036ccf88",
        1
       ]
      ]
     },
     "refs": [
      [
-      "p-07d3f3462e24"
+      "p-3d302e8235f7",
+      "p-511355fc7810"
      ],
      [
-      "p-02dbd4c5699e"
+      "p-07d3f3462e24",
+      "p-187c00cd24eb"
      ]
     ],
     "needs": 1,
@@ -2537,10 +2477,12 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "0": "stated_only"
-    }
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -2548,57 +2490,59 @@
     "bits": 0,
     "tele": false,
     "suhe": 10500,
-    "jufuli": 10500,
+    "jufuli": 585,
     "lita": [
-     4
+     24
     ],
     "reza": [
-     4
+     61
     ]
    },
    {
     "bits": 1,
     "tele": false,
     "suhe": 7191,
-    "jufuli": 7191,
+    "jufuli": 585,
     "lita": [
-     4
+     24
     ],
     "reza": [
-     4
+     61
     ]
    },
    {
     "bits": 2,
     "tele": false,
     "suhe": 10500,
-    "jufuli": 10500,
+    "jufuli": 585,
     "lita": [
-     4
+     24
     ],
     "reza": [
-     4
+     61
     ]
    },
    {
     "bits": 3,
     "tele": false,
     "suhe": 7191,
-    "jufuli": 7191,
+    "jufuli": 585,
     "lita": [
-     4
+     24
     ],
     "reza": [
-     4
+     61
     ]
    }
   ],
   "refs": [
    [
-    "p-07d3f3462e24"
+    "p-3d302e8235f7",
+    "p-511355fc7810"
    ],
    [
-    "p-02dbd4c5699e"
+    "p-07d3f3462e24",
+    "p-187c00cd24eb"
    ]
   ],
   "process_rules": [],
@@ -2615,11 +2559,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 3,
-   "lita_min": 1,
-   "lita_logmean": 2.145,
-   "lita_log_prod": 6.436,
-   "hidden_cut": 0.054,
-   "reza_log": 8.739,
+   "lita_min": 2,
+   "lita_logmean": 1.5,
+   "lita_log_prod": 4.5,
+   "hidden_cut": 0.835,
+   "reza_log": 9.964,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -2628,7 +2572,7 @@
    "n_refs": 0,
    "hops_total": 0,
    "max_hops": 0,
-   "step_budget": 77
+   "step_budget": 78
   },
   "spec": {
    "suite": "s14_r16",
@@ -2639,14 +2583,14 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.974
+       "keys": [
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
      "line_cap": null,
@@ -2677,21 +2621,11 @@
      "stated": [
       {
        "prop": "style",
-       "keys": [
-        "style"
-       ],
        "op": "has",
        "value": "vintage",
-       "support": 0.978
-      },
-      {
-       "prop": "material",
        "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.697
+        "style"
+       ]
       }
      ],
      "line_cap": null,
@@ -2708,10 +2642,10 @@
       "care"
      ],
      "cap_line": 10000,
-     "target": "p-787b1d719e58",
-     "n_a_stated_cap": 1,
-     "n_a_final": 1,
-     "n_a0_nocap": 1,
+     "target": "p-417a9b28f640",
+     "n_a_stated_cap": 59,
+     "n_a_final": 9,
+     "n_a0_nocap": 59,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -2722,31 +2656,11 @@
      "stated": [
       {
        "prop": "material",
-       "keys": [
-        "material"
-       ],
        "op": "has",
        "value": "pvc",
-       "support": 0.991
-      },
-      {
-       "prop": "style",
        "keys": [
-        "style"
-       ],
-       "op": "has",
-       "value": "vintage",
-       "support": 0.974
-      },
-      {
-       "prop": "upholstery",
-       "keys": [
-        "material",
-        "upholstery"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.697
+        "material"
+       ]
       }
      ],
      "line_cap": null,
@@ -2763,10 +2677,10 @@
       "care"
      ],
      "cap_line": 10000,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-0673285f462e",
+     "n_a_stated_cap": 18,
+     "n_a_final": 5,
+     "n_a0_nocap": 18,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -2776,7 +2690,7 @@
    "cheapest": false,
    "events": [],
    "messages": 3,
-   "steps": 77,
+   "steps": 78,
    "task_id": "t-44963adb06",
    "extra": {
     "kinds": [],
@@ -2800,18 +2714,18 @@
      "outcome": "0_FIELD_PASSES",
      "truth_source": "derived_clauses",
      "hidden_source": "observed_reveal",
-     "steps": 77,
+     "steps": 78,
      "cart": [
       [
        "p-8b825d889202",
        1
       ],
       [
-       "p-787b1d719e58",
+       "p-417a9b28f640",
        1
       ],
       [
-       "p-001d5e4762b8",
+       "p-0673285f462e",
        1
       ]
      ]
@@ -2819,7 +2733,7 @@
     "refs": [],
     "needs": 3,
     "process_rules": [],
-    "step_budget": 77,
+    "step_budget": 78,
     "max_steps": 150,
     "decline": false,
     "dnu_default": true,
@@ -2836,11 +2750,21 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "1": "stated_only",
-     "2": "shelf_with_facts"
-    }
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -2851,13 +2775,13 @@
     "jufuli": 10000,
     "lita": [
      2,
-     1,
-     312
+     9,
+     5
     ],
     "reza": [
      20,
-     1,
-     312
+     59,
+     18
     ]
    }
   ],
@@ -2872,23 +2796,23 @@
   "n_lines": 3,
   "truth_source": "field_pass",
   "hidden_source": "none",
-  "mech_load": 4,
+  "mech_load": 3,
   "features": {
    "n_lines": 3,
    "qty_total": 3,
    "lita_min": 8,
-   "lita_logmean": 3.81,
-   "lita_log_prod": 11.43,
+   "lita_logmean": 3.605,
+   "lita_log_prod": 10.815,
    "hidden_cut": 0.0,
-   "reza_log": 11.43,
+   "reza_log": 10.815,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
    "n_subj": 2,
    "n_need": 0,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 78
   },
   "spec": {
@@ -2901,13 +2825,12 @@
      "stated": [
       {
        "prop": "pattern",
+       "op": "has",
+       "value": "checkered",
        "keys": [
         "pattern",
         "patternoptions"
-       ],
-       "op": "has",
-       "value": "checkered",
-       "support": 0.792
+       ]
       }
      ],
      "line_cap": null,
@@ -2931,12 +2854,11 @@
      "stated": [
       {
        "prop": "material",
-       "keys": [
-        "material"
-       ],
        "op": "has",
        "value": "polyester",
-       "support": 0.948
+       "keys": [
+        "material"
+       ]
       }
      ],
      "line_cap": null,
@@ -2960,12 +2882,19 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "plaid",
-       "support": 0.983
+       "keys": [
+        "pattern"
+       ]
+      },
+      {
+       "prop": "furniture features",
+       "op": "in",
+       "value": [
+        "custom",
+        "foldable"
+       ]
       }
      ],
      "line_cap": null,
@@ -2975,10 +2904,10 @@
       "color"
      ],
      "cap_line": 10000,
-     "target": "p-01094a11e5f1",
-     "n_a_stated_cap": 37,
-     "n_a_final": 37,
-     "n_a0_nocap": 37,
+     "target": "p-0673285f462e",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -2994,7 +2923,6 @@
     "kinds": [],
     "tags": [
      "3line",
-     "chain",
      "dnu-default"
     ],
     "held_out": false,
@@ -3028,11 +2956,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-01094a11e5f1"
-     ]
-    ],
+    "refs": [],
     "needs": 0,
     "process_rules": [],
     "step_budget": 78,
@@ -3048,7 +2972,20 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -3061,20 +2998,16 @@
     "lita": [
      8,
      311,
-     37
+     20
     ],
     "reza": [
      8,
      311,
-     37
+     20
     ]
    }
   ],
-  "refs": [
-   [
-    "p-01094a11e5f1"
-   ]
-  ],
+  "refs": [],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -3085,7 +3018,7 @@
   "n_lines": 4,
   "truth_source": "derived_clauses",
   "hidden_source": "none",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 4,
    "qty_total": 6,
@@ -3094,14 +3027,14 @@
    "lita_log_prod": 17.377,
    "hidden_cut": 0.0,
    "reza_log": 17.377,
-   "cheapest": 0,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 2,
    "n_need": 0,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 109
   },
   "spec": {
@@ -3284,7 +3217,7 @@
     }
    ],
    "cap": 60500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 109,
@@ -3294,7 +3227,7 @@
     "tags": [
      "4line",
      "4line",
-     "chain",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -3332,11 +3265,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-d543fdab1b1e"
-     ]
-    ],
+    "refs": [],
     "needs": 0,
     "process_rules": [
      "view_after_add"
@@ -3354,7 +3283,11 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "partial",
+    "fits": [],
+    "conds": [],
+    "composed_span": "Sorry \u2014 I need 2 x furniture covers with color tan and material cotton; 2 x slipcovers and furniture covers with color white and material cotton; 1 x sofa covers & slips with style modern and pattern leaf and warranty policy set; 1 x sofas with furniture features slipcovered and style modern and warranty policy set \u2014 if that's alright. Would you mind keeping the whole total at 60500 cents US or under \u2014 sorry.",
+    "fits_infeasible": false,
     "fallback_lines": {
      "0": "shelf_with_facts",
      "2": "shelf_with_facts",
@@ -3367,7 +3300,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 60500,
-    "jufuli": 60500,
+    "jufuli": 20053,
     "lita": [
      203,
      1,
@@ -3382,11 +3315,7 @@
     ]
    }
   ],
-  "refs": [
-   [
-    "p-d543fdab1b1e"
-   ]
-  ],
+  "refs": [],
   "process_rules": [
    "view_after_add"
   ],
@@ -3428,13 +3357,12 @@
      "stated": [
       {
        "prop": "resolution",
+       "op": "has",
+       "value": "720p",
        "keys": [
         "image sensor",
         "resolution"
-       ],
-       "op": "has",
-       "value": "720p",
-       "support": 0.97
+       ]
       }
      ],
      "line_cap": null,
@@ -3504,7 +3432,11 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -3533,23 +3465,23 @@
   "n_lines": 1,
   "truth_source": "field_pass",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 73,
-   "lita_logmean": 4.29,
-   "lita_log_prod": 4.29,
-   "hidden_cut": 0.718,
-   "reza_log": 5.557,
+   "lita_min": 44,
+   "lita_logmean": 3.784,
+   "lita_log_prod": 3.784,
+   "hidden_cut": 0.56,
+   "reza_log": 4.605,
    "cheapest": 1,
    "n_states": 4,
    "tele": 0,
    "n_subj": 2,
    "n_need": 1,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 35
   },
   "spec": {
@@ -3559,7 +3491,18 @@
     {
      "category": "CCTV Security Cameras",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "white",
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -3571,13 +3514,13 @@
       }
      ],
      "decoys": [
-      "plug type"
+      "input voltage"
      ],
      "cap_line": 1550,
      "target": "p-000536ae44e9",
-     "n_a_stated_cap": 259,
-     "n_a_final": 73,
-     "n_a0_nocap": 259,
+     "n_a_stated_cap": 100,
+     "n_a_final": 44,
+     "n_a0_nocap": 100,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3618,7 +3561,6 @@
     "tags": [
      "1line",
      "hidden",
-     "chain",
      "event",
      "cheapest"
     ],
@@ -3645,11 +3587,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-0170d010ace7"
-     ]
-    ],
+    "refs": [],
     "needs": 1,
     "process_rules": [
      "view_after_add"
@@ -3661,13 +3599,17 @@
     "bundle_pct": 24.59259259259259,
     "subjects": [
      "security camera style",
-     "plug type"
+     "input voltage"
     ],
     "ligubo": [
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -3678,10 +3620,10 @@
     "suhe": 1550,
     "jufuli": 18,
     "lita": [
-     73
+     44
     ],
     "reza": [
-     259
+     100
     ]
    },
    {
@@ -3702,10 +3644,10 @@
     "suhe": 1550,
     "jufuli": 18,
     "lita": [
-     73
+     44
     ],
     "reza": [
-     259
+     100
     ]
    },
    {
@@ -3721,11 +3663,7 @@
     ]
    }
   ],
-  "refs": [
-   [
-    "p-0170d010ace7"
-   ]
-  ],
+  "refs": [],
   "process_rules": [
    "view_after_add"
   ],
@@ -3742,11 +3680,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 127,
-   "lita_logmean": 4.844,
-   "lita_log_prod": 4.844,
-   "hidden_cut": 0.638,
-   "reza_log": 5.861,
+   "lita_min": 19,
+   "lita_logmean": 2.944,
+   "lita_log_prod": 2.944,
+   "hidden_cut": 0.596,
+   "reza_log": 3.85,
    "cheapest": 1,
    "n_states": 4,
    "tele": 0,
@@ -3764,7 +3702,13 @@
     {
      "category": "Bed Sheets",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "fabric feature",
+       "op": "has",
+       "value": "stretchable"
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -3776,13 +3720,13 @@
       }
      ],
      "decoys": [
-      "fabric feature"
+      "age group"
      ],
      "cap_line": 430,
      "target": "p-0179f4e30b95",
-     "n_a_stated_cap": 351,
-     "n_a_final": 127,
-     "n_a0_nocap": 351,
+     "n_a_stated_cap": 47,
+     "n_a_final": 19,
+     "n_a0_nocap": 47,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3861,13 +3805,17 @@
     "bundle_pct": 25.03681885125184,
     "subjects": [
      "sheet type",
-     "fabric feature"
+     "age group"
     ],
     "ligubo": [
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -3876,12 +3824,12 @@
     "bits": 0,
     "tele": false,
     "suhe": 430,
-    "jufuli": 75,
+    "jufuli": 130,
     "lita": [
-     127
+     19
     ],
     "reza": [
-     351
+     47
     ]
    },
    {
@@ -3900,12 +3848,12 @@
     "bits": 2,
     "tele": false,
     "suhe": 430,
-    "jufuli": 75,
+    "jufuli": 130,
     "lita": [
-     127
+     19
     ],
     "reza": [
-     351
+     47
     ]
    },
    {
@@ -4113,7 +4061,11 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "partial",
+    "fits": [],
+    "conds": [],
+    "composed_span": "Lowest total cost wins \u2014 sorry \u2014 if you can manage that. Sorry \u2014 I need 1 x memory cards; 2 x tripods; 1 x tripods and camera supports with leg lock type twist lock; 1 x video camera \u2014 if that's alright. Would you mind keeping the whole total at 79500 cents US or under \u2014 sorry.",
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -4150,23 +4102,23 @@
   "n_lines": 4,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 8,
+  "mech_load": 9,
   "features": {
    "n_lines": 4,
    "qty_total": 6,
-   "lita_min": 1,
-   "lita_logmean": 2.305,
-   "lita_log_prod": 9.22,
-   "hidden_cut": 0.0,
-   "reza_log": 9.22,
-   "cheapest": 0,
+   "lita_min": 14,
+   "lita_logmean": 3.728,
+   "lita_log_prod": 14.91,
+   "hidden_cut": 0.046,
+   "reza_log": 15.529,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
    "n_need": 3,
    "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "hops_total": 2,
+   "max_hops": 2,
    "step_budget": 109
   },
   "spec": {
@@ -4178,24 +4130,15 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "maximum transfer rate",
-       "keys": [
-        "maximum transfer rate"
-       ],
-       "op": "has",
-       "value": "200mb",
-       "support": 0.55
-      },
-      {
        "prop": "read speed",
+       "op": "ge",
+       "value": 200,
+       "unit": "mb/s",
        "keys": [
-        "max read speed",
-        "max transfer rate",
-        "read speed"
-       ],
-       "op": "has",
-       "value": "200 mb",
-       "support": 0.429
+        "read speed",
+        "maximum transfer rate",
+        "max transfer rate"
+       ]
       }
      ],
      "line_cap": null,
@@ -4219,10 +4162,10 @@
       "capacity"
      ],
      "cap_line": 125000,
-     "target": "p-07d3f3462e24",
-     "n_a_stated_cap": 1,
-     "n_a_final": 1,
-     "n_a0_nocap": 1,
+     "target": "p-0159cd96144d",
+     "n_a_stated_cap": 57,
+     "n_a_final": 57,
+     "n_a0_nocap": 57,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4232,32 +4175,15 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "leg lock type",
-       "keys": [
-        "leg lock type",
-        "leglocktype"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.913
-      },
-      {
-       "prop": "material",
-       "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "carbon",
-       "support": 0.887
-      },
-      {
        "prop": "load capacity",
+       "op": "ge",
+       "value": 8,
+       "unit": "kg",
        "keys": [
-        "load capacity"
-       ],
-       "op": "has",
-       "value": "8 kg",
-       "support": 0.42
+        "load capacity",
+        "maximum load capacity",
+        "max load capacity"
+       ]
       }
      ],
      "line_cap": null,
@@ -4266,10 +4192,10 @@
       "capacity"
      ],
      "cap_line": 125000,
-     "target": "p-006d7dd4626e",
-     "n_a_stated_cap": 99,
-     "n_a_final": 99,
-     "n_a0_nocap": 99,
+     "target": "p-0077f24fdaac",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4280,34 +4206,13 @@
      "stated": [
       {
        "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
        "keys": [
         "leg lock type",
         "leglocktype",
         "lock type"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.913
-      },
-      {
-       "prop": "material",
-       "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "carbon",
-       "support": 0.887
-      },
-      {
-       "prop": "load capacity",
-       "keys": [
-        "load capacity",
-        "maximum load",
-        "maximum load capacity"
-       ],
-       "op": "has",
-       "value": "8 kg",
-       "support": 0.42
+       ]
       }
      ],
      "line_cap": null,
@@ -4316,10 +4221,10 @@
       "capacity"
      ],
      "cap_line": 125000,
-     "target": "p-1cf09cf006b9",
-     "n_a_stated_cap": 3,
-     "n_a_final": 3,
-     "n_a0_nocap": 3,
+     "target": "p-0331a3d51cfe",
+     "n_a_stated_cap": 156,
+     "n_a_final": 156,
+     "n_a0_nocap": 156,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4330,20 +4235,29 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "us",
-       "support": 0.511
+       "keys": [
+        "plug type"
+       ]
+      },
+      {
+       "prop": "video capture resolution",
+       "op": "in",
+       "value": [
+        "1080p",
+        "4k"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [
       {
        "prop": "frame rate",
-       "op": "any",
-       "value": null,
+       "op": "nin",
+       "value": [
+        "60"
+       ],
        "unit": null,
        "ref": true
       }
@@ -4352,17 +4266,17 @@
       "capacity"
      ],
      "cap_line": 125000,
-     "target": "p-038c8f744cff",
-     "n_a_stated_cap": 34,
-     "n_a_final": 34,
-     "n_a0_nocap": 34,
+     "target": "p-28bc2974dd4e",
+     "n_a_stated_cap": 26,
+     "n_a_final": 14,
+     "n_a0_nocap": 26,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 125000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 109,
@@ -4374,6 +4288,7 @@
      "4line",
      "hidden",
      "chain",
+     "cheapest",
      "dnu-default",
      "ref-reply"
     ],
@@ -4395,26 +4310,27 @@
      "steps": 109,
      "cart": [
       [
-       "p-07d3f3462e24",
+       "p-0159cd96144d",
        2
       ],
       [
-       "p-006d7dd4626e",
+       "p-0077f24fdaac",
        2
       ],
       [
-       "p-1cf09cf006b9",
+       "p-0331a3d51cfe",
        1
       ],
       [
-       "p-038c8f744cff",
+       "p-28bc2974dd4e",
        1
       ]
      ]
     },
     "refs": [
      [
-      "p-95a0a366b91e"
+      "p-f09d93781674",
+      "p-c8d2e46dec10"
      ]
     ],
     "needs": 3,
@@ -4436,10 +4352,45 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      3
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 3,
+      "if": {
+       "prop": "warranty type",
+       "op": "in",
+       "value": [
+        "local supplier warranty",
+        "no warranty"
+       ]
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "carbon fiber"
+      },
+      "except": true
+     }
+    ],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {
-     "0": "stated_only",
-     "1": "shelf_with_facts"
+     "0": "stated_only"
     }
    }
   },
@@ -4448,24 +4399,25 @@
     "bits": 0,
     "tele": false,
     "suhe": 125000,
-    "jufuli": 125000,
+    "jufuli": 17110,
     "lita": [
-     1,
-     99,
-     3,
-     34
+     57,
+     24,
+     156,
+     14
     ],
     "reza": [
-     1,
-     99,
-     3,
-     34
+     57,
+     24,
+     156,
+     26
     ]
    }
   ],
   "refs": [
    [
-    "p-95a0a366b91e"
+    "p-f09d93781674",
+    "p-c8d2e46dec10"
    ]
   ],
   "process_rules": [],
@@ -4482,12 +4434,12 @@
   "features": {
    "n_lines": 3,
    "qty_total": 6,
-   "lita_min": 15,
-   "lita_logmean": 3.059,
-   "lita_log_prod": 9.176,
-   "hidden_cut": 0.832,
-   "reza_log": 11.901,
-   "cheapest": 0,
+   "lita_min": 6,
+   "lita_logmean": 2.023,
+   "lita_log_prod": 6.068,
+   "hidden_cut": 0.836,
+   "reza_log": 9.129,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 2,
@@ -4504,7 +4456,13 @@
     {
      "category": "Bed Sheets",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "thread count",
+       "op": "ge",
+       "value": 135
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -4520,9 +4478,9 @@
      ],
      "cap_line": 28000,
      "target": "p-0599816b5905",
-     "n_a_stated_cap": 351,
-     "n_a_final": 23,
-     "n_a0_nocap": 351,
+     "n_a_stated_cap": 128,
+     "n_a_final": 6,
+     "n_a0_nocap": 128,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4533,12 +4491,22 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "2 pin",
-       "support": 0.922
+       "keys": [
+        "plug type"
+       ]
+      },
+      {
+       "prop": "number of cameras included",
+       "op": "le",
+       "value": 1,
+       "keys": [
+        "number of cameras",
+        "cameras included",
+        "number of cameras included",
+        "number of camera"
+       ]
       }
      ],
      "line_cap": null,
@@ -4547,10 +4515,10 @@
       "fabric feature"
      ],
      "cap_line": 28000,
-     "target": "p-00796b8d5030",
-     "n_a_stated_cap": 28,
-     "n_a_final": 28,
-     "n_a0_nocap": 28,
+     "target": "p-076ccb247407",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4560,17 +4528,16 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "device interface",
-       "keys": [
-        "card type",
-        "device interface",
-        "form factor",
-        "format",
-        "microsd card slot"
-       ],
+       "prop": "card type",
        "op": "has",
        "value": "microsdhc",
-       "support": 0.961
+       "keys": [
+        "card type",
+        "cardtype",
+        "device interface",
+        "memory card type",
+        "type"
+       ]
       }
      ],
      "line_cap": null,
@@ -4580,16 +4547,16 @@
      ],
      "cap_line": 28000,
      "target": "p-0b24adf470d5",
-     "n_a_stated_cap": 15,
-     "n_a_final": 15,
-     "n_a0_nocap": 15,
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 28000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -4599,6 +4566,7 @@
     "tags": [
      "3line",
      "hidden",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -4623,7 +4591,7 @@
        1
       ],
       [
-       "p-00796b8d5030",
+       "p-076ccb247407",
        3
       ],
       [
@@ -4648,7 +4616,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -4657,16 +4629,16 @@
     "bits": 0,
     "tele": false,
     "suhe": 28000,
-    "jufuli": 28000,
+    "jufuli": 2054,
     "lita": [
-     23,
-     28,
-     15
+     6,
+     6,
+     12
     ],
     "reza": [
-     351,
-     28,
-     15
+     128,
+     6,
+     12
     ]
    }
   ],
@@ -4685,11 +4657,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 4,
-   "lita_min": 99,
-   "lita_logmean": 4.813,
-   "lita_log_prod": 14.44,
+   "lita_min": 12,
+   "lita_logmean": 3.524,
+   "lita_log_prod": 10.573,
    "hidden_cut": 0.0,
-   "reza_log": 14.44,
+   "reza_log": 10.573,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -4707,18 +4679,36 @@
     {
      "category": "Tripods",
      "qty": 2,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "load capacity",
+       "op": "ge",
+       "value": 8,
+       "unit": "kg",
+       "keys": [
+        "load capacity",
+        "maximum load capacity",
+        "max load capacity"
+       ]
+      },
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 1724,
+       "unit": "g"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "leg sections"
+      "leg sections",
+      "material"
      ],
      "cap_line": 94500,
-     "target": "p-006d7dd4626e",
-     "n_a_stated_cap": 99,
-     "n_a_final": 99,
-     "n_a0_nocap": 99,
+     "target": "p-15fa1db60137",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4729,40 +4719,26 @@
      "stated": [
       {
        "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
        "keys": [
         "leg lock type",
         "leglocktype",
         "lock type"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.918
-      },
-      {
-       "prop": "feet type",
-       "keys": [
-        "feet type",
-        "feettype",
-        "leg foot type",
-        "material",
-        "product material"
-       ],
-       "op": "has",
-       "value": "rubber",
-       "support": 0.489
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "leg sections"
+      "leg sections",
+      "material"
      ],
      "cap_line": 94500,
      "target": "p-0331a3d51cfe",
-     "n_a_stated_cap": 115,
-     "n_a_final": 115,
-     "n_a0_nocap": 115,
+     "n_a_stated_cap": 155,
+     "n_a_final": 155,
+     "n_a0_nocap": 155,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4770,18 +4746,24 @@
     {
      "category": "Video Camera",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "warranty type",
+       "op": "has",
+       "value": "international manufacturer warranty"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "leg sections"
+      "leg sections",
+      "material"
      ],
      "cap_line": 94500,
-     "target": "p-00234846c1ff",
-     "n_a_stated_cap": 164,
-     "n_a_final": 164,
-     "n_a0_nocap": 164,
+     "target": "p-059a1ab40a8c",
+     "n_a_stated_cap": 21,
+     "n_a_final": 21,
+     "n_a0_nocap": 21,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4818,7 +4800,7 @@
      "steps": 88,
      "cart": [
       [
-       "p-006d7dd4626e",
+       "p-15fa1db60137",
        2
       ],
       [
@@ -4826,7 +4808,7 @@
        1
       ],
       [
-       "p-00234846c1ff",
+       "p-059a1ab40a8c",
        1
       ]
      ]
@@ -4842,14 +4824,48 @@
     "dnu_default": true,
     "bundle_pct": 52.38805970149254,
     "subjects": [
-     "material of the tripods",
-     "leg sections of the tripods"
+     "leg sections of the tripods",
+     "material of the tripods"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 2,
+      "if": {
+       "prop": "plug type",
+       "op": "has",
+       "value": "universal"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "feet type",
+       "op": "has",
+       "value": "rubber",
+       "keys": [
+        "feet type",
+        "feettype",
+        "leg foot type"
+       ]
+      },
+      "except": false
+     }
+    ],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -4858,16 +4874,16 @@
     "bits": 0,
     "tele": false,
     "suhe": 94500,
-    "jufuli": 1600,
+    "jufuli": 14308,
     "lita": [
-     99,
-     115,
-     164
+     12,
+     155,
+     21
     ],
     "reza": [
-     99,
-     115,
-     164
+     12,
+     155,
+     21
     ]
    }
   ],
@@ -4889,10 +4905,10 @@
    "n_lines": 3,
    "qty_total": 5,
    "lita_min": 1,
-   "lita_logmean": 3.103,
-   "lita_log_prod": 9.309,
+   "lita_logmean": 2.766,
+   "lita_log_prod": 8.299,
    "hidden_cut": 0.0,
-   "reza_log": 9.309,
+   "reza_log": 8.299,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -4912,14 +4928,14 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.905
+       "keys": [
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
      "line_cap": null,
@@ -4940,7 +4956,14 @@
     {
      "category": "Sofa Covers & Slips",
      "qty": 2,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 1,
+       "unit": "piece"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
@@ -4948,10 +4971,10 @@
       "pattern"
      ],
      "cap_line": 18000,
-     "target": "p-0059fdb3a8f8",
-     "n_a_stated_cap": 552,
-     "n_a_final": 552,
-     "n_a0_nocap": 552,
+     "target": "p-03b33ae8279b",
+     "n_a_stated_cap": 201,
+     "n_a_final": 201,
+     "n_a0_nocap": 201,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -4962,23 +4985,22 @@
      "stated": [
       {
        "prop": "upholstery",
+       "op": "has",
+       "value": "suede",
        "keys": [
         "material",
         "upholstery"
-       ],
-       "op": "has",
-       "value": "suede",
-       "support": 0.991
+       ]
       },
       {
        "prop": "furniture features",
+       "op": "has",
+       "value": "slipcovered",
+       "ref": true,
        "keys": [
         "features",
         "furniture features"
-       ],
-       "op": "has",
-       "value": "slipcovered",
-       "support": 0.823
+       ]
       }
      ],
      "line_cap": null,
@@ -5043,8 +5065,8 @@
     },
     "refs": [
      [
-      "p-43dee73e8ee5",
-      "p-61ab98cf297b"
+      "p-e9a928bd0e10",
+      "p-43dee73e8ee5"
      ]
     ],
     "needs": 0,
@@ -5064,7 +5086,20 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -5076,20 +5111,20 @@
     "jufuli": 18000,
     "lita": [
      20,
-     552,
+     201,
      1
     ],
     "reza": [
      20,
-     552,
+     201,
      1
     ]
    }
   ],
   "refs": [
    [
-    "p-43dee73e8ee5",
-    "p-61ab98cf297b"
+    "p-e9a928bd0e10",
+    "p-43dee73e8ee5"
    ]
   ],
   "process_rules": [
@@ -5109,11 +5144,11 @@
    "n_lines": 3,
    "qty_total": 5,
    "lita_min": 1,
-   "lita_logmean": 0.693,
-   "lita_log_prod": 2.079,
-   "hidden_cut": 0.667,
-   "reza_log": 4.787,
-   "cheapest": 0,
+   "lita_logmean": 2.434,
+   "lita_log_prod": 7.301,
+   "hidden_cut": 0.152,
+   "reza_log": 10.009,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
@@ -5133,14 +5168,13 @@
      "stated": [
       {
        "prop": "closure type",
-       "keys": [
-        "closure",
-        "closure type",
-        "closuretype"
-       ],
        "op": "has",
        "value": "slip-on",
-       "support": 0.788
+       "keys": [
+        "closure type",
+        "closuretype",
+        "closure"
+       ]
       }
      ],
      "line_cap": null,
@@ -5171,22 +5205,23 @@
      "stated": [
       {
        "prop": "pattern",
+       "op": "has",
+       "value": "holiday",
        "keys": [
         "pattern"
-       ],
-       "op": "has",
-       "value": "plaid",
-       "support": 0.974
+       ]
       },
       {
        "prop": "material",
+       "op": "in",
+       "value": [
+        "polyester",
+        "velvet"
+       ],
        "keys": [
         "material",
         "pattern"
-       ],
-       "op": "has",
-       "value": "velvet",
-       "support": 0.519
+       ]
       }
      ],
      "line_cap": null,
@@ -5195,10 +5230,10 @@
       "careinstructions"
      ],
      "cap_line": 18500,
-     "target": "p-38e858b0e094",
-     "n_a_stated_cap": 2,
-     "n_a_final": 2,
-     "n_a0_nocap": 2,
+     "target": "p-0e4ece28af42",
+     "n_a_stated_cap": 38,
+     "n_a_final": 38,
+     "n_a0_nocap": 38,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5209,22 +5244,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "plaid",
-       "support": 0.974
-      },
-      {
-       "prop": "upholstery",
        "keys": [
-        "material",
-        "upholstery"
-       ],
-       "op": "has",
-       "value": "velvet",
-       "support": 0.519
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -5248,17 +5272,17 @@
       "careinstructions"
      ],
      "cap_line": 18500,
-     "target": "p-0475d3748e51",
-     "n_a_stated_cap": 4,
-     "n_a_final": 4,
-     "n_a0_nocap": 4,
+     "target": "p-01094a11e5f1",
+     "n_a_stated_cap": 39,
+     "n_a_final": 39,
+     "n_a0_nocap": 39,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 18500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 78,
@@ -5268,6 +5292,7 @@
     "tags": [
      "3line",
      "hidden",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -5292,11 +5317,11 @@
        2
       ],
       [
-       "p-38e858b0e094",
+       "p-0e4ece28af42",
        1
       ],
       [
-       "p-0475d3748e51",
+       "p-01094a11e5f1",
        2
       ]
      ]
@@ -5321,7 +5346,20 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {
      "2": "stated_only"
     }
@@ -5332,16 +5370,16 @@
     "bits": 0,
     "tele": false,
     "suhe": 18500,
-    "jufuli": 18500,
+    "jufuli": 1793,
     "lita": [
      1,
-     2,
-     4
+     38,
+     39
     ],
     "reza": [
      15,
-     2,
-     4
+     38,
+     39
     ]
    }
   ],
@@ -5356,23 +5394,23 @@
   "n_lines": 2,
   "truth_source": "field_pass",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 2,
    "qty_total": 4,
    "lita_min": 1,
-   "lita_logmean": 2.46,
-   "lita_log_prod": 4.92,
-   "hidden_cut": 0.183,
-   "reza_log": 7.615,
+   "lita_logmean": 1.666,
+   "lita_log_prod": 3.332,
+   "hidden_cut": 0.326,
+   "reza_log": 5.919,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
    "n_need": 2,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 35
   },
   "spec": {
@@ -5385,13 +5423,13 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options"
-       ],
        "op": "has",
        "value": "silver",
-       "support": 0.957
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -5409,9 +5447,9 @@
      ],
      "cap_line": 45500,
      "target": "p-cee510dcc884",
-     "n_a_stated_cap": 13,
+     "n_a_stated_cap": 12,
      "n_a_final": 1,
-     "n_a0_nocap": 13,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5422,14 +5460,19 @@
      "stated": [
       {
        "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
        "keys": [
         "leg lock type",
         "leglocktype",
         "lock type"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.974
+       ]
+      },
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 1.188412,
+       "unit": "kg"
       }
      ],
      "line_cap": null,
@@ -5446,10 +5489,10 @@
       "assembly required"
      ],
      "cap_line": 45500,
-     "target": "p-0331a3d51cfe",
-     "n_a_stated_cap": 156,
-     "n_a_final": 137,
-     "n_a0_nocap": 156,
+     "target": "p-06b7e054c4c5",
+     "n_a_stated_cap": 31,
+     "n_a_final": 28,
+     "n_a0_nocap": 31,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5466,7 +5509,6 @@
     "tags": [
      "2line",
      "hidden",
-     "chain",
      "dnu-default"
     ],
     "held_out": false,
@@ -5496,11 +5538,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-03f356946e60"
-     ]
-    ],
+    "refs": [],
     "needs": 2,
     "process_rules": [],
     "step_budget": 35,
@@ -5518,7 +5556,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -5530,19 +5572,15 @@
     "jufuli": 45500,
     "lita": [
      1,
-     137
+     28
     ],
     "reza": [
-     13,
-     156
+     12,
+     31
     ]
    }
   ],
-  "refs": [
-   [
-    "p-03f356946e60"
-   ]
-  ],
+  "refs": [],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -5553,23 +5591,23 @@
   "n_lines": 1,
   "truth_source": "field_pass",
   "hidden_source": "none",
-  "mech_load": 4,
+  "mech_load": 3,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 164,
-   "lita_logmean": 5.1,
-   "lita_log_prod": 5.1,
+   "lita_min": 110,
+   "lita_logmean": 4.7,
+   "lita_log_prod": 4.7,
    "hidden_cut": 0.0,
-   "reza_log": 5.1,
+   "reza_log": 4.7,
    "cheapest": 1,
    "n_states": 4,
    "tele": 0,
    "n_subj": 2,
    "n_need": 0,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 35
   },
   "spec": {
@@ -5579,18 +5617,25 @@
     {
      "category": "Video Camera",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "frame rate",
+       "op": "ge",
+       "value": 30,
+       "unit": "fps"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "frame rate",
-      "plug type"
+      "plug type",
+      "digital zoom"
      ],
      "cap_line": 6650,
      "target": "p-00234846c1ff",
-     "n_a_stated_cap": 164,
-     "n_a_final": 164,
-     "n_a0_nocap": 164,
+     "n_a_stated_cap": 110,
+     "n_a_final": 110,
+     "n_a0_nocap": 110,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5630,7 +5675,6 @@
     ],
     "tags": [
      "1line",
-     "chain",
      "event",
      "cheapest"
     ],
@@ -5657,11 +5701,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-0380f4f3675f"
-     ]
-    ],
+    "refs": [],
     "needs": 0,
     "process_rules": [],
     "step_budget": 35,
@@ -5670,14 +5710,18 @@
     "dnu_default": false,
     "bundle_pct": 25.223880597014926,
     "subjects": [
-     "frame rate",
-     "plug type"
+     "plug type",
+     "digital zoom"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -5688,10 +5732,10 @@
     "suhe": 6650,
     "jufuli": 960,
     "lita": [
-     164
+     110
     ],
     "reza": [
-     164
+     110
     ]
    },
    {
@@ -5700,10 +5744,10 @@
     "suhe": 5904,
     "jufuli": 960,
     "lita": [
-     164
+     110
     ],
     "reza": [
-     164
+     110
     ]
    },
    {
@@ -5712,10 +5756,10 @@
     "suhe": 6650,
     "jufuli": 1027,
     "lita": [
-     164
+     110
     ],
     "reza": [
-     164
+     110
     ]
    },
    {
@@ -5724,18 +5768,14 @@
     "suhe": 5904,
     "jufuli": 1027,
     "lita": [
-     164
+     110
     ],
     "reza": [
-     164
+     110
     ]
    }
   ],
-  "refs": [
-   [
-    "p-0380f4f3675f"
-   ]
-  ],
+  "refs": [],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -5751,10 +5791,10 @@
    "n_lines": 3,
    "qty_total": 6,
    "lita_min": 1,
-   "lita_logmean": 2.185,
-   "lita_log_prod": 6.554,
-   "hidden_cut": 0.076,
-   "reza_log": 11.303,
+   "lita_logmean": 1.848,
+   "lita_log_prod": 5.545,
+   "hidden_cut": 0.097,
+   "reza_log": 9.042,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -5772,17 +5812,23 @@
     {
      "category": "Bed Sheets",
      "qty": 2,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "thread count",
+       "op": "ge",
+       "value": 135
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
       "fabric feature"
      ],
      "cap_line": 26500,
-     "target": "p-00fa6764f44f",
-     "n_a_stated_cap": 351,
-     "n_a_final": 351,
-     "n_a0_nocap": 351,
+     "target": "p-01fae47e69c8",
+     "n_a_stated_cap": 128,
+     "n_a_final": 128,
+     "n_a0_nocap": 128,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5793,23 +5839,24 @@
      "stated": [
       {
        "prop": "resolution",
+       "op": "has",
+       "value": "720p",
        "keys": [
         "image sensor",
         "resolution"
-       ],
-       "op": "has",
-       "value": "720p",
-       "support": 0.883
+       ]
       },
       {
-       "prop": "color family",
+       "prop": "color",
+       "op": "nin",
+       "value": [
+        "cream"
+       ],
        "keys": [
         "color",
-        "color family"
-       ],
-       "op": "has",
-       "value": "white",
-       "support": 0.567
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -5840,12 +5887,17 @@
      "stated": [
       {
        "prop": "warranty type",
-       "keys": [
-        "warranty type"
-       ],
        "op": "has",
        "value": "international manufacturer warranty",
-       "support": 0.68
+       "keys": [
+        "warranty type"
+       ]
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 3,
+       "unit": "inch"
       }
      ],
      "line_cap": null,
@@ -5863,9 +5915,9 @@
      ],
      "cap_line": 26500,
      "target": "p-b4f933dc7391",
-     "n_a_stated_cap": 21,
+     "n_a_stated_cap": 6,
      "n_a_final": 2,
-     "n_a0_nocap": 21,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5933,7 +5985,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -5944,14 +6000,14 @@
     "suhe": 26500,
     "jufuli": 26500,
     "lita": [
-     351,
+     128,
      1,
      2
     ],
     "reza": [
-     351,
+     128,
      11,
-     21
+     6
     ]
    }
   ],
@@ -5970,11 +6026,11 @@
   "features": {
    "n_lines": 3,
    "qty_total": 5,
-   "lita_min": 8,
-   "lita_logmean": 4.714,
-   "lita_log_prod": 14.143,
-   "hidden_cut": 0.014,
-   "reza_log": 15.06,
+   "lita_min": 1,
+   "lita_logmean": 1.914,
+   "lita_log_prod": 5.743,
+   "hidden_cut": 0.593,
+   "reza_log": 10.737,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -5983,7 +6039,7 @@
    "n_refs": 0,
    "hops_total": 0,
    "max_hops": 0,
-   "step_budget": 77
+   "step_budget": 78
   },
   "spec": {
    "suite": "s14_r16",
@@ -5994,14 +6050,14 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.939
+       "keys": [
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
      "line_cap": null,
@@ -6031,31 +6087,12 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
-       "op": "has",
-       "value": "plaid",
-       "support": 0.987
-      },
-      {
        "prop": "style",
-       "keys": [
-        "style"
-       ],
        "op": "has",
        "value": "vintage",
-       "support": 0.983
-      },
-      {
-       "prop": "material",
        "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.511
+        "style"
+       ]
       }
      ],
      "line_cap": null,
@@ -6079,10 +6116,10 @@
       "color"
      ],
      "cap_line": 23500,
-     "target": "p-0004b24b5fe6",
-     "n_a_stated_cap": 556,
-     "n_a_final": 556,
-     "n_a0_nocap": 556,
+     "target": "p-9fe5227b1bdb",
+     "n_a_stated_cap": 59,
+     "n_a_final": 1,
+     "n_a0_nocap": 59,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6093,31 +6130,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "plaid",
-       "support": 0.987
-      },
-      {
-       "prop": "style",
        "keys": [
-        "style"
-       ],
-       "op": "has",
-       "value": "vintage",
-       "support": 0.97
-      },
-      {
-       "prop": "upholstery",
-       "keys": [
-        "material",
-        "upholstery"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.511
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -6126,10 +6143,10 @@
       "color"
      ],
      "cap_line": 23500,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-01094a11e5f1",
+     "n_a_stated_cap": 39,
+     "n_a_final": 39,
+     "n_a0_nocap": 39,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6139,7 +6156,7 @@
    "cheapest": false,
    "events": [],
    "messages": 3,
-   "steps": 77,
+   "steps": 78,
    "task_id": "t-8f9fc2ba56",
    "extra": {
     "kinds": [],
@@ -6163,18 +6180,18 @@
      "outcome": "0_FIELD_PASSES",
      "truth_source": "derived_clauses",
      "hidden_source": "observed_reveal",
-     "steps": 77,
+     "steps": 78,
      "cart": [
       [
        "p-4b668b0d4c12",
        2
       ],
       [
-       "p-0004b24b5fe6",
+       "p-9fe5227b1bdb",
        2
       ],
       [
-       "p-001d5e4762b8",
+       "p-01094a11e5f1",
        1
       ]
      ]
@@ -6182,7 +6199,7 @@
     "refs": [],
     "needs": 3,
     "process_rules": [],
-    "step_budget": 77,
+    "step_budget": 78,
     "max_steps": 150,
     "decline": false,
     "dnu_default": true,
@@ -6199,11 +6216,21 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "1": "shelf_with_facts",
-     "2": "shelf_with_facts"
-    }
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -6214,13 +6241,13 @@
     "jufuli": 23500,
     "lita": [
      8,
-     556,
-     312
+     1,
+     39
     ],
     "reza": [
      20,
-     556,
-     312
+     59,
+     39
     ]
    }
   ],
@@ -6239,11 +6266,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 14,
-   "lita_logmean": 2.639,
-   "lita_log_prod": 2.639,
-   "hidden_cut": 0.222,
-   "reza_log": 2.89,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.0,
+   "reza_log": 0.0,
    "cheapest": 0,
    "n_states": 4,
    "tele": 0,
@@ -6264,12 +6291,18 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "usb",
-       "support": 0.978
+       "keys": [
+        "plug type"
+       ]
+      },
+      {
+       "prop": "warranty type",
+       "op": "nin",
+       "value": [
+        "local supplier warranty"
+       ]
       }
      ],
      "line_cap": null,
@@ -6283,13 +6316,13 @@
       }
      ],
      "decoys": [
-      "frame rate"
+      "frame rate fps"
      ],
      "cap_line": 7700,
      "target": "p-01c2dcf94dfe",
-     "n_a_stated_cap": 18,
-     "n_a_final": 14,
-     "n_a0_nocap": 18,
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6367,13 +6400,17 @@
     "bundle_pct": 26.88330871491876,
     "subjects": [
      "megapixels",
-     "frame rate"
+     "frame rate fps"
     ],
     "ligubo": [
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -6384,10 +6421,10 @@
     "suhe": 7700,
     "jufuli": 7700,
     "lita": [
-     14
+     1
     ],
     "reza": [
-     18
+     1
     ]
    },
    {
@@ -6396,10 +6433,10 @@
     "suhe": 6884,
     "jufuli": 6884,
     "lita": [
-     14
+     1
     ],
     "reza": [
-     18
+     1
     ]
    },
    {
@@ -6408,10 +6445,10 @@
     "suhe": 7700,
     "jufuli": 7700,
     "lita": [
-     14
+     1
     ],
     "reza": [
-     18
+     1
     ]
    },
    {
@@ -6420,10 +6457,10 @@
     "suhe": 6884,
     "jufuli": 6884,
     "lita": [
-     14
+     1
     ],
     "reza": [
-     18
+     1
     ]
    }
   ],
@@ -6436,27 +6473,27 @@
  },
  {
   "task_id": "t-938f1af50e",
-  "tier": "medium",
-  "n_lines": 2,
+  "tier": "hard",
+  "n_lines": 3,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 3,
+  "mech_load": 10,
   "features": {
-   "n_lines": 2,
-   "qty_total": 4,
+   "n_lines": 3,
+   "qty_total": 6,
    "lita_min": 1,
-   "lita_logmean": 1.629,
-   "lita_log_prod": 3.258,
-   "hidden_cut": 0.289,
-   "reza_log": 5.743,
-   "cheapest": 0,
+   "lita_logmean": 1.407,
+   "lita_log_prod": 4.22,
+   "hidden_cut": 0.083,
+   "reza_log": 5.136,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
-   "n_subj": 2,
-   "n_need": 1,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
    "step_budget": 35
   },
   "spec": {
@@ -6469,12 +6506,17 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "geometric",
-       "support": 0.961
+       "keys": [
+        "pattern"
+       ]
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 3,
+       "unit": "piece"
       }
      ],
      "line_cap": null,
@@ -6483,10 +6525,10 @@
       "fabric feature"
      ],
      "cap_line": 13500,
-     "target": "p-0d8e5adc9961",
-     "n_a_stated_cap": 26,
-     "n_a_final": 26,
-     "n_a0_nocap": 26,
+     "target": "p-16b4132ef541",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6497,13 +6539,23 @@
      "stated": [
       {
        "prop": "resolution",
+       "op": "has",
+       "value": "720p",
        "keys": [
         "image sensor",
         "resolution"
-       ],
-       "op": "has",
-       "value": "720p",
-       "support": 0.939
+       ]
+      },
+      {
+       "prop": "number of cameras included",
+       "op": "le",
+       "value": 6,
+       "keys": [
+        "number of cameras",
+        "cameras included",
+        "number of cameras included",
+        "number of camera"
+       ]
       }
      ],
      "line_cap": null,
@@ -6521,16 +6573,49 @@
      ],
      "cap_line": 13500,
      "target": "p-93f0683cf905",
-     "n_a_stated_cap": 12,
+     "n_a_stated_cap": 2,
      "n_a_final": 1,
-     "n_a0_nocap": 12,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Memory Cards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "speed class",
+       "op": "has",
+       "value": "u3",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "capacity",
+       "op": "ge",
+       "value": 32.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fabric feature"
+     ],
+     "cap_line": 13500,
+     "target": "p-20ef639e1446",
+     "n_a_stated_cap": 5,
+     "n_a_final": 4,
+     "n_a0_nocap": 5,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 13500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -6538,8 +6623,10 @@
    "extra": {
     "kinds": [],
     "tags": [
-     "2line",
+     "3line",
      "hidden",
+     "chain",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -6560,17 +6647,29 @@
      "steps": 35,
      "cart": [
       [
-       "p-0d8e5adc9961",
+       "p-16b4132ef541",
        1
       ],
       [
        "p-93f0683cf905",
        3
+      ],
+      [
+       "p-20ef639e1446",
+       2
       ]
      ]
     },
-    "refs": [],
-    "needs": 1,
+    "refs": [
+     [
+      "p-b8645f448db6",
+      "p-2d90696e6aaa",
+      "p-3298324097e3",
+      "p-dc933260093e",
+      "p-52df83608cb0"
+     ]
+    ],
+    "needs": 2,
     "process_rules": [],
     "step_budget": 35,
     "max_steps": 150,
@@ -6579,13 +6678,19 @@
     "bundle_pct": 22.932917316692667,
     "subjects": [
      "input voltage of the cctv security cameras",
+     "capacity of the memory cards",
      "fabric feature of the bed sheets"
     ],
     "ligubo": [
      0,
+     1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -6594,18 +6699,28 @@
     "bits": 0,
     "tele": false,
     "suhe": 13500,
-    "jufuli": 13500,
+    "jufuli": 5268,
     "lita": [
-     26,
-     1
+     17,
+     1,
+     4
     ],
     "reza": [
-     26,
-     12
+     17,
+     2,
+     5
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-b8645f448db6",
+    "p-2d90696e6aaa",
+    "p-3298324097e3",
+    "p-dc933260093e",
+    "p-52df83608cb0"
+   ]
+  ],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -6625,7 +6740,7 @@
    "lita_log_prod": 19.063,
    "hidden_cut": 0.012,
    "reza_log": 19.979,
-   "cheapest": 0,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
@@ -6829,7 +6944,7 @@
     }
    ],
    "cap": 31500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 100,
@@ -6841,6 +6956,7 @@
      "4line",
      "hidden",
      "chain",
+     "cheapest",
      "dnu-default",
      "ref-reply"
     ],
@@ -6903,7 +7019,11 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "partial",
+    "fits": [],
+    "conds": [],
+    "composed_span": "Sorry \u2014 I need 1 x furniture covers with upholsterymaterial chenille; 1 x slipcovers and furniture covers with fabric chenille and closure type slip-on; 1 x sofa covers & slips with style antique and warranty policy set and material microfiber; 2 x sofas with furniture features slipcovered and style antique and warranty policy set \u2014 if that's alright. Would you mind keeping the whole total at 31500 cents US or under \u2014 sorry.",
+    "fits_infeasible": false,
     "fallback_lines": {
      "1": "shelf_with_facts",
      "2": "shelf_with_facts",
@@ -6916,7 +7036,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 31500,
-    "jufuli": 31500,
+    "jufuli": 3225,
     "lita": [
      8,
      137,
@@ -6953,9 +7073,9 @@
    "lita_min": 4,
    "lita_logmean": 2.105,
    "lita_log_prod": 6.314,
-   "hidden_cut": 0.5,
-   "reza_log": 9.267,
-   "cheapest": 0,
+   "hidden_cut": 0.529,
+   "reza_log": 9.427,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
@@ -6975,12 +7095,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "animal print",
-       "support": 0.944
+       "keys": [
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -7003,14 +7122,13 @@
      "stated": [
       {
        "prop": "security camera style",
+       "op": "has",
+       "value": "dome",
        "keys": [
         "camera style",
         "security camera style",
         "style"
-       ],
-       "op": "has",
-       "value": "dome",
-       "support": 0.939
+       ]
       }
      ],
      "line_cap": null,
@@ -7041,23 +7159,23 @@
      "stated": [
       {
        "prop": "warranty type",
-       "keys": [
-        "warranty type"
-       ],
        "op": "has",
        "value": "local supplier warranty",
-       "support": 0.541
+       "keys": [
+        "warranty type"
+       ]
       },
       {
        "prop": "video capture resolution",
+       "op": "nin",
+       "value": [
+        "1080p"
+       ],
        "keys": [
         "megapixels",
         "video capture resolution",
         "video resolution"
-       ],
-       "op": "has",
-       "value": "4k",
-       "support": 0.437
+       ]
       }
      ],
      "line_cap": null,
@@ -7075,16 +7193,16 @@
      ],
      "cap_line": 22500,
      "target": "p-6b9c1564ae2f",
-     "n_a_stated_cap": 23,
+     "n_a_stated_cap": 27,
      "n_a_final": 6,
-     "n_a0_nocap": 23,
+     "n_a0_nocap": 27,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 22500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -7094,6 +7212,7 @@
     "tags": [
      "3line",
      "hidden",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -7145,7 +7264,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -7154,7 +7277,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 22500,
-    "jufuli": 22500,
+    "jufuli": 14564,
     "lita": [
      23,
      4,
@@ -7163,7 +7286,7 @@
     "reza": [
      23,
      20,
-     23
+     27
     ]
    }
   ],
@@ -7178,7 +7301,7 @@
   "n_lines": 2,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 3,
+  "mech_load": 4,
   "features": {
    "n_lines": 2,
    "qty_total": 3,
@@ -7187,14 +7310,14 @@
    "lita_log_prod": 2.079,
    "hidden_cut": 0.609,
    "reza_log": 4.787,
-   "cheapest": 0,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 2,
    "n_need": 1,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
    "step_budget": 35
   },
   "spec": {
@@ -7207,12 +7330,12 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "stripes",
-       "support": 0.515
+       "ref": true,
+       "keys": [
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -7242,14 +7365,14 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "color family",
-       "keys": [
-        "color",
-        "color family"
-       ],
+       "prop": "color",
        "op": "has",
        "value": "cream",
-       "support": 0.913
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
@@ -7268,7 +7391,7 @@
     }
    ],
    "cap": 1450,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -7277,7 +7400,9 @@
     "kinds": [],
     "tags": [
      "2line",
-     "hidden"
+     "hidden",
+     "chain",
+     "cheapest"
     ],
     "held_out": false,
     "ids10": false,
@@ -7306,7 +7431,11 @@
       ]
      ]
     },
-    "refs": [],
+    "refs": [
+     [
+      "p-d429cb81e2e9"
+     ]
+    ],
     "needs": 1,
     "process_rules": [],
     "step_budget": 35,
@@ -7322,7 +7451,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -7331,7 +7464,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 1450,
-    "jufuli": 1450,
+    "jufuli": 1320,
     "lita": [
      1,
      8
@@ -7342,7 +7475,11 @@
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-d429cb81e2e9"
+   ]
+  ],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -7357,11 +7494,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 366,
-   "lita_logmean": 5.903,
-   "lita_log_prod": 5.903,
+   "lita_min": 41,
+   "lita_logmean": 3.714,
+   "lita_log_prod": 3.714,
    "hidden_cut": 0.0,
-   "reza_log": 5.903,
+   "reza_log": 3.714,
    "cheapest": 0,
    "n_states": 4,
    "tele": 0,
@@ -7379,18 +7516,35 @@
     {
      "category": "Tripods and Camera Supports",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
+       "keys": [
+        "leg lock type",
+        "leglocktype",
+        "lock type"
+       ]
+      },
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 1.188412,
+       "unit": "kg"
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "material",
-      "leg sections"
+      "leg sections",
+      "material"
      ],
      "cap_line": 9000,
-     "target": "p-0034e971ad0e",
-     "n_a_stated_cap": 366,
-     "n_a_final": 366,
-     "n_a0_nocap": 366,
+     "target": "p-00b61131a0fb",
+     "n_a_stated_cap": 41,
+     "n_a_final": 41,
+     "n_a0_nocap": 41,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -7464,14 +7618,18 @@
     "dnu_default": false,
     "bundle_pct": 22.22222222222222,
     "subjects": [
-     "material",
-     "leg sections"
+     "leg sections",
+     "material"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -7482,10 +7640,10 @@
     "suhe": 9000,
     "jufuli": 9000,
     "lita": [
-     366
+     41
     ],
     "reza": [
-     366
+     41
     ]
    },
    {
@@ -7494,10 +7652,10 @@
     "suhe": 9000,
     "jufuli": 9000,
     "lita": [
-     366
+     102
     ],
     "reza": [
-     366
+     102
     ]
    },
    {
@@ -7506,10 +7664,10 @@
     "suhe": 9000,
     "jufuli": 9000,
     "lita": [
-     366
+     41
     ],
     "reza": [
-     366
+     41
     ]
    },
    {
@@ -7518,10 +7676,10 @@
     "suhe": 9000,
     "jufuli": 9000,
     "lita": [
-     366
+     102
     ],
     "reza": [
-     366
+     102
     ]
    }
   ],
@@ -7545,7 +7703,7 @@
    "lita_log_prod": 4.025,
    "hidden_cut": 0.514,
    "reza_log": 5.775,
-   "cheapest": 0,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
@@ -7565,12 +7723,11 @@
      "stated": [
       {
        "prop": "connectivity",
-       "keys": [
-        "connectivity"
-       ],
        "op": "has",
        "value": "wired",
-       "support": 0.97
+       "keys": [
+        "connectivity"
+       ]
       }
      ],
      "line_cap": null,
@@ -7593,12 +7750,11 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "usb",
-       "support": 0.931
+       "keys": [
+        "plug type"
+       ]
       }
      ],
      "line_cap": null,
@@ -7635,7 +7791,7 @@
     }
    ],
    "cap": 35000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -7646,6 +7802,7 @@
      "2line",
      "hidden",
      "chain",
+     "cheapest",
      "dnu-default",
      "ref-reply"
     ],
@@ -7698,7 +7855,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -7707,7 +7868,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 35000,
-    "jufuli": 35000,
+    "jufuli": 6742,
     "lita": [
      14,
      4
@@ -7737,11 +7898,11 @@
   "features": {
    "n_lines": 2,
    "qty_total": 2,
-   "lita_min": 21,
-   "lita_logmean": 3.632,
-   "lita_log_prod": 7.264,
-   "hidden_cut": 0.514,
-   "reza_log": 8.132,
+   "lita_min": 2,
+   "lita_logmean": 1.589,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.222,
+   "reza_log": 4.277,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -7761,16 +7922,20 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "bedding size 2",
-       "keys": [
-        "bed size",
-        "bedding size",
-        "bedding size 2",
-        "size"
-       ],
+       "prop": "bedding size",
        "op": "has",
        "value": "twin",
-       "support": 0.974
+       "keys": [
+        "bedding size",
+        "bedding size 2",
+        "bed size",
+        "size"
+       ]
+      },
+      {
+       "prop": "thread count",
+       "op": "ge",
+       "value": 135
       }
      ],
      "line_cap": null,
@@ -7779,10 +7944,10 @@
       "fabric feature"
      ],
      "cap_line": 23000,
-     "target": "p-12af83522b92",
-     "n_a_stated_cap": 21,
-     "n_a_final": 21,
-     "n_a0_nocap": 21,
+     "target": "p-146c64fec25e",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -7790,7 +7955,19 @@
     {
      "category": "Video Camera",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "warranty type",
+       "op": "has",
+       "value": "international manufacturer warranty"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 3,
+       "unit": "inch"
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -7805,10 +7982,10 @@
       "fabric feature"
      ],
      "cap_line": 23000,
-     "target": "p-009262b512dd",
-     "n_a_stated_cap": 162,
-     "n_a_final": 68,
-     "n_a0_nocap": 162,
+     "target": "p-b4f933dc7391",
+     "n_a_stated_cap": 6,
+     "n_a_final": 2,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -7871,7 +8048,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -7882,12 +8063,12 @@
     "suhe": 23000,
     "jufuli": 23000,
     "lita": [
-     21,
-     68
+     12,
+     2
     ],
     "reza": [
-     21,
-     162
+     12,
+     6
     ]
    }
   ],
@@ -7908,11 +8089,11 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 43,
-   "lita_logmean": 3.761,
-   "lita_log_prod": 3.761,
-   "hidden_cut": 0.792,
-   "reza_log": 5.333,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.6,
+   "reza_log": 2.303,
    "cheapest": 0,
    "n_states": 8,
    "tele": 0,
@@ -7932,20 +8113,17 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "security camera feature",
-       "keys": [
-        "environment",
-        "feature",
-        "features",
-        "indoor/outdoor",
-        "location",
-        "placement",
-        "security camera feature",
-        "security camera features"
-       ],
+       "prop": "resolution",
        "op": "has",
-       "value": "indoor",
-       "support": 0.805
+       "value": "3mp"
+      },
+      {
+       "prop": "input voltage",
+       "op": "in",
+       "value": [
+        "12v",
+        "5v"
+       ]
       }
      ],
      "line_cap": null,
@@ -7959,13 +8137,13 @@
       }
      ],
      "decoys": [
-      "plug type"
+      "security camera style"
      ],
      "cap_line": 2500,
-     "target": "p-00a87fd8990d",
-     "n_a_stated_cap": 207,
-     "n_a_final": 43,
-     "n_a0_nocap": 207,
+     "target": "p-135308e51957",
+     "n_a_stated_cap": 10,
+     "n_a_final": 4,
+     "n_a0_nocap": 10,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8052,13 +8230,17 @@
     "bundle_pct": 14.115898959881129,
     "subjects": [
      "recorder channel capacity",
-     "plug type"
+     "security camera style"
     ],
     "ligubo": [
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -8069,10 +8251,10 @@
     "suhe": 2500,
     "jufuli": 2500,
     "lita": [
-     43
+     4
     ],
     "reza": [
-     207
+     10
     ]
    },
    {
@@ -8081,10 +8263,10 @@
     "suhe": 2002,
     "jufuli": 2002,
     "lita": [
-     43
+     4
     ],
     "reza": [
-     207
+     10
     ]
    },
    {
@@ -8093,10 +8275,10 @@
     "suhe": 2500,
     "jufuli": 2500,
     "lita": [
-     43
+     5
     ],
     "reza": [
-     207
+     30
     ]
    },
    {
@@ -8105,10 +8287,10 @@
     "suhe": 2002,
     "jufuli": 2002,
     "lita": [
-     43
+     5
     ],
     "reza": [
-     207
+     30
     ]
    },
    {
@@ -8117,10 +8299,10 @@
     "suhe": 2500,
     "jufuli": 2500,
     "lita": [
-     43
+     4
     ],
     "reza": [
-     207
+     10
     ]
    },
    {
@@ -8129,10 +8311,10 @@
     "suhe": 2002,
     "jufuli": 2002,
     "lita": [
-     43
+     4
     ],
     "reza": [
-     207
+     10
     ]
    },
    {
@@ -8141,10 +8323,10 @@
     "suhe": 2500,
     "jufuli": 2500,
     "lita": [
-     43
+     5
     ],
     "reza": [
-     207
+     30
     ]
    },
    {
@@ -8153,10 +8335,10 @@
     "suhe": 2002,
     "jufuli": 2002,
     "lita": [
-     43
+     5
     ],
     "reza": [
-     207
+     30
     ]
    }
   ],
@@ -8171,23 +8353,23 @@
   "n_lines": 3,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 6,
+  "mech_load": 5,
   "features": {
    "n_lines": 3,
    "qty_total": 9,
-   "lita_min": 14,
-   "lita_logmean": 3.731,
-   "lita_log_prod": 11.192,
-   "hidden_cut": 0.125,
-   "reza_log": 12.727,
+   "lita_min": 6,
+   "lita_logmean": 3.057,
+   "lita_log_prod": 9.17,
+   "hidden_cut": 0.232,
+   "reza_log": 10.471,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
    "n_need": 2,
-   "n_refs": 1,
-   "hops_total": 1,
-   "max_hops": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
    "step_budget": 35
   },
   "spec": {
@@ -8200,12 +8382,16 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "geometric",
-       "support": 0.957
+       "keys": [
+        "pattern"
+       ]
+      },
+      {
+       "prop": "thread count",
+       "op": "le",
+       "value": 135
       }
      ],
      "line_cap": null,
@@ -8219,13 +8405,13 @@
       }
      ],
      "decoys": [
-      "fabric feature"
+      "age group"
      ],
      "cap_line": 42000,
-     "target": "p-146c64fec25e",
-     "n_a_stated_cap": 26,
-     "n_a_final": 14,
-     "n_a0_nocap": 26,
+     "target": "p-30ae7ca94468",
+     "n_a_stated_cap": 9,
+     "n_a_final": 6,
+     "n_a0_nocap": 9,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8233,17 +8419,29 @@
     {
      "category": "CCTV Security Cameras",
      "qty": 3,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "number of cameras included",
+       "op": "le",
+       "value": 2,
+       "keys": [
+        "number of cameras",
+        "cameras included",
+        "number of cameras included",
+        "number of camera"
+       ]
+      }
+     ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "fabric feature"
+      "age group"
      ],
      "cap_line": 42000,
-     "target": "p-000536ae44e9",
-     "n_a_stated_cap": 259,
-     "n_a_final": 259,
-     "n_a0_nocap": 259,
+     "target": "p-0014efd52783",
+     "n_a_stated_cap": 80,
+     "n_a_final": 80,
+     "n_a0_nocap": 80,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8254,23 +8452,15 @@
      "stated": [
       {
        "prop": "card type",
+       "op": "has",
+       "value": "microsdxc",
        "keys": [
         "card type",
         "cardtype",
         "device interface",
-        "deviceinterface",
-        "form factor",
-        "format",
-        "interface",
         "memory card type",
-        "memory form factor",
-        "microsd card slot",
-        "storage type",
         "type"
-       ],
-       "op": "has",
-       "value": "microsdxc",
-       "support": 0.926
+       ]
       }
      ],
      "line_cap": null,
@@ -8284,13 +8474,13 @@
       }
      ],
      "decoys": [
-      "fabric feature"
+      "age group"
      ],
      "cap_line": 42000,
      "target": "p-08edd8a4c1ca",
-     "n_a_stated_cap": 50,
+     "n_a_stated_cap": 49,
      "n_a_final": 20,
-     "n_a0_nocap": 50,
+     "n_a0_nocap": 49,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8307,7 +8497,6 @@
     "tags": [
      "3line",
      "hidden",
-     "chain",
      "cheapest",
      "dnu-default"
     ],
@@ -8329,11 +8518,11 @@
      "steps": 35,
      "cart": [
       [
-       "p-146c64fec25e",
+       "p-30ae7ca94468",
        3
       ],
       [
-       "p-000536ae44e9",
+       "p-0014efd52783",
        3
       ],
       [
@@ -8342,11 +8531,7 @@
       ]
      ]
     },
-    "refs": [
-     [
-      "p-18fa7d4ea1f1"
-     ]
-    ],
+    "refs": [],
     "needs": 2,
     "process_rules": [
      "view_after_add"
@@ -8359,14 +8544,18 @@
     "subjects": [
      "capacity of the memory cards",
      "sheet type of the bed sheets",
-     "fabric feature of the bed sheets"
+     "age group of the bed sheets"
     ],
     "ligubo": [
      0,
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -8377,22 +8566,18 @@
     "suhe": 42000,
     "jufuli": 4137,
     "lita": [
-     14,
-     259,
+     6,
+     80,
      20
     ],
     "reza": [
-     26,
-     259,
-     50
+     9,
+     80,
+     49
     ]
    }
   ],
-  "refs": [
-   [
-    "p-18fa7d4ea1f1"
-   ]
-  ],
+  "refs": [],
   "process_rules": [
    "view_after_add"
   ],
@@ -8405,23 +8590,23 @@
   "n_lines": 3,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 7,
   "features": {
    "n_lines": 3,
    "qty_total": 6,
    "lita_min": 0,
    "lita_logmean": 1.045,
    "lita_log_prod": 3.135,
-   "hidden_cut": 0.343,
-   "reza_log": 5.62,
-   "cheapest": 0,
+   "hidden_cut": 0.351,
+   "reza_log": 6.314,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 1,
    "n_subj": 3,
    "n_need": 2,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
    "step_budget": 35
   },
   "spec": {
@@ -8434,13 +8619,19 @@
      "stated": [
       {
        "prop": "resolution",
+       "op": "has",
+       "value": "720p",
        "keys": [
         "image sensor",
         "resolution"
-       ],
-       "op": "has",
-       "value": "720p",
-       "support": 0.81
+       ]
+      },
+      {
+       "prop": "recorder channel capacity",
+       "op": "nin",
+       "value": [
+        "8 channel"
+       ]
       }
      ],
      "line_cap": null,
@@ -8458,9 +8649,9 @@
      ],
      "cap_line": 52500,
      "target": null,
-     "n_a_stated_cap": 12,
+     "n_a_stated_cap": 2,
      "n_a_final": 0,
-     "n_a0_nocap": 12,
+     "n_a0_nocap": 2,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8470,38 +8661,15 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "capacity",
-       "keys": [
-        "capacity",
-        "capacity options",
-        "storage capacity"
-       ],
-       "op": "has",
-       "value": "512 gb",
-       "support": 0.723
-      },
-      {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options"
-       ],
        "op": "has",
        "value": "silver",
-       "support": 0.433
-      },
-      {
-       "prop": "size",
        "keys": [
-        "available capacities",
-        "capacity",
-        "size",
-        "storage",
-        "storage capacities"
+        "color",
+        "color family",
+        "colour"
        ],
-       "op": "has",
-       "value": "128gb",
-       "support": 0.407
+       "ref": true
       }
      ],
      "line_cap": null,
@@ -8518,10 +8686,10 @@
       "input voltage"
      ],
      "cap_line": 52500,
-     "target": null,
-     "n_a_stated_cap": 0,
-     "n_a_final": 0,
-     "n_a0_nocap": 0,
+     "target": "p-cee510dcc884",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8532,12 +8700,11 @@
      "stated": [
       {
        "prop": "plug type",
-       "keys": [
-        "plug type"
-       ],
        "op": "has",
        "value": "usb",
-       "support": 0.84
+       "keys": [
+        "plug type"
+       ]
       }
      ],
      "line_cap": null,
@@ -8556,7 +8723,7 @@
     }
    ],
    "cap": 52500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -8566,6 +8733,8 @@
     "tags": [
      "3line",
      "hidden",
+     "chain",
+     "cheapest",
      "dnu-default"
     ],
     "held_out": false,
@@ -8586,12 +8755,21 @@
      "steps": 35,
      "cart": [
       [
+       "p-cee510dcc884",
+       2
+      ],
+      [
        "p-01c2dcf94dfe",
        3
       ]
      ]
     },
-    "refs": [],
+    "refs": [
+     [
+      "p-0cfcda84949f",
+      "p-0159cd96144d"
+     ]
+    ],
     "needs": 2,
     "process_rules": [],
     "step_budget": 35,
@@ -8609,7 +8787,11 @@
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -8621,17 +8803,22 @@
     "jufuli": 52500,
     "lita": [
      0,
-     0,
+     1,
      23
     ],
     "reza": [
+     2,
      12,
-     0,
      23
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-0cfcda84949f",
+    "p-0159cd96144d"
+   ]
+  ],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -8646,11 +8833,11 @@
   "features": {
    "n_lines": 2,
    "qty_total": 3,
-   "lita_min": 26,
-   "lita_logmean": 4.154,
-   "lita_log_prod": 8.308,
-   "hidden_cut": 0.0,
-   "reza_log": 8.308,
+   "lita_min": 1,
+   "lita_logmean": 2.525,
+   "lita_log_prod": 5.05,
+   "hidden_cut": 0.037,
+   "reza_log": 6.996,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -8670,13 +8857,17 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
+       "prop": "thread count",
        "op": "has",
-       "value": "geometric",
-       "support": 0.913
+       "value": "135",
+       "ref": true
+      },
+      {
+       "prop": "age group",
+       "op": "nin",
+       "value": [
+        "adults"
+       ]
       }
      ],
      "line_cap": null,
@@ -8693,10 +8884,10 @@
       "fabric feature"
      ],
      "cap_line": 20000,
-     "target": "p-0d8e5adc9961",
-     "n_a_stated_cap": 26,
-     "n_a_final": 26,
-     "n_a0_nocap": 26,
+     "target": "p-6f095985a808",
+     "n_a_stated_cap": 7,
+     "n_a_final": 1,
+     "n_a0_nocap": 7,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8707,14 +8898,13 @@
      "stated": [
       {
        "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
        "keys": [
         "leg lock type",
         "leglocktype",
         "lock type"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.957
+       ]
       }
      ],
      "line_cap": null,
@@ -8764,7 +8954,7 @@
      "steps": 35,
      "cart": [
       [
-       "p-0d8e5adc9961",
+       "p-6f095985a808",
        1
       ],
       [
@@ -8775,7 +8965,7 @@
     },
     "refs": [
      [
-      "p-04b1fbc48257"
+      "p-cc665ff65aef"
      ]
     ],
     "needs": 1,
@@ -8795,10 +8985,12 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
-    "fallback_lines": {
-     "0": "stated_only"
-    }
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
+    "fallback_lines": {}
    }
   },
   "states": [
@@ -8808,18 +9000,18 @@
     "suhe": 20000,
     "jufuli": 20000,
     "lita": [
-     26,
+     1,
      156
     ],
     "reza": [
-     26,
+     7,
      156
     ]
    }
   ],
   "refs": [
    [
-    "p-04b1fbc48257"
+    "p-cc665ff65aef"
    ]
   ],
   "process_rules": [
@@ -8838,11 +9030,11 @@
   "features": {
    "n_lines": 4,
    "qty_total": 5,
-   "lita_min": 7,
-   "lita_logmean": 3.047,
-   "lita_log_prod": 12.189,
-   "hidden_cut": 0.023,
-   "reza_log": 12.951,
+   "lita_min": 1,
+   "lita_logmean": 1.776,
+   "lita_log_prod": 7.105,
+   "hidden_cut": 0.317,
+   "reza_log": 10.432,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -8863,13 +9055,20 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "colorsavailable"
-       ],
        "op": "has",
        "value": "tan",
-       "support": 0.887
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
+      },
+      {
+       "prop": "ventilation",
+       "op": "nin",
+       "value": [
+        "open front mesh vent"
+       ]
       }
      ],
      "line_cap": null,
@@ -8883,13 +9082,13 @@
       }
      ],
      "decoys": [
-      "ventilation"
+      "pattern"
      ],
      "cap_line": 27500,
      "target": "p-0bbef61e81f5",
-     "n_a_stated_cap": 9,
-     "n_a_final": 9,
-     "n_a0_nocap": 9,
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8900,14 +9099,13 @@
      "stated": [
       {
        "prop": "closure type",
-       "keys": [
-        "closure",
-        "closure type",
-        "closuretype"
-       ],
        "op": "has",
        "value": "slip-on",
-       "support": 0.818
+       "keys": [
+        "closure type",
+        "closuretype",
+        "closure"
+       ]
       }
      ],
      "line_cap": null,
@@ -8921,7 +9119,7 @@
       }
      ],
      "decoys": [
-      "ventilation"
+      "pattern"
      ],
      "cap_line": 27500,
      "target": "p-0002769f8f8e",
@@ -8937,34 +9135,24 @@
      "qty": 2,
      "stated": [
       {
-       "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
-       "op": "has",
-       "value": "geometric",
-       "support": 0.983
-      },
-      {
        "prop": "style",
-       "keys": [
-        "style"
-       ],
        "op": "has",
        "value": "colorful",
-       "support": 0.939
+       "keys": [
+        "style"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "ventilation"
+      "pattern"
      ],
      "cap_line": 27500,
-     "target": "p-0e3f2120b22a",
-     "n_a_stated_cap": 10,
-     "n_a_final": 10,
-     "n_a0_nocap": 10,
+     "target": "p-05a407d58566",
+     "n_a_stated_cap": 29,
+     "n_a_final": 29,
+     "n_a0_nocap": 29,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8975,30 +9163,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "geometric",
-       "support": 0.983
-      },
-      {
-       "prop": "style",
        "keys": [
-        "style"
-       ],
-       "op": "has",
-       "value": "colorful",
-       "support": 0.931
-      },
-      {
-       "prop": "sofa type",
-       "keys": [
-        "sofa type"
-       ],
-       "op": "has",
-       "value": "sofa bed",
-       "support": 0.394
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -9012,13 +9181,13 @@
       }
      ],
      "decoys": [
-      "ventilation"
+      "pattern"
      ],
      "cap_line": 27500,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-f4e3c5c4af13",
+     "n_a_stated_cap": 13,
+     "n_a_final": 1,
+     "n_a0_nocap": 13,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -9064,11 +9233,11 @@
        1
       ],
       [
-       "p-0e3f2120b22a",
+       "p-05a407d58566",
        2
       ],
       [
-       "p-001d5e4762b8",
+       "p-f4e3c5c4af13",
        1
       ]
      ]
@@ -9085,7 +9254,7 @@
      "closure of the furniture covers",
      "material of the slipcovers and furniture covers",
      "style of the sofas",
-     "ventilation of the furniture covers"
+     "pattern of the furniture covers"
     ],
     "ligubo": [
      0,
@@ -9093,10 +9262,26 @@
      2,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {
-     "0": "stated_only",
-     "3": "shelf_with_facts"
+     "0": "stated_only"
     }
    }
   },
@@ -9107,16 +9292,16 @@
     "suhe": 27500,
     "jufuli": 27500,
     "lita": [
-     9,
+     6,
      7,
-     10,
-     312
+     29,
+     1
     ],
     "reza": [
-     9,
+     6,
      15,
-     10,
-     312
+     29,
+     13
     ]
    }
   ],
@@ -9131,23 +9316,23 @@
   "n_lines": 2,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 4,
+  "mech_load": 7,
   "features": {
    "n_lines": 2,
    "qty_total": 3,
-   "lita_min": 48,
-   "lita_logmean": 4.053,
-   "lita_log_prod": 8.105,
-   "hidden_cut": 0.773,
-   "reza_log": 10.961,
-   "cheapest": 0,
+   "lita_min": 1,
+   "lita_logmean": 0.347,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.889,
+   "reza_log": 4.836,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 3,
    "n_need": 2,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
    "step_budget": 35
   },
   "spec": {
@@ -9157,7 +9342,20 @@
     {
      "category": "Bed Sheets",
      "qty": 2,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "checkered",
+       "ref": true
+      },
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 3,
+       "unit": "piece"
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -9169,13 +9367,13 @@
       }
      ],
      "decoys": [
-      "sheet type"
+      "age group"
      ],
      "cap_line": 20000,
-     "target": "p-01fae47e69c8",
-     "n_a_stated_cap": 351,
-     "n_a_final": 48,
-     "n_a0_nocap": 351,
+     "target": "p-9910451c2fdd",
+     "n_a_stated_cap": 6,
+     "n_a_final": 1,
+     "n_a0_nocap": 6,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -9183,7 +9381,13 @@
     {
      "category": "Video Camera",
      "qty": 1,
-     "stated": [],
+     "stated": [
+      {
+       "prop": "warranty type",
+       "op": "has",
+       "value": "international manufacturer warranty"
+      }
+     ],
      "line_cap": null,
      "hidden": [
       {
@@ -9195,20 +9399,20 @@
       }
      ],
      "decoys": [
-      "sheet type"
+      "age group"
      ],
      "cap_line": 20000,
-     "target": "p-009262b512dd",
-     "n_a_stated_cap": 164,
-     "n_a_final": 69,
-     "n_a0_nocap": 164,
+     "target": "p-b4f933dc7391",
+     "n_a_stated_cap": 21,
+     "n_a_final": 2,
+     "n_a0_nocap": 21,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 20000,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -9217,7 +9421,9 @@
     "kinds": [],
     "tags": [
      "2line",
-     "hidden"
+     "hidden",
+     "chain",
+     "cheapest"
     ],
     "held_out": false,
     "ids10": false,
@@ -9237,16 +9443,22 @@
      "steps": 35,
      "cart": [
       [
-       "p-01fae47e69c8",
+       "p-9910451c2fdd",
        2
       ],
       [
-       "p-009262b512dd",
+       "p-b4f933dc7391",
        1
       ]
      ]
     },
-    "refs": [],
+    "refs": [
+     [
+      "p-49a744743638",
+      "p-215dd5fa9f97",
+      "p-15edbc8a0058"
+     ]
+    ],
     "needs": 2,
     "process_rules": [],
     "step_budget": 35,
@@ -9257,14 +9469,18 @@
     "subjects": [
      "fabric feature of the bed sheets",
      "memory card type of the video camera",
-     "sheet type of the bed sheets"
+     "age group of the bed sheets"
     ],
     "ligubo": [
      0,
      1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -9273,18 +9489,24 @@
     "bits": 0,
     "tele": false,
     "suhe": 20000,
-    "jufuli": 20000,
+    "jufuli": 9090,
     "lita": [
-     48,
-     69
+     1,
+     2
     ],
     "reza": [
-     351,
-     164
+     6,
+     21
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-49a744743638",
+    "p-215dd5fa9f97",
+    "p-15edbc8a0058"
+   ]
+  ],
   "process_rules": [],
   "held_out": false,
   "ids10": false
@@ -9295,7 +9517,7 @@
   "n_lines": 3,
   "truth_source": "derived_clauses",
   "hidden_source": "none",
-  "mech_load": 3,
+  "mech_load": 4,
   "features": {
    "n_lines": 3,
    "qty_total": 5,
@@ -9309,9 +9531,9 @@
    "tele": 0,
    "n_subj": 2,
    "n_need": 0,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
    "step_budget": 78
   },
   "spec": {
@@ -9324,24 +9546,27 @@
      "stated": [
       {
        "prop": "closure",
-       "keys": [
-        "closure",
-        "closuretype"
-       ],
        "op": "has",
        "value": "zipper",
-       "support": 0.706
+       "keys": [
+        "closure",
+        "closure type",
+        "closuretype"
+       ],
+       "ref": true
       },
       {
        "prop": "pattern",
+       "op": "in",
+       "value": [
+        "ripstop grid",
+        "solid"
+       ],
        "keys": [
         "pattern",
         "pattern options",
         "patternoptions"
-       ],
-       "op": "has",
-       "value": "solid",
-       "support": 0.563
+       ]
       }
      ],
      "line_cap": null,
@@ -9365,12 +9590,11 @@
      "stated": [
       {
        "prop": "material",
-       "keys": [
-        "material"
-       ],
        "op": "has",
        "value": "spandex",
-       "support": 0.918
+       "keys": [
+        "material"
+       ]
       }
      ],
      "line_cap": null,
@@ -9394,12 +9618,11 @@
      "stated": [
       {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "geometric",
-       "support": 0.974
+       "keys": [
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
@@ -9428,6 +9651,7 @@
     "kinds": [],
     "tags": [
      "3line",
+     "chain",
      "cheapest",
      "dnu-default"
     ],
@@ -9462,7 +9686,11 @@
       ]
      ]
     },
-    "refs": [],
+    "refs": [
+     [
+      "p-994d360914bb"
+     ]
+    ],
     "needs": 1,
     "process_rules": [
      "view_after_add"
@@ -9480,7 +9708,20 @@
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -9489,7 +9730,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 37500,
-    "jufuli": 9660,
+    "jufuli": 13528,
     "lita": [
      6,
      22,
@@ -9502,7 +9743,11 @@
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-994d360914bb"
+   ]
+  ],
   "process_rules": [
    "view_after_add"
   ],
@@ -9515,22 +9760,22 @@
   "n_lines": 1,
   "truth_source": "field_pass",
   "hidden_source": "observed_reveal",
-  "mech_load": 6,
+  "mech_load": 5,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 37,
-   "lita_logmean": 3.611,
-   "lita_log_prod": 3.611,
-   "hidden_cut": 0.808,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.943,
    "reza_log": 5.263,
-   "cheapest": 0,
+   "cheapest": 1,
    "n_states": 4,
    "tele": 0,
    "n_subj": 2,
    "n_need": 1,
-   "n_refs": 2,
-   "hops_total": 2,
+   "n_refs": 1,
+   "hops_total": 1,
    "max_hops": 1,
    "step_budget": 35
   },
@@ -9544,23 +9789,20 @@
      "stated": [
       {
        "prop": "fabric feature",
+       "op": "has",
+       "value": "hypoallergenic",
        "keys": [
         "fabric feature",
         "features"
-       ],
-       "op": "has",
-       "value": "hypoallergenic",
-       "support": 0.952
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [
       {
        "prop": "pattern",
-       "op": "in",
-       "value": [
-        "character"
-       ],
+       "op": "has",
+       "value": "stripes",
        "unit": null,
        "ref": true
       }
@@ -9569,9 +9811,9 @@
       "sheet type"
      ],
      "cap_line": 415,
-     "target": "p-04b1fbc48257",
+     "target": "p-0f996851c4fc",
      "n_a_stated_cap": 193,
-     "n_a_final": 37,
+     "n_a_final": 11,
      "n_a0_nocap": 193,
      "unc": 0,
      "near_miss": {},
@@ -9579,7 +9821,7 @@
     }
    ],
    "cap": 415,
-   "cheapest": false,
+   "cheapest": true,
    "events": [
     {
      "type": "stock",
@@ -9615,6 +9857,7 @@
      "hidden",
      "chain",
      "event",
+     "cheapest",
      "ref-reply"
     ],
     "held_out": false,
@@ -9642,10 +9885,7 @@
     },
     "refs": [
      [
-      "p-0c5a23ac317a"
-     ],
-     [
-      "p-01fae47e69c8"
+      "p-e808cc53c248"
      ]
     ],
     "needs": 1,
@@ -9665,7 +9905,11 @@
      0,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -9674,9 +9918,9 @@
     "bits": 0,
     "tele": false,
     "suhe": 415,
-    "jufuli": 415,
+    "jufuli": 134,
     "lita": [
-     37
+     11
     ],
     "reza": [
      193
@@ -9686,9 +9930,9 @@
     "bits": 1,
     "tele": false,
     "suhe": 415,
-    "jufuli": 415,
+    "jufuli": 134,
     "lita": [
-     37
+     11
     ],
     "reza": [
      193
@@ -9698,9 +9942,9 @@
     "bits": 2,
     "tele": false,
     "suhe": 415,
-    "jufuli": 415,
+    "jufuli": 134,
     "lita": [
-     37
+     11
     ],
     "reza": [
      193
@@ -9710,9 +9954,9 @@
     "bits": 3,
     "tele": false,
     "suhe": 415,
-    "jufuli": 415,
+    "jufuli": 134,
     "lita": [
-     37
+     11
     ],
     "reza": [
      193
@@ -9721,10 +9965,7 @@
   ],
   "refs": [
    [
-    "p-0c5a23ac317a"
-   ],
-   [
-    "p-01fae47e69c8"
+    "p-e808cc53c248"
    ]
   ],
   "process_rules": [
@@ -9743,12 +9984,12 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 168,
-   "lita_logmean": 5.124,
-   "lita_log_prod": 5.124,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
    "hidden_cut": 0.0,
-   "reza_log": 5.124,
-   "cheapest": 0,
+   "reza_log": 0.693,
+   "cheapest": 1,
    "n_states": 4,
    "tele": 0,
    "n_subj": 2,
@@ -9767,36 +10008,45 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "material",
-       "keys": [
-        "color",
-        "material",
-        "materials",
-        "tripod material"
+       "prop": "folded length",
+       "op": "ge",
+       "value": 49.53,
+       "unit": "cm"
+      },
+      {
+       "prop": "load capacity",
+       "op": "range",
+       "value": [
+        16.092,
+        19.832
        ],
-       "op": "has",
-       "value": "aluminum",
-       "support": 0.623
+       "unit": "kg",
+       "keys": [
+        "load capacity",
+        "maximum load capacity",
+        "max load capacity"
+       ],
+       "ref": true
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "leg sections",
-      "weight"
+      "leg lock type",
+      "leg sections"
      ],
      "cap_line": 25500,
-     "target": "p-00b61131a0fb",
-     "n_a_stated_cap": 168,
-     "n_a_final": 168,
-     "n_a0_nocap": 168,
+     "target": "p-2bf6e7935b89",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 25500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [
     {
      "type": "budget",
@@ -9830,7 +10080,8 @@
     "tags": [
      "1line",
      "chain",
-     "event"
+     "event",
+     "cheapest"
     ],
     "held_out": false,
     "ids10": false,
@@ -9868,14 +10119,18 @@
     "dnu_default": false,
     "bundle_pct": 21.745788667687595,
     "subjects": [
-     "leg sections",
-     "weight"
+     "leg lock type",
+     "leg sections"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -9884,48 +10139,48 @@
     "bits": 0,
     "tele": false,
     "suhe": 25500,
-    "jufuli": 25500,
+    "jufuli": 17449,
     "lita": [
-     168
+     2
     ],
     "reza": [
-     168
+     2
     ]
    },
    {
     "bits": 1,
     "tele": false,
     "suhe": 19093,
-    "jufuli": 19093,
+    "jufuli": 17449,
     "lita": [
-     168
+     2
     ],
     "reza": [
-     168
+     2
     ]
    },
    {
     "bits": 2,
     "tele": false,
     "suhe": 25500,
-    "jufuli": 25500,
+    "jufuli": 17449,
     "lita": [
-     168
+     2
     ],
     "reza": [
-     168
+     2
     ]
    },
    {
     "bits": 3,
     "tele": false,
     "suhe": 19093,
-    "jufuli": 19093,
+    "jufuli": 17449,
     "lita": [
-     168
+     2
     ],
     "reza": [
-     168
+     2
     ]
    }
   ],
@@ -9944,20 +10199,20 @@
   "n_lines": 2,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 2,
    "qty_total": 6,
-   "lita_min": 2,
-   "lita_logmean": 1.445,
-   "lita_log_prod": 2.89,
-   "hidden_cut": 0.962,
-   "reza_log": 8.029,
-   "cheapest": 0,
+   "lita_min": 3,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 3.584,
+   "hidden_cut": 0.758,
+   "reza_log": 6.397,
+   "cheapest": 1,
    "n_states": 1,
    "tele": 0,
-   "n_subj": 3,
-   "n_need": 2,
+   "n_subj": 2,
+   "n_need": 1,
    "n_refs": 1,
    "hops_total": 1,
    "max_hops": 1,
@@ -9972,14 +10227,13 @@
      "qty": 3,
      "stated": [
       {
-       "prop": "material",
-       "keys": [
-        "fabric feature",
-        "material"
+       "prop": "thread count",
+       "op": "range",
+       "value": [
+        154.85,
+        345.15
        ],
-       "op": "has",
-       "value": "silk",
-       "support": 0.853
+       "ref": true
       }
      ],
      "line_cap": null,
@@ -9996,10 +10250,10 @@
       "fabric feature"
      ],
      "cap_line": 13500,
-     "target": "p-1ca401ec2bbb",
-     "n_a_stated_cap": 11,
-     "n_a_final": 2,
-     "n_a0_nocap": 11,
+     "target": "p-11a8c5f6e0fe",
+     "n_a_stated_cap": 50,
+     "n_a_final": 3,
+     "n_a0_nocap": 50,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -10007,32 +10261,37 @@
     {
      "category": "Memory Cards",
      "qty": 3,
-     "stated": [],
-     "line_cap": null,
-     "hidden": [
+     "stated": [
       {
-       "prop": "device interface",
-       "op": "eq",
+       "prop": "card type",
+       "op": "has",
        "value": "microsdhc",
-       "unit": null,
-       "ref": false
+       "keys": [
+        "card type",
+        "cardtype",
+        "device interface",
+        "memory card type",
+        "type"
+       ]
       }
      ],
+     "line_cap": null,
+     "hidden": [],
      "decoys": [
       "fabric feature"
      ],
      "cap_line": 13500,
-     "target": "p-4e89283992f8",
-     "n_a_stated_cap": 279,
-     "n_a_final": 9,
-     "n_a0_nocap": 279,
+     "target": "p-0b24adf470d5",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
     }
    ],
    "cap": 13500,
-   "cheapest": false,
+   "cheapest": true,
    "events": [],
    "messages": 3,
    "steps": 35,
@@ -10042,7 +10301,8 @@
     "tags": [
      "2line",
      "hidden",
-     "chain"
+     "chain",
+     "cheapest"
     ],
     "held_out": false,
     "ids10": false,
@@ -10062,11 +10322,11 @@
      "steps": 35,
      "cart": [
       [
-       "p-1ca401ec2bbb",
+       "p-11a8c5f6e0fe",
        3
       ],
       [
-       "p-4e89283992f8",
+       "p-0b24adf470d5",
        3
       ]
      ]
@@ -10076,7 +10336,7 @@
       "p-3ba076ef0b67"
      ]
     ],
-    "needs": 2,
+    "needs": 1,
     "process_rules": [],
     "step_budget": 35,
     "max_steps": 150,
@@ -10085,15 +10345,17 @@
     "bundle_pct": 20.307692307692307,
     "subjects": [
      "age group of the bed sheets",
-     "device interface of the memory cards",
      "fabric feature of the bed sheets"
     ],
     "ligubo": [
      0,
-     1,
      -1
     ],
-    "text_source": "reconstructed",
+    "text_source": "verbatim",
+    "fits": [],
+    "conds": [],
+    "composed_span": null,
+    "fits_infeasible": false,
     "fallback_lines": {}
    }
   },
@@ -10102,14 +10364,14 @@
     "bits": 0,
     "tele": false,
     "suhe": 13500,
-    "jufuli": 13500,
+    "jufuli": 2682,
     "lita": [
-     2,
-     9
+     3,
+     12
     ],
     "reza": [
-     11,
-     279
+     50,
+     12
     ]
    }
   ],
