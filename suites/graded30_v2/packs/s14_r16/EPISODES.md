@@ -9,13 +9,13 @@
 | r16_05 | `t-18a38d31ce` | `PO` (`09c04e1f-4e9`, rk 114) | `PASSED` | 3 (1x Slipcovers and Furniture Covers, 1x Sofa Covers & Slips, 1x Sofas) | 0 | 88 | none | `1x p-06a0b2744176 + 1x p-1b8e3d6b43b9 + 1x p-62a547046de9` |
 | r16_06 | `t-190e3ed035` | `Amberjack` (`1304ba08-142`, rk 83) | `PASSED` | 1 (1x Bed Sheets) | 3 | 35 | none | `1x p-0599816b5905` |
 | r16_07 | `t-2363ddf59f` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 2 (1x Bed Sheets, 1x CCTV Security Cameras) | 0 | 35 | none | `1x p-0a6738e085cb + 1x p-016913f92e18` |
-| r16_08 | `t-237494d47b` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (1x Memory Cards, 1x Tripods, 2x Tripods and Camera Supports) | 0 | 97 | none | `1x p-b19245726042 + 1x p-006d7dd4626e + 2x p-0331a3d51cfe` |
+| r16_08 | `t-237494d47b` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (1x Memory Cards, 1x Tripods, 2x Tripods and Camera Supports) | 0 | 97 | none | `1x p-31d77b2ce388 + 1x p-15fa1db60137 + 2x p-03f356946e60` |
 | r16_09 | `t-23aa374620` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (2x Memory Cards, 1x Tripods, 1x Video Camera) | 1 | 88 | none | `2x p-186b981bf01e + 1x p-0423f770a7ba + 1x p-047fcb32c10c` |
 | r16_10 | `t-3ee3aa35d6` | `Cooler Man` (`107235a0-a89`, rk 7) | `PASSED` | 1 (1x CCTV Security Cameras) | 0 | 35 | price@finish, price@finish | `1x p-052e0e1268fc` |
 | r16_11 | `t-3fb0a80602` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 1 (1x Memory Cards) | 4 | 35 | budget@finish, stock@finish | `1x p-017c036ccf88` |
 | r16_12 | `t-44963adb06` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (1x Furniture Covers, 1x Sofa Covers & Slips, 1x Sofas) | 0 | 78 | none | `1x p-8b825d889202 + 1x p-417a9b28f640 + 1x p-0673285f462e` |
 | r16_13 | `t-480fb22da9` | `Kyrie` (`38e7bcec-899`, rk 84) | `PASSED` | 3 (1x Furniture Covers, 1x Sofa Covers & Slips, 1x Sofas) | 0 | 78 | none | `1x p-0874baca1afd + 1x p-0004b24b5fe6 + 1x p-0673285f462e` |
-| r16_14 | `t-4bfd08dfb1` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 4 (2x Furniture Covers, 2x Slipcovers and Furniture Covers, 1x Sofa Covers & Slips, 1x Sofas) | 0 | 109 | none | `2x p-00f53e90e497 + 2x p-a034907bc21f + 1x p-0004b24b5fe6 + 1x p-001d5e4762b8` |
+| r16_14 | `t-4bfd08dfb1` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 4 (2x Furniture Covers, 2x Slipcovers and Furniture Covers, 1x Sofa Covers & Slips, 1x Sofas) | 1 | 109 | none | `2x p-0bbef61e81f5 + 2x p-0002769f8f8e + 1x p-175631a071b0 + 1x p-2d03fb6f23b9` |
 | r16_15 | `t-4c31e371da` | `Ferruginous` (`25bdc3d0-758`, rk 202) | `PASSED` | 1 (1x CCTV Security Cameras) | 0 | 35 | none | `1x p-0066599aaee6` |
 | r16_16 | `t-54b7a4a371` | `Kestrel` (`411d0ec0-def`, rk 173) | `PASSED` | 1 (1x CCTV Security Cameras) | 0 | 35 | drop@first_add, stock@finish | `1x p-000536ae44e9` |
 | r16_17 | `t-5a1196d6d2` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 1 (1x Bed Sheets) | 0 | 35 | drop@finish, stock@finish | `1x p-0179f4e30b95` |
@@ -31,7 +31,7 @@
 | r16_27 | `t-8f9fc2ba56` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (2x Furniture Covers, 2x Sofa Covers & Slips, 1x Sofas) | 0 | 78 | none | `2x p-4b668b0d4c12 + 2x p-9fe5227b1bdb + 1x p-01094a11e5f1` |
 | r16_28 | `t-91ad956fa8` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 1 (1x Video Camera) | 0 | 35 | budget@finish, price@finish | `1x p-01c2dcf94dfe` |
 | r16_29 | `t-938f1af50e` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (1x Bed Sheets, 3x CCTV Security Cameras, 2x Memory Cards) | 5 | 35 | none | `1x p-16b4132ef541 + 3x p-93f0683cf905 + 2x p-20ef639e1446` |
-| r16_30 | `t-9d5024ca80` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 4 (1x Furniture Covers, 1x Slipcovers and Furniture Covers, 1x Sofa Covers & Slips, 2x Sofas) | 1 | 100 | none | `1x p-4b668b0d4c12 + 1x p-0002769f8f8e + 1x p-0004b24b5fe6 + 2x p-001d5e4762b8` |
+| r16_30 | `t-9d5024ca80` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 4 (1x Furniture Covers, 1x Slipcovers and Furniture Covers, 1x Sofa Covers & Slips, 2x Sofas) | 2 | 100 | none | `1x p-4b668b0d4c12 + 1x p-0c95cc65f05e + 1x p-1d04de45b6eb + 2x p-5c769fc5c610` |
 | r16_31 | `t-b064ec811d` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (2x Bed Sheets, 2x CCTV Security Cameras, 2x Video Camera) | 0 | 35 | none | `2x p-0599816b5905 + 2x p-2c1d889ce911 + 2x p-6b9c1564ae2f` |
 | r16_32 | `t-b3fef9d2ba` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 2 (2x Bed Sheets, 1x CCTV Security Cameras) | 1 | 35 | none | `2x p-4888d215888e + 1x p-14625731a565` |
 | r16_33 | `t-b4c5139927` | `The King` (`20997cbd-4f5`, rk 192) | `PASSED` | 1 (1x Tripods and Camera Supports) | 0 | 35 | drop@finish, stock@first_add | `1x p-00b61131a0fb` |

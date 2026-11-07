@@ -1532,20 +1532,20 @@
   "n_lines": 3,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 5,
+  "mech_load": 4,
   "features": {
    "n_lines": 3,
    "qty_total": 4,
    "lita_min": 1,
-   "lita_logmean": 1.763,
-   "lita_log_prod": 5.288,
+   "lita_logmean": 1.923,
+   "lita_log_prod": 5.768,
    "hidden_cut": 0.0,
-   "reza_log": 5.288,
+   "reza_log": 5.768,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
-   "n_subj": 3,
-   "n_need": 2,
+   "n_subj": 2,
+   "n_need": 1,
    "n_refs": 0,
    "hops_total": 0,
    "max_hops": 0,
@@ -1561,42 +1561,18 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options",
-        "coloroptions"
-       ],
        "op": "has",
        "value": "gold",
-       "support": 0.987
+       "keys": [
+        "color",
+        "color family",
+        "colour"
+       ]
       },
       {
-       "prop": "cardtype",
-       "keys": [
-        "card slots",
-        "card type",
-        "cardtype",
-        "formfactor",
-        "reader",
-        "sd card slot",
-        "supported cards"
-       ],
-       "op": "has",
-       "value": "sd",
-       "support": 0.745
-      },
-      {
-       "prop": "device interface",
-       "keys": [
-        "device interface",
-        "device interfaces",
-        "deviceinterface",
-        "interface",
-        "storage type"
-       ],
-       "op": "has",
-       "value": "sd card",
-       "support": 0.697
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIV 2110"
       }
      ],
      "line_cap": null,
@@ -1613,7 +1589,7 @@
       "capacity"
      ],
      "cap_line": 86000,
-     "target": "p-b19245726042",
+     "target": "p-31d77b2ce388",
      "n_a_stated_cap": 1,
      "n_a_final": 1,
      "n_a0_nocap": 1,
@@ -1626,34 +1602,20 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "leg lock type",
-       "keys": [
-        "leg lock type",
-        "leglocktype"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.961
-      },
-      {
        "prop": "load capacity",
+       "op": "ge",
+       "value": 8,
+       "unit": "kg",
        "keys": [
-        "load capacity"
-       ],
-       "op": "has",
-       "value": "8 kg",
-       "support": 0.792
+        "load capacity",
+        "maximum load capacity",
+        "max load capacity"
+       ]
       },
       {
-       "prop": "material",
-       "keys": [
-        "leg material",
-        "material",
-        "tripod material"
-       ],
-       "op": "has",
-       "value": "aluminum",
-       "support": 0.654
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIV 2110"
       }
      ],
      "line_cap": null,
@@ -1662,10 +1624,10 @@
       "capacity"
      ],
      "cap_line": 86000,
-     "target": "p-006d7dd4626e",
-     "n_a_stated_cap": 99,
-     "n_a_final": 99,
-     "n_a0_nocap": 99,
+     "target": "p-15fa1db60137",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1676,57 +1638,30 @@
      "stated": [
       {
        "prop": "leg lock type",
+       "op": "has",
+       "value": "twist lock",
        "keys": [
         "leg lock type",
         "leglocktype",
         "lock type"
-       ],
-       "op": "has",
-       "value": "twist lock",
-       "support": 0.965
+       ]
       },
       {
-       "prop": "load capacity",
-       "keys": [
-        "load capacity",
-        "maximum load",
-        "maximum load capacity"
-       ],
-       "op": "has",
-       "value": "8 kg",
-       "support": 0.792
-      },
-      {
-       "prop": "material",
-       "keys": [
-        "color",
-        "material",
-        "materials",
-        "tripod material"
-       ],
-       "op": "has",
-       "value": "aluminum",
-       "support": 0.654
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIV 2110"
       }
      ],
      "line_cap": null,
-     "hidden": [
-      {
-       "prop": "feet type",
-       "op": "eq",
-       "value": "retractable",
-       "unit": null,
-       "ref": false
-      }
-     ],
+     "hidden": [],
      "decoys": [
       "capacity"
      ],
      "cap_line": 86000,
-     "target": "p-0331a3d51cfe",
-     "n_a_stated_cap": 2,
-     "n_a_final": 2,
-     "n_a0_nocap": 2,
+     "target": "p-03f356946e60",
+     "n_a_stated_cap": 32,
+     "n_a_final": 32,
+     "n_a0_nocap": 32,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -1763,21 +1698,21 @@
      "steps": 97,
      "cart": [
       [
-       "p-b19245726042",
+       "p-31d77b2ce388",
        1
       ],
       [
-       "p-006d7dd4626e",
+       "p-15fa1db60137",
        1
       ],
       [
-       "p-0331a3d51cfe",
+       "p-03f356946e60",
        2
       ]
      ]
     },
     "refs": [],
-    "needs": 2,
+    "needs": 1,
     "process_rules": [],
     "step_budget": 97,
     "max_steps": 150,
@@ -1785,24 +1720,61 @@
     "dnu_default": true,
     "bundle_pct": 40.33232628398792,
     "subjects": [
-     "feet type of the tripods and camera supports",
      "read speed of the memory cards",
      "capacity of the memory cards"
     ],
     "ligubo": [
      0,
-     1,
      -1
     ],
-    "text_source": "partial",
+    "text_source": "verbatim",
     "fits": [],
-    "conds": [],
-    "composed_span": "Sorry \u2014 I need 1 x memory cards with color gold and cardtype sd and device interface sd card; 1 x tripods with leg lock type twist lock and load capacity 8 kg and material aluminum; 2 x tripods and camera supports with leg lock type twist lock and load capacity 8 kg and material aluminum \u2014 if that's alright. Would you mind keeping the whole total at 86000 cents US or under \u2014 sorry.",
+    "conds": [
+     {
+      "if_line": 1,
+      "if": {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "aluminum",
+        "metal"
+       ]
+      },
+      "then_line": 0,
+      "then": {
+       "prop": "device interface",
+       "op": "has",
+       "value": "sd card",
+       "keys": [
+        "device interface",
+        "device interfaces",
+        "interface"
+       ]
+      },
+      "except": true
+     }
+    ],
+    "composed_span": null,
     "fits_infeasible": false,
-    "fallback_lines": {
-     "1": "shelf_with_facts",
-     "2": "stated_only"
-    }
+    "fallback_lines": {},
+    "text_echo": {
+     "agent": "KAKA",
+     "episodes": [
+      "203895e3-1b7a-499f-98fc-a1406460e8d4"
+     ],
+     "run": "c551"
+    },
+    "dropped_unsat": [
+     {
+      "kind": "hidden",
+      "line": 2,
+      "prop": "feet type",
+      "op": "eq",
+      "value": "retractable",
+      "say_val": "retractable",
+      "n_reveals": 1
+     }
+    ]
    }
   },
   "states": [
@@ -1813,13 +1785,13 @@
     "jufuli": 86000,
     "lita": [
      1,
-     99,
-     2
+     10,
+     32
     ],
     "reza": [
      1,
-     99,
-     2
+     10,
+     32
     ]
    }
   ],
@@ -3018,23 +2990,23 @@
   "n_lines": 4,
   "truth_source": "derived_clauses",
   "hidden_source": "none",
-  "mech_load": 4,
+  "mech_load": 5,
   "features": {
    "n_lines": 4,
    "qty_total": 6,
-   "lita_min": 1,
-   "lita_logmean": 4.344,
-   "lita_log_prod": 17.377,
+   "lita_min": 8,
+   "lita_logmean": 2.574,
+   "lita_log_prod": 10.294,
    "hidden_cut": 0.0,
-   "reza_log": 17.377,
+   "reza_log": 10.294,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 2,
    "n_need": 0,
-   "n_refs": 0,
-   "hops_total": 0,
-   "max_hops": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
    "step_budget": 109
   },
   "spec": {
@@ -3047,35 +3019,26 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "colorsavailable"
-       ],
        "op": "has",
        "value": "tan",
-       "support": 0.866
-      },
-      {
-       "prop": "material",
        "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "cotton",
-       "support": 0.545
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "pattern",
+      "material",
       "closure"
      ],
      "cap_line": 60500,
-     "target": "p-00f53e90e497",
-     "n_a_stated_cap": 203,
-     "n_a_final": 203,
-     "n_a0_nocap": 203,
+     "target": "p-0bbef61e81f5",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3086,36 +3049,26 @@
      "stated": [
       {
        "prop": "color",
-       "keys": [
-        "color",
-        "color options",
-        "coloroptions"
-       ],
        "op": "has",
        "value": "white",
-       "support": 0.887
-      },
-      {
-       "prop": "material",
        "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "cotton",
-       "support": 0.797
+        "color",
+        "color family",
+        "colour"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "pattern",
+      "material",
       "closure"
      ],
      "cap_line": 60500,
-     "target": "p-a034907bc21f",
-     "n_a_stated_cap": 1,
-     "n_a_final": 1,
-     "n_a0_nocap": 1,
+     "target": "p-0002769f8f8e",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3125,44 +3078,26 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "style",
-       "keys": [
-        "style"
-       ],
-       "op": "has",
-       "value": "modern",
-       "support": 0.766
-      },
-      {
        "prop": "pattern",
-       "keys": [
-        "pattern"
-       ],
        "op": "has",
        "value": "leaf",
-       "support": 0.758
-      },
-      {
-       "prop": "warranty policy",
+       "ref": true,
        "keys": [
-        "warranty policy"
-       ],
-       "op": "has",
-       "value": "set",
-       "support": 0.481
+        "pattern"
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "pattern",
+      "material",
       "closure"
      ],
      "cap_line": 60500,
-     "target": "p-0004b24b5fe6",
-     "n_a_stated_cap": 556,
-     "n_a_final": 556,
-     "n_a0_nocap": 556,
+     "target": "p-175631a071b0",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3173,44 +3108,35 @@
      "stated": [
       {
        "prop": "furniture features",
+       "op": "has",
+       "value": "slipcovered",
        "keys": [
         "features",
         "furniture features"
-       ],
-       "op": "has",
-       "value": "slipcovered",
-       "support": 0.97
+       ]
       },
       {
        "prop": "style",
+       "op": "nin",
+       "value": [
+        "traditional"
+       ],
        "keys": [
         "style"
-       ],
-       "op": "has",
-       "value": "modern",
-       "support": 0.766
-      },
-      {
-       "prop": "warranty policy",
-       "keys": [
-        "warranty policy"
-       ],
-       "op": "has",
-       "value": "set",
-       "support": 0.481
+       ]
       }
      ],
      "line_cap": null,
      "hidden": [],
      "decoys": [
-      "pattern",
+      "material",
       "closure"
      ],
      "cap_line": 60500,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-2d03fb6f23b9",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -3227,6 +3153,7 @@
     "tags": [
      "4line",
      "4line",
+     "chain",
      "cheapest",
      "dnu-default"
     ],
@@ -3248,24 +3175,28 @@
      "steps": 109,
      "cart": [
       [
-       "p-00f53e90e497",
+       "p-0bbef61e81f5",
        2
       ],
       [
-       "p-a034907bc21f",
+       "p-0002769f8f8e",
        2
       ],
       [
-       "p-0004b24b5fe6",
+       "p-175631a071b0",
        1
       ],
       [
-       "p-001d5e4762b8",
+       "p-2d03fb6f23b9",
        1
       ]
      ]
     },
-    "refs": [],
+    "refs": [
+     [
+      "p-d543fdab1b1e"
+     ]
+    ],
     "needs": 0,
     "process_rules": [
      "view_after_add"
@@ -3276,23 +3207,59 @@
     "dnu_default": true,
     "bundle_pct": 35.47400611620795,
     "subjects": [
-     "pattern of the furniture covers",
+     "material of the furniture covers",
      "closure of the furniture covers"
     ],
     "ligubo": [
      -1,
      -1
     ],
-    "text_source": "partial",
-    "fits": [],
-    "conds": [],
-    "composed_span": "Sorry \u2014 I need 2 x furniture covers with color tan and material cotton; 2 x slipcovers and furniture covers with color white and material cotton; 1 x sofa covers & slips with style modern and pattern leaf and warranty policy set; 1 x sofas with furniture features slipcovered and style modern and warranty policy set \u2014 if that's alright. Would you mind keeping the whole total at 60500 cents US or under \u2014 sorry.",
+    "text_source": "verbatim",
+    "fits": [
+     [
+      1,
+      3
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 3,
+      "if": {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "plaid",
+        "plain"
+       ]
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "cotton"
+      },
+      "except": true
+     }
+    ],
+    "composed_span": null,
     "fits_infeasible": false,
-    "fallback_lines": {
-     "0": "shelf_with_facts",
-     "2": "shelf_with_facts",
-     "3": "shelf_with_facts"
-    }
+    "fallback_lines": {},
+    "text_echo": {
+     "agent": "KAKA",
+     "episodes": [
+      "4e7a45a4-003f-4a8f-827c-619067c1d313"
+     ],
+     "run": "c551"
+    },
+    "dropped_unsat": []
    }
   },
   "states": [
@@ -3300,22 +3267,26 @@
     "bits": 0,
     "tele": false,
     "suhe": 60500,
-    "jufuli": 20053,
+    "jufuli": 18232,
     "lita": [
-     203,
-     1,
-     556,
-     312
+     8,
+     28,
+     12,
+     11
     ],
     "reza": [
-     203,
-     1,
-     556,
-     312
+     8,
+     28,
+     12,
+     11
     ]
    }
   ],
-  "refs": [],
+  "refs": [
+   [
+    "p-d543fdab1b1e"
+   ]
+  ],
   "process_rules": [
    "view_after_add"
   ],
@@ -6731,22 +6702,22 @@
   "n_lines": 4,
   "truth_source": "derived_clauses",
   "hidden_source": "observed_reveal",
-  "mech_load": 8,
+  "mech_load": 9,
   "features": {
    "n_lines": 4,
    "qty_total": 5,
-   "lita_min": 8,
-   "lita_logmean": 4.766,
-   "lita_log_prod": 19.063,
-   "hidden_cut": 0.012,
-   "reza_log": 19.979,
+   "lita_min": 1,
+   "lita_logmean": 1.353,
+   "lita_log_prod": 5.412,
+   "hidden_cut": 0.556,
+   "reza_log": 9.116,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
    "n_subj": 4,
    "n_need": 3,
-   "n_refs": 1,
-   "hops_total": 1,
+   "n_refs": 2,
+   "hops_total": 2,
    "max_hops": 1,
    "step_budget": 100
   },
@@ -6759,14 +6730,14 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "upholsterymaterial",
-       "keys": [
-        "material",
-        "upholsterymaterial"
-       ],
+       "prop": "material",
        "op": "has",
        "value": "chenille",
-       "support": 0.922
+       "keys": [
+        "material",
+        "upholsterymaterial",
+        "upholstery material"
+       ]
       }
      ],
      "line_cap": null,
@@ -6796,25 +6767,22 @@
      "qty": 1,
      "stated": [
       {
-       "prop": "fabric",
-       "keys": [
-        "fabric",
-        "material"
-       ],
-       "op": "has",
-       "value": "chenille",
-       "support": 0.926
-      },
-      {
        "prop": "closure type",
-       "keys": [
-        "closure",
-        "closure type",
-        "closuretype"
-       ],
        "op": "has",
        "value": "slip-on",
-       "support": 0.853
+       "keys": [
+        "closure type",
+        "closuretype",
+        "closure"
+       ]
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "solid",
+        "textured"
+       ]
       }
      ],
      "line_cap": null,
@@ -6823,10 +6791,10 @@
       "color"
      ],
      "cap_line": 31500,
-     "target": "p-0002769f8f8e",
-     "n_a_stated_cap": 137,
-     "n_a_final": 137,
-     "n_a0_nocap": 137,
+     "target": "p-0c95cc65f05e",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6837,30 +6805,11 @@
      "stated": [
       {
        "prop": "style",
-       "keys": [
-        "style"
-       ],
        "op": "has",
        "value": "antique",
-       "support": 0.948
-      },
-      {
-       "prop": "warranty policy",
        "keys": [
-        "warranty policy"
-       ],
-       "op": "has",
-       "value": "set",
-       "support": 0.922
-      },
-      {
-       "prop": "material",
-       "keys": [
-        "material"
-       ],
-       "op": "has",
-       "value": "microfiber",
-       "support": 0.853
+        "style"
+       ]
       }
      ],
      "line_cap": null,
@@ -6879,10 +6828,10 @@
       "color"
      ],
      "cap_line": 31500,
-     "target": "p-0004b24b5fe6",
-     "n_a_stated_cap": 556,
-     "n_a_final": 556,
-     "n_a0_nocap": 556,
+     "target": "p-1d04de45b6eb",
+     "n_a_stated_cap": 13,
+     "n_a_final": 4,
+     "n_a0_nocap": 13,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6893,31 +6842,21 @@
      "stated": [
       {
        "prop": "furniture features",
+       "op": "has",
+       "value": "slipcovered",
        "keys": [
         "features",
         "furniture features"
-       ],
-       "op": "has",
-       "value": "slipcovered",
-       "support": 0.961
+       ]
       },
       {
        "prop": "style",
+       "op": "has",
+       "value": "traditional",
+       "ref": true,
        "keys": [
         "style"
-       ],
-       "op": "has",
-       "value": "antique",
-       "support": 0.944
-      },
-      {
-       "prop": "warranty policy",
-       "keys": [
-        "warranty policy"
-       ],
-       "op": "has",
-       "value": "set",
-       "support": 0.922
+       ]
       }
      ],
      "line_cap": null,
@@ -6934,10 +6873,10 @@
       "color"
      ],
      "cap_line": 31500,
-     "target": "p-001d5e4762b8",
-     "n_a_stated_cap": 312,
-     "n_a_final": 312,
-     "n_a0_nocap": 312,
+     "target": "p-5c769fc5c610",
+     "n_a_stated_cap": 5,
+     "n_a_final": 1,
+     "n_a0_nocap": 5,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -6982,15 +6921,15 @@
        1
       ],
       [
-       "p-0002769f8f8e",
+       "p-0c95cc65f05e",
        1
       ],
       [
-       "p-0004b24b5fe6",
+       "p-1d04de45b6eb",
        1
       ],
       [
-       "p-001d5e4762b8",
+       "p-5c769fc5c610",
        2
       ]
      ]
@@ -6998,6 +6937,9 @@
     "refs": [
      [
       "p-72b30a98505e"
+     ],
+     [
+      "p-4cbba808f316"
      ]
     ],
     "needs": 3,
@@ -7019,16 +6961,33 @@
      2,
      -1
     ],
-    "text_source": "partial",
-    "fits": [],
+    "text_source": "verbatim",
+    "fits": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      3
+     ]
+    ],
     "conds": [],
-    "composed_span": "Sorry \u2014 I need 1 x furniture covers with upholsterymaterial chenille; 1 x slipcovers and furniture covers with fabric chenille and closure type slip-on; 1 x sofa covers & slips with style antique and warranty policy set and material microfiber; 2 x sofas with furniture features slipcovered and style antique and warranty policy set \u2014 if that's alright. Would you mind keeping the whole total at 31500 cents US or under \u2014 sorry.",
+    "composed_span": null,
     "fits_infeasible": false,
-    "fallback_lines": {
-     "1": "shelf_with_facts",
-     "2": "shelf_with_facts",
-     "3": "shelf_with_facts"
-    }
+    "fallback_lines": {},
+    "text_echo": {
+     "agent": "KAKA",
+     "episodes": [
+      "766f171d-616b-46a8-bfb8-47a1d874f13a"
+     ],
+     "run": "c551"
+    },
+    "dropped_unsat": []
    }
   },
   "states": [
@@ -7036,24 +6995,27 @@
     "bits": 0,
     "tele": false,
     "suhe": 31500,
-    "jufuli": 3225,
+    "jufuli": 6088,
     "lita": [
      8,
-     137,
-     556,
-     312
+     7,
+     4,
+     1
     ],
     "reza": [
      20,
-     137,
-     556,
-     312
+     7,
+     13,
+     5
     ]
    }
   ],
   "refs": [
    [
     "p-72b30a98505e"
+   ],
+   [
+    "p-4cbba808f316"
    ]
   ],
   "process_rules": [],
