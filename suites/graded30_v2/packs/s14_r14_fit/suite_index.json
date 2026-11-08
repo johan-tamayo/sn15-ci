@@ -5132,10 +5132,10 @@
    "n_lines": 3,
    "qty_total": 5,
    "lita_min": 6,
-   "lita_logmean": 2.881,
-   "lita_log_prod": 8.643,
-   "hidden_cut": 0.106,
-   "reza_log": 9.49,
+   "lita_logmean": 2.865,
+   "lita_log_prod": 8.594,
+   "hidden_cut": 0.11,
+   "reza_log": 9.441,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -5173,9 +5173,9 @@
      ],
      "cap_line": 45500,
      "target": "p-0022b3b28ffc",
-     "n_a_stated_cap": 63,
-     "n_a_final": 63,
-     "n_a0_nocap": 63,
+     "n_a_stated_cap": 60,
+     "n_a_final": 60,
+     "n_a0_nocap": 60,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -5347,12 +5347,12 @@
     "suhe": 45500,
     "jufuli": 11170,
     "lita": [
-     63,
+     60,
      15,
      6
     ],
     "reza": [
-     63,
+     60,
      21,
      10
     ]
@@ -6809,10 +6809,10 @@
    "n_lines": 3,
    "qty_total": 4,
    "lita_min": 3,
-   "lita_logmean": 1.683,
-   "lita_log_prod": 5.05,
-   "hidden_cut": 0.5,
-   "reza_log": 7.735,
+   "lita_logmean": 1.657,
+   "lita_log_prod": 4.97,
+   "hidden_cut": 0.513,
+   "reza_log": 7.655,
    "cheapest": 1,
    "n_states": 1,
    "tele": 0,
@@ -6938,9 +6938,9 @@
      ],
      "cap_line": 23500,
      "target": "p-050a02e99588",
-     "n_a_stated_cap": 13,
-     "n_a_final": 13,
-     "n_a0_nocap": 13,
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -7034,12 +7034,12 @@
     "lita": [
      3,
      4,
-     13
+     12
     ],
     "reza": [
      11,
      16,
-     13
+     12
     ]
    }
   ],
@@ -8094,10 +8094,10 @@
    "n_lines": 5,
    "qty_total": 7,
    "lita_min": 3,
-   "lita_logmean": 2.383,
-   "lita_log_prod": 11.916,
+   "lita_logmean": 2.318,
+   "lita_log_prod": 11.591,
    "hidden_cut": 0.0,
-   "reza_log": 11.916,
+   "reza_log": 11.591,
    "cheapest": 0,
    "n_states": 1,
    "tele": 0,
@@ -8136,9 +8136,9 @@
      ],
      "cap_line": 73000,
      "target": "p-01783f4bcd8d",
-     "n_a_stated_cap": 36,
-     "n_a_final": 36,
-     "n_a0_nocap": 36,
+     "n_a_stated_cap": 26,
+     "n_a_final": 26,
+     "n_a0_nocap": 26,
      "unc": 0,
      "near_miss": {},
      "references": []
@@ -8371,14 +8371,14 @@
     "suhe": 73000,
     "jufuli": 73000,
     "lita": [
-     36,
+     26,
      11,
      3,
      9,
      14
     ],
     "reza": [
-     36,
+     26,
      11,
      3,
      9,

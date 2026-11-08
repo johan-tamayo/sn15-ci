@@ -1843,10 +1843,10 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 32,
-   "lita_logmean": 3.466,
-   "lita_log_prod": 3.466,
-   "hidden_cut": 0.111,
+   "lita_min": 22,
+   "lita_logmean": 3.091,
+   "lita_log_prod": 3.091,
+   "hidden_cut": 0.389,
    "reza_log": 3.584,
    "cheapest": 0,
    "n_states": 2,
@@ -1886,9 +1886,9 @@
       "display"
      ],
      "cap_line": 110000,
-     "target": "p-010b57c08831",
+     "target": "p-0c5825164c80",
      "n_a_stated_cap": 36,
-     "n_a_final": 32,
+     "n_a_final": 22,
      "n_a0_nocap": 36,
      "unc": 0,
      "near_miss": {},
@@ -1974,7 +1974,7 @@
     "suhe": 110000,
     "jufuli": 110000,
     "lita": [
-     32
+     22
     ],
     "reza": [
      36
@@ -1986,7 +1986,7 @@
     "suhe": 110000,
     "jufuli": 110000,
     "lita": [
-     32
+     22
     ],
     "reza": [
      36
@@ -3668,10 +3668,10 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 68,
-   "lita_logmean": 4.22,
-   "lita_log_prod": 4.22,
-   "hidden_cut": 0.236,
+   "lita_min": 67,
+   "lita_logmean": 4.205,
+   "lita_log_prod": 4.205,
+   "hidden_cut": 0.247,
    "reza_log": 4.489,
    "cheapest": 0,
    "n_states": 2,
@@ -3713,7 +3713,7 @@
      "cap_line": 79000,
      "target": "p-00a23850a5cd",
      "n_a_stated_cap": 89,
-     "n_a_final": 68,
+     "n_a_final": 67,
      "n_a0_nocap": 89,
      "unc": 0,
      "near_miss": {},
@@ -3799,7 +3799,7 @@
     "suhe": 79000,
     "jufuli": 79000,
     "lita": [
-     68
+     67
     ],
     "reza": [
      89
@@ -3811,7 +3811,7 @@
     "suhe": 79000,
     "jufuli": 79000,
     "lita": [
-     243
+     231
     ],
     "reza": [
      761
@@ -7798,10 +7798,10 @@
   "features": {
    "n_lines": 1,
    "qty_total": 1,
-   "lita_min": 40,
-   "lita_logmean": 3.689,
-   "lita_log_prod": 3.689,
-   "hidden_cut": 0.167,
+   "lita_min": 39,
+   "lita_logmean": 3.664,
+   "lita_log_prod": 3.664,
+   "hidden_cut": 0.188,
    "reza_log": 3.871,
    "cheapest": 0,
    "n_states": 2,
@@ -7843,7 +7843,7 @@
      "cap_line": 52500,
      "target": "p-0117227c0314",
      "n_a_stated_cap": 48,
-     "n_a_final": 40,
+     "n_a_final": 39,
      "n_a0_nocap": 48,
      "unc": 0,
      "near_miss": {},
@@ -7929,7 +7929,7 @@
     "suhe": 52500,
     "jufuli": 52500,
     "lita": [
-     40
+     39
     ],
     "reza": [
      48
@@ -7941,7 +7941,7 @@
     "suhe": 52500,
     "jufuli": 52500,
     "lita": [
-     40
+     39
     ],
     "reza": [
      48

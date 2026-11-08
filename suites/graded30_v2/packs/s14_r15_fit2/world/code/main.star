@@ -850,9 +850,21 @@ def accepted(slot, lines, reason, key, ov, gone, dyn):
         return (cheapest == None) or (cheapest > slot["suhe"])
     return lines_claim_answer_lines(lines, slot["tufa"], key, gone, slot.get("fitok", [])) and (order_total(lines, slot["fari"], ov) <= slot["suhe"])
 
+def shown_ids(obs):
+    # listings a search / browse row showed (a row carries the listing's item_blurb, where its "Goes with" fit statement sits)
+    if (type(obs) == "dict") and ("jezudo" in obs):
+        obs = obs["jezudo"]
+    out = []
+    if (type(obs) == "dict") and (type(obs.get("matches_set")) == "list"):
+        for row in obs["matches_set"]:
+            if (type(row) == "string") and row.startswith("ref_ref: "):
+                out.append(row[len("ref_ref: "):].split(" | ")[0])
+    return out
+
 def process_complete(episode, answer, reason):
     opened = {}
     revealed = {}
+    shown = {}
     for record in episode:
         if record["kind"] == "action":
             tool = record.get("tool")
@@ -862,6 +874,9 @@ def process_complete(episode, answer, reason):
             elif tool == "weighItems":
                 for pid in args.get("pickedIds", []):
                     opened[pid] = True
+        elif record["kind"] == "observation":
+            for pid in shown_ids(record.get("observation")):
+                shown[pid] = True
         elif record["kind"] == "event":
             data = record["data"]
             if (type(data) == "dict") and ("revealed_need" in data):
@@ -876,9 +891,15 @@ def process_complete(episode, answer, reason):
                 return False
         # every ordered listing was looked at (showPage / weighItems) at some point of the episode
         # (FIDSEQ, runs/fidseq/FIDSEQ.md: 4 of the 5 field PRM residuals, 0 of the 6862 other field orders)
+        # on a line the request says must fit / be compatible with another item, every page an ordered listing's own page points to
+        # (answer.ptr_open) was opened or shown in a search / browse row (FIDRES7, runs/fidres7/CARD.md)
+        pointers = answer.get("ptr_open", {})
         for line in episode[-1]["order"]["lines"]:
             if line["id"] not in opened:
                 return False
+            for page in pointers.get(line["id"], []):
+                if (page not in opened) and (page not in shown):
+                    return False
     return True
 
 def grade(episode, answer):

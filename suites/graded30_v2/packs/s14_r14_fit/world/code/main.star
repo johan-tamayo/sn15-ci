@@ -2,7 +2,7 @@
 # Reproduces the Race-14 mechanics seen in the 9,945 released open episodes (221 agents x 45 open tasks):
 #   * 8 tools: LocateListings, OpenPage, AskBuyer, SetToCart (append|delete, line <= 4), BagList, BuyItem, PassOrder, StatusReport
 #   * LocateListings: words = AND over the first 2 tokens (len >= 2, no group filter), BM25 k1 1.1 / b 0 tiers in id order, top 1000,
-#     12 rows per page, BeginAtAt 0..95; browse = the whole group id-sorted   (fit: runs/forge2/HANDOVER.md)
+#     12 rows per page, BeginAtAt 0..95; browse = the whole group id-sorted   (fit: runs/forge2/HANDOVER.md, runs/forge3/HANDOVER.md)
 #   * 3-message allowance (AskBuyer cost 1, budget 3)
 #   * events (4 tasks): the first BuyItem with a cart is refused once; events hit the picked listing (price x factor | sold out);
 #     echo events repeat on the next observation as {"hese": <obs>, "hufa": [<sentence>]}
@@ -15,8 +15,9 @@ BRAND_INDEX = "kojefe"
 PAGE_ROWS = 12
 MAX_BEGIN = 95
 TEXT_HITS_CAP = 1000  # field counts saturate at 1000
-LINE_CAP = 4
+LINE_CAP = 5  # field (R14 open): 18 + 21 accepted lines of 4 and 5 units, all 16 refusals would give >= 6; the earlier 4 came from reading a delete without Number as a whole-line delete
 ALL_TERMS = True
+GROUP_LIVE_COUNT = {"antennas and coax cables": 269, "av receivers & amplifiers": 847, "bookshelves and wall shelves": 199, "camera batteries and chargers": 449, "canned fruit": 222, "computer monitors": 989, "desktop computers": 724, "fruit juice": 789, "home soundbars, speakers & subwoofers": 918, "jumpsuits & rompers": 860, "mass gainer": 564, "over-ear headphones": 684, "portable monitors": 898, "streaming media players": 842, "wall clocks": 164}  # live group sizes (field browse num_hits_number)
 TOOLS = ["LocateListings", "OpenPage", "AskBuyer", "SetToCart", "BagList", "BuyItem", "PassOrder", "StatusReport"]
 UNKNOWN = {"trouble_message": "UNKNOWN"}
 
@@ -103,6 +104,10 @@ def can_finish(order):
     events = [e for e in state_get("events", []) if e.get("at", "finish") == "finish"]
     if (len(events) == 0) or state_get("fired", False):
         return {"observation": None, "ok": True}
+    if (type(order) == "dict") and (order.get("kind") == "decline"):
+        # field (R14 open, full-replay audit 2026-11-06: t-467ed85158 x3, t-9358d87572 x1 replayed): a PassOrder that is the first close is never refused by a finish-time
+        # price/stock event (15 of 15 first-close PassOrders on the two finish-event tasks were accepted); the event stays unfired for a later BuyItem
+        return {"observation": None, "ok": True}
     sentences = apply_events()
     return {"observation": sentences if sentences else None, "ok": not sentences}
 
@@ -179,16 +184,18 @@ def all_ids():
         out.append(hit["id"])
     return sorted(out)
 
-def page_of(ids, begin):
+def page_of(ids, begin, count = None):
     if begin == None:
         begin = 0
+    if count == None:
+        count = len(ids)
     rows = ids[begin:begin + PAGE_ROWS]
     nxt = begin + PAGE_ROWS
-    onward = nxt if ((nxt < len(ids)) and (nxt <= MAX_BEGIN)) else None
+    onward = nxt if ((nxt < count) and (nxt <= MAX_BEGIN)) else None
     return {
         "listings": [search_row(row_of(i)) for i in rows],
         "next_page_token": onward,
-        "num_hits_number": len(ids),
+        "num_hits_number": count,
     }
 
 def tool_locate_listings(args):
@@ -199,13 +206,15 @@ def tool_locate_listings(args):
         group = str(group).lower().strip()
     if how == "browse":
         ids = group_ids(group) if (group != None) else []
+        # live group size (field num_hits_number on browse, constant per group): the catalog holds the seen listings only; the browse
+        # pages are the lowest ids of the group and reproduce the field (runs/forge3/HANDOVER.md)
+        return page_of(ids, args.get("BeginAtAt"), max(len(ids), GROUP_LIVE_COUNT.get(group, 0)) if (group != None) else None)
+    if (words == None) or (str(words).strip() == ""):
+        ids = group_ids(group) if (group != None) else []
     else:
-        if (words == None) or (str(words).strip() == ""):
-            ids = group_ids(group) if (group != None) else []
-        else:
-            ids = text_search_ids(str(words), group)
-            if (ids == []) and (group != None):
-                ids = text_search_ids(str(words), None)  # field: a GroupName that leaves no hit is dropped (scratch/sf_chain14.py: count equal on +32 of 2983 recorded pages)
+        ids = text_search_ids(str(words), group)
+        if (ids == []) and (group != None):
+            ids = text_search_ids(str(words), None)  # field: a GroupName that leaves no hit is dropped (scratch/sf_chain14.py: count equal on +32 of 2983 recorded pages)
     return page_of(ids, args.get("BeginAtAt"))
 
 def tool_open_page(args):
@@ -267,7 +276,10 @@ def tool_set_to_cart(args):
         basket_set(pid, have + add)
         apply_first_add_events(pid)
     else:
-        if (number == None) or (number >= have):
+        # field (R14 open, full-replay BagList audit 2026-11-06): a delete without Number removes ONE unit (a line of 3 deleted three times shows 2, 1, then gone), like append's default of 1
+        if number == None:
+            number = 1
+        if number >= have:
             basket_set(pid, 0)
         else:
             basket_set(pid, have - number)
@@ -557,15 +569,30 @@ def accepted(slot, lines, reason, key, ov, gone, dyn):
         return (cheapest == None) or (cheapest > slot["suhe"])
     return lines_claim_answer_lines(lines, slot["tufa"], key, gone) and (order_total(lines, slot["fari"], ov) <= slot["suhe"])
 
+def shown_ids(obs):
+    # listings a search / browse row showed (a row carries the listing's description, where its "Goes with" fit statement sits)
+    if (type(obs) == "dict") and ("hese" in obs):
+        obs = obs["hese"]
+    out = []
+    if (type(obs) == "dict") and (type(obs.get("listings")) == "list"):
+        for row in obs["listings"]:
+            if (type(row) == "dict") and (type(row.get("id")) == "string"):
+                out.append(row["id"])
+    return out
+
 def process_complete(episode, answer, reason):
     opened = {}
     revealed = {}
+    shown = {}
     for record in episode:
         if record["kind"] == "action":
             tool = record.get("tool")
             args = record.get("args", {})
             if tool == "OpenPage":
                 opened[args.get("ItemId", "")] = True
+        elif record["kind"] == "observation":
+            for pid in shown_ids(record.get("observation")):
+                shown[pid] = True
         elif record["kind"] == "event":
             data = record["data"]
             if (type(data) == "dict") and ("revealed_need" in data):
@@ -578,6 +605,15 @@ def process_complete(episode, answer, reason):
         for label in range(answer.get("needs", 0)):
             if label not in revealed:
                 return False
+        # every ordered listing was opened at some point of the episode, and on a line the request says must work with / fit another item,
+        # every page its own page points to (answer.ptr_open; FIDSEQ) was opened or shown in a search / browse row (FIDRES7, runs/fidres7/CARD.md)
+        pointers = answer.get("ptr_open", {})
+        for line in episode[-1]["order"]["lines"]:
+            if line["id"] not in opened:
+                return False
+            for page in pointers.get(line["id"], []):
+                if (page not in opened) and (page not in shown):
+                    return False
     return True
 
 def grade(episode, answer):

@@ -563,15 +563,30 @@ def accepted(slot, lines, reason, key, ov, gone, dyn):
         return (cheapest == None) or (cheapest > slot["suhe"])
     return lines_claim_answer_lines(lines, slot["tufa"], key, gone) and (order_total(lines, slot["fari"], ov) <= slot["suhe"])
 
+def shown_ids(obs):
+    # listings a search / browse row showed (a row carries the listing's description, where its "Goes with" fit statement sits)
+    if (type(obs) == "dict") and ("hese" in obs):
+        obs = obs["hese"]
+    out = []
+    if (type(obs) == "dict") and (type(obs.get("listings")) == "list"):
+        for row in obs["listings"]:
+            if (type(row) == "dict") and (type(row.get("id")) == "string"):
+                out.append(row["id"])
+    return out
+
 def process_complete(episode, answer, reason):
     opened = {}
     revealed = {}
+    shown = {}
     for record in episode:
         if record["kind"] == "action":
             tool = record.get("tool")
             args = record.get("args", {})
             if tool == "OpenPage":
                 opened[args.get("ItemId", "")] = True
+        elif record["kind"] == "observation":
+            for pid in shown_ids(record.get("observation")):
+                shown[pid] = True
         elif record["kind"] == "event":
             data = record["data"]
             if (type(data) == "dict") and ("revealed_need" in data):
@@ -585,13 +600,13 @@ def process_complete(episode, answer, reason):
             if label not in revealed:
                 return False
         # every ordered listing was opened at some point of the episode, and on a line the request says must work with / fit another item,
-        # so was every page its own page points to (answer.ptr_open; FIDSEQ, runs/fidseq/FIDSEQ.md)
+        # every page its own page points to (answer.ptr_open; FIDSEQ) was opened or shown in a search / browse row (FIDRES7, runs/fidres7/CARD.md)
         pointers = answer.get("ptr_open", {})
         for line in episode[-1]["order"]["lines"]:
             if line["id"] not in opened:
                 return False
             for page in pointers.get(line["id"], []):
-                if page not in opened:
+                if (page not in opened) and (page not in shown):
                     return False
     return True
 
