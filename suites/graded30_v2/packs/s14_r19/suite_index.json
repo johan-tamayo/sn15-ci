@@ -1,0 +1,10174 @@
+[
+ {
+  "task_id": "t-0166ecae1e",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 4,
+   "lita_logmean": 2.013,
+   "lita_log_prod": 4.025,
+   "hidden_cut": 0.053,
+   "reza_log": 4.248,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "strap material",
+      "gender"
+     ],
+     "cap_line": 12000,
+     "target": "p-1bb723d6e844",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Curtains and Blinds",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "light grey",
+        "royal blue"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "length",
+       "op": "ge",
+       "value": 140.0,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "strap material",
+      "gender"
+     ],
+     "cap_line": 12000,
+     "target": "p-33fd671c5b30",
+     "n_a_stated_cap": 5,
+     "n_a_final": 4,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 12000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-0166ecae1e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_01",
+    "orig_id": "t-0166ecae1e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0166ecae1e",
+     "agent": "HASHIRA",
+     "rank": 79,
+     "eid": "789946b1-01a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 18,
+     "cart": [
+      [
+       "p-1bb723d6e844",
+       1
+      ],
+      [
+       "p-56b6f39af001",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "length of the curtains and blinds",
+     "strap material of the sports watches",
+     "gender of the sports watches"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 12000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 4050,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 12000,
+    "jufuli": 12000,
+    "lita": [
+     14,
+     4
+    ],
+    "reza": [
+     14,
+     5
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-0cec2b390d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 34,
+   "lita_logmean": 3.526,
+   "lita_log_prod": 3.526,
+   "hidden_cut": 0.0,
+   "reza_log": 3.526,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "has",
+       "value": "halal"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meat type",
+      "packaging type"
+     ],
+     "cap_line": 371,
+     "target": "p-003deefa7ccc",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 435,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I must tell you, with apologies, that I can now spend 371 cents of a dollar and not a penny more.",
+     "new_cap": 371,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-0cec2b390d",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_02",
+    "orig_id": "t-0cec2b390d",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-0cec2b390d",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "51ef9cc2-94a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-2c72ac177c02",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type",
+     "packaging type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 371,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 68,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 435,
+    "jufuli": 435,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 371,
+    "jufuli": 371,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-16b268420f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 2.471,
+   "lita_log_prod": 7.412,
+   "hidden_cut": 0.012,
+   "reza_log": 7.818,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "mechanical"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case shape",
+      "watch dial size"
+     ],
+     "cap_line": 21500,
+     "target": "p-029eaac95db1",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Curtains and Blinds",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "care",
+       "op": "has",
+       "value": "machine washable"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "light grey",
+        "red"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 126.7968,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case shape",
+      "watch dial size"
+     ],
+     "cap_line": 21500,
+     "target": "p-18a68a1f018e",
+     "n_a_stated_cap": 3,
+     "n_a_final": 2,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "has",
+       "value": "nil"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case shape",
+      "watch dial size"
+     ],
+     "cap_line": 21500,
+     "target": "p-00a1392eba3f",
+     "n_a_stated_cap": 69,
+     "n_a_final": 69,
+     "n_a0_nocap": 69,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 21500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-16b268420f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_03",
+    "orig_id": "t-16b268420f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-16b268420f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-029eaac95db1",
+       3
+      ],
+      [
+       "p-18a68a1f018e",
+       3
+      ],
+      [
+       "p-00a1392eba3f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width of the curtains and blinds",
+     "case shape of the sports watches",
+     "watch dial size of the sports watches"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 21500,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 2307,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 21500,
+    "jufuli": 21500,
+    "lita": [
+     12,
+     2,
+     69
+    ],
+    "reza": [
+     12,
+     3,
+     69
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-185282a805",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 8,
+   "lita_logmean": 2.975,
+   "lita_log_prod": 5.951,
+   "hidden_cut": 0.291,
+   "reza_log": 6.537,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "has",
+       "value": "nil"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 500.0,
+       "unit": "g",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meat type",
+      "length"
+     ],
+     "cap_line": 9500,
+     "target": "p-00a1392eba3f",
+     "n_a_stated_cap": 69,
+     "n_a_final": 48,
+     "n_a0_nocap": 69,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Curtains and Blinds",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "care",
+       "op": "has",
+       "value": "machine washable"
+      },
+      {
+       "prop": "style",
+       "op": "in",
+       "value": [
+        "pencil pleat",
+        "tab top"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 139.7,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meat type",
+      "length"
+     ],
+     "cap_line": 9500,
+     "target": "p-18a68a1f018e",
+     "n_a_stated_cap": 10,
+     "n_a_final": 8,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-185282a805",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_04",
+    "orig_id": "t-185282a805",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-185282a805",
+     "agent": "Pharos",
+     "rank": 48,
+     "eid": "7745a3c7-2d6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-18a68a1f018e",
+       3
+      ],
+      [
+       "p-23addf6bd429",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight of the specialty meat",
+     "width of the curtains and blinds",
+     "meat type of the specialty meat",
+     "length of the curtains and blinds"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 9500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2125,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9500,
+    "jufuli": 2125,
+    "lita": [
+     48,
+     8
+    ],
+    "reza": [
+     69,
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1ca811314c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 7,
+   "lita_logmean": 1.946,
+   "lita_log_prod": 1.946,
+   "hidden_cut": 0.5,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bottle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "place of origin",
+      "dietary needs"
+     ],
+     "cap_line": 340,
+     "target": "p-6f10b77340cc",
+     "n_a_stated_cap": 14,
+     "n_a_final": 7,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 435,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Having counted up what is left after the removal van, I can offer 340 cents of a dollar in total.",
+     "new_cap": 340,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-1ca811314c",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_05",
+    "orig_id": "t-1ca811314c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1ca811314c",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "bf708b50-b5d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-d6f5a3c9c3e3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "place of origin",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 340,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 302,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 435,
+    "jufuli": 435,
+    "lita": [
+     7
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     7
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-22f9edc172",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 18,
+   "lita_logmean": 2.89,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.871,
+   "reza_log": 4.942,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "curved"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "polyester/linen blend fabric",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 82.0,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color",
+      "height"
+     ],
+     "cap_line": 3800,
+     "target": "p-0516994e102b",
+     "n_a_stated_cap": 140,
+     "n_a_final": 18,
+     "n_a0_nocap": 140,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On reflection, style need not trouble us any longer, as the new house has taught me to bend a little.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "style"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-22f9edc172",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_06",
+    "orig_id": "t-22f9edc172",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-22f9edc172",
+     "agent": "Hinata",
+     "rank": 37,
+     "eid": "388dcbaf-2d4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 12,
+     "cart": [
+      [
+       "p-055012805633",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "width",
+     "color",
+     "height"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3800,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 940,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     3
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     18
+    ],
+    "reza": [
+     140
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2a9871e6b4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.917,
+   "reza_log": 2.485,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "mechanical"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "dial glass",
+       "op": "eq",
+       "value": "sapphire glass",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "white",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "case shape",
+      "watch dial size"
+     ],
+     "cap_line": 3220,
+     "target": "p-1902606f8f80",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Should you be so kind, please aim for 3220 cents of a dollar, since the garden fence has eaten into my savings.",
+     "new_cap": 3220,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-2a9871e6b4",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_07",
+    "orig_id": "t-2a9871e6b4",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2a9871e6b4",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-1902606f8f80",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-beac3422cff6"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "dial glass",
+     "color",
+     "case shape",
+     "watch dial size"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3220,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 70,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3220,
+    "jufuli": 3220,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-beac3422cff6"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3000bb2393",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 86,
+   "lita_logmean": 4.454,
+   "lita_log_prod": 4.454,
+   "hidden_cut": 0.0,
+   "reza_log": 4.454,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bag"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meat type",
+      "storage type"
+     ],
+     "cap_line": 696,
+     "target": "p-0298a1b4da98",
+     "n_a_stated_cap": 86,
+     "n_a_final": 86,
+     "n_a0_nocap": 86,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 485,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Kindly adjust your search, for the sum I have to play with is 696 cents of a dollar now that the roof quote has come in.",
+     "new_cap": 696,
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "There has been a alteration in what is being charged for that suggestion, I noticed it over my tea on the new kitchen counter.",
+     "new_cap": null,
+     "pct": 107,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-3000bb2393",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_08",
+    "orig_id": "t-3000bb2393",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-3000bb2393",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "6f3bd12a-5e3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 17,
+     "cart": [
+      [
+       "p-334b63fdb695",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type",
+     "storage type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 696,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 64,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     86
+    ],
+    "reza": [
+     86
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 696,
+    "jufuli": 696,
+    "lita": [
+     86
+    ],
+    "reza": [
+     86
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     86
+    ],
+    "reza": [
+     86
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 696,
+    "jufuli": 696,
+    "lita": [
+     86
+    ],
+    "reza": [
+     86
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-345420a654",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 0.52,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.333,
+   "reza_log": 3.178,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 138
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Stabilizers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "isuzu"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "pack size"
+     ],
+     "cap_line": 12000,
+     "target": "p-dc304d477d1e",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "chevrolet"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "lower",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "pack size",
+       "op": "eq",
+       "value": "1 piece",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "type",
+      "pack size"
+     ],
+     "cap_line": 12000,
+     "target": "p-5eb7c138849e",
+     "n_a_stated_cap": 6,
+     "n_a_final": 2,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Floor Mats & Cargo Liners",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "interior accessories material",
+       "op": "has",
+       "value": "leatherette"
+      },
+      {
+       "prop": "accessories material",
+       "op": "nin",
+       "value": [
+        "leatherette"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "pack size"
+     ],
+     "cap_line": 12000,
+     "target": "p-c978b4bacf16",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "pack size"
+     ],
+     "cap_line": 12000,
+     "target": "p-2009351a92a6",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 12000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 138,
+   "task_id": "t-345420a654",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_09",
+    "orig_id": "t-345420a654",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-345420a654",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 138,
+     "cart": [
+      [
+       "p-dc304d477d1e",
+       2
+      ],
+      [
+       "p-5eb7c138849e",
+       1
+      ],
+      [
+       "p-c978b4bacf16",
+       2
+      ],
+      [
+       "p-2009351a92a6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 138,
+    "max_steps": 200,
+    "policy_max_steps": 138,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "position of the ball joints",
+     "pack size of the ball joints",
+     "type of the stabilizers",
+     "pack size of the stabilizers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "type",
+       "op": "has",
+       "value": "stabilizer bushing"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "condition",
+       "op": "has",
+       "value": "genuine"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 12000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 9971,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 12000,
+    "jufuli": 12000,
+    "lita": [
+     1,
+     2,
+     1,
+     4
+    ],
+    "reza": [
+     1,
+     6,
+     1,
+     4
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-37b65830b0",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.634,
+   "lita_log_prod": 6.537,
+   "hidden_cut": 0.0,
+   "reza_log": 6.537,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 126
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "model",
+       "op": "has",
+       "value": "wigo"
+      },
+      {
+       "prop": "type",
+       "op": "nin",
+       "value": [
+        "stabilizer link"
+       ],
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "position"
+     ],
+     "cap_line": 7250,
+     "target": "p-2381d06e3ad3",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "position"
+     ],
+     "cap_line": 7250,
+     "target": "p-01bc14c504bb",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "chevrolet"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "position"
+     ],
+     "cap_line": 7250,
+     "target": "p-01789ba24a14",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "services",
+       "op": "nin",
+       "value": [
+        "product with services"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "position"
+     ],
+     "cap_line": 7250,
+     "target": "p-2009351a92a6",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7250,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 126,
+   "task_id": "t-37b65830b0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_10",
+    "orig_id": "t-37b65830b0",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-37b65830b0",
+     "agent": "SATT",
+     "rank": 57,
+     "eid": "e7478496-30c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 49,
+     "cart": [
+      [
+       "p-01789ba24a14",
+       1
+      ],
+      [
+       "p-2009351a92a6",
+       2
+      ],
+      [
+       "p-2381d06e3ad3",
+       1
+      ],
+      [
+       "p-73c7ba5b8129",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-26cac30a42b3",
+      "p-fa7fd86edeb6",
+      "p-cb662bf8080d",
+      "p-86c245b6f6cc",
+      "p-16c3bb81edad"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 126,
+    "max_steps": 200,
+    "policy_max_steps": 126,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack size of the stabilizers",
+     "position of the stabilizers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 7250,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2698,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7250,
+    "jufuli": 7250,
+    "lita": [
+     5,
+     23,
+     6,
+     1
+    ],
+    "reza": [
+     5,
+     23,
+     6,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-26cac30a42b3",
+    "p-fa7fd86edeb6",
+    "p-cb662bf8080d",
+    "p-86c245b6f6cc",
+    "p-16c3bb81edad"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-37c647e036",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.88,
+   "reza_log": 3.219,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "water resistance",
+       "op": "has",
+       "value": "100m"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "movement",
+       "op": "eq",
+       "value": "quartz",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "gender",
+       "op": "nin",
+       "value": [
+        "male"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "strap material",
+      "case shape"
+     ],
+     "cap_line": 1978,
+     "target": "p-73776f3572fa",
+     "n_a_stated_cap": 25,
+     "n_a_final": 3,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2550,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "My apologies for butting in, but the price attached to your suggestion has moved since I last peeped at it from the front step.",
+     "new_cap": null,
+     "pct": 63,
+     "dropped_prop": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I must tell you, with apologies, that I can now spend 1978 cents of a dollar and not a penny more.",
+     "new_cap": 1978,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-37c647e036",
+   "extra": {
+    "kinds": [
+     "price",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_11",
+    "orig_id": "t-37c647e036",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-37c647e036",
+     "agent": "jeinstar",
+     "rank": 183,
+     "eid": "8b06a3f5-fea",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-73776f3572fa",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-df088eb366dc",
+      "p-5d03e348b54a",
+      "p-c69fda58bef9",
+      "p-ad60d65966f0",
+      "p-b5ad65aade1c"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "movement",
+     "gender",
+     "strap material",
+     "case shape"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1978,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 532,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2550,
+    "jufuli": 532,
+    "lita": [
+     3
+    ],
+    "reza": [
+     25
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2550,
+    "jufuli": 532,
+    "lita": [
+     3
+    ],
+    "reza": [
+     25
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1978,
+    "jufuli": 532,
+    "lita": [
+     3
+    ],
+    "reza": [
+     25
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1978,
+    "jufuli": 532,
+    "lita": [
+     3
+    ],
+    "reza": [
+     25
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-df088eb366dc",
+    "p-5d03e348b54a",
+    "p-c69fda58bef9",
+    "p-ad60d65966f0",
+    "p-b5ad65aade1c"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-398fab23bf",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 0.597,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.538,
+   "reza_log": 3.296,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 98
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "torque drive"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7210"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "condition"
+     ],
+     "cap_line": 4100,
+     "target": "p-2f61f6b9854c",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "services",
+       "op": "nin",
+       "value": [
+        "product with services"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7210"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "multipack bundle",
+       "op": "eq",
+       "value": "multipack",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "condition"
+     ],
+     "cap_line": 4100,
+     "target": "p-5e730d04f0ea",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "subaru"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "stabilizer bushing",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "condition"
+     ],
+     "cap_line": 4100,
+     "target": "p-047e7b0d9ec8",
+     "n_a_stated_cap": 9,
+     "n_a_final": 2,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4100,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 98,
+   "task_id": "t-398fab23bf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_12",
+    "orig_id": "t-398fab23bf",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-398fab23bf",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 98,
+     "cart": [
+      [
+       "p-2f61f6b9854c",
+       1
+      ],
+      [
+       "p-5e730d04f0ea",
+       2
+      ],
+      [
+       "p-047e7b0d9ec8",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 98,
+    "max_steps": 200,
+    "policy_max_steps": 98,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "multipack bundle of the transmission fluids",
+     "type of the stabilizers",
+     "material of the bearings, bushings & seals",
+     "condition of the bearings, bushings & seals"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4100,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1994,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4100,
+    "jufuli": 4100,
+    "lita": [
+     3,
+     1,
+     2
+    ],
+    "reza": [
+     3,
+     1,
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3c3213f972",
+  "tier": "hard",
+  "n_lines": 6,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 6,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.145,
+   "lita_log_prod": 12.871,
+   "hidden_cut": 0.026,
+   "reza_log": 13.207,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 181
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "knuckle bearing"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-01481bd49fb8",
+     "n_a_stated_cap": 27,
+     "n_a_final": 27,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Floor Mats & Cargo Liners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "interior accessories material",
+       "op": "has",
+       "value": "leatherette"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-5f7b63ae1307",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "chevrolet"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "lower",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-1a78dc7417d9",
+     "n_a_stated_cap": 7,
+     "n_a_final": 5,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hood Scoops & Vents",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "silver"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-1a935521ac26",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "services",
+       "op": "has",
+       "value": "product with services"
+      },
+      {
+       "prop": "multipack bundle",
+       "op": "nin",
+       "value": [
+        "multipack"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-0a1acab49a31",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "rack end"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 9600,
+     "target": "p-077ccda364b6",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9600,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 181,
+   "task_id": "t-3c3213f972",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "6line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "car-fit",
+     "cond",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_13",
+    "orig_id": "t-3c3213f972",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3c3213f972",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 181,
+     "cart": [
+      [
+       "p-01481bd49fb8",
+       1
+      ],
+      [
+       "p-5f7b63ae1307",
+       1
+      ],
+      [
+       "p-1a78dc7417d9",
+       1
+      ],
+      [
+       "p-1a935521ac26",
+       1
+      ],
+      [
+       "p-0a1acab49a31",
+       1
+      ],
+      [
+       "p-077ccda364b6",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 181,
+    "max_steps": 200,
+    "policy_max_steps": 181,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "position of the ball joints",
+     "condition of the bearings, bushings & seals",
+     "condition of the ball joints"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "condition",
+       "op": "has",
+       "value": "original"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 pair"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 9600,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 6095,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9600,
+    "jufuli": 9600,
+    "lita": [
+     27,
+     2,
+     5,
+     6,
+     10,
+     24
+    ],
+    "reza": [
+     27,
+     2,
+     7,
+     6,
+     10,
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3fe0b16899",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 4,
+   "lita_logmean": 2.165,
+   "lita_log_prod": 4.331,
+   "hidden_cut": 0.324,
+   "reza_log": 5.416,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "smart"
+      },
+      {
+       "prop": "water resistance",
+       "op": "nin",
+       "value": [
+        "30m"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "watch dial size",
+       "op": "ge",
+       "value": 41.0,
+       "unit": "mm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case shape",
+      "color"
+     ],
+     "cap_line": 4400,
+     "target": "p-117f3a5e9525",
+     "n_a_stated_cap": 25,
+     "n_a_final": 19,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "cotton fabric"
+      },
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 75,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "classic",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case shape",
+      "color"
+     ],
+     "cap_line": 4400,
+     "target": "p-17545974f8ae",
+     "n_a_stated_cap": 9,
+     "n_a_final": 4,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4400,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-3fe0b16899",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_14",
+    "orig_id": "t-3fe0b16899",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3fe0b16899",
+     "agent": "king_minion",
+     "rank": 54,
+     "eid": "145e9f6f-d77",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-27d857344b1a",
+       1
+      ],
+      [
+       "p-9ff5a41a22d0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "style of the headboards",
+     "watch dial size of the sports watches",
+     "case shape of the sports watches",
+     "color of the headboards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4400,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2124,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4400,
+    "jufuli": 4400,
+    "lita": [
+     19,
+     4
+    ],
+    "reza": [
+     25,
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4b1fcfe675",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 7.111,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 141
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "model",
+       "op": "has",
+       "value": "starex"
+      },
+      {
+       "prop": "make",
+       "op": "in",
+       "value": [
+        "honda",
+        "mazda"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type",
+       "op": "eq",
+       "value": "stabilizer link",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size",
+      "part type"
+     ],
+     "cap_line": 10500,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hood Scoops & Vents",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 pair"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "part type"
+     ],
+     "cap_line": 10500,
+     "target": null,
+     "n_a_stated_cap": 5,
+     "n_a_final": 0,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Floor Mats & Cargo Liners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "interior accessories material",
+       "op": "has",
+       "value": "leatherette"
+      },
+      {
+       "prop": "accessories material",
+       "op": "nin",
+       "value": [
+        "leatherette"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "part type"
+     ],
+     "cap_line": 10500,
+     "target": null,
+     "n_a_stated_cap": 1,
+     "n_a_final": 0,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "chevrolet"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "part type"
+     ],
+     "cap_line": 10500,
+     "target": null,
+     "n_a_stated_cap": 7,
+     "n_a_final": 0,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "ball race"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "part type"
+     ],
+     "cap_line": 10500,
+     "target": null,
+     "n_a_stated_cap": 35,
+     "n_a_final": 0,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 141,
+   "task_id": "t-4b1fcfe675",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "decline",
+     "car-fit",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_15",
+    "orig_id": "t-4b1fcfe675",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4b1fcfe675",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "observed_reveal",
+     "steps": 141,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 141,
+    "max_steps": 200,
+    "policy_max_steps": 141,
+    "decline": true,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of the stabilizers",
+     "pack size of the stabilizers",
+     "part type of the stabilizers"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 10500,
+    "unrevealed_needs": 1,
+    "cheapest_sum": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 10500,
+    "jufuli": 10500,
+    "lita": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "reza": [
+     0,
+     5,
+     1,
+     7,
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4b9a030f72",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 2.055,
+   "lita_log_prod": 6.165,
+   "hidden_cut": 0.468,
+   "reza_log": 7.161,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "strap material"
+     ],
+     "cap_line": 13000,
+     "target": "p-043cdc82fbb9",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Curtains and Blinds",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "light grey"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "strap material"
+     ],
+     "cap_line": 13000,
+     "target": "p-437a157a2b10",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sports Watches",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "case shape",
+       "op": "eq",
+       "value": "round",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "gender",
+       "op": "eq",
+       "value": "male",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "strap material"
+     ],
+     "cap_line": 13000,
+     "target": "p-00075e717021",
+     "n_a_stated_cap": 46,
+     "n_a_final": 17,
+     "n_a0_nocap": 46,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-4b9a030f72",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_16",
+    "orig_id": "t-4b9a030f72",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4b9a030f72",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-043cdc82fbb9",
+       2
+      ],
+      [
+       "p-437a157a2b10",
+       2
+      ],
+      [
+       "p-00075e717021",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "case shape of the sports watches",
+     "gender of the sports watches",
+     "strap material of the sports watches"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 1,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 13000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3019,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 13000,
+    "jufuli": 13000,
+    "lita": [
+     14,
+     2,
+     17
+    ],
+    "reza": [
+     14,
+     2,
+     46
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4f0d9fb1e4",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 8,
+   "lita_min": 10,
+   "lita_logmean": 2.842,
+   "lita_log_prod": 14.211,
+   "hidden_cut": 0.0,
+   "reza_log": 14.211,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 165
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Mattresses",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "firmness",
+       "op": "has",
+       "value": "hard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size",
+      "size"
+     ],
+     "cap_line": 26500,
+     "target": "p-0ab3c1534aaa",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mattress Pads and Pillows",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "cover color",
+       "op": "has",
+       "value": "blue"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size",
+      "size"
+     ],
+     "cap_line": 26500,
+     "target": "p-079836d4cd67",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Headboards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "polyester/linen blend fabric"
+      }
+     ],
+     "line_cap": 1900,
+     "hidden": [],
+     "decoys": [
+      "size",
+      "size"
+     ],
+     "cap_line": 26500,
+     "target": "p-1e03c285037c",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mattress Pads, Protectors & Toppers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "closure",
+       "op": "has",
+       "value": "deep pocket"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size",
+      "size"
+     ],
+     "cap_line": 26500,
+     "target": "p-0caf3ce35e7d",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bedding Sets",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "floral"
+      },
+      {
+       "prop": "age group",
+       "op": "nin",
+       "value": [
+        "children"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size",
+      "size"
+     ],
+     "cap_line": 26500,
+     "target": "p-00a64f706494",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 26500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 165,
+   "task_id": "t-4f0d9fb1e4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "dnu-default",
+     "mattress-fit",
+     "cond",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_17",
+    "orig_id": "t-4f0d9fb1e4",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4f0d9fb1e4",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 165,
+     "cart": [
+      [
+       "p-0ab3c1534aaa",
+       1
+      ],
+      [
+       "p-079836d4cd67",
+       2
+      ],
+      [
+       "p-1e03c285037c",
+       2
+      ],
+      [
+       "p-0caf3ce35e7d",
+       1
+      ],
+      [
+       "p-00a64f706494",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 165,
+    "max_steps": 200,
+    "policy_max_steps": 165,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size of the mattresses",
+     "size of the mattress pads and pillows"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "material",
+       "op": "has",
+       "value": "foam"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "polyester"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 26500,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 13002,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 26500,
+    "jufuli": 26500,
+    "lita": [
+     23,
+     19,
+     10,
+     10,
+     34
+    ],
+    "reza": [
+     23,
+     19,
+     10,
+     10,
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-521e07d9ca",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 2.193,
+   "lita_log_prod": 6.579,
+   "hidden_cut": 0.0,
+   "reza_log": 6.579,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 110
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Transmission Fluids",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "services",
+       "op": "has",
+       "value": "product with services"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fluid type",
+      "capacity"
+     ],
+     "cap_line": 4000,
+     "target": "p-0a1acab49a31",
+     "n_a_stated_cap": 48,
+     "n_a_final": 48,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hood Scoops & Vents",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 pair"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fluid type",
+      "capacity"
+     ],
+     "cap_line": 4000,
+     "target": "p-4dfba09518c2",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "tapered roller"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fluid type",
+      "capacity"
+     ],
+     "cap_line": 4000,
+     "target": "p-186371449d18",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 110,
+   "task_id": "t-521e07d9ca",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default",
+     "car-fit",
+     "cond",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_18",
+    "orig_id": "t-521e07d9ca",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-521e07d9ca",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 110,
+     "cart": [
+      [
+       "p-0a1acab49a31",
+       2
+      ],
+      [
+       "p-4dfba09518c2",
+       1
+      ],
+      [
+       "p-186371449d18",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 110,
+    "max_steps": 200,
+    "policy_max_steps": 110,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fluid type of the transmission fluids",
+     "capacity of the transmission fluids"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "multipack bundle",
+       "op": "has",
+       "value": "multipack"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "type",
+       "op": "has",
+       "value": "hood vent"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4000,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 762,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4000,
+    "jufuli": 4000,
+    "lita": [
+     48,
+     5,
+     3
+    ],
+    "reza": [
+     48,
+     5,
+     3
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a521fb324",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.908,
+   "lita_log_prod": 5.724,
+   "hidden_cut": 0.661,
+   "reza_log": 10.783,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "size",
+       "op": "has",
+       "value": "king"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 6700,
+     "target": "p-0516994e102b",
+     "n_a_stated_cap": 51,
+     "n_a_final": 51,
+     "n_a0_nocap": 51,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "product type",
+       "op": "has",
+       "value": "frozen"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "eq",
+       "value": "fish",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 6700,
+     "target": "p-0421e83df666",
+     "n_a_stated_cap": 105,
+     "n_a_final": 2,
+     "n_a0_nocap": 105,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "pencil pleat"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 6700,
+     "target": "p-0b5b4b91cca7",
+     "n_a_stated_cap": 9,
+     "n_a_final": 3,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6700,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-5a521fb324",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_19",
+    "orig_id": "t-5a521fb324",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a521fb324",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0516994e102b",
+       1
+      ],
+      [
+       "p-0421e83df666",
+       3
+      ],
+      [
+       "p-0b5b4b91cca7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type of the specialty meat",
+     "color of the curtains and blinds",
+     "color of the headboards",
+     "color of the specialty meat"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 6700,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2247,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6700,
+    "jufuli": 2247,
+    "lita": [
+     51,
+     2,
+     3
+    ],
+    "reza": [
+     51,
+     105,
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-670cdd381c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.846,
+   "reza_log": 3.258,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "length",
+       "op": "ge",
+       "value": 140.0,
+       "unit": "cm",
+       "ref": false
+      },
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "tab top",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size",
+      "type"
+     ],
+     "cap_line": 4612,
+     "target": "p-852e542ff0ee",
+     "n_a_stated_cap": 26,
+     "n_a_final": 4,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3450,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Pray work to 4612 cents of a dollar from this point, as the winter bills have rolled in like fog.",
+     "new_cap": 4612,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-670cdd381c",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_20",
+    "orig_id": "t-670cdd381c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-670cdd381c",
+     "agent": "cam",
+     "rank": 227,
+     "eid": "8579c24e-d76",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-ed9b99887d39",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "length",
+     "style",
+     "pack size",
+     "type"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4612,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1505,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 3450,
+    "lita": [
+     4
+    ],
+    "reza": [
+     26
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4612,
+    "jufuli": 4612,
+    "lita": [
+     4
+    ],
+    "reza": [
+     26
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-676a0978ee",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 1.472,
+   "lita_log_prod": 5.886,
+   "hidden_cut": 0.167,
+   "reza_log": 6.733,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 126
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "tapered roller"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 6150,
+     "target": "p-186371449d18",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "model",
+       "op": "has",
+       "value": "tucson"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "genuine",
+        "new"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack size",
+       "op": "eq",
+       "value": "set",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 6150,
+     "target": "p-66a02f2b9256",
+     "n_a_stated_cap": 7,
+     "n_a_final": 3,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "services",
+       "op": "has",
+       "value": "product with services"
+      },
+      {
+       "prop": "multipack bundle",
+       "op": "nin",
+       "value": [
+        "multipack"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 6150,
+     "target": "p-0a1acab49a31",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 piece"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition",
+      "condition"
+     ],
+     "cap_line": 6150,
+     "target": "p-1aa05f8b8c36",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6150,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 126,
+   "task_id": "t-676a0978ee",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "car-fit",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_21",
+    "orig_id": "t-676a0978ee",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-676a0978ee",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 126,
+     "cart": [
+      [
+       "p-186371449d18",
+       1
+      ],
+      [
+       "p-66a02f2b9256",
+       1
+      ],
+      [
+       "p-0a1acab49a31",
+       1
+      ],
+      [
+       "p-1aa05f8b8c36",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 126,
+    "max_steps": 200,
+    "policy_max_steps": 126,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack size of the stabilizers",
+     "condition of the bearings, bushings & seals",
+     "condition of the stabilizers"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 6150,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 3910,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6150,
+    "jufuli": 6150,
+    "lita": [
+     3,
+     3,
+     10,
+     4
+    ],
+    "reza": [
+     3,
+     7,
+     10,
+     4
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-76a4050bba",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.833,
+   "reza_log": 2.485,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "mechanical"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "gender",
+       "op": "eq",
+       "value": "female",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "strap material",
+      "water resistance"
+     ],
+     "cap_line": 4369,
+     "target": "p-1902606f8f80",
+     "n_a_stated_cap": 12,
+     "n_a_final": 2,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive the muddle, but my purse has been reconsidered and now allows 4369 cents of a dollar.",
+     "new_cap": 4369,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-76a4050bba",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_22",
+    "orig_id": "t-76a4050bba",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-76a4050bba",
+     "agent": "HASHIRA",
+     "rank": 79,
+     "eid": "e0c3af20-74a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 36,
+     "cart": [
+      [
+       "p-1902606f8f80",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "gender",
+     "color",
+     "strap material",
+     "water resistance"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4369,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 70,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     2
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4369,
+    "jufuli": 4369,
+    "lita": [
+     2
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7c57d63974",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 0.549,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.9,
+   "reza_log": 5.897,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bag",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meat type",
+      "depth"
+     ],
+     "cap_line": 8050,
+     "target": "p-0f660bf6afd1",
+     "n_a_stated_cap": 14,
+     "n_a_final": 3,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Headboards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "classic"
+      },
+      {
+       "prop": "material",
+       "op": "nin",
+       "value": [
+        "cotton fabric"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "beige",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meat type",
+      "depth"
+     ],
+     "cap_line": 8050,
+     "target": "p-9bc28c1a64ce",
+     "n_a_stated_cap": 26,
+     "n_a_final": 1,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8050,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-7c57d63974",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_23",
+    "orig_id": "t-7c57d63974",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7c57d63974",
+     "agent": "power",
+     "rank": 149,
+     "eid": "67f42813-c47",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-0f660bf6afd1",
+       1
+      ],
+      [
+       "p-9bc28c1a64ce",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type of the specialty meat",
+     "color of the headboards",
+     "meat type of the specialty meat",
+     "depth of the headboards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 8050,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3794,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8050,
+    "jufuli": 8050,
+    "lita": [
+     3,
+     1
+    ],
+    "reza": [
+     14,
+     26
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7ff842d967",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 4,
+   "lita_logmean": 2.35,
+   "lita_log_prod": 7.049,
+   "hidden_cut": 0.0,
+   "reza_log": 7.049,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 98
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "services",
+       "op": "has",
+       "value": "product with services"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 2550,
+     "target": "p-0a1acab49a31",
+     "n_a_stated_cap": 48,
+     "n_a_final": 48,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "ball bearing"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 2550,
+     "target": "p-41cb592088c7",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 piece"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER8020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "color"
+     ],
+     "cap_line": 2550,
+     "target": "p-1aa05f8b8c36",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2550,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 98,
+   "task_id": "t-7ff842d967",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "cheapest",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_24",
+    "orig_id": "t-7ff842d967",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7ff842d967",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 98,
+     "cart": [
+      [
+       "p-0a1acab49a31",
+       1
+      ],
+      [
+       "p-41cb592088c7",
+       1
+      ],
+      [
+       "p-1aa05f8b8c36",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 98,
+    "max_steps": 200,
+    "policy_max_steps": 98,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the transmission fluids",
+     "color of the bearings, bushings & seals"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2550,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2202,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2550,
+    "jufuli": 2202,
+    "lita": [
+     48,
+     6,
+     4
+    ],
+    "reza": [
+     48,
+     6,
+     4
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8bcd423e84",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.692,
+   "reza_log": 3.258,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 139.7,
+       "unit": "cm",
+       "ref": false
+      },
+      {
+       "prop": "length",
+       "op": "ge",
+       "value": 140.0,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 5143,
+     "target": "p-437a157a2b10",
+     "n_a_stated_cap": 26,
+     "n_a_final": 8,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3450,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive the muddle, but my purse has been reconsidered and now allows 5143 cents of a dollar.",
+     "new_cap": 5143,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-8bcd423e84",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_25",
+    "orig_id": "t-8bcd423e84",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8bcd423e84",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "1af94194-aac",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 13,
+     "cart": [
+      [
+       "p-437a157a2b10",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "length",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 1,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 5143,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1012,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 3450,
+    "lita": [
+     8
+    ],
+    "reza": [
+     26
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5143,
+    "jufuli": 5143,
+    "lita": [
+     8
+    ],
+    "reza": [
+     26
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9b739985da",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.964,
+   "reza_log": 3.332,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "fresh"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "eq",
+       "value": "fish",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "place of origin",
+      "packaging type"
+     ],
+     "cap_line": 495,
+     "target": "p-5fcc5d48ba73",
+     "n_a_stated_cap": 28,
+     "n_a_final": 1,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 495,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive me, but the label has been rewritten, rather like the sky turning grey over the allotments.",
+     "new_cap": null,
+     "pct": 74,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-9b739985da",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_26",
+    "orig_id": "t-9b739985da",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9b739985da",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "161a3d2c-99a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-5fcc5d48ba73",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type",
+     "place of origin",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 495,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 130,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 495,
+    "jufuli": 130,
+    "lita": [
+     1
+    ],
+    "reza": [
+     28
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 495,
+    "jufuli": 130,
+    "lita": [
+     1
+    ],
+    "reza": [
+     28
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a995929431",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.889,
+   "reza_log": 2.197,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "pencil pleat"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "red",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width",
+      "care"
+     ],
+     "cap_line": 1965,
+     "target": "p-18a68a1f018e",
+     "n_a_stated_cap": 9,
+     "n_a_final": 1,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2250,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Should you be so kind, please aim for 1965 cents of a dollar, since the garden fence has eaten into my savings.",
+     "new_cap": 1965,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-a995929431",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "ranked"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_27",
+    "orig_id": "t-a995929431",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a995929431",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "a6bb5ed4-e68",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 11,
+     "cart": [
+      [
+       "p-18a68a1f018e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "width",
+     "care"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": {
+     "line": 0,
+     "prop": "length",
+     "unit": "cm",
+     "dir": "max"
+    },
+    "fits_infeasible": false,
+    "cap_end": 1965,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 640,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2250,
+    "jufuli": 2250,
+    "lita": [
+     1
+    ],
+    "reza": [
+     9
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1965,
+    "jufuli": 1965,
+    "lita": [
+     1
+    ],
+    "reza": [
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a9b05c1298",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.708,
+   "reza_log": 3.871,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "care",
+       "op": "has",
+       "value": "machine washable"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 126.7968,
+       "unit": "cm",
+       "ref": false
+      },
+      {
+       "prop": "length",
+       "op": "ge",
+       "value": 213.36,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "pack size"
+     ],
+     "cap_line": 2900,
+     "target": "p-0600e4b9629a",
+     "n_a_stated_cap": 48,
+     "n_a_final": 14,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2900,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-a9b05c1298",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_28",
+    "orig_id": "t-a9b05c1298",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a9b05c1298",
+     "agent": "SATT",
+     "rank": 57,
+     "eid": "3ccbec56-0ee",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-18a68a1f018e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "length",
+     "material",
+     "pack size"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2900,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 640,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 640,
+    "lita": [
+     14
+    ],
+    "reza": [
+     48
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ac3aa1448e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "lagoon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "frame material",
+      "assembly time"
+     ],
+     "cap_line": 2968,
+     "target": "p-124ecaf06435",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2445,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The boiler man has had his say, so 2968 cents of a dollar is all I can spare.",
+     "new_cap": 2968,
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I should mention, with thanks for your trouble, that the amount for that selection has come down like a sudden shower.",
+     "new_cap": null,
+     "pct": 124,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-ac3aa1448e",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_29",
+    "orig_id": "t-ac3aa1448e",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-ac3aa1448e",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "9f408ee9-29d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 10,
+     "cart": [
+      [
+       "p-2f419f0b2ca3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "frame material",
+     "assembly time"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2968,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1394,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2445,
+    "jufuli": 2445,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2968,
+    "jufuli": 2968,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2445,
+    "jufuli": 2445,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 2968,
+    "jufuli": 2968,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b067f89bb0",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 3,
+   "lita_logmean": 2.665,
+   "lita_log_prod": 13.327,
+   "hidden_cut": 0.23,
+   "reza_log": 15.662,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 153
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Mattresses",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "firmness",
+       "op": "has",
+       "value": "hard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "bedding size 2"
+     ],
+     "cap_line": 22000,
+     "target": "p-0ab3c1534aaa",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "classic"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "dune",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pattern",
+      "bedding size 2"
+     ],
+     "cap_line": 22000,
+     "target": "p-1c638a7289cd",
+     "n_a_stated_cap": 31,
+     "n_a_final": 3,
+     "n_a0_nocap": 31,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mattress Pads and Pillows",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "cover color",
+       "op": "has",
+       "value": "blue"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "bedding size 2"
+     ],
+     "cap_line": 22000,
+     "target": "p-079836d4cd67",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bedding Sets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fabric feature",
+       "op": "has",
+       "value": "stain-resistant"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "cotton",
+        "microfiber"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "bedding size 2"
+     ],
+     "cap_line": 22000,
+     "target": "p-00bff53c37b6",
+     "n_a_stated_cap": 36,
+     "n_a_final": 36,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mattress Pads, Protectors & Toppers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "closure",
+       "op": "has",
+       "value": "fixed straps"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern",
+      "bedding size 2"
+     ],
+     "cap_line": 22000,
+     "target": "p-04d76e170a93",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 22000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 153,
+   "task_id": "t-b067f89bb0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "mattress-fit",
+     "cond",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_30",
+    "orig_id": "t-b067f89bb0",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b067f89bb0",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 153,
+     "cart": [
+      [
+       "p-0ab3c1534aaa",
+       1
+      ],
+      [
+       "p-1c638a7289cd",
+       1
+      ],
+      [
+       "p-079836d4cd67",
+       2
+      ],
+      [
+       "p-00bff53c37b6",
+       1
+      ],
+      [
+       "p-04d76e170a93",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 153,
+    "max_steps": 200,
+    "policy_max_steps": 153,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the headboards",
+     "pattern of the bedding sets",
+     "bedding size 2 of the bedding sets"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "material",
+       "op": "has",
+       "value": "foam"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 22000,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 12618,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 22000,
+    "jufuli": 12618,
+    "lita": [
+     23,
+     3,
+     19,
+     36,
+     13
+    ],
+    "reza": [
+     23,
+     31,
+     19,
+     36,
+     13
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b4ebd3018d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.375,
+   "lita_log_prod": 7.124,
+   "hidden_cut": 0.111,
+   "reza_log": 8.916,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      },
+      {
+       "prop": "watch dial size",
+       "op": "ge",
+       "value": 40,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 17000,
+     "target": "p-1bb723d6e844",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Headboards",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pewter"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 80.0,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 4.0,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 17000,
+     "target": "p-6a5c0f249ec2",
+     "n_a_stated_cap": 12,
+     "n_a_final": 2,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "has",
+       "value": "nil"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 17000,
+     "target": "p-00a1392eba3f",
+     "n_a_stated_cap": 69,
+     "n_a_final": 69,
+     "n_a0_nocap": 69,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 17000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-b4ebd3018d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_31",
+    "orig_id": "t-b4ebd3018d",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b4ebd3018d",
+     "agent": "Rose",
+     "rank": 6,
+     "eid": "bd71bc89-d6e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-02efe69ff2ac",
+       1
+      ],
+      [
+       "p-1bb723d6e844",
+       2
+      ],
+      [
+       "p-990754e15479",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width of the headboards",
+     "depth of the headboards",
+     "size of the headboards"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 1,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 17000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 9971,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 17000,
+    "jufuli": 17000,
+    "lita": [
+     9,
+     2,
+     69
+    ],
+    "reza": [
+     9,
+     12,
+     69
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b7ebbdb22d",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 3,
+   "lita_logmean": 1.884,
+   "lita_log_prod": 7.535,
+   "hidden_cut": 0.0,
+   "reza_log": 7.535,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 138
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Transmission Fluids",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "red"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER3920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "condition"
+     ],
+     "cap_line": 10000,
+     "target": "p-0faecf129bc7",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "mitsubishi",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "condition"
+     ],
+     "cap_line": 10000,
+     "target": "p-01504664cd5c",
+     "n_a_stated_cap": 26,
+     "n_a_final": 26,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hood Scoops & Vents",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "silver"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER3920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "condition"
+     ],
+     "cap_line": 10000,
+     "target": "p-0d1415222316",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "tapered roller"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER3920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size",
+      "condition"
+     ],
+     "cap_line": 10000,
+     "target": "p-51b12217c497",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 138,
+   "task_id": "t-b7ebbdb22d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "chain",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_32",
+    "orig_id": "t-b7ebbdb22d",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b7ebbdb22d",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "e897eccc-936",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 49,
+     "cart": [
+      [
+       "p-01504664cd5c",
+       1
+      ],
+      [
+       "p-0d1415222316",
+       1
+      ],
+      [
+       "p-0faecf129bc7",
+       2
+      ],
+      [
+       "p-51b12217c497",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-a6a1a2de2843"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 138,
+    "max_steps": 200,
+    "policy_max_steps": 138,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack size of the ball joints",
+     "condition of the ball joints"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "fluid type",
+       "op": "in",
+       "value": [
+        "cvt fluid",
+        "engine oil",
+        "gear oil"
+       ]
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "position",
+       "op": "has",
+       "value": "lower"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 10000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 4719,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 10000,
+    "lita": [
+     3,
+     26,
+     8,
+     3
+    ],
+    "reza": [
+     3,
+     26,
+     8,
+     3
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-a6a1a2de2843"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bec89f37ff",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.711,
+   "reza_log": 3.638,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "smart"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "strap material",
+       "op": "eq",
+       "value": "stainless steel",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "watch dial size",
+       "op": "ge",
+       "value": 41.0,
+       "unit": "mm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case shape",
+      "color"
+     ],
+     "cap_line": 1608,
+     "target": "p-379183def940",
+     "n_a_stated_cap": 38,
+     "n_a_final": 11,
+     "n_a0_nocap": 38,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1900,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive the muddle, but my purse has been reconsidered and now allows 1608 cents of a dollar.",
+     "new_cap": 1608,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-bec89f37ff",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_33",
+    "orig_id": "t-bec89f37ff",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bec89f37ff",
+     "agent": "SATT",
+     "rank": 57,
+     "eid": "08be39a4-706",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-379183def940",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "strap material",
+     "watch dial size",
+     "case shape",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1608,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1248,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1900,
+    "jufuli": 1900,
+    "lita": [
+     11
+    ],
+    "reza": [
+     38
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1608,
+    "jufuli": 1608,
+    "lita": [
+     11
+    ],
+    "reza": [
+     38
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c54adbea18",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 0,
+   "lita_logmean": 1.753,
+   "lita_log_prod": 7.012,
+   "hidden_cut": 0.0,
+   "reza_log": 7.012,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 138
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "ge",
+       "value": 1,
+       "unit": "l"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7210"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "position"
+     ],
+     "cap_line": 12500,
+     "target": "p-04936fbc0266",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Stabilizers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "set"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7210"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "position"
+     ],
+     "cap_line": 12500,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ball Joints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "year",
+       "op": "ge",
+       "value": 1999
+      },
+      {
+       "prop": "position",
+       "op": "in",
+       "value": [
+        "front",
+        "lower"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "position"
+     ],
+     "cap_line": 12500,
+     "target": "p-079057d9b4fe",
+     "n_a_stated_cap": 30,
+     "n_a_final": 30,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Floor Mats & Cargo Liners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "interior accessories material",
+       "op": "has",
+       "value": "leatherette"
+      },
+      {
+       "prop": "accessories material",
+       "op": "nin",
+       "value": [
+        "leatherette"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7210"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "type",
+      "position"
+     ],
+     "cap_line": 12500,
+     "target": "p-c978b4bacf16",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 12500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 138,
+   "task_id": "t-c54adbea18",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_34",
+    "orig_id": "t-c54adbea18",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-c54adbea18",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 138,
+     "cart": [
+      [
+       "p-04936fbc0266",
+       1
+      ],
+      [
+       "p-079057d9b4fe",
+       1
+      ],
+      [
+       "p-c978b4bacf16",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 138,
+    "max_steps": 200,
+    "policy_max_steps": 138,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of the stabilizers",
+     "position of the stabilizers"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "fluid type",
+       "op": "in",
+       "value": [
+        "cvt fluid",
+        "dual clutch transmission fluid",
+        "gear oil"
+       ]
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "pack size",
+       "op": "has",
+       "value": "2 pieces"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 12500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 12500,
+    "jufuli": 12500,
+    "lita": [
+     37,
+     0,
+     30,
+     1
+    ],
+    "reza": [
+     37,
+     0,
+     30,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ca895f4bee",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.0,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "movement",
+      "gender"
+     ],
+     "cap_line": 1520,
+     "target": "p-1bb723d6e844",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1520,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-ca895f4bee",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_35",
+    "orig_id": "t-ca895f4bee",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-ca895f4bee",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "68f31626-c26",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 9,
+     "cart": [
+      [
+       "p-1bb723d6e844",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "movement",
+     "gender"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1520,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 141,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1520,
+    "jufuli": 1520,
+    "lita": [
+     14
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cccb0364fc",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 318,
+   "lita_logmean": 5.762,
+   "lita_log_prod": 5.762,
+   "hidden_cut": 0.0,
+   "reza_log": 5.762,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "fresh"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "weight",
+      "dietary needs"
+     ],
+     "cap_line": 320,
+     "target": "p-001943a63637",
+     "n_a_stated_cap": 318,
+     "n_a_final": 318,
+     "n_a0_nocap": 318,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 495,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I must tell you, with apologies, that I can now spend 320 cents of a dollar and not a penny more.",
+     "new_cap": 320,
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Kindly let storage type go from my list, for I have loosened up on it.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "storage type"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-cccb0364fc",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_36",
+    "orig_id": "t-cccb0364fc",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-cccb0364fc",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "da84754e-8fe",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 20,
+     "cart": [
+      [
+       "p-2bad8d3f5ea4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight",
+     "dietary needs"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 320,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 34,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 495,
+    "jufuli": 495,
+    "lita": [
+     28
+    ],
+    "reza": [
+     28
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 320,
+    "jufuli": 320,
+    "lita": [
+     28
+    ],
+    "reza": [
+     28
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 495,
+    "jufuli": 495,
+    "lita": [
+     318
+    ],
+    "reza": [
+     318
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 320,
+    "jufuli": 320,
+    "lita": [
+     318
+    ],
+    "reza": [
+     318
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dabc36982b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 44,
+   "lita_logmean": 3.784,
+   "lita_log_prod": 3.784,
+   "hidden_cut": 0.488,
+   "reza_log": 4.454,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bag"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "eq",
+       "value": "chicken",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs",
+      "place of origin"
+     ],
+     "cap_line": 485,
+     "target": "p-0298a1b4da98",
+     "n_a_stated_cap": 86,
+     "n_a_final": 44,
+     "n_a0_nocap": 86,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 485,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-dabc36982b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_37",
+    "orig_id": "t-dabc36982b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-dabc36982b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0298a1b4da98",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type",
+     "dietary needs",
+     "place of origin"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 485,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 64,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 64,
+    "lita": [
+     44
+    ],
+    "reza": [
+     86
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-df78a030c3",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 13,
+   "lita_logmean": 2.565,
+   "lita_log_prod": 2.565,
+   "hidden_cut": 0.0,
+   "reza_log": 2.565,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Curtains and Blinds",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 138,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "material"
+     ],
+     "cap_line": 3450,
+     "target": "p-024baf75d4d4",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3450,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I do beg your pardon, yet what they want for that choice looks different from earlier, and I thought you ought to know.",
+     "new_cap": null,
+     "pct": 109,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-df78a030c3",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_38",
+    "orig_id": "t-df78a030c3",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-df78a030c3",
+     "agent": "power",
+     "rank": 149,
+     "eid": "09ef72f6-ba8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 29,
+     "cart": [
+      [
+       "p-3f00f3701fb4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "material"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3450,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 661,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 661,
+    "lita": [
+     13
+    ],
+    "reza": [
+     13
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3450,
+    "jufuli": 720,
+    "lita": [
+     13
+    ],
+    "reza": [
+     13
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e08d49c42b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "case shape",
+       "op": "has",
+       "value": "octagonal"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "strap material",
+      "dial glass"
+     ],
+     "cap_line": 1540,
+     "target": "p-1d19ecc74748",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1310,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Kindly look again, for the amount being asked for that selection has dropped like a stone since you picked it.",
+     "new_cap": null,
+     "pct": 78,
+     "dropped_prop": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Having counted up what is left after the removal van, I can offer 1540 cents of a dollar in total.",
+     "new_cap": 1540,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e08d49c42b",
+   "extra": {
+    "kinds": [
+     "price",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_39",
+    "orig_id": "t-e08d49c42b",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e08d49c42b",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "1f96cb56-f05",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 11,
+     "cart": [
+      [
+       "p-2851575c7d2f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "strap material",
+     "dial glass"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1540,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1245,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1310,
+    "jufuli": 1310,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1310,
+    "jufuli": 1310,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1540,
+    "jufuli": 1540,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1540,
+    "jufuli": 1540,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e3cf514c7c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.955,
+   "reza_log": 3.091,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "orange"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "strap material",
+       "op": "eq",
+       "value": "rubber",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "dial glass",
+       "op": "eq",
+       "value": "sapphire glass",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "movement",
+      "water resistance"
+     ],
+     "cap_line": 766,
+     "target": "p-7181800e35fb",
+     "n_a_stated_cap": 22,
+     "n_a_final": 1,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1080,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forgive the muddle, but my purse has been reconsidered and now allows 766 cents of a dollar.",
+     "new_cap": 766,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e3cf514c7c",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_40",
+    "orig_id": "t-e3cf514c7c",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e3cf514c7c",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-7181800e35fb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "strap material",
+     "dial glass",
+     "movement",
+     "water resistance"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 766,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 146,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1080,
+    "jufuli": 146,
+    "lita": [
+     1
+    ],
+    "reza": [
+     22
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 766,
+    "jufuli": 146,
+    "lita": [
+     1
+    ],
+    "reza": [
+     22
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e8593def81",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 338,
+   "lita_logmean": 5.823,
+   "lita_log_prod": 5.823,
+   "hidden_cut": 0.0,
+   "reza_log": 5.823,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Sports Watches",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "mechanical"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case shape",
+      "dial glass"
+     ],
+     "cap_line": 5240,
+     "target": "p-00075e717021",
+     "n_a_stated_cap": 338,
+     "n_a_final": 338,
+     "n_a0_nocap": 338,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Should you be so kind, please aim for 5240 cents of a dollar, since the garden fence has eaten into my savings.",
+     "new_cap": 5240,
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Kindly let movement go from my list, for I have loosened up on it.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "movement"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e8593def81",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_41",
+    "orig_id": "t-e8593def81",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e8593def81",
+     "agent": "TERRY",
+     "rank": 202,
+     "eid": "dcc3547d-7e3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 15,
+     "cart": [
+      [
+       "p-1902606f8f80",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "case shape",
+     "dial glass"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 5240,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5240,
+    "jufuli": 5240,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     338
+    ],
+    "reza": [
+     338
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5240,
+    "jufuli": 5240,
+    "lita": [
+     338
+    ],
+    "reza": [
+     338
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ea0ddfecfd",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 2.545,
+   "lita_log_prod": 7.636,
+   "hidden_cut": 0.127,
+   "reza_log": 8.735,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "polyester/linen blend fabric"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case shape"
+     ],
+     "cap_line": 14000,
+     "target": "p-045cbc6976e9",
+     "n_a_stated_cap": 37,
+     "n_a_final": 37,
+     "n_a0_nocap": 37,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "case shape"
+     ],
+     "cap_line": 14000,
+     "target": "p-043cdc82fbb9",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sports Watches",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "movement",
+       "op": "has",
+       "value": "mechanical"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "strap material",
+       "op": "eq",
+       "value": "stainless steel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "case shape"
+     ],
+     "cap_line": 14000,
+     "target": "p-41473a07b966",
+     "n_a_stated_cap": 12,
+     "n_a_final": 4,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-ea0ddfecfd",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_42",
+    "orig_id": "t-ea0ddfecfd",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ea0ddfecfd",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-045cbc6976e9",
+       2
+      ],
+      [
+       "p-043cdc82fbb9",
+       1
+      ],
+      [
+       "p-41473a07b966",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "strap material of the sports watches",
+     "case shape of the sports watches"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 1,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 14000,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 5864,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 5864,
+    "lita": [
+     37,
+     14,
+     4
+    ],
+    "reza": [
+     37,
+     14,
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-eed386a32c",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 1.587,
+   "lita_log_prod": 7.937,
+   "hidden_cut": 0.0,
+   "reza_log": 7.937,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 141
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Floor Mats & Cargo Liners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "interior accessories material",
+       "op": "has",
+       "value": "leatherette"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "transmission type",
+      "transmission type"
+     ],
+     "cap_line": 6000,
+     "target": "p-22182bd2c3d5",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Bearings, Bushings & Seals",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "pillow block"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "transmission type",
+      "transmission type"
+     ],
+     "cap_line": 6000,
+     "target": "p-096a2af053f1",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Transmission Fluids",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "BER7010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "transmission type",
+      "transmission type"
+     ],
+     "cap_line": 6000,
+     "target": "p-2009351a92a6",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Stabilizers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "model",
+       "op": "has",
+       "value": "tucson"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "genuine",
+        "new"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "transmission type",
+      "transmission type"
+     ],
+     "cap_line": 6000,
+     "target": "p-17978c06eae8",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Hood Scoops & Vents",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 piece",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "transmission type",
+      "transmission type"
+     ],
+     "cap_line": 6000,
+     "target": "p-00f43621e1e8",
+     "n_a_stated_cap": 25,
+     "n_a_final": 25,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 141,
+   "task_id": "t-eed386a32c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "chain",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_43",
+    "orig_id": "t-eed386a32c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-eed386a32c",
+     "agent": "Claire Redfield",
+     "rank": 22,
+     "eid": "9fb6cff5-e6b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 58,
+     "cart": [
+      [
+       "p-02906ff1b750",
+       1
+      ],
+      [
+       "p-096a2af053f1",
+       2
+      ],
+      [
+       "p-2009351a92a6",
+       1
+      ],
+      [
+       "p-22182bd2c3d5",
+       1
+      ],
+      [
+       "p-a6a6c2d7eff9",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-31678c7ee90d",
+      "p-dbb5457a3b87",
+      "p-e94acee54361",
+      "p-014f3fe96bb2",
+      "p-6397699fddbe"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 141,
+    "max_steps": 200,
+    "policy_max_steps": 141,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "transmission type of the floor mats & cargo liners",
+     "transmission type of the transmission fluids"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 6000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3214,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6000,
+    "jufuli": 6000,
+    "lita": [
+     2,
+     2,
+     4,
+     7,
+     25
+    ],
+    "reza": [
+     2,
+     2,
+     4,
+     7,
+     25
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-31678c7ee90d",
+    "p-dbb5457a3b87",
+    "p-e94acee54361",
+    "p-014f3fe96bb2",
+    "p-6397699fddbe"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f670932ad3",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.895,
+   "reza_log": 2.944,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "polypropylene fabric"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "size",
+       "op": "eq",
+       "value": "queen",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "classic",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "width",
+      "depth"
+     ],
+     "cap_line": 1697,
+     "target": "p-6138b7453d2b",
+     "n_a_stated_cap": 19,
+     "n_a_final": 2,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2600,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Kindly adjust your search, for the sum I have to play with is 1697 cents of a dollar now that the roof quote has come in.",
+     "new_cap": 1697,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-f670932ad3",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_44",
+    "orig_id": "t-f670932ad3",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f670932ad3",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-6138b7453d2b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size",
+     "style",
+     "width",
+     "depth"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1697,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 420,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2600,
+    "jufuli": 2600,
+    "lita": [
+     2
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1697,
+    "jufuli": 1697,
+    "lita": [
+     2
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fab7ab538a",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 9,
+   "lita_min": 0,
+   "lita_logmean": 1.29,
+   "lita_log_prod": 3.871,
+   "hidden_cut": 0.467,
+   "reza_log": 6.879,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r19",
+   "flavor": "r19",
+   "lines": [
+    {
+     "category": "Headboards",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "lagoon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "weight",
+      "strap material"
+     ],
+     "cap_line": 16000,
+     "target": "p-124ecaf06435",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Sports Watches",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      },
+      {
+       "prop": "movement",
+       "op": "nin",
+       "value": [
+        "digital"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "water resistance",
+       "op": "eq",
+       "value": "200m",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "weight",
+      "strap material"
+     ],
+     "cap_line": 16000,
+     "target": null,
+     "n_a_stated_cap": 9,
+     "n_a_final": 0,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Specialty Meat",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "cupboard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "meat type",
+       "op": "nin",
+       "value": [
+        "pork"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "weight",
+      "strap material"
+     ],
+     "cap_line": 16000,
+     "target": "p-2691c873d214",
+     "n_a_stated_cap": 9,
+     "n_a_final": 4,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 16000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-fab7ab538a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r19_45",
+    "orig_id": "t-fab7ab538a",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fab7ab538a",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-124ecaf06435",
+       3
+      ],
+      [
+       "p-2691c873d214",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-9498b998b19e",
+      "p-4405ae2a8c78",
+      "p-4dce69a1aa04",
+      "p-a6af173996fe",
+      "p-0e1ca23062ab"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meat type of the specialty meat",
+     "water resistance of the sports watches",
+     "weight of the specialty meat",
+     "strap material of the sports watches"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 2,
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 16000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 16000,
+    "jufuli": 16000,
+    "lita": [
+     12,
+     0,
+     4
+    ],
+    "reza": [
+     12,
+     9,
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-9498b998b19e",
+    "p-4405ae2a8c78",
+    "p-4dce69a1aa04",
+    "p-a6af173996fe",
+    "p-0e1ca23062ab"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ }
+]
