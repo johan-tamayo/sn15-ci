@@ -3836,6 +3836,17 @@ def _wrap_reader_with_stored_readings(stored_row: dict[str, Any] | None, live_re
     return _serve
 
 
+def _policy_max_steps(pack: Pack, task_id: str) -> int:
+    """`policy_view.max_steps` of one task: the task's own `params.policy_max_steps` when the pack carries that key (race 18 hands every
+    task its own count: 37 on the short lists, 74..120 on the long ones; lane r18forge1), else the pack-wide limit - every pack built
+    before `s14_r18` has no such key and keeps `pack.limits["max_steps"]` unchanged."""
+    try:
+        own = int(((pack.tasks.get(task_id) or {}).get("params") or {}).get("policy_max_steps") or 0)
+    except (AttributeError, TypeError, ValueError):
+        own = 0
+    return own if own > 0 else pack.limits["max_steps"]
+
+
 def run_world_episode(
     pack: Pack,
     task_id: str,
@@ -3873,7 +3884,7 @@ def run_world_episode(
                 "query": sess.request_text,
                 "opening": sess.opening,
                 "tools": tools_payload,
-                "max_steps": pack.limits["max_steps"],
+                "max_steps": _policy_max_steps(pack, task_id),
                 "max_calls_per_turn": 4,
                 "finished": sess.finished,
             },
@@ -4475,20 +4486,73 @@ def _card_string_to_row(card: Any) -> dict[str, Any] | None:
     return row
 
 
+_KEYED_CARD_HEAD_RE = re.compile(r"^[a-z_]{1,24}: p-[0-9a-f]{8,20}(?: \| |$)")
+_KEYED_CARD_SPLIT_RE = re.compile(r" \| (?=[a-z_]{1,40}: )")
+
+
+def _keyed_card_string_to_row(card: Any) -> dict[str, Any] | None:
+    """Pipe-delimited listing cards whose key names rotate per race (R18: `id: <pid> | title: .. | vendor_name: .. | unit_cost: <int> |
+    on_hand: True | section_name: .. | attributes_map: k=v; .. | description: .. | seller_name: .. | item_from_the_seller: ..`).
+    The first segment carries the listing id; every later `key: value` pair goes through `_normalize_catalog_row`'s key-pattern reading,
+    and a `k=v; k=v` value becomes the facts map. Only called for strings the Race-15 `ref_ref:` reader does not take."""
+    if not isinstance(card, str) or card.startswith("ref_ref: ") or not _KEYED_CARD_HEAD_RE.match(card):
+        return None
+    parts = _KEYED_CARD_SPLIT_RE.split(card)
+    head_k, _, pid = parts[0].partition(": ")
+    raw: dict[str, Any] = {"id": pid.strip()}
+    facts: dict[str, str] = {}
+    for part in parts[1:]:
+        k, _, v = part.partition(": ")
+        k, v = k.strip(), v.strip()
+        if not k or v in ("", "None"):
+            continue
+        chunks = [c for c in _CARD_FACT_SPLIT_RE.split(v) if "=" in c]
+        if chunks and len(chunks) == len(_CARD_FACT_SPLIT_RE.split(v)) and not any(w in k for w in ("desc", "title", "name", "seller")):
+            for c in chunks:
+                fk, _, fv = c.partition("=")
+                if fk.strip():
+                    facts[fk.strip().lower()] = fv.strip()
+            continue
+        if v in ("True", "False"):
+            raw[k] = v == "True"
+        elif v.lstrip("-").isdigit() and any(w in k for w in ("price", "cost", "amount")):
+            raw[k] = int(v)
+        elif "seller" in k and k.endswith("name"):
+            raw["shop_name"] = v  # a seller's name, not the listing title
+        elif "seller" in k:
+            raw["seller_note"] = v  # the seller's blurb (R18 pointer chains ride here); kept out of the title / brand / shop readers
+        else:
+            raw[k] = v
+    if facts:
+        raw["attributes"] = facts
+    return raw
+
+
 def _cardify_world_obs(obs: Any) -> Any:
     """Turn Race-15 card strings in an unwrapped observation into generic row dicts (a list of cards under any key, or a lone `{value: card}`);
-    any other observation (every earlier race's dict rows, cart lines, replies) is returned unchanged."""
+    any other observation (every earlier race's dict rows, cart lines, replies) is returned unchanged. Cards in the rotating keyed shape
+    (R18 `id: <pid> | ...`) are read by `_keyed_card_string_to_row`, also as a bare string (a notice-wrapped card)."""
+    if isinstance(obs, str):
+        row = _keyed_card_string_to_row(obs)
+        return row if row is not None else obs
     if not isinstance(obs, dict):
         return obs
     if len(obs) == 1:
         only = next(iter(obs.values()))
         row = _card_string_to_row(only)
+        if row is None:
+            row = _keyed_card_string_to_row(only)
         if row is not None:
             return row
     out: dict[str, Any] | None = None
     for k, v in obs.items():
         if isinstance(v, list) and v and all(isinstance(x, str) and x.startswith("ref_ref: ") for x in v):
             rows = [_card_string_to_row(x) for x in v]
+            if all(r is not None for r in rows):
+                out = out if out is not None else dict(obs)
+                out[k] = rows
+        elif isinstance(v, list) and v and all(isinstance(x, str) and _KEYED_CARD_HEAD_RE.match(x) for x in v):
+            rows = [_keyed_card_string_to_row(x) for x in v]
             if all(r is not None for r in rows):
                 out = out if out is not None else dict(obs)
                 out[k] = rows
@@ -4626,7 +4690,7 @@ def _classify_world_tool_role(tool_name: str, args: dict[str, Any], inner_obs: A
     # 6. Cart view: 0 arguments and returns basket lines + running total
     if not ak and isinstance(inner_obs, dict):
         if any(w in tn_low for w in ("bag", "trolley", "cart", "items_list")) or (
-            obs_dict_lists and any(any(w in k.lower() for w in ("total", "payable", "due", "cost", "amount")) for k in ok)
+            obs_dict_lists and any(any(w in k.lower() for w in ("total", "payable", "due", "cost", "amount", "owed")) for k in ok)
         ):
             return "cart_view"
         if any(isinstance(v, dict) and ("points_available" in v or "points_taken" in v) for v in inner_obs.values()) or "segu" in ok:
@@ -4983,7 +5047,7 @@ def parse_world_episode_feedback(fb: dict[str, Any]) -> dict[str, Any]:
                 short_vals = [v.lower() for v in str_arg_vals if len(v) <= 24 and " " not in v]
                 long_vals = [v for v in str_arg_vals if len(v) > 24 or " " in v]
                 is_decline = (
-                    any(w in tn.lower() for w in ("give_up", "decline", "refuse", "cancel", "abstain"))
+                    any(w in tn.lower() for w in ("give_up", "decline", "refuse", "cancel", "abstain", "passnow", "pass_now"))
                     or any(v in ("refuse", "decline", "abstain", "cancel", "stop", "quit", "give_up") for v in short_vals)
                     or bool(args.get("abstain"))
                 )

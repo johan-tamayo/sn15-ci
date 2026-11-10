@@ -1,0 +1,10276 @@
+[
+ {
+  "task_id": "t-038908c3cc",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 28,
+   "lita_logmean": 3.332,
+   "lita_log_prod": 3.332,
+   "hidden_cut": 0.849,
+   "reza_log": 5.226,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Traditional & Gaming Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "laptop type",
+       "op": "has",
+       "value": "notebook"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "le",
+       "value": 120.0,
+       "unit": "gb",
+       "ref": false
+      },
+      {
+       "prop": "condition",
+       "op": "eq",
+       "value": "refurbished",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 27500,
+     "target": "p-09a56a9a2cd3",
+     "n_a_stated_cap": 186,
+     "n_a_final": 28,
+     "n_a0_nocap": 186,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27500,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forget laptop type, I was stricter than a baker with a recipe, and the shop is busy enough as it is.",
+     "pct": null,
+     "dropped_prop": "laptop type"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-038908c3cc",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_01",
+    "orig_id": "t-038908c3cc",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-038908c3cc",
+     "agent": "VAST",
+     "rank": 85,
+     "eid": "2ba454c3-026",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-d95e470ece6f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage",
+     "condition",
+     "operating system"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 11,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 5355,
+    "lita": [
+     11
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 11,
+    "lita": [
+     28
+    ],
+    "reza": [
+     186
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-147cfe5e81",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 27,
+   "lita_logmean": 3.296,
+   "lita_log_prod": 3.296,
+   "hidden_cut": 0.719,
+   "reza_log": 4.564,
+   "cheapest": 1,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bottle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 340,
+     "target": "p-0194380e971f",
+     "n_a_stated_cap": 96,
+     "n_a_final": 27,
+     "n_a0_nocap": 96,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 340,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's leave pack type aside, I'd rather see more options than keep sieving them down.",
+     "pct": null,
+     "dropped_prop": "pack type"
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I've just spotted that your suggestion is all gone, none left at all, like the last scone on a Saturday.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "I only noticed because the shop has gone quiet, but your suggestion has gone up in price and I'd rather you knew.",
+     "pct": 83,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-147cfe5e81",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_02",
+    "orig_id": "t-147cfe5e81",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-147cfe5e81",
+     "agent": "iWillBePigDoubleRedAgain",
+     "rank": 221,
+     "eid": "12ebc8b4-6c5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-6cace13e878f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 27,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 70,
+    "lita": [
+     9
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 27,
+    "lita": [
+     27
+    ],
+    "reza": [
+     96
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 70,
+    "lita": [
+     9
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 27,
+    "lita": [
+     27
+    ],
+    "reza": [
+     96
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 70,
+    "lita": [
+     9
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 27,
+    "lita": [
+     27
+    ],
+    "reza": [
+     96
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 70,
+    "lita": [
+     9
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 27,
+    "lita": [
+     27
+    ],
+    "reza": [
+     96
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-169c26084d",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 15.166,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor type",
+       "op": "has",
+       "value": "hexa-core"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "condition",
+       "op": "eq",
+       "value": "refurbished",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 120000,
+     "target": null,
+     "n_a_stated_cap": 20,
+     "n_a_final": 0,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "ge",
+       "value": 32,
+       "unit": "gb"
+      },
+      {
+       "prop": "cas latency",
+       "op": "in",
+       "value": [
+        "cl22",
+        "cl36"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory technology",
+       "op": "nin",
+       "value": [
+        "ddr5"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 120000,
+     "target": null,
+     "n_a_stated_cap": 39,
+     "n_a_final": 0,
+     "n_a0_nocap": 39,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 120000,
+     "target": null,
+     "n_a_stated_cap": 90,
+     "n_a_final": 0,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 120000,
+     "target": null,
+     "n_a_stated_cap": 55,
+     "n_a_final": 0,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 120000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-169c26084d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_03",
+    "orig_id": "t-169c26084d",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-169c26084d",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-58cb8bce1494"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": true,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory technology of the computer memory",
+     "condition of the mini pc",
+     "operating system of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "condition",
+       "op": "has",
+       "value": "used"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 120000,
+    "jufuli": 120000,
+    "lita": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reza": [
+     20,
+     39,
+     90,
+     55
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-58cb8bce1494"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1ddcc7ca74",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 5,
+   "lita_min": 11,
+   "lita_logmean": 3.817,
+   "lita_log_prod": 19.085,
+   "hidden_cut": 0.008,
+   "reza_log": 19.235,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 112
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor type",
+       "op": "has",
+       "value": "hexa-core"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "storage type"
+     ],
+     "cap_line": 110000,
+     "target": "p-1e4ed6dcdc58",
+     "n_a_stated_cap": 20,
+     "n_a_final": 19,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "storage type"
+     ],
+     "cap_line": 110000,
+     "target": "p-07d52fdb9dee",
+     "n_a_stated_cap": 90,
+     "n_a_final": 89,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ecc",
+       "op": "has",
+       "value": "on-die"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "storage type"
+     ],
+     "cap_line": 110000,
+     "target": "p-02f383924494",
+     "n_a_stated_cap": 12,
+     "n_a_final": 11,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "memory type",
+       "op": "has",
+       "value": "ddr4",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "storage type"
+     ],
+     "cap_line": 110000,
+     "target": "p-00a81c5f0f93",
+     "n_a_stated_cap": 190,
+     "n_a_final": 190,
+     "n_a0_nocap": 190,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "storage type"
+     ],
+     "cap_line": 110000,
+     "target": "p-016b2ff0eb04",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 110000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 112,
+   "task_id": "t-1ddcc7ca74",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_04",
+    "orig_id": "t-1ddcc7ca74",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-1ddcc7ca74",
+     "agent": "Welcome",
+     "rank": 86,
+     "eid": "27965f85-555",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 39,
+     "cart": [
+      [
+       "p-02f383924494",
+       1
+      ],
+      [
+       "p-4a3cd60d59a4",
+       1
+      ],
+      [
+       "p-703fd6985211",
+       1
+      ],
+      [
+       "p-e067cc79bd2e",
+       1
+      ],
+      [
+       "p-f5c5ad9efb77",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-dc10a501910a",
+      "p-6440d02a52b5"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 112,
+    "max_steps": 150,
+    "policy_max_steps": 112,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "operating system of the mini pc",
+     "storage type of the mini pc"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "chrome os"
+      },
+      "then_line": 4,
+      "then": {
+       "prop": "form factor",
+       "op": "has",
+       "value": "mini"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": 17815,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     19,
+     89,
+     11,
+     190,
+     55
+    ],
+    "reza": [
+     20,
+     90,
+     12,
+     190,
+     55
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-dc10a501910a",
+    "p-6440d02a52b5"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-26ffe63909",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 3,
+   "lita_logmean": 1.748,
+   "lita_log_prod": 3.497,
+   "hidden_cut": 0.674,
+   "reza_log": 6.068,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Electric Guitars",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "guitar body type",
+       "op": "has",
+       "value": "semi hollow"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "bridge system",
+       "op": "eq",
+       "value": "string-through",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pickup configuration"
+     ],
+     "cap_line": 27500,
+     "target": "p-6fb103e12a30",
+     "n_a_stated_cap": 16,
+     "n_a_final": 3,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "coffee table"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 43.18,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pickup configuration"
+     ],
+     "cap_line": 27500,
+     "target": "p-0d2ff488a44e",
+     "n_a_stated_cap": 27,
+     "n_a_final": 11,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-26ffe63909",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_05",
+    "orig_id": "t-26ffe63909",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-26ffe63909",
+     "agent": "fourth-v1",
+     "rank": 55,
+     "eid": "aae791a7-74e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-47e6d2402b5b",
+       1
+      ],
+      [
+       "p-82ebdb94ba6e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "bridge system of the electric guitars",
+     "height of the coffee tables and side tables",
+     "pickup configuration of the electric guitars"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 18347,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 18347,
+    "lita": [
+     3,
+     11
+    ],
+    "reza": [
+     16,
+     27
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-28778a10e8",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 0.805,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.684,
+   "reza_log": 4.357,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Shorts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "booty",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plain",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "waist type"
+     ],
+     "cap_line": 1900,
+     "target": "p-06ce9cd49c1e",
+     "n_a_stated_cap": 6,
+     "n_a_final": 5,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Batteries & Battery Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "2000-3000"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "us",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "waist type"
+     ],
+     "cap_line": 1900,
+     "target": "p-efad5b67f6e7",
+     "n_a_stated_cap": 13,
+     "n_a_final": 1,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1900,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-28778a10e8",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_06",
+    "orig_id": "t-28778a10e8",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-28778a10e8",
+     "agent": "Quill",
+     "rank": 54,
+     "eid": "e0de5da2-261",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-06ce9cd49c1e",
+       1
+      ],
+      [
+       "p-efad5b67f6e7",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-32d3d52fa359",
+      "p-ba186db3243e",
+      "p-7f529c899b5e",
+      "p-06ce9cd49c1e"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type of the batteries & battery chargers",
+     "pattern of the shorts",
+     "waist type of the shorts"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 331,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1900,
+    "jufuli": 1900,
+    "lita": [
+     5,
+     1
+    ],
+    "reza": [
+     6,
+     13
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-32d3d52fa359",
+    "p-ba186db3243e",
+    "p-7f529c899b5e",
+    "p-06ce9cd49c1e"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-28cd60026f",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.593,
+   "reza_log": 3.296,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Men's Shoes",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "toe style",
+       "op": "has",
+       "value": "pointed toe"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "closure",
+       "op": "eq",
+       "value": "hook & loop",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 2800,
+     "target": "p-02fee5469087",
+     "n_a_stated_cap": 27,
+     "n_a_final": 11,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2800,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-28cd60026f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_07",
+    "orig_id": "t-28cd60026f",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-28cd60026f",
+     "agent": "power",
+     "rank": 207,
+     "eid": "d80d00fe-bd3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-91d99e37acdb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "closure",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 504,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2800,
+    "jufuli": 2800,
+    "lita": [
+     11
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2a1a6deb24",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 1,
+   "lita_logmean": 2.884,
+   "lita_log_prod": 14.419,
+   "hidden_cut": 0.017,
+   "reza_log": 16.365,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 112
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor type",
+       "op": "has",
+       "value": "hexa-core"
+      },
+      {
+       "prop": "operating system",
+       "op": "nin",
+       "value": [
+        "windows"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "range",
+       "value": [
+        256,
+        256
+       ],
+       "unit": "gb",
+       "ref": true
+      },
+      {
+       "prop": "condition",
+       "op": "eq",
+       "value": "used",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "ac adapter"
+     ],
+     "cap_line": 95000,
+     "target": "p-bea295d0daa6",
+     "n_a_stated_cap": 7,
+     "n_a_final": 1,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "voltage",
+       "op": "le",
+       "value": 1.35,
+       "unit": "v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "ac adapter"
+     ],
+     "cap_line": 95000,
+     "target": "p-00421c41fbcf",
+     "n_a_stated_cap": 153,
+     "n_a_final": 153,
+     "n_a0_nocap": 153,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "write speed",
+       "op": "le",
+       "value": 2000,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "ac adapter"
+     ],
+     "cap_line": 95000,
+     "target": "p-016b2ff0eb04",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": 625,
+     "hidden": [],
+     "decoys": [
+      "ac adapter"
+     ],
+     "cap_line": 95000,
+     "target": "p-0c854eef28f0",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "memory type",
+       "op": "has",
+       "value": "ddr3"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "ac adapter"
+     ],
+     "cap_line": 95000,
+     "target": "p-00a12d065b17",
+     "n_a_stated_cap": 166,
+     "n_a_final": 166,
+     "n_a0_nocap": 166,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 95000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 112,
+   "task_id": "t-2a1a6deb24",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_08",
+    "orig_id": "t-2a1a6deb24",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2a1a6deb24",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 112,
+     "cart": [
+      [
+       "p-bea295d0daa6",
+       1
+      ],
+      [
+       "p-00421c41fbcf",
+       1
+      ],
+      [
+       "p-016b2ff0eb04",
+       1
+      ],
+      [
+       "p-0c854eef28f0",
+       2
+      ],
+      [
+       "p-00a12d065b17",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-ffbc6f05ccc4"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 112,
+    "max_steps": 150,
+    "policy_max_steps": 112,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage of the mini pc",
+     "condition of the mini pc",
+     "ac adapter of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 38406,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 95000,
+    "jufuli": 38406,
+    "lita": [
+     1,
+     153,
+     18,
+     4,
+     166
+    ],
+    "reza": [
+     7,
+     153,
+     18,
+     4,
+     166
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-ffbc6f05ccc4"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3764603b65",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 105,
+   "lita_logmean": 4.654,
+   "lita_log_prod": 4.654,
+   "hidden_cut": 0.775,
+   "reza_log": 6.144,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "chrome os"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "plug type",
+       "op": "eq",
+       "value": "us",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage type"
+     ],
+     "cap_line": 6550,
+     "target": "p-01d8ccdef5ca",
+     "n_a_stated_cap": 466,
+     "n_a_final": 105,
+     "n_a0_nocap": 466,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6550,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm happy to loosen up on operating system now, I only fretted about it because of last month's mix-up.",
+     "pct": null,
+     "dropped_prop": "operating system"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Bit of a wobble here, that one has been repriced since I last looked, and my sums are collapsing like a sunken sponge.",
+     "pct": 137,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-3764603b65",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_09",
+    "orig_id": "t-3764603b65",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3764603b65",
+     "agent": "toBEorNOTtoBEthatIStheQUESTION",
+     "rank": 38,
+     "eid": "0be2be0e-74a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-04db4136e93a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type",
+     "storage type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 161,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6550,
+    "jufuli": 6550,
+    "lita": [
+     10
+    ],
+    "reza": [
+     21
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 6550,
+    "jufuli": 6550,
+    "lita": [
+     105
+    ],
+    "reza": [
+     466
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 6550,
+    "jufuli": 6550,
+    "lita": [
+     10
+    ],
+    "reza": [
+     21
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 6550,
+    "jufuli": 6550,
+    "lita": [
+     105
+    ],
+    "reza": [
+     466
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-40061c0b0c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 1,
+   "lita_logmean": 1.348,
+   "lita_log_prod": 4.043,
+   "hidden_cut": 0.452,
+   "reza_log": 7.827,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Pasta Sauce",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled",
+       "keys": [
+        "storage type",
+        "storage type gr",
+        "storage"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "sauce type",
+       "op": "eq",
+       "value": "pesto",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging"
+     ],
+     "cap_line": 14000,
+     "target": "p-0ee099a635e7",
+     "n_a_stated_cap": 11,
+     "n_a_final": 3,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Flats & Loafers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "animal print"
+      },
+      {
+       "prop": "shoe type",
+       "op": "in",
+       "value": [
+        "boat shoes",
+        "mary janes"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging"
+     ],
+     "cap_line": 14000,
+     "target": "p-00d743cef3dd",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wall Hooks and Coat Racks",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "has",
+       "value": "gloss"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "plastic",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging"
+     ],
+     "cap_line": 14000,
+     "target": "p-6998f9ffa4b8",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-40061c0b0c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_10",
+    "orig_id": "t-40061c0b0c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-40061c0b0c",
+     "agent": "Cairn",
+     "rank": 1,
+     "eid": "5b593cf5-7bd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-0ee099a635e7",
+       2
+      ],
+      [
+       "p-6998f9ffa4b8",
+       3
+      ],
+      [
+       "p-b35c2ae5fb3a",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "sauce type of the pasta sauce",
+     "material of the wall hooks and coat racks",
+     "packaging of the pasta sauce"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 5710,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 14000,
+    "lita": [
+     3,
+     19,
+     1
+    ],
+    "reza": [
+     11,
+     19,
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-409db52d7e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 30,
+   "lita_logmean": 3.401,
+   "lita_log_prod": 3.401,
+   "hidden_cut": 0.0,
+   "reza_log": 3.401,
+   "cheapest": 1,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "sshd"
+      },
+      {
+       "prop": "storage",
+       "op": "range",
+       "value": [
+        120,
+        120
+       ],
+       "unit": "gb",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system",
+      "graphics memory new"
+     ],
+     "cap_line": 5750,
+     "target": "p-19eb042d86ce",
+     "n_a_stated_cap": 30,
+     "n_a_final": 30,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5750,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On storage type you can ease off, my worry about it has softened like butter on the radiator.",
+     "pct": null,
+     "dropped_prop": "storage type"
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Sorry now, but that last pick of yours has run dry, and I only saw it when I went to check the stock sheet.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I think we've a problem, because there's no more of your suggestion to be had, and the delivery man is due any minute.",
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-409db52d7e",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_11",
+    "orig_id": "t-409db52d7e",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-409db52d7e",
+     "agent": "Delusion",
+     "rank": 25,
+     "eid": "65e30115-ad4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 37,
+     "cart": [
+      [
+       "p-29fada6a772b",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-4d0e5da8a183",
+      "p-d50385bde2b6"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "operating system",
+     "graphics memory new"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 1607,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 2320,
+    "lita": [
+     5
+    ],
+    "reza": [
+     5
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 1607,
+    "lita": [
+     30
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 2320,
+    "lita": [
+     5
+    ],
+    "reza": [
+     5
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 1607,
+    "lita": [
+     30
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 2320,
+    "lita": [
+     5
+    ],
+    "reza": [
+     5
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 1607,
+    "lita": [
+     30
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 2320,
+    "lita": [
+     5
+    ],
+    "reza": [
+     5
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 5750,
+    "jufuli": 1607,
+    "lita": [
+     30
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-4d0e5da8a183",
+    "p-d50385bde2b6"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-438aea8f35",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 1.242,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.567,
+   "reza_log": 5.375,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Shorts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "skorts"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "free size",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "waist type"
+     ],
+     "cap_line": 23000,
+     "target": "p-e139a6e99785",
+     "n_a_stated_cap": 18,
+     "n_a_final": 1,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mini PC",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "uk"
+      },
+      {
+       "prop": "system memory",
+       "op": "ge",
+       "value": 8,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "waist type"
+     ],
+     "cap_line": 23000,
+     "target": "p-2d30bea3d0ce",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 23000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-438aea8f35",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_12",
+    "orig_id": "t-438aea8f35",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-438aea8f35",
+     "agent": "Zorvex",
+     "rank": 53,
+     "eid": "be409b08-513",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-e139a6e99785",
+       1
+      ],
+      [
+       "p-eeaeb118e5d1",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size class of the shorts",
+     "operating system of the mini pc",
+     "waist type of the shorts"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 19640,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 23000,
+    "jufuli": 23000,
+    "lita": [
+     1,
+     12
+    ],
+    "reza": [
+     18,
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-44d3aca4d9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 34,
+   "lita_logmean": 3.526,
+   "lita_log_prod": 3.526,
+   "hidden_cut": 0.767,
+   "reza_log": 4.984,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Wall Hooks and Coat Racks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "mdf"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "grey",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dimensions"
+     ],
+     "cap_line": 17750,
+     "target": "p-04ec3ce49537",
+     "n_a_stated_cap": 146,
+     "n_a_final": 34,
+     "n_a0_nocap": 146,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 17750,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Actually, material can be dropped, since Mary on the till reckons I'm overthinking it.",
+     "pct": null,
+     "dropped_prop": "material"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-44d3aca4d9",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_13",
+    "orig_id": "t-44d3aca4d9",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-44d3aca4d9",
+     "agent": "power",
+     "rank": 207,
+     "eid": "66f2b064-980",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-41687c1f3886",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "dimensions"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 1270,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 17750,
+    "jufuli": 17750,
+    "lita": [
+     1
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 17750,
+    "jufuli": 17750,
+    "lita": [
+     34
+    ],
+    "reza": [
+     146
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-45847b3e66",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.824,
+   "reza_log": 3.526,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Wall Hooks and Coat Racks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "grey"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "mounting type",
+       "op": "eq",
+       "value": "over-the-door",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 4100,
+     "target": "p-0b16392dcd11",
+     "n_a_stated_cap": 34,
+     "n_a_final": 6,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4100,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-45847b3e66",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_14",
+    "orig_id": "t-45847b3e66",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-45847b3e66",
+     "agent": "Know Thyself",
+     "rank": 160,
+     "eid": "395bf5cb-d3f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-f02503bab591",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "mounting type",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 1943,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4100,
+    "jufuli": 1943,
+    "lita": [
+     6
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4a111c73ca",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 2.206,
+   "lita_log_prod": 6.617,
+   "hidden_cut": 0.467,
+   "reza_log": 8.697,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "special feature",
+       "op": "has",
+       "value": "anti-bacterial"
+      },
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 3,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 95000,
+     "target": "p-06b706d7636e",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pasta Sauce",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "chilled",
+       "keys": [
+        "storage type",
+        "storage type gr",
+        "storage"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 95000,
+     "target": "p-0ee099a635e7",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Air Conditioners",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "2 pin",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "air conditioner rated capacity",
+       "op": "ge",
+       "value": 10000.0,
+       "unit": "btu",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 95000,
+     "target": "p-1bce76d38d00",
+     "n_a_stated_cap": 32,
+     "n_a_final": 4,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 95000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-4a111c73ca",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_15",
+    "orig_id": "t-4a111c73ca",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4a111c73ca",
+     "agent": "Delusion",
+     "rank": 25,
+     "eid": "6749ee88-047",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-0b3bb159685b",
+       1
+      ],
+      [
+       "p-7d453c69a68b",
+       2
+      ],
+      [
+       "p-9edbe96a6b91",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-93673114fe4d",
+      "p-787467cc307d",
+      "p-07dc8b844bfd",
+      "p-188aa7c6fda0"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "air conditioner rated capacity of the air conditioners",
+     "packaging type of the food containers"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 26898,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 95000,
+    "jufuli": 95000,
+    "lita": [
+     17,
+     11,
+     4
+    ],
+    "reza": [
+     17,
+     11,
+     32
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-93673114fe4d",
+    "p-787467cc307d",
+    "p-07dc8b844bfd",
+    "p-188aa7c6fda0"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4b218eaa6c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 111,
+   "lita_logmean": 4.71,
+   "lita_log_prod": 4.71,
+   "hidden_cut": 0.0,
+   "reza_log": 4.71,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Men's Shoes",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "size",
+       "op": "has",
+       "value": "12 uk"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "style"
+     ],
+     "cap_line": 3150,
+     "target": "p-00e9d4030c8f",
+     "n_a_stated_cap": 111,
+     "n_a_final": 111,
+     "n_a0_nocap": 111,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3150,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Oh dear, your suggestion is dearer than it was when I was stacking the shelves this morning, so I thought I'd say.",
+     "pct": 57,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'll stop minding size, the stockroom's calling and I can't dither all day.",
+     "pct": null,
+     "dropped_prop": "size"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-4b218eaa6c",
+   "extra": {
+    "kinds": [
+     "price",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_16",
+    "orig_id": "t-4b218eaa6c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-4b218eaa6c",
+     "agent": "power",
+     "rank": 207,
+     "eid": "35eeeff1-44d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 26,
+     "cart": [
+      [
+       "p-91045de92298",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "style"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 400,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     111
+    ],
+    "reza": [
+     111
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     111
+    ],
+    "reza": [
+     111
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-56d04912c5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.7,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Flats & Loafers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "checked & geometric"
+      },
+      {
+       "prop": "shoes closure type",
+       "op": "in",
+       "value": [
+        "hook and loop",
+        "slip-on"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "toe shape",
+       "op": "has",
+       "value": "pointed",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "shoe type"
+     ],
+     "cap_line": 390,
+     "target": "p-9452910e7c43",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 390,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forget shoes closure type, I was stricter than a baker with a recipe, and the shop is busy enough as it is.",
+     "pct": null,
+     "dropped_prop": "shoes closure type"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-56d04912c5",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_17",
+    "orig_id": "t-56d04912c5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-56d04912c5",
+     "agent": "Zorvex",
+     "rank": 53,
+     "eid": "291453ee-ee4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 26,
+     "cart": [
+      [
+       "p-abc75e98b211",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-a07a420b1d62",
+      "p-7f24088aa513",
+      "p-2fbf18187337",
+      "p-f4d8abf4718e"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "toe shape",
+     "shoe type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 373,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 390,
+    "lita": [
+     3
+    ],
+    "reza": [
+     4
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 390,
+    "lita": [
+     3
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-a07a420b1d62",
+    "p-7f24088aa513",
+    "p-2fbf18187337",
+    "p-f4d8abf4718e"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-58bed801cc",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.722,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "flavor",
+       "op": "eq",
+       "value": "menthol",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "storage type"
+     ],
+     "cap_line": 340,
+     "target": "p-23c37e54db47",
+     "n_a_stated_cap": 18,
+     "n_a_final": 5,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 340,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Ah no, the page is showing nothing left of that one, and I nearly dropped my tea.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I think we've a problem, because there's no more of your suggestion to be had, and the delivery man is due any minute.",
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-58bed801cc",
+   "extra": {
+    "kinds": [
+     "stock",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_18",
+    "orig_id": "t-58bed801cc",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-58bed801cc",
+     "agent": "power",
+     "rank": 207,
+     "eid": "3b612ba1-d80",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-99114b29a9ac",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "flavor",
+     "storage type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 88,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-59ec24c79a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 23,
+   "lita_logmean": 3.135,
+   "lita_log_prod": 3.135,
+   "hidden_cut": 0.742,
+   "reza_log": 4.489,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Electric Guitars",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fretboard material",
+       "op": "has",
+       "value": "technical wood"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pickup configuration",
+       "op": "eq",
+       "value": "single-coil",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "body material"
+     ],
+     "cap_line": 18000,
+     "target": "p-15f0a1ece5fe",
+     "n_a_stated_cap": 89,
+     "n_a_final": 23,
+     "n_a0_nocap": 89,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's leave fretboard material aside, I'd rather see more options than keep sieving them down.",
+     "pct": null,
+     "dropped_prop": "fretboard material"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-59ec24c79a",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_19",
+    "orig_id": "t-59ec24c79a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-59ec24c79a",
+     "agent": "power",
+     "rank": 207,
+     "eid": "5562e5a7-688",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 14,
+     "cart": [
+      [
+       "p-680fe5957737",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pickup configuration",
+     "body material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 6000,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     4
+    ],
+    "reza": [
+     15
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     23
+    ],
+    "reza": [
+     89
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5c644d9bd1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.944,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Shorts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "skorts",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "size class",
+       "op": "eq",
+       "value": "free size",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "waist type"
+     ],
+     "cap_line": 335,
+     "target": "p-e139a6e99785",
+     "n_a_stated_cap": 18,
+     "n_a_final": 1,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 335,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I only noticed because the shop has gone quiet, but your suggestion has gone up in price and I'd rather you knew.",
+     "pct": 55,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-5c644d9bd1",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_20",
+    "orig_id": "t-5c644d9bd1",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5c644d9bd1",
+     "agent": "Zenith",
+     "rank": 87,
+     "eid": "b14516f5-41c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-e139a6e99785",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-e0130eebee68",
+      "p-779e006a0ff8",
+      "p-fc312143ecc0",
+      "p-b9e7a2e17704"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "size class",
+     "waist type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 248,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 335,
+    "jufuli": 335,
+    "lita": [
+     1
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 335,
+    "jufuli": 335,
+    "lita": [
+     1
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-e0130eebee68",
+    "p-779e006a0ff8",
+    "p-fc312143ecc0",
+    "p-b9e7a2e17704"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-60ce2b8e51",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 28,
+   "lita_logmean": 3.332,
+   "lita_log_prod": 3.332,
+   "hidden_cut": 0.808,
+   "reza_log": 4.984,
+   "cheapest": 0,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Wall Hooks and Coat Racks",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "has",
+       "value": "gloss"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "mounting type",
+       "op": "eq",
+       "value": "adhesive",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "buy more save more"
+     ],
+     "cap_line": 2950,
+     "target": "p-04ad27bf25bd",
+     "n_a_stated_cap": 146,
+     "n_a_final": 28,
+     "n_a0_nocap": 146,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2950,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Before I sign off on anything, would you look at the cost again? It's moved since I opened the page over my tea.",
+     "pct": 88,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Actually, finish can be dropped, since Mary on the till reckons I'm overthinking it.",
+     "pct": null,
+     "dropped_prop": "finish"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Oh dear, your suggestion is dearer than it was when I was stacking the shelves this morning, so I thought I'd say.",
+     "pct": 73,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-60ce2b8e51",
+   "extra": {
+    "kinds": [
+     "price",
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_21",
+    "orig_id": "t-60ce2b8e51",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-60ce2b8e51",
+     "agent": "PO",
+     "rank": 222,
+     "eid": "d3417761-c8f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-348410fe3a57",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "mounting type",
+     "buy more save more"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 292,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     28
+    ],
+    "reza": [
+     146
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     28
+    ],
+    "reza": [
+     146
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     1
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     28
+    ],
+    "reza": [
+     146
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 2950,
+    "jufuli": 2950,
+    "lita": [
+     28
+    ],
+    "reza": [
+     146
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-622111dd19",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 2.773,
+   "hidden_cut": 0.393,
+   "reza_log": 5.257,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Wall Hooks and Coat Racks",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "finish",
+       "op": "has",
+       "value": "gloss"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "mounting type",
+       "op": "eq",
+       "value": "adhesive",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "buy more save more"
+     ],
+     "cap_line": 58500,
+     "target": "p-348410fe3a57",
+     "n_a_stated_cap": 12,
+     "n_a_final": 1,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Air Conditioners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "universal"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "buy more save more"
+     ],
+     "cap_line": 58500,
+     "target": "p-00a866365d94",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 58500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-622111dd19",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_22",
+    "orig_id": "t-622111dd19",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-622111dd19",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-348410fe3a57",
+       2
+      ],
+      [
+       "p-00a866365d94",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "mounting type of the wall hooks and coat racks",
+     "buy more save more of the wall hooks and coat racks"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 5550,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 58500,
+    "jufuli": 5550,
+    "lita": [
+     1,
+     16
+    ],
+    "reza": [
+     12,
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6267b6eaba",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.916,
+   "reza_log": 4.554,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Flower, Fruit & Herbal Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "tea format",
+       "op": "eq",
+       "value": "instant",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bag",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 316,
+     "target": "p-0d3b7347d5cc",
+     "n_a_stated_cap": 95,
+     "n_a_final": 8,
+     "n_a0_nocap": 95,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 316,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm happy to loosen up on pack type now, I only fretted about it because of last month's mix-up.",
+     "pct": null,
+     "dropped_prop": "pack type"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-6267b6eaba",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_23",
+    "orig_id": "t-6267b6eaba",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6267b6eaba",
+     "agent": "Zorvex",
+     "rank": 53,
+     "eid": "6d6f3ae8-b40",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-9ed4980a31aa",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "tea format",
+     "packaging type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 41,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 316,
+    "jufuli": 316,
+    "lita": [
+     2
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 316,
+    "jufuli": 316,
+    "lita": [
+     8
+    ],
+    "reza": [
+     95
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-644defa7c2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.95,
+   "reza_log": 3.689,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Traditional & Gaming Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "emmc"
+      },
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 32.0,
+       "unit": "gb",
+       "ref": false
+      },
+      {
+       "prop": "laptop type",
+       "op": "eq",
+       "value": "business",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "display size"
+     ],
+     "cap_line": 5650,
+     "target": "p-5ed2bdc2d407",
+     "n_a_stated_cap": 40,
+     "n_a_final": 2,
+     "n_a0_nocap": 40,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5650,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm happy to loosen up on storage type now, I only fretted about it because of last month's mix-up.",
+     "pct": null,
+     "dropped_prop": "storage type"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Hold on now, the pricing on your suggestion has been altered, and I'm after getting a fright with the month-end accounts open beside me.",
+     "pct": 70,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-644defa7c2",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_24",
+    "orig_id": "t-644defa7c2",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-644defa7c2",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": []
+    },
+    "refs": [
+     [
+      "p-5c2fedd23cb9",
+      "p-c30465d1cd14",
+      "p-6ffd59a0a492",
+      "p-ecf2d4e766ec"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage",
+     "laptop type",
+     "display size"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5650,
+    "jufuli": 5650,
+    "lita": [
+     0
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5650,
+    "jufuli": 5650,
+    "lita": [
+     2
+    ],
+    "reza": [
+     40
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5650,
+    "jufuli": 5650,
+    "lita": [
+     0
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5650,
+    "jufuli": 5650,
+    "lita": [
+     2
+    ],
+    "reza": [
+     40
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-5c2fedd23cb9",
+    "p-c30465d1cd14",
+    "p-6ffd59a0a492",
+    "p-ecf2d4e766ec"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-66001ebe99",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 5,
+   "lita_logmean": 2.934,
+   "lita_log_prod": 8.802,
+   "hidden_cut": 0.329,
+   "reza_log": 11.329,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Binders & Binder Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "paper size",
+       "op": "has",
+       "value": "a5"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "binder type"
+     ],
+     "cap_line": 11500,
+     "target": "p-011891437517",
+     "n_a_stated_cap": 70,
+     "n_a_final": 70,
+     "n_a0_nocap": 70,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "features",
+       "op": "has",
+       "value": "shatterproof",
+       "keys": [
+        "features",
+        "food container features"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "eq",
+       "value": "bottle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "binder type"
+     ],
+     "cap_line": 11500,
+     "target": "p-1faac59d6ee9",
+     "n_a_stated_cap": 29,
+     "n_a_final": 5,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Men's Shoes",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "has",
+       "value": "regular",
+       "keys": [
+        "width",
+        "shoe width"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "toe style",
+       "op": "eq",
+       "value": "round toe",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "binder type"
+     ],
+     "cap_line": 11500,
+     "target": "p-084764f57a12",
+     "n_a_stated_cap": 41,
+     "n_a_final": 19,
+     "n_a0_nocap": 41,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-66001ebe99",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_25",
+    "orig_id": "t-66001ebe99",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-66001ebe99",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-011891437517",
+       1
+      ],
+      [
+       "p-1faac59d6ee9",
+       1
+      ],
+      [
+       "p-084764f57a12",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "toe style of the men's shoes",
+     "packaging type of the food containers",
+     "binder type of the binders & binder accessories"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 1286,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11500,
+    "jufuli": 1286,
+    "lita": [
+     70,
+     5,
+     19
+    ],
+    "reza": [
+     70,
+     29,
+     41
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6e6b50725a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 111,
+   "lita_logmean": 4.71,
+   "lita_log_prod": 4.71,
+   "hidden_cut": 0.0,
+   "reza_log": 4.71,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Men's Shoes",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "oxford"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "closure"
+     ],
+     "cap_line": 3150,
+     "target": "p-00e9d4030c8f",
+     "n_a_stated_cap": 111,
+     "n_a_final": 111,
+     "n_a0_nocap": 111,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3150,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'll stop minding style, the stockroom's calling and I can't dither all day.",
+     "pct": null,
+     "dropped_prop": "style"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-6e6b50725a",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_26",
+    "orig_id": "t-6e6b50725a",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-6e6b50725a",
+     "agent": "power",
+     "rank": 207,
+     "eid": "87b04345-b87",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-8bf6f9862ac3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "closure"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 400,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     30
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3150,
+    "jufuli": 3150,
+    "lita": [
+     111
+    ],
+    "reza": [
+     111
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7168b4ec05",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.201,
+   "lita_log_prod": 8.804,
+   "hidden_cut": 0.559,
+   "reza_log": 12.862,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 4,
+       "unit": "kg"
+      },
+      {
+       "prop": "system memory",
+       "op": "le",
+       "value": 8,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "linux",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 115000,
+     "target": "p-02b8ca6b897d",
+     "n_a_stated_cap": 81,
+     "n_a_final": 14,
+     "n_a0_nocap": 81,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ecc",
+       "op": "has",
+       "value": "on-die"
+      },
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 32,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cas latency",
+       "op": "eq",
+       "value": "cl32",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 115000,
+     "target": "p-4cc49eab9ade",
+     "n_a_stated_cap": 10,
+     "n_a_final": 1,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 115000,
+     "target": "p-04630a3b3701",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "interface",
+       "op": "in",
+       "value": [
+        "pcie",
+        "usb 3.1 gen 1"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor"
+     ],
+     "cap_line": 115000,
+     "target": "p-12249c05781e",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 115000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-7168b4ec05",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_27",
+    "orig_id": "t-7168b4ec05",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7168b4ec05",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": [
+      [
+       "p-02b8ca6b897d",
+       2
+      ],
+      [
+       "p-4cc49eab9ade",
+       1
+      ],
+      [
+       "p-04630a3b3701",
+       1
+      ],
+      [
+       "p-12249c05781e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "operating system of the mini pc",
+     "cas latency of the computer memory",
+     "processor of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "graphics memory",
+       "op": "in",
+       "value": [
+        "1gb & under",
+        "2gb",
+        "4gb"
+       ]
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "form factor",
+       "op": "has",
+       "value": "m.2"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": 29489,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 115000,
+    "jufuli": 29489,
+    "lita": [
+     14,
+     1,
+     28,
+     17
+    ],
+    "reza": [
+     81,
+     10,
+     28,
+     17
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-71a066463b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 16,
+   "lita_logmean": 2.773,
+   "lita_log_prod": 2.773,
+   "hidden_cut": 0.407,
+   "reza_log": 3.296,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Binders & Binder Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "purple"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "paper size",
+       "op": "eq",
+       "value": "a5",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "binder type"
+     ],
+     "cap_line": 275,
+     "target": "p-081767338076",
+     "n_a_stated_cap": 27,
+     "n_a_final": 16,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 275,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-71a066463b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_28",
+    "orig_id": "t-71a066463b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-71a066463b",
+     "agent": "Oradon",
+     "rank": 235,
+     "eid": "009ba435-a9a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 11,
+     "cart": [
+      [
+       "p-1ecb394b79e1",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "paper size",
+     "binder type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 45,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 275,
+    "jufuli": 275,
+    "lita": [
+     16
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7417f56d89",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 26,
+   "lita_logmean": 3.258,
+   "lita_log_prod": 3.258,
+   "hidden_cut": 0.81,
+   "reza_log": 4.92,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 55.88,
+       "unit": "cm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 48.0,
+       "unit": "cm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 2700,
+     "target": "p-02f9275cebb0",
+     "n_a_stated_cap": 137,
+     "n_a_final": 26,
+     "n_a0_nocap": 137,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2700,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Forget height, I was stricter than a baker with a recipe, and the shop is busy enough as it is.",
+     "pct": null,
+     "dropped_prop": "height"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-7417f56d89",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_29",
+    "orig_id": "t-7417f56d89",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7417f56d89",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-02f9275cebb0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 541,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2700,
+    "jufuli": 749,
+    "lita": [
+     10
+    ],
+    "reza": [
+     37
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2700,
+    "jufuli": 541,
+    "lita": [
+     26
+    ],
+    "reza": [
+     137
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-80d4b3c26f",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.924,
+   "lita_log_prod": 7.696,
+   "hidden_cut": 0.367,
+   "reza_log": 9.488,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 110
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics memory",
+       "op": "has",
+       "value": "2gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor type",
+       "op": "eq",
+       "value": "octa-core",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "condition",
+       "op": "eq",
+       "value": "refurbished",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-01d8ccdef5ca",
+     "n_a_stated_cap": 48,
+     "n_a_final": 8,
+     "n_a0_nocap": 48,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "ecc",
+       "op": "has",
+       "value": "on-die"
+      },
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 24,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-02f383924494",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": 45,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-c2a7e8e3b71f",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-016b2ff0eb04",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 210000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 110,
+   "task_id": "t-80d4b3c26f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_30",
+    "orig_id": "t-80d4b3c26f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-80d4b3c26f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 110,
+     "cart": [
+      [
+       "p-01d8ccdef5ca",
+       1
+      ],
+      [
+       "p-02f383924494",
+       2
+      ],
+      [
+       "p-c2a7e8e3b71f",
+       1
+      ],
+      [
+       "p-016b2ff0eb04",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 110,
+    "max_steps": 150,
+    "policy_max_steps": 110,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor type of the mini pc",
+     "condition of the mini pc",
+     "operating system of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "chrome os"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "input type",
+       "op": "has",
+       "value": "pcie"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": 32545,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 210000,
+    "jufuli": 210000,
+    "lita": [
+     8,
+     5,
+     1,
+     55
+    ],
+    "reza": [
+     48,
+     5,
+     1,
+     55
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-866e07c992",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 64,
+   "lita_logmean": 4.159,
+   "lita_log_prod": 4.159,
+   "hidden_cut": 0.587,
+   "reza_log": 5.043,
+   "cheapest": 0,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Air Conditioners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "single split system",
+       "keys": [
+        "type",
+        "type air conditioner"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "horsepower",
+       "op": "range",
+       "value": [
+        1.0,
+        1.0
+       ],
+       "unit": "hp",
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "input voltage"
+     ],
+     "cap_line": 42000,
+     "target": "p-003e23b5ddc5",
+     "n_a_stated_cap": 155,
+     "n_a_final": 64,
+     "n_a0_nocap": 155,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 42000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm happy to loosen up on type now, I only fretted about it because of last month's mix-up.",
+     "pct": null,
+     "dropped_prop": "type"
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Ah no, the page is showing nothing left of that one, and I nearly dropped my tea.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Mind you, the amount being asked for that one has dropped, and I'd hate to let it slip past like a loaf left to go flat.",
+     "pct": 114,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-866e07c992",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_31",
+    "orig_id": "t-866e07c992",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-866e07c992",
+     "agent": "fourth-v1",
+     "rank": 55,
+     "eid": "1601c577-3c9",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-35cd4f6af302",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-7ac620ea96d7",
+      "p-11055a070257",
+      "p-5d5db0ffac63",
+      "p-547fa34c5df5"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "horsepower",
+     "input voltage"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 355,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     16
+    ],
+    "reza": [
+     50
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     64
+    ],
+    "reza": [
+     155
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     16
+    ],
+    "reza": [
+     50
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     64
+    ],
+    "reza": [
+     155
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     16
+    ],
+    "reza": [
+     50
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     64
+    ],
+    "reza": [
+     155
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     16
+    ],
+    "reza": [
+     50
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     64
+    ],
+    "reza": [
+     155
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-7ac620ea96d7",
+    "p-11055a070257",
+    "p-5d5db0ffac63",
+    "p-547fa34c5df5"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8fc46976fc",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 10,
+   "lita_logmean": 3.052,
+   "lita_log_prod": 9.157,
+   "hidden_cut": 0.144,
+   "reza_log": 10.294,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 74
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "uk"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "operating system",
+       "op": "eq",
+       "value": "windows",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "system memory"
+     ],
+     "cap_line": 160000,
+     "target": "p-2d30bea3d0ce",
+     "n_a_stated_cap": 17,
+     "n_a_final": 12,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "ge",
+       "value": 4,
+       "unit": "gb"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "rgb",
+        "white"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "system memory"
+     ],
+     "cap_line": 160000,
+     "target": "p-08b28ef3f33f",
+     "n_a_stated_cap": 79,
+     "n_a_final": 79,
+     "n_a0_nocap": 79,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "cas latency",
+       "op": "has",
+       "value": "cl40"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "form factor",
+       "op": "eq",
+       "value": "sodimm",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "system memory"
+     ],
+     "cap_line": 160000,
+     "target": "p-2de141e69f46",
+     "n_a_stated_cap": 22,
+     "n_a_final": 10,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 160000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 74,
+   "task_id": "t-8fc46976fc",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_32",
+    "orig_id": "t-8fc46976fc",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8fc46976fc",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 74,
+     "cart": [
+      [
+       "p-2d30bea3d0ce",
+       1
+      ],
+      [
+       "p-08b28ef3f33f",
+       2
+      ],
+      [
+       "p-2de141e69f46",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 74,
+    "max_steps": 150,
+    "policy_max_steps": 74,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "operating system of the mini pc",
+     "form factor of the computer memory",
+     "system memory of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 30223,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 160000,
+    "jufuli": 30223,
+    "lita": [
+     12,
+     79,
+     10
+    ],
+    "reza": [
+     17,
+     79,
+     22
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-926baf79d4",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 18,
+   "lita_logmean": 3.278,
+   "lita_log_prod": 13.113,
+   "hidden_cut": 0.144,
+   "reza_log": 13.782,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input type"
+     ],
+     "cap_line": 120000,
+     "target": "p-07d52fdb9dee",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "write speed",
+       "op": "le",
+       "value": 2000,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input type"
+     ],
+     "cap_line": 120000,
+     "target": "p-016b2ff0eb04",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pin count",
+       "op": "ge",
+       "value": 240,
+       "unit": "count"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "input type"
+     ],
+     "cap_line": 120000,
+     "target": "p-0420d27c8bbe",
+     "n_a_stated_cap": 57,
+     "n_a_final": 57,
+     "n_a0_nocap": 57,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "voltage",
+       "op": "le",
+       "value": 1.35,
+       "unit": "v"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "form factor",
+       "op": "eq",
+       "value": "sodimm",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "input type"
+     ],
+     "cap_line": 120000,
+     "target": "p-04dc6fce8a93",
+     "n_a_stated_cap": 41,
+     "n_a_final": 21,
+     "n_a0_nocap": 41,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 120000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-926baf79d4",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_33",
+    "orig_id": "t-926baf79d4",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-926baf79d4",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": [
+      [
+       "p-07d52fdb9dee",
+       1
+      ],
+      [
+       "p-016b2ff0eb04",
+       1
+      ],
+      [
+       "p-0420d27c8bbe",
+       1
+      ],
+      [
+       "p-04dc6fce8a93",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "form factor of the computer memory",
+     "input type of the internal hdd/sdd"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "interface",
+       "op": "has",
+       "value": "pcie"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "ecc",
+       "op": "has",
+       "value": "non-ecc"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": 18404,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 120000,
+    "jufuli": 18404,
+    "lita": [
+     23,
+     18,
+     57,
+     21
+    ],
+    "reza": [
+     23,
+     18,
+     57,
+     41
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-93d008548a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 51,
+   "lita_logmean": 3.932,
+   "lita_log_prod": 3.932,
+   "hidden_cut": 0.48,
+   "reza_log": 4.585,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Shorts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "jersey"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pattern",
+       "op": "eq",
+       "value": "plain",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size class"
+     ],
+     "cap_line": 252,
+     "target": "p-007c14c71db3",
+     "n_a_stated_cap": 98,
+     "n_a_final": 51,
+     "n_a0_nocap": 98,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 252,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Oh, I'm sorry to say the thing you suggested has been cleared off the shelf entirely, and I'd hate for you to waste time on it.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I'm happy to loosen up on material now, I only fretted about it because of last month's mix-up.",
+     "pct": null,
+     "dropped_prop": "material"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-93d008548a",
+   "extra": {
+    "kinds": [
+     "stock",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_34",
+    "orig_id": "t-93d008548a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-93d008548a",
+     "agent": "Wolf_C",
+     "rank": 147,
+     "eid": "51d86b90-517",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-0429ce014c59",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pattern",
+     "size class"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 18,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 252,
+    "jufuli": 252,
+    "lita": [
+     8
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 252,
+    "jufuli": 252,
+    "lita": [
+     8
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 252,
+    "jufuli": 252,
+    "lita": [
+     51
+    ],
+    "reza": [
+     98
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 252,
+    "jufuli": 252,
+    "lita": [
+     51
+    ],
+    "reza": [
+     98
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9ed200d2a1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 24,
+   "lita_logmean": 3.178,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.834,
+   "reza_log": 4.977,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Food Containers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "carton"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "blue",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "special feature"
+     ],
+     "cap_line": 485,
+     "target": "p-0b3bb159685b",
+     "n_a_stated_cap": 145,
+     "n_a_final": 24,
+     "n_a0_nocap": 145,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 485,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Please don't worry about pack type any more, I was only holding on to it out of habit.",
+     "pct": null,
+     "dropped_prop": "pack type"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Hold on now, the pricing on your suggestion has been altered, and I'm after getting a fright with the month-end accounts open beside me.",
+     "pct": 134,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-9ed200d2a1",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_35",
+    "orig_id": "t-9ed200d2a1",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9ed200d2a1",
+     "agent": "power",
+     "rank": 207,
+     "eid": "d493ddb3-cee",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-cbfb406ba2ce",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "special feature"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 32,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     24
+    ],
+    "reza": [
+     145
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 485,
+    "lita": [
+     24
+    ],
+    "reza": [
+     145
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a1b1bacb9d",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 0,
+   "lita_logmean": 3.129,
+   "lita_log_prod": 15.643,
+   "hidden_cut": 0.039,
+   "reza_log": 18.208,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 103
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor type",
+       "op": "has",
+       "value": "octa-core"
+      },
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 512,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "graphics memory",
+       "op": "eq",
+       "value": "8gb & up",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 165000,
+     "target": null,
+     "n_a_stated_cap": 13,
+     "n_a_final": 0,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "form factor",
+       "op": "in",
+       "value": [
+        "2.5 inch",
+        "m.2"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 165000,
+     "target": "p-0e9c28f9c722",
+     "n_a_stated_cap": 30,
+     "n_a_final": 30,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ecc",
+       "op": "has",
+       "value": "on-die"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 165000,
+     "target": "p-02f383924494",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pin count",
+       "op": "ge",
+       "value": 240,
+       "unit": "count"
+      },
+      {
+       "prop": "condition",
+       "op": "nin",
+       "value": [
+        "used"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 165000,
+     "target": "p-0420d27c8bbe",
+     "n_a_stated_cap": 192,
+     "n_a_final": 192,
+     "n_a0_nocap": 192,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "le",
+       "value": 3500,
+       "unit": "mb/s"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 165000,
+     "target": "p-07d52fdb9dee",
+     "n_a_stated_cap": 90,
+     "n_a_final": 90,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 165000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 103,
+   "task_id": "t-a1b1bacb9d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_36",
+    "orig_id": "t-a1b1bacb9d",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a1b1bacb9d",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 103,
+     "cart": [
+      [
+       "p-0e9c28f9c722",
+       2
+      ],
+      [
+       "p-02f383924494",
+       1
+      ],
+      [
+       "p-0420d27c8bbe",
+       1
+      ],
+      [
+       "p-07d52fdb9dee",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 103,
+    "max_steps": 150,
+    "policy_max_steps": 103,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "graphics memory of the mini pc",
+     "operating system of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      4,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 165000,
+    "jufuli": 165000,
+    "lita": [
+     0,
+     30,
+     12,
+     192,
+     90
+    ],
+    "reza": [
+     13,
+     30,
+     12,
+     192,
+     90
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a3d0984ec5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 29,
+   "lita_logmean": 3.367,
+   "lita_log_prod": 3.367,
+   "hidden_cut": 0.799,
+   "reza_log": 4.97,
+   "cheapest": 1,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Binders & Binder Accessories",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "purple",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "binder type",
+       "op": "eq",
+       "value": "insert binder",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "paper size"
+     ],
+     "cap_line": 140,
+     "target": "p-0283be512e90",
+     "n_a_stated_cap": 144,
+     "n_a_final": 29,
+     "n_a0_nocap": 144,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 140,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On color you can ease off, my worry about it has softened like butter on the radiator.",
+     "pct": null,
+     "dropped_prop": "color"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Mind you, the amount being asked for that one has dropped, and I'd hate to let it slip past like a loaf left to go flat.",
+     "pct": 123,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Oh dear, your suggestion is dearer than it was when I was stacking the shelves this morning, so I thought I'd say.",
+     "pct": 121,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-a3d0984ec5",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_37",
+    "orig_id": "t-a3d0984ec5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a3d0984ec5",
+     "agent": "KALI",
+     "rank": 190,
+     "eid": "1833856f-a71",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-b2a18704906a",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-79e3c9499123"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "binder type",
+     "paper size"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 12,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 45,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 12,
+    "lita": [
+     29
+    ],
+    "reza": [
+     144
+    ],
+    "refs_off": [
+     0
+    ]
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 45,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 12,
+    "lita": [
+     29
+    ],
+    "reza": [
+     144
+    ],
+    "refs_off": [
+     0
+    ]
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 45,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 12,
+    "lita": [
+     29
+    ],
+    "reza": [
+     144
+    ],
+    "refs_off": [
+     0
+    ]
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 45,
+    "lita": [
+     8
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 12,
+    "lita": [
+     29
+    ],
+    "reza": [
+     144
+    ],
+    "refs_off": [
+     0
+    ]
+   }
+  ],
+  "refs": [
+   [
+    "p-79e3c9499123"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b78e14c2f1",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 111,
+   "lita_logmean": 4.71,
+   "lita_log_prod": 4.71,
+   "hidden_cut": 0.0,
+   "reza_log": 4.71,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Men's Shoes",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "toe style",
+       "op": "has",
+       "value": "square toe"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "closure",
+      "pattern"
+     ],
+     "cap_line": 2300,
+     "target": "p-00e9d4030c8f",
+     "n_a_stated_cap": 111,
+     "n_a_final": 111,
+     "n_a0_nocap": 111,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2300,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Ah no, the page is showing nothing left of that one, and I nearly dropped my tea.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On toe style you can ease off, my worry about it has softened like butter on the radiator.",
+     "pct": null,
+     "dropped_prop": "toe style"
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-b78e14c2f1",
+   "extra": {
+    "kinds": [
+     "stock",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_38",
+    "orig_id": "t-b78e14c2f1",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b78e14c2f1",
+     "agent": "power",
+     "rank": 207,
+     "eid": "dce19139-7ab",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 13,
+     "cart": [
+      [
+       "p-663941e0f57f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "closure",
+     "pattern"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 400,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2300,
+    "jufuli": 2300,
+    "lita": [
+     15
+    ],
+    "reza": [
+     15
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2300,
+    "jufuli": 2300,
+    "lita": [
+     15
+    ],
+    "reza": [
+     15
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2300,
+    "jufuli": 2300,
+    "lita": [
+     111
+    ],
+    "reza": [
+     111
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 2300,
+    "jufuli": 2300,
+    "lita": [
+     111
+    ],
+    "reza": [
+     111
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b832f64ea9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 1,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Air Conditioners",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "universal"
+      },
+      {
+       "prop": "horsepower",
+       "op": "in",
+       "value": [
+        "0.5 hp",
+        "0.8 hp"
+       ],
+       "keys": [
+        "horsepower",
+        "ac horsepower rating"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "delivery window",
+      "gift wrapping"
+     ],
+     "cap_line": 41000,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 41000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Sure look, the number beside that choice has come down, which is grand, but I thought you ought to know before we carry on.",
+     "pct": 76,
+     "dropped_prop": null
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "There's none left of that one, I'm afraid, and I'd rather tell you now than let you get your hopes rising.",
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-b832f64ea9",
+   "extra": {
+    "kinds": [
+     "price",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_39",
+    "orig_id": "t-b832f64ea9",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-b832f64ea9",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "none",
+     "steps": 37,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": true,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "delivery window",
+     "gift wrapping"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 41000,
+    "jufuli": 41000,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": true,
+    "suhe": 41000,
+    "jufuli": 41000,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": true,
+    "suhe": 41000,
+    "jufuli": 41000,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": true,
+    "suhe": 41000,
+    "jufuli": 41000,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bf1263d18a",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 10.976,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Computer Memory",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "ecc",
+       "op": "has",
+       "value": "on-die"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cas latency",
+       "op": "eq",
+       "value": "cl30",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "form factor"
+     ],
+     "cap_line": 125000,
+     "target": null,
+     "n_a_stated_cap": 12,
+     "n_a_final": 0,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "form factor"
+     ],
+     "cap_line": 125000,
+     "target": null,
+     "n_a_stated_cap": 8,
+     "n_a_final": 0,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 8,
+       "unit": "gb"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "form factor"
+     ],
+     "cap_line": 125000,
+     "target": null,
+     "n_a_stated_cap": 87,
+     "n_a_final": 0,
+     "n_a0_nocap": 87,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "LIT-5920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "form factor"
+     ],
+     "cap_line": 125000,
+     "target": null,
+     "n_a_stated_cap": 7,
+     "n_a_final": 0,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 125000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-bf1263d18a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_40",
+    "orig_id": "t-bf1263d18a",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bf1263d18a",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": true,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cas latency of the computer memory",
+     "form factor of the computer memory"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "form factor",
+       "op": "has",
+       "value": "sodimm"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "form factor",
+       "op": "has",
+       "value": "sodimm"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 125000,
+    "jufuli": 125000,
+    "lita": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reza": [
+     12,
+     8,
+     87,
+     7
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c9584b53e2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 21,
+   "lita_logmean": 3.045,
+   "lita_log_prod": 3.045,
+   "hidden_cut": 0.0,
+   "reza_log": 3.045,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Pasta Sauce",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "refill pouch",
+       "keys": [
+        "packaging type",
+        "packaging"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack type",
+      "dietary needs"
+     ],
+     "cap_line": 218,
+     "target": "p-0d0f4213b534",
+     "n_a_stated_cap": 21,
+     "n_a_final": 21,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 218,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-c9584b53e2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_41",
+    "orig_id": "t-c9584b53e2",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-c9584b53e2",
+     "agent": "power",
+     "rank": 207,
+     "eid": "23e46d2c-41b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 16,
+     "cart": [
+      [
+       "p-14a6f8cd432d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 128,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 218,
+    "jufuli": 218,
+    "lita": [
+     21
+    ],
+    "reza": [
+     21
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cd493c74cb",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 1.657,
+   "lita_log_prod": 4.97,
+   "hidden_cut": 0.478,
+   "reza_log": 8.083,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mints",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 6300,
+     "target": "p-23c37e54db47",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Flats & Loafers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "checked & geometric"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "toe shape",
+       "op": "eq",
+       "value": "round",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 6300,
+     "target": "p-12a71be96fa5",
+     "n_a_stated_cap": 10,
+     "n_a_final": 4,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Coffee Tables and Side Tables",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "espresso"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "style",
+       "op": "eq",
+       "value": "rustic",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 6300,
+     "target": "p-bb76d616f048",
+     "n_a_stated_cap": 18,
+     "n_a_final": 2,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6300,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-cd493c74cb",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_42",
+    "orig_id": "t-cd493c74cb",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cd493c74cb",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 37,
+     "cart": [
+      [
+       "p-23c37e54db47",
+       1
+      ],
+      [
+       "p-12a71be96fa5",
+       1
+      ],
+      [
+       "p-bb76d616f048",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "style of the coffee tables and side tables",
+     "toe shape of the flats & loafers",
+     "packaging type of the mints"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 1162,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6300,
+    "jufuli": 6300,
+    "lita": [
+     18,
+     4,
+     2
+    ],
+    "reza": [
+     18,
+     10,
+     18
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cea26bb299",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.972,
+   "lita_log_prod": 8.916,
+   "hidden_cut": 0.516,
+   "reza_log": 10.965,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Pasta Sauce",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "refill pouch",
+       "keys": [
+        "packaging type",
+        "packaging"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack type",
+       "op": "eq",
+       "value": "large serve",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 26500,
+     "target": "p-2bf36b1a142b",
+     "n_a_stated_cap": 21,
+     "n_a_final": 6,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Shorts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "jersey"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 26500,
+     "target": "p-0429ce014c59",
+     "n_a_stated_cap": 18,
+     "n_a_final": 18,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "voltage",
+       "op": "le",
+       "value": 1.35,
+       "unit": "v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "form factor",
+       "op": "eq",
+       "value": "sodimm",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 26500,
+     "target": "p-00421c41fbcf",
+     "n_a_stated_cap": 153,
+     "n_a_final": 69,
+     "n_a0_nocap": 153,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 26500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-cea26bb299",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_43",
+    "orig_id": "t-cea26bb299",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cea26bb299",
+     "agent": "Zorvex",
+     "rank": 53,
+     "eid": "eb92626d-32a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-1dab821a5a20",
+       1
+      ],
+      [
+       "p-73889357d5b0",
+       1
+      ],
+      [
+       "p-80f2b9508c34",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "form factor of the computer memory",
+     "pack type of the pasta sauce",
+     "dietary needs of the pasta sauce"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 2492,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 26500,
+    "jufuli": 26500,
+    "lita": [
+     6,
+     18,
+     69
+    ],
+    "reza": [
+     21,
+     18,
+     153
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e461513a09",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 103,
+   "lita_logmean": 4.635,
+   "lita_log_prod": 4.635,
+   "hidden_cut": 0.661,
+   "reza_log": 5.717,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 37
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cas latency",
+       "op": "has",
+       "value": "cl9"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "form factor",
+       "op": "eq",
+       "value": "sodimm",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "capacity"
+     ],
+     "cap_line": 9900,
+     "target": "p-0010babb8ed1",
+     "n_a_stated_cap": 304,
+     "n_a_final": 103,
+     "n_a0_nocap": 304,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 9900,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On cas latency you can ease off, my worry about it has softened like butter on the radiator.",
+     "pct": null,
+     "dropped_prop": "cas latency"
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Oh, I'm sorry to say the thing you suggested has been cleared off the shelf entirely, and I'd hate for you to waste time on it.",
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 37,
+   "task_id": "t-e461513a09",
+   "extra": {
+    "kinds": [
+     "drop",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_44",
+    "orig_id": "t-e461513a09",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e461513a09",
+     "agent": "power",
+     "rank": 207,
+     "eid": "1ac32918-26f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-fed9d2027bd9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 37,
+    "max_steps": 150,
+    "policy_max_steps": 37,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "form factor",
+     "capacity"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cheapest_sum": 999,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 9900,
+    "jufuli": 9900,
+    "lita": [
+     3
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 9900,
+    "jufuli": 9900,
+    "lita": [
+     103
+    ],
+    "reza": [
+     304
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 9900,
+    "jufuli": 9900,
+    "lita": [
+     3
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 9900,
+    "jufuli": 9900,
+    "lita": [
+     103
+    ],
+    "reza": [
+     304
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-fa4b48b9b7",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 11,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 8,
+   "lita_min": 2,
+   "lita_logmean": 2.582,
+   "lita_log_prod": 12.911,
+   "hidden_cut": 0.08,
+   "reza_log": 14.809,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 120
+  },
+  "spec": {
+   "suite": "s14_r18",
+   "flavor": "r18",
+   "lines": [
+    {
+     "category": "Mini PC",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "processor type",
+       "op": "has",
+       "value": "hexa-core"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 256.0,
+       "unit": "gb",
+       "ref": false
+      },
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3 pin",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-5201f0bcd5b3",
+     "n_a_stated_cap": 20,
+     "n_a_final": 3,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Internal HDD/SDD",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      }
+     ],
+     "line_cap": 350,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-2b9c5ab695f8",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Computer Memory",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cas latency",
+       "op": "has",
+       "value": "cl40"
+      },
+      {
+       "prop": "speed",
+       "op": "ge",
+       "value": 4800,
+       "unit": "mhz"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-1d782245529d",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Solid State Drives",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "read speed",
+       "op": "ge",
+       "value": 2000,
+       "unit": "mb/s"
+      },
+      {
+       "prop": "interface",
+       "op": "in",
+       "value": [
+        "usb 3.1 gen 1",
+        "usb 3.2 gen 2x2"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-016b2ff0eb04",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "RAM",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "capacity",
+       "op": "le",
+       "value": 4,
+       "unit": "gb"
+      },
+      {
+       "prop": "pin count",
+       "op": "ge",
+       "value": 204,
+       "unit": "count"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 210000,
+     "target": "p-00a12d065b17",
+     "n_a_stated_cap": 148,
+     "n_a_final": 148,
+     "n_a0_nocap": 148,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 210000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 120,
+   "task_id": "t-fa4b48b9b7",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r18_45",
+    "orig_id": "t-fa4b48b9b7",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-fa4b48b9b7",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 120,
+     "cart": [
+      [
+       "p-5201f0bcd5b3",
+       2
+      ],
+      [
+       "p-2b9c5ab695f8",
+       1
+      ],
+      [
+       "p-1d782245529d",
+       1
+      ],
+      [
+       "p-016b2ff0eb04",
+       2
+      ],
+      [
+       "p-00a12d065b17",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-32d56d06059c",
+      "p-0610f00d30c6",
+      "p-af5a15c834e4",
+      "p-dd121f435347"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 120,
+    "max_steps": 150,
+    "policy_max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage of the mini pc",
+     "plug type of the mini pc",
+     "operating system of the mini pc"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [
+     [
+      4,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "chrome os"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "form factor",
+       "op": "has",
+       "value": "3.5"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cheapest_sum": 68330,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 210000,
+    "jufuli": 68330,
+    "lita": [
+     3,
+     2,
+     19,
+     24,
+     148
+    ],
+    "reza": [
+     20,
+     2,
+     19,
+     24,
+     148
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-32d56d06059c",
+    "p-0610f00d30c6",
+    "p-af5a15c834e4",
+    "p-dd121f435347"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ }
+]
