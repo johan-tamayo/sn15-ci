@@ -1,0 +1,9462 @@
+[
+ {
+  "task_id": "t-2560afa2b6",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 9,
+   "lita_logmean": 2.708,
+   "lita_log_prod": 5.416,
+   "hidden_cut": 0.393,
+   "reza_log": 6.269,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "clear"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 100,
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 15000,
+     "target": "p-15bf138d221c",
+     "n_a_stated_cap": 12,
+     "n_a_final": 9,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "fm2+"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor speed",
+       "op": "le",
+       "value": 3.7,
+       "unit": "ghz",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 15000,
+     "target": "p-0c0ee3987107",
+     "n_a_stated_cap": 44,
+     "n_a_final": 25,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 15000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-2560afa2b6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_01",
+    "orig_id": "t-2560afa2b6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2560afa2b6",
+     "agent": "act",
+     "rank": 189,
+     "eid": "03a87b81-915",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 18,
+     "cart": [
+      [
+       "p-1d2bbf9dc028",
+       1
+      ],
+      [
+       "p-3d3bf1079111",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pack size of the clothes hangers",
+     "processor speed of the cpu",
+     "material of the clothes hangers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 15000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 7317,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 15000,
+    "jufuli": 15000,
+    "lita": [
+     9,
+     25
+    ],
+    "reza": [
+     12,
+     44
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-257c52dc8b",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 5,
+   "lita_logmean": 3.063,
+   "lita_log_prod": 12.25,
+   "hidden_cut": 0.0,
+   "reza_log": 12.25,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Floor Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "rgb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "light type"
+     ],
+     "cap_line": 4150,
+     "target": "p-0704e02ce911",
+     "n_a_stated_cap": 44,
+     "n_a_final": 44,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "luminous flux",
+       "op": "le",
+       "value": 500,
+       "unit": "lm"
+      },
+      {
+       "prop": "voltage",
+       "op": "ge",
+       "value": 120,
+       "unit": "v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "light type"
+     ],
+     "cap_line": 4150,
+     "target": "p-0114667a0592",
+     "n_a_stated_cap": 50,
+     "n_a_final": 50,
+     "n_a0_nocap": 50,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "has",
+       "value": "specialty bulbs"
+      },
+      {
+       "prop": "wattage",
+       "op": "ge",
+       "value": 18,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "light type"
+     ],
+     "cap_line": 4150,
+     "target": "p-3f094e9010e1",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "eu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects",
+      "light type"
+     ],
+     "cap_line": 4150,
+     "target": "p-1399ffcc4d5d",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4150,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 111,
+   "task_id": "t-257c52dc8b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default",
+     "lamp-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_02",
+    "orig_id": "t-257c52dc8b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-257c52dc8b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 111,
+     "cart": [
+      [
+       "p-0704e02ce911",
+       1
+      ],
+      [
+       "p-0114667a0592",
+       1
+      ],
+      [
+       "p-3f094e9010e1",
+       1
+      ],
+      [
+       "p-1399ffcc4d5d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 111,
+    "max_steps": 150,
+    "policy_max_steps": 111,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light effects of the floor lamps",
+     "light type of the floor lamps"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "iron",
+        "plastic"
+       ]
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "daylight"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 4150,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 726,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 726,
+    "lita": [
+     44,
+     50,
+     5,
+     19
+    ],
+    "reza": [
+     44,
+     50,
+     5,
+     19
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-31e0748262",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 6,
+   "lita_min": 0,
+   "lita_logmean": 0.578,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.0,
+   "reza_log": 2.89,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 121
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Engine Mounts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "year",
+       "op": "le",
+       "value": 2003,
+       "unit": "year"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "engine size",
+      "pack size"
+     ],
+     "cap_line": 27500,
+     "target": "p-52c37610bbe0",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wheel Adapters & Spacers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "bolt pattern",
+       "op": "has",
+       "value": "4x100"
+      },
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "1 piece",
+        "4 pieces"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "engine size",
+      "pack size"
+     ],
+     "cap_line": 27500,
+     "target": "p-1a90d24dc8d0",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Springs & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "leaf spring"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "engine size",
+      "pack size"
+     ],
+     "cap_line": 27500,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dash Cams",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "video resolution",
+       "op": "has",
+       "value": "720p"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "engine size",
+      "pack size"
+     ],
+     "cap_line": 27500,
+     "target": "p-205db0021fcb",
+     "n_a_stated_cap": 9,
+     "n_a_final": 9,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6020"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "engine size",
+      "pack size"
+     ],
+     "cap_line": 27500,
+     "target": "p-db9e9e859ead",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 121,
+   "task_id": "t-31e0748262",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "cheapest",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_03",
+    "orig_id": "t-31e0748262",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-31e0748262",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 121,
+     "cart": [
+      [
+       "p-52c37610bbe0",
+       1
+      ],
+      [
+       "p-1a90d24dc8d0",
+       2
+      ],
+      [
+       "p-205db0021fcb",
+       1
+      ],
+      [
+       "p-db9e9e859ead",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 121,
+    "max_steps": 150,
+    "policy_max_steps": 121,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "engine size of the engine mounts",
+     "pack size of the engine mounts"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 27500,
+    "unrevealed_needs": 1,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27500,
+    "jufuli": 27500,
+    "lita": [
+     1,
+     2,
+     0,
+     9,
+     1
+    ],
+    "reza": [
+     1,
+     2,
+     0,
+     9,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-392483132c",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.919,
+   "lita_log_prod": 7.678,
+   "hidden_cut": 0.011,
+   "reza_log": 8.083,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Floor Lamps",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "solar-powered lights"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 14000,
+     "target": "p-0721e9fdc14d",
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "has",
+       "value": "specialty bulbs"
+      },
+      {
+       "prop": "wattage",
+       "op": "ge",
+       "value": 23,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "light therapy",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 14000,
+     "target": "p-5c8d1d663270",
+     "n_a_stated_cap": 3,
+     "n_a_final": 2,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 7,
+       "unit": "w"
+      },
+      {
+       "prop": "voltage",
+       "op": "ge",
+       "value": 120,
+       "unit": "v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 14000,
+     "target": "p-008588b1b8d4",
+     "n_a_stated_cap": 72,
+     "n_a_final": 72,
+     "n_a0_nocap": 72,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "eu"
+      }
+     ],
+     "line_cap": 65,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 14000,
+     "target": "p-71239ea9e7c0",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 111,
+   "task_id": "t-392483132c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "lamp-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_04",
+    "orig_id": "t-392483132c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-392483132c",
+     "agent": "Accipiter",
+     "rank": 51,
+     "eid": "1d9824c0-a21",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 64,
+     "cart": [
+      [
+       "p-008588b1b8d4",
+       1
+      ],
+      [
+       "p-5c5c5746fa2c",
+       2
+      ],
+      [
+       "p-71239ea9e7c0",
+       2
+      ],
+      [
+       "p-8db3e3ad3743",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 111,
+    "max_steps": 150,
+    "policy_max_steps": 111,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light effects of the compact fluorescent bulbs",
+     "material of the floor lamps"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 14000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 7059,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 14000,
+    "lita": [
+     15,
+     2,
+     72,
+     1
+    ],
+    "reza": [
+     15,
+     3,
+     72,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-39d29d289f",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 35,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 3.555,
+   "hidden_cut": 0.0,
+   "reza_log": 3.555,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "braided wire"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meters",
+      "line number"
+     ],
+     "cap_line": 325,
+     "target": "p-0cc28611427b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 325,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-39d29d289f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_05",
+    "orig_id": "t-39d29d289f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-39d29d289f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0cc28611427b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meters",
+     "line number"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 325,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 120,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 325,
+    "jufuli": 120,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3a56f4e8a9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 14,
+   "lita_logmean": 2.639,
+   "lita_log_prod": 2.639,
+   "hidden_cut": 0.611,
+   "reza_log": 3.584,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 100,
+       "say": "box of 100"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "wood",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 10334,
+     "target": "p-00150f17509f",
+     "n_a_stated_cap": 36,
+     "n_a_final": 14,
+     "n_a0_nocap": 36,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7100,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The gig money arrived lighter than expected, so please plan around 10334 cents, US currency.",
+     "new_cap": 10334,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-3a56f4e8a9",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_06",
+    "orig_id": "t-3a56f4e8a9",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3a56f4e8a9",
+     "agent": "aoi",
+     "rank": 227,
+     "eid": "9e4ca033-1b8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-b69f50b72cf0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-16ee0c6d06bd",
+      "p-5a29f35400f4"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 10334,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 5474,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7100,
+    "jufuli": 7100,
+    "lita": [
+     14
+    ],
+    "reza": [
+     36
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 10334,
+    "jufuli": 10334,
+    "lita": [
+     14
+    ],
+    "reza": [
+     36
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-16ee0c6d06bd",
+    "p-5a29f35400f4"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3ac3337045",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 7,
+   "lita_min": 1,
+   "lita_logmean": 0.838,
+   "lita_log_prod": 4.19,
+   "hidden_cut": 0.0,
+   "reza_log": 4.19,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 130
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Springs & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "spring type"
+     ],
+     "cap_line": 56000,
+     "target": "p-c88047cba97e",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "holes",
+       "op": "has",
+       "value": "4 holes"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "spring type"
+     ],
+     "cap_line": 56000,
+     "target": "p-3f2cb99e26aa",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "position",
+       "op": "has",
+       "value": "left and right"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "genuine",
+        "new"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "spring type"
+     ],
+     "cap_line": 56000,
+     "target": "p-001f8974e680",
+     "n_a_stated_cap": 66,
+     "n_a_final": 66,
+     "n_a0_nocap": 66,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dash Cams",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power source",
+       "op": "has",
+       "value": "battery-powered"
+      },
+      {
+       "prop": "video resolution",
+       "op": "in",
+       "value": [
+        "1080p",
+        "2.7k"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "spring type"
+     ],
+     "cap_line": 56000,
+     "target": "p-32ad60faead3",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Engine Mounts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "year",
+       "op": "le",
+       "value": 2003,
+       "unit": "year"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "spring type"
+     ],
+     "cap_line": 56000,
+     "target": "p-54e6d3aeb1de",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 56000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 130,
+   "task_id": "t-3ac3337045",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_07",
+    "orig_id": "t-3ac3337045",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-3ac3337045",
+     "agent": "YesYesYes",
+     "rank": 24,
+     "eid": "8d9b400c-d81",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 84,
+     "cart": [
+      [
+       "p-00c51ab94b05",
+       1
+      ],
+      [
+       "p-32ad60faead3",
+       2
+      ],
+      [
+       "p-3f2cb99e26aa",
+       1
+      ],
+      [
+       "p-54e6d3aeb1de",
+       2
+      ],
+      [
+       "p-c88047cba97e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 130,
+    "max_steps": 150,
+    "policy_max_steps": 130,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material of the springs & parts",
+     "spring type of the springs & parts"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "make",
+       "op": "in",
+       "value": [
+        "ford",
+        "suzuki"
+       ]
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "part type",
+       "op": "has",
+       "value": "rack end"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 56000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 49077,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 56000,
+    "jufuli": 56000,
+    "lita": [
+     1,
+     1,
+     66,
+     1,
+     1
+    ],
+    "reza": [
+     1,
+     1,
+     66,
+     1,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3b97aed6b2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 42,
+   "lita_logmean": 3.738,
+   "lita_log_prod": 3.738,
+   "hidden_cut": 0.0,
+   "reza_log": 3.738,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meters",
+      "type of fishing line"
+     ],
+     "cap_line": 345,
+     "target": "p-0535b326c9d9",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 345,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-3b97aed6b2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_08",
+    "orig_id": "t-3b97aed6b2",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-3b97aed6b2",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "6e0f4534-acb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 32,
+     "cart": [
+      [
+       "p-420a9050c4de",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "meters",
+     "type of fishing line"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 345,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 76,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 345,
+    "jufuli": 76,
+    "lita": [
+     42
+    ],
+    "reza": [
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3d30455f3b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 147,
+   "lita_logmean": 4.99,
+   "lita_log_prod": 4.99,
+   "hidden_cut": 0.663,
+   "reza_log": 6.078,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "strands",
+       "op": "has",
+       "value": "7 strands"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "has",
+       "value": "monofilament",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "line number"
+     ],
+     "cap_line": 140,
+     "target": "p-00127d9246d6",
+     "n_a_stated_cap": 436,
+     "n_a_final": 147,
+     "n_a0_nocap": 436,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 140,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Consider strands waived, because the drumming from upstairs has softened my standards.",
+     "new_cap": null,
+     "dropped_prop": "strands"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-3d30455f3b",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_09",
+    "orig_id": "t-3d30455f3b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3d30455f3b",
+     "agent": "Jimmy",
+     "rank": 98,
+     "eid": "88ecc6d8-72e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 41,
+     "cart": [
+      [
+       "p-3451a4fdf941",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-55a77c37629a",
+      "p-f0300d1846f9"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line",
+     "line number"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 140,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 23,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 140,
+    "lita": [
+     3
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 140,
+    "jufuli": 140,
+    "lita": [
+     147
+    ],
+    "reza": [
+     436
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-55a77c37629a",
+    "p-f0300d1846f9"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-47470e8204",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 3,
+   "lita_logmean": 2.291,
+   "lita_log_prod": 9.163,
+   "hidden_cut": 0.094,
+   "reza_log": 10.144,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Floor Lamps",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "rgb"
+      },
+      {
+       "prop": "voltage",
+       "op": "le",
+       "value": 220,
+       "unit": "v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 5300,
+     "target": "p-0b24095adcad",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "has",
+       "value": "specialty bulbs"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "energy saving",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 5300,
+     "target": "p-3f094e9010e1",
+     "n_a_stated_cap": 8,
+     "n_a_final": 3,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "eu"
+      },
+      {
+       "prop": "light effects",
+       "op": "in",
+       "value": [
+        "3-way",
+        "energy saving"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 5300,
+     "target": "p-1399ffcc4d5d",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bulb shape",
+       "op": "has",
+       "value": "globe"
+      },
+      {
+       "prop": "wattage",
+       "op": "le",
+       "value": 5.5,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light type"
+     ],
+     "cap_line": 5300,
+     "target": "p-0e136b3299b5",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5300,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-47470e8204",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "lamp-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_10",
+    "orig_id": "t-47470e8204",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-47470e8204",
+     "agent": "fourth-v1",
+     "rank": 44,
+     "eid": "3e45a5c6-9f5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 64,
+     "cart": [
+      [
+       "p-0b24095adcad",
+       2
+      ],
+      [
+       "p-0e136b3299b5",
+       1
+      ],
+      [
+       "p-1399ffcc4d5d",
+       1
+      ],
+      [
+       "p-3f094e9010e1",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light effects of the compact fluorescent bulbs",
+     "light type of the floor lamps"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 5300,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2094,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5300,
+    "jufuli": 5300,
+    "lita": [
+     17,
+     3,
+     11,
+     17
+    ],
+    "reza": [
+     17,
+     8,
+     11,
+     17
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-54170a0bcd",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.714,
+   "reza_log": 3.738,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "has",
+       "value": "monofilament",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 345,
+     "target": "p-0535b326c9d9",
+     "n_a_stated_cap": 42,
+     "n_a_final": 12,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 345,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-54170a0bcd",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_11",
+    "orig_id": "t-54170a0bcd",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-54170a0bcd",
+     "agent": "Shannon",
+     "rank": 206,
+     "eid": "32625132-2f0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 25,
+     "cart": [
+      [
+       "p-0535b326c9d9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-1268107517bc"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 345,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 76,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 345,
+    "jufuli": 76,
+    "lita": [
+     12
+    ],
+    "reza": [
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-1268107517bc"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-544787f5af",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 25,
+   "lita_logmean": 3.219,
+   "lita_log_prod": 3.219,
+   "hidden_cut": 0.0,
+   "reza_log": 3.219,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "gray"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "pack size"
+     ],
+     "cap_line": 3800,
+     "target": "p-04e09517379a",
+     "n_a_stated_cap": 25,
+     "n_a_final": 25,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3800,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-544787f5af",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_12",
+    "orig_id": "t-544787f5af",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-544787f5af",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "4ba82674-2ac",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-c0388bb49b7d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "pack size"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 3800,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 583,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3800,
+    "jufuli": 3800,
+    "lita": [
+     25
+    ],
+    "reza": [
+     25
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-55f25cf9e5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 16,
+   "lita_logmean": 2.773,
+   "lita_log_prod": 2.773,
+   "hidden_cut": 0.0,
+   "reza_log": 2.773,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics",
+      "ddr variant"
+     ],
+     "cap_line": 1100,
+     "target": "p-0507f664148d",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1100,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-55f25cf9e5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_13",
+    "orig_id": "t-55f25cf9e5",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-55f25cf9e5",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "8e920a56-a02",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 10,
+     "cart": [
+      [
+       "p-485b85e25490",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "integrated graphics",
+     "ddr variant"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 1100,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 268,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1100,
+    "jufuli": 1100,
+    "lita": [
+     16
+    ],
+    "reza": [
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a965603f8",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 16,
+   "lita_logmean": 3.091,
+   "lita_log_prod": 9.272,
+   "hidden_cut": 0.146,
+   "reza_log": 9.847,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "fm2+"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "new",
+        "used"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor speed",
+       "op": "le",
+       "value": 3.7,
+       "unit": "ghz",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "number of cpu cores"
+     ],
+     "cap_line": 7450,
+     "target": "p-0c2d665dfa6e",
+     "n_a_stated_cap": 27,
+     "n_a_final": 16,
+     "n_a0_nocap": 27,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 5,
+       "say": "5 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "number of cpu cores"
+     ],
+     "cap_line": 7450,
+     "target": "p-041138588d13",
+     "n_a_stated_cap": 20,
+     "n_a_final": 19,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "braided wire"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "number of cpu cores"
+     ],
+     "cap_line": 7450,
+     "target": "p-0cc28611427b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7450,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-5a965603f8",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_14",
+    "orig_id": "t-5a965603f8",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a965603f8",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0c2d665dfa6e",
+       1
+      ],
+      [
+       "p-041138588d13",
+       1
+      ],
+      [
+       "p-0cc28611427b",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor speed of the cpu",
+     "number of cpu cores of the cpu"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 7450,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2565,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7450,
+    "jufuli": 2565,
+    "lita": [
+     16,
+     19,
+     35
+    ],
+    "reza": [
+     27,
+     20,
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-71a22348bb",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.312,
+   "reza_log": 2.773,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "ddr variant",
+       "op": "eq",
+       "value": "ddr4",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 1335,
+     "target": "p-0507f664148d",
+     "n_a_stated_cap": 16,
+     "n_a_final": 11,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1100,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "After paying rent on the practice space, my spending limit lands at 1335 cents, US currency.",
+     "new_cap": 1335,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-71a22348bb",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_15",
+    "orig_id": "t-71a22348bb",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-71a22348bb",
+     "agent": "Claire Redfield",
+     "rank": 90,
+     "eid": "0cd7aadb-8fd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 13,
+     "cart": [
+      [
+       "p-485b85e25490",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "ddr variant",
+     "integrated graphics"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 1335,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 714,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1100,
+    "jufuli": 1100,
+    "lita": [
+     11
+    ],
+    "reza": [
+     16
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1335,
+    "jufuli": 1335,
+    "lita": [
+     11
+    ],
+    "reza": [
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-869c4d1ecf",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "observed_reveal",
+  "mech_load": 12,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 9.479,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 6,
+   "max_hops": 6,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Floor Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "solar-powered lights"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": null,
+     "n_a_stated_cap": 15,
+     "n_a_final": 0,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "eu"
+      },
+      {
+       "prop": "light bulb colour",
+       "op": "in",
+       "value": [
+        "clear",
+        "rgb multicolor"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Light Bulbs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "base type",
+       "op": "has",
+       "value": "e26"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": null,
+     "n_a_stated_cap": 109,
+     "n_a_final": 0,
+     "n_a0_nocap": 109,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb type",
+       "op": "has",
+       "value": "specialty bulbs"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "wattage",
+       "op": "ge",
+       "value": 18.0,
+       "unit": "w",
+       "ref": true
+      },
+      {
+       "prop": "light effects",
+       "op": "eq",
+       "value": "energy saving",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 13000,
+     "target": null,
+     "n_a_stated_cap": 8,
+     "n_a_final": 0,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 13000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-869c4d1ecf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply",
+     "decline",
+     "lamp-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_16",
+    "orig_id": "t-869c4d1ecf",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-869c4d1ecf",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "observed_reveal",
+     "steps": 101,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-a65ef9e79f21",
+      "p-c505afaa9946",
+      "p-577b498b2b7f",
+      "p-2674520cb2cd",
+      "p-2352445f8e39",
+      "p-393e53ee88ad"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": true,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "wattage of the compact fluorescent bulbs",
+     "light effects of the compact fluorescent bulbs",
+     "material of the floor lamps"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 13000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 13000,
+    "jufuli": 13000,
+    "lita": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reza": [
+     15,
+     0,
+     109,
+     8
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-a65ef9e79f21",
+    "p-c505afaa9946",
+    "p-577b498b2b7f",
+    "p-2674520cb2cd",
+    "p-2352445f8e39",
+    "p-393e53ee88ad"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8b9b1b9caf",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.866,
+   "lita_log_prod": 3.466,
+   "hidden_cut": 0.536,
+   "reza_log": 4.522,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 101
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "make",
+       "op": "has",
+       "value": "ford"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "part type",
+       "op": "eq",
+       "value": "rack end",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 20000,
+     "target": "p-1c6d80ef915f",
+     "n_a_stated_cap": 23,
+     "n_a_final": 8,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Springs & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "leaf spring"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6910"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 20000,
+     "target": "p-d3e910a991be",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dash Cams",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "video resolution",
+       "op": "has",
+       "value": "720p"
+      },
+      {
+       "prop": "field of view",
+       "op": "le",
+       "value": 160,
+       "unit": "degrees"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6910"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 20000,
+     "target": "p-20cb301c7183",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      {
+       "prop": "type",
+       "op": "in",
+       "value": [
+        "bowl type",
+        "drag"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6910"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 20000,
+     "target": "p-31c3c915d081",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 20000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 101,
+   "task_id": "t-8b9b1b9caf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "car-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_17",
+    "orig_id": "t-8b9b1b9caf",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8b9b1b9caf",
+     "agent": "true",
+     "rank": 118,
+     "eid": "f4ece06b-a70",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 84,
+     "cart": [
+      [
+       "p-20cb301c7183",
+       1
+      ],
+      [
+       "p-2f6e66abfeff",
+       2
+      ],
+      [
+       "p-5fe83690a294",
+       1
+      ],
+      [
+       "p-d3e910a991be",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 101,
+    "max_steps": 150,
+    "policy_max_steps": 101,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "part type of the tie rod ends & parts",
+     "pack size of the tie rod ends & parts"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 20000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 12075,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 20000,
+    "jufuli": 12075,
+    "lita": [
+     8,
+     1,
+     2,
+     2
+    ],
+    "reza": [
+     23,
+     1,
+     2,
+     2
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8e9a59d5de",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 115,
+   "lita_logmean": 4.745,
+   "lita_log_prod": 4.745,
+   "hidden_cut": 0.635,
+   "reza_log": 5.753,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 30,
+       "say": "30 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 4551,
+     "target": "p-02ff35b23a28",
+     "n_a_stated_cap": 315,
+     "n_a_final": 115,
+     "n_a0_nocap": 315,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3995,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Strike pack size from consideration, as I only added it during a late-night bout of fretting.",
+     "new_cap": null,
+     "dropped_prop": "pack size"
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Please work with 4551 cents, US currency from this point, as the wedding gig fell through on Saturday.",
+     "new_cap": 4551,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-8e9a59d5de",
+   "extra": {
+    "kinds": [
+     "drop",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_18",
+    "orig_id": "t-8e9a59d5de",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-8e9a59d5de",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "e22ca44a-5bc",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-02ff35b23a28",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 4551,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 73,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3995,
+    "jufuli": 1999,
+    "lita": [
+     13
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3995,
+    "jufuli": 73,
+    "lita": [
+     115
+    ],
+    "reza": [
+     315
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 4551,
+    "jufuli": 1999,
+    "lita": [
+     13
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 4551,
+    "jufuli": 73,
+    "lita": [
+     115
+    ],
+    "reza": [
+     315
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-98710a8146",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 25,
+   "lita_logmean": 3.219,
+   "lita_log_prod": 3.219,
+   "hidden_cut": 0.432,
+   "reza_log": 3.784,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "fm2+"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor speed",
+       "op": "le",
+       "value": 3.7,
+       "unit": "ghz",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "number of cpu cores"
+     ],
+     "cap_line": 520,
+     "target": "p-0c0ee3987107",
+     "n_a_stated_cap": 44,
+     "n_a_final": 25,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 520,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-98710a8146",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_19",
+    "orig_id": "t-98710a8146",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-98710a8146",
+     "agent": "cirrus",
+     "rank": 205,
+     "eid": "36c88d99-ee9",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-c2bf87086dcf",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor speed",
+     "number of cpu cores"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 520,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 325,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 520,
+    "jufuli": 325,
+    "lita": [
+     25
+    ],
+    "reza": [
+     44
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9bb99922d5",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 7,
+   "lita_min": 1,
+   "lita_logmean": 0.968,
+   "lita_log_prod": 3.871,
+   "hidden_cut": 0.125,
+   "reza_log": 4.564,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Dash Cams",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "front camera resolution",
+       "op": "has",
+       "value": "1440p"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 71500,
+     "target": "p-33d30d9341e2",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Springs & Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 71500,
+     "target": "p-c88047cba97e",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 set"
+      },
+      {
+       "prop": "make",
+       "op": "in",
+       "value": [
+        "chevrolet",
+        "honda"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "left and right",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 71500,
+     "target": "p-76131fcd16ac",
+     "n_a_stated_cap": 4,
+     "n_a_final": 2,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wheel Adapters & Spacers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bolt pattern",
+       "op": "has",
+       "value": "4x100"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 71500,
+     "target": "p-46a6e37367ef",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 71500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 111,
+   "task_id": "t-9bb99922d5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_20",
+    "orig_id": "t-9bb99922d5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9bb99922d5",
+     "agent": "Lucky star",
+     "rank": 55,
+     "eid": "f718823e-64b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 87,
+     "cart": [
+      [
+       "p-76131fcd16ac",
+       2
+      ],
+      [
+       "p-84e0643c3533",
+       2
+      ],
+      [
+       "p-b4f9621c8111",
+       1
+      ],
+      [
+       "p-c88047cba97e",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 111,
+    "max_steps": 150,
+    "policy_max_steps": 111,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "position of the tie rod ends & parts",
+     "color of the dash cams"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "cellular",
+        "wi-fi"
+       ]
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "silver"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 71500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 13849,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 71500,
+    "jufuli": 13849,
+    "lita": [
+     3,
+     1,
+     2,
+     8
+    ],
+    "reza": [
+     3,
+     1,
+     4,
+     8
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9da2989139",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.914,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "braided wire"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "strands",
+       "op": "eq",
+       "value": "16 strands",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "type of fishing line"
+     ],
+     "cap_line": 458,
+     "target": "p-12ca2d9a9366",
+     "n_a_stated_cap": 35,
+     "n_a_final": 3,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 325,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "After paying rent on the practice space, my spending limit lands at 458 cents, US currency.",
+     "new_cap": 458,
+     "dropped_prop": null
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Your suggestion has apparently left the building, and I am left holding a cold cup of tea.",
+     "new_cap": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-9da2989139",
+   "extra": {
+    "kinds": [
+     "budget",
+     "stock"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_21",
+    "orig_id": "t-9da2989139",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9da2989139",
+     "agent": "cirrus",
+     "rank": 205,
+     "eid": "0534d55d-7fc",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-3b5558764964",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "strands",
+     "type of fishing line"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 458,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 266,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 325,
+    "jufuli": 325,
+    "lita": [
+     3
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 458,
+    "jufuli": 458,
+    "lita": [
+     3
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 325,
+    "jufuli": 325,
+    "lita": [
+     3
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 458,
+    "jufuli": 458,
+    "lita": [
+     3
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a1c8e94ec8",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.723,
+   "lita_log_prod": 2.89,
+   "hidden_cut": 0.607,
+   "reza_log": 5.781,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Engine Mounts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      {
+       "prop": "year",
+       "op": "ge",
+       "value": 2007,
+       "unit": "year"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "part type"
+     ],
+     "cap_line": 14500,
+     "target": "p-12334e40fb7e",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wheel Adapters & Spacers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "2 pieces"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "part type"
+     ],
+     "cap_line": 14500,
+     "target": "p-512a8c96185d",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "1 set"
+      },
+      {
+       "prop": "make",
+       "op": "nin",
+       "value": [
+        "mitsubishi"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "position",
+       "op": "eq",
+       "value": "outer",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "condition",
+       "op": "eq",
+       "value": "genuine",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "part type"
+     ],
+     "cap_line": 14500,
+     "target": "p-d52ae0f39807",
+     "n_a_stated_cap": 18,
+     "n_a_final": 1,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Springs & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "leaf spring"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "part type"
+     ],
+     "cap_line": 14500,
+     "target": "p-e38ad42c2401",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 111,
+   "task_id": "t-a1c8e94ec8",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_22",
+    "orig_id": "t-a1c8e94ec8",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a1c8e94ec8",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 111,
+     "cart": [
+      [
+       "p-12334e40fb7e",
+       1
+      ],
+      [
+       "p-512a8c96185d",
+       1
+      ],
+      [
+       "p-d52ae0f39807",
+       2
+      ],
+      [
+       "p-e38ad42c2401",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 111,
+    "max_steps": 150,
+    "policy_max_steps": 111,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "position of the tie rod ends & parts",
+     "condition of the tie rod ends & parts",
+     "part type of the engine mounts"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "part type",
+       "op": "has",
+       "value": "shock mount"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "part type",
+       "op": "has",
+       "value": "tie rod end"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 14500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 6094,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14500,
+    "jufuli": 6094,
+    "lita": [
+     3,
+     6,
+     1,
+     1
+    ],
+    "reza": [
+     3,
+     6,
+     18,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a3eddd07e6",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 0,
+   "lita_logmean": 2.243,
+   "lita_log_prod": 6.729,
+   "hidden_cut": 0.337,
+   "reza_log": 10.194,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 91
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Floor Lamps",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "rgb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects"
+     ],
+     "cap_line": 2200,
+     "target": "p-0704e02ce911",
+     "n_a_stated_cap": 44,
+     "n_a_final": 44,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "LED Bulbs & Strip",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "eu"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light effects"
+     ],
+     "cap_line": 2200,
+     "target": "p-1399ffcc4d5d",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Compact Fluorescent Bulbs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "daylight"
+      },
+      {
+       "prop": "light effects",
+       "op": "in",
+       "value": [
+        "energy saving",
+        "light therapy"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "wattage",
+       "op": "ge",
+       "value": 20.0,
+       "unit": "w",
+       "ref": false
+      },
+      {
+       "prop": "light bulb type",
+       "op": "eq",
+       "value": "specialty bulbs",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light effects"
+     ],
+     "cap_line": 2200,
+     "target": null,
+     "n_a_stated_cap": 32,
+     "n_a_final": 0,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2200,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 91,
+   "task_id": "t-a3eddd07e6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "lamp-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_23",
+    "orig_id": "t-a3eddd07e6",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a3eddd07e6",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 91,
+     "cart": [
+      [
+       "p-0704e02ce911",
+       1
+      ],
+      [
+       "p-1399ffcc4d5d",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 91,
+    "max_steps": 150,
+    "policy_max_steps": 91,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "wattage of the compact fluorescent bulbs",
+     "light bulb type of the compact fluorescent bulbs",
+     "light effects of the floor lamps"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim prefix + reconstructed tail",
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "iron",
+        "plastic"
+       ]
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "light effects",
+       "op": "has",
+       "value": "colour-changing"
+      },
+      "except": true
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 2200,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2200,
+    "jufuli": 2200,
+    "lita": [
+     44,
+     19,
+     0
+    ],
+    "reza": [
+     44,
+     19,
+     32
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a537f52bbd",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.714,
+   "reza_log": 3.045,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "lga 1200"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i5",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 12601,
+     "target": "p-010845e8a907",
+     "n_a_stated_cap": 21,
+     "n_a_final": 6,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18500,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I shuffled my finances over a cup of tea, and 12601 cents, US currency is the figure I can honestly commit.",
+     "new_cap": 12601,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-a537f52bbd",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_24",
+    "orig_id": "t-a537f52bbd",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a537f52bbd",
+     "agent": "cirrus",
+     "rank": 205,
+     "eid": "7d25afbf-ffb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 17,
+     "cart": [
+      [
+       "p-010845e8a907",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cpu chipset model",
+     "integrated graphics"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 12601,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 10514,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18500,
+    "jufuli": 10514,
+    "lita": [
+     6
+    ],
+    "reza": [
+     21
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 12601,
+    "jufuli": 10514,
+    "lita": [
+     6
+    ],
+    "reza": [
+     21
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a5456a59f0",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.953,
+   "lita_log_prod": 5.858,
+   "hidden_cut": 0.395,
+   "reza_log": 9.547,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "braided wire"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 14500,
+     "target": "p-0cc28611427b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "ddr variant",
+       "op": "eq",
+       "value": "ddr4",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 14500,
+     "target": "p-0507f664148d",
+     "n_a_stated_cap": 16,
+     "n_a_final": 10,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Clothes Hangers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "gray"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 25,
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 14500,
+     "target": "p-084dcf1de613",
+     "n_a_stated_cap": 25,
+     "n_a_final": 1,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-a5456a59f0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_25",
+    "orig_id": "t-a5456a59f0",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a5456a59f0",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-0cc28611427b",
+       1
+      ],
+      [
+       "p-0507f664148d",
+       3
+      ],
+      [
+       "p-084dcf1de613",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "ddr variant of the cpu",
+     "pack size of the clothes hangers",
+     "meters of the fishing lines"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 14500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 4106,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14500,
+    "jufuli": 14500,
+    "lita": [
+     35,
+     10,
+     1
+    ],
+    "reza": [
+     35,
+     16,
+     25
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b3c0ec506e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.848,
+   "reza_log": 4.19,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 50,
+       "say": "50 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "gray",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 5418,
+     "target": "p-05429804fd42",
+     "n_a_stated_cap": 66,
+     "n_a_final": 10,
+     "n_a0_nocap": 66,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4900,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Please work with 5418 cents, US currency from this point, as the wedding gig fell through on Saturday.",
+     "new_cap": 5418,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-b3c0ec506e",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_26",
+    "orig_id": "t-b3c0ec506e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b3c0ec506e",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "234f5282-770",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 14,
+     "cart": [
+      [
+       "p-05429804fd42",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 5418,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1600,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4900,
+    "jufuli": 4900,
+    "lita": [
+     10
+    ],
+    "reza": [
+     66
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5418,
+    "jufuli": 5418,
+    "lita": [
+     10
+    ],
+    "reza": [
+     66
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b9ebcfae90",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 5,
+   "lita_logmean": 2.047,
+   "lita_log_prod": 4.094,
+   "hidden_cut": 0.622,
+   "reza_log": 6.223,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "strands",
+       "op": "has",
+       "value": "16 strands"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "diameter",
+       "op": "le",
+       "value": 1.5,
+       "unit": "mm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 66500,
+     "target": "p-12ca2d9a9366",
+     "n_a_stated_cap": 24,
+     "n_a_final": 12,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "lga 1200"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 66500,
+     "target": "p-0bff96d366c9",
+     "n_a_stated_cap": 21,
+     "n_a_final": 5,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 66500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-b9ebcfae90",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_27",
+    "orig_id": "t-b9ebcfae90",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b9ebcfae90",
+     "agent": "Olaf",
+     "rank": 15,
+     "eid": "0ab1acdb-e91",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-12ca2d9a9366",
+       3
+      ],
+      [
+       "p-7cd035450fa5",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cpu chipset model of the cpu",
+     "diameter of the fishing lines",
+     "color of the fishing lines"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 66500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 23190,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 66500,
+    "jufuli": 66500,
+    "lita": [
+     12,
+     5
+    ],
+    "reza": [
+     24,
+     21
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bd7a9bcb36",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 315,
+   "lita_logmean": 5.753,
+   "lita_log_prod": 5.753,
+   "hidden_cut": 0.0,
+   "reza_log": 5.753,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 50,
+       "say": "50 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 4540,
+     "target": "p-00150f17509f",
+     "n_a_stated_cap": 315,
+     "n_a_final": 315,
+     "n_a0_nocap": 315,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4900,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I shuffled my finances over a cup of tea, and 4540 cents, US currency is the figure I can honestly commit.",
+     "new_cap": 4540,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "You can forget about pack size; I was being stubborn, like a gambler chasing a bad hand.",
+     "new_cap": null,
+     "dropped_prop": "pack size"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-bd7a9bcb36",
+   "extra": {
+    "kinds": [
+     "budget",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_28",
+    "orig_id": "t-bd7a9bcb36",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-bd7a9bcb36",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "6a1bb8fb-a22",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 14,
+     "cart": [
+      [
+       "p-1594c98f02aa",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 4540,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 73,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4900,
+    "jufuli": 4900,
+    "lita": [
+     66
+    ],
+    "reza": [
+     66
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4540,
+    "jufuli": 4540,
+    "lita": [
+     66
+    ],
+    "reza": [
+     66
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 4900,
+    "jufuli": 4900,
+    "lita": [
+     315
+    ],
+    "reza": [
+     315
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 4540,
+    "jufuli": 4540,
+    "lita": [
+     315
+    ],
+    "reza": [
+     315
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c3f927fe4b",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.647,
+   "reza_log": 2.833,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 3,
+       "say": "3 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "steel",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 2900,
+     "target": "p-0b3663e397b5",
+     "n_a_stated_cap": 17,
+     "n_a_final": 6,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2900,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-c3f927fe4b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_29",
+    "orig_id": "t-c3f927fe4b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c3f927fe4b",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "f29d388c-f95",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-2dad22a68130",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 2900,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2754,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 2754,
+    "lita": [
+     6
+    ],
+    "reza": [
+     17
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c55118ceee",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.069,
+   "lita_log_prod": 4.277,
+   "hidden_cut": 0.885,
+   "reza_log": 7.888,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 111
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Brake Rotors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "type",
+       "op": "has",
+       "value": "floating"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 33500,
+     "target": "p-3f2cb99e26aa",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "2 pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "part type",
+       "op": "has",
+       "value": "rack end",
+       "unit": null,
+       "ref": true
+      },
+      {
+       "prop": "make",
+       "op": "eq",
+       "value": "chevrolet",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 33500,
+     "target": "p-17934723394d",
+     "n_a_stated_cap": 111,
+     "n_a_final": 3,
+     "n_a0_nocap": 111,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dash Cams",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "front camera resolution",
+       "op": "has",
+       "value": "1080p"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 33500,
+     "target": "p-06b3ea7b8d61",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wheel Adapters & Spacers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bolt pattern",
+       "op": "has",
+       "value": "4x100"
+      },
+      {
+       "prop": "pack size",
+       "op": "in",
+       "value": [
+        "2 pieces",
+        "4 pieces"
+       ]
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6920"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 33500,
+     "target": "p-46a6e37367ef",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 33500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 111,
+   "task_id": "t-c55118ceee",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_30",
+    "orig_id": "t-c55118ceee",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c55118ceee",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 111,
+     "cart": [
+      [
+       "p-3f2cb99e26aa",
+       1
+      ],
+      [
+       "p-17934723394d",
+       1
+      ],
+      [
+       "p-06b3ea7b8d61",
+       1
+      ],
+      [
+       "p-46a6e37367ef",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-f87557d63ac3"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 111,
+    "max_steps": 150,
+    "policy_max_steps": 111,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "part type of the tie rod ends & parts",
+     "make of the tie rod ends & parts",
+     "size of the brake rotors"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "holes",
+       "op": "has",
+       "value": "3 holes"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 33500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 7210,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 33500,
+    "jufuli": 7210,
+    "lita": [
+     4,
+     3,
+     6,
+     1
+    ],
+    "reza": [
+     4,
+     111,
+     6,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-f87557d63ac3"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c5ace52dc2",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 5,
+   "lita_logmean": 2.553,
+   "lita_log_prod": 5.106,
+   "hidden_cut": 0.761,
+   "reza_log": 8.722,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "strength",
+       "op": "le",
+       "value": 8,
+       "unit": "lb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "nylon",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "line number"
+     ],
+     "cap_line": 6250,
+     "target": "p-00127d9246d6",
+     "n_a_stated_cap": 93,
+     "n_a_final": 33,
+     "n_a0_nocap": 93,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 50,
+       "say": "50 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "gold",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "line number"
+     ],
+     "cap_line": 6250,
+     "target": "p-1af55cfbda62",
+     "n_a_stated_cap": 66,
+     "n_a_final": 5,
+     "n_a0_nocap": 66,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 6250,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-c5ace52dc2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_31",
+    "orig_id": "t-c5ace52dc2",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c5ace52dc2",
+     "agent": "Pein",
+     "rank": 142,
+     "eid": "63c5b5a6-bdb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-6b442d35afc8",
+       1
+      ],
+      [
+       "p-c9bcb47f3bf3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the clothes hangers",
+     "material of the fishing lines",
+     "line number of the fishing lines"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 6250,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3525,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 6250,
+    "jufuli": 6250,
+    "lita": [
+     33,
+     5
+    ],
+    "reza": [
+     93,
+     66
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c73e6dbd57",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 4,
+   "lita_logmean": 1.733,
+   "lita_log_prod": 3.466,
+   "hidden_cut": 0.25,
+   "reza_log": 4.159,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "lga 1200"
+      },
+      {
+       "prop": "processor speed",
+       "op": "ge",
+       "value": 2.6,
+       "unit": "ghz"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 24000,
+     "target": "p-0bff96d366c9",
+     "n_a_stated_cap": 8,
+     "n_a_final": 4,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "strands",
+       "op": "has",
+       "value": "7 strands"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 24000,
+     "target": "p-02ef65ac3faa",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 24000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-c73e6dbd57",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_32",
+    "orig_id": "t-c73e6dbd57",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c73e6dbd57",
+     "agent": "Nurse",
+     "rank": 215,
+     "eid": "38896636-766",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 21,
+     "cart": [
+      [
+       "p-80a22d81fe0f",
+       1
+      ],
+      [
+       "p-a985a4e8c409",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cpu chipset model of the cpu",
+     "integrated graphics of the cpu"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 24000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 7695,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 24000,
+    "jufuli": 7695,
+    "lita": [
+     4,
+     8
+    ],
+    "reza": [
+     8,
+     8
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c8a786b5c5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 17,
+   "lita_logmean": 2.833,
+   "lita_log_prod": 2.833,
+   "hidden_cut": 0.292,
+   "reza_log": 3.178,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "strands",
+       "op": "has",
+       "value": "16 strands"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "diameter",
+       "op": "ge",
+       "value": 0.19,
+       "unit": "mm",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 451,
+     "target": "p-139fbcaf79b3",
+     "n_a_stated_cap": 24,
+     "n_a_final": 17,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 595,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "A cheque finally cleared, so I can go up to 451 cents, US currency now.",
+     "new_cap": 451,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-c8a786b5c5",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_33",
+    "orig_id": "t-c8a786b5c5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c8a786b5c5",
+     "agent": "Pein",
+     "rank": 142,
+     "eid": "1ff52e73-6ee",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-2a2406c27ad0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "diameter",
+     "meters"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 451,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 268,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 595,
+    "jufuli": 268,
+    "lita": [
+     17
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 451,
+    "jufuli": 268,
+    "lita": [
+     17
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cdd81a8ee8",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.167,
+   "reza_log": 1.792,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "lga 1155",
+       "ref": true
+      },
+      {
+       "prop": "processor speed",
+       "op": "ge",
+       "value": 4.3,
+       "unit": "ghz"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cpu chipset model",
+       "op": "eq",
+       "value": "intel i3",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 27408,
+     "target": "p-5297048473f5",
+     "n_a_stated_cap": 6,
+     "n_a_final": 5,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18500,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let us reset the stakes to 27408 cents, US currency, since the van needed new brakes this week.",
+     "new_cap": 27408,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-cdd81a8ee8",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_34",
+    "orig_id": "t-cdd81a8ee8",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cdd81a8ee8",
+     "agent": "Maximum",
+     "rank": 200,
+     "eid": "a53645d4-38f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-be20f59fdabd",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-bc001c7b97b5",
+      "p-be20f59fdabd"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cpu chipset model",
+     "integrated graphics"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 27408,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 195,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18500,
+    "jufuli": 195,
+    "lita": [
+     5
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 27408,
+    "jufuli": 195,
+    "lita": [
+     5
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-bc001c7b97b5",
+    "p-be20f59fdabd"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d332b62aa4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 24,
+   "lita_logmean": 3.178,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.0,
+   "reza_log": 3.178,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "count",
+       "value": 30,
+       "say": "30 hangers"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "color"
+     ],
+     "cap_line": 3120,
+     "target": "p-070ada6654c6",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3995,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The gig money arrived lighter than expected, so please plan around 3120 cents, US currency.",
+     "new_cap": 3120,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-d332b62aa4",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_35",
+    "orig_id": "t-d332b62aa4",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-d332b62aa4",
+     "agent": "lodestar",
+     "rank": 243,
+     "eid": "b9724386-51a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 13,
+     "cart": [
+      [
+       "p-7cba7df0545e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "color"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 3120,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 100,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3995,
+    "jufuli": 100,
+    "lita": [
+     24
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3120,
+    "jufuli": 100,
+    "lita": [
+     24
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d67b641935",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 13,
+   "lita_logmean": 2.892,
+   "lita_log_prod": 5.784,
+   "hidden_cut": 0.433,
+   "reza_log": 6.957,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "gray"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 5050,
+     "target": "p-04e09517379a",
+     "n_a_stated_cap": 25,
+     "n_a_final": 25,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "eq",
+       "value": "monofilament",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 5050,
+     "target": "p-0535b326c9d9",
+     "n_a_stated_cap": 42,
+     "n_a_final": 13,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5050,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-d67b641935",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_36",
+    "orig_id": "t-d67b641935",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d67b641935",
+     "agent": "Oradon",
+     "rank": 88,
+     "eid": "7a6fea3d-484",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 16,
+     "cart": [
+      [
+       "p-084dcf1de613",
+       1
+      ],
+      [
+       "p-7ce677401db0",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line of the fishing lines",
+     "material of the clothes hangers"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 5050,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 811,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5050,
+    "jufuli": 5050,
+    "lita": [
+     25,
+     13
+    ],
+    "reza": [
+     25,
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dead40598d",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 1.23,
+   "lita_log_prod": 3.689,
+   "hidden_cut": 0.0,
+   "reza_log": 3.689,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 100
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Tie Rod Ends & Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "has",
+       "value": "2 pieces"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "make",
+      "part type"
+     ],
+     "cap_line": 24000,
+     "target": "p-92d17f3303c2",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wheel Adapters & Spacers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "bolt pattern",
+       "op": "has",
+       "value": "4x100"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "make",
+      "part type"
+     ],
+     "cap_line": 24000,
+     "target": "p-47e255ee25d1",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dash Cams",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "wired"
+      },
+      {
+       "prop": "fits",
+       "op": "fits_model",
+       "value": "TOT 6010"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "make",
+      "part type"
+     ],
+     "cap_line": 24000,
+     "target": "p-0cfa575b3ac2",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 24000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 100,
+   "task_id": "t-dead40598d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default",
+     "car-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_37",
+    "orig_id": "t-dead40598d",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-dead40598d",
+     "agent": "HASHIRA",
+     "rank": 117,
+     "eid": "ad8c49d1-0e4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 80,
+     "cart": [
+      [
+       "p-92d17f3303c2",
+       1
+      ],
+      [
+       "p-98265c0c9d44",
+       1
+      ],
+      [
+       "p-dc6fc9987066",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 100,
+    "max_steps": 150,
+    "policy_max_steps": 100,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "make of the tie rod ends & parts",
+     "part type of the tie rod ends & parts"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "make",
+       "op": "in",
+       "value": [
+        "nissan",
+        "subaru"
+       ]
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "power source",
+       "op": "has",
+       "value": "supercapacitor"
+      },
+      "except": false
+     }
+    ],
+    "fits_infeasible": false,
+    "cap_end": 24000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 10287,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 24000,
+    "jufuli": 24000,
+    "lita": [
+     1,
+     8,
+     5
+    ],
+    "reza": [
+     1,
+     8,
+     5
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-df2f4700cd",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 315,
+   "lita_logmean": 5.753,
+   "lita_log_prod": 5.753,
+   "hidden_cut": 0.0,
+   "reza_log": 5.753,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "clear"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "pattern"
+     ],
+     "cap_line": 5800,
+     "target": "p-00150f17509f",
+     "n_a_stated_cap": 315,
+     "n_a_final": 315,
+     "n_a0_nocap": 315,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "first_add"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Consider color waived, because the drumming from upstairs has softened my standards.",
+     "new_cap": null,
+     "dropped_prop": "color"
+    }
+   ],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-df2f4700cd",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_38",
+    "orig_id": "t-df2f4700cd",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-df2f4700cd",
+     "agent": "IAMGOD",
+     "rank": 230,
+     "eid": "1f936666-6bb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-cf5307ac8cd5",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "pattern"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 5800,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 73,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5800,
+    "jufuli": 5800,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5800,
+    "jufuli": 5800,
+    "lita": [
+     315
+    ],
+    "reza": [
+     315
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e121eef482",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 1.242,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.958,
+   "reza_log": 8.274,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 16.7,
+       "unit": "in"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 16000,
+     "target": "p-187c74923066",
+     "n_a_stated_cap": 28,
+     "n_a_final": 4,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "diameter",
+       "op": "ge",
+       "value": 0.161,
+       "unit": "mm"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "braided wire",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "pack size"
+     ],
+     "cap_line": 16000,
+     "target": "p-271b7267bb46",
+     "n_a_stated_cap": 140,
+     "n_a_final": 3,
+     "n_a0_nocap": 140,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 16000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e121eef482",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_39",
+    "orig_id": "t-e121eef482",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e121eef482",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-187c74923066",
+       3
+      ],
+      [
+       "p-271b7267bb46",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material of the fishing lines",
+     "color of the clothes hangers",
+     "pack size of the clothes hangers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 16000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 11822,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 16000,
+    "jufuli": 11822,
+    "lita": [
+     4,
+     3
+    ],
+    "reza": [
+     28,
+     140
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e1d0cfaaed",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.786,
+   "reza_log": 3.332,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 16.7,
+       "unit": "in"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "gray",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 4950,
+     "target": "p-29c8f33d9125",
+     "n_a_stated_cap": 28,
+     "n_a_final": 6,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4950,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e1d0cfaaed",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_40",
+    "orig_id": "t-e1d0cfaaed",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e1d0cfaaed",
+     "agent": "cirrus",
+     "rank": 205,
+     "eid": "582829bd-859",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-470789bbb1df",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "material"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 4950,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1995,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4950,
+    "jufuli": 1995,
+    "lita": [
+     6
+    ],
+    "reza": [
+     28
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e8316716d9",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 3,
+   "lita_logmean": 2.962,
+   "lita_log_prod": 8.885,
+   "hidden_cut": 0.193,
+   "reza_log": 11.221,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "has",
+       "value": "intel i3"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 14500,
+     "target": "p-010a858e212d",
+     "n_a_stated_cap": 86,
+     "n_a_final": 86,
+     "n_a0_nocap": 86,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "gray"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "eq",
+       "value": "nylon",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 14500,
+     "target": "p-0ead9dd2a121",
+     "n_a_stated_cap": 31,
+     "n_a_final": 3,
+     "n_a0_nocap": 31,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Clothes Hangers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 16.7,
+       "unit": "in"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 14500,
+     "target": "p-027862f51009",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14500,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-e8316716d9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_41",
+    "orig_id": "t-e8316716d9",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e8316716d9",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-010a858e212d",
+       3
+      ],
+      [
+       "p-0ead9dd2a121",
+       2
+      ],
+      [
+       "p-027862f51009",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material of the fishing lines",
+     "integrated graphics of the cpu"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 14500,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 2005,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14500,
+    "jufuli": 14500,
+    "lita": [
+     86,
+     3,
+     28
+    ],
+    "reza": [
+     86,
+     31,
+     28
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ea952bab25",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 4,
+   "lita_logmean": 2.896,
+   "lita_log_prod": 8.689,
+   "hidden_cut": 0.397,
+   "reza_log": 11.397,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Clothes Hangers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 16.7,
+       "unit": "in"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "eq",
+       "value": "white",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 8000,
+     "target": "p-187c74923066",
+     "n_a_stated_cap": 28,
+     "n_a_final": 4,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "blue"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "eq",
+       "value": "monofilament",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 8000,
+     "target": "p-02d374bf3dc8",
+     "n_a_stated_cap": 60,
+     "n_a_final": 28,
+     "n_a0_nocap": 60,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "has",
+       "value": "intel i3"
+      },
+      {
+       "prop": "ddr variant",
+       "op": "in",
+       "value": [
+        "ddr3",
+        "ddr4"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 8000,
+     "target": "p-017b4fe5c8a7",
+     "n_a_stated_cap": 53,
+     "n_a_final": 53,
+     "n_a0_nocap": 53,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-ea952bab25",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_42",
+    "orig_id": "t-ea952bab25",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ea952bab25",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-187c74923066",
+       1
+      ],
+      [
+       "p-02d374bf3dc8",
+       3
+      ],
+      [
+       "p-017b4fe5c8a7",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line of the fishing lines",
+     "color of the clothes hangers",
+     "material of the clothes hangers"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 8000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 4694,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8000,
+    "jufuli": 4694,
+    "lita": [
+     4,
+     28,
+     53
+    ],
+    "reza": [
+     28,
+     60,
+     53
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ea9bc3b7c6",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 3,
+   "lita_min": 16,
+   "lita_logmean": 2.975,
+   "lita_log_prod": 5.951,
+   "hidden_cut": 0.31,
+   "reza_log": 6.51,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "cpu chipset model",
+       "op": "has",
+       "value": "amd a10",
+       "ref": true
+      },
+      {
+       "prop": "tdp",
+       "op": "ge",
+       "value": 65,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 1700,
+     "target": "p-168f69e01cad",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "eq",
+       "value": "braid line",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 1700,
+     "target": "p-1cf9898bb5c0",
+     "n_a_stated_cap": 42,
+     "n_a_final": 24,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1700,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-ea9bc3b7c6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_43",
+    "orig_id": "t-ea9bc3b7c6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-ea9bc3b7c6",
+     "agent": "Oradon",
+     "rank": 88,
+     "eid": "b1f577d1-893",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-219da1dacb05",
+       1
+      ],
+      [
+       "p-8444c13c31ee",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-12ffbf5fc136",
+      "p-8444c13c31ee"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line of the fishing lines",
+     "integrated graphics of the cpu"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 1700,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1517,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1700,
+    "jufuli": 1700,
+    "lita": [
+     16,
+     24
+    ],
+    "reza": [
+     16,
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-12ffbf5fc136",
+    "p-8444c13c31ee"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f056a21ae9",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.418,
+   "lita_log_prod": 4.836,
+   "hidden_cut": 0.069,
+   "reza_log": 5.124,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "CPU",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "socket",
+       "op": "has",
+       "value": "lga 1200"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 43000,
+     "target": "p-010845e8a907",
+     "n_a_stated_cap": 21,
+     "n_a_final": 21,
+     "n_a0_nocap": 21,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "strands",
+       "op": "has",
+       "value": "7 strands"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of fishing line",
+       "op": "nin",
+       "value": [
+        "braid line",
+        "braided line"
+       ],
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "integrated graphics"
+     ],
+     "cap_line": 43000,
+     "target": "p-02ef65ac3faa",
+     "n_a_stated_cap": 8,
+     "n_a_final": 6,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 43000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-f056a21ae9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_44",
+    "orig_id": "t-f056a21ae9",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f056a21ae9",
+     "agent": "Pein",
+     "rank": 142,
+     "eid": "5154d341-9f5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-80a22d81fe0f",
+       2
+      ],
+      [
+       "p-caec08696336",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-85f8cabce0ae",
+      "p-5863989590d6"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of fishing line of the fishing lines",
+     "integrated graphics of the cpu"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 43000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 15168,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 43000,
+    "jufuli": 43000,
+    "lita": [
+     21,
+     6
+    ],
+    "reza": [
+     21,
+     8
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-85f8cabce0ae",
+    "p-5863989590d6"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f3616a709b",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 6,
+   "lita_logmean": 2.765,
+   "lita_log_prod": 5.529,
+   "hidden_cut": 0.094,
+   "reza_log": 6.136,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 2,
+   "max_hops": 2,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r17",
+   "flavor": "r17",
+   "lines": [
+    {
+     "category": "Fishing Lines",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 4150,
+     "target": "p-0535b326c9d9",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "CPU",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "refurbished"
+      },
+      {
+       "prop": "number of cores",
+       "op": "le",
+       "value": 4,
+       "unit": "count"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "ddr variant",
+       "op": "has",
+       "value": "ddr4",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "meters"
+     ],
+     "cap_line": 4150,
+     "target": "p-0507f664148d",
+     "n_a_stated_cap": 11,
+     "n_a_final": 6,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4150,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 43,
+   "task_id": "t-f3616a709b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r17_45",
+    "orig_id": "t-f3616a709b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f3616a709b",
+     "agent": "Imperial",
+     "rank": 86,
+     "eid": "8573e91a-b18",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-2cc58bd45d80",
+       3
+      ],
+      [
+       "p-485b85e25490",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-f9976ae28fe5",
+      "p-29e243ad0341"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 43,
+    "max_steps": 150,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "ddr variant of the cpu",
+     "meters of the fishing lines"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "witnesses": 1,
+    "fits": [],
+    "conds": [],
+    "fits_infeasible": false,
+    "cap_end": 4150,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1656,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 4150,
+    "lita": [
+     42,
+     6
+    ],
+    "reza": [
+     42,
+     11
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-f9976ae28fe5",
+    "p-29e243ad0341"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ }
+]
