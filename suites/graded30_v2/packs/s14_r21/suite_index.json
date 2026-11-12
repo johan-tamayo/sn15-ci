@@ -1,0 +1,9609 @@
+[
+ {
+  "task_id": "t-0059324756",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.692,
+   "reza_log": 2.565,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "e27",
+        "universal"
+       ]
+      },
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "5000 and up"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "solar-powered lights",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light bulb colour",
+      "light fixture width",
+      "light effects"
+     ],
+     "cap_line": 663,
+     "target": "p-24100c6c244d",
+     "n_a_stated_cap": 13,
+     "n_a_final": 4,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 830,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's say 663 pence instead, since the pension letter landed on the mat this morning.",
+     "new_cap": 663,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-0059324756",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_01",
+    "orig_id": "t-0059324756",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0059324756",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "115d4988-2c0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-24100c6c244d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type",
+     "light bulb colour",
+     "light fixture width",
+     "light effects"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 663,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 302,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 830,
+    "jufuli": 302,
+    "lita": [
+     4
+    ],
+    "reza": [
+     13
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 663,
+    "jufuli": 302,
+    "lita": [
+     4
+    ],
+    "reza": [
+     13
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-00bd96962e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.766,
+   "reza_log": 3.85,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "bronze"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 15.0,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "usage"
+     ],
+     "cap_line": 1870,
+     "target": "p-0dba88dfa71a",
+     "n_a_stated_cap": 47,
+     "n_a_final": 11,
+     "n_a0_nocap": 47,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2500,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I've moved my limit and it's 1870 pence today, thanks to a birthday cheque from my gran.",
+     "new_cap": 1870,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-00bd96962e",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_02",
+    "orig_id": "t-00bd96962e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-00bd96962e",
+     "agent": "Welcome",
+     "rank": 212,
+     "eid": "1c664940-c0e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 13,
+     "cart": [
+      [
+       "p-0dba88dfa71a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "material",
+     "usage"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1870,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 608,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2500,
+    "jufuli": 2500,
+    "lita": [
+     11
+    ],
+    "reza": [
+     47
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1870,
+    "jufuli": 1870,
+    "lita": [
+     11
+    ],
+    "reza": [
+     47
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-03cd62bca4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 47,
+   "lita_logmean": 3.85,
+   "lita_log_prod": 3.85,
+   "hidden_cut": 0.669,
+   "reza_log": 4.956,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "usage",
+       "op": "has",
+       "value": "outdoor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "bronze",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "height"
+     ],
+     "cap_line": 3050,
+     "target": "p-063d26bb1996",
+     "n_a_stated_cap": 142,
+     "n_a_final": 47,
+     "n_a0_nocap": 142,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3050,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "You know what, drop usage entirely, as my jam-making can't wait around for a perfect tick-list.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "usage"
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-03cd62bca4",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_03",
+    "orig_id": "t-03cd62bca4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-03cd62bca4",
+     "agent": "Paradise",
+     "rank": 237,
+     "eid": "13311b4b-6b8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-ea95a43139a7",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color",
+     "material",
+     "height"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3050,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 608,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3050,
+    "jufuli": 630,
+    "lita": [
+     14
+    ],
+    "reza": [
+     37
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 3050,
+    "jufuli": 608,
+    "lita": [
+     47
+    ],
+    "reza": [
+     142
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-049d60fd40",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.7,
+   "reza_log": 2.303,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light fixture width",
+       "op": "in",
+       "value": [
+        "20 to 24 inch",
+        "4 inch & under"
+       ]
+      },
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "2 pin",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "indoor ceiling lights",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light bulb colour",
+      "input voltage",
+      "power consumption"
+     ],
+     "cap_line": 485,
+     "target": "p-160331364c7b",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 485,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-049d60fd40",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_04",
+    "orig_id": "t-049d60fd40",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-049d60fd40",
+     "agent": "Amberjack",
+     "rank": 112,
+     "eid": "b14616f3-143",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 34,
+     "cart": [
+      [
+       "p-160331364c7b",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-9ee18b83950c",
+      "p-29912dfc9f8c",
+      "p-1ffde68210da",
+      "p-de5716fe9afa"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type",
+     "light bulb colour",
+     "input voltage",
+     "power consumption"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 485,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 373,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 485,
+    "jufuli": 373,
+    "lita": [
+     3
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-9ee18b83950c",
+    "p-29912dfc9f8c",
+    "p-1ffde68210da",
+    "p-de5716fe9afa"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-04a4405f62",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 1.701,
+   "lita_log_prod": 3.401,
+   "hidden_cut": 0.639,
+   "reza_log": 5.561,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "tea format",
+       "op": "has",
+       "value": "tea bags"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 4700,
+     "target": "p-1a86df817ff0",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "sim slots",
+       "op": "le",
+       "value": 2,
+       "unit": "slots"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 1.77,
+       "unit": "inch"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "phone type",
+       "op": "has",
+       "value": "smartphone",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 4700,
+     "target": "p-499bb1e74a08",
+     "n_a_stated_cap": 26,
+     "n_a_final": 3,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4700,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-04a4405f62",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_05",
+    "orig_id": "t-04a4405f62",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-04a4405f62",
+     "agent": "Lucky Bamboo",
+     "rank": 97,
+     "eid": "d08378f6-637",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-1b48ce22f421",
+       2
+      ],
+      [
+       "p-822b84a7717b",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "phone type of the feature phones",
+     "battery capacity of the feature phones",
+     "operating system of the feature phones"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4700,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2024,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4700,
+    "jufuli": 2024,
+    "lita": [
+     10,
+     3
+    ],
+    "reza": [
+     10,
+     26
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1766219be6",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 4,
+   "lita_min": 2,
+   "lita_logmean": 1.498,
+   "lita_log_prod": 2.996,
+   "hidden_cut": 0.793,
+   "reza_log": 6.691,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "500-1000"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "12v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "plug type"
+     ],
+     "cap_line": 3100,
+     "target": "p-160331364c7b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 2,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "wintermelon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bag",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 3100,
+     "target": "p-0de62c2c0588",
+     "n_a_stated_cap": 23,
+     "n_a_final": 10,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3100,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-1766219be6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_06",
+    "orig_id": "t-1766219be6",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1766219be6",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-160331364c7b",
+       2
+      ],
+      [
+       "p-0de62c2c0588",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type of the milk tea",
+     "input voltage of the ceiling lights",
+     "material of the ceiling lights",
+     "plug type of the ceiling lights"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3100,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1146,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3100,
+    "jufuli": 1146,
+    "lita": [
+     2,
+     10
+    ],
+    "reza": [
+     35,
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1ac72c30e6",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 2.943,
+   "lita_log_prod": 5.886,
+   "hidden_cut": 0.356,
+   "reza_log": 8.525,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "cn"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light effects",
+       "op": "has",
+       "value": "3-way",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "light type",
+      "color"
+     ],
+     "cap_line": 11000,
+     "target": "p-099ad1ea7bbe",
+     "n_a_stated_cap": 56,
+     "n_a_final": 4,
+     "n_a0_nocap": 56,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 14.5,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 11000,
+     "target": "p-0194aeea49ef",
+     "n_a_stated_cap": 90,
+     "n_a_final": 90,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 11000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-1ac72c30e6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_07",
+    "orig_id": "t-1ac72c30e6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1ac72c30e6",
+     "agent": "KALI",
+     "rank": 16,
+     "eid": "f9e38e47-0c0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-063d26bb1996",
+       2
+      ],
+      [
+       "p-099ad1ea7bbe",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light effects of the ceiling lights",
+     "material of the ceiling lights",
+     "light type of the ceiling lights",
+     "color of the ceiling lights"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 11000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2093,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 11000,
+    "jufuli": 11000,
+    "lita": [
+     4,
+     90
+    ],
+    "reza": [
+     56,
+     90
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1c901c58b5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 63,
+   "lita_logmean": 4.143,
+   "lita_log_prod": 4.143,
+   "hidden_cut": 0.0,
+   "reza_log": 4.143,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "indoor ceiling lights"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "plug type",
+      "input voltage"
+     ],
+     "cap_line": 1166,
+     "target": "p-03b36c8cc163",
+     "n_a_stated_cap": 63,
+     "n_a_final": 63,
+     "n_a0_nocap": 63,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 850,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's say 1166 pence instead, since the pension letter landed on the mat this morning.",
+     "new_cap": 1166,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-1c901c58b5",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_08",
+    "orig_id": "t-1c901c58b5",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-1c901c58b5",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "606cf83a-e0a",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 19,
+     "cart": [
+      [
+       "p-03b36c8cc163",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "plug type",
+     "input voltage"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1166,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 27,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 850,
+    "jufuli": 27,
+    "lita": [
+     63
+    ],
+    "reza": [
+     63
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1166,
+    "jufuli": 27,
+    "lita": [
+     63
+    ],
+    "reza": [
+     63
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1fc0f7eb70",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 7,
+   "lita_logmean": 3.02,
+   "lita_log_prod": 6.04,
+   "hidden_cut": 0.442,
+   "reza_log": 7.962,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 360,
+       "unit": "g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "tea format",
+       "op": "has",
+       "value": "powder",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 8250,
+     "target": "p-086a69690e4b",
+     "n_a_stated_cap": 33,
+     "n_a_final": 7,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Light Fixtures",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 14,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "le",
+       "value": 13.5,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "style",
+      "depth"
+     ],
+     "cap_line": 8250,
+     "target": "p-0194aeea49ef",
+     "n_a_stated_cap": 87,
+     "n_a_final": 60,
+     "n_a0_nocap": 87,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8250,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-1fc0f7eb70",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_09",
+    "orig_id": "t-1fc0f7eb70",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1fc0f7eb70",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-086a69690e4b",
+       3
+      ],
+      [
+       "p-0194aeea49ef",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "tea format of the milk tea",
+     "height of the light fixtures",
+     "style of the light fixtures",
+     "depth of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 8250,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1830,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8250,
+    "jufuli": 1830,
+    "lita": [
+     7,
+     60
+    ],
+    "reza": [
+     33,
+     87
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2b5dbd1e1a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.833,
+   "reza_log": 3.178,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sim slots",
+       "op": "ge",
+       "value": 1,
+       "unit": "slots"
+      },
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "symbian"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of battery",
+       "op": "has",
+       "value": "li-ion",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity",
+      "condition"
+     ],
+     "cap_line": 1600,
+     "target": "p-431d1679696b",
+     "n_a_stated_cap": 24,
+     "n_a_final": 4,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1600,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-2b5dbd1e1a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_10",
+    "orig_id": "t-2b5dbd1e1a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-2b5dbd1e1a",
+     "agent": "lantern",
+     "rank": 31,
+     "eid": "130ccd44-f8b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-7259d3472f92",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of battery",
+     "battery capacity",
+     "condition"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1600,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1427,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1600,
+    "jufuli": 1600,
+    "lita": [
+     4
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3360d8d55a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 17,
+   "lita_logmean": 2.833,
+   "lita_log_prod": 2.833,
+   "hidden_cut": 0.433,
+   "reza_log": 3.401,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "lemon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "tea type",
+       "op": "has",
+       "value": "black",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "tea format",
+      "weight",
+      "pack size"
+     ],
+     "cap_line": 380,
+     "target": "p-086a69690e4b",
+     "n_a_stated_cap": 30,
+     "n_a_final": 17,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 380,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-3360d8d55a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_11",
+    "orig_id": "t-3360d8d55a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3360d8d55a",
+     "agent": "sabito",
+     "rank": 12,
+     "eid": "f2a0b48b-234",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-f18a156b4959",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "tea type",
+     "tea format",
+     "weight",
+     "pack size"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 380,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 20,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 380,
+    "jufuli": 20,
+    "lita": [
+     17
+    ],
+    "reza": [
+     30
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-365c32ab27",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 1.661,
+   "lita_log_prod": 6.644,
+   "hidden_cut": 0.0,
+   "reza_log": 6.644,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 120
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Office Headsets",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "headphone style",
+       "op": "has",
+       "value": "behind-the-neck"
+      },
+      {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "3.5 mm",
+        "usb-c"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 58500,
+     "target": "p-2b592d5d42c4",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "USB and Lightning Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "thermoplastic elastomer (tpe)"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "white"
+       ]
+      }
+     ],
+     "line_cap": 1085,
+     "hidden": [],
+     "decoys": [
+      "cable length"
+     ],
+     "cap_line": 58500,
+     "target": "p-008086d936fa",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wireless Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "gold"
+      },
+      {
+       "prop": "power source",
+       "op": "in",
+       "value": [
+        "ac",
+        "usb"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 58500,
+     "target": "p-130073071ac0",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Earbud and Headphone Cases",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "pattern"
+     ],
+     "cap_line": 58500,
+     "target": "p-087b06fa06e3",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 58500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 120,
+   "task_id": "t-365c32ab27",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_12",
+    "orig_id": "t-365c32ab27",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-365c32ab27",
+     "agent": "KISUN",
+     "rank": 93,
+     "eid": "583bf318-344",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 77,
+     "cart": [
+      [
+       "p-13f89c8caa71",
+       1
+      ],
+      [
+       "p-249ff52af3c7",
+       2
+      ],
+      [
+       "p-68d25347adc3",
+       2
+      ],
+      [
+       "p-8e1cb9303180",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 120,
+    "max_steps": 200,
+    "policy_max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "pattern of the earbud and headphone cases",
+     "cable length of the usb and lightning cables",
+     "color of the office headsets",
+     "color of the wireless chargers"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "bluetooth"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "nylon"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 58500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 22307,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 58500,
+    "jufuli": 22307,
+    "lita": [
+     2,
+     2,
+     8,
+     24
+    ],
+    "reza": [
+     2,
+     2,
+     8,
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4206c0015c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 2,
+   "lita_logmean": 0.693,
+   "lita_log_prod": 0.693,
+   "hidden_cut": 0.818,
+   "reza_log": 2.398,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light fixture width",
+       "op": "nin",
+       "value": [
+        "10 to 14 inch"
+       ]
+      },
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "solar-powered lights"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "glass",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light bulb colour",
+      "power consumption"
+     ],
+     "cap_line": 367,
+     "target": "p-24100c6c244d",
+     "n_a_stated_cap": 11,
+     "n_a_final": 2,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 490,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news, my spending limit has moved to 367 pence, so I'll be buying fewer pints at the club.",
+     "new_cap": 367,
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Oh dear, I think the ticket on your suggestion has been swapped, rather like a pitch after rain.",
+     "new_cap": null,
+     "pct": 75,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-4206c0015c",
+   "extra": {
+    "kinds": [
+     "budget",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_13",
+    "orig_id": "t-4206c0015c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4206c0015c",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "ac2d89c1-865",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-24100c6c244d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "light bulb colour",
+     "power consumption"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 367,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 302,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 302,
+    "lita": [
+     2
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 367,
+    "jufuli": 302,
+    "lita": [
+     2
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 302,
+    "lita": [
+     2
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 367,
+    "jufuli": 302,
+    "lita": [
+     2
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-45c76c05d9",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 7,
+   "lita_logmean": 2.685,
+   "lita_log_prod": 8.055,
+   "hidden_cut": 0.2,
+   "reza_log": 9.105,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "lemon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "weight"
+     ],
+     "cap_line": 7850,
+     "target": "p-0119d778bb9c",
+     "n_a_stated_cap": 30,
+     "n_a_final": 30,
+     "n_a0_nocap": 30,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ceiling Lights",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "cool white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "indoor ceiling lights",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 7850,
+     "target": "p-277893b6bad4",
+     "n_a_stated_cap": 20,
+     "n_a_final": 7,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "network",
+       "op": "has",
+       "value": "4g"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 2.8,
+       "unit": "inch"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 7850,
+     "target": "p-00b8613df5f0",
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 7850,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-45c76c05d9",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_14",
+    "orig_id": "t-45c76c05d9",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-45c76c05d9",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0119d778bb9c",
+       2
+      ],
+      [
+       "p-277893b6bad4",
+       3
+      ],
+      [
+       "p-00b8613df5f0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type of the ceiling lights",
+     "weight of the milk tea"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 7850,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1475,
+    "nb_floor": [
+     1475,
+     1475,
+     89
+    ],
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 7850,
+    "jufuli": 1474,
+    "lita": [
+     30,
+     7,
+     15
+    ],
+    "reza": [
+     30,
+     20,
+     15
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-47fa002f60",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 1,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "tea type",
+       "op": "in",
+       "value": [
+        "oolong",
+        "thai tea"
+       ]
+      },
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "single"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bottle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "tea format",
+      "pack size",
+      "storage type"
+     ],
+     "cap_line": 361,
+     "target": null,
+     "n_a_stated_cap": 1,
+     "n_a_final": 0,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 425,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I've had to rejig things, so please work with 361 pence from now.",
+     "new_cap": 361,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-47fa002f60",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "decline"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_15",
+    "orig_id": "t-47fa002f60",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-47fa002f60",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": true,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "tea format",
+     "pack size",
+     "storage type"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 361,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 425,
+    "jufuli": 425,
+    "lita": [
+     0
+    ],
+    "reza": [
+     1
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": true,
+    "suhe": 361,
+    "jufuli": 361,
+    "lita": [
+     0
+    ],
+    "reza": [
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-56c28f88a2",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 1,
+   "lita_logmean": 1.492,
+   "lita_log_prod": 4.477,
+   "hidden_cut": 0.844,
+   "reza_log": 8.753,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "spotlight"
+      },
+      {
+       "prop": "light fixture width",
+       "op": "in",
+       "value": [
+        "10 to 14 inch",
+        "5 to 9 inch"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "1000-2000",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 5400,
+     "target": "p-06348fde1abe",
+     "n_a_stated_cap": 7,
+     "n_a_final": 1,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "box"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "flavor"
+     ],
+     "cap_line": 5400,
+     "target": "p-095dbb8b91c4",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sim slots",
+       "op": "le",
+       "value": 2,
+       "unit": "slots"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "phone type",
+       "op": "has",
+       "value": "smartphone",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 5400,
+     "target": "p-02f0216f27d6",
+     "n_a_stated_cap": 113,
+     "n_a_final": 11,
+     "n_a0_nocap": 113,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5400,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-56c28f88a2",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_16",
+    "orig_id": "t-56c28f88a2",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-56c28f88a2",
+     "agent": "Welcome",
+     "rank": 212,
+     "eid": "e2396889-49c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-02f0216f27d6",
+       1
+      ],
+      [
+       "p-06348fde1abe",
+       2
+      ],
+      [
+       "p-4ea99d418104",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power consumption of the ceiling lights",
+     "phone type of the feature phones",
+     "flavor of the milk tea"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 5400,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1758,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5400,
+    "jufuli": 5400,
+    "lita": [
+     1,
+     8,
+     11
+    ],
+    "reza": [
+     7,
+     8,
+     113
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-57c70d0d1d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 4,
+   "lita_logmean": 1.386,
+   "lita_log_prod": 1.386,
+   "hidden_cut": 0.733,
+   "reza_log": 2.708,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "cn"
+      },
+      {
+       "prop": "light fixture width",
+       "op": "in",
+       "value": [
+        "25 inch & above",
+        "4 inch & under"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "500-1000",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light type",
+      "input voltage",
+      "light bulb colour"
+     ],
+     "cap_line": 1200,
+     "target": "p-07364b79c6fa",
+     "n_a_stated_cap": 15,
+     "n_a_final": 4,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1200,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-57c70d0d1d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_17",
+    "orig_id": "t-57c70d0d1d",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-57c70d0d1d",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "d15cc5e7-61f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-fd1dbb8049fb",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power consumption",
+     "light type",
+     "input voltage",
+     "light bulb colour"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1200,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 36,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1200,
+    "jufuli": 36,
+    "lita": [
+     4
+    ],
+    "reza": [
+     15
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5ef0b098b9",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.929,
+   "reza_log": 2.639,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "in",
+       "value": [
+        "spotlight",
+        "track lights"
+       ]
+      },
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "cn"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "500-1000",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light bulb colour",
+      "material",
+      "light effects"
+     ],
+     "cap_line": 1780,
+     "target": "p-58b4ee493dbe",
+     "n_a_stated_cap": 14,
+     "n_a_final": 1,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1200,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Slight tweak from me: 1780 pence is the sum I'm happy with, now the boiler man has been and gone.",
+     "new_cap": 1780,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-5ef0b098b9",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_18",
+    "orig_id": "t-5ef0b098b9",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5ef0b098b9",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "0865edd4-574",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-58b4ee493dbe",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power consumption",
+     "light bulb colour",
+     "material",
+     "light effects"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1780,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 474,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1200,
+    "jufuli": 474,
+    "lita": [
+     1
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1780,
+    "jufuli": 474,
+    "lita": [
+     1
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6195c1a586",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.75,
+   "reza_log": 1.386,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "in",
+       "value": [
+        "solar-powered lights",
+        "spotlight"
+       ]
+      },
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "500-1000"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "12v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "light fixture width"
+     ],
+     "cap_line": 1241,
+     "target": "p-1fb66eefd6af",
+     "n_a_stated_cap": 4,
+     "n_a_final": 1,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1035,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "New plan on spending: 1241 pence, and not a penny past it, like a tidy over.",
+     "new_cap": 1241,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-6195c1a586",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_19",
+    "orig_id": "t-6195c1a586",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6195c1a586",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "98032ada-b69",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 23,
+     "cart": [
+      [
+       "p-1fb66eefd6af",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "input voltage",
+     "material",
+     "light fixture width"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1241,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 748,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1035,
+    "jufuli": 748,
+    "lita": [
+     1
+    ],
+    "reza": [
+     4
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1241,
+    "jufuli": 748,
+    "lita": [
+     1
+    ],
+    "reza": [
+     4
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-73d14a98d2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.87,
+   "reza_log": 3.135,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "wintermelon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bottle",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "tea format",
+      "tea type",
+      "dietary needs"
+     ],
+     "cap_line": 561,
+     "target": "p-428ac820ac3a",
+     "n_a_stated_cap": 23,
+     "n_a_final": 3,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 397,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Slight tweak from me: 561 pence is the sum I'm happy with, now the boiler man has been and gone.",
+     "new_cap": 561,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-73d14a98d2",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_20",
+    "orig_id": "t-73d14a98d2",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-73d14a98d2",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "eaf11ea4-90e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 18,
+     "cart": [
+      [
+       "p-428ac820ac3a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "tea format",
+     "tea type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 561,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 62,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 397,
+    "jufuli": 397,
+    "lita": [
+     3
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 561,
+    "jufuli": 561,
+    "lita": [
+     3
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7c9f4b2b2f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 16,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 10.665,
+   "hidden_cut": 0.0,
+   "reza_log": 10.665,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 74
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "sim slots",
+       "op": "le",
+       "value": 2,
+       "unit": "slots"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 1.77,
+       "unit": "inch"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "condition"
+     ],
+     "cap_line": 4850,
+     "target": "p-0023417d64b2",
+     "n_a_stated_cap": 26,
+     "n_a_final": 26,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dust Plugs",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 10,
+       "unit": "pieces"
+      },
+      {
+       "prop": "plug type",
+       "op": "in",
+       "value": [
+        "lightning",
+        "type c"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "mt fashion acc type",
+      "port"
+     ],
+     "cap_line": 4850,
+     "target": "p-00d27914f194",
+     "n_a_stated_cap": 103,
+     "n_a_final": 103,
+     "n_a0_nocap": 103,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Power Adaptors & Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "us",
+       "ref": true
+      },
+      {
+       "prop": "cord length",
+       "op": "ge",
+       "value": 1.5,
+       "unit": "m"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "output"
+     ],
+     "cap_line": 4850,
+     "target": "p-07d98d63eadf",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4850,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 74,
+   "task_id": "t-7c9f4b2b2f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_21",
+    "orig_id": "t-7c9f4b2b2f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7c9f4b2b2f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 74,
+     "cart": [
+      [
+       "p-0023417d64b2",
+       2
+      ],
+      [
+       "p-00d27914f194",
+       2
+      ],
+      [
+       "p-07d98d63eadf",
+       2
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-db546f4f76f5",
+      "p-b935d4aaa380",
+      "p-5e938d25ec0e",
+      "p-594ed5651ae6"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 74,
+    "max_steps": 200,
+    "policy_max_steps": 74,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "mt fashion acc type of the dust plugs",
+     "port of the dust plugs",
+     "condition of the feature phones",
+     "output of the power adaptors & chargers"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4850,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 696,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4850,
+    "jufuli": 696,
+    "lita": [
+     26,
+     103,
+     16
+    ],
+    "reza": [
+     26,
+     103,
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-db546f4f76f5",
+    "p-b935d4aaa380",
+    "p-5e938d25ec0e",
+    "p-594ed5651ae6"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7f92e1cc7f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 6,
+   "lita_logmean": 2.992,
+   "lita_log_prod": 8.977,
+   "hidden_cut": 0.0,
+   "reza_log": 8.977,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 85
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "symbian"
+      },
+      {
+       "prop": "sim slots",
+       "op": "ge",
+       "value": 1,
+       "unit": "slots"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "network connections"
+     ],
+     "cap_line": 4400,
+     "target": "p-023f21f2f472",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dust Plugs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "type c"
+      },
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 2,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "mt fashion acc type"
+     ],
+     "cap_line": 4400,
+     "target": "p-003fece8cdd9",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Power Adaptors & Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3 pin"
+      },
+      {
+       "prop": "power",
+       "op": "le",
+       "value": 45,
+       "unit": "w"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "cord length",
+      "power adapter type"
+     ],
+     "cap_line": 4400,
+     "target": "p-629af475a516",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4400,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 85,
+   "task_id": "t-7f92e1cc7f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_22",
+    "orig_id": "t-7f92e1cc7f",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-7f92e1cc7f",
+     "agent": "Welcome",
+     "rank": 212,
+     "eid": "1af5eef0-9e8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 47,
+     "cart": [
+      [
+       "p-0cbfa6e5d349",
+       1
+      ],
+      [
+       "p-254f862ca408",
+       2
+      ],
+      [
+       "p-629af475a516",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 85,
+    "max_steps": 200,
+    "policy_max_steps": 85,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "network connections of the feature phones",
+     "cord length of the power adaptors & chargers",
+     "power adapter type of the power adaptors & chargers",
+     "mt fashion acc type of the dust plugs"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "network",
+       "op": "has",
+       "value": "3g"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "silicone"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4400,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2885,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4400,
+    "jufuli": 2885,
+    "lita": [
+     24,
+     55,
+     6
+    ],
+    "reza": [
+     24,
+     55,
+     6
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-8145e87f6d",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 38,
+   "lita_logmean": 3.831,
+   "lita_log_prod": 7.663,
+   "hidden_cut": 0.0,
+   "reza_log": 7.663,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "cn"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light type",
+      "light fixture width"
+     ],
+     "cap_line": 4700,
+     "target": "p-07364b79c6fa",
+     "n_a_stated_cap": 56,
+     "n_a_final": 56,
+     "n_a0_nocap": 56,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 360,
+       "unit": "g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type",
+      "pack size"
+     ],
+     "cap_line": 4700,
+     "target": "p-002afc2572b7",
+     "n_a_stated_cap": 38,
+     "n_a_final": 38,
+     "n_a0_nocap": 38,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4700,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-8145e87f6d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_23",
+    "orig_id": "t-8145e87f6d",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-8145e87f6d",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "0281bc6d-2a3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 15,
+     "cart": [
+      [
+       "p-0358d24cefea",
+       3
+      ],
+      [
+       "p-0739380f6cdb",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type of the milk tea",
+     "light type of the ceiling lights",
+     "light fixture width of the ceiling lights",
+     "pack size of the milk tea"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4700,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 672,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4700,
+    "jufuli": 4700,
+    "lita": [
+     56,
+     38
+    ],
+    "reza": [
+     56,
+     38
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-844e9d29c3",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 4,
+   "lita_logmean": 2.946,
+   "lita_log_prod": 8.838,
+   "hidden_cut": 0.0,
+   "reza_log": 8.838,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 95
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "symbian"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "network connections"
+     ],
+     "cap_line": 3100,
+     "target": "p-0191a2cb4979",
+     "n_a_stated_cap": 41,
+     "n_a_final": 41,
+     "n_a0_nocap": 41,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Power Adaptors & Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3 pin",
+       "ref": true
+      },
+      {
+       "prop": "power",
+       "op": "ge",
+       "value": 65,
+       "unit": "w"
+      }
+     ],
+     "line_cap": 620,
+     "hidden": [],
+     "decoys": [
+      "power adapter type"
+     ],
+     "cap_line": 3100,
+     "target": "p-8a0d5ae36e80",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wall Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "2 pin"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "charging power"
+     ],
+     "cap_line": 3100,
+     "target": "p-04ff1273fca5",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3100,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 95,
+   "task_id": "t-844e9d29c3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_24",
+    "orig_id": "t-844e9d29c3",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-844e9d29c3",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 95,
+     "cart": [
+      [
+       "p-0191a2cb4979",
+       1
+      ],
+      [
+       "p-8a0d5ae36e80",
+       1
+      ],
+      [
+       "p-04ff1273fca5",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-daf399127426",
+      "p-a9cfac85c75a",
+      "p-040421658d66",
+      "p-3c51345dcddc"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 95,
+    "max_steps": 200,
+    "policy_max_steps": 95,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "network connections of the feature phones",
+     "power adapter type of the power adaptors & chargers",
+     "color of the wall chargers",
+     "charging power of the wall chargers"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "network",
+       "op": "has",
+       "value": "2g"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "5v"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3100,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1473,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3100,
+    "jufuli": 1473,
+    "lita": [
+     41,
+     4,
+     42
+    ],
+    "reza": [
+     41,
+     4,
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-daf399127426",
+    "p-a9cfac85c75a",
+    "p-040421658d66",
+    "p-3c51345dcddc"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-857c3a2ad0",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 18,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 0,
+   "lita_logmean": 2.415,
+   "lita_log_prod": 9.662,
+   "hidden_cut": 0.0,
+   "reza_log": 9.662,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 3,
+   "hops_total": 13,
+   "max_hops": 5,
+   "step_budget": 99
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "symbian"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 2,
+       "unit": "inch",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "type of battery",
+       "op": "any",
+       "value": null,
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "model",
+      "battery capacity"
+     ],
+     "cap_line": 4500,
+     "target": "p-0191a2cb4979",
+     "n_a_stated_cap": 17,
+     "n_a_final": 17,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dust Plugs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "mt fashion acc type",
+       "op": "has",
+       "value": "dust cover"
+      },
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "rubber",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "size"
+     ],
+     "cap_line": 4500,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wall Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "2 pin"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 4500,
+     "target": "p-04ff1273fca5",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Power Adaptors & Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3 pin"
+      },
+      {
+       "prop": "cord length",
+       "op": "ge",
+       "value": 1.5,
+       "unit": "m"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 4500,
+     "target": "p-06aee72bf626",
+     "n_a_stated_cap": 22,
+     "n_a_final": 22,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 99,
+   "task_id": "t-857c3a2ad0",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "ref-reply",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_25",
+    "orig_id": "t-857c3a2ad0",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-857c3a2ad0",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 99,
+     "cart": [
+      [
+       "p-0191a2cb4979",
+       2
+      ],
+      [
+       "p-04ff1273fca5",
+       2
+      ],
+      [
+       "p-06aee72bf626",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-2fb811c7617d",
+      "p-54da17e49dcb",
+      "p-3e05ef439c2e",
+      "p-5fe83cad3473",
+      "p-0191a2cb4979"
+     ],
+     [
+      "p-57fb3efd3e88",
+      "p-733852a523ca",
+      "p-a8f5f7cd5fe8",
+      "p-c0d29456b3c7",
+      "p-a20b227a2ffd"
+     ]
+    ],
+    "need_refs": [
+     [
+      "p-9cf7cd859ff6",
+      "p-472df1b65406",
+      "p-47d433c7f869"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 99,
+    "max_steps": 200,
+    "policy_max_steps": 99,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "type of battery of the feature phones",
+     "model of the feature phones",
+     "battery capacity of the feature phones",
+     "size of the dust plugs"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "nb_floor": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4500,
+    "jufuli": 4500,
+    "lita": [
+     17,
+     0,
+     42,
+     22
+    ],
+    "reza": [
+     17,
+     0,
+     42,
+     22
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-2fb811c7617d",
+    "p-54da17e49dcb",
+    "p-3e05ef439c2e",
+    "p-5fe83cad3473",
+    "p-0191a2cb4979"
+   ],
+   [
+    "p-57fb3efd3e88",
+    "p-733852a523ca",
+    "p-a8f5f7cd5fe8",
+    "p-c0d29456b3c7",
+    "p-a20b227a2ffd"
+   ],
+   [
+    "p-9cf7cd859ff6",
+    "p-472df1b65406",
+    "p-47d433c7f869"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-86c03f4cda",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 7,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.667,
+   "reza_log": 1.099,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "in",
+       "value": [
+        "12v",
+        "24v"
+       ]
+      },
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "5000 and up"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "glass",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "light bulb colour",
+      "plug type",
+      "light effects"
+     ],
+     "cap_line": 620,
+     "target": "p-2fefedb075a4",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 830,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I've moved my limit and it's 620 pence today, thanks to a birthday cheque from my gran.",
+     "new_cap": 620,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-86c03f4cda",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_26",
+    "orig_id": "t-86c03f4cda",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-86c03f4cda",
+     "agent": "power_minion",
+     "rank": 138,
+     "eid": "01cf5969-b22",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-2fefedb075a4",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-21836073a985",
+      "p-b6b3b55251fa",
+      "p-280e23c9ceaa",
+      "p-4a3e45307f0b"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "light bulb colour",
+     "plug type",
+     "light effects"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 620,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 320,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 830,
+    "jufuli": 320,
+    "lita": [
+     1
+    ],
+    "reza": [
+     3
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 620,
+    "jufuli": 320,
+    "lita": [
+     1
+    ],
+    "reza": [
+     3
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-21836073a985",
+    "p-b6b3b55251fa",
+    "p-280e23c9ceaa",
+    "p-4a3e45307f0b"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-9a7887eaac",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.51,
+   "lita_log_prod": 6.04,
+   "hidden_cut": 0.565,
+   "reza_log": 8.086,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Office Headsets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "3.5 mm",
+        "usb-c"
+       ]
+      },
+      {
+       "prop": "headphone style",
+       "op": "has",
+       "value": "monaural",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "microphone type",
+      "color"
+     ],
+     "cap_line": 27000,
+     "target": "p-1166bfb667c1",
+     "n_a_stated_cap": 8,
+     "n_a_final": 7,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "USB and Lightning Cables",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "silver"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "connector type",
+       "op": "has",
+       "value": "micro usb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "cable length"
+     ],
+     "cap_line": 27000,
+     "target": "p-073cec3f1a46",
+     "n_a_stated_cap": 29,
+     "n_a_final": 5,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Earbud and Headphone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "closure",
+       "op": "in",
+       "value": [
+        "snap",
+        "velcro flap"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 27000,
+     "target": "p-0e5999be8e3c",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wireless Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "charging interface",
+       "op": "has",
+       "value": "usb type-a"
+      },
+      {
+       "prop": "color",
+       "op": "nin",
+       "value": [
+        "white"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 27000,
+     "target": "p-0973730e7bea",
+     "n_a_stated_cap": 7,
+     "n_a_final": 6,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 27000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 109,
+   "task_id": "t-9a7887eaac",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_27",
+    "orig_id": "t-9a7887eaac",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-9a7887eaac",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 109,
+     "cart": [
+      [
+       "p-1166bfb667c1",
+       1
+      ],
+      [
+       "p-073cec3f1a46",
+       2
+      ],
+      [
+       "p-0e5999be8e3c",
+       1
+      ],
+      [
+       "p-0973730e7bea",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-74a83e335851",
+      "p-30538e62f031",
+      "p-cffa6568f32d",
+      "p-54092a94db6c"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 109,
+    "max_steps": 200,
+    "policy_max_steps": 109,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "connector type of the usb and lightning cables",
+     "microphone type of the office headsets",
+     "color of the office headsets",
+     "cable length of the usb and lightning cables"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "wired"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "pattern",
+       "op": "has",
+       "value": "floral"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 27000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18428,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 27000,
+    "jufuli": 18428,
+    "lita": [
+     7,
+     5,
+     2,
+     6
+    ],
+    "reza": [
+     8,
+     29,
+     2,
+     7
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-74a83e335851",
+    "p-30538e62f031",
+    "p-cffa6568f32d",
+    "p-54092a94db6c"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-a162982802",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.956,
+   "reza_log": 4.727,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "sim slots",
+       "op": "le",
+       "value": 2,
+       "unit": "slots"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "phone type",
+       "op": "has",
+       "value": "keypad phone",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "network connections",
+      "display size"
+     ],
+     "cap_line": 1564,
+     "target": "p-0023417d64b2",
+     "n_a_stated_cap": 113,
+     "n_a_final": 5,
+     "n_a0_nocap": 113,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1700,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news, my spending limit has moved to 1564 pence, so I'll be buying fewer pints at the club.",
+     "new_cap": 1564,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-a162982802",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "cheapest",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_28",
+    "orig_id": "t-a162982802",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-a162982802",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-0023417d64b2",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-7ec62f5755a6"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "phone type",
+     "network connections",
+     "display size"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1564,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1068,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1700,
+    "jufuli": 1068,
+    "lita": [
+     5
+    ],
+    "reza": [
+     113
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 1564,
+    "jufuli": 1068,
+    "lita": [
+     5
+    ],
+    "reza": [
+     113
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-7ec62f5755a6"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b750de876b",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.628,
+   "lita_log_prod": 6.51,
+   "hidden_cut": 0.097,
+   "reza_log": 7.427,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Office Headsets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "headphone style",
+       "op": "has",
+       "value": "behind-the-neck"
+      },
+      {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "3.5 mm",
+        "usb-c"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "weight",
+      "color"
+     ],
+     "cap_line": 30500,
+     "target": "p-2b592d5d42c4",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "USB and Lightning Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "has",
+       "value": "lightning to usb"
+      },
+      {
+       "prop": "cable shielding",
+       "op": "in",
+       "value": [
+        "braided (stp)",
+        "foil (ftp)"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "silver",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-1ad63ee1cada",
+     "n_a_stated_cap": 5,
+     "n_a_final": 2,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wireless Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "power source",
+       "op": "has",
+       "value": "rechargeable"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 30500,
+     "target": "p-16364edb5177",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Earbud and Headphone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "abstract",
+        "solid"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-087b06fa06e3",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 30500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 109,
+   "task_id": "t-b750de876b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_29",
+    "orig_id": "t-b750de876b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b750de876b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 109,
+     "cart": [
+      [
+       "p-2b592d5d42c4",
+       1
+      ],
+      [
+       "p-1ad63ee1cada",
+       1
+      ],
+      [
+       "p-16364edb5177",
+       2
+      ],
+      [
+       "p-087b06fa06e3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 109,
+    "max_steps": 200,
+    "policy_max_steps": 109,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "color of the usb and lightning cables",
+     "color of the wireless chargers",
+     "weight of the office headsets",
+     "color of the office headsets"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "bluetooth"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "leather"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 30500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 14790,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 30500,
+    "jufuli": 14790,
+    "lita": [
+     3,
+     2,
+     16,
+     7
+    ],
+    "reza": [
+     3,
+     5,
+     16,
+     7
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b767861dbb",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 22,
+   "lita_logmean": 3.091,
+   "lita_log_prod": 3.091,
+   "hidden_cut": 0.753,
+   "reza_log": 4.489,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 10,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "width",
+       "op": "ge",
+       "value": 16.0,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "depth"
+     ],
+     "cap_line": 2750,
+     "target": "p-0d469ca4ce16",
+     "n_a_stated_cap": 89,
+     "n_a_final": 22,
+     "n_a0_nocap": 89,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2750,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-b767861dbb",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_30",
+    "orig_id": "t-b767861dbb",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b767861dbb",
+     "agent": "KALI",
+     "rank": 16,
+     "eid": "1a592d16-f3d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-0d469ca4ce16",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "width",
+     "material",
+     "depth"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2750,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 379,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2750,
+    "jufuli": 2750,
+    "lita": [
+     22
+    ],
+    "reza": [
+     89
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-bf37e4611b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 1,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 3.296,
+   "hidden_cut": 0.519,
+   "reza_log": 4.234,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 95
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Office Headsets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "headphone style",
+       "op": "has",
+       "value": "behind-the-neck"
+      },
+      {
+       "prop": "connectivity",
+       "op": "in",
+       "value": [
+        "3.5 mm",
+        "usb-c"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "microphone type",
+      "color"
+     ],
+     "cap_line": 18000,
+     "target": "p-2b592d5d42c4",
+     "n_a_stated_cap": 3,
+     "n_a_final": 3,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "USB and Lightning Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cable shielding",
+       "op": "has",
+       "value": "unshielded (utp)"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cable length",
+       "op": "le",
+       "value": 1.0,
+       "unit": "m",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "connector type"
+     ],
+     "cap_line": 18000,
+     "target": "p-1e7bece4bdab",
+     "n_a_stated_cap": 23,
+     "n_a_final": 9,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Earbud and Headphone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      },
+      {
+       "prop": "pattern",
+       "op": "in",
+       "value": [
+        "floral",
+        "solid"
+       ]
+      }
+     ],
+     "line_cap": 770,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 18000,
+     "target": "p-8e1cb9303180",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18000,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 95,
+   "task_id": "t-bf37e4611b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_31",
+    "orig_id": "t-bf37e4611b",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-bf37e4611b",
+     "agent": "sabito",
+     "rank": 12,
+     "eid": "c2942245-07f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 79,
+     "cart": [
+      [
+       "p-541c7408c3c1",
+       1
+      ],
+      [
+       "p-8e1cb9303180",
+       1
+      ],
+      [
+       "p-bec5edc8f746",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 95,
+    "max_steps": 200,
+    "policy_max_steps": 95,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cable length of the usb and lightning cables",
+     "microphone type of the office headsets",
+     "connector type of the usb and lightning cables",
+     "color of the office headsets"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "wired"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "cotton"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 18000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 7093,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     3,
+     9,
+     1
+    ],
+    "reza": [
+     3,
+     23,
+     1
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c2b4bc1f3a",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 7,
+   "lita_min": 2,
+   "lita_logmean": 2.17,
+   "lita_log_prod": 6.51,
+   "hidden_cut": 0.037,
+   "reza_log": 7.203,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "cool white"
+      },
+      {
+       "prop": "light fixture width",
+       "op": "has",
+       "value": "4 inch & under",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "downlight",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "input voltage"
+     ],
+     "cap_line": 10000,
+     "target": "p-9c2bd6316b5e",
+     "n_a_stated_cap": 4,
+     "n_a_final": 2,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "box"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "flavor"
+     ],
+     "cap_line": 10000,
+     "target": "p-095dbb8b91c4",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Light Fixtures",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 11.3,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 10000,
+     "target": "p-053c7892903c",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-c2b4bc1f3a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_32",
+    "orig_id": "t-c2b4bc1f3a",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c2b4bc1f3a",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-9c2bd6316b5e",
+       2
+      ],
+      [
+       "p-095dbb8b91c4",
+       2
+      ],
+      [
+       "p-053c7892903c",
+       3
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-66715a2db64b",
+      "p-1eb7ecbc9bce",
+      "p-38b168c63856",
+      "p-3ada679f4f37",
+      "p-412108f1beac"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type of the ceiling lights",
+     "flavor of the milk tea",
+     "material of the ceiling lights",
+     "input voltage of the ceiling lights"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 10000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1607,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 1607,
+    "lita": [
+     2,
+     8,
+     42
+    ],
+    "reza": [
+     4,
+     8,
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-66715a2db64b",
+    "p-1eb7ecbc9bce",
+    "p-38b168c63856",
+    "p-3ada679f4f37",
+    "p-412108f1beac"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c6b303dfdf",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.722,
+   "reza_log": 2.89,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "chrome"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "height",
+       "op": "ge",
+       "value": 13.28,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material",
+      "usage"
+     ],
+     "cap_line": 2300,
+     "target": "p-0b0daeb55c92",
+     "n_a_stated_cap": 18,
+     "n_a_final": 5,
+     "n_a0_nocap": 18,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2300,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-c6b303dfdf",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_33",
+    "orig_id": "t-c6b303dfdf",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c6b303dfdf",
+     "agent": "Ironwood",
+     "rank": 134,
+     "eid": "6192d4d6-376",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-0b0daeb55c92",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "height",
+     "material",
+     "usage"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2300,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1290,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2300,
+    "jufuli": 2300,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c9c545ebfd",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 7,
+   "lita_logmean": 3.003,
+   "lita_log_prod": 12.013,
+   "hidden_cut": 0.041,
+   "reza_log": 12.529,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "network",
+       "op": "has",
+       "value": "2g"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "refurbished",
+        "used"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 1.77,
+       "unit": "inch",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system",
+      "phone type"
+     ],
+     "cap_line": 4600,
+     "target": "p-069790116616",
+     "n_a_stated_cap": 13,
+     "n_a_final": 8,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Power Adaptors & Chargers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3 pin"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "cord length"
+     ],
+     "cap_line": 4600,
+     "target": "p-0275275adaa8",
+     "n_a_stated_cap": 33,
+     "n_a_final": 32,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wall Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "us",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 4600,
+     "target": "p-0026d2afe8d7",
+     "n_a_stated_cap": 92,
+     "n_a_final": 92,
+     "n_a0_nocap": 92,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Dust Plugs",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "plug type",
+       "op": "has",
+       "value": "3.5mm jack"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 4600,
+     "target": "p-0561fb960167",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4600,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 109,
+   "task_id": "t-c9c545ebfd",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_34",
+    "orig_id": "t-c9c545ebfd",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c9c545ebfd",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 109,
+     "cart": [
+      [
+       "p-069790116616",
+       2
+      ],
+      [
+       "p-0275275adaa8",
+       2
+      ],
+      [
+       "p-0026d2afe8d7",
+       1
+      ],
+      [
+       "p-0561fb960167",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-60f2b61fe50f",
+      "p-b8af87c2fb63",
+      "p-a3d7b37a02d3",
+      "p-34f391510442"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 109,
+    "max_steps": 200,
+    "policy_max_steps": 109,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the feature phones",
+     "cord length of the power adaptors & chargers",
+     "operating system of the feature phones",
+     "phone type of the feature phones"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "symbian"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "power adapter type",
+       "op": "has",
+       "value": "power cord"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4600,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2338,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4600,
+    "jufuli": 2338,
+    "lita": [
+     8,
+     32,
+     92,
+     7
+    ],
+    "reza": [
+     13,
+     33,
+     92,
+     7
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-60f2b61fe50f",
+    "p-b8af87c2fb63",
+    "p-a3d7b37a02d3",
+    "p-34f391510442"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-caa0bbbc66",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 23,
+   "lita_logmean": 3.135,
+   "lita_log_prod": 3.135,
+   "hidden_cut": 0.0,
+   "reza_log": 3.135,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 3,
+   "max_hops": 3,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "ginger",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "weight",
+      "organic",
+      "dietary needs"
+     ],
+     "cap_line": 356,
+     "target": "p-0882c3312a28",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 405,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news, my spending limit has moved to 356 pence, so I'll be buying fewer pints at the club.",
+     "new_cap": 356,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-caa0bbbc66",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_35",
+    "orig_id": "t-caa0bbbc66",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-caa0bbbc66",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "b83789b1-dfd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 28,
+     "cart": [
+      [
+       "p-190e6db66781",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-f59a05fa5dd9",
+      "p-3cee29d4a7de",
+      "p-ca909ba5ddbe"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight",
+     "organic",
+     "dietary needs"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 356,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 116,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 405,
+    "jufuli": 405,
+    "lita": [
+     23
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 356,
+    "jufuli": 356,
+    "lita": [
+     23
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-f59a05fa5dd9",
+    "p-3cee29d4a7de",
+    "p-ca909ba5ddbe"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-caa8233eab",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 6,
+   "lita_min": 10,
+   "lita_logmean": 2.9,
+   "lita_log_prod": 5.799,
+   "hidden_cut": 0.232,
+   "reza_log": 6.632,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "5000 and up"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "plug type"
+     ],
+     "cap_line": 3850,
+     "target": "p-05f555526865",
+     "n_a_stated_cap": 33,
+     "n_a_final": 33,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "wintermelon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "packaging type",
+       "op": "has",
+       "value": "bag",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 3850,
+     "target": "p-0de62c2c0588",
+     "n_a_stated_cap": 23,
+     "n_a_final": 10,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 3850,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-caa8233eab",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_36",
+    "orig_id": "t-caa8233eab",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-caa8233eab",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "94a79b69-6d8",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 28,
+     "cart": [
+      [
+       "p-05f555526865",
+       3
+      ],
+      [
+       "p-cfe39ac17fa3",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type of the milk tea",
+     "material of the ceiling lights",
+     "plug type of the ceiling lights"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 3850,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 921,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 3850,
+    "jufuli": 921,
+    "lita": [
+     33,
+     10
+    ],
+    "reza": [
+     33,
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d27c1d1b54",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.652,
+   "lita_log_prod": 7.957,
+   "hidden_cut": 0.188,
+   "reza_log": 10.26,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "network",
+       "op": "has",
+       "value": "2g"
+      },
+      {
+       "prop": "type of battery",
+       "op": "in",
+       "value": [
+        "li-ion",
+        "removable"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 8100,
+     "target": "p-02fe261d86b5",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ceiling Lights",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "cool white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "track lights",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "material"
+     ],
+     "cap_line": 8100,
+     "target": "p-55b6cf671078",
+     "n_a_stated_cap": 20,
+     "n_a_final": 2,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "depth",
+       "op": "ge",
+       "value": 11.3,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "color",
+      "bulb type"
+     ],
+     "cap_line": 8100,
+     "target": "p-053c7892903c",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 8100,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-d27c1d1b54",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "never-revealed"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_37",
+    "orig_id": "t-d27c1d1b54",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d27c1d1b54",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-02fe261d86b5",
+       2
+      ],
+      [
+       "p-55b6cf671078",
+       3
+      ],
+      [
+       "p-053c7892903c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type of the ceiling lights",
+     "material of the ceiling lights",
+     "color of the light fixtures",
+     "bulb type of the light fixtures"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 8100,
+    "unrevealed_needs": 1,
+    "cheapest_sum": 1276,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 8100,
+    "jufuli": 8100,
+    "lita": [
+     34,
+     2,
+     42
+    ],
+    "reza": [
+     34,
+     20,
+     42
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d39d09f79d",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.667,
+   "reza_log": 1.099,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "24v"
+      },
+      {
+       "prop": "plug type",
+       "op": "nin",
+       "value": [
+        "2 pin"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "abs",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light type",
+      "power consumption"
+     ],
+     "cap_line": 490,
+     "target": "p-70d874368920",
+     "n_a_stated_cap": 3,
+     "n_a_final": 1,
+     "n_a0_nocap": 3,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 490,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-d39d09f79d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_38",
+    "orig_id": "t-d39d09f79d",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d39d09f79d",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-70d874368920",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "light type",
+     "power consumption"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 490,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 462,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 462,
+    "lita": [
+     1
+    ],
+    "reza": [
+     3
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d5b095f544",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 142,
+   "lita_logmean": 4.956,
+   "lita_log_prod": 4.956,
+   "hidden_cut": 0.0,
+   "reza_log": 4.956,
+   "cheapest": 0,
+   "n_states": 8,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Light Fixtures",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "width",
+       "op": "le",
+       "value": 14,
+       "unit": "inches"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "material",
+      "height",
+      "depth"
+     ],
+     "cap_line": 2327,
+     "target": "p-00e565c04c88",
+     "n_a_stated_cap": 142,
+     "n_a_final": 142,
+     "n_a0_nocap": 142,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 2900,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let's leave width aside, because my Sunday roast won't baste itself.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "width"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Spotted something while stirring the custard: your suggestion carries a fresh price.",
+     "new_cap": null,
+     "pct": 141,
+     "dropped_prop": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news, my spending limit has moved to 2327 pence, so I'll be buying fewer pints at the club.",
+     "new_cap": 2327,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-d5b095f544",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_39",
+    "orig_id": "t-d5b095f544",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-d5b095f544",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "59086898-631",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 20,
+     "cart": [
+      [
+       "p-0798e39692d5",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "material",
+     "height",
+     "depth"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 2327,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 359,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 2900,
+    "lita": [
+     87
+    ],
+    "reza": [
+     87
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 2900,
+    "lita": [
+     142
+    ],
+    "reza": [
+     142
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 2900,
+    "lita": [
+     87
+    ],
+    "reza": [
+     87
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 2900,
+    "jufuli": 2900,
+    "lita": [
+     142
+    ],
+    "reza": [
+     142
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 2327,
+    "jufuli": 2327,
+    "lita": [
+     87
+    ],
+    "reza": [
+     87
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 2327,
+    "jufuli": 2327,
+    "lita": [
+     142
+    ],
+    "reza": [
+     142
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 2327,
+    "jufuli": 2327,
+    "lita": [
+     87
+    ],
+    "reza": [
+     87
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
+    "tele": false,
+    "suhe": 2327,
+    "jufuli": 2327,
+    "lita": [
+     142
+    ],
+    "reza": [
+     142
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d92839fcb3",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 2.085,
+   "lita_log_prod": 8.34,
+   "hidden_cut": 0.164,
+   "reza_log": 8.91,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 4,
+   "max_hops": 4,
+   "step_budget": 109
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Office Headsets",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "headphone style",
+       "op": "has",
+       "value": "behind-the-neck"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "connectivity"
+     ],
+     "cap_line": 25500,
+     "target": "p-029c9483fdcc",
+     "n_a_stated_cap": 14,
+     "n_a_final": 14,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Wireless Chargers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "charging interface type",
+       "op": "has",
+       "value": "micro usb"
+      },
+      {
+       "prop": "charging power",
+       "op": "le",
+       "value": 10,
+       "unit": "w",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "connection type",
+      "color"
+     ],
+     "cap_line": 25500,
+     "target": "p-79a253d0aa7e",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "USB and Lightning Cables",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "cable shielding",
+       "op": "has",
+       "value": "unshielded (utp)"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "cable length",
+       "op": "ge",
+       "value": 1.0,
+       "unit": "m",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 25500,
+     "target": "p-0b01f39a7b5a",
+     "n_a_stated_cap": 23,
+     "n_a_final": 13,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Earbud and Headphone Cases",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "pink"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 25500,
+     "target": "p-087b06fa06e3",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 25500,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 109,
+   "task_id": "t-d92839fcb3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_40",
+    "orig_id": "t-d92839fcb3",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-d92839fcb3",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 109,
+     "cart": [
+      [
+       "p-029c9483fdcc",
+       1
+      ],
+      [
+       "p-79a253d0aa7e",
+       1
+      ],
+      [
+       "p-0b01f39a7b5a",
+       1
+      ],
+      [
+       "p-087b06fa06e3",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-acf9e8f8f00b",
+      "p-8bc97d06d1e6",
+      "p-a7a3c7960b9c",
+      "p-32d61a498dfa"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 109,
+    "max_steps": 200,
+    "policy_max_steps": 109,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "cable length of the usb and lightning cables",
+     "connectivity of the office headsets",
+     "connection type of the wireless chargers",
+     "color of the wireless chargers"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "connectivity",
+       "op": "has",
+       "value": "wired"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "leather"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 25500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 19667,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 25500,
+    "jufuli": 19667,
+    "lita": [
+     14,
+     1,
+     13,
+     23
+    ],
+    "reza": [
+     14,
+     1,
+     23,
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-acf9e8f8f00b",
+    "p-8bc97d06d1e6",
+    "p-a7a3c7960b9c",
+    "p-32d61a498dfa"
+   ]
+  ],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-db3a2b2603",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "tea format",
+       "op": "has",
+       "value": "tea bags"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type",
+      "tea type",
+      "pack type",
+      "flavor"
+     ],
+     "cap_line": 540,
+     "target": "p-1a86df817ff0",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 540,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-db3a2b2603",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_41",
+    "orig_id": "t-db3a2b2603",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-db3a2b2603",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "b48c7f1c-370",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 29,
+     "cart": [
+      [
+       "p-1b48ce22f421",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "tea type",
+     "pack type",
+     "flavor"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 540,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 24,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 540,
+    "jufuli": 24,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dec9c59cd4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.9,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "24v"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "light bulb colour",
+       "op": "has",
+       "value": "natural white",
+       "unit": null,
+       "ref": false
+      },
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "abs",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "light type",
+      "surface finish"
+     ],
+     "cap_line": 724,
+     "target": "p-4989a0c7f65c",
+     "n_a_stated_cap": 10,
+     "n_a_final": 1,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 490,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news, my spending limit has moved to 724 pence, so I'll be buying fewer pints at the club.",
+     "new_cap": 724,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-dec9c59cd4",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_42",
+    "orig_id": "t-dec9c59cd4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-dec9c59cd4",
+     "agent": "sabito",
+     "rank": 12,
+     "eid": "36416c56-9a0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 15,
+     "cart": [
+      [
+       "p-4989a0c7f65c",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light bulb colour",
+     "material",
+     "light type",
+     "surface finish"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 724,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 427,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 490,
+    "jufuli": 490,
+    "lita": [
+     1
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 724,
+    "jufuli": 724,
+    "lita": [
+     1
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e00483cdf3",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 33,
+   "lita_logmean": 3.497,
+   "lita_log_prod": 3.497,
+   "hidden_cut": 0.0,
+   "reza_log": 3.497,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "power consumption",
+       "op": "has",
+       "value": "5000 and up"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "light type",
+      "plug type",
+      "input voltage",
+      "shape"
+     ],
+     "cap_line": 830,
+     "target": "p-05f555526865",
+     "n_a_stated_cap": 33,
+     "n_a_final": 33,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 830,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-e00483cdf3",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_43",
+    "orig_id": "t-e00483cdf3",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-e00483cdf3",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "34657b3b-5e9",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 29,
+     "cart": [
+      [
+       "p-05f555526865",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "light type",
+     "plug type",
+     "input voltage",
+     "shape"
+    ],
+    "ligubo": [
+     -1,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 830,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 107,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 830,
+    "jufuli": 107,
+    "lita": [
+     33
+    ],
+    "reza": [
+     33
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f469d140e6",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.783,
+   "reza_log": 3.135,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Milk Tea",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "flavor",
+       "op": "has",
+       "value": "ginger"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "tea format",
+       "op": "has",
+       "value": "loose leaf",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "weight",
+      "packaging type",
+      "tea type"
+     ],
+     "cap_line": 405,
+     "target": "p-2a3506bfda9e",
+     "n_a_stated_cap": 23,
+     "n_a_final": 5,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 405,
+   "cheapest": true,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-f469d140e6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_44",
+    "orig_id": "t-f469d140e6",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f469d140e6",
+     "agent": "Saturday",
+     "rank": 6,
+     "eid": "20ad4852-196",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 27,
+     "cart": [
+      [
+       "p-2a3506bfda9e",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "tea format",
+     "weight",
+     "packaging type",
+     "tea type"
+    ],
+    "ligubo": [
+     0,
+     -1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 405,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 330,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 405,
+    "jufuli": 330,
+    "lita": [
+     5
+    ],
+    "reza": [
+     23
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f7da4033ea",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 1,
+   "lita_logmean": 1.411,
+   "lita_log_prod": 4.234,
+   "hidden_cut": 0.745,
+   "reza_log": 10.113,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 4,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 35
+  },
+  "spec": {
+   "suite": "s14_r21",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Feature Phones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 2,
+       "unit": "inch"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "phone type",
+       "op": "has",
+       "value": "keypad phone",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 4350,
+     "target": "p-0023417d64b2",
+     "n_a_stated_cap": 67,
+     "n_a_final": 3,
+     "n_a0_nocap": 67,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Milk Tea",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "multipack"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "flavor"
+     ],
+     "cap_line": 4350,
+     "target": "p-095dbb8b91c4",
+     "n_a_stated_cap": 23,
+     "n_a_final": 23,
+     "n_a0_nocap": 23,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Ceiling Lights",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "light type",
+       "op": "has",
+       "value": "indoor ceiling lights"
+      },
+      {
+       "prop": "power consumption",
+       "op": "in",
+       "value": [
+        "1-500",
+        "500-1000"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "crystal",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 4350,
+     "target": "p-4c1a041756f0",
+     "n_a_stated_cap": 16,
+     "n_a_final": 1,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4350,
+   "cheapest": false,
+   "events": [],
+   "messages": 2,
+   "steps": 35,
+   "task_id": "t-f7da4033ea",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r21_45",
+    "orig_id": "t-f7da4033ea",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-f7da4033ea",
+     "agent": "Top",
+     "rank": 102,
+     "eid": "85f69461-587",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 29,
+     "cart": [
+      [
+       "p-0023417d64b2",
+       1
+      ],
+      [
+       "p-0d53ce36b835",
+       2
+      ],
+      [
+       "p-4c1a041756f0",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "ordered_listing_opened"
+    ],
+    "step_budget": 35,
+    "max_steps": 200,
+    "policy_max_steps": 35,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "phone type of the feature phones",
+     "material of the ceiling lights",
+     "flavor of the milk tea",
+     "battery capacity of the feature phones"
+    ],
+    "ligubo": [
+     0,
+     1,
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 4,
+    "witnesses": 0,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4350,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3601,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4350,
+    "jufuli": 4350,
+    "lita": [
+     3,
+     23,
+     1
+    ],
+    "reza": [
+     67,
+     23,
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "ordered_listing_opened"
+  ],
+  "held_out": false,
+  "ids10": false
+ }
+]
