@@ -19,7 +19,7 @@
 | r18_15 | `t-4a111c73ca` | `Delusion` (`6749ee88-047`, rk 25) | `PASSED` | 3 (1x Food Containers, 2x Pasta Sauce, 2x Air Conditioners) | 4 | 37 | none | `1x p-06b706d7636e + 2x p-0ee099a635e7 + 2x p-1bce76d38d00` |
 | r18_16 | `t-4b218eaa6c` | `power` (`35eeeff1-44d`, rk 207) | `PASSED` | 1 (1x Men's Shoes) | 0 | 37 | price@finish, drop@first_add | `1x p-00e9d4030c8f` |
 | r18_17 | `t-56d04912c5` | `Zorvex` (`291453ee-ee4`, rk 53) | `PASSED` | 1 (1x Flats & Loafers) | 4 | 37 | drop@finish | `1x p-9452910e7c43` |
-| r18_18 | `t-58bed801cc` | `power` (`3b612ba1-d80`, rk 207) | `PASSED` | 1 (1x Mints) | 0 | 37 | stock@finish, stock@first_add | `1x p-23c37e54db47` |
+| r18_18 | `t-58bed801cc` | `power` (`3b612ba1-d80`, rk 207) | `PASSED` | 1 (1x Mints) | 0 | 37 | stock@first_add, stock@first_add, stock@finish | `1x p-23c37e54db47` |
 | r18_19 | `t-59ec24c79a` | `power` (`5562e5a7-688`, rk 207) | `PASSED` | 1 (1x Electric Guitars) | 0 | 37 | drop@after_reveal | `1x p-15f0a1ece5fe` |
 | r18_20 | `t-5c644d9bd1` | `Zenith` (`b14516f5-41c`, rk 87) | `PASSED` | 1 (1x Shorts) | 4 | 37 | price@finish | `1x p-e139a6e99785` |
 | r18_21 | `t-60ce2b8e51` | `PO` (`d3417761-c8f`, rk 222) | `PASSED` | 1 (1x Wall Hooks and Coat Racks) | 0 | 37 | price@first_add, drop@after_reveal, price@finish | `1x p-04ad27bf25bd` |
@@ -45,5 +45,5 @@
 | r18_41 | `t-c9584b53e2` | `power` (`23e46d2c-41b`, rk 207) | `PASSED` | 1 (1x Pasta Sauce) | 0 | 37 | none | `1x p-0d0f4213b534` |
 | r18_42 | `t-cd493c74cb` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 3 (1x Mints, 1x Flats & Loafers, 2x Coffee Tables and Side Tables) | 0 | 37 | none | `1x p-23c37e54db47 + 1x p-12a71be96fa5 + 2x p-bb76d616f048` |
 | r18_43 | `t-cea26bb299` | `Zorvex` (`eb92626d-32a`, rk 53) | `PASSED` | 3 (3x Pasta Sauce, 1x Shorts, 1x Computer Memory) | 0 | 37 | none | `3x p-2bf36b1a142b + 1x p-0429ce014c59 + 1x p-00421c41fbcf` |
-| r18_44 | `t-e461513a09` | `power` (`1ac32918-26f`, rk 207) | `PASSED` | 1 (1x Computer Memory) | 0 | 37 | drop@finish, stock@first_add | `1x p-0010babb8ed1` |
+| r18_44 | `t-e461513a09` | `power` (`1ac32918-26f`, rk 207) | `PASSED` | 1 (1x Computer Memory) | 0 | 37 | stock@first_add, drop@finish | `1x p-0010babb8ed1` |
 | r18_45 | `t-fa4b48b9b7` | `field` (`0-pass-open`, rk 0) | `0_FIELD_PASSES` | 5 (2x Mini PC, 1x Internal HDD/SDD, 1x Computer Memory, 2x Solid State Drives, 2x RAM) | 4 | 120 | none | `2x p-5201f0bcd5b3 + 1x p-2b9c5ab695f8 + 1x p-1d782245529d + 2x p-016b2ff0eb04 + 2x p-00a12d065b17` |

@@ -6,7 +6,8 @@
 #   * cards are pipe-delimited strings; attributes_map and item_from_the_seller only on ShowOffer / WeighListings (split view)
 #   * 2-message allowance (AskUser cost 1, budget 2); BalanceReport shows the message meter
 #   * events: triggers first_add (first non-empty Hold) | after_reveal (first need revealed) | finish (first ConcludeRequest); kinds drop | stock | price;
-#     everything not yet fired fires at the first close; the notice echoes on the next call as {gope, suba}
+#     everything not yet fired fires at the first close; the notice echoes on the next call as {gope, suba}; a first Hold with fewer than
+#     FIRST_ADD_STEPS_LEFT steps left leaves the first_add events to the close
 #   * persona: 12 reveal frames, one off-need pool per task (nopref, or did-not-understand on dnu_default tasks)
 #   * AskUser credit: race 18's own position / shelf-context table, one PRNG draw per message (fit: runs/r18_forge/credit_model_r18.json)
 #   * graded: every need revealed, every chain page and every ordered listing opened via ShowOffer / WeighListings, one answer slot per fired-event bitmask
@@ -21,6 +22,7 @@ ALL_TERMS = True
 TOKEN_FOLLOWS_LIVE = False
 TROUBLE_REF = "E58"
 TROUBLE_EMPTY = "E60"
+FIRST_ADD_STEPS_LEFT = 4  # a first non-empty Hold fires the first_add events only with this many steps left after it (37-step tasks: step <= 33)
 TOOLS = ["AskUser", "WeighListings", "Locate", "Hold", "ShowOffer", "ConcludeRequest", "BagList", "BalanceReport"]
 
 def start(envelope):
@@ -32,6 +34,7 @@ def start(envelope):
     set_cost("AskUser", "messages", 1)
     set_budget("messages", msg_cap)
     state_set("message_budget", msg_cap)
+    state_set("step_budget", params.get("step_budget", 37))
     state_set("events", params.get("events", []))
     state_set("fired_idx", [])
     state_set("fired_step", [])
@@ -134,8 +137,9 @@ def can_finish(order):
         if i in state_get("fired_idx", []):
             # field: an event that fired on the call right before the close (a Hold, a reveal) is listed in the refusal (t-44d3aca4d9 Hold -> order x5;
             # the silent first-Hold price moves of t-b832f64ea9 x5 / t-60ce2b8e51 are voiced only this way); an event a refused close already
-            # listed is not listed again (322 of 322 closes right after a refused close go through)
-            if (step_fired(i) == step - 1) and (i not in state_get("voiced", [])):
+            # listed is not listed again (322 of 322 closes right after a refused close go through); a skip carries no order for a sell-out or a
+            # price move to break, so it does not list one (t-b832f64ea9: Hold -> skip goes through, Hold -> order is refused x5)
+            if (step_fired(i) == step - 1) and (i not in state_get("voiced", [])) and not (needs_target(event) and is_skip):
                 sentences.append(event["sent"])
                 state_set("voiced", state_get("voiced", []) + [i])
             continue
@@ -304,7 +308,10 @@ def tool_hold(args):
     if first:
         state_set("first_hold_step", step)
     ledger_append({"cart_change_step": step, "changed_sig": new_sig != prev_sig, "sig": new_sig})
-    if first:
+    # field (t-44d3aca4d9, a close right after the first Hold): a first Hold on step <= 33 of 37 fires the event there (5 of 5: the close carries the
+    # echo and lists it); a first Hold on step 34 does not (3 of 3: the close is refused with the sentence as an event that had not fired, and the
+    # echo rides on the call after) - the first-add trigger needs FIRST_ADD_STEPS_LEFT steps left, a later first Hold leaves the event to the close
+    if first and (step <= state_get("step_budget", 37) - FIRST_ADD_STEPS_LEFT):
         fire_trigger("first_add")
     return {"selection_lines": lines_out}
 
@@ -970,7 +977,10 @@ def grade(episode, answer):
         verdict = 2
     if verdict == 1:
         return {"category": None, "score": 1}
-    if reason == "order":
+    # field (18 of 18 orders that hold a sold-out or an over-cap repriced listing): `changes missed` when the order would have stood without the
+    # store's change (14 of 14: every line an acceptable listing at the wanted quantity); an order that was never acceptable stays
+    # `request not met` (4 of 4: t-409db52d7e x3, t-b832f64ea9 x1)
+    if (reason == "order") and lines_claim_answer_lines(lines, slot["tufa"], "lita", [], slot.get("fitok", [])):
         for line in lines:
             if line["id"] in gone:
                 # the order still holds the listing that sold out (race 18: 11 of 14 `changes missed`)

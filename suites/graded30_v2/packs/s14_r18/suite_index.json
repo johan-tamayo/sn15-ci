@@ -147,6 +147,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 11,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -348,6 +349,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 27,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -716,6 +718,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": null,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -1022,6 +1025,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": 17815,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -1222,6 +1226,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 18347,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -1419,6 +1424,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 331,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -1576,6 +1582,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 504,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -1886,6 +1893,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 38406,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -2073,6 +2081,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 161,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -2340,6 +2349,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 5710,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -2540,6 +2550,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 1607,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -2829,6 +2840,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 19640,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -2994,6 +3006,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 1270,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -3156,6 +3169,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 1943,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -3381,6 +3395,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 26898,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -3559,6 +3574,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 400,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -3778,6 +3794,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 373,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -3829,7 +3846,7 @@
   "n_lines": 1,
   "truth_source": "field_pass",
   "hidden_source": "observed_reveal",
-  "mech_load": 4,
+  "mech_load": 5,
   "features": {
    "n_lines": 1,
    "qty_total": 1,
@@ -3839,7 +3856,7 @@
    "hidden_cut": 0.722,
    "reza_log": 2.89,
    "cheapest": 0,
-   "n_states": 4,
+   "n_states": 8,
    "tele": 0,
    "n_subj": 2,
    "n_need": 1,
@@ -3891,11 +3908,11 @@
     {
      "type": "stock",
      "trigger": {
-      "kind": "finish"
+      "kind": "first_add"
      },
-     "futaka": false,
-     "silent": true,
-     "message": "Ah no, the page is showing nothing left of that one, and I nearly dropped my tea.",
+     "futaka": true,
+     "silent": false,
+     "message": "I think we've a problem, because there's no more of your suggestion to be had, and the delivery man is due any minute.",
      "pct": null,
      "dropped_prop": null
     },
@@ -3904,9 +3921,20 @@
      "trigger": {
       "kind": "first_add"
      },
-     "futaka": true,
-     "silent": false,
-     "message": "I think we've a problem, because there's no more of your suggestion to be had, and the delivery man is due any minute.",
+     "futaka": false,
+     "silent": true,
+     "message": "There's none left of that one, I'm afraid, and I'd rather tell you now than let you get your hopes rising.",
+     "pct": null,
+     "dropped_prop": null
+    },
+    {
+     "type": "stock",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Ah no, the page is showing nothing left of that one, and I nearly dropped my tea.",
      "pct": null,
      "dropped_prop": null
     }
@@ -3916,6 +3944,7 @@
    "task_id": "t-58bed801cc",
    "extra": {
     "kinds": [
+     "stock",
      "stock",
      "stock"
     ],
@@ -3973,6 +4002,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 88,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -4018,6 +4048,58 @@
    },
    {
     "bits": 3,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 4,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 5,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 6,
+    "tele": false,
+    "suhe": 340,
+    "jufuli": 340,
+    "lita": [
+     5
+    ],
+    "reza": [
+     18
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 7,
     "tele": false,
     "suhe": 340,
     "jufuli": 340,
@@ -4175,6 +4257,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 6000,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -4360,6 +4443,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 248,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -4567,6 +4651,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 292,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -4835,7 +4920,8 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 5550,
-    "unpassable": false
+    "lowest_unseen": true,
+    "unpassable": true
    }
   },
   "states": [
@@ -4843,7 +4929,7 @@
     "bits": 0,
     "tele": false,
     "suhe": 58500,
-    "jufuli": 5550,
+    "jufuli": 5549,
     "lita": [
      1,
      16
@@ -5009,6 +5095,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 41,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -5215,6 +5302,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": null,
+    "lowest_unseen": false,
     "unpassable": true
    }
   },
@@ -5485,6 +5573,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 1286,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -5644,6 +5733,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 400,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -5957,6 +6047,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": 29489,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -6111,6 +6202,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 45,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -6276,6 +6368,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 541,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -6569,6 +6662,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": 32545,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -6778,6 +6872,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 355,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -7110,6 +7205,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 30223,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -7390,6 +7486,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": 18404,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -7571,6 +7668,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 18,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -7785,6 +7883,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 32,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -8119,6 +8218,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": null,
+    "lowest_unseen": false,
     "unpassable": true
    }
   },
@@ -8321,6 +8421,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 12,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -8591,6 +8692,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 400,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -8805,6 +8907,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": null,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9095,6 +9198,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": null,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9245,6 +9349,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 128,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9460,6 +9565,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 1162,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9683,6 +9789,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 2492,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9778,17 +9885,6 @@
    "cheapest": false,
    "events": [
     {
-     "type": "drop",
-     "trigger": {
-      "kind": "finish"
-     },
-     "futaka": true,
-     "silent": false,
-     "message": "On cas latency you can ease off, my worry about it has softened like butter on the radiator.",
-     "pct": null,
-     "dropped_prop": "cas latency"
-    },
-    {
      "type": "stock",
      "trigger": {
       "kind": "first_add"
@@ -9798,6 +9894,17 @@
      "message": "Oh, I'm sorry to say the thing you suggested has been cleared off the shelf entirely, and I'd hate for you to waste time on it.",
      "pct": null,
      "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "On cas latency you can ease off, my worry about it has softened like butter on the radiator.",
+     "pct": null,
+     "dropped_prop": "cas latency"
     }
    ],
    "messages": 2,
@@ -9805,8 +9912,8 @@
    "task_id": "t-e461513a09",
    "extra": {
     "kinds": [
-     "drop",
-     "stock"
+     "stock",
+     "drop"
     ],
     "tags": [
      "1line",
@@ -9862,6 +9969,7 @@
     "conds": [],
     "fits_infeasible": false,
     "cheapest_sum": 999,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
@@ -9885,10 +9993,10 @@
     "suhe": 9900,
     "jufuli": 9900,
     "lita": [
-     103
+     3
     ],
     "reza": [
-     304
+     10
     ],
     "refs_off": []
    },
@@ -9898,10 +10006,10 @@
     "suhe": 9900,
     "jufuli": 9900,
     "lita": [
-     3
+     103
     ],
     "reza": [
-     10
+     304
     ],
     "refs_off": []
    },
@@ -10233,6 +10341,7 @@
     ],
     "fits_infeasible": false,
     "cheapest_sum": 68330,
+    "lowest_unseen": false,
     "unpassable": false
    }
   },
