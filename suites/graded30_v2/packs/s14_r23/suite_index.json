@@ -1,0 +1,9689 @@
+[
+ {
+  "task_id": "t-067d6b7884",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 35,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 3.555,
+   "hidden_cut": 0.0,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "blue"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "processor",
+      "memory"
+     ],
+     "cap_line": 140000,
+     "target": "p-0821ab495e5b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 140000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-067d6b7884",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "ranked"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_01",
+    "orig_id": "t-067d6b7884",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-067d6b7884",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "25698e5d-cca",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-87dd299f3a1f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "processor",
+     "memory"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": {
+     "line": 0,
+     "prop": "display",
+     "dir": "max",
+     "unit": "inch"
+    },
+    "fits_infeasible": false,
+    "cap_end": 140000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 5547,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 140000,
+    "jufuli": 140000,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-072b923a51",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 34,
+   "lita_logmean": 3.526,
+   "lita_log_prod": 3.526,
+   "hidden_cut": 0.0,
+   "reza_log": 3.526,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "single"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 5100,
+     "target": "p-046874a801a0",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 5100,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "My eyes caught a new figure on your selection, much like a seed bill that grew overnight.",
+     "new_cap": null,
+     "pct": 50,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am looking at the listing while my coffee goes cold in the barn, and the cost has been bumped up.",
+     "new_cap": null,
+     "pct": 100,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-072b923a51",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_02",
+    "orig_id": "t-072b923a51",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-072b923a51",
+     "agent": "GoldRain",
+     "rank": 206,
+     "eid": "0e065223-fee",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 36,
+     "cart": [
+      [
+       "p-f0f566249714",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "operating system"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 5100,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 18,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 18,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 18,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 5100,
+    "jufuli": 18,
+    "lita": [
+     34
+    ],
+    "reza": [
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-0e917c9d82",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 37,
+   "lita_logmean": 3.611,
+   "lita_log_prod": 3.611,
+   "hidden_cut": 0.327,
+   "reza_log": 4.007,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "cupboard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "weight",
+       "op": "ge",
+       "value": 425.0,
+       "unit": "g",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "fruit type"
+     ],
+     "cap_line": 260,
+     "target": "p-0152b1ee4d9f",
+     "n_a_stated_cap": 55,
+     "n_a_final": 37,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 260,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-0e917c9d82",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_03",
+    "orig_id": "t-0e917c9d82",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-0e917c9d82",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "c37da084-eb0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 22,
+     "cart": [
+      [
+       "p-16e1a9e05732",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight",
+     "fruit type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 260,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 93,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 260,
+    "jufuli": 260,
+    "lita": [
+     37
+    ],
+    "reza": [
+     55
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-108618261f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 7,
+   "lita_logmean": 2.271,
+   "lita_log_prod": 6.813,
+   "hidden_cut": 0.552,
+   "reza_log": 8.652,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 98
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "3g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "single",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 10500,
+     "target": "p-046874a801a0",
+     "n_a_stated_cap": 44,
+     "n_a_final": 7,
+     "n_a0_nocap": 44,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Cases & Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "phonecase theme",
+       "op": "has",
+       "value": "sports"
+      }
+     ],
+     "line_cap": 113,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 10500,
+     "target": "p-073ef0b2d047",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "installation",
+       "op": "in",
+       "value": [
+        "applicator",
+        "glue-on"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 10500,
+     "target": "p-02f631a708e9",
+     "n_a_stated_cap": 13,
+     "n_a_final": 13,
+     "n_a0_nocap": 13,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 98,
+   "task_id": "t-108618261f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_04",
+    "orig_id": "t-108618261f",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-108618261f",
+     "agent": "Montagu",
+     "rank": 162,
+     "eid": "94673d02-70c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 84,
+     "cart": [
+      [
+       "p-02f631a708e9",
+       1
+      ],
+      [
+       "p-073ef0b2d047",
+       2
+      ],
+      [
+       "p-5c10fec05f6f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 98,
+    "max_steps": 200,
+    "policy_max_steps": 98,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "number of camera of the smartphones",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "clear"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 10500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2391,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10500,
+    "jufuli": 10500,
+    "lita": [
+     7,
+     10,
+     13
+    ],
+    "reza": [
+     44,
+     10,
+     13
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1394d90566",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass_decline",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 5,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 15.149,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 1,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 100
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "processor",
+       "op": "has",
+       "value": "intel core ultra 7"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "memory"
+     ],
+     "cap_line": 42000,
+     "target": null,
+     "n_a_stated_cap": 77,
+     "n_a_final": 0,
+     "n_a0_nocap": 77,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 42000,
+     "target": null,
+     "n_a_stated_cap": 55,
+     "n_a_final": 0,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "has",
+       "value": "trackpad"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 42000,
+     "target": null,
+     "n_a_stated_cap": 16,
+     "n_a_final": 0,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "white"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 42000,
+     "target": null,
+     "n_a_stated_cap": 56,
+     "n_a_final": 0,
+     "n_a0_nocap": 56,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 42000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 100,
+   "task_id": "t-1394d90566",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default",
+     "decline",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_05",
+    "orig_id": "t-1394d90566",
+    "truth_source": "field_pass_decline",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-1394d90566",
+     "agent": "field",
+     "rank": 0,
+     "eid": "pass-decline",
+     "passed": true,
+     "outcome": "PASSED_DECLINE",
+     "truth_source": "field_pass_decline",
+     "hidden_source": "none",
+     "steps": 100,
+     "cart": []
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 100,
+    "max_steps": 200,
+    "policy_max_steps": 100,
+    "decline": true,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "memory of the business laptops"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 42000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": true,
+    "suhe": 42000,
+    "jufuli": 42000,
+    "lita": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reza": [
+     77,
+     55,
+     16,
+     56
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-13cce752df",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 2.054,
+   "lita_log_prod": 6.163,
+   "hidden_cut": 0.489,
+   "reza_log": 8.023,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 10 pro"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "ge",
+       "value": 13.3,
+       "unit": "inch",
+       "ref": false
+      },
+      {
+       "prop": "storage",
+       "op": "has",
+       "value": "512 gb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 275000,
+     "target": "p-024a2bea9c8d",
+     "n_a_stated_cap": 61,
+     "n_a_final": 19,
+     "n_a0_nocap": 61,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "hydrogel",
+        "nano glass"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 275000,
+     "target": "p-03a8fc8af2d4",
+     "n_a_stated_cap": 25,
+     "n_a_final": 25,
+     "n_a0_nocap": 25,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      {
+       "prop": "input voltage",
+       "op": "in",
+       "value": [
+        "100 v",
+        "120 v"
+       ]
+      }
+     ],
+     "line_cap": 1100,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65.0,
+       "unit": "w",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 275000,
+     "target": "p-0fc08493756b",
+     "n_a_stated_cap": 2,
+     "n_a_final": 1,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 275000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-13cce752df",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_06",
+    "orig_id": "t-13cce752df",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-13cce752df",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 88,
+     "cart": [
+      [
+       "p-024a2bea9c8d",
+       2
+      ],
+      [
+       "p-03a8fc8af2d4",
+       1
+      ],
+      [
+       "p-0fc08493756b",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 3,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 88,
+    "max_steps": 200,
+    "policy_max_steps": 88,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "power output of the laptop chargers and adapters",
+     "storage of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 2,
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 275000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 159104,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 275000,
+    "jufuli": 275000,
+    "lita": [
+     19,
+     25,
+     1
+    ],
+    "reza": [
+     61,
+     25,
+     2
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-1d120b0c29",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 2,
+   "lita_min": 9,
+   "lita_logmean": 3.23,
+   "lita_log_prod": 6.46,
+   "hidden_cut": 0.091,
+   "reza_log": 7.096,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "quad"
+      },
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 128,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery capacity",
+       "op": "ge",
+       "value": 5000.0,
+       "unit": "mah",
+       "ref": false
+      },
+      {
+       "prop": "ram",
+       "op": "ge",
+       "value": 8.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 21500,
+     "target": "p-01fdfa9ee50b",
+     "n_a_stated_cap": 17,
+     "n_a_final": 9,
+     "n_a0_nocap": 17,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "waist type",
+       "op": "has",
+       "value": "mid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 21500,
+     "target": "p-00e8c7162785",
+     "n_a_stated_cap": 71,
+     "n_a_final": 71,
+     "n_a0_nocap": 71,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 21500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-1d120b0c29",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_07",
+    "orig_id": "t-1d120b0c29",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-1d120b0c29",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-01fdfa9ee50b",
+       1
+      ],
+      [
+       "p-00e8c7162785",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity of the smartphones",
+     "ram of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 21500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 9114,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 21500,
+    "jufuli": 9114,
+    "lita": [
+     9,
+     71
+    ],
+    "reza": [
+     17,
+     71
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-258ad1fe04",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 3,
+   "lita_logmean": 2.115,
+   "lita_log_prod": 6.346,
+   "hidden_cut": 0.256,
+   "reza_log": 7.886,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "coconut"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 29500,
+     "target": "p-0707fb3e6ede",
+     "n_a_stated_cap": 19,
+     "n_a_final": 19,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "graphic print"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "length",
+       "op": "has",
+       "value": "short",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 29500,
+     "target": "p-0ec875c67129",
+     "n_a_stated_cap": 10,
+     "n_a_final": 3,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "intel hd graphics"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "has",
+       "value": "intel core i5",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 29500,
+     "target": "p-1e98aded9a12",
+     "n_a_stated_cap": 14,
+     "n_a_final": 10,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 29500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-258ad1fe04",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_08",
+    "orig_id": "t-258ad1fe04",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-258ad1fe04",
+     "agent": "JeinStar",
+     "rank": 129,
+     "eid": "7bebaa5f-616",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-1e98aded9a12",
+       1
+      ],
+      [
+       "p-467b5203fb39",
+       1
+      ],
+      [
+       "p-70486f458034",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "length of the pants",
+     "processor of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 29500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 10797,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 29500,
+    "jufuli": 29500,
+    "lita": [
+     19,
+     3,
+     10
+    ],
+    "reza": [
+     19,
+     10,
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-2835e5d127",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 35,
+   "lita_logmean": 3.555,
+   "lita_log_prod": 3.555,
+   "hidden_cut": 0.0,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "quad"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 18000,
+     "target": "p-01fdfa9ee50b",
+     "n_a_stated_cap": 35,
+     "n_a_final": 35,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Watch the numbers there, because that item now costs different money than when you first showed it.",
+     "new_cap": null,
+     "pct": 78,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-2835e5d127",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_09",
+    "orig_id": "t-2835e5d127",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-2835e5d127",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "5503a73c-7c4",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 20,
+     "cart": [
+      [
+       "p-07e2aef8919b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "operating system"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 18000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 3391,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     35
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-31ab1bb6e5",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.982,
+   "reza_log": 5.1,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "le",
+       "value": 2,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "mandarin",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 290,
+     "target": "p-60b6785f9f1e",
+     "n_a_stated_cap": 164,
+     "n_a_final": 3,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 290,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am loosening up on pack size, so show me what else you have.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "pack size"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-31ab1bb6e5",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_10",
+    "orig_id": "t-31ab1bb6e5",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-31ab1bb6e5",
+     "agent": "Kestrel",
+     "rank": 254,
+     "eid": "0725ca15-9e0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-d2279b329b65",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 290,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 95,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 290,
+    "jufuli": 279,
+    "lita": [
+     1
+    ],
+    "reza": [
+     38
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 290,
+    "jufuli": 95,
+    "lita": [
+     3
+    ],
+    "reza": [
+     164
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-35d8f05472",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 522,
+   "lita_logmean": 6.258,
+   "lita_log_prod": 6.258,
+   "hidden_cut": 0.0,
+   "reza_log": 6.258,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "five"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "screen type"
+     ],
+     "cap_line": 4150,
+     "target": "p-00370d2e735d",
+     "n_a_stated_cap": 522,
+     "n_a_final": 522,
+     "n_a0_nocap": 522,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4150,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Before I sign anything, know that what you chose now carries a new price tag.",
+     "new_cap": null,
+     "pct": 62,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "You may drop number of camera from the search, as I was holding it tighter than I should.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "number of camera"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-35d8f05472",
+   "extra": {
+    "kinds": [
+     "price",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_11",
+    "orig_id": "t-35d8f05472",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-35d8f05472",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "8a93499f-0d2",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 24,
+     "cart": [
+      [
+       "p-529fd824920f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "screen type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4150,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 18,
+    "lita": [
+     27
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 18,
+    "lita": [
+     27
+    ],
+    "reza": [
+     27
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 18,
+    "lita": [
+     522
+    ],
+    "reza": [
+     522
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 18,
+    "lita": [
+     522
+    ],
+    "reza": [
+     522
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-371e39e47b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 6,
+   "lita_logmean": 2.987,
+   "lita_log_prod": 8.962,
+   "hidden_cut": 0.18,
+   "reza_log": 10.428,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "five",
+       "ref": true
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "new",
+        "telco set"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "5g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "battery capacity"
+     ],
+     "cap_line": 12500,
+     "target": "p-1abf8da56ced",
+     "n_a_stated_cap": 26,
+     "n_a_final": 6,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mobile Phone Back Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 12500,
+     "target": "p-011c54aa1675",
+     "n_a_stated_cap": 65,
+     "n_a_final": 65,
+     "n_a0_nocap": 65,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "nano glass",
+        "tempered glass"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 12500,
+     "target": "p-011a964a9492",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 12500,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-371e39e47b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_12",
+    "orig_id": "t-371e39e47b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-371e39e47b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 88,
+     "cart": [
+      [
+       "p-1abf8da56ced",
+       1
+      ],
+      [
+       "p-011c54aa1675",
+       1
+      ],
+      [
+       "p-011a964a9492",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-b783b727d064"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 88,
+    "max_steps": 200,
+    "policy_max_steps": 88,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "network connections of the smartphones",
+     "battery capacity of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "screen type",
+       "op": "has",
+       "value": "ips lcd"
+      },
+      "then_line": 1,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "silicon"
+      },
+      "except": false
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 12500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 4323,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 12500,
+    "jufuli": 4323,
+    "lita": [
+     6,
+     65,
+     20
+    ],
+    "reza": [
+     26,
+     65,
+     20
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-b783b727d064"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3a425d681a",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.429,
+   "reza_log": 2.639,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "quad"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "telco set",
+        "used"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 8.0,
+       "unit": "gb",
+       "ref": false
+      },
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "5g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 18000,
+     "target": "p-3e72d36504be",
+     "n_a_stated_cap": 14,
+     "n_a_final": 8,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 18000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-3a425d681a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_13",
+    "orig_id": "t-3a425d681a",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3a425d681a",
+     "agent": "lantern",
+     "rank": 69,
+     "eid": "c5f0abe1-805",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-4a1a6a69681b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "ram",
+     "network connections"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 18000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 10442,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 18000,
+    "jufuli": 18000,
+    "lita": [
+     8
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-3acef79690",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 10,
+   "lita_logmean": 3.25,
+   "lita_log_prod": 12.999,
+   "hidden_cut": 0.588,
+   "reza_log": 15.964,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 110
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "condition",
+       "op": "has",
+       "value": "new"
+      },
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 256,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 6.67,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "4g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 34500,
+     "target": "p-0c736fc36a2e",
+     "n_a_stated_cap": 194,
+     "n_a_final": 10,
+     "n_a0_nocap": 194,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mobile Phone Back Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 34500,
+     "target": "p-011c54aa1675",
+     "n_a_stated_cap": 65,
+     "n_a_final": 65,
+     "n_a0_nocap": 65,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "nano glass",
+        "tempered glass"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 34500,
+     "target": "p-011a964a9492",
+     "n_a_stated_cap": 20,
+     "n_a_final": 20,
+     "n_a0_nocap": 20,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "hardness",
+       "op": "in",
+       "value": [
+        "7h",
+        "9h"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 34500,
+     "target": "p-05320c646f32",
+     "n_a_stated_cap": 34,
+     "n_a_final": 34,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 34500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 110,
+   "task_id": "t-3acef79690",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "hidden",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_14",
+    "orig_id": "t-3acef79690",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-3acef79690",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 110,
+     "cart": [
+      [
+       "p-0c736fc36a2e",
+       1
+      ],
+      [
+       "p-011c54aa1675",
+       2
+      ],
+      [
+       "p-011a964a9492",
+       2
+      ],
+      [
+       "p-05320c646f32",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 110,
+    "max_steps": 200,
+    "policy_max_steps": 110,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size of the smartphones",
+     "network connections of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "android"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "material",
+       "op": "has",
+       "value": "glass"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 34500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 6924,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 34500,
+    "jufuli": 34500,
+    "lita": [
+     10,
+     65,
+     20,
+     34
+    ],
+    "reza": [
+     194,
+     65,
+     20,
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-46d3241426",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 0,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 1.0,
+   "reza_log": 0.0,
+   "cheapest": 0,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "plain"
+      },
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "polyester"
+      },
+      {
+       "prop": "fit",
+       "op": "has",
+       "value": "straight"
+      },
+      {
+       "prop": "waist type",
+       "op": "has",
+       "value": "drawstring",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "length",
+       "op": "has",
+       "value": "full length",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "gift wrapping"
+     ],
+     "cap_line": 1019,
+     "target": null,
+     "n_a_stated_cap": 0,
+     "n_a_final": 0,
+     "n_a0_nocap": 0,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 800,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Hold on, the sticker on that selection just crept upward, the way feed does every January.",
+     "new_cap": null,
+     "pct": 128,
+     "dropped_prop": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "after_reveal"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I sat down with the ledger after supper and settled on 1019 US cents as my new number.",
+     "new_cap": 1019,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-46d3241426",
+   "extra": {
+    "kinds": [
+     "price",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_15",
+    "orig_id": "t-46d3241426",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-46d3241426",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": []
+    },
+    "refs": [
+     [
+      "p-054de4949aa9"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "length",
+     "gift wrapping"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1019,
+    "unrevealed_needs": 0,
+    "cheapest_sum": null,
+    "nb_floor": null,
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 800,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 800,
+    "jufuli": 800,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 1019,
+    "jufuli": 1019,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 1019,
+    "jufuli": 1019,
+    "lita": [
+     0
+    ],
+    "reza": [
+     0
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-054de4949aa9"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4a2ceefcee",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.929,
+   "reza_log": 2.639,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "dietary needs",
+       "op": "has",
+       "value": "nil"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "mandarin",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "packaging type"
+     ],
+     "cap_line": 295,
+     "target": "p-6a59bebcf238",
+     "n_a_stated_cap": 14,
+     "n_a_final": 1,
+     "n_a0_nocap": 14,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 295,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am looking at the listing while my coffee goes cold in the barn, and the cost has been bumped up.",
+     "new_cap": null,
+     "pct": 88,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-4a2ceefcee",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_16",
+    "orig_id": "t-4a2ceefcee",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4a2ceefcee",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "2549888e-c12",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 30,
+     "cart": [
+      [
+       "p-6a59bebcf238",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "packaging type"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 295,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 143,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 295,
+    "jufuli": 143,
+    "lita": [
+     1
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 295,
+    "jufuli": 143,
+    "lita": [
+     1
+    ],
+    "reza": [
+     14
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-4a66f1f426",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.5,
+   "reza_log": 1.792,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 128,
+       "unit": "gb"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "refurbished",
+        "telco set"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 6.53,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 10.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 10000,
+     "target": "p-20af4bc30a00",
+     "n_a_stated_cap": 6,
+     "n_a_final": 3,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 10000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-4a66f1f426",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_17",
+    "orig_id": "t-4a66f1f426",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-4a66f1f426",
+     "agent": "JeinStar",
+     "rank": 129,
+     "eid": "72a6bfb1-57b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 35,
+     "cart": [
+      [
+       "p-396086cc5b7a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size",
+     "ram"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 10000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 8878,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 10000,
+    "jufuli": 8878,
+    "lita": [
+     3
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-57e4e295de",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "derived_clauses",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 537,
+   "lita_logmean": 6.286,
+   "lita_log_prod": 6.286,
+   "hidden_cut": 0.0,
+   "reza_log": 6.286,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 11 pro"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "processor"
+     ],
+     "cap_line": 145000,
+     "target": "p-002caa98df2a",
+     "n_a_stated_cap": 537,
+     "n_a_final": 537,
+     "n_a0_nocap": 537,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 145000,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am loosening up on operating system, so show me what else you have.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "operating system"
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Hold on, the sticker on that selection just crept upward, the way feed does every January.",
+     "new_cap": null,
+     "pct": 136,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-57e4e295de",
+   "extra": {
+    "kinds": [
+     "drop",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_18",
+    "orig_id": "t-57e4e295de",
+    "truth_source": "derived_clauses",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-57e4e295de",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "none",
+     "steps": 43,
+     "cart": [
+      [
+       "p-002caa98df2a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display",
+     "processor"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 145000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 5282,
+    "nb_floor": [
+     5282,
+     5282,
+     394
+    ],
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 5282,
+    "lita": [
+     187
+    ],
+    "reza": [
+     187
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 5282,
+    "lita": [
+     537
+    ],
+    "reza": [
+     537
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 5282,
+    "lita": [
+     187
+    ],
+    "reza": [
+     187
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 5281,
+    "lita": [
+     537
+    ],
+    "reza": [
+     537
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-5a23e16d5b",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 10,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 5,
+   "lita_logmean": 2.47,
+   "lita_log_prod": 7.409,
+   "hidden_cut": 0.431,
+   "reza_log": 10.84,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 10 home"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "processor",
+       "op": "has",
+       "value": "intel core i5",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 34000,
+     "target": "p-15e30833fd39",
+     "n_a_stated_cap": 29,
+     "n_a_final": 5,
+     "n_a0_nocap": 29,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage type",
+       "op": "has",
+       "value": "cupboard"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 34000,
+     "target": "p-0152b1ee4d9f",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pants",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "korean"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fit",
+       "op": "has",
+       "value": "slim",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [],
+     "cap_line": 34000,
+     "target": "p-261ce7b23e20",
+     "n_a_stated_cap": 32,
+     "n_a_final": 6,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 34000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-5a23e16d5b",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "chain",
+     "cheapest",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_19",
+    "orig_id": "t-5a23e16d5b",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-5a23e16d5b",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 43,
+     "cart": [
+      [
+       "p-15e30833fd39",
+       2
+      ],
+      [
+       "p-0152b1ee4d9f",
+       1
+      ],
+      [
+       "p-261ce7b23e20",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-10d9e0cf7068",
+      "p-e694b3a03c0a",
+      "p-1017f884b5e3",
+      "p-52df11341a98",
+      "p-daf2a4e775ee"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fit of the pants",
+     "processor of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 34000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 11568,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 34000,
+    "jufuli": 11568,
+    "lita": [
+     5,
+     55,
+     6
+    ],
+    "reza": [
+     29,
+     55,
+     32
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-10d9e0cf7068",
+    "p-e694b3a03c0a",
+    "p-1017f884b5e3",
+    "p-52df11341a98",
+    "p-daf2a4e775ee"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-633f01e662",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 1,
+   "lita_logmean": 0.805,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.918,
+   "reza_log": 6.356,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 2,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "mandarin",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 1950,
+     "target": "p-60b6785f9f1e",
+     "n_a_stated_cap": 64,
+     "n_a_final": 1,
+     "n_a0_nocap": 64,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pants",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "graphic print"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "length",
+       "op": "has",
+       "value": "full length",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 1950,
+     "target": "p-1e86a4cbd467",
+     "n_a_stated_cap": 9,
+     "n_a_final": 5,
+     "n_a0_nocap": 9,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 1950,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-633f01e662",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_20",
+    "orig_id": "t-633f01e662",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-633f01e662",
+     "agent": "JeinStar",
+     "rank": 129,
+     "eid": "2c47822c-0fa",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-60b6785f9f1e",
+       3
+      ],
+      [
+       "p-811298780538",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type of the canned fruit",
+     "length of the pants"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 1950,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1195,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 1950,
+    "jufuli": 1195,
+    "lita": [
+     1,
+     5
+    ],
+    "reza": [
+     64,
+     9
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-6405620e6d",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 19,
+   "lita_logmean": 3.329,
+   "lita_log_prod": 6.658,
+   "hidden_cut": 0.538,
+   "reza_log": 8.189,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "triple"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "le",
+       "value": 6.67,
+       "unit": "inches",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 480000,
+     "target": "p-07b07dcba51c",
+     "n_a_stated_cap": 90,
+     "n_a_final": 41,
+     "n_a0_nocap": 90,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Business Laptops",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "has",
+       "value": "512 gb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 480000,
+     "target": "p-02755801ae18",
+     "n_a_stated_cap": 40,
+     "n_a_final": 19,
+     "n_a0_nocap": 40,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 480000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-6405620e6d",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_21",
+    "orig_id": "t-6405620e6d",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-6405620e6d",
+     "agent": "Know Thyself",
+     "rank": 230,
+     "eid": "e46d2bb8-c69",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 33,
+     "cart": [
+      [
+       "p-07b07dcba51c",
+       2
+      ],
+      [
+       "p-5bf674b9c212",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage of the business laptops",
+     "display size of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 480000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 135033,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 480000,
+    "jufuli": 480000,
+    "lita": [
+     41,
+     19
+    ],
+    "reza": [
+     90,
+     40
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-75afb7179c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 3,
+   "lita_min": 68,
+   "lita_logmean": 4.45,
+   "lita_log_prod": 13.35,
+   "hidden_cut": 0.413,
+   "reza_log": 14.247,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 78
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 12,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "le",
+       "value": 128.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "operating system"
+     ],
+     "cap_line": 21000,
+     "target": "p-00370d2e735d",
+     "n_a_stated_cap": 319,
+     "n_a_final": 130,
+     "n_a0_nocap": 319,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "installation",
+       "op": "has",
+       "value": "bubble-free"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 21000,
+     "target": "p-01130faf17e1",
+     "n_a_stated_cap": 68,
+     "n_a_final": 68,
+     "n_a0_nocap": 68,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Cases & Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "phonecase theme",
+       "op": "has",
+       "value": "sports"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 21000,
+     "target": "p-036d3f517e6f",
+     "n_a_stated_cap": 71,
+     "n_a_final": 71,
+     "n_a0_nocap": 71,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 21000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 78,
+   "task_id": "t-75afb7179c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_22",
+    "orig_id": "t-75afb7179c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-75afb7179c",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "0886dd16-e34",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 49,
+     "cart": [
+      [
+       "p-01130faf17e1",
+       1
+      ],
+      [
+       "p-01e2743fbe89",
+       1
+      ],
+      [
+       "p-03cc196c5699",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 78,
+    "max_steps": 200,
+    "policy_max_steps": 78,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage of the smartphones",
+     "operating system of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 21000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1087,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 21000,
+    "jufuli": 21000,
+    "lita": [
+     130,
+     68,
+     71
+    ],
+    "reza": [
+     319,
+     68,
+     71
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-78366e6348",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 1,
+   "lita_logmean": 0.0,
+   "lita_log_prod": 0.0,
+   "hidden_cut": 0.971,
+   "reza_log": 3.555,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 1,
+   "hops_total": 1,
+   "max_hops": 1,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory",
+       "op": "has",
+       "value": "4 gb",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [
+      "color"
+     ],
+     "cap_line": 86101,
+     "target": "p-c46acbee8f1a",
+     "n_a_stated_cap": 35,
+     "n_a_final": 1,
+     "n_a0_nocap": 35,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 110000,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Please plan around 86101 US cents, because the vet visit rearranged my finances.",
+     "new_cap": 86101,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-78366e6348",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "chain",
+     "event",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_23",
+    "orig_id": "t-78366e6348",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-78366e6348",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "825d14f6-8dd",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 31,
+     "cart": [
+      [
+       "p-c46acbee8f1a",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-3782b5abfc15"
+     ]
+    ],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "memory",
+     "color"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 86101,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 54999,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 110000,
+    "jufuli": 110000,
+    "lita": [
+     1
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 86101,
+    "jufuli": 86101,
+    "lita": [
+     1
+    ],
+    "reza": [
+     35
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-3782b5abfc15"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-788d0f10c6",
+  "tier": "hard",
+  "n_lines": 4,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 4,
+   "qty_total": 6,
+   "lita_min": 2,
+   "lita_logmean": 2.713,
+   "lita_log_prod": 10.853,
+   "hidden_cut": 0.0,
+   "reza_log": 10.853,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 120
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "has",
+       "value": "2 tb"
+      },
+      {
+       "prop": "processor",
+       "op": "in",
+       "value": [
+        "intel core i5",
+        "ryzen"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "memory"
+     ],
+     "cap_line": 285000,
+     "target": "p-1835187874f9",
+     "n_a_stated_cap": 5,
+     "n_a_final": 5,
+     "n_a0_nocap": 5,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 285000,
+     "target": "p-023c0bbad2d7",
+     "n_a_stated_cap": 55,
+     "n_a_final": 55,
+     "n_a0_nocap": 55,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "connector type",
+       "op": "has",
+       "value": "rectangle"
+      },
+      {
+       "prop": "power output",
+       "op": "ge",
+       "value": 240,
+       "unit": "w"
+      }
+     ],
+     "line_cap": 7200,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 285000,
+     "target": "p-4050a8b7fedc",
+     "n_a_stated_cap": 2,
+     "n_a_final": 2,
+     "n_a0_nocap": 2,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 285000,
+     "target": "p-00035eaf232b",
+     "n_a_stated_cap": 94,
+     "n_a_final": 94,
+     "n_a0_nocap": 94,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 285000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 120,
+   "task_id": "t-788d0f10c6",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "4line",
+     "4line",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_24",
+    "orig_id": "t-788d0f10c6",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-788d0f10c6",
+     "agent": "ORO Prism",
+     "rank": 131,
+     "eid": "7d45e95c-a5b",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 110,
+     "cart": [
+      [
+       "p-2d2467fd54c6",
+       2
+      ],
+      [
+       "p-5255b04e206d",
+       1
+      ],
+      [
+       "p-5a43f68cc2aa",
+       2
+      ],
+      [
+       "p-ff6a5109f4d3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 120,
+    "max_steps": 200,
+    "policy_max_steps": 120,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "memory of the business laptops"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 10 pro"
+      },
+      "then_line": 3,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 285000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 238994,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 285000,
+    "jufuli": 238994,
+    "lita": [
+     5,
+     55,
+     2,
+     94
+    ],
+    "reza": [
+     5,
+     55,
+     2,
+     94
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-7c1c3d45da",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 5,
+   "lita_logmean": 1.878,
+   "lita_log_prod": 5.635,
+   "hidden_cut": 0.733,
+   "reza_log": 9.102,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "intel iris xe"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "has",
+       "value": "1 tb",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 300000,
+     "target": "p-2b06a8eee8b2",
+     "n_a_stated_cap": 33,
+     "n_a_final": 5,
+     "n_a0_nocap": 33,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Canned Fruit",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "multipack"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 300000,
+     "target": "p-1538a99ad8ed",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "single"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "3g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 300000,
+     "target": "p-046874a801a0",
+     "n_a_stated_cap": 34,
+     "n_a_final": 7,
+     "n_a0_nocap": 34,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 300000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-7c1c3d45da",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_25",
+    "orig_id": "t-7c1c3d45da",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-7c1c3d45da",
+     "agent": "Shit",
+     "rank": 75,
+     "eid": "bc5f64b5-ab3",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 38,
+     "cart": [
+      [
+       "p-409030072153",
+       2
+      ],
+      [
+       "p-546d34806d2d",
+       1
+      ],
+      [
+       "p-772aeb79edd2",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage of the business laptops",
+     "network connections of the smartphones"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 300000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 13314,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 300000,
+    "jufuli": 300000,
+    "lita": [
+     5,
+     8,
+     7
+    ],
+    "reza": [
+     33,
+     8,
+     34
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-951be7e6f4",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 4,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.769,
+   "reza_log": 3.258,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "five"
+      },
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 2,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "battery capacity",
+       "op": "ge",
+       "value": 1350.0,
+       "unit": "mah",
+       "ref": false
+      },
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "2g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 4150,
+     "target": "p-240c2910a98d",
+     "n_a_stated_cap": 26,
+     "n_a_final": 6,
+     "n_a0_nocap": 26,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4150,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am loosening up on ram, so show me what else you have.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "ram"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-951be7e6f4",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_26",
+    "orig_id": "t-951be7e6f4",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-951be7e6f4",
+     "agent": "lantern",
+     "rank": 69,
+     "eid": "ca9f7d10-193",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 32,
+     "cart": [
+      [
+       "p-bc309f1ebd99",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "network connections"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 4150,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 1771,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 4150,
+    "lita": [
+     1
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4150,
+    "jufuli": 4150,
+    "lita": [
+     6
+    ],
+    "reza": [
+     26
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-98bfd72882",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 1,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 24,
+   "lita_logmean": 3.178,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.0,
+   "reza_log": 3.178,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "material",
+       "op": "has",
+       "value": "ice silk"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "waist type",
+      "fit"
+     ],
+     "cap_line": 337,
+     "target": "p-0b42848e33c0",
+     "n_a_stated_cap": 24,
+     "n_a_final": 24,
+     "n_a0_nocap": 24,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 337,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-98bfd72882",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_27",
+    "orig_id": "t-98bfd72882",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-98bfd72882",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "cba4e1ee-10f",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 18,
+     "cart": [
+      [
+       "p-1f6620f35f6f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "waist type",
+     "fit"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 337,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 70,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 337,
+    "jufuli": 337,
+    "lita": [
+     24
+    ],
+    "reza": [
+     24
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-ac0143167f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 7,
+   "lita_logmean": 2.244,
+   "lita_log_prod": 6.733,
+   "hidden_cut": 0.0,
+   "reza_log": 6.733,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "storage",
+       "op": "has",
+       "value": "2 tb"
+      },
+      {
+       "prop": "memory",
+       "op": "ge",
+       "value": 64,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "display",
+      "processor"
+     ],
+     "cap_line": 465000,
+     "target": "p-375ca064d37a",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "white"
+      }
+     ],
+     "line_cap": 2750,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 465000,
+     "target": "p-0ca4357cf4ef",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "component type",
+       "op": "in",
+       "value": [
+        "bezel",
+        "camera"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 465000,
+     "target": "p-17d4a47c6439",
+     "n_a_stated_cap": 15,
+     "n_a_final": 15,
+     "n_a0_nocap": 15,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 465000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-ac0143167f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "dnu-default",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_28",
+    "orig_id": "t-ac0143167f",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-ac0143167f",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "22a26305-cb6",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 59,
+     "cart": [
+      [
+       "p-3250328217b6",
+       1
+      ],
+      [
+       "p-375ca064d37a",
+       2
+      ],
+      [
+       "p-60b62255d8f5",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 88,
+    "max_steps": 200,
+    "policy_max_steps": 88,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display of the business laptops",
+     "processor of the business laptops"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 465000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 29701,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 465000,
+    "jufuli": 465000,
+    "lita": [
+     7,
+     8,
+     15
+    ],
+    "reza": [
+     7,
+     8,
+     15
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-aef4a0f58f",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 5,
+   "lita_min": 2,
+   "lita_logmean": 1.923,
+   "lita_log_prod": 5.768,
+   "hidden_cut": 0.799,
+   "reza_log": 9.803,
+   "cheapest": 1,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 98
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "amd radeon"
+      },
+      {
+       "prop": "storage",
+       "op": "in",
+       "value": [
+        "1 tb",
+        "128 gb"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory",
+       "op": "ge",
+       "value": 16.0,
+       "unit": "gb",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 295000,
+     "target": "p-2158176d592c",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": 4100,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65.0,
+       "unit": "w",
+       "ref": false
+      },
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "120 v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 295000,
+     "target": "p-0cf69ece35b4",
+     "n_a_stated_cap": 113,
+     "n_a_final": 2,
+     "n_a0_nocap": 113,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Replacement Parts",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "component type",
+       "op": "has",
+       "value": "trackpad"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 295000,
+     "target": "p-03aa6d735440",
+     "n_a_stated_cap": 16,
+     "n_a_final": 16,
+     "n_a0_nocap": 16,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 295000,
+   "cheapest": true,
+   "events": [],
+   "messages": 3,
+   "steps": 98,
+   "task_id": "t-aef4a0f58f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "cheapest",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_29",
+    "orig_id": "t-aef4a0f58f",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-aef4a0f58f",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 98,
+     "cart": [
+      [
+       "p-2158176d592c",
+       2
+      ],
+      [
+       "p-0cf69ece35b4",
+       1
+      ],
+      [
+       "p-03aa6d735440",
+       2
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 3,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 98,
+    "max_steps": 200,
+    "policy_max_steps": 98,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power output of the laptop chargers and adapters",
+     "memory of the business laptops",
+     "input voltage of the laptop chargers and adapters"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 11 pro"
+      },
+      "then_line": 2,
+      "then": {
+       "prop": "color",
+       "op": "has",
+       "value": "silver"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 295000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 247730,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 295000,
+    "jufuli": 247730,
+    "lita": [
+     10,
+     2,
+     16
+    ],
+    "reza": [
+     10,
+     113,
+     16
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-b55914505c",
+  "tier": "hard",
+  "n_lines": 3,
+  "truth_source": "derived_clauses",
+  "hidden_source": "observed_reveal",
+  "mech_load": 6,
+  "features": {
+   "n_lines": 3,
+   "qty_total": 4,
+   "lita_min": 3,
+   "lita_logmean": 1.978,
+   "lita_log_prod": 5.935,
+   "hidden_cut": 0.843,
+   "reza_log": 10.041,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 3,
+   "n_need": 3,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 88
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "operating system",
+       "op": "has",
+       "value": "windows 10 pro"
+      },
+      {
+       "prop": "color",
+       "op": "in",
+       "value": [
+        "black",
+        "silver"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display",
+       "op": "le",
+       "value": 14.0,
+       "unit": "inch",
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 145000,
+     "target": "p-024a2bea9c8d",
+     "n_a_stated_cap": 22,
+     "n_a_final": 18,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop Chargers and Adapters",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "black"
+      }
+     ],
+     "line_cap": 5795,
+     "hidden": [
+      {
+       "prop": "power output",
+       "op": "le",
+       "value": 65.0,
+       "unit": "w",
+       "ref": false
+      },
+      {
+       "prop": "input voltage",
+       "op": "has",
+       "value": "120 v",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 145000,
+     "target": "p-0cf69ece35b4",
+     "n_a_stated_cap": 149,
+     "n_a_final": 3,
+     "n_a0_nocap": 149,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Laptop and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "hydrogel",
+        "nano-thin film"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 145000,
+     "target": "p-321857223828",
+     "n_a_stated_cap": 7,
+     "n_a_final": 7,
+     "n_a0_nocap": 7,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 145000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 88,
+   "task_id": "t-b55914505c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "3line",
+     "hidden",
+     "dnu-default",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_30",
+    "orig_id": "t-b55914505c",
+    "truth_source": "derived_clauses",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-b55914505c",
+     "agent": "field",
+     "rank": 0,
+     "eid": "0-pass-open",
+     "passed": false,
+     "outcome": "0_FIELD_PASSES",
+     "truth_source": "derived_clauses",
+     "hidden_source": "observed_reveal",
+     "steps": 88,
+     "cart": [
+      [
+       "p-024a2bea9c8d",
+       1
+      ],
+      [
+       "p-0cf69ece35b4",
+       2
+      ],
+      [
+       "p-321857223828",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 3,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 88,
+    "max_steps": 200,
+    "policy_max_steps": 88,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "power output of the laptop chargers and adapters",
+     "display of the business laptops",
+     "input voltage of the laptop chargers and adapters"
+    ],
+    "ligubo": [
+     0,
+     1,
+     2
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 3,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 145000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 15313,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 145000,
+    "jufuli": 145000,
+    "lita": [
+     18,
+     3,
+     7
+    ],
+    "reza": [
+     22,
+     149,
+     7
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c43cf714bc",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 522,
+   "lita_logmean": 6.258,
+   "lita_log_prod": 6.258,
+   "hidden_cut": 0.0,
+   "reza_log": 6.258,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "3g"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 6702,
+     "target": "p-00370d2e735d",
+     "n_a_stated_cap": 522,
+     "n_a_final": 522,
+     "n_a0_nocap": 522,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 4700,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Take network connections off the table, because it was only a wish and not a rule.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "network connections"
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let me correct myself, since the combine repair came due: 6702 US cents is the most I can part with.",
+     "new_cap": 6702,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-c43cf714bc",
+   "extra": {
+    "kinds": [
+     "drop",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_31",
+    "orig_id": "t-c43cf714bc",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-c43cf714bc",
+     "agent": "Cairo",
+     "rank": 4,
+     "eid": "6b01fb49-8eb",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 43,
+     "cart": [
+      [
+       "p-3f4d92d38b29",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity",
+     "operating system"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 6702,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 4700,
+    "jufuli": 1696,
+    "lita": [
+     44
+    ],
+    "reza": [
+     44
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 4700,
+    "jufuli": 18,
+    "lita": [
+     522
+    ],
+    "reza": [
+     522
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 6702,
+    "jufuli": 1696,
+    "lita": [
+     44
+    ],
+    "reza": [
+     44
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 6702,
+    "jufuli": 18,
+    "lita": [
+     522
+    ],
+    "reza": [
+     522
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c582921c5e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 15,
+   "lita_logmean": 2.708,
+   "lita_log_prod": 2.708,
+   "hidden_cut": 0.211,
+   "reza_log": 2.944,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "coconut"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "weight",
+       "op": "le",
+       "value": 425.0,
+       "unit": "g",
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 240,
+     "target": "p-0707fb3e6ede",
+     "n_a_stated_cap": 19,
+     "n_a_final": 15,
+     "n_a0_nocap": 19,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 240,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-c582921c5e",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_32",
+    "orig_id": "t-c582921c5e",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-c582921c5e",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "2aa45ff9-38e",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 24,
+     "cart": [
+      [
+       "p-ce0a193988d1",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "weight",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 240,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 157,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 240,
+    "lita": [
+     15
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-c9a6dc6874",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 8,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 6,
+   "lita_logmean": 1.792,
+   "lita_log_prod": 1.792,
+   "hidden_cut": 0.0,
+   "reza_log": 1.792,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "waist type",
+       "op": "has",
+       "value": "low",
+       "ref": true
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "clothing material"
+     ],
+     "cap_line": 873,
+     "target": "p-241dab140d06",
+     "n_a_stated_cap": 6,
+     "n_a_final": 6,
+     "n_a0_nocap": 6,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 585,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Just now the amount for your selection dropped, and I would like you to look at it again.",
+     "new_cap": null,
+     "pct": 82,
+     "dropped_prop": null
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Good news from the grain elevator lets me raise my spending to 873 US cents.",
+     "new_cap": 873,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-c9a6dc6874",
+   "extra": {
+    "kinds": [
+     "price",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "chain",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_33",
+    "orig_id": "t-c9a6dc6874",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-c9a6dc6874",
+     "agent": "Left",
+     "rank": 145,
+     "eid": "4ff09425-297",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 39,
+     "cart": [
+      [
+       "p-c89a65d58458",
+       1
+      ]
+     ]
+    },
+    "refs": [
+     [
+      "p-399c512fdb2c",
+      "p-e383ce8083bf",
+      "p-583484e86f39",
+      "p-35145cb4abfd",
+      "p-a88534b31b8d"
+     ]
+    ],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "style",
+     "clothing material"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 873,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 212,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 585,
+    "jufuli": 212,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 585,
+    "jufuli": 212,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 873,
+    "jufuli": 212,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 873,
+    "jufuli": 212,
+    "lita": [
+     6
+    ],
+    "reza": [
+     6
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-399c512fdb2c",
+    "p-e383ce8083bf",
+    "p-583484e86f39",
+    "p-35145cb4abfd",
+    "p-a88534b31b8d"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-cbc221be8c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 3,
+   "lita_logmean": 1.099,
+   "lita_log_prod": 1.099,
+   "hidden_cut": 0.953,
+   "reza_log": 4.159,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 1,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack size",
+       "op": "ge",
+       "value": 2,
+       "unit": "pieces"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "lychee",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [
+      "dietary needs"
+     ],
+     "cap_line": 420,
+     "target": "p-0934d89d20ea",
+     "n_a_stated_cap": 64,
+     "n_a_final": 3,
+     "n_a0_nocap": 64,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 420,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-cbc221be8c",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "1line",
+     "hidden"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_34",
+    "orig_id": "t-cbc221be8c",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-cbc221be8c",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "b601861d-96c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 20,
+     "cart": [
+      [
+       "p-88f58c840e4d",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 1,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     0,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 420,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 221,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 420,
+    "jufuli": 420,
+    "lita": [
+     3
+    ],
+    "reza": [
+     64
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-d10d92284a",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 6,
+   "lita_min": 4,
+   "lita_logmean": 2.938,
+   "lita_log_prod": 14.692,
+   "hidden_cut": 0.0,
+   "reza_log": 14.692,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 133
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "screen type",
+       "op": "has",
+       "value": "tft"
+      },
+      {
+       "prop": "storage",
+       "op": "le",
+       "value": 16,
+       "unit": "gb"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "sim slots"
+     ],
+     "cap_line": 19500,
+     "target": "p-00370d2e735d",
+     "n_a_stated_cap": 4,
+     "n_a_final": 4,
+     "n_a0_nocap": 4,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "installation",
+       "op": "in",
+       "value": [
+        "bubble-free",
+        "tray"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 19500,
+     "target": "p-05320c646f32",
+     "n_a_stated_cap": 42,
+     "n_a_final": 42,
+     "n_a0_nocap": 42,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mobile Phone Back Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 19500,
+     "target": "p-011c54aa1675",
+     "n_a_stated_cap": 65,
+     "n_a_final": 65,
+     "n_a0_nocap": 65,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      },
+      {
+       "prop": "material",
+       "op": "in",
+       "value": [
+        "hydrogel",
+        "tempered glass"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 19500,
+     "target": "p-011a964a9492",
+     "n_a_stated_cap": 22,
+     "n_a_final": 22,
+     "n_a0_nocap": 22,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Cases & Covers",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "phonecase theme",
+       "op": "has",
+       "value": "sports"
+      }
+     ],
+     "line_cap": 108,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 19500,
+     "target": "p-073ef0b2d047",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 19500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 133,
+   "task_id": "t-d10d92284a",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "dnu-default",
+     "device-fit",
+     "cond"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_35",
+    "orig_id": "t-d10d92284a",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-d10d92284a",
+     "agent": "finorok",
+     "rank": 233,
+     "eid": "14766cdd-bf0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 69,
+     "cart": [
+      [
+       "p-00370d2e735d",
+       1
+      ],
+      [
+       "p-04ecb8c86ba0",
+       2
+      ],
+      [
+       "p-05320c646f32",
+       1
+      ],
+      [
+       "p-11e98805c15c",
+       1
+      ],
+      [
+       "p-7552e7d68787",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 133,
+    "max_steps": 200,
+    "policy_max_steps": 133,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity of the smartphones",
+     "sim slots of the smartphones"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      4,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [
+     {
+      "if_line": 0,
+      "if": {
+       "prop": "network connections",
+       "op": "has",
+       "value": "2g"
+      },
+      "then_line": 4,
+      "then": {
+       "prop": "type",
+       "op": "has",
+       "value": "half-wrapped case"
+      },
+      "except": true
+     }
+    ],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 19500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2876,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 19500,
+    "jufuli": 19500,
+    "lita": [
+     4,
+     42,
+     65,
+     22,
+     10
+    ],
+    "reza": [
+     4,
+     42,
+     65,
+     22,
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dc6216dde8",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 11,
+   "lita_logmean": 2.398,
+   "lita_log_prod": 2.398,
+   "hidden_cut": 0.0,
+   "reza_log": 2.398,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "graphic print"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "waist type",
+      "pants length"
+     ],
+     "cap_line": 275,
+     "target": "p-0ec875c67129",
+     "n_a_stated_cap": 11,
+     "n_a_final": 11,
+     "n_a0_nocap": 11,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 275,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "The asking amount on that choice has been reworked, and I noticed it between chores.",
+     "new_cap": null,
+     "pct": 77,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-dc6216dde8",
+   "extra": {
+    "kinds": [
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_36",
+    "orig_id": "t-dc6216dde8",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-dc6216dde8",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "a2974be9-5e5",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 28,
+     "cart": [
+      [
+       "p-3ea6f82f77c9",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "waist type",
+     "pants length"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 275,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 111,
+    "nb_floor": [
+     111,
+     111,
+     8
+    ],
+    "unpassable": true
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 275,
+    "jufuli": 111,
+    "lita": [
+     11
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 275,
+    "jufuli": 110,
+    "lita": [
+     11
+    ],
+    "reza": [
+     11
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dc7a43edc5",
+  "tier": "hard",
+  "n_lines": 5,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 5,
+   "qty_total": 9,
+   "lita_min": 1,
+   "lita_logmean": 3.115,
+   "lita_log_prod": 15.576,
+   "hidden_cut": 0.0,
+   "reza_log": 15.576,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 123
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "3g"
+      },
+      {
+       "prop": "condition",
+       "op": "in",
+       "value": [
+        "new",
+        "refurbished"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "battery capacity",
+      "operating system"
+     ],
+     "cap_line": 30500,
+     "target": "p-00370d2e735d",
+     "n_a_stated_cap": 28,
+     "n_a_final": 28,
+     "n_a0_nocap": 28,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone Screen Protectors",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "pattern",
+       "op": "has",
+       "value": "solid"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-011a964a9492",
+     "n_a_stated_cap": 45,
+     "n_a_final": 45,
+     "n_a0_nocap": 45,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Phone and Tablet Screen Protectors",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "installation",
+       "op": "has",
+       "value": "bubble-free"
+      },
+      {
+       "prop": "color",
+       "op": "nin",
+       "value": [
+        "clear"
+       ]
+      }
+     ],
+     "line_cap": 850,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-b4bd3ab1d9ed",
+     "n_a_stated_cap": 1,
+     "n_a_final": 1,
+     "n_a0_nocap": 1,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Cases & Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "phonecase theme",
+       "op": "has",
+       "value": "sports"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-036d3f517e6f",
+     "n_a_stated_cap": 71,
+     "n_a_final": 71,
+     "n_a0_nocap": 71,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Mobile Phone Back Covers",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "color",
+       "op": "has",
+       "value": "multicolor"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [],
+     "cap_line": 30500,
+     "target": "p-011c54aa1675",
+     "n_a_stated_cap": 65,
+     "n_a_final": 65,
+     "n_a0_nocap": 65,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 30500,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 123,
+   "task_id": "t-dc7a43edc5",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "5line",
+     "4line",
+     "dnu-default",
+     "device-fit"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_37",
+    "orig_id": "t-dc7a43edc5",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-dc7a43edc5",
+     "agent": "Hujima",
+     "rank": 193,
+     "eid": "c3880972-9cc",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 119,
+     "cart": [
+      [
+       "p-0544263117a5",
+       2
+      ],
+      [
+       "p-073ef0b2d047",
+       2
+      ],
+      [
+       "p-135f741a67cc",
+       2
+      ],
+      [
+       "p-8006052baf8e",
+       2
+      ],
+      [
+       "p-b4bd3ab1d9ed",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 123,
+    "max_steps": 200,
+    "policy_max_steps": 123,
+    "decline": false,
+    "dnu_default": true,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "battery capacity of the smartphones",
+     "operating system of the smartphones"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 30500,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 5917,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 30500,
+    "jufuli": 30500,
+    "lita": [
+     28,
+     45,
+     1,
+     71,
+     65
+    ],
+    "reza": [
+     28,
+     45,
+     1,
+     71,
+     65
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-de03f247c8",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 50,
+   "lita_logmean": 3.912,
+   "lita_log_prod": 3.912,
+   "hidden_cut": 0.904,
+   "reza_log": 6.252,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "number of camera",
+       "op": "has",
+       "value": "triple"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "display size",
+       "op": "ge",
+       "value": 6.67,
+       "unit": "inches",
+       "ref": false
+      },
+      {
+       "prop": "screen type",
+       "op": "has",
+       "value": "ips lcd",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 30000,
+     "target": "p-01e2743fbe89",
+     "n_a_stated_cap": 519,
+     "n_a_final": 50,
+     "n_a0_nocap": 519,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 30000,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Watch the numbers there, because that item now costs different money than when you first showed it.",
+     "new_cap": null,
+     "pct": 73,
+     "dropped_prop": null
+    },
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I will let number of camera go, since I have bigger fields to worry about.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "number of camera"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-de03f247c8",
+   "extra": {
+    "kinds": [
+     "price",
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_38",
+    "orig_id": "t-de03f247c8",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-de03f247c8",
+     "agent": "Halo",
+     "rank": 31,
+     "eid": "988e4006-dc0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 39,
+     "cart": [
+      [
+       "p-73d9ac23e878",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "display size",
+     "screen type"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 30000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 30000,
+    "jufuli": 2320,
+    "lita": [
+     4
+    ],
+    "reza": [
+     90
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 30000,
+    "jufuli": 2320,
+    "lita": [
+     4
+    ],
+    "reza": [
+     90
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 30000,
+    "jufuli": 18,
+    "lita": [
+     50
+    ],
+    "reza": [
+     519
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 30000,
+    "jufuli": 18,
+    "lita": [
+     50
+    ],
+    "reza": [
+     519
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-df6f4009af",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 8,
+   "lita_logmean": 2.079,
+   "lita_log_prod": 2.079,
+   "hidden_cut": 0.0,
+   "reza_log": 2.079,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "multipack"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "fruit type",
+      "packaging type"
+     ],
+     "cap_line": 390,
+     "target": "p-1538a99ad8ed",
+     "n_a_stated_cap": 8,
+     "n_a_final": 8,
+     "n_a0_nocap": 8,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 390,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Before I sign anything, know that what you chose now carries a new price tag.",
+     "new_cap": null,
+     "pct": 30,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Hold on, the sticker on that selection just crept upward, the way feed does every January.",
+     "new_cap": null,
+     "pct": 100,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-df6f4009af",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_39",
+    "orig_id": "t-df6f4009af",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-df6f4009af",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "95ec16a7-7ad",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 39,
+     "cart": [
+      [
+       "p-62b8b04dfb4f",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fruit type",
+     "packaging type"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 390,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 262,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 262,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 262,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 262,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 390,
+    "jufuli": 262,
+    "lita": [
+     8
+    ],
+    "reza": [
+     8
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-dfcd2e1c7f",
+  "tier": "medium",
+  "n_lines": 2,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 9,
+  "features": {
+   "n_lines": 2,
+   "qty_total": 5,
+   "lita_min": 4,
+   "lita_logmean": 1.589,
+   "lita_log_prod": 3.178,
+   "hidden_cut": 0.861,
+   "reza_log": 7.155,
+   "cheapest": 0,
+   "n_states": 1,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 1,
+   "hops_total": 5,
+   "max_hops": 5,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Business Laptops",
+     "qty": 3,
+     "stated": [
+      {
+       "prop": "graphics",
+       "op": "has",
+       "value": "amd radeon"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "memory",
+       "op": "has",
+       "value": "8 gb",
+       "unit": null,
+       "ref": true
+      }
+     ],
+     "decoys": [],
+     "cap_line": 425000,
+     "target": "p-624c6a67c164",
+     "n_a_stated_cap": 40,
+     "n_a_final": 4,
+     "n_a0_nocap": 40,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    },
+    {
+     "category": "Pants",
+     "qty": 2,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "korean"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "fit",
+       "op": "has",
+       "value": "slim",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 425000,
+     "target": "p-261ce7b23e20",
+     "n_a_stated_cap": 32,
+     "n_a_final": 6,
+     "n_a0_nocap": 32,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 425000,
+   "cheapest": false,
+   "events": [],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-dfcd2e1c7f",
+   "extra": {
+    "kinds": [],
+    "tags": [
+     "2line",
+     "hidden",
+     "chain",
+     "ref-reply"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_40",
+    "orig_id": "t-dfcd2e1c7f",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-dfcd2e1c7f",
+     "agent": "CHIDORI",
+     "rank": 37,
+     "eid": "21c888e4-9a0",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 41,
+     "cart": [
+      [
+       "p-9c9e131ff822",
+       2
+      ],
+      [
+       "p-f23233aa3c62",
+       3
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [
+     [
+      "p-a453e699ac0e",
+      "p-4a9214e4b2b8",
+      "p-ac161863e6eb",
+      "p-d7d4b7e6c8c0",
+      "p-cab97c459545"
+     ]
+    ],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "fit of the pants",
+     "memory of the business laptops"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 425000,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 97935,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 425000,
+    "jufuli": 425000,
+    "lita": [
+     4,
+     6
+    ],
+    "reza": [
+     40,
+     32
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [
+   [
+    "p-a453e699ac0e",
+    "p-4a9214e4b2b8",
+    "p-ac161863e6eb",
+    "p-d7d4b7e6c8c0",
+    "p-cab97c459545"
+   ]
+  ],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-e490513116",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "observed_reveal",
+  "mech_load": 5,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 5,
+   "lita_logmean": 1.609,
+   "lita_log_prod": 1.609,
+   "hidden_cut": 0.972,
+   "reza_log": 5.187,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 2,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Smartphones",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "ram",
+       "op": "le",
+       "value": 12,
+       "unit": "gb"
+      },
+      {
+       "prop": "number of camera",
+       "op": "in",
+       "value": [
+        "dual",
+        "single"
+       ]
+      }
+     ],
+     "line_cap": null,
+     "hidden": [
+      {
+       "prop": "storage",
+       "op": "ge",
+       "value": 128.0,
+       "unit": "gb",
+       "ref": false
+      },
+      {
+       "prop": "network connections",
+       "op": "has",
+       "value": "3g",
+       "unit": null,
+       "ref": false
+      }
+     ],
+     "decoys": [],
+     "cap_line": 11468,
+     "target": "p-0daa41cb7ce9",
+     "n_a_stated_cap": 179,
+     "n_a_final": 5,
+     "n_a0_nocap": 179,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 14000,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I am loosening up on ram, so show me what else you have.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "ram"
+    },
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Let me correct myself, since the combine repair came due: 11468 US cents is the most I can part with.",
+     "new_cap": 11468,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-e490513116",
+   "extra": {
+    "kinds": [
+     "drop",
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "hidden",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_41",
+    "orig_id": "t-e490513116",
+    "truth_source": "field_pass",
+    "hidden_source": "observed_reveal",
+    "source": {
+     "task": "t-e490513116",
+     "agent": "PIRATE",
+     "rank": 1,
+     "eid": "1e1bb205-c4d",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "observed_reveal",
+     "steps": 41,
+     "cart": [
+      [
+       "p-66f259c6b74b",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 2,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "storage",
+     "network connections"
+    ],
+    "ligubo": [
+     0,
+     1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 11468,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2462,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 4284,
+    "lita": [
+     3
+    ],
+    "reza": [
+     101
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 14000,
+    "jufuli": 2462,
+    "lita": [
+     5
+    ],
+    "reza": [
+     179
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 11468,
+    "jufuli": 4284,
+    "lita": [
+     3
+    ],
+    "reza": [
+     101
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 11468,
+    "jufuli": 2462,
+    "lita": [
+     5
+    ],
+    "reza": [
+     179
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-eb56da7132",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 164,
+   "lita_logmean": 5.1,
+   "lita_log_prod": 5.1,
+   "hidden_cut": 0.0,
+   "reza_log": 5.1,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "fruit type",
+       "op": "has",
+       "value": "coconut"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "dietary needs",
+      "weight"
+     ],
+     "cap_line": 240,
+     "target": "p-002066496d46",
+     "n_a_stated_cap": 164,
+     "n_a_final": 164,
+     "n_a0_nocap": 164,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 240,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I will let fruit type go, since I have bigger fields to worry about.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "fruit type"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-eb56da7132",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_42",
+    "orig_id": "t-eb56da7132",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-eb56da7132",
+     "agent": "Pooh",
+     "rank": 108,
+     "eid": "4d56c0ea-629",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 43,
+     "cart": [
+      [
+       "p-450683813688",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "dietary needs",
+     "weight"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 240,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 18,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 157,
+    "lita": [
+     19
+    ],
+    "reza": [
+     19
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 240,
+    "jufuli": 18,
+    "lita": [
+     164
+    ],
+    "reza": [
+     164
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f2794b0f8e",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 342,
+   "lita_logmean": 5.835,
+   "lita_log_prod": 5.835,
+   "hidden_cut": 0.0,
+   "reza_log": 5.835,
+   "cheapest": 1,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "waist type",
+       "op": "has",
+       "value": "elasticated waist"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "style",
+      "pants length"
+     ],
+     "cap_line": 520,
+     "target": "p-004615716342",
+     "n_a_stated_cap": 342,
+     "n_a_final": 342,
+     "n_a0_nocap": 342,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 520,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "drop",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "I will let waist type go, since I have bigger fields to worry about.",
+     "new_cap": null,
+     "pct": null,
+     "dropped_prop": "waist type"
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-f2794b0f8e",
+   "extra": {
+    "kinds": [
+     "drop"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_43",
+    "orig_id": "t-f2794b0f8e",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-f2794b0f8e",
+     "agent": "Roadrunner",
+     "rank": 73,
+     "eid": "5f9cc30a-8bf",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 40,
+     "cart": [
+      [
+       "p-a39000d46b24",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "style",
+     "pants length"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 520,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 2,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 520,
+    "jufuli": 18,
+    "lita": [
+     71
+    ],
+    "reza": [
+     71
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 520,
+    "jufuli": 2,
+    "lita": [
+     342
+    ],
+    "reza": [
+     342
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f62521845c",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 2,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 10,
+   "lita_logmean": 2.303,
+   "lita_log_prod": 2.303,
+   "hidden_cut": 0.0,
+   "reza_log": 2.303,
+   "cheapest": 0,
+   "n_states": 2,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Canned Fruit",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "pack type",
+       "op": "has",
+       "value": "large serve"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "packaging type",
+      "dietary needs"
+     ],
+     "cap_line": 319,
+     "target": "p-0412c2882e9c",
+     "n_a_stated_cap": 10,
+     "n_a_final": 10,
+     "n_a0_nocap": 10,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 345,
+   "cheapest": false,
+   "events": [
+    {
+     "type": "budget",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "The spring planting ate into my savings, so my limit has been reset to 319 US cents.",
+     "new_cap": 319,
+     "pct": null,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-f62521845c",
+   "extra": {
+    "kinds": [
+     "budget"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "ranked"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_44",
+    "orig_id": "t-f62521845c",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-f62521845c",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "38c46b45-516",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 40,
+     "cart": [
+      [
+       "p-33790e0144ef",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "packaging type",
+     "dietary needs"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": {
+     "line": 0,
+     "prop": "weight",
+     "dir": "max",
+     "unit": "g"
+    },
+    "fits_infeasible": false,
+    "cap_end": 319,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 150,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 345,
+    "jufuli": 345,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 319,
+    "jufuli": 319,
+    "lita": [
+     10
+    ],
+    "reza": [
+     10
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ },
+ {
+  "task_id": "t-f966c35ce2",
+  "tier": "easy",
+  "n_lines": 1,
+  "truth_source": "field_pass",
+  "hidden_source": "none",
+  "mech_load": 3,
+  "features": {
+   "n_lines": 1,
+   "qty_total": 1,
+   "lita_min": 12,
+   "lita_logmean": 2.485,
+   "lita_log_prod": 2.485,
+   "hidden_cut": 0.0,
+   "reza_log": 2.485,
+   "cheapest": 1,
+   "n_states": 4,
+   "tele": 0,
+   "n_subj": 2,
+   "n_need": 0,
+   "n_refs": 0,
+   "hops_total": 0,
+   "max_hops": 0,
+   "step_budget": 43
+  },
+  "spec": {
+   "suite": "s14_r23",
+   "flavor": "r21",
+   "lines": [
+    {
+     "category": "Pants",
+     "qty": 1,
+     "stated": [
+      {
+       "prop": "style",
+       "op": "has",
+       "value": "hip-hop"
+      }
+     ],
+     "line_cap": null,
+     "hidden": [],
+     "decoys": [
+      "waist type",
+      "clothing material"
+     ],
+     "cap_line": 315,
+     "target": "p-02542b798bcd",
+     "n_a_stated_cap": 12,
+     "n_a_final": 12,
+     "n_a0_nocap": 12,
+     "unc": 0,
+     "near_miss": {},
+     "references": []
+    }
+   ],
+   "cap": 315,
+   "cheapest": true,
+   "events": [
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": false,
+     "silent": true,
+     "message": "Just now the amount for your selection dropped, and I would like you to look at it again.",
+     "new_cap": null,
+     "pct": 63,
+     "dropped_prop": null
+    },
+    {
+     "type": "price",
+     "trigger": {
+      "kind": "finish"
+     },
+     "futaka": true,
+     "silent": false,
+     "message": "Watch the numbers there, because that item now costs different money than when you first showed it.",
+     "new_cap": null,
+     "pct": 100,
+     "dropped_prop": null
+    }
+   ],
+   "messages": 3,
+   "steps": 43,
+   "task_id": "t-f966c35ce2",
+   "extra": {
+    "kinds": [
+     "price",
+     "price"
+    ],
+    "tags": [
+     "1line",
+     "event",
+     "cheapest"
+    ],
+    "held_out": false,
+    "ids10": false,
+    "author_id": "r23_45",
+    "orig_id": "t-f966c35ce2",
+    "truth_source": "field_pass",
+    "hidden_source": "none",
+    "source": {
+     "task": "t-f966c35ce2",
+     "agent": "sabito",
+     "rank": 218,
+     "eid": "935de5ba-95c",
+     "passed": true,
+     "outcome": "PASSED",
+     "truth_source": "field_pass",
+     "hidden_source": "none",
+     "steps": 26,
+     "cart": [
+      [
+       "p-af8ad04ecdc3",
+       1
+      ]
+     ]
+    },
+    "refs": [],
+    "need_refs": [],
+    "needs": 0,
+    "process_rules": [
+     "needs_revealed",
+     "chain_pages_opened",
+     "wrong_order_both_views"
+    ],
+    "step_budget": 43,
+    "max_steps": 200,
+    "policy_max_steps": 43,
+    "decline": false,
+    "dnu_default": false,
+    "bundle_pct": 0.0,
+    "subjects": [
+     "waist type",
+     "clothing material"
+    ],
+    "ligubo": [
+     -1,
+     -1
+    ],
+    "text_source": "verbatim",
+    "n_field_decoys": 0,
+    "n_subjects": 2,
+    "witnesses": 2,
+    "fits": [],
+    "conds": [],
+    "best": null,
+    "fits_infeasible": false,
+    "cap_end": 315,
+    "unrevealed_needs": 0,
+    "cheapest_sum": 248,
+    "nb_floor": null,
+    "unpassable": false
+   }
+  },
+  "states": [
+   {
+    "bits": 0,
+    "tele": false,
+    "suhe": 315,
+    "jufuli": 248,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 1,
+    "tele": false,
+    "suhe": 315,
+    "jufuli": 248,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 2,
+    "tele": false,
+    "suhe": 315,
+    "jufuli": 248,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   },
+   {
+    "bits": 3,
+    "tele": false,
+    "suhe": 315,
+    "jufuli": 248,
+    "lita": [
+     12
+    ],
+    "reza": [
+     12
+    ],
+    "refs_off": []
+   }
+  ],
+  "refs": [],
+  "process_rules": [
+   "needs_revealed",
+   "chain_pages_opened",
+   "wrong_order_both_views"
+  ],
+  "held_out": false,
+  "ids10": false
+ }
+]
